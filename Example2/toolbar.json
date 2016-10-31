@@ -1,0 +1,17 @@
+{
+    "name": "Toolbar Plugin",
+    "buttons": [
+        {
+            "name": "Toolbar Plugin",
+            "command": "ToolbarPlugin.Button",
+            "iconText": "TP",
+            "iconURL": "https://lh4.googleusercontent.com/-nAXAx573tQw/AAAAAAAAAAI/AAAAAAAAEXw/aQ7VX6a3R4w/s36-c-k-no/photo.jpg"
+        },
+        {
+            "name": "Draw: Circle",
+            "command": "Draw: Circle",
+            "iconText": "Cr",
+            "iconURL": "http://www.homeschoolmath.net/teaching/g/circles/rad_example.gif"
+        }
+    ]
+}
