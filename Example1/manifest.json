@@ -1,0 +1,7 @@
+{
+    "PluginName": "Example 1",
+    "ToolbarURL": "PLUGINLOCATION/toolbar.json",
+    "Scripts": [
+        "PLUGINLOCATION/jeffsplugin.js"
+    ]
+}
