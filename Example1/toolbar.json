@@ -1,10 +1,10 @@
 {
-    "name": "Jeffs Toolbar",
+    "name": "Toolbar Plugin",
     "buttons": [
         {
-            "name": "Jeff's Plugin",
-            "command": "JeffsPlugin.Submit",
-            "iconText": "JP",
+            "name": "Toolbar Plugin",
+            "command": "ToolbarPlugin.Button",
+            "iconText": "TP",
             "iconURL": "https://lh4.googleusercontent.com/-nAXAx573tQw/AAAAAAAAAAI/AAAAAAAAEXw/aQ7VX6a3R4w/s36-c-k-no/photo.jpg"
         },
         {
