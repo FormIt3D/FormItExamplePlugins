@@ -1,0 +1,7 @@
+{
+    "PluginName": "Hello Block",
+    "Scripts": [
+        "PLUGINLOCATION/block.js"
+    ]
+    ,"Panel": "PLUGINLOCATION/hello_block.html"
+}
