@@ -1,0 +1,7 @@
+{
+    "PluginName": "Pop Edit Context",
+    "ToolbarURL": "PLUGINLOCATION/toolbar.json",
+    "Scripts": [
+        "PLUGINLOCATION/popeditcontext.js"
+    ]
+}
