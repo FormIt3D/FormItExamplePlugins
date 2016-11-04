@@ -6,3 +6,9 @@ FormIt.UI.InstallPlugin("http://localhost:8000/Example1");
 FormIt.UI.InstallPlugin("http://localhost:8000/Example2");
 FormIt.UI.InstallPlugin("http://localhost:8000/HelloBlock");
 FormIt.UI.InstallPlugin("http://localhost:8000/PopEditContext");
+
+To run from web, do-
+FormIt.UI.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/Example1");
+FormIt.UI.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/Example2");
+FormIt.UI.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/HelloBlock");
+FormIt.UI.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/PopEditContext");
