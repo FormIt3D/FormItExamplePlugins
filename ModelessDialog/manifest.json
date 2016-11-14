@@ -1,0 +1,10 @@
+{
+    "PluginName": "Modeless Hello Block",
+    "Scripts": [
+        "PLUGINLOCATION/block.js"
+    ],
+    "DialogBox": "PLUGINLOCATION/hello_block.html",
+    "DialogBoxWidth": 300,
+    "DialogBoxHeight": 180,
+    "DialogBoxType": "Modeless"
+}
