@@ -17,6 +17,6 @@ function Submit()
     "h": parseFloat(document.a.height.value)
     }
     console.log("CreateBlock");
-    console.log("args");
+    console.log("args:" + args);
     window.NewFormItInterface.CallMethod("CreateBlock", JSON.stringify(args));
 }

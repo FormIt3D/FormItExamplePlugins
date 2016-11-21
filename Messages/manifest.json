@@ -1,0 +1,5 @@
+{
+    "PluginName": "Messages",
+    "Scripts": [ "PLUGINLOCATION/messages.js" ],
+    "Panel": "PLUGINLOCATION/messages.html"
+}
