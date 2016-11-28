@@ -209,10 +209,18 @@ function LoadMessages()
         list.addEventListener('click', function(ev) {
           if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('checked');
+            var subscribe = ev.target.classList.contains('checked');
             var msg = "ev.target.innerText: " + ev.target.innerText + "-" + ev.target.classList.contains('checked');
-            console.log("ev.target.innerText: " + msg);
-            //window.NewFormItInterface.ConsoleLog("ev.target.innerText: " + msg);
-            window.NewFormItInterface.SubscribeMessage(ev.target.innerText);
+            if (subscribe)
+            {
+                window.NewFormItInterface.ConsoleLog("Subscribe: ev.target.innerText: " + msg);
+                window.NewFormItInterface.SubscribeMessage(ev.target.innerText);
+            }
+            else
+            {
+                window.NewFormItInterface.ConsoleLog("UnSubscribe: ev.target.innerText: " + msg);
+                window.NewFormItInterface.UnsubscribeMessage(ev.target.innerText);
+            }
           }
         }, false);
         //window.NewFormItInterface.ConsoleLog("About to call LoadMessages");
