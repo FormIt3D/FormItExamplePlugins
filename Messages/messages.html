@@ -158,15 +158,15 @@ function newElement(inputValue) {
 
 function LoadMessages()
 {
-    //window.NewFormItInterface.ConsoleLog("LoadMessages called");
-    window.NewFormItInterface.CallMethod("GetMessages", "", function(messages)
+    //window.FormItInterface.ConsoleLog("LoadMessages called");
+    window.FormItInterface.CallMethod("GetMessages", "", function(messages)
     {
-        //window.NewFormItInterface.ConsoleLog("Num messages " + messages.length);
+        //window.FormItInterface.ConsoleLog("Num messages " + messages.length);
         var msgs = JSON.parse(messages);
-        //window.NewFormItInterface.ConsoleLog("Num msgs " + msgs.length);
+        //window.FormItInterface.ConsoleLog("Num msgs " + msgs.length);
         for (var i = 0; i < msgs.length; i++)
         {
-            //window.NewFormItInterface.ConsoleLog("GetMessage " + i + ": " + msgs[i]);
+            //window.FormItInterface.ConsoleLog("GetMessage " + i + ": " + msgs[i]);
             newElement(msgs[i]);
         }
     });
@@ -174,13 +174,13 @@ function LoadMessages()
     <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
     document.addEventListener("DOMContentLoaded", function () {
         new QWebChannel(qt.webChannelTransport, function (channel) {
-            window.NewFormItInterface = channel.objects.FormItInterface;
+            window.FormItInterface = channel.objects.FormItInterface;
             window.PluginDialog = channel.objects.PluginDialog;
-            //window.NewFormItInterface.ConsoleLog("Init Channel");
+            //window.FormItInterface.ConsoleLog("Init Channel");
 
-        window.NewFormItInterface.FormItMessage.connect(function(msg, json) {
+        window.FormItInterface.FormItMessage.connect(function(msg, json) {
         // This callback will be invoked whenever the signal is emitted on the C++/QML side.
-            window.NewFormItInterface.ConsoleLog("Message: " + msg + " json: " + json);
+            window.FormItInterface.ConsoleLog("Message: " + msg + " json: " + json);
         });
             
         // Create a "close" button and append it to each list item
@@ -210,20 +210,19 @@ function LoadMessages()
           if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('checked');
             var subscribe = ev.target.classList.contains('checked');
-            var msg = "ev.target.innerText: " + ev.target.innerText + "-" + ev.target.classList.contains('checked');
             if (subscribe)
             {
-                window.NewFormItInterface.ConsoleLog("Subscribe: ev.target.innerText: " + msg);
-                window.NewFormItInterface.SubscribeMessage(ev.target.innerText);
+                window.FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
+                window.FormItInterface.SubscribeMessage(ev.target.innerText);
             }
             else
             {
-                window.NewFormItInterface.ConsoleLog("UnSubscribe: ev.target.innerText: " + msg);
-                window.NewFormItInterface.UnsubscribeMessage(ev.target.innerText);
+                window.FormItInterface.ConsoleLog("UnSubscribe: " + ev.target.innerText);
+                window.FormItInterface.UnsubscribeMessage(ev.target.innerText);
             }
           }
         }, false);
-        //window.NewFormItInterface.ConsoleLog("About to call LoadMessages");
+        //window.FormItInterface.ConsoleLog("About to call LoadMessages");
         
         LoadMessages();
         }); // QWebChannel
