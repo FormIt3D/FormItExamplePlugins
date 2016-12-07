@@ -1,7 +1,0 @@
-{
-    "PluginName": "Toolbar Example",
-    "ToolbarURL": "PLUGINLOCATION/toolbar.json",
-    "Scripts": [
-        "PLUGINLOCATION/toolbarplugin.js"
-    ]
-}
