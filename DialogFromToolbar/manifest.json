@@ -1,0 +1,5 @@
+{
+    "PluginName": "Dialog From Toolbar",
+    "Scripts": [ "PLUGINLOCATION/dialogfromtoolbar.js", "PLUGINLOCATION/block.js" ],
+    "ToolbarURL": "PLUGINLOCATION/toolbar.json"
+}

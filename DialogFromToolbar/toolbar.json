@@ -1,0 +1,10 @@
+{
+    "name": "Dialog From Toolbar",
+    "buttons": [
+        {
+            "name": "Plugin Manager",
+            "command": "DialogFromToolbar.ShowDialog",
+            "iconText": "PM"
+        }
+    ]
+}
