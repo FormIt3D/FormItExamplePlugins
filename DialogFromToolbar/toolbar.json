@@ -4,7 +4,7 @@
         {
             "name": "Plugin Manager",
             "command": "DialogFromToolbar.ShowDialog",
-            "iconText": "PM"
+            "iconText": "DT"
         }
     ]
 }
