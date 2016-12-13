@@ -132,6 +132,7 @@ input {
 <script type="text/javascript" src="message.js"></script>
 <script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
 <script>
+// Create a new list item when clicking on the "Add" button
 function newElement(inputValue) {
   var li = document.createElement("li");
   var t = document.createTextNode(inputValue);
@@ -171,6 +172,7 @@ function LoadMessages()
         }
     });
 }
+
     <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
     document.addEventListener("DOMContentLoaded", function () {
         new QWebChannel(qt.webChannelTransport, function (channel) {
@@ -180,29 +182,8 @@ function LoadMessages()
 
         window.FormItInterface.FormItMessage.connect(function(msg, json) {
         // This callback will be invoked whenever the signal is emitted on the C++/QML side.
-            window.FormItInterface.ConsoleLog("Message: " + msg + " json: " + json);
+            window.FormItInterface.ConsoleLog("(Web Side) Message: " + msg + " json: " + json);
         });
-            
-        // Create a "close" button and append it to each list item
-        var myNodelist = document.getElementsByTagName("LI");
-        var i;
-        for (i = 0; i < myNodelist.length; i++) {
-          var span = document.createElement("SPAN");
-          var txt = document.createTextNode("\u00D7");
-          span.className = "close";
-          span.appendChild(txt);
-          //myNodelist[i].appendChild(span);
-        }
-
-        // Click on a close button to hide the current list item
-        var close = document.getElementsByClassName("close");
-        var i;
-        for (i = 0; i < close.length; i++) {
-          close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-          }
-        }
 
         // Add a "checked" symbol when clicking on a list item
         var list = document.querySelector('ul');
@@ -214,6 +195,8 @@ function LoadMessages()
             {
                 window.FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
                 window.FormItInterface.SubscribeMessage(ev.target.innerText);
+                window.FormItInterface.ConsoleLog("About to call MessagesPluginSubscribe");
+                window.FormItInterface.CallMethod("MessagesPluginSubscribe", ev.target.innerText);
             }
             else
             {

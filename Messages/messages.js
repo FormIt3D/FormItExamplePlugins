@@ -1,30 +1,30 @@
-// Create a new list item when clicking on the "Add" button
-function newElement(inputValue) {
-  var li = document.createElement("li");
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  //li.appendChild(span);
+// ---------------------------------------------------
+// The following code is used by the HTML page.
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
-
+// ---------------------------------------------------
+// The following code runs in FormIt.
 function GetMessages()
 {
     return FormIt.Messages.GetMessages();
+}
+
+function MessagesPluginSubscribe(msg)
+{
+    console.log("Inside MessagesPluginSubscribe.");
+    
+    MessagesPluginListener = {};
+    MessagesPluginListener.MsgHandler = function(msg, payload) { console.log("(FormIt Side) msg: " + msg + " payload: " + payload); };
+
+    if(!(MessagesPluginListener.hasOwnProperty("listener")))
+    {
+        MessagesPluginListener.listener = FormIt.NewMessageListener();
+        console.log("Creating MessagesPluginListener.listener.");
+    }
+
+    // Assign the msg handler
+    MessagesPluginListener.listener[msg] = MessagesPluginListener.MsgHandler;
+    MessagesPluginListener.listener.SubscribeMessage(msg);
+
+    console.log("FormIt Side, Subscribing to msg: " + msg);
 }
