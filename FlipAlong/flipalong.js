@@ -1,14 +1,14 @@
 FlipAlongPlugin = {};
 FlipAlongPlugin.ButtonX = function()
 {
-    console.log("FlipAlongPlugin.ButtonX clicked!!");
+    //console.log("FlipAlongPlugin.ButtonX clicked!!");
     var selections = FormIt.Selection.GetSelections();
     //console.log("Selections: " + JSON.stringify(selections));
     var AABB = WSM.Utils.GetAxisAlignedBoundingBox(selections, WSM.Utils.CoordSystem.HCS);
-    console.log("AABB: " + JSON.stringify(AABB));
+    //console.log("AABB: " + JSON.stringify(AABB));
     
     var histID = FormIt.GetEditingHistoryID();
-    console.log("histID: " + histID);
+    //console.log("histID: " + histID);
     var pt1 = WSM.Geom.Point3d(AABB.upper.x, AABB.lower.y, AABB.lower.z); 
     var pt2 = WSM.Geom.Point3d(AABB.upper.x, AABB.upper.y, AABB.lower.z); 
     var pt3 = WSM.Geom.Point3d(AABB.upper.x, AABB.upper.y, AABB.upper.z); 
@@ -23,7 +23,7 @@ FormIt.Commands.RegisterJSCommand("FlipAlongPlugin.ButtonX");
 
 FlipAlongPlugin.ButtonY = function()
 {
-    console.log("FlipAlongPlugin.ButtonY clicked!!");
+    //console.log("FlipAlongPlugin.ButtonY clicked!!");
     var selections = FormIt.Selection.GetSelections();
     var AABB = WSM.Utils.GetAxisAlignedBoundingBox(selections, WSM.Utils.CoordSystem.HCS);
     
@@ -42,7 +42,7 @@ FormIt.Commands.RegisterJSCommand("FlipAlongPlugin.ButtonY");
 
 FlipAlongPlugin.ButtonZ = function()
 {
-    console.log("FlipAlongPlugin.ButtonZ clicked!!");
+    //console.log("FlipAlongPlugin.ButtonZ clicked!!");
     var selections = FormIt.Selection.GetSelections();
     var AABB = WSM.Utils.GetAxisAlignedBoundingBox(selections, WSM.Utils.CoordSystem.HCS);
     
