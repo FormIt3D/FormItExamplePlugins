@@ -9,6 +9,7 @@ FormIt.InstallPlugin("http://localhost:8000/ModelessDialog");
 FormIt.InstallPlugin("http://localhost:8000/ModalDialog");
 FormIt.InstallPlugin("http://localhost:8000/Messages");
 FormIt.InstallPlugin("http://localhost:8000/DialogFromToolbar");
+FormIt.InstallPlugin("http://localhost:8000/FlipAlong");
 
 To run from web, do-
 FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/Toolbar1");
@@ -18,4 +19,5 @@ FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/ModelessDialog"
 FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/ModalDialog");
 FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/Messages");
 FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/DialogFromToolbar");
+FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/FlipAlong");
 
