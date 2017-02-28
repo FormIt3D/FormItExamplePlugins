@@ -1,9 +1,9 @@
 var JeffsAutodeskPlugins = {};
 JeffsAutodeskPlugins.PopEditContext = function()
 {
-    var path = FormIt.GetEditInContextPath();
+    var path = FormIt.GroupEdit.GetInContextEditingPath();
     path.ids.pop();
     console.log(JSON.stringify(path.ids));
-    FormIt.EditInContext(path);
+    FormIt.GroupEdit.SetInContextEditingPath(path);
 }
 FormIt.Commands.RegisterJSCommand("JeffsAutodeskPlugins.PopEditContext");

@@ -7,7 +7,7 @@ FlipAlongPlugin.ButtonX = function()
     var AABB = WSM.Utils.GetAxisAlignedBoundingBox(selections, WSM.Utils.CoordSystem.HCS);
     //console.log("AABB: " + JSON.stringify(AABB));
     
-    var histID = FormIt.GetEditingHistoryID();
+    var histID = FormIt.Model.GetHistoryID();
     //console.log("histID: " + histID);
     var pt1 = WSM.Geom.Point3d(AABB.upper.x, AABB.lower.y, AABB.lower.z); 
     var pt2 = WSM.Geom.Point3d(AABB.upper.x, AABB.upper.y, AABB.lower.z); 
@@ -27,7 +27,7 @@ FlipAlongPlugin.ButtonY = function()
     var selections = FormIt.Selection.GetSelections();
     var AABB = WSM.Utils.GetAxisAlignedBoundingBox(selections, WSM.Utils.CoordSystem.HCS);
     
-    var histID = FormIt.GetEditingHistoryID();
+    var histID = FormIt.Model.GetHistoryID();
     var pt1 = WSM.Geom.Point3d(AABB.lower.x, AABB.upper.y, AABB.lower.z); 
     var pt2 = WSM.Geom.Point3d(AABB.upper.x, AABB.upper.y, AABB.lower.z); 
     var pt3 = WSM.Geom.Point3d(AABB.upper.x, AABB.upper.y, AABB.upper.z); 
@@ -46,7 +46,7 @@ FlipAlongPlugin.ButtonZ = function()
     var selections = FormIt.Selection.GetSelections();
     var AABB = WSM.Utils.GetAxisAlignedBoundingBox(selections, WSM.Utils.CoordSystem.HCS);
     
-    var histID = FormIt.GetEditingHistoryID();
+    var histID = FormIt.Model.GetHistoryID();
     var pt1 = WSM.Geom.Point3d(AABB.lower.x, AABB.lower.y, AABB.upper.z); 
     var pt2 = WSM.Geom.Point3d(AABB.upper.x, AABB.lower.y, AABB.upper.z); 
     var pt3 = WSM.Geom.Point3d(AABB.upper.x, AABB.upper.y, AABB.upper.z); 

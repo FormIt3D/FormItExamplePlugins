@@ -6,7 +6,7 @@
 // The following code runs in FormIt.
 function GetMessages()
 {
-    return FormIt.Messages.GetMessages();
+    return FormIt.Messaging.GetMessages();
 }
 
 function MessagesPluginSubscribe(msg)
@@ -18,7 +18,7 @@ function MessagesPluginSubscribe(msg)
 
     if(!(MessagesPluginListener.hasOwnProperty("listener")))
     {
-        MessagesPluginListener.listener = FormIt.NewMessageListener();
+        MessagesPluginListener.listener = FormIt.Messaging.NewMessageListener();
         console.log("Creating MessagesPluginListener.listener.");
     }
 
