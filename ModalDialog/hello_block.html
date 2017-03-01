@@ -13,7 +13,6 @@
     document.addEventListener("DOMContentLoaded", function () {
         new QWebChannel(qt.webChannelTransport, function (channel) {
             window.NewFormItInterface = channel.objects.FormItInterface;
-            window.PluginDialog = channel.objects.PluginDialog;
         });
     });
 </script>
@@ -25,8 +24,7 @@
 Width <input type=number name=width value = 10.0><br>
 Length <input type=number name=length value = 10.0><br>
 Height <input type=number name=height value = 10.0><br>
-<input type=button value="OK" onClick="Submit();">
-<input type=button value="Cancel" onClick="window.PluginDialog.Close();">
+<input type=button value="Create Block" onClick="Submit();">
 </form>
 
 </body>

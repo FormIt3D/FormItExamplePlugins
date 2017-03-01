@@ -6,7 +6,6 @@ function CreateBlock(args)
     var pt1 = WSM.Geom.Point3d(0.0, 0.0, 0.0);
     var pt2 = WSM.Geom.Point3d(args.w, args.l, args.h);
     var blockID = WSM.APICreateBlock(histID, pt1, pt2);
-    return blockID;
 }
 
 // Submit runs from the HTML page.
@@ -17,12 +16,7 @@ function Submit()
     "l": parseFloat(document.a.length.value),
     "h": parseFloat(document.a.height.value)
     }
-    window.NewFormItInterface.ConsoleLog("CreateBlock");
-    var argsString = JSON.stringify(args);
-    window.NewFormItInterface.ConsoleLog("args: " + argsString);
-    window.NewFormItInterface.CallMethod("CreateBlock", argsString, function(result)
-    {
-        window.NewFormItInterface.ConsoleLog("CreateBlock Result: " + result);
-    });
-    window.PluginDialog.Close();
+    console.log("CreateBlock");
+    console.log("args:" + args);
+    window.NewFormItInterface.CallMethod("CreateBlock", JSON.stringify(args));
 }
