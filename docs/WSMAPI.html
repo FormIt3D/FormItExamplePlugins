@@ -24,17 +24,17 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Jeff Hauswirth</o:Author>
   <o:LastAuthor>Jeff Hauswirth</o:LastAuthor>
-  <o:Revision>4</o:Revision>
-  <o:TotalTime>5</o:TotalTime>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>8</o:TotalTime>
   <o:Created>2017-04-17T14:04:00Z</o:Created>
-  <o:LastSaved>2017-04-17T15:24:00Z</o:LastSaved>
+  <o:LastSaved>2017-04-17T16:12:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>3551</o:Words>
-  <o:Characters>20243</o:Characters>
+  <o:Words>3316</o:Words>
+  <o:Characters>18902</o:Characters>
   <o:Company>Autodesk, Inc.</o:Company>
-  <o:Lines>168</o:Lines>
-  <o:Paragraphs>47</o:Paragraphs>
-  <o:CharactersWithSpaces>23747</o:CharactersWithSpaces>
+  <o:Lines>157</o:Lines>
+  <o:Paragraphs>44</o:Paragraphs>
+  <o:CharactersWithSpaces>22174</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -46,8 +46,6 @@ w\:* {behavior:url(#default#VML);}
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:Zoom>84</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -62,6 +60,7 @@ w\:* {behavior:url(#default#VML);}
    <w:BreakWrappedTables/>
    <w:SplitPgBreakAndParaMark/>
   </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
   <m:mathPr>
    <m:mathFont m:val="Cambria Math"/>
    <m:brkBin m:val="before"/>
@@ -656,10 +655,10 @@ w\:* {behavior:url(#default#VML);}
  @font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
+	mso-font-charset:1;
 	mso-generic-font-family:roman;
 	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+	mso-font-signature:0 0 0 0 0 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -703,7 +702,8 @@ h2
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
 a:link, span.MsoHyperlink
-	{mso-style-priority:99;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
 	color:blue;
 	text-decoration:underline;
 	text-underline:single;}
@@ -713,18 +713,6 @@ a:visited, span.MsoHyperlinkFollowed
 	color:purple;
 	text-decoration:underline;
 	text-underline:single;}
-p.msonormal0, li.msonormal0, div.msonormal0
-	{mso-style-name:msonormal;
-	mso-style-unhide:no;
-	mso-margin-top-alt:auto;
-	margin-right:0in;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
 span.Heading1Char
 	{mso-style-name:"Heading 1 Char";
 	mso-style-priority:9;
@@ -766,12 +754,18 @@ span.Heading2Char
 	color:#2E74B5;
 	mso-themecolor:accent1;
 	mso-themeshade:191;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -830,1236 +824,937 @@ src=construction.jpg alt="Under Construction"></span><span style='mso-fareast-fo
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>The
 WSM API documentation is still under development.<span
 style='mso-spacerun:yes'>  </span>But the following is the list of API
-functions that are exposed.<span style='mso-spacerun:yes'>  </span>If you want more
-information on specific functions, e-mail <a
+functions that are exposed.<span style='mso-spacerun:yes'>  </span>If you want
+more information on specific functions, e-mail <a
 href="mailto:jeff.hauswirth@autodesk.com">jeff.hauswirth@autodesk.com</a> and
 he can send more information.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><br>
-</span><span style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'><span
-style='mso-spacerun:yes'>    </span>// WSM API<o:p></o:p></span></p>
+</span><span style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>//
+WSM API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>   
-</span>REGISTERNAMESPACE(&quot;WSM&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;WSM&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIAddFaceComponentToBody</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>, <span class=SpellE>nBodyID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIAddFaceComponentToBody,
+&quot;nHistoryID, nFaceID, nBodyID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIAddInstancesToGroup</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nGroupID</span>, <span class=SpellE>aTransforms</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIAddInstancesToGroup,
+&quot;nHistoryID, nGroupID, aTransforms&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIAddObjectsLayers</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aLayerIDs</span>, <span class=SpellE>aObjectIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIAddObjectsLayers, &quot;nHistoryID,
+aLayerIDs, aObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'>   </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIAddRemoveObjectsLayers</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aAddLayerIDs</span>, <span class=SpellE>aRemoveLayerIDs</span>,
-<span class=SpellE>aObjectIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIAddRemoveObjectsLayers,
+&quot;nHistoryID, aAddLayerIDs, aRemoveLayerIDs, aObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIBlend</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>dRadius</span>, <span class=SpellE>aPathIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIBlend, &quot;nHistoryID, dRadius,
+aPathIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICanRedoHistoryReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICanRedoHistoryReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICanRedoHistoryToDeltaReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICanRedoHistoryToDeltaReadOnly,
+&quot;nHistoryID, nDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICanUndoHistoryReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICanUndoHistoryReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICanUndoHistoryToDeltaReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICanUndoHistoryToDeltaReadOnly,
+&quot;nHistoryID, nDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIChangeHistoryID</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIChangeHistoryID,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICheckHistoryValidityReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICheckHistoryValidityReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICheckValidityReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICheckValidityReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICleanModel</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>dEdgeTol</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICleanModel, &quot;nHistoryID,
+dEdgeTol&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIClearResults</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIClearResults, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIComputeAreaReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>, <span class=SpellE>transf</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIComputeAreaReadOnly,
+&quot;nHistoryID, nObjectID, transf&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIComputeVolumeReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>, <span class=SpellE>transf</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIComputeVolumeReadOnly,
+&quot;nHistoryID, nObjectID, transf&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIConnectPoint3ds, &quot;<span class=SpellE>nHistoryID</span>, point3d1,
-point3d2&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIConnectPoint3ds, &quot;nHistoryID,
+point3d1, point3d2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIConnectVertexAndPoint3d, &quot;<span class=SpellE>nHistoryID</span>, <span
-class=SpellE>nVertexID</span>, point3d&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIConnectVertexAndPoint3d,
+&quot;nHistoryID, nVertexID, point3d&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIConnectVertices</span>, &quot;<span class=SpellE>nHistoryID</span>,
+"Times New Roman"'>REGISTERMETHOD(WSM, APIConnectVertices, &quot;nHistoryID,
 nVertexID1, nVertexID2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICopyObject</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nToHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICopyObject, &quot;nHistoryID,
+nToHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICopyOrSketchAndTransformObjects</span>, &quot;<span
-class=SpellE>nFromHistoryID</span>, <span class=SpellE>nToHistoryID</span>, <span
-class=SpellE>aFromObjectIDs</span>, transform, <span class=SpellE>nNumCopies</span>,
-<span class=SpellE>bGroupBodies</span>, groupTransf3d&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICopyOrSketchAndTransformObjects,
+&quot;nFromHistoryID, nToHistoryID, aFromObjectIDs, transform, nNumCopies,
+bGroupBodies, groupTransf3d&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICover</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aEdgeIDs</span>, <span class=SpellE>bMerge</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICover, &quot;nHistoryID, aEdgeIDs,
+bMerge&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateBlock</span>, &quot;<span class=SpellE>nHistoryID</span>
-, point3d1 ,point3d2&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateBlock, &quot;nHistoryID ,
+point3d1 ,point3d2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateCircleOrArc</span>, &quot;<span class=SpellE>nHistoryID</span>
-, radius, <span class=SpellE>posCenter</span>, <span class=SpellE>xAxis</span>,
-<span class=SpellE>yAxis</span>, <span class=SpellE>dStartParam</span>, <span
-class=SpellE>dEndParam</span>, <span class=SpellE>accuracyORcount</span>, <span
-class=SpellE>bReadOnly</span>, trans, <span class=SpellE>nMinimumNumberOfFacets</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateCircleOrArc, &quot;nHistoryID ,
+radius, posCenter, xAxis, yAxis, dStartParam, dEndParam, accuracyORcount,
+bReadOnly, trans, nMinimumNumberOfFacets&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateCircleOrArcFromPoints</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>arcStartPos</span>, <span
-class=SpellE>arcEndPos</span>, <span class=SpellE>thirdPoint</span>, <span
-class=SpellE>accuracyORcount</span>, <span class=SpellE>bReadOnly</span>,
-trans, <span class=SpellE>nMinimumNumberOfFacets</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateCircleOrArcFromPoints,
+&quot;nHistoryID, arcStartPos, arcEndPos, thirdPoint, accuracyORcount,
+bReadOnly, trans, nMinimumNumberOfFacets&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateClampedHermiteSplineDataReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>aControlPoints</span>, <span
-class=SpellE>startTangent</span>, <span class=SpellE>endTangent</span>, <span
-class=SpellE>bClosed</span>, <span class=SpellE>aVertexIDsOnSpline</span>, <span
-class=SpellE>nNumberOfNewContolPoints</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM,
+APICreateClampedHermiteSplineDataReadOnly, &quot;nHistoryID, aControlPoints,
+startTangent, endTangent, bClosed, aVertexIDsOnSpline,
+nNumberOfNewContolPoints&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateCone</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nRadius</span>, <span class=SpellE>nHeight</span>, <span
-class=SpellE>centerPt</span>, <span class=SpellE>nAccuracyORcount</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateCone, &quot;nHistoryID,
+nRadius, nHeight, centerPt, nAccuracyORcount&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateCylinder</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aPosCenter</span>, <span class=SpellE>aRadius</span>, <span
-class=SpellE>aHeight</span>, <span class=SpellE>aAccuracyORcount</span>, <span
-class=SpellE>aAxis</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateCylinder, &quot;nHistoryID,
+aPosCenter, aRadius, aHeight, aAccuracyORcount, aAxis&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateEdgesFromData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aLayers</span>, <span class=SpellE>aEdges</span>, <span
-class=SpellE>aCurves</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateEdgesFromData,
+&quot;nHistoryID, aLayers, aEdges, aCurves&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateEmptyBody</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateEmptyBody,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateExtrusion</span>, &quot;<span class=SpellE>nHistoryID</span>,
-aPoint3ds, <span class=SpellE>dist</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateExtrusion, &quot;nHistoryID,
+aPoint3ds, dist&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateGeometryFromData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aTextures</span>, <span class=SpellE>aMaterials</span>, <span
-class=SpellE>aLayers</span>, <span class=SpellE>aInstances</span>, <span
-class=SpellE>aFaces</span>, <span class=SpellE>aEdges</span>, <span
-class=SpellE>aCurves</span>, <span class=SpellE>aImages</span>, <span
-class=SpellE>aGroupName</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateGeometryFromData,
+&quot;nHistoryID, aTextures, aMaterials, aLayers, aInstances, aFaces, aEdges,
+aCurves, aImages, aGroupName&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateGroup</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>, <span class=SpellE>aInstanceTransforms</span>,
-<span class=SpellE>nReferencedHistoryID</span>, <span class=SpellE>transGeometry</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateGroup, &quot;nHistoryID,
+aObjectIDs, aInstanceTransforms, nReferencedHistoryID, transGeometry&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateHemisphere</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nRadius</span>, <span class=SpellE>centerPt</span>, <span
-class=SpellE>nAccuracyORcount</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateHemisphere, &quot;nHistoryID,
+nRadius, centerPt, nAccuracyORcount&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateHermiteSpline</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aControlPoints</span>, <span class=SpellE>bClosed</span>, <span
-class=SpellE>startTangent</span>, <span class=SpellE>endTangent</span>, <span
-class=SpellE>bReadOnly</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateHermiteSpline,
+&quot;nHistoryID, aControlPoints, bClosed, startTangent, endTangent,
+bReadOnly&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateHistory</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>bNonTemporary</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateHistory, &quot;nHistoryID,
+bNonTemporary&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateImageObject</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>sName</span>, <span class=SpellE>nTextureID</span>, <span
-class=SpellE>fAlphaValue</span>, <span class=SpellE>bFeaturesVisible</span>, <span
-class=SpellE>aCornersVector</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateImageObject, &quot;nHistoryID,
+sName, nTextureID, fAlphaValue, bFeaturesVisible, aCornersVector&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateImageObjectWithTexture</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>sName</span>, <span
-class=SpellE>fAlphaValue</span>, <span class=SpellE>bFeaturesVisible</span>, <span
-class=SpellE>aCornersVector</span>, <span class=SpellE>aBitmapData</span>, <span
-class=SpellE>sTextureName</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateImageObjectWithTexture,
+&quot;nHistoryID, sName, fAlphaValue, bFeaturesVisible, aCornersVector,
+aBitmapData, sTextureName&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateLayer</span>, &quot;<span class=SpellE>nHistoryID</span>,
-name, <span class=SpellE>bDisplayed</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateLayer, &quot;nHistoryID, name,
+bDisplayed&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateLevelObjects</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aLevelsData</span>, <span class=SpellE>aObjectIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateLevelObjects, &quot;nHistoryID,
+aLevelsData, aObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateMaterial</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nColor</span>, <span class=SpellE>dHorizonalScale</span>, <span
-class=SpellE>dVerticalScale</span>, <span class=SpellE>nTextureID</span>, <span
-class=SpellE>sMaterialName</span>, <span class=SpellE>sMaterialIdentifier</span>,
-<span class=SpellE>aAdditionalRenderData</span>, <span class=SpellE>aAdditionalTextures</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateMaterial, &quot;nHistoryID,
+nColor, dHorizonalScale, dVerticalScale, nTextureID, sMaterialName, sMaterialIdentifier,
+aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateMaterialWithTexture</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nColor</span>, <span
-class=SpellE>dHorizonalScale</span>, <span class=SpellE>dVerticalScale</span>, <span
-class=SpellE>aBitmapData</span>, <span class=SpellE>bUseBitmapAlpha</span>, <span
-class=SpellE>sMaterialName</span>, <span class=SpellE>sMaterialIdentifier</span>,
-<span class=SpellE>aAdditionalRenderData</span>, <span class=SpellE>aAdditionalTextures</span>,
-<span class=SpellE>sTextureName</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateMaterialWithTexture,
+&quot;nHistoryID, nColor, dHorizonalScale, dVerticalScale, aBitmapData,
+bUseBitmapAlpha, sMaterialName, sMaterialIdentifier, aAdditionalRenderData, aAdditionalTextures,
+sTextureName&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreatePolyline</span>, &quot;<span class=SpellE>nHistoryID</span>,
-aPoint3ds, <span class=SpellE>bForceClosed</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreatePolyline, &quot;nHistoryID,
+aPoint3ds, bForceClosed&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateRectangle</span>, &quot;<span class=SpellE>nHistoryID</span>,
-firstEdgePt1, firstEdgePt2, <span class=SpellE>projectionPt</span>, <span
-class=SpellE>bReadOnly</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateRectangle, &quot;nHistoryID,
+firstEdgePt1, firstEdgePt2, projectionPt, bReadOnly&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateSatelliteImageObject</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>sName</span>, <span
-class=SpellE>nTextureID</span>, <span class=SpellE>fAlphaValue</span>, <span
-class=SpellE>bFeaturesVisible</span>, <span class=SpellE>aCornersVector</span>,
-coordinates, <span class=SpellE>coordinatesSpan</span>, <span class=SpellE>aPixelDimensionsVector</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateSatelliteImageObject,
+&quot;nHistoryID, sName, nTextureID, fAlphaValue, bFeaturesVisible,
+aCornersVector, coordinates, coordinatesSpan, aPixelDimensionsVector&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateSeparateHistoriesForInstances</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>aInstanceIDs</span>, <span
-class=SpellE>bNewGroupPerInstance</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateSeparateHistoriesForInstances,
+&quot;nHistoryID, aInstanceIDs, bNewGroupPerInstance&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateStringAttribute</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>sKey</span>, <span class=SpellE>sValue</span>, <span
-class=SpellE>aObjIDs</span>, <span class=SpellE>nCopyBehavior</span>, <span
-class=SpellE>bIsSharedOnSplit</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateStringAttribute,
+&quot;nHistoryID, sKey, sValue, aObjIDs, nCopyBehavior,
+bIsSharedOnSplit&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetStringAttributeKeyValueReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nStringAttributeID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetStringAttributeKeyValueReadOnly,
+&quot;nHistoryID, nStringAttributeID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetStringAttributesByKeyReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>, <span
-class=SpellE>sKey</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetStringAttributesByKeyReadOnly,
+&quot;nHistoryID, nObjectID, sKey&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APICreateTexture</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aBitmapData</span>, <span class=SpellE>bUseBitmapAlpha</span>,
-<span class=SpellE>sTextureName</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APICreateTexture, &quot;nHistoryID,
+aBitmapData, bUseBitmapAlpha, sTextureName&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDebugObjectReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDebugObjectReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDeleteAllHistories</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteAllHistories, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDeleteAllRedoHistory</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>bReuseDiscardedObjectIDs</span>&quot;);<span
-style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteAllRedoHistory,
+&quot;nHistoryID, bReuseDiscardedObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDeleteHistory</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteHistory,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDeleteObject</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteObject, &quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDeleteObjects</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteObjects, &quot;nHistoryID,
+aObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDisableJournaling</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDisableJournaling, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDragFace</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>, <span class=SpellE>nDistance</span>, <span
-class=SpellE>bMerge</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDragFace, &quot;nHistoryID,
+nObjectID, nDistance, bMerge&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDragFaces</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aaFaceIDs</span>, <span class=SpellE>aDists</span>, <span
-class=SpellE>aDirs</span>, <span class=SpellE>bMerge</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDragFaces, &quot;nHistoryID,
+aaFaceIDs, aDists, aDirs, bMerge&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDumpResults</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDumpResults, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIEnableJournaling</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>sFilePath</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIEnableJournaling, &quot;nHistoryID,
+sFilePath&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIEnableJournalingTypes</span>, &quot;<span class=SpellE>aTypes</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIEnableJournalingTypes,
+&quot;aTypes&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIExtrudeEdges</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aProfileIDs</span>, t&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIExtrudeEdges, &quot;nHistoryID,
+aProfileIDs, t&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIFaceContainsPointReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>,
-point&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIFaceContainsPointReadOnly,
+&quot;nHistoryID, nFaceID, point&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIFlattenGroupsOrInstances</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>aGroupOrInstanceIDs</span>, <span
-class=SpellE>bRecursive</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIFlattenGroupsOrInstances,
+&quot;nHistoryID, aGroupOrInstanceIDs, bRecursive&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetActiveHistory</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetActiveHistory, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIGetAllAggregateTransf3dsReadOnly, &quot;<span class=SpellE>nReferencedHistoryID</span>,
-<span class=SpellE>nTopMostHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllAggregateTransf3dsReadOnly,
+&quot;nReferencedHistoryID, nTopMostHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetAllConnectedNonOwnedReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllConnectedNonOwnedReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetAllHistoriesReadOnly</span>, &quot;<span class=SpellE>bWithTemporary</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllHistoriesReadOnly,
+&quot;bWithTemporary&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetAllHistoryDeltasReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllHistoryDeltasReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetAllNonOwnedReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllNonOwnedReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetAllObjectsByTypeReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nType</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllObjectsByTypeReadOnly,
+&quot;nHistoryID, nType&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetAllReachableHistoriesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>bGoUp</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllReachableHistoriesReadOnly,
+&quot;nHistoryID, bGoUp&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetBodyEdgesReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nBodyID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetBodyEdgesReadOnly,
+&quot;nHistoryID, nBodyID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetBodyFacesReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetBodyFacesReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetBoxReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot; );<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetBoxReadOnly, &quot;nHistoryID,
+nObjectID&quot; );<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetCoedgeDirectionReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetCoedgeDirectionReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetConnectedEdgesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nEdgeID</span>, <span
-class=SpellE>bBreakOnNonSmooth</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetConnectedEdgesReadOnly,
+&quot;nHistoryID, nEdgeID, bBreakOnNonSmooth&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetConvexityConnectedComponentReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nLoopOrFaceID</span>, <span
-class=SpellE>nConvexity</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetConvexityConnectedComponentReadOnly,
+&quot;nHistoryID, nLoopOrFaceID, nConvexity&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetConvexityReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeOrLoopID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetConvexityReadOnly,
+&quot;nHistoryID, nEdgeOrLoopID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly</span>,
-&quot;<span class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectType</span>,
-<span class=SpellE>bForUndo</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM,
+APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly, &quot;nHistoryID,
+nObjectType, bForUndo&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly</span>,
-&quot;<span class=SpellE>nHistoryID</span>, <span class=SpellE>nStartDelta</span>,
-<span class=SpellE>nEndDelta</span>, <span class=SpellE>aObjectTypes</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM,
+APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly, &quot;nHistoryID,
+nStartDelta, nEndDelta, aObjectTypes&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetDynamoModelInformationReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetDynamoModelInformationReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetEdgeOrVertexMarkedSmoothReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetEdgeOrVertexMarkedSmoothReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'>   </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetEdgePointsReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetEdgePointsReadOnly,
+&quot;nHistoryID, nEdgeID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetEdgeStyleReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetEdgeStyleReadOnly,
+&quot;nHistoryID, nEdgeID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetEnabledJournalingTypesReadOnly</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetEnabledJournalingTypesReadOnly,
+&quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetFaceBacksideMaterialReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFaceBacksideMaterialReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIGetFaceCentroidPoint3dReadOnly, &quot;<span class=SpellE>nHistoryID</span>, <span
-class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFaceCentroidPoint3dReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetFaceConnectedComponentReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>, <span
-class=SpellE>bUseVertices</span>, <span class=SpellE>bSmooth</span>, <span
-class=SpellE>aConnectedFaces</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFaceConnectedComponentReadOnly,
+&quot;nHistoryID, nFaceID, bUseVertices, bSmooth, aConnectedFaces&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetFaceFacetsReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFaceFacetsReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetFacePlaneReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFacePlaneReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetFaceVariantReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFaceVariantReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetFaceVertexNormalsReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>, <span
-class=SpellE>aVertexIDsAndNormals</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetFaceVertexNormalsReadOnly,
+&quot;nHistoryID, nFaceID, aVertexIDsAndNormals&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetGroupReferencedHistoryReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nGroupID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetGroupReferencedHistoryReadOnly,
+&quot;nHistoryID, nGroupID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetHistoryDeltasReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nStartDeltaID</span>, <span
-class=SpellE>nEndDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetHistoryDeltasReadOnly,
+&quot;nHistoryID, nStartDeltaID, nEndDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetHistoryReferencingGroupsReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetHistoryReferencingGroupsReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetIdOfActiveDeltaReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nDeltaOffset</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetIdOfActiveDeltaReadOnly,
+&quot;nHistoryID, nDeltaOffset&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetImageDataReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nImageID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetImageDataReadOnly,
+&quot;nHistoryID, nImageID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIGetInstanceTransf3dReadOnly, &quot;<span class=SpellE>nHistoryID</span>, <span
-class=SpellE>nInstanceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetInstanceTransf3dReadOnly,
+&quot;nHistoryID, nInstanceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetInvalidID</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetInvalidID, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetLayerDataReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nLayerID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetLayerDataReadOnly,
+&quot;nHistoryID, nLayerID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetLevelDataReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nLevelID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetLevelDataReadOnly,
+&quot;nHistoryID, nLevelID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetLocalCoordinateSystemReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetLocalCoordinateSystemReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetMaterialDataReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nMaterialID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetMaterialDataReadOnly,
+&quot;nHistoryID, nMaterialID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetMemorySizeReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>bCollapsedHistoryWithLiveObjsOnly</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetMemorySizeReadOnly,
+&quot;nHistoryID, bCollapsedHistoryWithLiveObjsOnly&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectAttributesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectAttributesReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectLayersReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectLayersReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectLevelsReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectLevelsReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectMaterialReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectMaterialReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectNameReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectNameReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectPropertiesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>, <span
-class=SpellE>sObjectName</span>, <span class=SpellE>bReportAreaByLevel</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectPropertiesReadOnly, &quot;nHistoryID,
+nObjectID, sObjectName, bReportAreaByLevel&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectTextureCoordinatesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectTextureCoordinatesReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectTypeReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectTypeReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetObjectsByTypeReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>, <span
-class=SpellE>nType</span>, <span class=SpellE>bUpstream</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectsByTypeReadOnly,
+&quot;nHistoryID, nObjectID, nType, bUpstream&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetPointsFromObjectIDsReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>aIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetPointsFromObjectIDsReadOnly,
+&quot;nHistoryID, aIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetRenderableFaceReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>, <span
-class=SpellE>bCalculateTexCoords</span>, <span class=SpellE>bBackSide</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetRenderableFaceReadOnly,
+&quot;nHistoryID, nFaceID, bCalculateTexCoords, bBackSide&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetResultsCount</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetResultsCount, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetRevitFamilyInformationReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetRevitFamilyInformationReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetSatelliteDataReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nImageID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetSatelliteDataReadOnly,
+&quot;nHistoryID, nImageID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetTextureDataReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nTextureID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetTextureDataReadOnly, &quot;nHistoryID,
+nTextureID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetTopLevelOwnersReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetTopLevelOwnersReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIGetVersionReadOnly</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetVersionReadOnly, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIGetVertexPoint3dReadOnly, &quot;<span class=SpellE>nHistoryID</span>, <span
-class=SpellE>nVertexID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetVertexPoint3dReadOnly,
+&quot;nHistoryID, nVertexID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIImprint</span>, &quot;<span class=SpellE>nHistoryID</span>,
-nObjectID1, nObjectID2, <span class=SpellE>bChangeBoth</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIImprint, &quot;nHistoryID,
+nObjectID1, nObjectID2, bChangeBoth&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIImprintWithPlane</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>, plane&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIImprintWithPlane, &quot;nHistoryID,
+nObjectID, plane&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIntersectsNegativeSideOfPlanesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>aPlanes</span>, <span
-class=SpellE>bVertices</span>, <span class=SpellE>bEdges</span>, <span
-class=SpellE>bFaces</span>, <span class=SpellE>bStrict</span>, <span
-class=SpellE>dTol</span>, line3dPickRay, <span class=SpellE>bSearchInGroups</span>,
-<span class=SpellE>bPickInstances</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM,
+APIIntersectsNegativeSideOfPlanesReadOnly, &quot;nHistoryID, aPlanes,
+bVertices, bEdges, bFaces, bStrict, dTol, line3dPickRay, bSearchInGroups,
+bPickInstances&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsEdgeManifoldReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsEdgeManifoldReadOnly,
+&quot;nHistoryID, nEdgeID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsEdgeMergeableReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeID</span>, <span class=SpellE>bUseMaterial</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsEdgeMergeableReadOnly,
+&quot;nHistoryID, nEdgeID, bUseMaterial&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsEdgeOnCircleReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsEdgeOnCircleReadOnly,
+&quot;nHistoryID, nEdgeID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIEditCircleEdges</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeIDs</span>, radius, center, normal, <span class=SpellE>xaxis</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIEditCircleEdges, &quot;nHistoryID,
+nEdgeIDs, radius, center, normal, xaxis&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsEdgeOnSplineReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsEdgeOnSplineReadOnly,
+&quot;nHistoryID, nEdgeID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIEditSplineEdges</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeIDs</span>, <span class=SpellE>aControlPoints</span>, <span
-class=SpellE>bClosed</span>, <span class=SpellE>startTangent</span>, <span
-class=SpellE>endTangent</span>&quot; );<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIEditSplineEdges, &quot;nHistoryID,
+nEdgeIDs, aControlPoints, bClosed, startTangent, endTangent&quot; );<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsEdgeSilhouetteReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nEdgeID</span>, <span
-class=SpellE>cameraPos</span>, <span class=SpellE>cameraDir</span>, <span
-class=SpellE>bPerspectiveView</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsEdgeSilhouetteReadOnly,
+&quot;nHistoryID, nEdgeID, cameraPos, cameraDir, bPerspectiveView&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDetectSilhouettesReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nEdgeIDs</span>, <span
-class=SpellE>cameraPos</span>, <span class=SpellE>cameraDir</span>, <span
-class=SpellE>bPerspectiveView</span>, <span class=SpellE>bSmoothOnly</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDetectSilhouettesReadOnly,
+&quot;nHistoryID, nEdgeIDs, cameraPos, cameraDir, bPerspectiveView,
+bSmoothOnly&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIDetectFreeEdgesReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDetectFreeEdgesReadOnly,
+&quot;nHistoryID, nEdgeIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsExactMatchReadOnly</span>, &quot;nHistoryID1,
-nHistoryID2, nObjectID1, nObjectID2&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsExactMatchReadOnly,
+&quot;nHistoryID1, nHistoryID2, nObjectID1, nObjectID2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsFaceOnBlendReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsFaceOnBlendReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsFaceOnCylinderReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsFaceOnCylinderReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIEditCylinderFaces</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceIDs</span>, radius, center, normal, <span class=SpellE>xaxis</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIEditCylinderFaces, &quot;nHistoryID,
+nFaceIDs, radius, center, normal, xaxis&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsFaceOnExtrudeReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsFaceOnExtrudeReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsFaceOnSphereReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsFaceOnSphereReadOnly,
+&quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIEditSphereFaces</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceIDs</span>, radius, center, normal, <span class=SpellE>xaxis</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIEditSphereFaces, &quot;nHistoryID,
+nFaceIDs, radius, center, normal, xaxis&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsHistoryNonTemporaryReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsHistoryNonTemporaryReadOnly,
+&quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsJournalingReadOnly</span>, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsJournalingReadOnly, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsNonOwnedReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsNonOwnedReadOnly, &quot;nHistoryID,
+nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIIsObjectLiveReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsObjectLiveReadOnly, &quot;nHistoryID,
+nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>   </span><span
-style='mso-spacerun:yes'> </span><span class=GramE>REGISTERMETHOD(</span>WSM, <span
-class=SpellE>APILoadAXMFile</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>sFilePath</span>, <span class=SpellE>isImport</span>, <span
-class=SpellE>logOutputPath</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadAXMFile, &quot;nHistoryID,
+sFilePath, isImport, logOutputPath&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoadDeltaFromBinaryString</span>, &quot;<span
-class=SpellE>nHistoryID</span>, base64Str, <span class=SpellE>nDeltaID</span>,
-base64encoded&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadDeltaFromBinaryString,
+&quot;nHistoryID, base64Str, nDeltaID, base64encoded&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoadDeltaFromBinaryFile</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>sFilePath</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadDeltaFromBinaryFile,
+&quot;nHistoryID, sFilePath&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoadFromFacets</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>facetsData</span>, <span class=SpellE>nOptions</span>, <span
-class=SpellE>dMaxDistanceFromOrigin</span>, <span class=SpellE>dRemoveDuplicateTol</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadFromFacets, &quot;nHistoryID,
+facetsData, nOptions, dMaxDistanceFromOrigin, dRemoveDuplicateTol&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoadFromFile</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>sFilePath</span>, <span class=SpellE>eFileType</span>, <span
-class=SpellE>nOptions</span>, <span class=SpellE>dMaxDistanceFromOrigin</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadFromFile, &quot;nHistoryID,
+sFilePath, eFileType, nOptions, dMaxDistanceFromOrigin&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoadFromString</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>saveStringName</span>, <span class=SpellE>eFileType</span>, <span
-class=SpellE>nOptions</span>, <span class=SpellE>dMaxDistanceFromOrigin</span>,
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadFromString, &quot;nHistoryID,
+saveStringName, eFileType, nOptions, dMaxDistanceFromOrigin,
 bBase64Encoded&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoadHistoryFromBinaryString</span>, &quot;<span
-class=SpellE>nHistoryID</span>, base64Str, base64encoded&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoadHistoryFromBinaryString,
+&quot;nHistoryID, base64Str, base64encoded&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APILoft</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
-class=SpellE>aaProfileIDs</span>, <span class=SpellE>bDeleteInteriorProfileFaces</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APILoft, &quot;nHistoryID, aaProfileIDs,
+bDeleteInteriorProfileFaces&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIMergeBody</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nBodyID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIMergeBody, &quot;nHistoryID,
+nBodyID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIMergeDeltas</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nStartDeltaID</span>, <span class=SpellE>nEndDeltaID</span>,
-<span class=SpellE>bReuseDiscardedObjectIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIMergeDeltas, &quot;nHistoryID,
+nStartDeltaID, nEndDeltaID, bReuseDiscardedObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIMoveImage</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nImageID</span>, <span class=SpellE>nShift</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIMoveImage, &quot;nHistoryID,
+nImageID, nShift&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIMoveObject</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>objectID</span>, displacement&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIMoveObject, &quot;nHistoryID,
+objectID, displacement&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIMoveObjects</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>objectIDs</span>, transf3d&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIMoveObjects, &quot;nHistoryID,
+objectIDs, transf3d&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIMoveVertices</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aVertexIDs</span>, <span class=SpellE>aNewVertexPositions</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIMoveVertices, &quot;nHistoryID,
+aVertexIDs, aNewVertexPositions&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-APIOffset3d, &quot;<span class=SpellE>nHistoryID</span>, <span class=SpellE>nObjectID</span>,
-<span class=SpellE>dDistance</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIOffset3d, &quot;nHistoryID,
+nObjectID, dDistance&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIOffsetEdges</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nEdgeIDs</span>, <span class=SpellE>dOffsetDistance</span>,
-trans, <span class=SpellE>bReadOnly</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIOffsetEdges, &quot;nHistoryID,
+nEdgeIDs, dOffsetDistance, trans, bReadOnly&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIOffsetFace</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>, <span class=SpellE>dOffsetDistance</span>, <span
-class=SpellE>bOffsetHolesToo</span>, trans, <span class=SpellE>bReadOnly</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIOffsetFace, &quot;nHistoryID,
+nFaceID, dOffsetDistance, bOffsetHolesToo, trans, bReadOnly&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRayFireReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-line3dPickRay, <span class=SpellE>dRayRadius</span>, <span class=SpellE>bVertices</span>,
-<span class=SpellE>bEdges</span>, <span class=SpellE>bFaces</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRayFireReadOnly, &quot;nHistoryID,
+line3dPickRay, dRayRadius, bVertices, bEdges, bFaces&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRayFireSortedReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-line3dPickRay, <span class=SpellE>dRayRadius</span>, <span class=SpellE>bVertices</span>,
-<span class=SpellE>bEdges</span>, <span class=SpellE>bFaces</span>, <span
-class=SpellE>dMaxParam</span>, <span class=SpellE>bSearchInGroups</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRayFireSortedReadOnly,
+&quot;nHistoryID, line3dPickRay, dRayRadius, bVertices, bEdges, bFaces,
+dMaxParam, bSearchInGroups&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRedoHistory</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nApplyOnDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRedoHistory, &quot;nHistoryID,
+nApplyOnDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRedoHistoryToDelta</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRedoHistoryToDelta, &quot;nHistoryID,
+nDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRegisterProgressCallbacksReadOnly</span>, &quot;<span
-class=SpellE>startCbkStr</span>, <span class=SpellE>progressCbkStr</span>, <span
-class=SpellE>finishCbkStr</span>, <span class=SpellE>progressIncrement</span>, <span
-class=SpellE>progressStart</span>, <span class=SpellE>progressEnd</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRegisterProgressCallbacksReadOnly,
+&quot;startCbkStr, progressCbkStr, finishCbkStr, progressIncrement,
+progressStart, progressEnd&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRemoveObjectsLayers</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aLayerIDs</span>, <span class=SpellE>aObjectIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRemoveObjectsLayers,
+&quot;nHistoryID, aLayerIDs, aObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRemoveSatelliteData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nImageID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRemoveSatelliteData,
+&quot;nHistoryID, nImageID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIReverseFaces</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aFaceIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIReverseFaces, &quot;nHistoryID,
+aFaceIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRotateFace</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>, <span class=SpellE>aRadian</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRotateFace, &quot;nHistoryID,
+nFaceID, aRadian&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIRotateFaceBetweenPoints</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>, <span class=SpellE>startPt</span>, <span
-class=SpellE>endPt</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIRotateFaceBetweenPoints,
+&quot;nHistoryID, nFaceID, startPt, endPt&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>   </span><span
-style='mso-spacerun:yes'> </span><span class=GramE>REGISTERMETHOD(</span>WSM, <span
-class=SpellE>APISaveAllActiveObjectsToBinaryFileReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>sFilePath</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM,
+APISaveAllActiveObjectsToBinaryFileReadOnly, &quot;nHistoryID,
+sFilePath&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISaveHistoryToBinaryFileReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>sFilePath</span>, <span
-class=SpellE>aLayerDisplayedNegateVec</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISaveHistoryToBinaryFileReadOnly,
+&quot;nHistoryID, sFilePath, aLayerDisplayedNegateVec&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISaveHistoryToBinaryStringReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, bBase64Encode, <span class=SpellE>aLayerDisplayedNegateVec</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISaveHistoryToBinaryStringReadOnly,
+&quot;nHistoryID, bBase64Encode, aLayerDisplayedNegateVec&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISaveDeltaToBinaryStringReadOnly</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISaveDeltaToBinaryStringReadOnly,
+&quot;nHistoryID, nDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISaveLastDeltaToBinaryFile</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>sFilePath</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISaveLastDeltaToBinaryFile,
+&quot;nHistoryID, sFilePath&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISaveToFileReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>, <span class=SpellE>sFilePath</span>, <span
-class=SpellE>eFileType</span>, <span class=SpellE>bWithChildren</span>, <span
-class=SpellE>dExportScale</span>, <span class=SpellE>aExcludedObjects</span>, <span
-class=SpellE>aLayerDisplayedNegateVec</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISaveToFileReadOnly, &quot;nHistoryID,
+aObjectIDs, sFilePath, eFileType, bWithChildren, dExportScale,
+aExcludedObjects, aLayerDisplayedNegateVec&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISaveToStringReadOnly</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>, <span class=SpellE>saveStringName</span>,
-<span class=SpellE>bWithChildren</span>, <span class=SpellE>aExcludedObjects</span>,
-bBase64Encode, <span class=SpellE>aLayerDisplayedNegateVec</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISaveToStringReadOnly,
+&quot;nHistoryID, aObjectIDs, saveStringName, bWithChildren, aExcludedObjects,
+bBase64Encode, aLayerDisplayedNegateVec&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIScaleFace</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>, <span class=SpellE>aScaleFactor</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIScaleFace, &quot;nHistoryID, nFaceID,
+aScaleFactor&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISeparate</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nBodyID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISeparate, &quot;nHistoryID,
+nBodyID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetEdgesStyle</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aEdgeIDs</span>, <span class=SpellE>nColor</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetEdgesStyle, &quot;nHistoryID,
+aEdgeIDs, nColor&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetEdgesOrVerticesMarkedSmooth</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>aObjectIDs</span>, <span
-class=SpellE>bSmooth</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetEdgesOrVerticesMarkedSmooth,
+&quot;nHistoryID, aObjectIDs, bSmooth&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetDynamoModelInformation</span>, &quot;<span
-class=SpellE>nHistoryID</span>, id, name, config, delta&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetDynamoModelInformation,
+&quot;nHistoryID, id, name, config, delta&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetFaceBacksideMaterial</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aFaceIDs</span>, <span class=SpellE>nMaterialID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetFaceBacksideMaterial,
+&quot;nHistoryID, aFaceIDs, nMaterialID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetImageData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nImageID</span>, <span class=SpellE>sName</span>, <span
-class=SpellE>nTextureID</span>, <span class=SpellE>fAlphaValue</span>, <span
-class=SpellE>bFeaturesVisible</span>, <span class=SpellE>aCornersVector</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetImageData, &quot;nHistoryID,
+nImageID, sName, nTextureID, fAlphaValue, bFeaturesVisible,
+aCornersVector&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetLayerData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nLayerID</span>, name, <span class=SpellE>bDisplayed</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetLayerData, &quot;nHistoryID,
+nLayerID, name, bDisplayed&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetLayersDisplayed</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aLayerIDs</span>, <span class=SpellE>bDisplayed</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetLayersDisplayed, &quot;nHistoryID,
+aLayerIDs, bDisplayed&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetLocalCoordinateSystem</span>, &quot;<span
-class=SpellE>nHistoryID</span>, transf3d&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetLocalCoordinateSystem,
+&quot;nHistoryID, transf3d&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetLevelsData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aLevelIDs</span>, <span class=SpellE>aLevelsData</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetLevelsData, &quot;nHistoryID,
+aLevelIDs, aLevelsData&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetMaterialColor</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nMaterialID</span>, <span class=SpellE>nColor</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetMaterialColor, &quot;nHistoryID,
+nMaterialID, nColor&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetMaterialData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nMaterialID</span>, <span class=SpellE>nColor</span>, <span
-class=SpellE>dHorizontalScale</span>, <span class=SpellE>dVerticalScale</span>,
-<span class=SpellE>nTextureID</span>, <span class=SpellE>sMaterialName</span>, <span
-class=SpellE>sMaterialIdentifier</span>, <span class=SpellE>aAdditionalRenderData</span>,
-<span class=SpellE>aAdditionalTextures</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetMaterialData, &quot;nHistoryID,
+nMaterialID, nColor, dHorizontalScale, dVerticalScale, nTextureID,
+sMaterialName, sMaterialIdentifier, aAdditionalRenderData,
+aAdditionalTextures&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetMaterialTexture</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nMaterialID</span>, <span class=SpellE>dHorizontalScale</span>,
-<span class=SpellE>dVerticalScale</span>, <span class=SpellE>nTextureID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetMaterialTexture, &quot;nHistoryID,
+nMaterialID, dHorizontalScale, dVerticalScale, nTextureID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetObjectProperties</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>, <span class=SpellE>sObjectName</span>, <span
-class=SpellE>bReportAreaByLevel</span>, <span class=SpellE>aDefaultLevelIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetObjectProperties,
+&quot;nHistoryID, nObjectID, sObjectName, bReportAreaByLevel,
+aDefaultLevelIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetObjectsLevels</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>, <span class=SpellE>aLevelsIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetObjectsLevels, &quot;nHistoryID,
+aObjectIDs, aLevelsIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetObjectsMaterial</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>, <span class=SpellE>nMaterialID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetObjectsMaterial, &quot;nHistoryID,
+aObjectIDs, nMaterialID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetRevitFamilyInformation</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>bIsGeneratedFromRFA</span>, <span
-class=SpellE>bIsGeneratedFromBuiltinRFA</span>, <span class=SpellE>familyCategory</span>,
-<span class=SpellE>familyReference</span>, <span class=SpellE>familyType</span>,
-<span class=SpellE>familyExtraData</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetRevitFamilyInformation, &quot;nHistoryID,
+bIsGeneratedFromRFA, bIsGeneratedFromBuiltinRFA, familyCategory,
+familyReference, familyType, familyExtraData&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetSatelliteData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nImageID</span>, coordinates, <span class=SpellE>coordinatesSpan</span>,
-<span class=SpellE>aPixelDimensions</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetSatelliteData, &quot;nHistoryID,
+nImageID, coordinates, coordinatesSpan, aPixelDimensions&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISetTextureData</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nTextureID</span>, <span class=SpellE>aBitmapData</span>, <span
-class=SpellE>bUseBitmapAlpha</span>, <span class=SpellE>sTextureName</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetTextureData, &quot;nHistoryID,
+nTextureID, aBitmapData, bUseBitmapAlpha, sTextureName&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIShell</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nBodyID</span>, <span class=SpellE>dDistance</span>, <span
-class=SpellE>aOpenFaceIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIShell, &quot;nHistoryID, nBodyID,
+dDistance, aOpenFaceIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISlice</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nDestinationHistoryID</span>, <span class=SpellE>nObjectID</span>,
-plane&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISlice, &quot;nHistoryID,
+nDestinationHistoryID, nObjectID, plane&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISubtract</span>, &quot;<span class=SpellE>nHistoryID</span>,
-nObjectID1, nObjectID2, <span class=SpellE>aExtraObjectsIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISubtract, &quot;nHistoryID,
+nObjectID1, nObjectID2, aExtraObjectsIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISubtractNonDestructive</span>, &quot;blank, tools&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISubtractNonDestructive, &quot;blank,
+tools&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APISweep</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aProfile</span>, <span class=SpellE>aPath</span>, <span
-class=SpellE>bRemoveUnusedProfileAndPath</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISweep, &quot;nHistoryID, aProfile,
+aPath, bRemoveUnusedProfileAndPath&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APITaperFace</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nFaceID</span>, <span class=SpellE>dRadians</span>,
-axis&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APITaperFace, &quot;nHistoryID, nFaceID,
+dRadians, axis&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APITransformObject</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>, transf3d&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APITransformObject, &quot;nHistoryID,
+nObjectID, transf3d&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APITransformObjects</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>aObjectIDs</span>, transf3d&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APITransformObjects, &quot;nHistoryID,
+aObjectIDs, transf3d&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIUndoHistory</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>bAndDeleteRedo</span>, <span class=SpellE>nApplyOnDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIUndoHistory, &quot;nHistoryID,
+bAndDeleteRedo, nApplyOnDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIUndoHistoryToDelta</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nDeltaID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIUndoHistoryToDelta, &quot;nHistoryID,
+nDeltaID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIUndoOrRedoHistoryToDelta</span>, &quot;<span
-class=SpellE>nHistoryID</span>, <span class=SpellE>nDeltaID</span>, <span
-class=SpellE>bAndDeleteRedo</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIUndoOrRedoHistoryToDelta,
+&quot;nHistoryID, nDeltaID, bAndDeleteRedo&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>  </span><span
-style='mso-spacerun:yes'>  </span><span class=GramE>REGISTERMETHOD(</span>WSM, <span
-class=SpellE>APIUnite</span>, &quot;<span class=SpellE>nHistoryID</span>,
-nObjectID1, nObjectID2, <span class=SpellE>aExtraObjectsIDs</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIUnite, &quot;nHistoryID, nObjectID1,
+nObjectID2, aExtraObjectsIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIUniteNonDestructive</span>, &quot;blank, tools&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIUniteNonDestructive, &quot;blank,
+tools&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>APIValidID</span>, &quot;<span class=SpellE>nID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIValidID, &quot;nID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span>// WSM types<o:p></o:p></span></p>
+"Times New Roman"'>// WSM types<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>FacetsBodyData</span>, &quot;<span class=SpellE>m_points</span>,
-<span class=SpellE>m_polygonIndices</span>, <span class=SpellE>m_polygonSmoothingIds</span>,
-<span class=SpellE>m_colors</span>, <span class=SpellE>m_polygonColorIndices</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, FacetsBodyData, &quot;m_points,
+m_polygonIndices, m_polygonSmoothingIds, m_colors,
+m_polygonColorIndices&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>GroupInstancePath</span>, &quot;<span class=SpellE>pathArray</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, GroupInstancePath,
+&quot;pathArray&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>GroupInstancePathAreEqual</span>, &quot;path1, path2&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, GroupInstancePathAreEqual, &quot;path1,
+path2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>ObjectHistoryID</span>, &quot;<span class=SpellE>nHistoryID</span>,
-<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, ObjectHistoryID, &quot;nHistoryID,
+nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>ObjectHistoryIDAreEqual</span>, &quot;id1, id2&quot;);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-Color, &quot;r, g, b, a&quot;);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-<span class=SpellE>ColorAreEqual</span>, &quot;c1, c2&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, ObjectHistoryIDAreEqual, &quot;id1,
+id2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>REGISTERMETHOD(</span>WSM,
-Is32Bit, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, Color, &quot;r, g, b, a&quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>REGISTERMETHOD(WSM, ColorAreEqual, &quot;c1, c2&quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>REGISTERMETHOD(WSM, Is32Bit, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -2068,334 +1763,253 @@ Is32Bit, &quot;&quot;);<o:p></o:p></span></p>
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span>// <span
-class=SpellE>Init</span> the rest of WSM.<o:p></o:p></span></p>
+"Times New Roman"'>// Init the rest of WSM.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>inst.Evaluate</span></span>(// <span
-class=SpellE>enum</span> WSM::<span class=SpellE>nFileType</span> values<o:p></o:p></span></p>
+"Times New Roman"'>inst.Evaluate(// enum WSM::nFileType values<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeBinaryWSM</span> = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeBinaryWSM = 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeSAT</span> = 1;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeSAT = 1;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeSTL</span> = 2;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeSTL = 2;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeOBJ</span> = 3;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeOBJ = 3;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeDWG</span> = 4;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeDWG = 4;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeLMV</span> = 5;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeLMV = 5;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeThreejsJSON</span> = 6;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeThreejsJSON = 6;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeFBX</span> = 7;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeFBX = 7;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeSKP</span> = 8;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeSKP = 8;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeDAE</span> = 9;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeDAE = 9;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFileTypeDXF</span> = 10;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nFileTypeDXF = 10;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// <span
-class=SpellE>enum</span> <span class=GramE>WSM::</span><span class=SpellE>nConvexity</span>
-values<o:p></o:p></span></p>
+"Times New Roman"'>// enum WSM::nConvexity values<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nConvexityUnset</span><span style='mso-spacerun:yes'>  
+"Times New Roman"'>&quot;WSM.nConvexityUnset<span style='mso-spacerun:yes'>  
 </span>= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE><span class=GramE>WSM.nConvexitySmooth</span></span><span
-class=GramE><span style='mso-spacerun:yes'>  </span>=</span> 1;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nConvexityConcave</span> = 2;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE><span class=GramE>WSM.nConvexityConvex</span></span><span
-class=GramE><span style='mso-spacerun:yes'>  </span>=</span> 4;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nConvexityMixed</span><span style='mso-spacerun:yes'>  
-</span>= 8;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nConvexityNonManifold</span> = 16;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// <span
-class=SpellE>enum</span> <span class=GramE>WSM::</span><span class=SpellE>nLoadingOptions</span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLoadingNoOptions</span><span style='mso-spacerun:yes'>       
-</span>= 0;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLoadingMerge</span><span style='mso-spacerun:yes'>           
+"Times New Roman"'>&quot;WSM.nConvexitySmooth<span style='mso-spacerun:yes'> 
 </span>= 1;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLoadingPlaceOnGround</span><span style='mso-spacerun:yes'>   
-</span>= 2;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nConvexityConcave = 2;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE><span class=GramE>WSM.nLoadingRemoveDuplicate</span></span><span
-class=GramE><span style='mso-spacerun:yes'>  </span>=</span> 4;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nConvexityConvex<span style='mso-spacerun:yes'> 
+</span>= 4;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLoadingSmoothingByAngle</span> = 8;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nConvexityMixed<span style='mso-spacerun:yes'>  
+</span>= 8;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// Note <span
-class=SpellE>javascript</span> cannot represent a 64 bit <span class=SpellE>size_<span
-class=GramE>t</span></span><span class=GramE>(</span>-1)<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// without
-rounding.<span style='mso-spacerun:yes'>  </span>So use the 32 bit <span
-class=SpellE>size_<span class=GramE>t</span></span><span class=GramE>(</span>-1).<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// Conversion
-between 32 and 64 bit <span class=SpellE>size_<span class=GramE>t</span></span><span
-class=GramE>(</span>-1) is done in<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// <span
-class=SpellE>to_json</span> and <span class=SpellE>from_json</span>.<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nConvexityNonManifold = 16;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// Invalid ID<o:p></o:p></span></p>
+"Times New Roman"'>// enum WSM::nLoadingOptions<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>       
-</span>&quot;WSM.INVALID_ID = 0xFFFFFFFF;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nLoadingNoOptions= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// Invalid
-size<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nLoadingMerge= 1;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>       
-</span>&quot;WSM.INVALID_SIZE = 0xFFFFFFFF;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nLoadingPlaceOnGround= 2;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+"Times New Roman"'>&quot;WSM.nLoadingRemoveDuplicate<span
+style='mso-spacerun:yes'>  </span>= 4;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// <span
-class=SpellE>enum</span> <span class=GramE>WSM::</span><span class=SpellE>nObjectType</span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nUnSpecifiedType</span> = 0;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nBodyType</span> = 1;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLumpType</span> = 2;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nShellType</span> = 3;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFaceType</span> = 4;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLoopType</span> = 5;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nCoedgeType</span> = 6;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nEdgeType</span> = 7;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nVertexType</span> = 8;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nMaterialAttributeType</span> = 9;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>      </span><span
-style='mso-spacerun:yes'>  </span>&quot;<span class=SpellE>WSM.nMaterialType</span>
-= 10;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nCircleAttributeType</span> = 11;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nObjectPropertiesAttributeType</span> = 12;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nTextureType</span> = 13;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLevelAttributeType</span> = 14;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLevelType</span> = 15;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nSketchPropertiesType</span> = 16;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nSplineCurveAttributeType</span> = 17;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nCylinderSurfaceAttributeType</span> = 18;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nSphereSurfaceAttributeType</span> = 19;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nExtrudeSurfaceAttributeType</span> = 20;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nImageType</span> = 21;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nSatelliteDataAttributeType</span> = 22;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nGroupType</span> = 23;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nInstanceType</span> = 24;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLayerAttributeType</span> = 25;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nLayerType</span> = 26;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nGeneratedGeometryInformationType</span> = 27;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nFaceUVDataAttributeType</span> = 28;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nEdgeStyleAttributeType</span> = 29;&quot;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nNumObjectTypes</span> = 30;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.nLoadingSmoothingByAngle = 8;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>// <span
-class=SpellE>enum</span> <span class=GramE>WSM::</span><span class=SpellE>nCopyBehavior</span><o:p></o:p></span></p>
+"Times New Roman"'>// Note javascript cannot represent a 64 bit size_t(-1)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nDoNotCopyNorShare</span> = 0;&quot; // The copied owner will
-not share nor have a copy of this Object.<o:p></o:p></span></p>
+"Times New Roman"'>// without rounding.<span style='mso-spacerun:yes'> 
+</span>So use the 32 bit size_t(-1).<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nShareOrCopy</span> = 1;&quot;<span
-style='mso-spacerun:yes'>       </span>// Shares the Object with the copied
-owner except when copying to a new<o:p></o:p></span></p>
+"Times New Roman"'>// Conversion between 32 and 64 bit size_t(-1) is done in<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span
-style='mso-spacerun:yes'>                                      </span>//
-History in which case the Object is copied.<o:p></o:p></span></p>
+"Times New Roman"'>// to_json and from_json.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nCopyAlways</span> = 2;&quot;<span
-style='mso-spacerun:yes'>        </span>// Always copies the Object even when
-in this same History<o:p></o:p></span></p>
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span
-style='mso-spacerun:yes'>                                      </span>// This
-should always be last<o:p></o:p></span></p>
+"Times New Roman"'>// Invalid ID<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>        </span>&quot;<span
-class=SpellE>WSM.nNumCopyBehaviors</span> = 3;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;WSM.INVALID_ID = 0xFFFFFFFF;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>// Invalid size<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.INVALID_SIZE = 0xFFFFFFFF;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>// enum WSM::nObjectType<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nUnSpecifiedType = 0;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nBodyType = 1;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nLumpType = 2;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nShellType = 3;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nFaceType = 4;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nLoopType = 5;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nCoedgeType = 6;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nEdgeType = 7;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nVertexType = 8;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nMaterialAttributeType = 9;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nMaterialType = 10;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nCircleAttributeType = 11;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nObjectPropertiesAttributeType = 12;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nTextureType = 13;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nLevelAttributeType = 14;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nLevelType = 15;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nSketchPropertiesType = 16;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nSplineCurveAttributeType = 17;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nCylinderSurfaceAttributeType = 18;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nSphereSurfaceAttributeType = 19;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nExtrudeSurfaceAttributeType = 20;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nImageType = 21;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nSatelliteDataAttributeType = 22;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nGroupType = 23;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nInstanceType = 24;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nLayerAttributeType = 25;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nLayerType = 26;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nGeneratedGeometryInformationType = 27;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nFaceUVDataAttributeType = 28;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nEdgeStyleAttributeType = 29;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nNumObjectTypes = 30;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>// enum WSM::nCopyBehavior<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nDoNotCopyNorShare = 0;&quot; // The copied owner
+will not share nor have a copy of this Object.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nShareOrCopy = 1;&quot;<span
+style='mso-spacerun:yes'>   </span>// Shares the Object with the copied owner
+except when copying to a new<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'><span style='mso-spacerun:yes'>  </span>// History in which
+case the Object is copied.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nCopyAlways = 2;&quot;// Always copies the Object
+even when in this same History<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'><span style='mso-spacerun:yes'>  </span>// This should
+always be last<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>&quot;WSM.nNumCopyBehaviors = 3;&quot;<o:p></o:p></span></p>
 
 </div>
 
