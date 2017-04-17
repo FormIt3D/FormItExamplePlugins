@@ -19,22 +19,22 @@ w\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<title>Documentation</title>
+<title>FormIt JS API</title>
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Jeff Hauswirth</o:Author>
   <o:LastAuthor>Jeff Hauswirth</o:LastAuthor>
-  <o:Revision>3</o:Revision>
-  <o:TotalTime>13</o:TotalTime>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>15</o:TotalTime>
   <o:Created>2017-04-17T15:27:00Z</o:Created>
-  <o:LastSaved>2017-04-17T16:18:00Z</o:LastSaved>
+  <o:LastSaved>2017-04-17T17:41:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>3191</o:Words>
-  <o:Characters>18195</o:Characters>
+  <o:Words>3194</o:Words>
+  <o:Characters>18207</o:Characters>
   <o:Company>Autodesk, Inc.</o:Company>
   <o:Lines>151</o:Lines>
   <o:Paragraphs>42</o:Paragraphs>
-  <o:CharactersWithSpaces>21344</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>21359</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -45,7 +45,7 @@ w\:* {behavior:url(#default#VML);}
 <link rel=colorSchemeMapping href="FormItAPI_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:Zoom>84</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -766,6 +766,9 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -811,66 +814,74 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<h1><span style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>Documentation<o:p></o:p></span></h1>
+<h1><span class=SpellE><span style='font-family:"Courier New";mso-fareast-font-family:
+"Times New Roman"'>FormIt</span></span><span style='font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman"'> JS API Documentation<o:p></o:p></span></h1>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-no-proof:yes'><img width=239 height=211 id="_x0000_i1025"
 src=construction.jpg alt="Under Construction"></span><span style='mso-fareast-font-family:
 "Times New Roman"'><br>
 <br>
-The FormIt API documentation is still under development.<span
-style='mso-spacerun:yes'>  </span>But the following is the list of API
-functions that are exposed.<span style='mso-spacerun:yes'>  </span>If you want
-more information on specific functions, e-mail <a
+The <span class=SpellE>FormIt</span> JS API documentation is still under
+development. But the following is the list of API functions that are exposed. If
+you want more information on specific functions, e-mail <a
 href="mailto:jeff.hauswirth@autodesk.com">jeff.hauswirth@autodesk.com</a> and
 he can send more information.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>// FormIt Core API<o:p></o:p></span></p>
+"Times New Roman"'>// <span class=SpellE>FormIt</span> Core API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, GetSnap, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>GetSnap</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, GetTouchEnabled, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>GetTouchEnabled</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, ImportFile, &quot;sFileName,
-bGroupImport&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>ImportFile</span>, &quot;<span class=SpellE>sFileName</span>, <span
+class=SpellE>bGroupImport</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, OpenFile, &quot;sFileName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>OpenFile</span>, &quot;<span class=SpellE>sFileName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, SaveFile, &quot;sFileName,
-saveOptions, previewImage&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>SaveFile</span>, &quot;<span class=SpellE>sFileName</span>, <span
+class=SpellE>saveOptions</span>, <span class=SpellE>previewImage</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, SetGeoLocationData,
-&quot;geodata&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>SetGeoLocationData</span>, &quot;geodata&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, SetRenderData,
-&quot;renderdata&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>SetRenderData</span>, &quot;<span class=SpellE>renderdata</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, SetTouchEnabled,
-&quot;bTouchEnabled&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>SetTouchEnabled</span>, &quot;<span class=SpellE>bTouchEnabled</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, SetSnap, &quot;bSnap&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>SetSnap</span>, &quot;<span class=SpellE>bSnap</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, LinearValueToString,
-&quot;val&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>LinearValueToString</span>, &quot;<span class=SpellE>val</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt, GetTimeNow, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt</span>, <span
+class=SpellE>GetTimeNow</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -879,33 +890,37 @@ saveOptions, previewImage&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Model API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Model&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Model</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, GetHistoryID, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>GetHistoryID</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, GetMemorySize,
-&quot;bCollapsedHistoryWithLiveObjsOnly&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>GetMemorySize</span>, &quot;<span class=SpellE>bCollapsedHistoryWithLiveObjsOnly</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, GetUnitType, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>GetUnitType</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, SetUnitType,
-&quot;unitType&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>SetUnitType</span>, &quot;<span class=SpellE>unitType</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, GetGroupHistoryName,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>GetGroupHistoryName</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, SetGroupHistoryName,
-&quot;nHistoryID, sHistoryName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>SetGroupHistoryName</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>sHistoryName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Model, GetPropertiesForHistory,
-&quot;nHistoryID, editingPath&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Model</span>, <span
+class=SpellE>GetPropertiesForHistory</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>editingPath</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -914,39 +929,39 @@ saveOptions, previewImage&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Group Edit API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.GroupEdit&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.GroupEdit</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, GetEditingHistoryID,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>GetEditingHistoryID</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, SetInContextEditingPath,
-&quot;path&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>SetInContextEditingPath</span>, &quot;path&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, IsEditingInContext,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>IsEditingInContext</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, EndEditInContext,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>EndEditInContext</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, ExitToParentContext,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>ExitToParentContext</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, GetInContextEditingPath,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>GetInContextEditingPath</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, GetShowEditedGroupOnly,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>GetShowEditedGroupOnly</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.GroupEdit, SetShowEditedGroupOnly,
-&quot;val&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.GroupEdit</span>, <span
+class=SpellE>SetShowEditedGroupOnly</span>, &quot;<span class=SpellE>val</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -955,78 +970,80 @@ saveOptions, previewImage&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Selection API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Selection&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Selection</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, SetObjectTypeFilter,
-&quot;objectTypeFilter&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>SetObjectTypeFilter</span>, &quot;<span class=SpellE>objectTypeFilter</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, GetObjectTypeFilter,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>GetObjectTypeFilter</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, ClearSelections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>ClearSelections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, ClearPreSelections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>ClearPreSelections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, HasSelections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>HasSelections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, HasPreSelections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>HasPreSelections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, AddSelections,
-&quot;aSelection&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>AddSelections</span>, &quot;<span class=SpellE>aSelection</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, GetSelections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>GetSelections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, SetSelections,
-&quot;selections&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>SetSelections</span>, &quot;selections&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, SetPreSelections,
-&quot;firstPreselection, selections&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>SetPreSelections</span>, &quot;<span class=SpellE>firstPreselection</span>,
+selections&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, IsSelected,
-&quot;objPath&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>IsSelected</span>, &quot;<span class=SpellE>objPath</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, GetFirstPreSelectedObject,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>GetFirstPreSelectedObject</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, GetPreSelections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>GetPreSelections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, CommitPreselections,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>CommitPreselections</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, CompareSelections,
-&quot;selection1, selection2&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>CompareSelections</span>, &quot;selection1, selection2&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, ToggleObjects,
-&quot;selections&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>ToggleObjects</span>, &quot;selections&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, SelectAll, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>SelectAll</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Selection, ApplyMaterialToSelection,
-&quot;id, backside&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Selection</span>, <span
+class=SpellE>ApplyMaterialToSelection</span>, &quot;id, backside&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1035,15 +1052,15 @@ saveOptions, previewImage&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Clipboard<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Clipboard&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Clipboard</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Clipboard, GetJSONStringForClipboard,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Clipboard</span>, <span
+class=SpellE>GetJSONStringForClipboard</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Clipboard, SetJSONStringFromClipboard,
-&quot;str&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Clipboard</span>, <span
+class=SpellE>SetJSONStringFromClipboard</span>, &quot;<span class=SpellE>str</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1052,64 +1069,72 @@ saveOptions, previewImage&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Collaboration API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Collaboration&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Collaboration</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, Connect,
-&quot;sSessionLink&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+Connect, &quot;<span class=SpellE>sSessionLink</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, IsConnected,&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>IsConnected</span>,&quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, Disconnect,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+Disconnect, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, GetSessionId,<span
-style='mso-spacerun:yes'>   </span>&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>GetSessionId</span>,<span style='mso-spacerun:yes'>  
+</span>&quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, IsSessionOwner,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>IsSessionOwner</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, IsFollowingCamera,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>IsFollowingCamera</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, FollowCamera,<span
-style='mso-spacerun:yes'>   </span>&quot;sUserId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>FollowCamera</span>,<span style='mso-spacerun:yes'>  
+</span>&quot;<span class=SpellE>sUserId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration,
-GetFollowingCameraUserID, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>GetFollowingCameraUserID</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, UnFollowCamera,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>UnFollowCamera</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, ReceiveCreateRefHistory,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>ReceiveCreateRefHistory</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, ReceiveHistory,
-&quot;nHistoryID, sBase64History, bIsOwner&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>ReceiveHistory</span>, &quot;<span class=SpellE>nHistoryID</span>,
+sBase64History, <span class=SpellE>bIsOwner</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, ReceiveDelta,<span
-style='mso-spacerun:yes'>   </span>&quot;nHistoryID, nDeltaID,
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>ReceiveDelta</span>,<span style='mso-spacerun:yes'>  
+</span>&quot;<span class=SpellE>nHistoryID</span>, <span class=SpellE>nDeltaID</span>,
 sBase64Delta&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration,
-ReceiveUndoRedo,&quot;nHistoryID, nUndoValue, nBaseDeltaID,
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>ReceiveUndoRedo</span>,&quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>nUndoValue</span>, <span class=SpellE>nBaseDeltaID</span>,
 sBase64Delta&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Collaboration, ReceiveDataAcceptance,
-&quot;nHistoryID, nDataType, nDeltaID, bAccepted&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Collaboration</span>,
+<span class=SpellE>ReceiveDataAcceptance</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>nDataType</span>, <span class=SpellE>nDeltaID</span>, <span
+class=SpellE>bAccepted</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1118,18 +1143,19 @@ sBase64Delta&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Camera API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Cameras&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Cameras</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Cameras, GetCameraData, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Cameras</span>, <span
+class=SpellE>GetCameraData</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Cameras, SetCameraData,
-&quot;cameraData&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Cameras</span>, <span
+class=SpellE>SetCameraData</span>, &quot;<span class=SpellE>cameraData</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Cameras, SetViewportSize, &quot;x,
-y&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Cameras</span>, <span
+class=SpellE>SetViewportSize</span>, &quot;x, y&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1138,29 +1164,31 @@ y&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Tools API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Tools&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Tools</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Tools, ClearTools, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Tools</span>, <span
+class=SpellE>ClearTools</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Tools, GetActiveToolType,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Tools</span>, <span
+class=SpellE>GetActiveToolType</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Tools, GetActiveToolSubType,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Tools</span>, <span
+class=SpellE>GetActiveToolSubType</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Tools, IsInContinuousAction,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Tools</span>, <span
+class=SpellE>IsInContinuousAction</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Tools, StartTool, &quot;toolType&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Tools</span>, <span
+class=SpellE>StartTool</span>, &quot;<span class=SpellE>toolType</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Tools, Paintbrush, &quot;materialID,
-backside&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Tools</span>,
+Paintbrush, &quot;<span class=SpellE>materialID</span>, backside&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1169,17 +1197,20 @@ backside&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// HUD API<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.HUD&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.HUD</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.HUD, GetNumWidgets, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.HUD</span>, <span
+class=SpellE>GetNumWidgets</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.HUD, WidgetTextInput, &quot;widgetID,
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.HUD</span>, <span
+class=SpellE>WidgetTextInput</span>, &quot;<span class=SpellE>widgetID</span>,
 text&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.HUD, ResetHUD, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.HUD</span>, <span
+class=SpellE>ResetHUD</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1188,159 +1219,173 @@ text&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Scenes<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Scenes&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Scenes</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SceneNameExists,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SceneNameExists</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, AddNewScene,
-&quot;afterSceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>AddNewScene</span>, &quot;<span class=SpellE>afterSceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, AddScene, &quot;scene,
-afterSceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>AddScene</span>, &quot;scene, <span class=SpellE>afterSceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, RemoveScene,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>RemoveScene</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, DuplicateScene,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>DuplicateScene</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetScene,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetScene</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetScenes, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetScenes</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetSceneNames, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetSceneNames</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetScenes,
-&quot;scenes&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetScenes</span>, &quot;scenes&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, ScenesAreEqual,
-&quot;sceneName, scene&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>ScenesAreEqual</span>, &quot;<span class=SpellE>sceneName</span>,
+scene&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetPresentationMode,
-&quot;start, sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetPresentationMode</span>, &quot;start, <span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, IsPresenting, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>IsPresenting</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, IsValidSceneName,
-&quot;oldSceneName, newSceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>IsValidSceneName</span>, &quot;<span class=SpellE>oldSceneName</span>,
+<span class=SpellE>newSceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, UpdateScene,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>UpdateScene</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, ActivateScene,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>ActivateScene</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetPropertiesToCapture,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetPropertiesToCapture</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetPropertiesToCapture,
-&quot;sceneName, properties&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetPropertiesToCapture</span>, &quot;<span class=SpellE>sceneName</span>,
+properties&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetSceneName, &quot;sceneName,
-newSceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetSceneName</span>, &quot;<span class=SpellE>sceneName</span>, <span
+class=SpellE>newSceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, MoveSceneUp,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>MoveSceneUp</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, MoveSceneDown,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>MoveSceneDown</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, RearrangeScenes, &quot;oldPos,
-newPos&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>RearrangeScenes</span>, &quot;<span class=SpellE>oldPos</span>, <span
+class=SpellE>newPos</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetNumberOfScenes,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetNumberOfScenes</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes,
-GetNumberOfScenesWithAnimation, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetNumberOfScenesWithAnimation</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetPauseTime,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetPauseTime</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetPauseTime, &quot;sceneName,
-pauseTime&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetPauseTime</span>, &quot;<span class=SpellE>sceneName</span>, <span
+class=SpellE>pauseTime</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, IsValidScenePauseTime,
-&quot;pauseTimeString&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>IsValidScenePauseTime</span>, &quot;<span class=SpellE>pauseTimeString</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, IsValidSceneTransitionTime,
-&quot;transitionTimeString&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>IsValidSceneTransitionTime</span>, &quot;<span class=SpellE>transitionTimeString</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, IsValidSceneCameraSpeed,
-&quot;speedString&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>IsValidSceneCameraSpeed</span>, &quot;<span class=SpellE>speedString</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetTransitionTime,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetTransitionTime</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetTransitionTime,
-&quot;sceneName, transitionTime&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetTransitionTime</span>, &quot;<span class=SpellE>sceneName</span>,
+<span class=SpellE>transitionTime</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetCameraSpeed,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetCameraSpeed</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetCameraSpeed,
-&quot;sceneName, cameraSpeed&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetCameraSpeed</span>, &quot;<span class=SpellE>sceneName</span>, <span
+class=SpellE>cameraSpeed</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetIncludeInAnimation,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetIncludeInAnimation</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetIncludeInAnimation,
-&quot;sceneName, bIncludeInAnimation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetIncludeInAnimation</span>, &quot;<span class=SpellE>sceneName</span>,
+<span class=SpellE>bIncludeInAnimation</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetUseCameraSpeed,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetUseCameraSpeed</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetUseCameraSpeed,
-&quot;sceneName, bUseCameraSpeed&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetUseCameraSpeed</span>, &quot;<span class=SpellE>sceneName</span>,
+<span class=SpellE>bUseCameraSpeed</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetTransitionTimeUsed,
-&quot;sceneName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetTransitionTimeUsed</span>, &quot;<span class=SpellE>sceneName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, SetEditCameras,
-&quot;bEditCameras&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>SetEditCameras</span>, &quot;<span class=SpellE>bEditCameras</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Scenes, GetEditCameras, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Scenes</span>, <span
+class=SpellE>GetEditCameras</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1349,68 +1394,79 @@ pauseTime&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Layers<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Layers&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Layers</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, GetAllLayers, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>GetAllLayers</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, GetLayerData,
-&quot;layerID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>GetLayerData</span>, &quot;<span class=SpellE>layerID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, AddLayer, &quot;historyID,
-layerName, visible&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>AddLayer</span>, &quot;<span class=SpellE>historyID</span>, <span
+class=SpellE>layerName</span>, visible&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, IsValid, &quot;layerID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>IsValid</span>, &quot;<span class=SpellE>layerID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, SetLayersVisibility,
-&quot;aLayersVisibility&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>SetLayersVisibility</span>, &quot;<span class=SpellE>aLayersVisibility</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, LayerExists,
-&quot;layerName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>LayerExists</span>, &quot;<span class=SpellE>layerName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, DeleteLayers,
-&quot;aLayerIDs&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>DeleteLayers</span>, &quot;<span class=SpellE>aLayerIDs</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, SetLayerName, &quot;layerID,
-newLayerName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>SetLayerName</span>, &quot;<span class=SpellE>layerID</span>, <span
+class=SpellE>newLayerName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, AssignLayerToObjects,
-&quot;layerID, aObjects&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>AssignLayerToObjects</span>, &quot;<span class=SpellE>layerID</span>,
+<span class=SpellE>aObjects</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, RemoveLayersFromObjects,
-&quot;layerIDs, aObjects&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>RemoveLayersFromObjects</span>, &quot;<span class=SpellE>layerIDs</span>,
+<span class=SpellE>aObjects</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, GetAllObjectsOnLayers,
-&quot;layerIDs&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>GetAllObjectsOnLayers</span>, &quot;<span class=SpellE>layerIDs</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, ChangeLayerOrder,
-&quot;layerID, newPosition&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>ChangeLayerOrder</span>, &quot;<span class=SpellE>layerID</span>, <span
+class=SpellE>newPosition</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, GetLayerList, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>GetLayerList</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers,
-IsValidObjectForLayerAssignment, &quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>IsValidObjectForLayerAssignment</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, GetObjectLayerID,
-&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>GetObjectLayerID</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>nObjectID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Layers, IsValidLayerName,
-&quot;layerID, newLayerName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Layers</span>, <span
+class=SpellE>IsValidLayerName</span>, &quot;<span class=SpellE>layerID</span>, <span
+class=SpellE>newLayerName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1419,99 +1475,114 @@ IsValidObjectForLayerAssignment, &quot;nHistoryID, nObjectID&quot;);<o:p></o:p><
 "Times New Roman"'>// Levels<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Levels&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Levels</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, AddLevels, &quot;nHistoryID,
-numLevels, startElevation, deltaElevation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>AddLevels</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
+class=SpellE>numLevels</span>, <span class=SpellE>startElevation</span>, <span
+class=SpellE>deltaElevation</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, AutoRenameLevels,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>AutoRenameLevels</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, ChangeLevelElevation,
-&quot;nHistoryID, aLevelID, newElevation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>ChangeLevelElevation</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>aLevelID</span>, <span class=SpellE>newElevation</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, ChangeLevelName, &quot;levelID,
-levelName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>ChangeLevelName</span>, &quot;<span class=SpellE>levelID</span>, <span
+class=SpellE>levelName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, CreateDefaultLevels,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>CreateDefaultLevels</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, DeleteLevels,
-&quot;nHistoryID, aLevelIDs&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>DeleteLevels</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
+class=SpellE>aLevelIDs</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetDefaultLevelHeight,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetDefaultLevelHeight</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetLevels, &quot;nHistoryID,
-sortByElevation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetLevels</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
+class=SpellE>sortByElevation</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetNumLevels,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetNumLevels</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetMinLevelElevation,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetMinLevelElevation</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetMaxLevelElevation,
-&quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetMaxLevelElevation</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetLevelData,
-&quot;nHistoryID, levelID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetLevelData</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
+class=SpellE>levelID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, GetLevelsData,
-&quot;nHistoryID, sortByElevation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetLevelsData</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
+class=SpellE>sortByElevation</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels,
-GetLevelIDsFromSelectedObjects, &quot;nHistoryID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>GetLevelIDsFromSelectedObjects</span>, &quot;<span class=SpellE>nHistoryID</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, HasLevelsInProject,
-&quot;checkVisibleOnly&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>HasLevelsInProject</span>, &quot;<span class=SpellE>checkVisibleOnly</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, IsExistingLevel,
-&quot;nHistoryID, levelName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>IsExistingLevel</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>levelName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, IsExistingLevelByElevation,
-&quot;nHistoryId, elevation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>IsExistingLevelByElevation</span>, &quot;<span class=SpellE>nHistoryId</span>,
+elevation&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, IsValidLevelDeltaElevation,
-&quot;nHistoryID, deltaElevationString, numLevels&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>IsValidLevelDeltaElevation</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>deltaElevationString</span>, <span class=SpellE>numLevels</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, IsValidLevelElevation,
-&quot;nHistoryID, aLevelId, elevationString&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>IsValidLevelElevation</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>aLevelId</span>, <span class=SpellE>elevationString</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, IsValidLevelName,
-&quot;levelID, levelName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>IsValidLevelName</span>, &quot;<span class=SpellE>levelID</span>, <span
+class=SpellE>levelName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, IsValidNumberOfLevelsToAdd,
-&quot;nHistoryID, numLevelsString, deltaElevation&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>IsValidNumberOfLevelsToAdd</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>numLevelsString</span>, <span class=SpellE>deltaElevation</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels, SetLevelsToSelectedObjects,
-&quot;nHistoryID, aLevelList&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>SetLevelsToSelectedObjects</span>, &quot;<span class=SpellE>nHistoryID</span>,
+<span class=SpellE>aLevelList</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Levels,
-SetReportAreaByLevelsOnSelection, &quot;bON&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Levels</span>, <span
+class=SpellE>SetReportAreaByLevelsOnSelection</span>, &quot;<span class=SpellE>bON</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1520,71 +1591,90 @@ SetReportAreaByLevelsOnSelection, &quot;bON&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Material Provider<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.MaterialProvider&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.MaterialProvider</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, CreateMaterial,
-&quot;libraryType, materialData&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>CreateMaterial</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialData</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, GetMaterialData,
-&quot;libraryType, materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>GetMaterialData</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, SetMaterialData,
-&quot;libraryType, materialId, materialData&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>SetMaterialData</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>, <span class=SpellE>materialData</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, GetMaterials,
-&quot;libraryType&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>GetMaterials</span>, &quot;<span class=SpellE>libraryType</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, DeleteMaterials,
-&quot;libraryType, materialIds&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>DeleteMaterials</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialIds</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, IsValidMaterialName,
-&quot;libraryType, materialId, newName, errorMsg&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>IsValidMaterialName</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>, <span class=SpellE>newName</span>, <span
+class=SpellE>errorMsg</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, GetNewMaterialName,
-&quot;libraryType, baseName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>GetNewMaterialName</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>baseName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, IsValidMaterial,
-&quot;libraryType, materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>IsValidMaterial</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, CanModify,
-&quot;libraryType, materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>CanModify</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider,
-GetMaterialPreviewImage, &quot;libraryType, materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>GetMaterialPreviewImage</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, MaterialData,
-&quot;color, textureData, scale, useAlpha, materialName, materialIdentifier,
-textureName, aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>MaterialData</span>, &quot;color, <span class=SpellE>textureData</span>,
+scale, <span class=SpellE>useAlpha</span>, <span class=SpellE>materialName</span>,
+<span class=SpellE>materialIdentifier</span>, <span class=SpellE>textureName</span>,
+<span class=SpellE>aAdditionalRenderData</span>, <span class=SpellE>aAdditionalTextures</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.MaterialProvider, GetMaterialName,
-&quot;libraryType, materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.MaterialProvider</span>,
+<span class=SpellE>GetMaterialName</span>, &quot;<span class=SpellE>libraryType</span>,
+<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>inst.Evaluate(//enum FormIt::LibraryType values<o:p></o:p></span></p>
+<p class=MsoNormal><span class=SpellE><span style='font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman"'>inst.Evaluate</span></span><span
+style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>(//<span
+class=SpellE>enum</span> <span class=SpellE>FormIt</span>::<span class=SpellE>LibraryType</span>
+values<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.LibraryType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.LibraryType</span> =
+{};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.LibraryType.SKETCH = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.LibraryType.SKETCH</span> =
+0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.LibraryType.APPLICATION = 1;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.LibraryType.APPLICATION</span>
+= 1;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>);<o:p></o:p></span></p>
@@ -1592,17 +1682,23 @@ textureName, aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>inst.Evaluate(//enum FormIt.Materials.MapType values<o:p></o:p></span></p>
+<p class=MsoNormal><span class=SpellE><span style='font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman"'>inst.Evaluate</span></span><span
+style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>(//<span
+class=SpellE>enum</span> <span class=SpellE>FormIt.Materials.MapType</span>
+values<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialMapType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialMapType</span> =
+{};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialMapType.kNormalMap = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialMapType.kNormalMap</span>
+= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialMapType.kOpacityMap = 1;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialMapType.kOpacityMap</span>
+= 1;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>);<o:p></o:p></span></p>
@@ -1610,22 +1706,27 @@ textureName, aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>inst.Evaluate(//enum FormIt.Materials.AttributeType values<o:p></o:p></span></p>
+<p class=MsoNormal><span class=SpellE><span style='font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman"'>inst.Evaluate</span></span><span
+style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>(//<span
+class=SpellE>enum</span> <span class=SpellE>FormIt.Materials.AttributeType</span>
+values<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialAttributeType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialAttributeType</span>
+= {};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialAttributeType.kGloss = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialAttributeType.kGloss</span>
+= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialAttributeType.kReflectionDirect =
-1;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialAttributeType.kReflectionDirect</span>
+= 1;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.MaterialAttributeType.kReflectionOblique =
-2;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.MaterialAttributeType.kReflectionOblique</span>
+= 2;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>);<o:p></o:p></span></p>
@@ -1637,59 +1738,69 @@ textureName, aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span
 "Times New Roman"'>// Sketch Materials<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.SketchMaterials&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.SketchMaterials</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-GetWSMMaterialForHistory, &quot;historyId, materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetWSMMaterialForHistory</span>, &quot;<span class=SpellE>historyId</span>,
+<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-GetSketchMaterialFromWSMMaterial, &quot;historyId, wsmMaterialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetSketchMaterialFromWSMMaterial</span>, &quot;<span
+class=SpellE>historyId</span>, <span class=SpellE>wsmMaterialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials, GetMaterialIDsFromObjects,
-&quot;aObjects&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetMaterialIDsFromObjects</span>, &quot;<span class=SpellE>aObjects</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials, ChangeMaterialOrder,
-&quot;materialId, newPos&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>ChangeMaterialOrder</span>, &quot;<span class=SpellE>materialId</span>,
+<span class=SpellE>newPos</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-AssignMaterialToObjects, &quot;materialId, aObjects&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>AssignMaterialToObjects</span>, &quot;<span class=SpellE>materialId</span>,
+<span class=SpellE>aObjects</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials, IsMaterialUsed,
-&quot;materialId&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>IsMaterialUsed</span>, &quot;<span class=SpellE>materialId</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-GetDefaultMaterialData, &quot;bBack&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetDefaultMaterialData</span>, &quot;<span class=SpellE>bBack</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-SetDefaultMaterialData, &quot;materialData, bBack&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>SetDefaultMaterialData</span>, &quot;<span class=SpellE>materialData</span>,
+<span class=SpellE>bBack</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials, GetMaterialDataAttribute,
-&quot;materialData, attributeType&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetMaterialDataAttribute</span>, &quot;<span class=SpellE>materialData</span>,
+<span class=SpellE>attributeType</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-SetMaterialDataAttribute, &quot;materialData, attributeType, value&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>SetMaterialDataAttribute</span>, &quot;<span class=SpellE>materialData</span>,
+<span class=SpellE>attributeType</span>, value&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials, GetMaterialDataMap,
-&quot;materialData, mapType&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetMaterialDataMap</span>, &quot;<span class=SpellE>materialData</span>,
+<span class=SpellE>mapType</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials, SetMaterialDataMap,
-&quot;materialData, mapType, map&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>SetMaterialDataMap</span>, &quot;<span class=SpellE>materialData</span>,
+<span class=SpellE>mapType</span>, map&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SketchMaterials,
-GetAllObjectsUsingMaterials, &quot;materialIds&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SketchMaterials</span>,
+<span class=SpellE>GetAllObjectsUsingMaterials</span>, &quot;<span
+class=SpellE>materialIds</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1698,83 +1809,85 @@ GetAllObjectsUsingMaterials, &quot;materialIds&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Undo Management<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.UndoManagement&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.UndoManagement</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, BeginState,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>BeginState</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, EndState, &quot;name,
-userName&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>EndState</span>, &quot;name, <span class=SpellE>userName</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, RejectState,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>RejectState</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, CanRedo, &quot;id,
-nStates&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>CanRedo</span>, &quot;id, <span class=SpellE>nStates</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, CanUndo, &quot;id,
-nStates&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>CanUndo</span>, &quot;id, <span class=SpellE>nStates</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, GetCurrentState,
-&quot;id&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>GetCurrentState</span>, &quot;id&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, GetHistoryIDs,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>GetHistoryIDs</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, GetHistoryStates,
-&quot;id&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>GetHistoryStates</span>, &quot;id&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, GetStateData,
-&quot;id&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>GetStateData</span>, &quot;id&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, GetStateHistories,
-&quot;id&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>GetStateHistories</span>, &quot;id&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, MergeCurrentStates,
-&quot;histories&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>MergeCurrentStates</span>, &quot;histories&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, MergeStateRange,
-&quot;idFirst, idLast&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>MergeStateRange</span>, &quot;<span class=SpellE>idFirst</span>,
+<span class=SpellE>idLast</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, MergeStates,
-&quot;states&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>MergeStates</span>, &quot;states&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, NoteState, &quot;name,
-aHistories&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>NoteState</span>, &quot;name, <span class=SpellE>aHistories</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, Redo, &quot;id,
-nStates&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+Redo, &quot;id, <span class=SpellE>nStates</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, RollTo,
-&quot;nHistoryID, nStateID, bAndDeleteRedo&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>RollTo</span>, &quot;<span class=SpellE>nHistoryID</span>, <span
+class=SpellE>nStateID</span>, <span class=SpellE>bAndDeleteRedo</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, SetLastStateName,
-&quot;str&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>SetLastStateName</span>, &quot;<span class=SpellE>str</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, SetStateName,
-&quot;id, str&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+<span class=SpellE>SetStateName</span>, &quot;id, <span class=SpellE>str</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UndoManagement, Undo, &quot;id,
-nStates, bAndDeleteRedo&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UndoManagement</span>,
+Undo, &quot;id, <span class=SpellE>nStates</span>, <span class=SpellE>bAndDeleteRedo</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1783,19 +1896,19 @@ nStates, bAndDeleteRedo&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// UI<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.UI&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.UI</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UI, LoadLangPack,
-&quot;filename&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UI</span>, <span
+class=SpellE>LoadLangPack</span>, &quot;filename&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UI, CreatePanel, &quot;title,
-url&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UI</span>, <span
+class=SpellE>CreatePanel</span>, &quot;title, <span class=SpellE>url</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.UI, CreateToolbar, &quot;tbJSON,
-URL&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.UI</span>, <span
+class=SpellE>CreateToolbar</span>, &quot;<span class=SpellE>tbJSON</span>, URL&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1804,18 +1917,19 @@ URL&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Commands<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Commands&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Commands</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Commands, GetCommands, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Commands</span>, <span
+class=SpellE>GetCommands</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Commands, DoCommand,
-&quot;command&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Commands</span>, <span
+class=SpellE>DoCommand</span>, &quot;command&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Commands, RegisterJSCommand,
-&quot;command&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Commands</span>, <span
+class=SpellE>RegisterJSCommand</span>, &quot;command&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1824,18 +1938,19 @@ URL&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Shortcuts<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Shortcuts&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Shortcuts</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Shortcuts, GetShortcutKeys,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Shortcuts</span>, <span
+class=SpellE>GetShortcutKeys</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Shortcuts, RestoreFromJSON,
-&quot;jsonStr&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Shortcuts</span>, <span
+class=SpellE>RestoreFromJSON</span>, &quot;<span class=SpellE>jsonStr</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Shortcuts, GetJSON, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Shortcuts</span>, <span
+class=SpellE>GetJSON</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1844,10 +1959,11 @@ URL&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Messaging<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.Messaging&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.Messaging</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.Messaging, GetMessages, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.Messaging</span>, <span
+class=SpellE>GetMessages</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1856,47 +1972,47 @@ URL&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Visual Styles<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.VisualStyles&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.VisualStyles</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, IsGridVisible,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>IsGridVisible</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, SetGridVisible,
-&quot;bVisible&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>SetGridVisible</span>, &quot;<span class=SpellE>bVisible</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, GetHighlightPreselect,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>GetHighlightPreselect</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, SetHighlightPreselect,
-&quot;bHighlight&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>SetHighlightPreselect</span>, &quot;<span class=SpellE>bHighlight</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, GetShadowsVisible,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>GetShadowsVisible</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, SetShadowsVisible,
-&quot;val&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>SetShadowsVisible</span>, &quot;<span class=SpellE>val</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles,
-GetAlwaysDrawInstanceBoxes, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>GetAlwaysDrawInstanceBoxes</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles,
-SetAlwaysDrawInstanceBoxes, &quot;val&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>SetAlwaysDrawInstanceBoxes</span>, &quot;<span class=SpellE>val</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, IsGroundPlaneVisible,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>IsGroundPlaneVisible</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.VisualStyles, SetGroundPlaneVisible,
-&quot;val&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.VisualStyles</span>,
+<span class=SpellE>SetGroundPlaneVisible</span>, &quot;<span class=SpellE>val</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -1908,72 +2024,77 @@ SetAlwaysDrawInstanceBoxes, &quot;val&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// Section planes<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERNAMESPACE(&quot;FormIt.SectionPlanes&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERNAMESPACE(&quot;<span class=SpellE>FormIt.SectionPlanes</span>&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, Clear, &quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+Clear, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, SetPlanes, &quot;planes&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>SetPlanes</span>, &quot;planes&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, GetPlanes,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>GetPlanes</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, GetInstances,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>GetInstances</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, SetOutlineColor,
-&quot;color&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>SetOutlineColor</span>, &quot;color&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, GetOutlineColor,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>GetOutlineColor</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, SetOutlineSize,
-&quot;s&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>SetOutlineSize</span>, &quot;s&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, GetOutlineSize,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>GetOutlineSize</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes,
-SetSectionIndicatorsVisibility, &quot;visible&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>SetSectionIndicatorsVisibility</span>, &quot;visible&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, SetPocheColor,
-&quot;color&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>SetPocheColor</span>, &quot;color&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, GetPocheColor,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>GetPocheColor</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, EnablePocheColor,
-&quot;enable&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>EnablePocheColor</span>, &quot;enable&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(FormIt.SectionPlanes, IsPocheColorEnabled,
-&quot;&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(<span class=SpellE>FormIt.SectionPlanes</span>,
+<span class=SpellE>IsPocheColorEnabled</span>, &quot;&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>inst.Evaluate(<o:p></o:p></span></p>
+<p class=MsoNormal><span class=SpellE><span style='font-family:"Courier New";
+mso-fareast-font-family:"Times New Roman"'>inst.Evaluate</span></span><span
+style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>(<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>//enum ContextMenuAction<o:p></o:p></span></p>
+"Times New Roman"'>//<span class=SpellE>enum</span> <span class=SpellE>ContextMenuAction</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.ContextMenuActionType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.ContextMenuActionType</span>
+= {};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;var num = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>var</span> <span class=SpellE>num</span>
+= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(None)<o:p></o:p></span></p>
@@ -1985,10 +2106,10 @@ SetSectionIndicatorsVisibility, &quot;visible&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Array)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(BoolSubtract)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>BoolSubtract</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(BoolUnion)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>BoolUnion</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Copy)<o:p></o:p></span></p>
@@ -2009,19 +2130,19 @@ SetSectionIndicatorsVisibility, &quot;visible&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Move)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(OffsetFace)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>OffsetFace</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Paste)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(ReverseFace)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>ReverseFace</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Rotate)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(SetAxes)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>SetAxes</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Scale)<o:p></o:p></span></p>
@@ -2030,70 +2151,72 @@ SetSectionIndicatorsVisibility, &quot;visible&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Taper)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(UnSmoothEdges)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>UnSmoothEdges</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupCreate)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupCreate</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupUngroup)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupUngroup</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupUngroupAll)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupUngroupAll</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupMakeUnique)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupMakeUnique</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupEditInContext)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupEditInContext</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupEndEditInContext)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupEndEditInContext</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(SmoothEdges)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>SmoothEdges</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(ExtrudeEdges)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>ExtrudeEdges</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(OffsetEdges)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>OffsetEdges</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(ResetAxes)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>ResetAxes</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(Mirror)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(LinearMeasure)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>LinearMeasure</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(AngularMeasure)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>AngularMeasure</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(GroupExitToParent)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_CONTEXTMENUACTIONTYPE(<span class=SpellE>GroupExitToParent</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>//enum ToolType<o:p></o:p></span></p>
+"Times New Roman"'>//<span class=SpellE>enum</span> <span class=SpellE>ToolType</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.ToolType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.ToolType</span> = {};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;var toolType = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>var</span> <span class=SpellE>toolType</span>
+= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>// Formit.Enum.ToolType<o:p></o:p></span></p>
+"Times New Roman"'>// <span class=SpellE>Formit.Enum.ToolType</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.Enum = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.Enum</span> = {};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.Enum.ToolType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.Enum.ToolType</span> =
+{};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>FORMIT_TOOLTYPE(NONE)<o:p></o:p></span></p>
@@ -2300,43 +2423,49 @@ SetSectionIndicatorsVisibility, &quot;visible&quot;);<o:p></o:p></span></p>
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>//enum FormIt::SaveOptions<o:p></o:p></span></p>
+"Times New Roman"'>//<span class=SpellE>enum</span> <span class=SpellE>FormIt</span>::<span
+class=SpellE>SaveOptions</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.SaveOptions = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.SaveOptions</span> =
+{};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;var num = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>var</span> <span class=SpellE>num</span>
+= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_SAVEOPTIONS(AllObjects)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_SAVEOPTIONS(<span class=SpellE>AllObjects</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_SAVEOPTIONS(AllObjectsWithHistory)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_SAVEOPTIONS(<span class=SpellE>AllObjectsWithHistory</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_SAVEOPTIONS(VisibleOnly)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_SAVEOPTIONS(<span class=SpellE>VisibleOnly</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>FORMIT_SAVEOPTIONS(SelectedOnly)<o:p></o:p></span></p>
+"Times New Roman"'>FORMIT_SAVEOPTIONS(<span class=SpellE>SelectedOnly</span>)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>//enum class UnitType<o:p></o:p></span></p>
+"Times New Roman"'>//<span class=SpellE>enum</span> class <span class=SpellE>UnitType</span><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.UnitType = {};&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.UnitType</span> = {};&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;var num = 0;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>var</span> <span class=SpellE>num</span>
+= 0;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.UnitType.kImperial = num++;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.UnitType.kImperial</span> = <span
+class=SpellE>num</span>++;&quot;<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>&quot;FormIt.UnitType.kMetric = num++;&quot;<o:p></o:p></span></p>
+"Times New Roman"'>&quot;<span class=SpellE>FormIt.UnitType.kMetric</span> = <span
+class=SpellE>num</span>++;&quot;<o:p></o:p></span></p>
 
 </div>
 

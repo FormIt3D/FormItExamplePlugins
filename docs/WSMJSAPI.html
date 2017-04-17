@@ -19,22 +19,22 @@ w\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<title>Documentation</title>
+<title>WSM JS API</title>
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Jeff Hauswirth</o:Author>
   <o:LastAuthor>Jeff Hauswirth</o:LastAuthor>
-  <o:Revision>6</o:Revision>
+  <o:Revision>7</o:Revision>
   <o:TotalTime>8</o:TotalTime>
   <o:Created>2017-04-17T14:04:00Z</o:Created>
-  <o:LastSaved>2017-04-17T16:12:00Z</o:LastSaved>
+  <o:LastSaved>2017-04-17T17:41:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>3316</o:Words>
-  <o:Characters>18902</o:Characters>
+  <o:Characters>18906</o:Characters>
   <o:Company>Autodesk, Inc.</o:Company>
   <o:Lines>157</o:Lines>
   <o:Paragraphs>44</o:Paragraphs>
-  <o:CharactersWithSpaces>22174</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>22178</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -812,7 +812,7 @@ div.WordSection1
 <div class=WordSection1>
 
 <h1><span style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>WSM
-API Documentation<o:p></o:p></span></h1>
+JS API Documentation<o:p></o:p></span></h1>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-no-proof:yes'><img width=239 height=211 id="_x0000_i1025"
@@ -822,12 +822,10 @@ src=construction.jpg alt="Under Construction"></span><span style='mso-fareast-fo
 <![endif]><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>The
-WSM API documentation is still under development.<span
-style='mso-spacerun:yes'>  </span>But the following is the list of API
-functions that are exposed.<span style='mso-spacerun:yes'>  </span>If you want
-more information on specific functions, e-mail <a
-href="mailto:jeff.hauswirth@autodesk.com">jeff.hauswirth@autodesk.com</a> and
-he can send more information.<o:p></o:p></span></p>
+WSM JS API documentation is still under development. But the following is the
+list of API functions that are exposed. If you want more information on
+specific functions, e-mail <a href="mailto:jeff.hauswirth@autodesk.com">jeff.hauswirth@autodesk.com</a>
+and he can send more information.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><br>
 </span><span style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>//
@@ -841,8 +839,8 @@ WSM API<o:p></o:p></span></p>
 &quot;nHistoryID, nFaceID, nBodyID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIAddInstancesToGroup,
-&quot;nHistoryID, nGroupID, aTransforms&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIAddInstancesToGroup, &quot;nHistoryID,
+nGroupID, aTransforms&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIAddObjectsLayers, &quot;nHistoryID,
@@ -1005,14 +1003,14 @@ aLevelsData, aObjectIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APICreateMaterial, &quot;nHistoryID,
-nColor, dHorizonalScale, dVerticalScale, nTextureID, sMaterialName, sMaterialIdentifier,
-aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span></p>
+nColor, dHorizonalScale, dVerticalScale, nTextureID, sMaterialName,
+sMaterialIdentifier, aAdditionalRenderData, aAdditionalTextures&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APICreateMaterialWithTexture,
 &quot;nHistoryID, nColor, dHorizonalScale, dVerticalScale, aBitmapData,
-bUseBitmapAlpha, sMaterialName, sMaterialIdentifier, aAdditionalRenderData, aAdditionalTextures,
-sTextureName&quot;);<o:p></o:p></span></p>
+bUseBitmapAlpha, sMaterialName, sMaterialIdentifier, aAdditionalRenderData,
+aAdditionalTextures, sTextureName&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APICreatePolyline, &quot;nHistoryID,
@@ -1064,7 +1062,8 @@ aBitmapData, bUseBitmapAlpha, sTextureName&quot;);<o:p></o:p></span></p>
 &quot;nHistoryID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteObject, &quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteObject, &quot;nHistoryID,
+nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIDeleteObjects, &quot;nHistoryID,
@@ -1116,8 +1115,7 @@ aProfileIDs, t&quot;);<o:p></o:p></span></p>
 &quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllHistoriesReadOnly,
-&quot;bWithTemporary&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllHistoriesReadOnly, &quot;bWithTemporary&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIGetAllHistoryDeltasReadOnly,
@@ -1156,8 +1154,8 @@ nObjectID&quot; );<o:p></o:p></span></p>
 &quot;nHistoryID, nEdgeID, bBreakOnNonSmooth&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIGetConvexityConnectedComponentReadOnly,
-&quot;nHistoryID, nLoopOrFaceID, nConvexity&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM,
+APIGetConvexityConnectedComponentReadOnly, &quot;nHistoryID, nLoopOrFaceID, nConvexity&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIGetConvexityReadOnly,
@@ -1169,9 +1167,8 @@ APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly, &quot;nHistoryID,
 nObjectType, bForUndo&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM,
-APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly, &quot;nHistoryID,
-nStartDelta, nEndDelta, aObjectTypes&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly,
+&quot;nHistoryID, nStartDelta, nEndDelta, aObjectTypes&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIGetDynamoModelInformationReadOnly,
@@ -1285,12 +1282,12 @@ nStartDelta, nEndDelta, aObjectTypes&quot;);<o:p></o:p></span></p>
 &quot;nHistoryID, nFaceID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectNameReadOnly,
-&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectNameReadOnly, &quot;nHistoryID,
+nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectPropertiesReadOnly, &quot;nHistoryID,
-nObjectID, sObjectName, bReportAreaByLevel&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectPropertiesReadOnly,
+&quot;nHistoryID, nObjectID, sObjectName, bReportAreaByLevel&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIGetObjectTextureCoordinatesReadOnly,
@@ -1324,8 +1321,8 @@ nObjectID, sObjectName, bReportAreaByLevel&quot;);<o:p></o:p></span></p>
 &quot;nHistoryID, nImageID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIGetTextureDataReadOnly, &quot;nHistoryID,
-nTextureID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIGetTextureDataReadOnly,
+&quot;nHistoryID, nTextureID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIGetTopLevelOwnersReadOnly,
@@ -1347,10 +1344,9 @@ nObjectID1, nObjectID2, bChangeBoth&quot;);<o:p></o:p></span></p>
 nObjectID, plane&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM,
-APIIntersectsNegativeSideOfPlanesReadOnly, &quot;nHistoryID, aPlanes,
-bVertices, bEdges, bFaces, bStrict, dTol, line3dPickRay, bSearchInGroups,
-bPickInstances&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIntersectsNegativeSideOfPlanesReadOnly,
+&quot;nHistoryID, aPlanes, bVertices, bEdges, bFaces, bStrict, dTol,
+line3dPickRay, bSearchInGroups, bPickInstances&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APIIsEdgeManifoldReadOnly,
@@ -1429,8 +1425,8 @@ nFaceIDs, radius, center, normal, xaxis&quot;);<o:p></o:p></span></p>
 nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APIIsObjectLiveReadOnly, &quot;nHistoryID,
-nObjectID&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APIIsObjectLiveReadOnly,
+&quot;nHistoryID, nObjectID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APILoadAXMFile, &quot;nHistoryID,
@@ -1600,8 +1596,7 @@ aEdgeIDs, nColor&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APISetImageData, &quot;nHistoryID,
-nImageID, sName, nTextureID, fAlphaValue, bFeaturesVisible,
-aCornersVector&quot;);<o:p></o:p></span></p>
+nImageID, sName, nTextureID, fAlphaValue, bFeaturesVisible, aCornersVector&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APISetLayerData, &quot;nHistoryID,
@@ -1634,9 +1629,8 @@ aAdditionalTextures&quot;);<o:p></o:p></span></p>
 nMaterialID, dHorizontalScale, dVerticalScale, nTextureID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APISetObjectProperties,
-&quot;nHistoryID, nObjectID, sObjectName, bReportAreaByLevel,
-aDefaultLevelIDs&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetObjectProperties, &quot;nHistoryID,
+nObjectID, sObjectName, bReportAreaByLevel, aDefaultLevelIDs&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APISetObjectsLevels, &quot;nHistoryID,
@@ -1647,9 +1641,9 @@ aObjectIDs, aLevelsIDs&quot;);<o:p></o:p></span></p>
 aObjectIDs, nMaterialID&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, APISetRevitFamilyInformation, &quot;nHistoryID,
-bIsGeneratedFromRFA, bIsGeneratedFromBuiltinRFA, familyCategory,
-familyReference, familyType, familyExtraData&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, APISetRevitFamilyInformation,
+&quot;nHistoryID, bIsGeneratedFromRFA, bIsGeneratedFromBuiltinRFA,
+familyCategory, familyReference, familyType, familyExtraData&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, APISetSatelliteData, &quot;nHistoryID,
@@ -1721,9 +1715,8 @@ tools&quot;);<o:p></o:p></span></p>
 "Times New Roman"'>// WSM types<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>REGISTERMETHOD(WSM, FacetsBodyData, &quot;m_points,
-m_polygonIndices, m_polygonSmoothingIds, m_colors,
-m_polygonColorIndices&quot;);<o:p></o:p></span></p>
+"Times New Roman"'>REGISTERMETHOD(WSM, FacetsBodyData, &quot;m_points, m_polygonIndices,
+m_polygonSmoothingIds, m_colors, m_polygonColorIndices&quot;);<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>REGISTERMETHOD(WSM, GroupInstancePath,
@@ -1858,8 +1851,8 @@ style='mso-spacerun:yes'>  </span>= 4;&quot;<o:p></o:p></span></p>
 "Times New Roman"'>// Note javascript cannot represent a 64 bit size_t(-1)<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'>// without rounding.<span style='mso-spacerun:yes'> 
-</span>So use the 32 bit size_t(-1).<o:p></o:p></span></p>
+"Times New Roman"'>// without rounding.<span style='mso-spacerun:yes'>  </span>So
+use the 32 bit size_t(-1).<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>// Conversion between 32 and 64 bit size_t(-1) is done in<o:p></o:p></span></p>
@@ -2005,8 +1998,8 @@ case the Object is copied.<o:p></o:p></span></p>
 even when in this same History<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
-"Times New Roman"'><span style='mso-spacerun:yes'>  </span>// This should
-always be last<o:p></o:p></span></p>
+"Times New Roman"'><span style='mso-spacerun:yes'>  </span>// This should always
+be last<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Courier New";mso-fareast-font-family:
 "Times New Roman"'>&quot;WSM.nNumCopyBehaviors = 3;&quot;<o:p></o:p></span></p>
