@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>How To Make A Plugin</title>
+
+</head>
+<body>
+<h1 style="font-family: Courier New,Courier,monospace;">How
+To Make A Plugin</h1>
+<h1 id="CreatingaFormItPlugin-1-GeneralPluginSetup"><u>1
+- General Plugin Setup</u></h1>
+<p>All FormIt Plugins comprise of a key core component called a
+manifest.json
+file. The Manifest file is a<span class="Apple-converted-space">&nbsp;</span><a href="http://www.json.org/" class="external-link" rel="nofollow" style="color: rgb(50, 108, 166); text-decoration: none;">JSON<span class="Apple-converted-space">&nbsp;</span></a>object
+that tells the FormIt infrastructure&nbsp;what files to fetch and
+what kind of plugin to create.</p>
+<p>A manifest file has the following structure:</p>
+<p><strong>manifest.json:</strong></p>
+<pre><code><span style="font-family: Courier New,Courier,monospace;">{<br>&nbsp; &nbsp;"PluginName" : "[PluginName]",<br>&nbsp; &nbsp;"PluginDescription": "[PluginDescription]",<br>&nbsp; &nbsp;"ToolbarURL": "PLUGINLOCATION/toolbar.json",<br>&nbsp; &nbsp;"Scripts": [&nbsp;<br></span>&nbsp; &nbsp; &nbsp; "PLUGINLOCATION/[script1].js",<br>&nbsp; &nbsp; &nbsp; "PLUGINLOCATION/[script2].js",<br>&nbsp; &nbsp; &nbsp; ...<br>&nbsp; &nbsp; &nbsp; "PLUGINLOCATION/[scriptn].js"<br>&nbsp; &nbsp;],</code></pre>
+<pre><code>&nbsp; &nbsp;"Panel": "PLUGINLOCATION/[PanelDisplay].html"<br>}</code></pre>
+<p>The "PluginName" represents the name of the plugin for
+internal and most
+display purposes. "Scripts"&nbsp; lists the required
+external scripts associated with the plugin that will be loaded into
+the FormIt application and can be executed (See Creating Scripts) as
+part of the plugin. The Panel Name is required for both toolbars and
+panels but the scripts field is optional if you would like to include
+additional scripts.</p>
+<p>The first step is to create the manifest.json file in your
+plugin folder.
+After you have set up the initial manifest.json file, next you will
+need to decide if you are making a toolbar plugin, a panel plugin, or
+both.</p>
+<p>Note
+- The use of PLUGINLOCATION throughout the manifest.json file above is
+essential and is case sensitive. FormIt will replace PLUGINLOCATION
+with the server location for the plugin.</p>
+<h1 id="CreatingaFormItPlugin-2-CreatingaToolbar"><u>2
+- Creating a Toolbar</u></h1>
+<p><u><br>
+</u>The
+first step after creating the manifest file for a toolbar is to create
+a json file describing the toolbar's functionality. You can name this
+file whatever you would like but be sure that the appropriate file name
+is used for the manifest.json file so that FormIt can correctly
+interpret that the plugin defines a toolbar and can pull down the
+information for the toolbar's json file.</p>
+<p>Next we need to create the toolbar.json file which will define
+the toolbar
+buttons that will be added, their names, text, and icons as well the
+onClick function. The toolbar's json file will have the following
+format:</p>
+<pre>&nbsp;{<br>&nbsp; &nbsp;"name": "[ToolbarName]",<br>&nbsp; &nbsp;"buttons": [<br>&nbsp; &nbsp; &nbsp;{<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"name": "[Button 1 Name]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"command": "[Toolbar Command Function]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"iconText": "[Icon Text]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"iconURL": "[Icon URL]"<br>&nbsp; &nbsp; &nbsp; },<br>&nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"name": "[Button 2 Name]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"command": "[Toolbar Command Function]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"iconText": "[Icon Text]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"iconURL": "[Icon URL]"<br>&nbsp; &nbsp; &nbsp; &nbsp;}<br>&nbsp; &nbsp; &nbsp; &nbsp;....<br>&nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"name": "[Button n Name]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"command": "[Toolbar Command Function]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"iconText": "[Icon Text]",<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"iconURL": "[Icon URL]"<br>&nbsp; &nbsp; &nbsp; &nbsp;}<br>&nbsp; &nbsp; ]<br>}</pre>
+<p>The first field in the toolbar's json file called "name"
+represents the
+name of the overall toolbar. It is used internally to associate all of
+the buttons to the single toolbar menu.</p>
+<p>Next you need to define the buttons that will be added inside
+of the
+toolbar. You can have n number of buttons (1 - n) and they are listed
+in the json array above inside of the "buttons" field. The "name" field
+of the button is used to define the button's internal name which is
+used internally to associate the button to the toolbar and to associate
+the button to it's onClick function. The "command" field is used to
+define the function of the button. The button's command can come in one
+of two forms: It can be a Javascript function (which can be defined in
+a script contained in the manifest's Scripts field) or it can be a
+FormIt Command i.e. "Draw: Circle". There is not a master list of the
+FormIt commands at present but you can obtain a list by running the
+Messages plugin.</p>
+<p>The last two fields of the button's json array are the
+"iconText" and
+"iconURL" fields. The "iconText" field is used to set the tooltip and
+description text in the button and the "iconURL" field can be set to
+use a custom icon for the button. After the buttons have all been
+defined in the toolbar json file, the plugin is ready to go. If there
+are any additional javascript functions you would like to define, add
+them to the same folder as the manifest.json file and be sure to add
+the file reference to the "Scripts" field of the manifest file as well
+so that FormIt can find the files.</p>
+<h1 id="CreatingaFormItPlugin-3-CreatingaPanel"><u>3
+- Creating a Panel</u></h1>
+<p>The first step in creating a panel plugin is to define in your
+manifest.json file that you are creating a panel using the "panel"
+field (see&nbsp;manifest file above). The panel field should be set
+to
+a new<span class="Apple-converted-space"> HTML </span><span style="background-color: rgb(243, 168, 163);"></span>file
+that you create. The HTML file will design the layout and functionality
+of the panel. All style sheets and javascript files will be linked to
+the HTML document through the panel. The PLUGINLOCATION string will be
+replaced with the default directory of the server where the files are
+located.<br>
+The panel.html file will be set up and look exactly as a
+web page will embedded inside of FormIt. You can add any div elements
+or styling that you would like to your panel and hook up any buttons to
+any functions defined in your Javascript or within FormItCore. Once
+your panel web page &nbsp;is finished and added to the manifest
+file
+you can begin testing your panel.</p>
+<h1 id="CreatingaFormItPlugin-4-SettingUpDevEnv"><u>4
+- Setting Up Development Environment</u></h1>
+The example plugins source code is located <a href="https://github.com/jhauswirth/FormItPlugins" target="_blank">here</a>. &nbsp;In the
+FormItPlugins directory is a batch file that starts a web server on
+port 8000 using python. &nbsp;Open a command prompt and run the batch file to start the server.<br>NOTE: &nbsp;Python will need to be in the path for the batch file to run.<br>
+The plugins can then be installed doing-<br>
+<pre>FormIt.InstallPlugin("https://jhauswirth.github.io/FormItPlugins/HelloBlock");</pre>
+There are two javascript engines running. &nbsp; One is in the panel
+that is displaying the HTML and there is another builit into FormIt.
+&nbsp;To make things more fun, these javascript engines are actually in
+two different processes, which makes things difficult, but managable.<br>To debug in FormIt's Script window, this command will pop open a JS debugger-<br><pre>debugger;</pre>The debugger command can be put in scripts to pop open the debugger at a specific line of code.<br><br>To
+debug HTML it's a little more difficult. &nbsp;Run FormIt with the
+plugin to be debugged and displaying the HTML to be debugged.
+&nbsp;Then open Chrome to-<br><pre>http://localhost:23654/</pre>More information can be found <a href="https://doc.qt.io/qt-5/qtwebengine-debugging.html">here</a>.<br><br>
+
+</body></html>
