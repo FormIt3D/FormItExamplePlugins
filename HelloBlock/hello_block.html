@@ -10,7 +10,7 @@
     <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
     document.addEventListener("DOMContentLoaded", function () {
         new QWebChannel(qt.webChannelTransport, function (channel) {
-            window.NewFormItInterface = channel.objects.FormItInterface;
+            window.FormItInterface = channel.objects.FormItInterface;
         });
     });
 </script>
