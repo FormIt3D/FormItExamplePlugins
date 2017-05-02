@@ -1,0 +1,8 @@
+{
+    "PluginName": "WSM String Attributes",
+    "PluginDescription": "This is a plugin that creates a panel which allows you to view and change WSM string attributes.",
+    "Scripts": [
+        "PLUGINLOCATION/wsmattribute.js"
+    ]
+    ,"Panel": "PLUGINLOCATION/wsmattribute.html"
+}
