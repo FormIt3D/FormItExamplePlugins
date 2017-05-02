@@ -1,0 +1,14 @@
+{
+    "Plugins": [
+        "DialogFromToolbar",
+        "FlipAlong",
+        "HelloBlock",
+        "HelloBlockCP",
+        "Messages",
+        "MessagesCP",
+        "ModalDialog",
+        "ModelessDialog",
+        "PluginManagerPlugin",
+        "Toolbar1"
+    ]
+}

@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>Hello Block!</title>
+<META NAME="Title" CONTENT="Create Block!">
+<META NAME="Author" CONTENT="Jeff Hauswirth">
+<!-- <script type="text/javascript" src="FormIt_Emscripten.js"></script> -->
+<!-- <script type="text/javascript" src="qwebchannel.js"></script> -->
+<!--<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>-->
+<script type="text/javascript" src="qwebchannel.js"></script>
+<script type="text/javascript" src="ChannelMessagingInterface.js"></script>
+<script type="text/javascript" src="block.js"></script>
+<script type="text/javascript">
+    <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
+    FormItInterface.AddEventListener("DOMContentLoaded");
+</script>
+</head>
+<body>
+<h1>Hello Block!</h1>
+<hr>
+<form name=a action="x.htm">
+Width <input type=number name=width value = 10.0><br>
+Length <input type=number name=length value = 10.0><br>
+Height <input type=number name=height value = 10.0><br>
+<input type=button value="Create Block" onClick="Submit();">
+</form>
+
+</body>
+</html>
