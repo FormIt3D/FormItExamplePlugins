@@ -14,8 +14,10 @@ function MessagesPluginSubscribe(msg)
     console.log("Inside MessagesPluginSubscribe.");
     
     MessagesPluginListener = {};
+    // The message handling function that will be called for the given message.
     MessagesPluginListener.MsgHandler = function(msg, payload) { console.log("(FormIt Side) msg: " + msg + " payload: " + payload); };
 
+    // Create a Message Listener that handles calling the subscribed message handlers.
     if(!(MessagesPluginListener.hasOwnProperty("listener")))
     {
         MessagesPluginListener.listener = FormIt.Messaging.NewMessageListener();
