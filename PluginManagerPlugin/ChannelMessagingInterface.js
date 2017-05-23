@@ -1,8 +1,8 @@
 FormItInterface = {};
 
-FormItInterface.Platform = "Web";
 const WINDOWS = "Windows";
 const WEB = "Web";
+FormItInterface.Platform = "Windows";
 
 FormItInterface.CallMethod = function(method, args, callbackMethod)
 {

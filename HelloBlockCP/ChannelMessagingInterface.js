@@ -1,8 +1,8 @@
 FormItInterface = {};
 
-FormItInterface.Platform = "Windows";
 const WINDOWS = "Windows";
 const WEB = "Web";
+FormItInterface.Platform = WINDOWS;
 
 FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
@@ -32,13 +32,15 @@ FormItInterface.CallMethodInternal = function(method, args)
 
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
 {
+    console.log("FormItInterface.AddEventListener: " + eventSignal);
     if(FormItInterface.Platform == WINDOWS)
     {
         document.addEventListener(eventSignal, function () {
+                console.log("new QWebChannel");
                 new QWebChannel(qt.webChannelTransport, function (channel) {
                     window.NewFormItInterface = channel.objects.FormItInterface;
                     window.PluginDialog = channel.objects.PluginDialog;
-                    
+                    console.log("AFTER new QWebChannel");
                     var fullMethod = callbackMethod + "();";
                     eval(fullMethod);
                 });

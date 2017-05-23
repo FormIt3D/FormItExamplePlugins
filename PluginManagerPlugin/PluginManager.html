@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <title>Plugin Manager</title>
@@ -16,12 +15,18 @@ $(function()
   });
 });
 </script>
-<script type="text/javascript" src="qwebchannel.js"></script>
-<script type="text/javascript" src="ChannelMessagingInterface.js"></script>
-<script type="text/javascript" src="PluginManager.js"></script>
+<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
 <script type="text/javascript">
-    FormItInterface.AddEventListener("DOMContentLoaded", PluginManager.CreatePlugins);
+    <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
+    document.addEventListener("DOMContentLoaded", function () {
+        new QWebChannel(qt.webChannelTransport, function (channel) {
+            window.FormItInterface = channel.objects.FormItInterface;
+            console.log("new QWebChannel");
+            PluginManager.CreatePlugins();
+        });
+    });
 </script>
+<script type="text/javascript" src="PluginManager.js"></script>
 </head>
 <body>
 <div id='accordion'>
