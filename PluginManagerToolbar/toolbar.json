@@ -1,0 +1,10 @@
+{
+    "name": "FormIt Plugin Manager Toolbar",
+    "buttons": [
+        {
+            "name": "FormIt Plugin Manager",
+            "command": "FormItPluginManagerToolbar.ShowDialog",
+            "iconText": "PM"
+        }
+    ]
+}

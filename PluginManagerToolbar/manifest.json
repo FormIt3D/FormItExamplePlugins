@@ -1,0 +1,9 @@
+{
+    "PluginName": "FormIt Plugin Manager Toolbar",
+    "Scripts": [
+        "PLUGINLOCATION/../PluginManagerPlugin/ChannelMessagingInterface.js",
+        "PLUGINLOCATION/PluginManagerToolbar.js",
+        "PLUGINLOCATION/../PluginManagerPlugin/PluginManager.js"
+        ],
+    "ToolbarURL": "PLUGINLOCATION/toolbar.json"
+}

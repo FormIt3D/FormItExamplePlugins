@@ -101,11 +101,11 @@ PluginManager.BuildPluginInformation = function()
     // I'm hard-coding this bit for now.
     var originURL = document.URL;
     originURL = originURL.replace('PluginManagerPlugin\/PluginManager.html', '');
-    //console.log("Doc URL: " + document.URL);
-    //console.log("Origin URL: " + originURL);
-    //console.log("Plugin Array Generated: " + pluginArray["Plugins"].length + " " + pluginArray);
+    console.log("Doc URL: " + document.URL);
+    console.log("Origin URL: " + originURL);
     var pluginArray = JSON.parse(this.responseText);
-    for(var i=0; i<pluginArray["Plugins"].length; i++)
+    console.log("pluginArray: " + JSON.stringify(pluginArray));
+    for(var i=0; i < pluginArray["Plugins"].length; i++)
     {
         var pluginURL = originURL + pluginArray["Plugins"][i];
         //console.log("Building plugin request for: " + pluginURL);
@@ -136,10 +136,10 @@ PluginManager.CreatePlugins = function()
 
                 //Get the list of plugins from the top level manifest
                 //Keep things synchronous. Use callback method to spin off creation of plugins
-                console.log("Requesting manifest.json to call PluginManager.BuildPluginInformation.");
+                console.log("************** Requesting plugins.json to call PluginManager.BuildPluginInformation.");
                 var request = new XMLHttpRequest();
                 request.addEventListener("load", PluginManager.BuildPluginInformation);
-                request.open("GET", "../manifest.json");
+                request.open("GET", "plugins.json");
                 request.send();
             });                
     }

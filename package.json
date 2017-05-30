@@ -1,0 +1,29 @@
+{
+  "name": "formitexampleplugins",
+  "version": "1.0.0",
+  "description": "Main repo for FormIt Plugins.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "connect": "^3.6.2",
+    "nodemon": "^1.11.0",
+    "serve-static": "^1.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormIt3D/FormItExamplePlugins.git"
+  },
+  "author": "Jeff Hauswirth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FormIt3D/FormItExamplePlugins/issues"
+  },
+  "homepage": "https://github.com/FormIt3D/FormItExamplePlugins#readme"
+}

@@ -9,6 +9,6 @@
         "ModalDialog",
         "ModelessDialog",
         "PluginManagerPlugin",
-        "Toolbar1"
-    ]
+        "PluginManagerToolbar",
+        "Toolbar1"    ]
 }
