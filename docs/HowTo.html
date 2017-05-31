@@ -825,8 +825,29 @@ div.WordSection1
 <h1><span style='font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>How
 to Make a Plugin<o:p></o:p></span></h1>
 
+<h1 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'
+id=CreatingaFormItPlugin-4-SettingUpDevEnv><u><span style='mso-fareast-font-family:
+"Times New Roman"'>1 - Setting Up Development Environment</span></u><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-fareast-font-family:"Times New Roman"'>The example plugins source
+code is located <a href="https://github.com/FormIt3D/FormItExamplePlugins"
+target="_blank">here</a>. Clone this repo for a helpful starting point when developing FormIt plugins.
+
+<br><br>In the FormItPlugins directory is a batch file
+that starts a web server on port 8000 using Python.
+
+<br><br>Double-click the batch file to run it. NOTE: &nbsp;Python will need to be in the path for the batch file to run.
+<br><br>The plugins can then be installed by running the following, where :<o:p></o:p></span></p>
+
+<br><pre>FormIt.InstallPlugin(&quot;http://localhost:8000/HelloBlock&quot;);</pre><pre><o:p>&nbsp;</o:p></pre>
+
+Or, if running from our <a href="https://github.com/FormIt3D/FormItExamplePlugins"> examples repository</a>:
+<br><br><pre>FormIt.InstallPlugin("https://formit3d.github.io/FormItExamplePlugins/HelloBlock");</pre><pre><o:p>&nbsp;</o:p></pre>
+
 <h1 id=CreatingaFormItPlugin-1-GeneralPluginSetup><u><span style='mso-fareast-font-family:
-"Times New Roman"'>1 - General Plugin Setup</span></u><span style='mso-fareast-font-family:
+"Times New Roman"'>2 - General Plugin Setup</span></u><span style='mso-fareast-font-family:
 "Times New Roman"'><o:p></o:p></span></h1>
 
 <p>All FormIt Plugins comprise of a key core component called a manifest.json
@@ -862,7 +883,7 @@ server location for the plugin.<o:p></o:p></p>
 
 <h1 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'
 id=CreatingaFormItPlugin-2-CreatingaToolbar><u><span style='mso-fareast-font-family:
-"Times New Roman"'>2 - Creating a Toolbar</span></u><span style='mso-fareast-font-family:
+"Times New Roman"'>3 - Creating a Toolbar</span></u><span style='mso-fareast-font-family:
 "Times New Roman"'><o:p></o:p></span></h1>
 
 <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><u><br>
@@ -911,7 +932,7 @@ the files.<o:p></o:p></p>
 
 <h1 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'
 id=CreatingaFormItPlugin-3-CreatingaPanel><u><span style='mso-fareast-font-family:
-"Times New Roman"'>3 - Creating a Panel</span></u><span style='mso-fareast-font-family:
+"Times New Roman"'>4 - Creating a Panel</span></u><span style='mso-fareast-font-family:
 "Times New Roman"'><o:p></o:p></span></h1>
 
 <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>The
@@ -931,34 +952,17 @@ to the manifest file you can begin testing your panel.<o:p></o:p></p>
 
 <h1 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'
 id=CreatingaFormItPlugin-4-SettingUpDevEnv><u><span style='mso-fareast-font-family:
-"Times New Roman"'>4 - Setting Up Development Environment</span></u><span
-style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h1>
-
-<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
-style='mso-fareast-font-family:"Times New Roman"'>The example plugins source
-code is located <a href="https://github.com/jhauswirth/FormItPlugins"
-target="_blank">here</a>. &nbsp;In the FormItPlugins directory is a batch file
-that starts a web server on port 8000 using python. &nbsp;Open a command prompt
-and run the batch file to start the server.<br>
-NOTE: &nbsp;Python will need to be in the path for the batch file to run.<br>
-The plugins can then be installed doing-<o:p></o:p></span></p>
-
-<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
-style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-<pre>FormIt.InstallPlugin(&quot;https://formit3d.github.io/FormItExamplePlugins/HelloBlock&quot;);</pre><pre><o:p>&nbsp;</o:p></pre>
-
-<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
-style='mso-fareast-font-family:"Times New Roman"'>There are two javascript
+"Times New Roman"'>5 - Debugging</span></u><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h1>There are two javascript
 engines running. &nbsp; One is in the panel that is displaying the HTML and
 there is another builit into FormIt. &nbsp;To make things more fun, these
 javascript engines are actually in two different processes, which makes things
 difficult, but managable.<br>
-To debug in FormIt's Script window, this command will pop open a JS debugger-<o:p></o:p></span></p>
+To debug in FormIt's Script window, this command will pop open a JS debugger:<o:p></o:p></span></p>
 
 <pre>debugger;</pre>
 
-<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+<br><p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
 style='mso-fareast-font-family:"Times New Roman"'>The debugger command can be
 put in scripts to pop open the debugger at a specific line of code.<br>
 <br>
