@@ -28,8 +28,10 @@ PluginManager.GetPluginManifest = function()
     //NOTE: "CustomDescription": *.html
     var pluginCustomDescription = pluginData["CustomDescription"];
     console.log("Custom Description: " + pluginCustomDescription);
-    var pluginNameHTML = "<h3>" + pluginName + "</h3>";
     var descriptionContentHTML = "";
+    var plugInInstalled = PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
+    var plugInCheckBox = "<div style='float: right; display: inline;'><input type='checkbox' name='plugInCheckBox' value='Installed' style='width: 20px; height: 20px;'></div>";
+    var pluginNameHTML = "<div style=''><h3 style='display: inline;'>" + pluginName + "</h3>" + plugInCheckBox + "</div>";
     var pluginButtonName = pluginName.replace(/\s/g,'') + "Button";
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
@@ -45,7 +47,7 @@ PluginManager.GetPluginManifest = function()
             pluginDescription = "Description not provided for this plugin.";
         }
         //NOTE: Add Install button before closing div tag
-        descriptionContentHTML = "<div>" + pluginDescription + "<input id='" + pluginButtonName +
+        descriptionContentHTML = "<div style='clear: both'>" + pluginDescription + "<input id='" + pluginButtonName +
             "' type=button value=BUTTON_TEXT></input></div>";
     }
 
@@ -67,7 +69,7 @@ PluginManager.GetPluginManifest = function()
     };
 
     var pluginButtonFunc = uninstallFunction;
-    if (PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1)
+    if (plugInInstalled)
     {
         console.log("Setting button text: " + 'Uninstall Plugin');
         descriptionContentHTML = descriptionContentHTML.replace('BUTTON_TEXT', 'Uninstall Plugin');
