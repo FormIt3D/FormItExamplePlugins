@@ -29,10 +29,16 @@ PluginManager.GetPluginManifest = function()
     var pluginCustomDescription = pluginData["CustomDescription"];
     console.log("Custom Description: " + pluginCustomDescription);
     var descriptionContentHTML = "";
+    // plugInInstalled returns a boolean value for whether the current plugin is installed.
     var plugInInstalled = PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
-    var plugInCheckBox = "<div style='float: right; display: inline;'><input type='checkbox' name='plugInCheckBox' value='Installed' style='width: 20px; height: 20px;'></div>";
-    var pluginNameHTML = "<div style=''><h3 style='display: inline;'>" + pluginName + "</h3>" + plugInCheckBox + "</div>";
+    var plugInChecked;
+    if (plugInInstalled) {
+        plugInChecked = "checked";
+    }
     var pluginButtonName = pluginName.replace(/\s/g,'') + "Button";
+    var pluginCheckboxName = pluginName.replace(/\s/g,'') + "Checkbox";
+    var plugInCheckBox = "<div style='float: right; display: inline;'><input type='checkbox' id='" + pluginCheckboxName + "' name='plugInCheckBox' value='Installed' " + plugInChecked + " style='width: 20px; height: 20px;'></div>";
+    var pluginNameHTML = "<div style=''><h3 style='display: inline;'>" + pluginName + "</h3>" + plugInCheckBox + "</div>";
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
     {
@@ -51,24 +57,25 @@ PluginManager.GetPluginManifest = function()
             "' type=button value=BUTTON_TEXT></input></div>";
     }
 
-    var installFunction = function() {
+    var installFunctionPB = function() {
         FormItInterface.CallMethod("FormIt.InstallPlugin", JSON.stringify(pluginLocation));
         PluginManager.InstalledPlugins.push(pluginLocation);
         console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
         console.log("Attempted to install: " + pluginLocation);
-        this.value = "Uninstall Plugin";
-        this.onclick = uninstallFunction;
+        this.onclick = uninstallFunctionPB;
+        document.getElementById(pluginCheckboxName).checked = true;
     };
-    var uninstallFunction = function() {
+
+    var uninstallFunctionPB = function() {
         FormItInterface.CallMethod("FormIt.UninstallPlugin",  JSON.stringify(pluginLocation));
         PluginManager.RemovePluginFromInstalled(pluginLocation);
         console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
         console.log("Attempted to uninstall: " + pluginLocation);
-        this.value = "Install Plugin";
-        this.onclick = installFunction;
+        this.onclick = installFunctionPB;
+        document.getElementById(pluginCheckboxName).checked = false;
     };
 
-    var pluginButtonFunc = uninstallFunction;
+    var pluginButtonFunc = uninstallFunctionPB;
     if (plugInInstalled)
     {
         console.log("Setting button text: " + 'Uninstall Plugin');
@@ -78,7 +85,7 @@ PluginManager.GetPluginManifest = function()
     {
         console.log("Setting button text: " + 'Install Plugin');
         descriptionContentHTML = descriptionContentHTML.replace('BUTTON_TEXT', 'Install Plugin');        
-        pluginButtonFunc = installFunction;
+        pluginButtonFunc = installFunctionPB;
     }
 
     $("#accordion").append(pluginNameHTML);
