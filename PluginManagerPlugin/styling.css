@@ -1,3 +1,39 @@
 .ui-accordion-content {
     height: inherit !important;
+    background-color: white;
+    border: 2px solid #C3E8F4;
+}
+
+.ui-accordion-header {
+    background-color: #EBEBEB;
+    border: 2px solid #EBEBEB;
+    outline: none;
+}
+
+.ui-accordion-header:hover {
+    background-color: #EBEBEB;
+    border: 2px solid #C3E8F4;
+}
+
+.ui-accordion-header.ui-state-active {
+    background-color: #A4DAEC;
+    border: 2px solid #A4DAEC;
+    outline: none;
+
+}
+
+input[type="checkbox"] {
+    background-color: white;
+    height: 1.25em;
+    width: 1.25em;
+    border: 1px solid #4676a9;
+    color: #4676a9;
+    box-shadow: none;
+}
+
+#pluginName {
+    display: inline;
+    color: darkslategrey;
+    font-weight: bold;
+    font-size: 1.1em;
 }

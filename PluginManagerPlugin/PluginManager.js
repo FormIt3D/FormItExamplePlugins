@@ -31,20 +31,21 @@ PluginManager.GetPluginManifest = function()
     var descriptionContentHTML = "";
     // plugInInstalled returns a boolean value for whether the current plugin is installed.
     var plugInInstalled = PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
+    // plugInChecked returns a "checked" value to insert in the checkbox div, if the plugin is installed at initialization time
     var plugInChecked;
     if (plugInInstalled) {
         plugInChecked = "checked";
     }
-    var pluginButtonName = pluginName.replace(/\s/g,'') + "Button";
+
     var pluginCheckboxName = pluginName.replace(/\s/g,'') + "Checkbox";
-    var plugInCheckBox = "<div style='float: right; display: inline;'><input type='checkbox' id='" + pluginCheckboxName + "' name='plugInCheckBox' value='Installed' " + plugInChecked + " style='width: 20px; height: 20px;'></div>";
-    var pluginNameHTML = "<div style=''><h3 style='display: inline;'>" + pluginName + "</h3>" + plugInCheckBox + "</div>";
+    var plugInCheckBox = "<div id='checkbox' style='float: right; display: inline;'><input type='checkbox' id='" + pluginCheckboxName + "' name='plugInCheckBox' value='Installed' " + plugInChecked + "></input></div>";
+    var pluginNameHTML = "<div><div id='pluginName''>" + pluginName + "</div>" + plugInCheckBox + "</div>";
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
     {
       //create an iframe to encapsulate the plugin custom description html.
       descriptionContentHTML = "<div><iframe src='" + pluginLocation + "/" + pluginCustomDescription +
-        "'></iframe><input id='" + pluginButtonName + "' type=button value=BUTTON_TEXT></input></div>";
+        "'></iframe></div>";
     }
     else
     {
@@ -52,48 +53,50 @@ PluginManager.GetPluginManifest = function()
         {
             pluginDescription = "Description not provided for this plugin.";
         }
-        //NOTE: Add Install button before closing div tag
-        descriptionContentHTML = "<div style='clear: both'>" + pluginDescription + "<input id='" + pluginButtonName +
-            "' type=button value=BUTTON_TEXT></input></div>";
+
+        descriptionContentHTML = "<div style='clear: both'>" + pluginDescription + "</div>";
     }
 
-    var installFunctionPB = function() {
+        var installFunctionCB = function() {
         FormItInterface.CallMethod("FormIt.InstallPlugin", JSON.stringify(pluginLocation));
         PluginManager.InstalledPlugins.push(pluginLocation);
         console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
         console.log("Attempted to install: " + pluginLocation);
-        this.onclick = uninstallFunctionPB;
+        this.value = "Uninstall";
+        this.onclick = uninstallFunctionCB;
         document.getElementById(pluginCheckboxName).checked = true;
     };
 
-    var uninstallFunctionPB = function() {
+    var uninstallFunctionCB = function() {
         FormItInterface.CallMethod("FormIt.UninstallPlugin",  JSON.stringify(pluginLocation));
         PluginManager.RemovePluginFromInstalled(pluginLocation);
         console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
         console.log("Attempted to uninstall: " + pluginLocation);
-        this.onclick = installFunctionPB;
+        this.value = "Install";
+        this.onclick = installFunctionCB;
         document.getElementById(pluginCheckboxName).checked = false;
     };
 
-    var pluginButtonFunc = uninstallFunctionPB;
+    var pluginCheckboxFunc = uninstallFunctionCB;
+
     if (plugInInstalled)
     {
-        console.log("Setting button text: " + 'Uninstall Plugin');
-        descriptionContentHTML = descriptionContentHTML.replace('BUTTON_TEXT', 'Uninstall Plugin');
+        pluginCheckboxFunc = uninstallFunctionCB;
     }
     else
-    {
-        console.log("Setting button text: " + 'Install Plugin');
-        descriptionContentHTML = descriptionContentHTML.replace('BUTTON_TEXT', 'Install Plugin');        
-        pluginButtonFunc = installFunctionPB;
+    {       
+        pluginCheckboxFunc = installFunctionCB;
     }
 
     $("#accordion").append(pluginNameHTML);
     $("#accordion").append(descriptionContentHTML);
     $("#accordion").accordion("refresh");
-    var pluginButton = document.getElementById(pluginButtonName);
-    pluginButton.onclick = pluginButtonFunc;
-    
+   
+    var plugInCheckbox = document.getElementById(pluginCheckboxName);
+    plugInCheckbox.onclick = pluginCheckboxFunc;
+    $('#accordion input[type="checkbox"]').click(function(e) {
+    e.stopPropagation();
+});
     console.log(pluginName + " was added to accordion.");
 }
 
