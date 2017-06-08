@@ -2,7 +2,7 @@
 <head>
 <title>Plugin Manager</title>
 <META NAME="Title" CONTENT="Plugin Manager">
-<META NAME="Author" CONTENT="Jeff Hauswirth">
+<META NAME="Author" CONTENT="FormIt Team">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="styling.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -10,8 +10,11 @@
 <script>
 $(function()
 {
-  $("#accordion").accordion({
+    $(".accordionParent").accordion({
     collapsible: true
+  });
+  $(".accordion").accordion({
+    collapsible: true, autoHeight: false
   });
 });
 </script>
@@ -29,8 +32,6 @@ $(function()
 <script type="text/javascript" src="PluginManager.js"></script>
 </head>
 <body>
-<div id='accordion'>
-</div>
-
+<div class='accordionParent'></div><div class='accordion'></div>
 </body>
 </html>

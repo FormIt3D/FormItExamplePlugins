@@ -15,6 +15,13 @@ PluginManager.RemovePluginFromInstalled = function(pluginLocation)
     PluginManager.InstalledPlugins = newInstalledList;
 }
 
+PluginManager.parentAccordionFunction = function() {
+    var exampleName = "<div id='repoName'>Example Plugins</div>";
+    $(".accordionParent").append(exampleName);
+    $(".accordionParent").append($(".accordion"));
+    $(".accordionParent").accordion("refresh");
+}
+
 PluginManager.GetPluginManifest = function()
 {
     console.log("---> PluginManager.GetPluginManifest");
@@ -87,18 +94,19 @@ PluginManager.GetPluginManifest = function()
     {       
         pluginCheckboxFunc = installFunctionCB;
     }
-
-    $("#accordion").append(pluginNameHTML);
-    $("#accordion").append(descriptionContentHTML);
-    $("#accordion").accordion("refresh");
+    $(".accordion").append(pluginNameHTML);
+    $(".accordion").append(descriptionContentHTML);
+    $(".accordion").accordion("refresh");
    
     var plugInCheckbox = document.getElementById(pluginCheckboxName);
     plugInCheckbox.onclick = pluginCheckboxFunc;
-    $('#accordion input[type="checkbox"]').click(function(e) {
+    $('.accordion input[type="checkbox"]').click(function(e) {
     e.stopPropagation();
 });
     console.log(pluginName + " was added to accordion.");
 }
+
+
 
 PluginManager.BuildPluginInformation = function()
 {
@@ -117,6 +125,7 @@ PluginManager.BuildPluginInformation = function()
     console.log("Origin URL: " + originURL);
     var pluginArray = JSON.parse(this.responseText);
     console.log("pluginArray: " + JSON.stringify(pluginArray));
+    PluginManager.parentAccordionFunction();
     for(var i=0; i < pluginArray["Plugins"].length; i++)
     {
         var pluginURL = originURL + pluginArray["Plugins"][i];

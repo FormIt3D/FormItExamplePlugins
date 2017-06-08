@@ -2,6 +2,8 @@
     height: inherit !important;
     background-color: white;
     border: 2px solid #C3E8F4;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 .ui-accordion-header {
@@ -36,4 +38,10 @@ input[type="checkbox"] {
     color: darkslategrey;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+#repoName {
+    color: darkslategrey;
+    font-weight: bold;
+    font-size: 1.25em;
 }
