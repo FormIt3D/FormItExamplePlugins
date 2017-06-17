@@ -2,7 +2,6 @@ FormItInterface = {};
 
 const WINDOWS = "Windows";
 const WEB = "Web";
-FormItInterface.Platform = WINDOWS;
 
 FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
@@ -32,7 +31,17 @@ FormItInterface.CallMethodInternal = function(method, args)
 
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
 {
-    console.log("FormItInterface.AddEventListener: " + eventSignal);
+    console.log("---FormItInterface.AddEventListener: " + eventSignal);
+    if (window.location.href.indexOf("?Web")  > -1)
+    {
+        FormItInterface.Platform = WEB;
+    }
+    else
+    {
+        FormItInterface.Platform = WINDOWS;
+    }
+    console.log("FormItInterface.Platform: " + FormItInterface.Platform);
+
     if(FormItInterface.Platform == WINDOWS)
     {
         document.addEventListener(eventSignal, function () {
@@ -45,14 +54,6 @@ FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
                     eval(fullMethod);
                 });
             });
-    }
-    else if(FormItInterface.Platform == WEB)
-    {
-        document.addEventListener(eventSignal, callbackMethod);
-    }
-    else
-    {
-        console.log("Platform has not been integrated yet for event listeners.");
     }
 }
 
