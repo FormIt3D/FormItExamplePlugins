@@ -63,12 +63,10 @@ PluginManager.MakePluginDiv = function(plugin)
     elemDiv.innerHTML = pluginName;
     this.parentElemDiv.appendChild(elemDiv);
 
-    //var plugInCheckBox = "<div id='checkbox' style='float: right; display: inline;'><input type='checkbox' id='" +
-    //    pluginCheckboxName + "' name='plugInCheckBox' value='Installed' " + plugInChecked + "></input></div>";
     // Add checkbox input
     var checkboxElemDiv = document.createElement('div');
     checkboxElemDiv.id = pluginName.replace(/\s/g,'') + "Checkbox";
-    checkboxElemDiv.style = 'float: right; display: inline;';
+    checkboxElemDiv.style = 'float: right; display: inline; clear: right;';
     //checkboxElemDiv.innerHTML = pluginName;
     elemDiv.appendChild(checkboxElemDiv);
     var checkboxElem = document.createElement("input");
@@ -78,21 +76,37 @@ PluginManager.MakePluginDiv = function(plugin)
     checkboxElem.value = 'Installed';
     checkboxElemDiv.appendChild(checkboxElem);
 
+    var descriptionElemDiv = document.createElement('div');
+    descriptionElemDiv.id = pluginName.replace(/\s/g,'') + "Description";
+    descriptionElemDiv.style = 'clear: both;';
+    elemDiv.appendChild(descriptionElemDiv);
+
+    elemDiv.onclick = function() 
+        {
+            elemDiv.classList.toggle("active");
+            if (descriptionElemDiv.style.maxHeight)
+                {
+                    descriptionElemDiv.style.maxHeight = null;
+                } 
+                else 
+                {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+    }
+
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
     {
-      //create an iframe to encapsulate the plugin custom description html.
-      descriptionContentHTML = "<div><iframe src='" + pluginLocation + "/" + pluginCustomDescription +
-        "'></iframe></div>";
+        descriptionElemDiv.appendChild(document.createTextNode(pluginDescription));
     }
     else
     {
         if(pluginDescription == undefined)
         {
             pluginDescription = "Description not provided for this plugin.";
+            descriptionElemDiv.appendChild(document.createTextNode(pluginDescription));
         }
 
-        descriptionContentHTML = "<div style='clear: both'>" + pluginDescription + "</div>";
     }
 
     var installFunctionCB = function() {
@@ -128,11 +142,20 @@ PluginManager.MakePluginDiv = function(plugin)
 PluginManager.AddPluginRepo = function(name, pluginSiteURL)
 {
     var elemDiv = document.createElement('div');
-    elemDiv.id = "124";
+    elemDiv.id = name.replace(/\s/g,'');
     elemDiv.className = "repoName";
     elemDiv.innerHTML = name;
     window.document.body.appendChild(elemDiv);
-    elemDiv.onclick = function() {console.log(name + " repo clicked");}
+    elemDiv.onclick = function() 
+        {
+        elemDiv.classList.toggle("active");
+        var panel = elemDiv.nextElementSibling;
+        if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+        } else 
+        {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } }
 
     // Now add the plugins.
     var pluginsManifest = pluginSiteURL + "/plugins.json";

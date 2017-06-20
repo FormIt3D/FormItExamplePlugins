@@ -21,7 +21,6 @@ div.repoName {
     background-color: #A4DAEC;
     border: 2px solid #A4DAEC !important;
     outline: none;
-
 }
 
 input[type="checkbox"] {
@@ -37,10 +36,11 @@ div.pluginName {
     color: darkslategrey;
     font-weight: bold;
     font-size: 1.1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 
 #repoName {
     color: darkslategrey;
     font-weight: bold;
-    font-size: 1.25em;
 }
