@@ -56,18 +56,27 @@ PluginManager.MakePluginDiv = function(plugin)
     if (plugInInstalled) {
         plugInChecked = "checked";
     }
-
-    var pluginCheckboxName = pluginName.replace(/\s/g,'') + "Checkbox";
-    var plugInCheckBox = "<div id='checkbox' style='float: right; display: inline;'><input type='checkbox' id='" +
-        pluginCheckboxName + "' name='plugInCheckBox' value='Installed' " + plugInChecked + "></input></div>";
         
-    var pluginNameHTML = "<div><div id='pluginName''>" + pluginName + "</div>" + plugInCheckBox + "</div>";
-
     var elemDiv = document.createElement('div');
     elemDiv.id = 'pluginName';
     elemDiv.className = 'pluginName';
     elemDiv.innerHTML = pluginName;
     this.parentElemDiv.appendChild(elemDiv);
+
+    //var plugInCheckBox = "<div id='checkbox' style='float: right; display: inline;'><input type='checkbox' id='" +
+    //    pluginCheckboxName + "' name='plugInCheckBox' value='Installed' " + plugInChecked + "></input></div>";
+    // Add checkbox input
+    var checkboxElemDiv = document.createElement('div');
+    checkboxElemDiv.id = pluginName.replace(/\s/g,'') + "Checkbox";
+    checkboxElemDiv.style = 'float: right; display: inline;';
+    //checkboxElemDiv.innerHTML = pluginName;
+    elemDiv.appendChild(checkboxElemDiv);
+    var checkboxElem = document.createElement("input");
+    checkboxElem.id = pluginName.replace(/\s/g,'') + "Checkbox";
+    checkboxElem.type = 'checkbox';
+    checkboxElem.name = 'plugInCheckBox';
+    checkboxElem.value = 'Installed';
+    checkboxElemDiv.appendChild(checkboxElem);
 
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
@@ -106,28 +115,14 @@ PluginManager.MakePluginDiv = function(plugin)
         document.getElementById(pluginCheckboxName).checked = false;
     };
 
-    var pluginCheckboxFunc = uninstallFunctionCB;
-
     if (plugInInstalled)
     {
-        pluginCheckboxFunc = uninstallFunctionCB;
+        checkboxElemDiv.onclick = uninstallFunctionCB;
     }
     else
     {       
-        pluginCheckboxFunc = installFunctionCB;
+        checkboxElemDiv.onclick = installFunctionCB;
     }
-
-    // Add plugin div to parent repo div
-    //$(".accordion").append(pluginNameHTML);
-    //$(".accordion").append(descriptionContentHTML);
-    //$(".accordion").accordion("refresh");
-   
-    var plugInCheckbox = document.getElementById(pluginCheckboxName);
-    plugInCheckbox.onclick = pluginCheckboxFunc;
-    //$('.accordion input[type="checkbox"]').click(function(e) {
-    //    e.stopPropagation();
-    //    });
-    console.log(pluginName + " was added to accordion.");
 }
 
 PluginManager.AddPluginRepo = function(name, pluginSiteURL)
