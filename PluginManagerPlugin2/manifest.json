@@ -1,0 +1,9 @@
+{
+    "PluginName": "FormIt Plugin Manager Panel",
+    "PluginDescription": "This is the Plugin Manager Plugin that manages all plugins through a plugin.",
+    "Scripts": [
+        "PLUGINLOCATION/ChannelMessagingInterface.js",
+        "PLUGINLOCATION/PluginManager.js"
+    ]
+    ,"Panel": "PLUGINLOCATION/PluginManager.html"
+}

@@ -10,7 +10,20 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
         console.log("Calling method from frame: " + method + " args: " + args);
         //window.parent.FormItInterface.CallMethodInternal(method, args);
         var fullMethod = method + "("+args+");";
-        eval(fullMethod);
+        var result = undefined;
+        try
+        {
+            result = eval(fullMethod);
+        }
+        catch(e)
+        {
+            console.log("Error: " + e);
+            result = undefined;
+        }
+        if (callbackMethod)
+        {
+            callbackMethod(result);
+        }
     }
     else if(FormItInterface.Platform == WINDOWS)
     {
@@ -54,6 +67,15 @@ FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
                     eval(fullMethod);
                 });
             });
+    }
+    else
+    {
+        document.addEventListener(eventSignal, function () {
+            if (callbackMethod)
+            {
+                callbackMethod();
+            }
+            });        
     }
 }
 

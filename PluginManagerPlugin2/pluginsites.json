@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "Local Example Plugins",
+    "URL": "http://localhost:8000/FormItExamplePlugins"
+  },
+  {
+    "Name": "FormIt3D Example Plugins",
+    "URL": "https://formit3d.github.io/FormItExamplePlugins"
+  }
+]
