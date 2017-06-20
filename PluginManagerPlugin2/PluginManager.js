@@ -56,19 +56,46 @@ PluginManager.MakePluginDiv = function(plugin)
     if (plugInInstalled) {
         plugInChecked = "checked";
     }
+
+    var pluginContainerDiv = document.createElement('div');
+    pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "container";
+    this.parentElemDiv.appendChild(pluginContainerDiv);
         
-    var elemDiv = document.createElement('div');
-    elemDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
-    elemDiv.className = 'pluginName';
-    elemDiv.innerHTML = pluginName;
-    this.parentElemDiv.appendChild(elemDiv);
+    var pluginNameDiv = document.createElement('div');
+    pluginNameDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
+    pluginNameDiv.className = 'pluginName';
+    pluginNameDiv.innerHTML = pluginName;
+    pluginContainerDiv.appendChild(pluginNameDiv);
+    //this.parentElemDiv.appendChild(pluginNameDiv);
+
+
+    var pluginDescriptionDiv = document.createElement('div');
+    pluginDescriptionDiv.id = pluginName.replace(/\s/g,'') + "Description";
+    pluginDescriptionDiv.className = 'pluginDescription';
+    pluginDescriptionDiv.style = 'clear: both;';
+    pluginContainerDiv.appendChild(pluginDescriptionDiv);
+
+    pluginNameDiv.onclick = function() 
+        {
+            
+            pluginDescriptionDiv.classList.toggle("active");
+            var firstChild = pluginNameDiv.firstElementChild;
+            if (firstChild.style.display === "block") 
+                {
+                firstChild.style.display = "none";
+            } else {
+                firstChild.style.display = "block";
+            }
+        }
+
 
     // Add checkbox input
     var checkboxElemDiv = document.createElement('div');
     checkboxElemDiv.id = pluginName.replace(/\s/g,'') + "Checkbox";
     checkboxElemDiv.style = 'float: right; display: inline; clear: right;';
     //checkboxElemDiv.innerHTML = pluginName;
-    elemDiv.appendChild(checkboxElemDiv);
+
+    pluginNameDiv.appendChild(checkboxElemDiv);
     var checkboxElem = document.createElement("input");
     checkboxElem.id = pluginName.replace(/\s/g,'') + "Checkbox";
     checkboxElem.type = 'checkbox';
@@ -76,35 +103,18 @@ PluginManager.MakePluginDiv = function(plugin)
     checkboxElem.value = 'Installed';
     checkboxElemDiv.appendChild(checkboxElem);
 
-    var descriptionElemDiv = document.createElement('div');
-    descriptionElemDiv.id = pluginName.replace(/\s/g,'') + "Description";
-    descriptionElemDiv.style = 'clear: both;';
-    elemDiv.appendChild(descriptionElemDiv);
-
-    elemDiv.onclick = function() 
-        {
-            elemDiv.classList.toggle("active");
-            if (descriptionElemDiv.style.maxHeight)
-                {
-                    descriptionElemDiv.style.maxHeight = null;
-                } 
-                else 
-                {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                } 
-    }
 
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
     {
-        descriptionElemDiv.appendChild(document.createTextNode(pluginDescription));
+        pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
     }
     else
     {
         if(pluginDescription == undefined)
         {
             pluginDescription = "Description not provided for this plugin.";
-            descriptionElemDiv.appendChild(document.createTextNode(pluginDescription));
+            pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
         }
 
     }
@@ -141,28 +151,35 @@ PluginManager.MakePluginDiv = function(plugin)
 
 PluginManager.AddPluginRepo = function(name, pluginSiteURL)
 {
-    var elemDiv = document.createElement('div');
-    elemDiv.id = name.replace(/\s/g,'');
-    elemDiv.className = "repoName";
-    elemDiv.innerHTML = name;
-    window.document.body.appendChild(elemDiv);
-    elemDiv.onclick = function() 
-        {
-        elemDiv.classList.toggle("active");
-        var panel = elemDiv.nextElementSibling;
-        if (panel.style.maxHeight){
-        panel.style.maxHeight = null;
-        } else 
-        {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        } }
+    
+    
+    var repoElemDiv = document.createElement('div');
+    repoElemDiv.id = name.replace(/\s/g,'');
+    repoElemDiv.className = "repoName";
+    repoElemDiv.innerHTML = name;
+    window.document.body.appendChild(repoElemDiv);
+
+    var repoContainerDiv = document.createElement('div');
+    repoContainerDiv.id = name.replace(/\s/g,'') + "container";
+    repoElemDiv.appendChild(repoContainerDiv);
+    repoElemDiv.onclick = function() 
+    {
+        repoContainerDiv.classList.toggle("active");
+        var firstChild = repoElemDiv.firstElementChild;
+        if (firstChild.style.display === "block") 
+            {
+            firstChild.style.display = "none";
+        } else {
+            firstChild.style.display = "block";
+        }
+    }
 
     // Now add the plugins.
     var pluginsManifest = pluginSiteURL + "/plugins.json";
     var request = new XMLHttpRequest();
     request.addEventListener("load", PluginManager.MakePluginDivs);
     request.pluginSiteURL = pluginSiteURL;
-    request.parentElemDiv = elemDiv;
+    request.parentElemDiv = repoContainerDiv;
     request.open("GET", pluginsManifest);
     request.send();
 }
