@@ -58,7 +58,7 @@ PluginManager.MakePluginDiv = function(plugin)
     }
         
     var elemDiv = document.createElement('div');
-    elemDiv.id = 'pluginName';
+    elemDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
     elemDiv.className = 'pluginName';
     elemDiv.innerHTML = pluginName;
     this.parentElemDiv.appendChild(elemDiv);
