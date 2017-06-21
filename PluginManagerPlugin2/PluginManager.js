@@ -57,7 +57,7 @@ PluginManager.MakePluginDiv = function(plugin)
     }
 
     var pluginContainerDiv = document.createElement('div');
-    pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "container";
+    pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";
     this.parentElemDiv.appendChild(pluginContainerDiv);
         
     var pluginNameDiv = document.createElement('div');
@@ -65,6 +65,7 @@ PluginManager.MakePluginDiv = function(plugin)
     pluginNameDiv.className = 'pluginName';
     pluginNameDiv.innerHTML = pluginName;
     pluginContainerDiv.appendChild(pluginNameDiv);
+    pluginContainerDiv.className = 'pluginContainer';
     //this.parentElemDiv.appendChild(pluginNameDiv);
 
 
@@ -73,6 +74,8 @@ PluginManager.MakePluginDiv = function(plugin)
     pluginDescriptionDiv.className = 'pluginDescription';
     pluginDescriptionDiv.style = 'clear: both;';
     pluginContainerDiv.appendChild(pluginDescriptionDiv);
+        // start accordion collapsed
+    pluginDescriptionDiv.style.display = "none";
 
     pluginNameDiv.onclick = function(e) 
         {
@@ -171,8 +174,11 @@ PluginManager.AddPluginRepo = function(name, pluginSiteURL)
     window.document.body.appendChild(repoElemDiv);
 
     var repoContainerDiv = document.createElement('div');
-    repoContainerDiv.id = name.replace(/\s/g,'') + "container";
+    repoContainerDiv.id = name.replace(/\s/g,'') + "Container";
+    repoContainerDiv.className = "repoContainer";
     repoElemDiv.appendChild(repoContainerDiv);
+    // start accordion collapsed
+    repoElemDiv.firstElementChild.style.display = "none";
     repoElemDiv.onclick = function() 
     {
         repoContainerDiv.classList.toggle("active");
