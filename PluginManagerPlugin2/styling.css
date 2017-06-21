@@ -14,12 +14,15 @@
 
 .repoName {
     font-weight: bold;
-    color: darkslategrey;
+    font-family: sans-serif;
+    font-size: 1.1em;
     height: inherit !important;
     background-color: #EBEBEB;
-    border: 2px solid #C3E8F4 !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
+    cursor: pointer;
+    border: 2px solid #C3E8F4;
+    margin: 5px;
 }
 
 .repoName:hover {
@@ -28,29 +31,40 @@
 }
 
 .repoName.active {
-    max-height: null;
     background-color: #C3E8F4;
     border: 2px solid #C3E8F4 !important;
 }
 
 .pluginName {
-    background-color: white;
-    color: darkslategrey;
+    background-color: #EBEBEB;
     font-weight: bold;
-    /*font-size: 1.1em;*/
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    font-size: .85em;
+    font-family: sans-serif;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
     padding-left: 15px;
     padding-right: 15px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    border: 2px solid clear;
+}
+
+.pluginName:hover {
+    background-color: #C3E8F4;
+    transition: 0.2s ease-out;
+}
+
+.pluginName.active {
+    background-color: #C3E8F4;
+    border: 2px solid #C3E8F4 !important;
 }
 
 .pluginDescription {
-    color: darkslategrey;
-    height: inherit !important;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: .6em;
     background-color: white;
-    border: 2px solid #C3E8F4 !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding: 15px;
 }
 
 

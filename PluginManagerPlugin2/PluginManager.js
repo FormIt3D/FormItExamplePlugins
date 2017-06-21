@@ -30,7 +30,6 @@ PluginManager.MakePluginDivs = function()
                 request.PluginURL = this.pluginSiteURL + "/" + element;
                 request.open("GET", this.pluginSiteURL + "/" + element + "/manifest.json");
                 request.send();
-
         }, this);
     }
 }
@@ -75,17 +74,21 @@ PluginManager.MakePluginDiv = function(plugin)
     pluginDescriptionDiv.style = 'clear: both;';
     pluginContainerDiv.appendChild(pluginDescriptionDiv);
 
-    pluginNameDiv.onclick = function() 
+    pluginNameDiv.onclick = function(e) 
         {
-            
             pluginDescriptionDiv.classList.toggle("active");
-            var firstChild = pluginNameDiv.firstElementChild;
-            if (firstChild.style.display === "block") 
+            if (pluginDescriptionDiv.style.display === "block") 
                 {
-                firstChild.style.display = "none";
-            } else {
-                firstChild.style.display = "block";
-            }
+                pluginDescriptionDiv.style.display = "none";
+                } else {
+                pluginDescriptionDiv.style.display = "block";
+                }
+            e.stopPropagation();
+        }
+
+    pluginDescriptionDiv.onclick = function(e)
+        {
+            e.stopPropagation();
         }
 
 
@@ -141,11 +144,19 @@ PluginManager.MakePluginDiv = function(plugin)
 
     if (plugInInstalled)
     {
-        checkboxElemDiv.onclick = uninstallFunctionCB;
+        checkboxElemDiv.onclick = function(e) 
+        {
+            uninstallFunctionCB;
+            e.stopPropagation();
+        }
     }
     else
-    {       
-        checkboxElemDiv.onclick = installFunctionCB;
+        {       
+        checkboxElemDiv.onclick = function(e)
+        {
+            installFunctionCB;
+            e.stopPropagation();
+        }
     }
 }
 
@@ -169,7 +180,7 @@ PluginManager.AddPluginRepo = function(name, pluginSiteURL)
         if (firstChild.style.display === "block") 
             {
             firstChild.style.display = "none";
-        } else {
+            } else {
             firstChild.style.display = "block";
         }
     }
