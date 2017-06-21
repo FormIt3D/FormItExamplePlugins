@@ -3,6 +3,17 @@ FormItInterface = {};
 const WINDOWS = "Windows";
 const WEB = "Web";
 
+if (window.location.href.indexOf("?Web")  > -1)
+{
+    FormItInterface.Platform = WEB;
+}
+else
+{
+    FormItInterface.Platform = WINDOWS;
+    // Add the qwebchannel script only for Windows.
+    document.write('<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>');
+}
+
 FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
     if(FormItInterface.Platform == WEB)
@@ -45,15 +56,6 @@ FormItInterface.CallMethodInternal = function(method, args)
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
 {
     console.log("---FormItInterface.AddEventListener: " + eventSignal);
-    if (window.location.href.indexOf("?Web")  > -1)
-    {
-        FormItInterface.Platform = WEB;
-    }
-    else
-    {
-        FormItInterface.Platform = WINDOWS;
-    }
-    console.log("FormItInterface.Platform: " + FormItInterface.Platform);
 
     if(FormItInterface.Platform == WINDOWS)
     {

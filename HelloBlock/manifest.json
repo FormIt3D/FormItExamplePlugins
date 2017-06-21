@@ -2,7 +2,6 @@
     "PluginName": "Hello Block!",
     "PluginDescription": "This is a plugin that creates a panel which allows you to input the dimensions of a cube and create it along the origin.",
     "Scripts": [
-        "PLUGINLOCATION/ChannelMessagingInterface.js",
         "PLUGINLOCATION/block.js"
     ]
     ,"Panel": "PLUGINLOCATION/hello_block.html",
