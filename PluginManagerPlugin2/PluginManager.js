@@ -2,6 +2,29 @@ PluginManager = {};
 
 PluginManager.InstalledPlugins = [];
 
+PluginManager.createHeader = function() {
+    var headerDiv = document.createElement('div');
+    headerDiv.id = 'header';
+    headerDiv.className = 'header';
+    headerDiv.innerHTML = 'Plugin Manager';
+    window.document.body.appendChild(headerDiv);
+
+    var linkRepoContainer = document.createElement('div');
+    linkRepoContainer.style = "display: block";
+    headerDiv.appendChild(linkRepoContainer);
+
+    var linkRepoInput = document.createElement('INPUT');
+    linkRepoInput.setAttribute("type", "text");
+    linkRepoInput.setAttribute("placeholder", "Paste new repo URL here...");
+    linkRepoInput.className = 'linkRepoInput';
+    linkRepoContainer.appendChild(linkRepoInput);
+
+    var linkRepoButton = document.createElement('button');
+    linkRepoButton.setAttribute("type", "input");
+    linkRepoButton.className = 'linkRepoButton';
+    linkRepoContainer.appendChild(linkRepoButton);
+}
+
 PluginManager.RemovePluginFromInstalled = function(pluginLocation)
 {
     var newInstalledList = [];
@@ -74,7 +97,7 @@ PluginManager.MakePluginDiv = function(plugin)
     pluginDescriptionDiv.className = 'pluginDescription';
     pluginDescriptionDiv.style = 'clear: both;';
     pluginContainerDiv.appendChild(pluginDescriptionDiv);
-        // start accordion collapsed
+    // start accordion collapsed
     pluginDescriptionDiv.style.display = "none";
 
     pluginNameDiv.onclick = function(e) 
@@ -98,7 +121,7 @@ PluginManager.MakePluginDiv = function(plugin)
     // Add checkbox input
     var checkboxElemDiv = document.createElement('div');
     checkboxElemDiv.id = pluginName.replace(/\s/g,'') + "Checkbox";
-    checkboxElemDiv.style = 'float: right; display: inline; clear: right;';
+    checkboxElemDiv.className = "checkboxDiv";
     //checkboxElemDiv.innerHTML = pluginName;
 
     pluginNameDiv.appendChild(checkboxElemDiv);
@@ -228,6 +251,7 @@ PluginManager.CreatePlugins = function()
     console.log("---> PluginManager.CreatePlugins");
     //Clear the body to reconstruct the plugin UI.
     //document.body.innerHTML = "";
+    PluginManager.createHeader();
     if (true)
     {
         //Start by getting internal plugins and adding them to the panel.
