@@ -47,14 +47,6 @@ PluginManager.MakePluginDiv = function(plugin)
     //NOTE: "CustomDescription": *.html
     var pluginCustomDescription = pluginData["CustomDescription"];
     console.log("Custom Description: " + pluginCustomDescription);
-    var descriptionContentHTML = "";
-    // plugInInstalled returns a boolean value for whether the current plugin is installed.
-    var plugInInstalled = PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
-    // plugInChecked returns a "checked" value to insert in the checkbox div, if the plugin is installed at initialization time
-    var plugInChecked;
-    if (plugInInstalled) {
-        plugInChecked = "checked";
-    }
 
     var pluginContainerDiv = document.createElement('div');
     pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";
@@ -106,9 +98,22 @@ PluginManager.MakePluginDiv = function(plugin)
     checkboxElem.id = pluginName.replace(/\s/g,'') + "Checkbox";
     checkboxElem.type = 'checkbox';
     checkboxElem.name = 'plugInCheckBox';
-    checkboxElem.value = 'Installed';
+    checkboxElem.checked = PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
+    checkboxElemDiv.onclick = function(e)
+    {
+        if (PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1)
+        {
+            FormItInterface.CallMethod("FormIt.UninstallPlugin",  JSON.stringify(pluginLocation));
+            PluginManager.RemovePluginFromInstalled(pluginLocation);
+        }
+        else
+        {
+            FormItInterface.CallMethod("FormIt.InstallPlugin", JSON.stringify(pluginLocation));
+            PluginManager.InstalledPlugins.push(pluginLocation);
+        }
+        e.stopPropagation();
+    }
     checkboxElemDiv.appendChild(checkboxElem);
-
 
     //Thing will diverge here with custom description...
     if(pluginCustomDescription != undefined)
@@ -122,51 +127,11 @@ PluginManager.MakePluginDiv = function(plugin)
             pluginDescription = "Description not provided for this plugin.";
             pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
         }
-
-    }
-
-    var installFunctionCB = function() {
-        FormItInterface.CallMethod("FormIt.InstallPlugin", JSON.stringify(pluginLocation));
-        PluginManager.InstalledPlugins.push(pluginLocation);
-        console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
-        console.log("Attempted to install: " + pluginLocation);
-        this.value = "Uninstall";
-        this.onclick = uninstallFunctionCB;
-        document.getElementById(pluginCheckboxName).checked = true;
-    };
-
-    var uninstallFunctionCB = function() {
-        FormItInterface.CallMethod("FormIt.UninstallPlugin",  JSON.stringify(pluginLocation));
-        PluginManager.RemovePluginFromInstalled(pluginLocation);
-        console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
-        console.log("Attempted to uninstall: " + pluginLocation);
-        this.value = "Install";
-        this.onclick = installFunctionCB;
-        document.getElementById(pluginCheckboxName).checked = false;
-    };
-
-    if (plugInInstalled)
-    {
-        checkboxElemDiv.onclick = function(e) 
-        {
-            uninstallFunctionCB;
-            e.stopPropagation();
-        }
-    }
-    else
-        {       
-        checkboxElemDiv.onclick = function(e)
-        {
-            installFunctionCB;
-            e.stopPropagation();
-        }
     }
 }
 
 PluginManager.AddPluginRepo = function(name, pluginSiteURL)
-{
-    
-    
+{   
     var repoElemDiv = document.createElement('div');
     repoElemDiv.id = name.replace(/\s/g,'');
     repoElemDiv.className = "repoName";
