@@ -26,12 +26,17 @@ body {
 }
 
 .linkRepoButton {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     float: right;
-    margin-top: 15px;
-    background-color: white;
-    border: 1px solid #C3E8F4;
+    margin-top: 11px;
+    background-color: transparent;
+    background: url("img/button_add@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    outline: none;
+    border: none;
 }
 
 .linkRepoButton:hover {
@@ -52,6 +57,8 @@ body {
     padding-top: 1px;
     padding-bottom: 1px;
     margin-top: 8px;
+    cursor: auto;
+    transition: display 0.2s ease-out;
 }
 
 .repoName {
@@ -81,7 +88,7 @@ body {
 }
 
 .pluginName {
-    background-color: #EBEBEB;
+    background-color: #F7F7F7;
     font-weight: bold;
     font-size: .75em;
     font-family: sans-serif;
@@ -116,6 +123,7 @@ body {
     border-bottom: 2px solid #C3E8F4;
     border-right: 2px solid #C3E8F4;
     margin-bottom: 8px;
+    transition: display 0.2s ease-out;
 }
 
 .checkboxDiv {

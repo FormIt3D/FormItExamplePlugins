@@ -94,7 +94,7 @@ PluginManager.MakePluginDiv = function(plugin)
 
     pluginNameDiv.onclick = function(e) 
         {
-            pluginDescriptionDiv.classList.toggle("active");
+            pluginNameDiv.classList.toggle("active");
             if (pluginDescriptionDiv.style.display === "block") 
                 {
                 pluginDescriptionDiv.style.display = "none";
@@ -164,12 +164,15 @@ PluginManager.AddPluginRepo = function(name, pluginSiteURL)
     var repoContainerDiv = document.createElement('div');
     repoContainerDiv.id = name.replace(/\s/g,'') + "Container";
     repoContainerDiv.className = "repoContainer";
+    repoContainerDiv.onclick = function(e) {
+        e.stopPropagation();
+    }
     repoElemDiv.appendChild(repoContainerDiv);
     // start accordion collapsed
     repoElemDiv.firstElementChild.style.display = "none";
     repoElemDiv.onclick = function() 
     {
-        repoContainerDiv.classList.toggle("active");
+        repoElemDiv.classList.toggle("active");
         var firstChild = repoElemDiv.firstElementChild;
         if (firstChild.style.display === "block") 
             {
