@@ -3,35 +3,11 @@
 <title>Plugin Manager</title>
 <META NAME="Title" CONTENT="Plugin Manager">
 <META NAME="Author" CONTENT="FormIt Team">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="styling.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-$(function()
-{
-    $(".accordionParent").accordion({
-    collapsible: true
-  });
-  $(".accordion").accordion({
-    collapsible: true, autoHeight: false
-  });
-});
-</script>
-<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
-<script type="text/javascript">
-    <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
-    document.addEventListener("DOMContentLoaded", function () {
-        new QWebChannel(qt.webChannelTransport, function (channel) {
-            window.FormItInterface = channel.objects.FormItInterface;
-            console.log("new QWebChannel");
-            PluginManager.CreatePlugins();
-        });
-    });
-</script>
+<script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="PluginManager.js"></script>
+<script type="text/javascript">
+    FormItInterface.AddEventListener("DOMContentLoaded", PluginManager.CreatePlugins);
+</script>
 </head>
-<body>
-<div class='accordionParent'></div><div class='accordion'></div>
-</body>
 </html>
