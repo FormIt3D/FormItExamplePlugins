@@ -139,7 +139,7 @@ PluginManager.MakePluginDiv = function(plugin)
     checkboxElemDiv.appendChild(checkboxElem);
 
     //Thing will diverge here with custom description...
-    if(pluginCustomDescription != undefined)
+    if(pluginCustomDescription != undefined || pluginDescription != undefined) 
     {
         pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
     }
