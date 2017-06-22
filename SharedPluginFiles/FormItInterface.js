@@ -19,7 +19,6 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
     if(FormItInterface.Platform == WEB)
     {
         console.log("Calling method from frame: " + method + " args: " + args);
-        //window.parent.FormItInterface.CallMethodInternal(method, args);
         var fullMethod = method + "("+args+");";
         var result = undefined;
         try
@@ -44,13 +43,6 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
     {
         console.log("Platform has not been integrated yet!");
     }
-}
-
-//This should only be used in cases with which JS must be passed from one script console to another.
-FormItInterface.CallMethodInternal = function(method, args)
-{
-    var fullMethod = method + "("+args+");";
-    eval(fullMethod);
 }
 
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
