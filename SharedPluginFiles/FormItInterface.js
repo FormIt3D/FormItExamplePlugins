@@ -73,7 +73,3 @@ FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
             });        
     }
 }
-
-FormItInterface.Connect = function(callbackMethod)
-{
-}
