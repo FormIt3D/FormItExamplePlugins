@@ -38,24 +38,74 @@ PluginManager.RemovePluginFromInstalled = function(pluginLocation)
     PluginManager.InstalledPlugins = newInstalledList;
 }
 
-PluginManager.MakePluginDivs = function()
+PluginManager.MakePluginRepoDivs = function()
 {
-    var plugins = JSON.parse(this.responseText);
-    if (plugins)
+    console.log("---> PluginManager.MakePluginRepoDivs");
+
+    //TODO (hauswij): Figure out how to get the full URL of the plugins. This will be needed for installed comparisons.
+    //Ex. FormIt will return: http://localhost:8000/PluginManager for the installed PluginManager. Need to figure out
+    // how to get this current web URL to add to beginning of plugin addresses used here.
+    // Diff:
+    // Installed Plugin: http://localhost:8000/PluginManager
+    // Building Now: ../PluginManager
+    // I'm hard-coding this bit for now.
+    var originURL = document.URL;
+    originURL = originURL.replace('PluginManagerPlugin\/PluginManager.html', '');
+    var repoArray = JSON.parse(this.responseText);
+    for(var i=0; i < repoArray.length; i++)
     {
-        plugins.forEach(function(element) {
-                // Now add the plugins.
-                //var pluginManifest = this.pluginSiteURL + "/" + element + "/manifest.json";
-                var request = new XMLHttpRequest();
-                request.addEventListener("load", PluginManager.MakePluginDiv);
-                request.pluginSiteURL = this.pluginSiteURL;
-                request.parentElemDiv = this.parentElemDiv;
-                request.PluginURL = this.pluginSiteURL + "/" + element;
-                request.open("GET", this.pluginSiteURL + "/" + element + "/manifest.json");
-                request.send();
-        }, this);
+         // Now add the plugins.
+        var pluginsManifest = repoArray[i] + "/plugins.json";
+        var request = new XMLHttpRequest();
+        request.addEventListener("load", PluginManager.AddPluginRepo);
+        request.pluginSiteURL = repoArray[i];
+        request.open("GET", pluginsManifest);
+        request.send();
     }
 }
+
+PluginManager.AddPluginRepo = function()
+{   
+    var repoPlugins = JSON.parse(this.responseText);
+    var repoElemDiv = document.createElement('div');
+    repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
+    repoElemDiv.className = "repoName";
+    repoElemDiv.innerHTML = repoPlugins.RepoName;
+    window.document.body.appendChild(repoElemDiv);
+
+    repoContainerDiv = document.createElement('div');
+    repoContainerDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Container";
+    repoContainerDiv.className = "repoContainer";
+    repoElemDiv.appendChild(repoContainerDiv);
+    repoContainerDiv.onclick = function(e) {
+        e.stopPropagation();
+    }
+    // start accordion collapsed
+    repoElemDiv.firstElementChild.style.display = "none";
+    repoElemDiv.onclick = function() 
+    {
+        repoElemDiv.classList.toggle("active");
+        var firstChild = repoElemDiv.firstElementChild;
+        if (firstChild.style.display === "block") 
+            {
+            firstChild.style.display = "none";
+            } else {
+            firstChild.style.display = "block";
+        }
+    }
+
+    // Now add the plugins.
+    repoPlugins.Plugins.forEach(function(element) {
+        var request = new XMLHttpRequest();
+        request.addEventListener("load", PluginManager.MakePluginDiv);
+        request.pluginSiteURL = this.pluginSiteURL;
+        request.parentElemDiv = repoElemDiv;
+        request.PluginURL = this.pluginSiteURL + "/" + element;
+        request.open("GET", this.pluginSiteURL + "/" + element + "/manifest.json");
+        request.send();
+        }, this);
+}
+
 
 PluginManager.MakePluginDiv = function(plugin)
 {
@@ -73,7 +123,7 @@ PluginManager.MakePluginDiv = function(plugin)
 
     var pluginContainerDiv = document.createElement('div');
     pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";
-    this.parentElemDiv.appendChild(pluginContainerDiv);
+    repoContainerDiv.appendChild(pluginContainerDiv);
         
     var pluginNameDiv = document.createElement('div');
     pluginNameDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
@@ -81,7 +131,6 @@ PluginManager.MakePluginDiv = function(plugin)
     pluginNameDiv.innerHTML = pluginName;
     pluginContainerDiv.appendChild(pluginNameDiv);
     pluginContainerDiv.className = 'pluginContainer';
-    //this.parentElemDiv.appendChild(pluginNameDiv);
 
 
     var pluginDescriptionDiv = document.createElement('div');
@@ -114,7 +163,6 @@ PluginManager.MakePluginDiv = function(plugin)
     var checkboxElemDiv = document.createElement('div');
     checkboxElemDiv.id = pluginName.replace(/\s/g,'') + "Checkbox";
     checkboxElemDiv.className = "checkboxDiv";
-    //checkboxElemDiv.innerHTML = pluginName;
 
     pluginNameDiv.appendChild(checkboxElemDiv);
     var checkboxElem = document.createElement("input");
@@ -153,67 +201,6 @@ PluginManager.MakePluginDiv = function(plugin)
     }
 }
 
-PluginManager.AddPluginRepo = function(name, pluginSiteURL)
-{   
-    var repoElemDiv = document.createElement('div');
-    repoElemDiv.id = name.replace(/\s/g,'');
-    repoElemDiv.className = "repoName";
-    repoElemDiv.innerHTML = name;
-    window.document.body.appendChild(repoElemDiv);
-
-    var repoContainerDiv = document.createElement('div');
-    repoContainerDiv.id = name.replace(/\s/g,'') + "Container";
-    repoContainerDiv.className = "repoContainer";
-    repoContainerDiv.onclick = function(e) {
-        e.stopPropagation();
-    }
-    repoElemDiv.appendChild(repoContainerDiv);
-    // start accordion collapsed
-    repoElemDiv.firstElementChild.style.display = "none";
-    repoElemDiv.onclick = function() 
-    {
-        repoElemDiv.classList.toggle("active");
-        var firstChild = repoElemDiv.firstElementChild;
-        if (firstChild.style.display === "block") 
-            {
-            firstChild.style.display = "none";
-            } else {
-            firstChild.style.display = "block";
-        }
-    }
-
-    // Now add the plugins.
-    var pluginsManifest = pluginSiteURL + "/plugins.json";
-    var request = new XMLHttpRequest();
-    request.addEventListener("load", PluginManager.MakePluginDivs);
-    request.pluginSiteURL = pluginSiteURL;
-    request.parentElemDiv = repoContainerDiv;
-    request.open("GET", pluginsManifest);
-    request.send();
-}
-
-PluginManager.MakePluginRepoDivs = function()
-{
-    console.log("---> PluginManager.MakePluginRepoDivs");
-
-    //TODO (hauswij): Figure out how to get the full URL of the plugins. This will be needed for installed comparisons.
-    //Ex. FormIt will return: http://localhost:8000/PluginManager for the installed PluginManager. Need to figure out
-    // how to get this current web URL to add to beginning of plugin addresses used here.
-    // Diff:
-    // Installed Plugin: http://localhost:8000/PluginManager
-    // Building Now: ../PluginManager
-    // I'm hard-coding this bit for now.
-    var originURL = document.URL;
-    originURL = originURL.replace('PluginManagerPlugin\/PluginManager.html', '');
-    var pluginArray = JSON.parse(this.responseText);
-    for(var i=0; i < pluginArray.length; i++)
-    {
-        var name = pluginArray[i].Name;
-        var pluginSiteURL = pluginArray[i].URL;
-        PluginManager.AddPluginRepo(name, pluginSiteURL);
-    }
-}
-
 PluginManager.CreatePlugins = function()
 {
     console.log("---> PluginManager.CreatePlugins");
@@ -223,7 +210,7 @@ PluginManager.CreatePlugins = function()
     if (true)
     {
         //Start by getting internal plugins and adding them to the panel.
-        //console.log("Calling FormIt.GetInstalledPlugins");
+        console.log("Calling FormIt.GetInstalledPlugins");
         FormItInterface.CallMethod("FormIt.GetInstalledPlugins", "",
             function(installedPlugins)
             {

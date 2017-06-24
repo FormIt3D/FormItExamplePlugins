@@ -1,4 +1,7 @@
-[
+{
+  "RepoName": "FormIt Example Plugins",
+  "Plugins": 
+  [
   "DialogFromToolbar",
   "FlipAlong",
   "HelloBlock",
@@ -9,4 +12,5 @@
   "PluginManagerPlugin",
   "PluginManagerToolbar",
   "Toolbar1"
-]
+  ]
+}
