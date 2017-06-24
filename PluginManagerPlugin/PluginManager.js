@@ -73,13 +73,14 @@ PluginManager.AddPluginRepo = function()
     repoElemDiv.innerHTML = repoPlugins.RepoName;
     window.document.body.appendChild(repoElemDiv);
 
-    repoContainerDiv = document.createElement('div');
+    var repoContainerDiv = document.createElement('div');
     repoContainerDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Container";
     repoContainerDiv.className = "repoContainer";
     repoElemDiv.appendChild(repoContainerDiv);
     repoContainerDiv.onclick = function(e) {
         e.stopPropagation();
     }
+
     // start accordion collapsed
     repoElemDiv.firstElementChild.style.display = "none";
     repoElemDiv.onclick = function() 
@@ -99,7 +100,7 @@ PluginManager.AddPluginRepo = function()
         var request = new XMLHttpRequest();
         request.addEventListener("load", PluginManager.MakePluginDiv);
         request.pluginSiteURL = this.pluginSiteURL;
-        request.parentElemDiv = repoElemDiv;
+        request.parentElemDiv = repoContainerDiv;
         request.PluginURL = this.pluginSiteURL + "/" + element;
         request.open("GET", this.pluginSiteURL + "/" + element + "/manifest.json");
         request.send();
@@ -123,7 +124,7 @@ PluginManager.MakePluginDiv = function(plugin)
 
     var pluginContainerDiv = document.createElement('div');
     pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";
-    repoContainerDiv.appendChild(pluginContainerDiv);
+    this.parentElemDiv.appendChild(pluginContainerDiv);
         
     var pluginNameDiv = document.createElement('div');
     pluginNameDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
@@ -138,6 +139,7 @@ PluginManager.MakePluginDiv = function(plugin)
     pluginDescriptionDiv.className = 'pluginDescription';
     pluginDescriptionDiv.style = 'clear: both;';
     pluginContainerDiv.appendChild(pluginDescriptionDiv);
+
     // start accordion collapsed
     pluginDescriptionDiv.style.display = "none";
 
