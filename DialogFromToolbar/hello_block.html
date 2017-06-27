@@ -1,18 +1,12 @@
-
 <html>
 <head>
 <title>Hello Block!</title>
 <META NAME="Title" CONTENT="Create Block!">
 <META NAME="Author" CONTENT="Jeff Hauswirth">
-<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="block.js"></script>
 <script type="text/javascript">
-    <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
-    document.addEventListener("DOMContentLoaded", function () {
-        new QWebChannel(qt.webChannelTransport, function (channel) {
-            window.NewFormItInterface = channel.objects.FormItInterface;
-        });
-    });
+    FormItInterface.AddEventListener("DOMContentLoaded");
 </script>
 </head>
 <body>
