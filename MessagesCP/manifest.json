@@ -1,6 +1,0 @@
-{
-    "PluginName": "Messages Cross Platform",
-    "PluginDescription": "This plugin allows you to track the messages sent through the FormIt core system.",
-    "Scripts": [ "PLUGINLOCATION/messages.js" ],
-    "Panel": "PLUGINLOCATION/messages.html"
-}
