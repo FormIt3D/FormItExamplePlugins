@@ -4,7 +4,7 @@ DialogFromToolbar.ShowDialog = function()
 {
     var dialogParams = {
     "PluginName": "Dialog From Toolbar",
-    "DialogBox": "PLUGINLOCATION/hello_block.html",
+    "DialogBox": "PLUGINLOCATION/../HelloBlock/hello_block.html",
     "DialogBoxWidth": 300,
     "DialogBoxHeight": 180,
     "DialogBoxType": "Modeless"};

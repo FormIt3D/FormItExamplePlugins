@@ -2,10 +2,9 @@
 function CreateBlock(args)
 {
     //debugger;
-    var histID = 0;
+    var histID = FormIt.GroupEdit.GetEditingHistoryID();
     var pt1 = WSM.Geom.Point3d(0.0, 0.0, 0.0);
     var pt2 = WSM.Geom.Point3d(args.w, args.l, args.h);
-    console.log("About to send to WSM.APICreateBlock()");
     var blockID = WSM.APICreateBlock(histID, pt1, pt2);
 }
 

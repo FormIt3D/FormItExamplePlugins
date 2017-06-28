@@ -1,5 +1,5 @@
 {
     "PluginName": "Dialog From Toolbar",
-    "Scripts": [ "PLUGINLOCATION/dialogfromtoolbar.js", "PLUGINLOCATION/block.js" ],
+    "Scripts": [ "PLUGINLOCATION/dialogfromtoolbar.js", "PLUGINLOCATION/../HelloBlock/block.js" ],
     "ToolbarURL": "PLUGINLOCATION/toolbar.json"
 }

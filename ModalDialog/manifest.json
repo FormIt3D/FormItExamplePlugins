@@ -1,9 +1,9 @@
 {
     "PluginName": "Modal Hello Block",
     "Scripts": [
-        "PLUGINLOCATION/block.js"
+        "PLUGINLOCATION/../HelloBlock/block.js"
     ],
-    "DialogBox": "PLUGINLOCATION/hello_block.html",
+    "DialogBox": "PLUGINLOCATION/../HelloBlock/hello_block.html",
     "DialogBoxWidth": 300,
     "DialogBoxHeight": 180,
     "DialogBoxType": "Modal"
