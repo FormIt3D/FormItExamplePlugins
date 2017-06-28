@@ -16,10 +16,11 @@ else
 
 FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
+  var stringArgs = JSON.stringify(args);
     if(FormItInterface.Platform == WEB)
     {
-        console.log("Calling method from frame: " + method + " args: " + args);
-        var fullMethod = method + "("+args+");";
+        //console.log("Calling method from frame: " + method + " args: " + args);
+        var fullMethod = method + "("+ stringArgs +");";
         var result = undefined;
         try
         {
@@ -37,7 +38,7 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
     }
     else if(FormItInterface.Platform == WINDOWS)
     {
-        window.NewFormItInterface.CallMethod(method, args, callbackMethod);
+        window.NewFormItInterface.CallMethod(method, stringArgs, callbackMethod);
     }
     else
     {
@@ -70,6 +71,6 @@ FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
             {
                 callbackMethod();
             }
-            });        
+            });
     }
 }

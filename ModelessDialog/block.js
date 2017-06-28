@@ -18,5 +18,5 @@ function Submit()
     }
     console.log("CreateBlock");
     console.log("args:" + args);
-    window.NewFormItInterface.CallMethod("CreateBlock", JSON.stringify(args));
+    window.NewFormItInterface.CallMethod("CreateBlock", args);
 }

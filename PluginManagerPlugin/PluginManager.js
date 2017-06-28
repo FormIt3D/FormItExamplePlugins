@@ -65,7 +65,7 @@ PluginManager.MakePluginRepoDivs = function()
 }
 
 PluginManager.AddPluginRepo = function()
-{   
+{
     var repoPlugins = JSON.parse(this.responseText);
     var repoElemDiv = document.createElement('div');
     repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
@@ -83,11 +83,11 @@ PluginManager.AddPluginRepo = function()
 
     // start accordion collapsed
     repoElemDiv.firstElementChild.style.display = "none";
-    repoElemDiv.onclick = function() 
+    repoElemDiv.onclick = function()
     {
         repoElemDiv.classList.toggle("active");
         var firstChild = repoElemDiv.firstElementChild;
-        if (firstChild.style.display === "block") 
+        if (firstChild.style.display === "block")
             {
             firstChild.style.display = "none";
             } else {
@@ -125,7 +125,7 @@ PluginManager.MakePluginDiv = function(plugin)
     var pluginContainerDiv = document.createElement('div');
     pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";
     this.parentElemDiv.appendChild(pluginContainerDiv);
-        
+
     var pluginNameDiv = document.createElement('div');
     pluginNameDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
     pluginNameDiv.className = 'pluginName';
@@ -143,10 +143,10 @@ PluginManager.MakePluginDiv = function(plugin)
     // start accordion collapsed
     pluginDescriptionDiv.style.display = "none";
 
-    pluginNameDiv.onclick = function(e) 
+    pluginNameDiv.onclick = function(e)
         {
             pluginNameDiv.classList.toggle("active");
-            if (pluginDescriptionDiv.style.display === "block") 
+            if (pluginDescriptionDiv.style.display === "block")
                 {
                 pluginDescriptionDiv.style.display = "none";
                 } else {
@@ -176,12 +176,12 @@ PluginManager.MakePluginDiv = function(plugin)
     {
         if (PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1)
         {
-            FormItInterface.CallMethod("FormIt.UninstallPlugin",  JSON.stringify(pluginLocation));
+            FormItInterface.CallMethod("FormIt.UninstallPlugin",  pluginLocation);
             PluginManager.RemovePluginFromInstalled(pluginLocation);
         }
         else
         {
-            FormItInterface.CallMethod("FormIt.InstallPlugin", JSON.stringify(pluginLocation));
+            FormItInterface.CallMethod("FormIt.InstallPlugin", pluginLocation);
             PluginManager.InstalledPlugins.push(pluginLocation);
         }
         e.stopPropagation();
@@ -189,7 +189,7 @@ PluginManager.MakePluginDiv = function(plugin)
     checkboxElemDiv.appendChild(checkboxElem);
 
     //Thing will diverge here with custom description...
-    if(pluginCustomDescription != undefined || pluginDescription != undefined) 
+    if(pluginCustomDescription != undefined || pluginDescription != undefined)
     {
         pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
     }
@@ -230,6 +230,6 @@ PluginManager.CreatePlugins = function()
                 request.addEventListener("load", PluginManager.MakePluginRepoDivs);
                 request.open("GET", "pluginsites.json");
                 request.send();
-            });                
+            });
     }
 }
