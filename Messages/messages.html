@@ -26,7 +26,7 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  
+
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -123,61 +123,20 @@ input {
 <body>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">FormIt Messages</h2> 
+  <h2 style="margin:5px">FormIt Messages</h2>
 </div>
 
 <ul id="FormItMessagesUL">
 </ul>
 
-<script type="text/javascript" src="message.js"></script>
-<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
+<script type="text/javascript" src="messages.js"></script>
 <script>
-// Create a new list item when clicking on the "Add" button
-function newElement(inputValue) {
-  var li = document.createElement("li");
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("FormItMessagesUL").appendChild(li);
-  }
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  //li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
-
-function LoadMessages()
-{
-    //window.FormItInterface.ConsoleLog("LoadMessages called");
-    window.FormItInterface.CallMethod("GetMessages", "", function(messages)
-    {
-        //window.FormItInterface.ConsoleLog("Num messages " + messages.length);
-        var msgs = JSON.parse(messages);
-        //window.FormItInterface.ConsoleLog("Num msgs " + msgs.length);
-        for (var i = 0; i < msgs.length; i++)
-        {
-            //window.FormItInterface.ConsoleLog("GetMessage " + i + ": " + msgs[i]);
-            newElement(msgs[i]);
-        }
-    });
-}
-
 FormItInterface.AddEventListener("DOMContentLoaded", function () {
 
-    window.FormItInterface.FormItMessage.connect(function(msg, json) {
+    FormItInterface.FormItMessage.connect(function(msg, json) {
     // This callback will be invoked whenever the signal is emitted on the C++/QML side.
-        window.FormItInterface.ConsoleLog("(Web Side) Message: " + msg + " json: " + json);
+        FormItInterface.ConsoleLog("(Web Side) Message: " + msg + " json: " + json);
     });
 
     // Add a "checked" symbol when clicking on a list item
@@ -188,19 +147,19 @@ FormItInterface.AddEventListener("DOMContentLoaded", function () {
         var subscribe = ev.target.classList.contains('checked');
         if (subscribe)
         {
-            window.FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
-            window.FormItInterface.SubscribeMessage(ev.target.innerText);
-            window.FormItInterface.ConsoleLog("About to call MessagesPluginSubscribe");
-            window.FormItInterface.CallMethod("MessagesPluginSubscribe", ev.target.innerText);
+            FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
+            FormItInterface.SubscribeMessage(ev.target.innerText);
+            FormItInterface.ConsoleLog("About to call MessagesPluginSubscribe");
+            FormItInterface.CallMethod("MessagesPluginSubscribe", ev.target.innerText);
         }
         else
         {
-            window.FormItInterface.ConsoleLog("UnSubscribe: " + ev.target.innerText);
-            window.FormItInterface.UnsubscribeMessage(ev.target.innerText);
+            FormItInterface.ConsoleLog("UnSubscribe: " + ev.target.innerText);
+            FormItInterface.UnsubscribeMessage(ev.target.innerText);
         }
       }
     }, false);
-    
+
     LoadMessages();
 });  // DOMContentLoaded
 </script>

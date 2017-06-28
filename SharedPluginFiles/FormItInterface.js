@@ -56,6 +56,9 @@ FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
                 console.log("new QWebChannel");
                 new QWebChannel(qt.webChannelTransport, function (channel) {
                     window.NewFormItInterface = channel.objects.FormItInterface;
+                    FormItInterface.FormItMessage = window.NewFormItInterface.FormItMessage;
+                    FormItInterface.ConsoleLog = window.NewFormItInterface.ConsoleLog;
+                    FormItInterface.SubscribeMessage = window.NewFormItInterface.SubscribeMessage;
                     window.PluginDialog = channel.objects.PluginDialog;
                     if (callbackMethod)
                     {
