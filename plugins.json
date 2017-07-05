@@ -1,5 +1,5 @@
 {
-  "RepoName": "FormIt Example Plugins",
+  "RepoName": "(Local) FormIt Example Plugins",
   "Plugins": 
   [
   "DialogFromToolbar",
@@ -11,6 +11,7 @@
   "ModelessDialog",
   "PluginManagerPlugin",
   "PluginManagerToolbar",
-  "Toolbar1"
+  "Toolbar1",
+  "WindTurbine"
   ]
 }
