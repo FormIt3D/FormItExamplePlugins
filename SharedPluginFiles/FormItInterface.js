@@ -6,6 +6,8 @@ const WEB = "Web";
 if (window.location.href.indexOf("?Web")  > -1)
 {
     FormItInterface.Platform = WEB;
+    // Add the post-robot script only for Web.
+    document.write('<script type="text/javascript" src="../SharedPluginFiles/post-robot.js"></script>');
 }
 else
 {
@@ -16,28 +18,22 @@ else
 
 FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
-  var stringArgs = JSON.stringify(args);
     if(FormItInterface.Platform == WEB)
     {
-        //console.log("Calling method from frame: " + method + " args: " + args);
-        var fullMethod = method + "("+ stringArgs +");";
-        var result = undefined;
-        try
-        {
-            result = eval(fullMethod);
-        }
-        catch(e)
-        {
-            console.log("Error: " + e);
-            result = undefined;
-        }
-        if (callbackMethod)
-        {
-            callbackMethod(result);
-        }
+        postRobot.send(parent, 'FormIt.PluginMsg', {'method': method, 'args': args}).then(function(event) {
+            //console.log('Event Data: ', JSON.stringify(event.data));
+            if (callbackMethod)
+            {
+                callbackMethod(event.data);
+            }
+        }).catch(function(err) {
+            // Handle any errors that stopped our call from going through            
+            console.error(err);
+        });
     }
     else if(FormItInterface.Platform == WINDOWS)
     {
+        var stringArgs = JSON.stringify(args);
         window.NewFormItInterface.CallMethod(method, stringArgs, callbackMethod);
     }
     else
