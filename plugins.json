@@ -1,6 +1,6 @@
 {
-  "RepoName": "(Local) FormIt Example Plugins",
-  "Plugins": 
+  "RepoName": "FormIt Example Plugins",
+  "Plugins":
   [
   "DialogFromToolbar",
   "FlipAlong",
@@ -12,6 +12,7 @@
   "PluginManagerPlugin",
   "PluginManagerToolbar",
   "Toolbar1",
-  "WindTurbine"
+  "WindTurbine",
+  "ObjectAttributes"
   ]
 }

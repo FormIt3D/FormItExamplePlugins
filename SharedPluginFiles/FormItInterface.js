@@ -48,12 +48,12 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
 
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
 {
-    console.log("---FormItInterface.AddEventListener: " + eventSignal);
+    //console.log(`---FormItInterface.AddEventListener: ${eventSignal}`);
 
     if(FormItInterface.Platform == WINDOWS)
     {
         document.addEventListener(eventSignal, function () {
-                console.log("new QWebChannel");
+                //console.log("new QWebChannel");
                 new QWebChannel(qt.webChannelTransport, function (channel) {
                     window.NewFormItInterface = channel.objects.FormItInterface;
                     FormItInterface.FormItMessage = window.NewFormItInterface.FormItMessage;

@@ -229,7 +229,7 @@ PluginManager.CreatePlugins = function()
                 console.log("************** Requesting plugins.json to call PluginManager.MakePluginRepoDivs.");
                 var request = new XMLHttpRequest();
                 request.addEventListener("load", PluginManager.MakePluginRepoDivs);
-                request.open("GET", "pluginsites2.json");
+                request.open("GET", "pluginsites.json");
                 request.send();
             });
     }
