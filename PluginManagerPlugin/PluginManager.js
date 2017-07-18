@@ -51,6 +51,7 @@ PluginManager.MakePluginRepoDivs = function()
     // I'm hard-coding this bit for now.
     var originURL = document.URL;
     originURL = originURL.replace('PluginManagerPlugin\/PluginManager.html', '');
+    //console.log("pluginsites: " + this.responseText);
     var repoArray = JSON.parse(this.responseText);
     for(var i=0; i < repoArray.length; i++)
     {
@@ -110,17 +111,17 @@ PluginManager.AddPluginRepo = function()
 
 PluginManager.MakePluginDiv = function(plugin)
 {
-    console.log("---> PluginManager.MakePluginDiv");
+    //console.log("---> PluginManager.MakePluginDiv");
     //TODO (herrj): Check if this plugin is in installed plugin list and skip if it is not.
     var pluginData = JSON.parse(this.responseText);
     var pluginName = pluginData["PluginName"];
-    console.log("Creating Plugin: " + pluginName);
+    //console.log("Creating Plugin: " + pluginName);
     var pluginLocation = this.PluginURL;
     console.log("Plugin URL: " + pluginLocation);
     var pluginDescription = pluginData["PluginDescription"];
     //NOTE: "CustomDescription": *.html
     var pluginCustomDescription = pluginData["CustomDescription"];
-    console.log("Custom Description: " + pluginCustomDescription);
+    //console.log("Custom Description: " + pluginCustomDescription);
 
     var pluginContainerDiv = document.createElement('div');
     pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";

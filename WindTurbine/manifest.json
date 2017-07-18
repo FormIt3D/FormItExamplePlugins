@@ -1,0 +1,9 @@
+{
+    "PluginName": "Wind Turbine",
+    "PluginDescription": "This is a plugin that creates wind turbines with custom user input.",
+    "Scripts": [
+        "PLUGINLOCATION/WindTurbine.js"
+    ]
+    ,"Panel": "PLUGINLOCATION/WindTurbine.html",
+    "CustomDescription": "customdescription.html"
+}

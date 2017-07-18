@@ -4,20 +4,19 @@
 <title>WSM String Attributes</title>
 <META NAME="Title" CONTENT="Create Block!">
 <META NAME="Author" CONTENT="Jeff Hauswirth">
-<!-- <script type="text/javascript" src="FormIt_Emscripten.js"></script> -->
-<!-- <script type="text/javascript" src="qwebchannel.js"></script> -->
-<!--<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>-->
-<script type="text/javascript" src="FormItInterface.js"></script>
+<script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="wsmattribute.js"></script>
 <script type="text/javascript">
-    <!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
     FormItInterface.AddEventListener("DOMContentLoaded");
 </script>
 </head>
 <body>
 <h1>WSM String Attributes</h1>
 <hr>
+<form name=a action="x.htm">
+Key <input type=text name=key value = "ExampleWSMKey"><br>
+Value <input type=text name=value value = "ExampleWSMValue"><br>
+<input type=button value="Create Attribute" onClick="Submit();">
 </form>
-
 </body>
 </html>

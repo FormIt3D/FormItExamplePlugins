@@ -1,6 +1,6 @@
 {
   "RepoName": "FormIt Example Plugins",
-  "Plugins": 
+  "Plugins":
   [
   "DialogFromToolbar",
   "FlipAlong",
@@ -11,6 +11,8 @@
   "ModelessDialog",
   "PluginManagerPlugin",
   "PluginManagerToolbar",
-  "Toolbar1"
+  "Toolbar1",
+  "WindTurbine",
+  "ObjectAttributes"
   ]
 }
