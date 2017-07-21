@@ -20,9 +20,25 @@ PluginManager.createHeader = function() {
     linkRepoContainer.appendChild(linkRepoInput);
 
     var linkRepoButton = document.createElement('button');
-    linkRepoButton.setAttribute("type", "input");
+    linkRepoButton.setAttribute("type", "submit");
+    linkRepoButton.id = 'linkRepoButton';
     linkRepoButton.className = 'linkRepoButton';
     linkRepoContainer.appendChild(linkRepoButton);
+    linkRepoButton.onclick = submitURL();
+
+    function submitURL() {
+            PluginManager.MakePluginRepoDivs;
+            document.getElementById('linkRepoButton').click();
+            linkRepoInput.value='';
+    }
+
+    linkRepoInput.onkeydown = function(event)
+    {
+        if (event.keyCode == 13)
+        {
+            submitURL();
+        }
+    }
 }
 
 PluginManager.RemovePluginFromInstalled = function(pluginLocation)
