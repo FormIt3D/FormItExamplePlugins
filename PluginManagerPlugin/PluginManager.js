@@ -24,12 +24,13 @@ PluginManager.createHeader = function() {
     linkRepoButton.id = 'linkRepoButton';
     linkRepoButton.className = 'linkRepoButton';
     linkRepoContainer.appendChild(linkRepoButton);
-    linkRepoButton.onclick = submitURL();
+    linkRepoButton.onclick = submitURL;
 
-    function submitURL() {
-            PluginManager.MakePluginRepoDivs;
-            document.getElementById('linkRepoButton').click();
-            linkRepoInput.value='';
+    function submitURL()
+    {
+        var repoURL = linkRepoInput.value;
+        linkRepoInput.value='';
+        PluginManager.MakePluginRepoDiv(repoURL);
     }
 
     linkRepoInput.onkeydown = function(event)
@@ -72,13 +73,20 @@ PluginManager.MakePluginRepoDivs = function()
     for(var i=0; i < repoArray.length; i++)
     {
          // Now add the plugins.
-        var pluginsManifest = repoArray[i] + "/plugins.json";
-        var request = new XMLHttpRequest();
-        request.addEventListener("load", PluginManager.AddPluginRepo);
-        request.pluginSiteURL = repoArray[i];
-        request.open("GET", pluginsManifest);
-        request.send();
+        var repoURL = repoArray[i];
+        PluginManager.MakePluginRepoDiv(repoURL);
     }
+}
+
+PluginManager.MakePluginRepoDiv = function(repoURL)
+{
+    // Now add the plugins.
+    var pluginsManifest = repoURL + "/plugins.json";
+    var request = new XMLHttpRequest();
+    request.addEventListener("load", PluginManager.AddPluginRepo);
+    request.pluginSiteURL = repoURL;
+    request.open("GET", pluginsManifest);
+    request.send();
 }
 
 PluginManager.AddPluginRepo = function()
