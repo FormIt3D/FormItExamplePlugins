@@ -1,6 +1,49 @@
+// TODO(hauswij): Do the check to see if it exists first.
+FormItExamplePlugins = {};
+FormItExamplePlugins.PluginManager = {};
+
+// TODO(hauswij): Put PluginManager into FormItExamplePlugins
 PluginManager = {};
 
 PluginManager.InstalledPlugins = [];
+
+// SaveRepoLink saved the added repo into the app registry.
+// Returns true if the repo hasn't already been added.
+FormItExamplePlugins.PluginManager.SaveRepoLink = function(repoURL)
+{
+    // Make sure the app supports SaveAppData/RestoreAppData
+    var typeofRestoreAppData = typeof FormIt.RestoreAppData;
+    if (typeofRestoreAppData === 'function')
+    {
+        var addedRepos = FormIt.RestoreAppData('FormItExamplePlugins.PluginManagerPlugin', '[]');
+        addedRepos = JSON.parse(addedRepos);
+
+        // Check if repo is already added.
+        for (var alreadyAddedRepo in addedRepos)
+        {
+            if (addedRepos[alreadyAddedRepo] == repoURL)
+            {
+                return false;
+            }
+        };
+        addedRepos.push(repoURL);
+        FormIt.SaveAppData('FormItExamplePlugins.PluginManagerPlugin', JSON.stringify(addedRepos));
+    }
+    return true;
+}
+
+FormItExamplePlugins.PluginManager.GetAddedRepos = function()
+{
+    // Make sure the app supports SaveAppData/RestoreAppData
+    var typeofRestoreAppData = typeof FormIt.RestoreAppData;
+    if (typeofRestoreAppData === 'function')
+    {
+        var repos = FormIt.RestoreAppData('FormItExamplePlugins.PluginManagerPlugin', '[]');
+        repos = JSON.parse(repos);
+        return repos;
+    }
+    return '[]';
+}
 
 PluginManager.createHeader = function() {
     var headerDiv = document.createElement('div');
@@ -30,7 +73,15 @@ PluginManager.createHeader = function() {
     {
         var repoURL = linkRepoInput.value;
         linkRepoInput.value='';
-        PluginManager.MakePluginRepoDiv(repoURL);
+        // NOTE: The saving of the added repos needs to happen on the FormIt side (CallMethod).
+        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.SaveRepoLink', repoURL,
+            function(added)
+            {
+                if (added == 'true')
+                {
+                    PluginManager.MakePluginRepoDiv(repoURL);
+                }
+            });
     }
 
     linkRepoInput.onkeydown = function(event)
@@ -59,13 +110,6 @@ PluginManager.MakePluginRepoDivs = function()
 {
     console.log("---> PluginManager.MakePluginRepoDivs");
 
-    //TODO (hauswij): Figure out how to get the full URL of the plugins. This will be needed for installed comparisons.
-    //Ex. FormIt will return: http://localhost:8000/PluginManager for the installed PluginManager. Need to figure out
-    // how to get this current web URL to add to beginning of plugin addresses used here.
-    // Diff:
-    // Installed Plugin: http://localhost:8000/PluginManager
-    // Building Now: ../PluginManager
-    // I'm hard-coding this bit for now.
     var originURL = document.URL;
     originURL = originURL.replace('PluginManagerPlugin\/PluginManager.html', '');
     //console.log("pluginsites: " + this.responseText);
@@ -76,6 +120,19 @@ PluginManager.MakePluginRepoDivs = function()
         var repoURL = repoArray[i];
         PluginManager.MakePluginRepoDiv(repoURL);
     }
+
+    // Now add the repos the user added previously
+    FormItInterface.CallMethod("FormItExamplePlugins.PluginManager.GetAddedRepos", '',
+        function(addedRepos)
+        {
+            addedRepos = JSON.parse(addedRepos);
+            for (var i in addedRepos)
+            {
+                var repoURL = addedRepos[i];
+                console.log('repoURL: ' + repoURL);
+                PluginManager.MakePluginRepoDiv(repoURL);
+            }
+        });
 }
 
 PluginManager.MakePluginRepoDiv = function(repoURL)
