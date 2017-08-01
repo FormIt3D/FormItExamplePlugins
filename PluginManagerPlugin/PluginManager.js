@@ -1,11 +1,14 @@
-// TODO(hauswij): Do the check to see if it exists first.
-FormItExamplePlugins = {};
-FormItExamplePlugins.PluginManager = {};
+if (typeof FormItExamplePlugins === 'undefined')
+{
+    FormItExamplePlugins = {};
+}
 
-// TODO(hauswij): Put PluginManager into FormItExamplePlugins
-PluginManager = {};
+if (typeof FormItExamplePlugins.PluginManager === 'undefined')
+{
+    FormItExamplePlugins.PluginManager = {};
+}
 
-PluginManager.InstalledPlugins = [];
+FormItExamplePlugins.PluginManager.InstalledPlugins = [];
 
 // SaveRepoLink saved the added repo into the app registry.
 // Returns true if the repo hasn't already been added.
@@ -45,7 +48,7 @@ FormItExamplePlugins.PluginManager.GetAddedRepos = function()
     return '[]';
 }
 
-PluginManager.createHeader = function() {
+FormItExamplePlugins.PluginManager.createHeader = function() {
     var headerDiv = document.createElement('div');
     headerDiv.id = 'header';
     headerDiv.className = 'header';
@@ -79,7 +82,7 @@ PluginManager.createHeader = function() {
             {
                 if (added == 'true')
                 {
-                    PluginManager.MakePluginRepoDiv(repoURL);
+                    FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
                 }
             });
     }
@@ -93,32 +96,32 @@ PluginManager.createHeader = function() {
     }
 }
 
-PluginManager.RemovePluginFromInstalled = function(pluginLocation)
+FormItExamplePlugins.PluginManager.RemovePluginFromInstalled = function(pluginLocation)
 {
     var newInstalledList = [];
-    for(var i=0; i<PluginManager.InstalledPlugins.length; i++)
+    for(var i=0; i < FormItExamplePlugins.PluginManager.InstalledPlugins.length; i++)
     {
-        if(PluginManager.InstalledPlugins[i] != pluginLocation)
+        if(FormItExamplePlugins.PluginManager.InstalledPlugins[i] != pluginLocation)
         {
-            newInstalledList.push(PluginManager.InstalledPlugins[i]);
+            newInstalledList.push(FormItExamplePlugins.PluginManager.InstalledPlugins[i]);
         }
     }
-    PluginManager.InstalledPlugins = newInstalledList;
+    FormItExamplePlugins.PluginManager.InstalledPlugins = newInstalledList;
 }
 
-PluginManager.MakePluginRepoDivs = function()
+FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
 {
-    console.log("---> PluginManager.MakePluginRepoDivs");
+    console.log("---> FormItExamplePlugins.PluginManager.MakePluginRepoDivs");
 
     var originURL = document.URL;
-    originURL = originURL.replace('PluginManagerPlugin\/PluginManager.html', '');
+    originURL = originURL.replace('FormItExamplePlugins.PluginManagerPlugin\/PluginManager.html', '');
     //console.log("pluginsites: " + this.responseText);
     var repoArray = JSON.parse(this.responseText);
     for(var i=0; i < repoArray.length; i++)
     {
          // Now add the plugins.
         var repoURL = repoArray[i];
-        PluginManager.MakePluginRepoDiv(repoURL);
+        FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
     }
 
     // Now add the repos the user added previously
@@ -130,23 +133,23 @@ PluginManager.MakePluginRepoDivs = function()
             {
                 var repoURL = addedRepos[i];
                 console.log('repoURL: ' + repoURL);
-                PluginManager.MakePluginRepoDiv(repoURL);
+                FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
             }
         });
 }
 
-PluginManager.MakePluginRepoDiv = function(repoURL)
+FormItExamplePlugins.PluginManager.MakePluginRepoDiv = function(repoURL)
 {
     // Now add the plugins.
     var pluginsManifest = repoURL + "/plugins.json";
     var request = new XMLHttpRequest();
-    request.addEventListener("load", PluginManager.AddPluginRepo);
+    request.addEventListener("load", FormItExamplePlugins.PluginManager.AddPluginRepo);
     request.pluginSiteURL = repoURL;
     request.open("GET", pluginsManifest);
     request.send();
 }
 
-PluginManager.AddPluginRepo = function()
+FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 {
     var repoPlugins = JSON.parse(this.responseText);
     var repoElemDiv = document.createElement('div');
@@ -180,7 +183,7 @@ PluginManager.AddPluginRepo = function()
     // Now add the plugins.
     repoPlugins.Plugins.forEach(function(element) {
         var request = new XMLHttpRequest();
-        request.addEventListener("load", PluginManager.MakePluginDiv);
+        request.addEventListener("load", FormItExamplePlugins.PluginManager.MakePluginDiv);
         request.pluginSiteURL = this.pluginSiteURL;
         request.parentElemDiv = repoContainerDiv;
         request.PluginURL = this.pluginSiteURL + "/" + element;
@@ -190,9 +193,9 @@ PluginManager.AddPluginRepo = function()
 }
 
 
-PluginManager.MakePluginDiv = function(plugin)
+FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
 {
-    //console.log("---> PluginManager.MakePluginDiv");
+    //console.log("---> FormItExamplePlugins.PluginManager.MakePluginDiv");
     //TODO (herrj): Check if this plugin is in installed plugin list and skip if it is not.
     var pluginData = JSON.parse(this.responseText);
     var pluginName = pluginData["PluginName"];
@@ -253,18 +256,18 @@ PluginManager.MakePluginDiv = function(plugin)
     checkboxElem.id = pluginName.replace(/\s/g,'') + "Checkbox";
     checkboxElem.type = 'checkbox';
     checkboxElem.name = 'plugInCheckBox';
-    checkboxElem.checked = PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
+    checkboxElem.checked = FormItExamplePlugins.PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
     checkboxElemDiv.onclick = function(e)
     {
-        if (PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1)
+        if (FormItExamplePlugins.PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1)
         {
             FormItInterface.CallMethod("FormIt.UninstallPlugin",  pluginLocation);
-            PluginManager.RemovePluginFromInstalled(pluginLocation);
+            FormItExamplePlugins.PluginManager.RemovePluginFromInstalled(pluginLocation);
         }
         else
         {
             FormItInterface.CallMethod("FormIt.InstallPlugin", pluginLocation);
-            PluginManager.InstalledPlugins.push(pluginLocation);
+            FormItExamplePlugins.PluginManager.InstalledPlugins.push(pluginLocation);
         }
         e.stopPropagation();
     }
@@ -285,12 +288,12 @@ PluginManager.MakePluginDiv = function(plugin)
     }
 }
 
-PluginManager.CreatePlugins = function()
+FormItExamplePlugins.PluginManager.CreatePlugins = function()
 {
-    console.log("---> PluginManager.CreatePlugins");
+    console.log("---> FormItExamplePlugins.PluginManager.CreatePlugins");
     //Clear the body to reconstruct the plugin UI.
     //document.body.innerHTML = "";
-    PluginManager.createHeader();
+    FormItExamplePlugins.PluginManager.createHeader();
     if (true)
     {
         //Start by getting internal plugins and adding them to the panel.
@@ -298,18 +301,18 @@ PluginManager.CreatePlugins = function()
         FormItInterface.CallMethod("FormIt.GetInstalledPlugins", "",
             function(installedPlugins)
             {
-                PluginManager.InstalledPlugins = eval(installedPlugins);
-                if (!PluginManager.InstalledPlugins)
+                FormItExamplePlugins.PluginManager.InstalledPlugins = eval(installedPlugins);
+                if (!FormItExamplePlugins.PluginManager.InstalledPlugins)
                 {
-                    PluginManager.InstalledPlugins = [];
+                    FormItExamplePlugins.PluginManager.InstalledPlugins = [];
                 }
-                console.log("PluginManager.InstalledPlugins: " + JSON.stringify(PluginManager.InstalledPlugins));
+                console.log("FormItExamplePlugins.PluginManager.InstalledPlugins: " + JSON.stringify(FormItExamplePlugins.PluginManager.InstalledPlugins));
 
                 //Get the list of plugins from the top level manifest
                 //Keep things synchronous. Use callback method to spin off creation of plugins
-                console.log("************** Requesting plugins.json to call PluginManager.MakePluginRepoDivs.");
+                console.log("************** Requesting plugins.json to call FormItExamplePlugins.PluginManager.MakePluginRepoDivs.");
                 var request = new XMLHttpRequest();
-                request.addEventListener("load", PluginManager.MakePluginRepoDivs);
+                request.addEventListener("load", FormItExamplePlugins.PluginManager.MakePluginRepoDivs);
                 request.open("GET", "pluginsites.json");
                 request.send();
             });
