@@ -111,6 +111,7 @@ FormItExamplePlugins.PluginManager.RemovePluginFromInstalled = function(pluginLo
 
 FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
 {
+
     console.log("---> FormItExamplePlugins.PluginManager.MakePluginRepoDivs");
 
     var originURL = document.URL;
@@ -151,17 +152,25 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDiv = function(repoURL)
 
 FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 {
+    var unlinkRepoButton = document.createElement('button');
+    unlinkRepoButton.setAttribute("type", "submit");
+    unlinkRepoButton.id = 'unlinkRepoButton';
+    unlinkRepoButton.className = 'unlinkRepoButton';
+    //unlinkRepoButton.onclick = [];
+
     var repoPlugins = JSON.parse(this.responseText);
     var repoElemDiv = document.createElement('div');
     repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
     repoElemDiv.className = "repoName";
     repoElemDiv.innerHTML = repoPlugins.RepoName;
     window.document.body.appendChild(repoElemDiv);
+    window.document.body.appendChild(unlinkRepoButton);
 
     var repoContainerDiv = document.createElement('div');
     repoContainerDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Container";
     repoContainerDiv.className = "repoContainer";
     repoElemDiv.appendChild(repoContainerDiv);
+
     repoContainerDiv.onclick = function(e) {
         e.stopPropagation();
     }
