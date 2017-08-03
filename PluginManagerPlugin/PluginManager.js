@@ -67,6 +67,7 @@ FormItExamplePlugins.PluginManager.createHeader = function() {
 
     var linkRepoButton = document.createElement('button');
     linkRepoButton.setAttribute("type", "submit");
+    linkRepoButton.setAttribute("title", "Link a new repository from URL");
     linkRepoButton.id = 'linkRepoButton';
     linkRepoButton.className = 'linkRepoButton';
     linkRepoContainer.appendChild(linkRepoButton);
@@ -154,6 +155,7 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 {
     var unlinkRepoButton = document.createElement('button');
     unlinkRepoButton.setAttribute("type", "submit");
+    unlinkRepoButton.setAttribute("title", "Unlink this repository");
     unlinkRepoButton.id = 'unlinkRepoButton';
     unlinkRepoButton.className = 'unlinkRepoButton';
     //unlinkRepoButton.onclick = [];
@@ -264,6 +266,7 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
     var checkboxElem = document.createElement("input");
     checkboxElem.id = pluginName.replace(/\s/g,'') + "Checkbox";
     checkboxElem.type = 'checkbox';
+    checkboxElem.setAttribute("title", "Install this plugin");
     checkboxElem.name = 'plugInCheckBox';
     checkboxElem.checked = FormItExamplePlugins.PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
     checkboxElemDiv.onclick = function(e)
