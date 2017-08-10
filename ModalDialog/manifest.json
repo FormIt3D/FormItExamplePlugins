@@ -4,6 +4,7 @@
         "PLUGINLOCATION/../HelloBlock/block.js"
     ],
     "DialogBox": "PLUGINLOCATION/../HelloBlock/hello_block.html",
+    "DialogBoxGUID": "53baa9e2-b293-4b1b-a74d-eb554d746013",
     "DialogBoxWidth": 300,
     "DialogBoxHeight": 180,
     "DialogBoxType": "Modal"
