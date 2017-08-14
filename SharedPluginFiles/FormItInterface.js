@@ -7,7 +7,7 @@ if (window.location.href.indexOf("?Web")  > -1)
 {
     FormItInterface.Platform = WEB;
     // Add the post-robot script only for Web.
-    document.write('<script type="text/javascript" src="../SharedPluginFiles/post-robot.js"></script>');
+    document.write('<script type="text/javascript" src="https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/post-robot.js"></script>');
 }
 else
 {
@@ -27,7 +27,7 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
                 callbackMethod(event.data);
             }
         }).catch(function(err) {
-            // Handle any errors that stopped our call from going through            
+            // Handle any errors that stopped our call from going through
             console.error(err);
         });
     }
