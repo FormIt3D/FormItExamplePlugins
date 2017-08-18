@@ -52,7 +52,7 @@ FormItExamplePlugins.PluginManager.createHeader = function() {
     var headerDiv = document.createElement('div');
     headerDiv.id = 'header';
     headerDiv.className = 'header';
-    headerDiv.innerHTML = 'Plugin Manager';
+    headerDiv.innerHTML = 'PLUGIN MANAGER';
     window.document.body.appendChild(headerDiv);
 
     var linkRepoContainer = document.createElement('div');
@@ -151,8 +151,22 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDiv = function(repoURL)
     request.send();
 }
 
-FormItExamplePlugins.PluginManager.AddPluginRepo = function()
+FormItExamplePlugins.PluginManager.AddPluginRepo = function(repoURL)
 {
+
+    // create the info button
+    var repoInfoButton = document.createElement('button');
+    repoInfoButton.setAttribute("type", "submit");
+    repoInfoButton.setAttribute("title", JSON.stringify(repoURL));
+    repoInfoButton.id = 'repoInfoButton';
+    repoInfoButton.className = 'repoInfoButton';
+
+    // prevent clicks on the info button from triggering the parent accordion
+    repoInfoButton.onclick = function(e) {
+        e.stopPropagation();
+    }
+
+    // create the unlink repo button
     var unlinkRepoButton = document.createElement('button');
     unlinkRepoButton.setAttribute("type", "submit");
     unlinkRepoButton.setAttribute("title", "Unlink this repository");
@@ -165,29 +179,29 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
     repoElemDiv.className = "repoName";
     repoElemDiv.innerHTML = repoPlugins.RepoName;
-    window.document.body.appendChild(repoElemDiv);
-    window.document.body.appendChild(unlinkRepoButton);
+    window.document.body.appendChild(repoElemDiv); window.document.body.appendChild(unlinkRepoButton);
 
     var repoContainerDiv = document.createElement('div');
     repoContainerDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Container";
     repoContainerDiv.className = "repoContainer";
+    repoElemDiv.appendChild(repoInfoButton);
     repoElemDiv.appendChild(repoContainerDiv);
 
+    // prevent clicks on repo divs from triggering the parent accordion
     repoContainerDiv.onclick = function(e) {
         e.stopPropagation();
     }
 
     // start accordion collapsed
-    repoElemDiv.firstElementChild.style.display = "none";
+    repoContainerDiv.style.display = "none";
     repoElemDiv.onclick = function()
     {
         repoElemDiv.classList.toggle("active");
-        var firstChild = repoElemDiv.firstElementChild;
-        if (firstChild.style.display === "block")
+        if (repoContainerDiv.style.display === "block")
             {
-            firstChild.style.display = "none";
+                repoContainerDiv.style.display = "none";
             } else {
-            firstChild.style.display = "block";
+                repoContainerDiv.style.display = "block";
         }
     }
 
