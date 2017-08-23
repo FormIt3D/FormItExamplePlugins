@@ -151,13 +151,12 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDiv = function(repoURL)
     request.send();
 }
 
-FormItExamplePlugins.PluginManager.AddPluginRepo = function(repoURL)
+FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 {
-
     // create the info button
     var repoInfoButton = document.createElement('button');
     repoInfoButton.setAttribute("type", "submit");
-    repoInfoButton.setAttribute("title", JSON.stringify(repoURL));
+    repoInfoButton.setAttribute("title", this.pluginSiteURL);
     repoInfoButton.id = 'repoInfoButton';
     repoInfoButton.className = 'repoInfoButton';
 
