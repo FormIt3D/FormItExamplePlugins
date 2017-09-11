@@ -132,13 +132,7 @@ input {
 <script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="messages.js"></script>
 <script>
-FormItInterface.AddEventListener("DOMContentLoaded", function () {
-
-    FormItInterface.FormItMessage.connect(function(msg, json) {
-    // This callback will be invoked whenever the signal is emitted on the C++/QML side.
-        FormItInterface.ConsoleLog("(Web Side) Message: " + msg + " json: " + json);
-    });
-
+FormItInterface.Initialize(function () {
     // Add a "checked" symbol when clicking on a list item
     var list = document.querySelector('ul');
     list.addEventListener('click', function(ev) {
@@ -147,14 +141,22 @@ FormItInterface.AddEventListener("DOMContentLoaded", function () {
         var subscribe = ev.target.classList.contains('checked');
         if (subscribe)
         {
-            FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
-            FormItInterface.SubscribeMessage(ev.target.innerText);
-            FormItInterface.ConsoleLog("About to call MessagesPluginSubscribe");
+            //FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
+            // This will register a listener on the HTML UI side.
+            FormItInterface.SubscribeMessage(ev.target.innerText, function(msg)
+            {
+                var jsonMessage = JSON.parse(msg);
+                // This callback will be invoked whenever the signal is emitted on the C++/QML side.
+                FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
+            });
+            //FormItInterface.ConsoleLog("About to call MessagesPluginSubscribe");
+            // This will register a listener on the FormIt side.
             FormItInterface.CallMethod("MessagesPluginSubscribe", ev.target.innerText);
         }
         else
         {
             FormItInterface.ConsoleLog("UnSubscribe: " + ev.target.innerText);
+            // This will unsubscribe a listener on the HTML UI side.
             FormItInterface.UnsubscribeMessage(ev.target.innerText);
         }
       }

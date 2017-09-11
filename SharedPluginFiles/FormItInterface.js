@@ -34,7 +34,7 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
     else if(FormItInterface.Platform == WINDOWS)
     {
         var stringArgs = JSON.stringify(args);
-        window.NewFormItInterface.CallMethod(method, stringArgs, callbackMethod);
+        FormItInterface.CallMethod(method, stringArgs, callbackMethod);
     }
     else
     {
@@ -42,34 +42,94 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
     }
 }
 
+//TODO(hauswij): Remove this once all the plugins are converted to use FormItInterface.Initialize.
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
 {
-    //console.log(`---FormItInterface.AddEventListener: ${eventSignal}`);
+    FormItInterface.Initialize(callbackMethod);
+}
+
+FormItInterface.Initialize = function(callbackMethod)
+{
+    FormItInterface.PluginWindow = window;
+    //console.log(`---FormItInterface.AddEventListener: ${"DOMContentLoaded"}`);
 
     if(FormItInterface.Platform == WINDOWS)
     {
-        document.addEventListener(eventSignal, function () {
-                //console.log("new QWebChannel");
-                new QWebChannel(qt.webChannelTransport, function (channel) {
-                    window.NewFormItInterface = channel.objects.FormItInterface;
-                    FormItInterface.FormItMessage = window.NewFormItInterface.FormItMessage;
-                    FormItInterface.ConsoleLog = window.NewFormItInterface.ConsoleLog;
-                    FormItInterface.SubscribeMessage = window.NewFormItInterface.SubscribeMessage;
-                    window.PluginDialog = channel.objects.PluginDialog;
-                    if (callbackMethod)
+        document.addEventListener("DOMContentLoaded", function ()
+        {
+            //console.log("new QWebChannel");
+            new QWebChannel(qt.webChannelTransport, function (channel)
+            {
+                // This will display the message in both the web debugger connected to the HTML UI
+                // and the console in FormIt.
+                FormItInterface.ConsoleLog = function(msg)
+                {
+                    console.log(msg);
+                    channel.objects.FormItInterface.ConsoleLog(msg);
+                }
+                FormItInterface.SubscribeMessage = function(msg, handler)
+                {
+                    channel.objects.FormItInterface.SubscribeMessage(msg);
+                    if (handler)
                     {
-                        callbackMethod();
+                        channel.objects.FormItInterface.FormItMessage.connect(handler);
                     }
-                });
+                }
+                FormItInterface.UnsubscribeMessage = channel.objects.FormItInterface.UnsubscribeMessage;
+                FormItInterface.CallMethod = channel.objects.FormItInterface.CallMethod;
+                window.PluginDialog = channel.objects.PluginDialog;
+                if (callbackMethod)
+                {
+                    callbackMethod();
+                }
             });
+        });
     }
     else
     {
-        document.addEventListener(eventSignal, function () {
+        postRobot.CONFIG.LOG_LEVEL = 'error';
+
+        FormItInterface.ConsoleLog = console.log;
+
+        FormItInterface.SubscribeMessage = function(msg, handler)
+        {
+            if (!FormItInterface.MessageHandlers)
+            {
+                FormItInterface.MessageHandlers = [];
+            }
+            FormItInterface.MessageHandlers[msg] = handler;
+            //console.log("Subscribing to:" + msg + "\n");
+            postRobot.send(parent, 'FormIt.PubSub', msg).then(function(event) {
+                //console.log('Event Data: ', JSON.stringify(event.data));
+                }).catch(function(err) {
+                    // Handle any errors that stopped our call from going through
+                    console.error(err);
+                });
+        };
+        // TODO(hauswij):
+        FormItInterface.UnsubscribeMessage = function(msg) { console.log("(TODO) UnSubscribing to:" + msg + "\n");};
+        document.addEventListener("DOMContentLoaded", function () {
+
+            if (!postRobot['FormItPluginMsgEventInitialized'])
+                {
+                    // TODO(hauswij): This needs to call the handler sent to SubscribeMessage.
+                    postRobot.on('FormIt.PluginMsgEvent',
+                    function(event) {
+                        //console.log('(Web side) msg: ', event.data);
+                        var jsonMessage = JSON.parse(event.data);
+                        var msgHandler = FormItInterface.MessageHandlers[jsonMessage.msg];
+                        if (!!msgHandler)
+                        {
+                            msgHandler(event.data);
+                        }
+                    });
+                    postRobot.FormItPluginMsgEventInitialized = true;
+                }
+
             if (callbackMethod)
             {
                 callbackMethod();
             }
-            });
+        });
     }
 }
