@@ -7,7 +7,7 @@ body {
     background-color: white;
     font-family: Arial;
     color: grey;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
@@ -22,8 +22,8 @@ body {
     padding: 8px;
     margin-top: 10px;
     /* make input take up 100% minus spacing, minus button width */
-    width: -moz-calc(100% - 10px - 25px);
-    width: -webkit-calc(100% - 10px - 25px);
+    width: -moz-calc(100% - 10px - 35px);
+    width: -webkit-calc(100% - 10px - 35px);
     font-size: 0.7em;
 }
 
@@ -40,10 +40,12 @@ body {
 }
 
 .linkRepoButton {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     float: right;
-    margin-top: 11px;
+
+    /* make margin-top = linkRepoInput padding */
+    margin-top: 8px;
     background-color: transparent;
     background: url("img/button_add@2x.png");
     background-position: center;
@@ -58,9 +60,31 @@ body {
     background-color: #C3E8F4;
 }
 
+.repoInfoButton {
+    width: 35px;
+    height: 35px;
+    float: right;
+    background-color: transparent;
+    background: url("img/button_information@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    outline: none;
+    border: none;
+}
+
+.repoInfoButton:hover {
+    width: 35px;
+    height: 35px;
+    background: url("img/button_information_selected@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
 .unlinkRepoButton {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     float: right;
     background-color: transparent;
     background: url("img/button_remove@2x.png");
@@ -69,8 +93,16 @@ body {
     background-size: 25px 25px;
     outline: none;
     border: none;
-    margin-top: 8px;
+    /* make margin-right = margin-right in linkRepoInput */
     margin-right: 5px;
+
+    /* make margin-top = ((repoName margin/2) + (button width - background-size) / 2) */
+    margin-top: -moz-calc((5px/2) + (35px - 25px)/2);
+    margin-top: -webkit-calc((5px/2) + (35px - 25px)/2);
+
+    vertical-align: middle;
+
+    line-height: 35px;
 }
 
 .unlinkRepoButton:hover {
@@ -84,18 +116,18 @@ body {
     /* for some reason, top and bottom padding needs to be non-0 for plugin container margin to work */
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-top: 8px;
+    margin-top: 15px;
     cursor: auto;
     transition: display 0.2s ease-out;
 }
 
 .repoName {
+    vertical-align: middle;
     font-weight: bold;
     font-family: sans-serif;
     font-size: .9em;
     background-color: #4676A9;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
     cursor: pointer;
@@ -103,10 +135,13 @@ body {
     border: 2px solid #4676A9;
     margin: 5px;
     transition: 0.2s ease-out;
-    height: inherit !important;
-    /* make div take up 100% minus spacing, minus button width, to allow for remove button */
-    width: -moz-calc(100% - 10px - 25px - 24px);
-    width: -webkit-calc(100% - 10px - 25px - 24px);
+
+    /* make line height = button height */
+    line-height: 35px;
+
+    /* make div take up 100% minus spacing, minus button width, to allow for unlinkRepoButton */
+    width: -moz-calc(100% - 10px - 35px - 24px);
+    width: -webkit-calc(100% - 10px - 35px - 24px);
     display: inline-block;
 }
 
@@ -132,6 +167,7 @@ body {
     cursor: pointer;
     transition: 0.2s ease-out;
     border: 2px solid #4676A9;
+    line-height: 20px;
 }
 
 .pluginName:hover {
@@ -164,18 +200,18 @@ body {
     border-right: 2px solid #C3E8F4;
     margin-bottom: 8px;
     transition: display 0.2s ease-out;
+    line-height: 20px;
 }
 
 .checkboxDiv {
     float: right;
     clear: both;
-    vertical-align: middle;
+    margin-top: -2px;
 }
 
 
 input[type="checkbox"] {
     position: relative;
-    height: 1.25em;
-    width: 1.25em;
-    margin-top: -10%;
+    height: 1.45em;
+    width: 1.45em;
 }
