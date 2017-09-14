@@ -31,11 +31,6 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
             console.error(err);
         });
     }
-    else if(FormItInterface.Platform == WINDOWS)
-    {
-        var stringArgs = JSON.stringify(args);
-        FormItInterface.CallMethod(method, stringArgs, callbackMethod);
-    }
     else
     {
         console.log("Platform has not been integrated yet!");
@@ -76,7 +71,11 @@ FormItInterface.Initialize = function(callbackMethod)
                     }
                 }
                 FormItInterface.UnsubscribeMessage = channel.objects.FormItInterface.UnsubscribeMessage;
-                FormItInterface.CallMethod = channel.objects.FormItInterface.CallMethod;
+                FormItInterface.CallMethod = function(method, args, callbackMethod)
+                {
+                    var stringArgs = JSON.stringify(args);
+                    channel.objects.FormItInterface.CallMethod(method, stringArgs, callbackMethod);
+                }
                 window.PluginDialog = channel.objects.PluginDialog;
                 if (callbackMethod)
                 {
