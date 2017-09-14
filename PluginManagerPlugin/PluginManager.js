@@ -1,3 +1,10 @@
+/* known repo URLs:
+
+https://formit3d.github.io/FormItExamplePlugins
+https://deanstein.github.io/PluginPlayground
+
+*/
+
 if (typeof FormItExamplePlugins === 'undefined')
 {
     FormItExamplePlugins = {};
