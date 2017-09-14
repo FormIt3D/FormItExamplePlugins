@@ -130,10 +130,10 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
     FormItInterface.CallMethod("FormItExamplePlugins.PluginManager.GetAddedRepos", '',
         function(addedRepos)
         {
-            addedRepos = JSON.parse(addedRepos);
-            for (var i in addedRepos)
+            FormItExamplePlugins.PluginManager.AddedRepos = JSON.parse(addedRepos);
+            for (var i in AddedRepos)
             {
-                var repoURL = addedRepos[i];
+                var repoURL = AddedRepos[i];
                 console.log('repoURL: ' + repoURL);
                 FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
             }
@@ -171,7 +171,7 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     unlinkRepoButton.setAttribute("title", "Unlink this repository");
     unlinkRepoButton.id = 'unlinkRepoButton';
     unlinkRepoButton.className = 'unlinkRepoButton';
-    //unlinkRepoButton.onclick = [];
+    var unlinkURL = this.pluginSiteURL;
 
     var repoPlugins = JSON.parse(this.responseText);
     var repoElemDiv = document.createElement('div');
@@ -179,6 +179,23 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     repoElemDiv.className = "repoName";
     repoElemDiv.innerHTML = repoPlugins.RepoName;
     window.document.body.appendChild(repoElemDiv); window.document.body.appendChild(unlinkRepoButton);
+
+    unlinkRepoButton.onclick = function() {
+        // TODO: determine the index number for unlinkURL in FormItExamplePlugins.PluginManager.AddedRepos
+        // TODO: make a for loop through the list of added URLs, search for matching URL. If the item in the index/array is the same as the URL, then delete it from the list using the split command, then exit
+        for (var i=0; i < FormItExamplePlugins.PluginManager.AddedRepos.length; i++) {
+            if (FormItExamplePlugins.PluginManager.AddedRepos[i] === unlinkURL) {
+                return i;
+                FormItInterface.ConsoleLog("Found a URL matching the unlink request at index: " + i);
+            }
+        }
+        // TODO: remove unlinkURL from FormItExamplePlugins.PluginManager.AddedRepos
+        FormItInterface.ConsoleLog("AddedRepos = " + FormItExamplePlugins.PluginManager.AddedRepos);
+        FormItInterface.ConsoleLog("Unlinking this repo: " + unlinkURL);
+        // TODO: save repos to registry
+        FormIt.SaveAppData('FormItExamplePlugins.PluginManagerPlugin', JSON.stringify(FormItExamplePlugins.PluginManager.AddedRepos));
+        // TODO: update the divs (use div ID) to reflect the new list
+    };
 
     var repoContainerDiv = document.createElement('div');
     repoContainerDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Container";
@@ -220,7 +237,7 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
 {
     //console.log("---> FormItExamplePlugins.PluginManager.MakePluginDiv");
-    //TODO (herrj): Check if this plugin is in installed plugin list and skip if it is not.
+    //TODO: Check if this plugin is in installed plugin list and skip if it is not.
     var pluginData = JSON.parse(this.responseText);
     var pluginName = pluginData["PluginName"];
     //console.log("Creating Plugin: " + pluginName);
