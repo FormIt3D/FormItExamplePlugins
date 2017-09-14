@@ -2,6 +2,7 @@
 
 https://formit3d.github.io/FormItExamplePlugins
 https://deanstein.github.io/PluginPlayground
+https://jhauswirth.github.io/FormItPlugins
 
 */
 
@@ -138,9 +139,9 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
         function(addedRepos)
         {
             FormItExamplePlugins.PluginManager.AddedRepos = JSON.parse(addedRepos);
-            for (var i in AddedRepos)
+            for (var i in FormItExamplePlugins.PluginManager.AddedRepos)
             {
-                var repoURL = AddedRepos[i];
+                var repoURL = FormItExamplePlugins.PluginManager.AddedRepos[i];
                 console.log('repoURL: ' + repoURL);
                 FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
             }
