@@ -155,11 +155,12 @@ body {
     color: #4676A9;
     background-color: #C3E8F4;
     border: 2px solid #C3E8F4 !important;
+    padding-bottom: 6px;
 }
 
 .pluginName {
-    color: white;
-    background-color: #4676A9;
+    color: #4676A9;
+    background-color: white;
     font-weight: bold;
     font-size: .85em;
     font-family: sans-serif;
@@ -171,8 +172,8 @@ body {
 }
 
 .pluginName:hover {
-    color: white;
-    background-color: #4676A9;
+    color: #4676A9;
+    background-color: white;
     border: 2px solid #C3E8F4 !important;
     transition: 0.2s ease-out;
 }

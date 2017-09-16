@@ -177,31 +177,74 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     var unlinkRepoButton = document.createElement('button');
     unlinkRepoButton.setAttribute("type", "submit");
     unlinkRepoButton.setAttribute("title", "Unlink this repository");
-    unlinkRepoButton.id = 'unlinkRepoButton';
     unlinkRepoButton.className = 'unlinkRepoButton';
     var unlinkURL = this.pluginSiteURL;
 
     var repoPlugins = JSON.parse(this.responseText);
     var repoElemDiv = document.createElement('div');
     repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
+    unlinkRepoButton.id = repoElemDiv.id + 'unlinkRepoButton';
     repoElemDiv.className = "repoName";
     repoElemDiv.innerHTML = repoPlugins.RepoName;
-    window.document.body.appendChild(repoElemDiv); window.document.body.appendChild(unlinkRepoButton);
+    window.document.body.appendChild(repoElemDiv);
+    window.document.body.appendChild(unlinkRepoButton);
 
-    unlinkRepoButton.onclick = function() {
-        // TODO: determine the index number for unlinkURL in FormItExamplePlugins.PluginManager.AddedRepos
-        // TODO: make a for loop through the list of added URLs, search for matching URL. If the item in the index/array is the same as the URL, then delete it from the list using the split command, then exit
-        for (var i=0; i < FormItExamplePlugins.PluginManager.AddedRepos.length; i++) {
-            if (FormItExamplePlugins.PluginManager.AddedRepos[i] === unlinkURL) {
-                return i;
-                FormItInterface.ConsoleLog("Found a URL matching the unlink request at index: " + i);
+    unlinkRepoButton.onclick = function()
+    {
+        var confirmUnlink = confirm("Are you sure you want to unlink this plugin repository? \n\n" + unlinkURL);
+        if (confirmUnlink)
+        {
+            // if removing the example plugins, do it without iterating over the list of AddedRepos
+            if (repoElemDiv.id == "FormItExamplePlugins")
+            {
+                document.getElementById(repoElemDiv.id).remove();
+                // also remove the unlink button div
+                document.getElementById(unlinkRepoButton.id).remove();
+                //TODO: add divs and links to website for when examples are unlinked and no other repos are linked
+                var examplesUnlinked = true;
+            }
+            else
+            {
+                FormItInterface.ConsoleLog("Number of added repos = " + FormItExamplePlugins.PluginManager.AddedRepos.length);
+                FormItInterface.ConsoleLog("AddedRepos = " + FormItExamplePlugins.PluginManager.AddedRepos);
+                FormItInterface.ConsoleLog("Unlinking this repo: " + unlinkURL);
+                // for each of the added repos, see the if the URL of the unlink request matches
+                for (var i=0; i < FormItExamplePlugins.PluginManager.AddedRepos.length; i++)
+                {
+                    FormItInterface.ConsoleLog("Iterating through the list of added repos. Current repo: " + FormItExamplePlugins.PluginManager.AddedRepos[i]);
+                    // if so, remove that from the AddedRepos list
+                    if (FormItExamplePlugins.PluginManager.AddedRepos[i] === unlinkURL)
+                    {
+                        FormItInterface.ConsoleLog("Found a URL matching the unlink request at index: " + i);
+                        FormItExamplePlugins.PluginManager.AddedRepos.splice(i, 1);
+                        FormItInterface.ConsoleLog("Unlinked this repo. Resulting AddedRepos list: " + FormItExamplePlugins.PluginManager.AddedRepos);
+
+                        // save to registry (not working yet)
+                        //FormIt.SaveAppData('FormItExamplePlugins.PluginManagerPlugin', JSON.stringify(FormItExamplePlugins.PluginManager.AddedRepos));
+
+                        // then remove the div
+                        document.getElementById(repoElemDiv.id).remove();
+
+                        // also remove the unlink button div
+                        document.getElementById(unlinkRepoButton.id).remove();
+
+                        var successfulUnlink = true;
+                        break;
+                    }
+                    else
+                    {
+                        var successfulUnlink = false;
+                    }
+                }
+            }
+            if (successfulUnlink == false)
+            {
+                FormItInterface.ConsoleLog("Couldn't find this repo to unlink.");
+                alert("Couldn't find this repo to unlink.");
             }
         }
         // TODO: remove unlinkURL from FormItExamplePlugins.PluginManager.AddedRepos
-        FormItInterface.ConsoleLog("AddedRepos = " + FormItExamplePlugins.PluginManager.AddedRepos);
-        FormItInterface.ConsoleLog("Unlinking this repo: " + unlinkURL);
         // TODO: save repos to registry
-        FormIt.SaveAppData('FormItExamplePlugins.PluginManagerPlugin', JSON.stringify(FormItExamplePlugins.PluginManager.AddedRepos));
         // TODO: update the divs (use div ID) to reflect the new list
     };
 
@@ -244,7 +287,6 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 
 FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
 {
-    //console.log("---> FormItExamplePlugins.PluginManager.MakePluginDiv");
     //TODO: Check if this plugin is in installed plugin list and skip if it is not.
     var pluginData = JSON.parse(this.responseText);
     var pluginName = pluginData["PluginName"];
