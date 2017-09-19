@@ -6,12 +6,12 @@ https://jhauswirth.github.io/FormItPlugins
 
 */
 
-if (typeof FormItExamplePlugins === 'undefined')
+if (typeof FormItExamplePlugins == 'undefined')
 {
     FormItExamplePlugins = {};
 }
 
-if (typeof FormItExamplePlugins.PluginManager === 'undefined')
+if (typeof FormItExamplePlugins.PluginManager == 'undefined')
 {
     FormItExamplePlugins.PluginManager = {};
 }
@@ -137,6 +137,7 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
     {
          // Now add the plugins.
         var repoURL = repoArray[i];
+        FormItInterface.ConsoleLog("Making div: " + repoURL);
         FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
     }
 

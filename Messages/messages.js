@@ -1,7 +1,10 @@
 
-if (typeof FormItExamplePlugins === 'undefined')
+if (typeof FormItExamplePlugins == 'undefined')
 {
     FormItExamplePlugins = {};
+}
+if (typeof FormItExamplePlugins.Messages == 'undefined')
+{
     FormItExamplePlugins.Messages = {};
 }
 
@@ -19,7 +22,7 @@ function MessagesPluginSubscribe(msg)
 {
     //console.log("Inside MessagesPluginSubscribe.");
 
-    if (typeof FormItExamplePlugins.Messages.MessagesPluginListener === 'undefined')
+    if (typeof FormItExamplePlugins.Messages.MessagesPluginListener == 'undefined')
     {
         FormItExamplePlugins.Messages.MessagesPluginListener = {};
     }
@@ -44,7 +47,6 @@ function MessagesPluginSubscribe(msg)
 function MessagesPluginUnsubscribeMessage(msg)
 {
     //console.log("Inside MessagesPluginUnsubscribeMessage.");
-    debugger;
     if (typeof FormItExamplePlugins.Messages.MessagesPluginListener != 'undefined' &&
         typeof FormItExamplePlugins.Messages.MessagesPluginListener.listener != 'undefined')
     {

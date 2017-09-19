@@ -67,7 +67,12 @@ FormItInterface.Initialize = function(callbackMethod)
                     channel.objects.FormItInterface.SubscribeMessage(msg);
                     if (handler)
                     {
-                        channel.objects.FormItInterface.FormItMessage.connect(handler);
+                        channel.objects.FormItInterface.FormItMessage[msg] = handler;
+                        if (!channel.objects.FormItInterface.FormItMessage.connected)
+                        {
+                            channel.objects.FormItInterface.FormItMessage.connect(function(arg) {channel.objects.FormItInterface.FormItMessage[msg](arg)});
+                            channel.objects.FormItInterface.FormItMessage.connected = true;
+                        }
                     }
                 }
                 FormItInterface.UnsubscribeMessage = channel.objects.FormItInterface.UnsubscribeMessage;
