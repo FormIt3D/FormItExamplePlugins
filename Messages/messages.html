@@ -157,6 +157,8 @@ FormItInterface.Initialize(function () {
         {
             // This will unsubscribe a listener on the HTML UI side.
             FormItInterface.UnsubscribeMessage(ev.target.innerText);
+            // This will unsubscribe a listener on the FormIt side.
+            FormItInterface.CallMethod("MessagesPluginUnsubscribeMessage", ev.target.innerText);
         }
       }
     }, false);

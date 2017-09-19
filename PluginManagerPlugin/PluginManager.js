@@ -211,7 +211,6 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
             }
             else
             {
-                debugger;
                 // Remove the div
                 document.getElementById(repoElemDiv.id).remove();
                 document.getElementById(unlinkRepoButton.id).remove();
