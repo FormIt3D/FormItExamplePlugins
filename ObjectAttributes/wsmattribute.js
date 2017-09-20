@@ -10,6 +10,7 @@ function Submit()
     FormItInterface.CallMethod("FormItExamplePluginsApplyWSMAttriblute", args);
 }
 
+// FormItExamplePluginsApplyWSMAttriblute runs from the FormIt App side.
 function FormItExamplePluginsApplyWSMAttriblute(args)
 {
     if (FormIt.Selection.HasSelections())

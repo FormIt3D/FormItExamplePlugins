@@ -1,3 +1,13 @@
+
+if (typeof FormItExamplePlugins == 'undefined')
+{
+    FormItExamplePlugins = {};
+}
+if (typeof FormItExamplePlugins.Messages == 'undefined')
+{
+    FormItExamplePlugins.Messages = {};
+}
+
 // ---------------------------------------------------
 // The following code is used by the HTML page.
 
@@ -12,21 +22,59 @@ function MessagesPluginSubscribe(msg)
 {
     //console.log("Inside MessagesPluginSubscribe.");
 
-    MessagesPluginListener = {};
+    if (typeof FormItExamplePlugins.Messages.MessagesPluginListener == 'undefined')
+    {
+        FormItExamplePlugins.Messages.MessagesPluginListener = {};
+    }
 
     // Create a Message Listener that handles calling the subscribed message handlers.
-    if(!(MessagesPluginListener.hasOwnProperty("listener")))
+    if(!(FormItExamplePlugins.Messages.MessagesPluginListener.hasOwnProperty("listener")))
     {
-        MessagesPluginListener.listener = FormIt.Messaging.NewMessageListener();
-        //console.log("Creating MessagesPluginListener.listener.");
+        FormItExamplePlugins.Messages.MessagesPluginListener.listener = FormIt.Messaging.NewMessageListener();
+        //console.log("Creating FormItExamplePlugins.Messages.MessagesPluginListener.listener.");
     }
 
     // Assign the message handling function that will be called for the given message.
-    MessagesPluginListener.listener[msg] = function(msg)
+    FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = function(msg)
     {
         console.log("(FormIt Side) msg: " + msg);
     };
-    MessagesPluginListener.listener.SubscribeMessage(msg);
+    FormItExamplePlugins.Messages.MessagesPluginListener.listener.SubscribeMessage(msg);
+
+    //console.log("FormIt Side, Subscribing to msg: " + msg);
+}
+
+function MessagesPluginUnsubscribeMessage(msg)
+{
+    //console.log("Inside MessagesPluginUnsubscribeMessage.");
+    if (typeof FormItExamplePlugins.Messages.MessagesPluginListener != 'undefined' &&
+        typeof FormItExamplePlugins.Messages.MessagesPluginListener.listener != 'undefined')
+    {
+        FormItExamplePlugins.Messages.MessagesPluginListener.listener.UnsubscribeMessage(msg);
+        FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = undefined;
+    }
+}
+
+
+function MessagesPluginSubscribe(msg)
+{
+    //console.log("Inside MessagesPluginSubscribe.");
+
+    FormItExamplePlugins.Messages.MessagesPluginListener = {};
+
+    // Create a Message Listener that handles calling the subscribed message handlers.
+    if(!(FormItExamplePlugins.Messages.MessagesPluginListener.hasOwnProperty("listener")))
+    {
+        FormItExamplePlugins.Messages.MessagesPluginListener.listener = FormIt.Messaging.NewMessageListener();
+        //console.log("Creating FormItExamplePlugins.Messages.MessagesPluginListener.listener.");
+    }
+
+    // Assign the message handling function that will be called for the given message.
+    FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = function(msg)
+    {
+        console.log("(FormIt Side) msg: " + msg);
+    };
+    FormItExamplePlugins.Messages.MessagesPluginListener.listener.SubscribeMessage(msg);
 
     //console.log("FormIt Side, Subscribing to msg: " + msg);
 }

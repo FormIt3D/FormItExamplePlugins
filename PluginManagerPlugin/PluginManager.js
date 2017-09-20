@@ -6,17 +6,23 @@ https://jhauswirth.github.io/FormItPlugins
 
 */
 
-if (typeof FormItExamplePlugins === 'undefined')
+if (typeof FormItExamplePlugins == 'undefined')
 {
     FormItExamplePlugins = {};
 }
 
-if (typeof FormItExamplePlugins.PluginManager === 'undefined')
+if (typeof FormItExamplePlugins.PluginManager == 'undefined')
 {
     FormItExamplePlugins.PluginManager = {};
 }
 
 FormItExamplePlugins.PluginManager.InstalledPlugins = [];
+
+// Save the list of repos (on the FormIt side)
+FormItExamplePlugins.PluginManager.SaveRepos = function(repos)
+{
+    FormIt.SaveAppData('FormItExamplePlugins.PluginManagerPlugin', repos);
+}
 
 // SaveRepoLink saved the added repo into the app registry.
 // Returns true if the repo hasn't already been added.
@@ -131,6 +137,7 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
     {
          // Now add the plugins.
         var repoURL = repoArray[i];
+        FormItInterface.ConsoleLog("Making div: " + repoURL);
         FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
     }
 
@@ -199,7 +206,7 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 
     unlinkRepoButton.onclick = function()
     {
-        var confirmUnlink = confirm("Are you sure you want to unlink this plugin repository? \n\n" + unlinkURL);
+        var confirmUnlink = confirm("Are you sure you want to unlink this plugin repository? \n\n" + repoElemDiv.id);
         if (confirmUnlink)
         {
             // if removing the example plugins, do it without iterating over the list of AddedRepos
@@ -213,47 +220,21 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
             }
             else
             {
-                FormItInterface.ConsoleLog("Number of added repos = " + FormItExamplePlugins.PluginManager.AddedRepos.length);
-                FormItInterface.ConsoleLog("AddedRepos = " + FormItExamplePlugins.PluginManager.AddedRepos);
-                FormItInterface.ConsoleLog("Unlinking this repo: " + unlinkURL);
-                // for each of the added repos, see the if the URL of the unlink request matches
-                for (var i=0; i < FormItExamplePlugins.PluginManager.AddedRepos.length; i++)
-                {
-                    FormItInterface.ConsoleLog("Iterating through the list of added repos. Current repo: " + FormItExamplePlugins.PluginManager.AddedRepos[i]);
-                    // if so, remove that from the AddedRepos list
-                    if (FormItExamplePlugins.PluginManager.AddedRepos[i] === unlinkURL)
-                    {
-                        FormItInterface.ConsoleLog("Found a URL matching the unlink request at index: " + i);
-                        FormItExamplePlugins.PluginManager.AddedRepos.splice(i, 1);
-                        FormItInterface.ConsoleLog("Unlinked this repo. Resulting AddedRepos list: " + FormItExamplePlugins.PluginManager.AddedRepos);
+                // Remove the div
+                document.getElementById(repoElemDiv.id).remove();
+                document.getElementById(unlinkRepoButton.id).remove();
 
-                        // save to registry (not working yet)
-                        //FormIt.SaveAppData('FormItExamplePlugins.PluginManagerPlugin', JSON.stringify(FormItExamplePlugins.PluginManager.AddedRepos));
-
-                        // then remove the div
-                        document.getElementById(repoElemDiv.id).remove();
-
-                        // also remove the unlink button div
-                        document.getElementById(unlinkRepoButton.id).remove();
-
-                        var successfulUnlink = true;
-                        break;
-                    }
-                    else
-                    {
-                        var successfulUnlink = false;
-                    }
-                }
+                FormItExamplePlugins.PluginManager.AddedRepos =
+                    FormItExamplePlugins.PluginManager.AddedRepos.filter(function(element) { return element !== unlinkURL; });
+                // NOTE: Need to save the list of repos on the FormIt side.
+                FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.SaveRepos', JSON.stringify(FormItExamplePlugins.PluginManager.AddedRepos));
             }
-            if (successfulUnlink == false)
+            if (!successfulUnlink)
             {
                 FormItInterface.ConsoleLog("Couldn't find this repo to unlink.");
                 alert("Couldn't find this repo to unlink.");
             }
         }
-        // TODO: remove unlinkURL from FormItExamplePlugins.PluginManager.AddedRepos
-        // TODO: save repos to registry
-        // TODO: update the divs (use div ID) to reflect the new list
     };
 
     var repoContainerDiv = document.createElement('div');
@@ -354,11 +335,7 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
             e.stopPropagation();
         }
 
-    pluginDescriptionDiv.onclick = function(e)
-        {
-            e.stopPropagation();
-        }
-
+    pluginDescriptionDiv.onclick = function(e) { e.stopPropagation(); }
 
     // Add checkbox input
     var checkboxElemDiv = document.createElement('div');
