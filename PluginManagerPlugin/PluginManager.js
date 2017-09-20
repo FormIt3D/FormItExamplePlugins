@@ -206,7 +206,7 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 
     unlinkRepoButton.onclick = function()
     {
-        var confirmUnlink = confirm("Are you sure you want to unlink this plugin repository? \n\n" + repoElemDiv.id);
+        var confirmUnlink = confirm("Are you sure you want to unlink this plugin repository? \n\n" + repoPlugins.RepoName + "\n" + unlinkURL);
         if (confirmUnlink)
         {
             // if removing the example plugins, do it without iterating over the list of AddedRepos
