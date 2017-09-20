@@ -110,13 +110,13 @@ FormItInterface.Initialize = function(callbackMethod)
                     console.error(err);
                 });
         };
-        // TODO(hauswij):
-        FormItInterface.UnsubscribeMessage = function(msg) { console.log("(TODO) UnSubscribing to:" + msg + "\n");};
+
+        FormItInterface.UnsubscribeMessage = function(msg) { FormItInterface.MessageHandlers[msg] = undefined; };
+
         document.addEventListener("DOMContentLoaded", function () {
 
             if (!postRobot['FormItPluginMsgEventInitialized'])
                 {
-                    // TODO(hauswij): This needs to call the handler sent to SubscribeMessage.
                     postRobot.on('FormIt.PluginMsgEvent',
                     function(event) {
                         //console.log('(Web side) msg: ', event.data);
