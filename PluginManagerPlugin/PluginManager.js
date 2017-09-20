@@ -161,6 +161,12 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDiv = function(repoURL)
 
 FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 {
+    // create the tree arrow image for repos
+    var treeArrowRepo = document.createElement('img');
+    treeArrowRepo.src = 'img/arrow_right_white.png';
+    treeArrowRepo.id = 'treeArrowRepo';
+    treeArrowRepo.className = 'treeArrowRepo';
+
     // create the info button
     var repoInfoButton = document.createElement('button');
     repoInfoButton.setAttribute("type", "submit");
@@ -185,7 +191,9 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
     unlinkRepoButton.id = repoElemDiv.id + 'unlinkRepoButton';
     repoElemDiv.className = "repoName";
+    //repoElemDiv.innerHTML = treeArrow;
     repoElemDiv.innerHTML = repoPlugins.RepoName;
+    repoElemDiv.appendChild(treeArrowRepo);
     window.document.body.appendChild(repoElemDiv);
     window.document.body.appendChild(unlinkRepoButton);
 
@@ -264,9 +272,13 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     repoElemDiv.onclick = function()
     {
         repoElemDiv.classList.toggle("active");
+        // show the tree arrow as active
+        treeArrowRepo.src = 'img/arrow_down_blue.png';
         if (repoContainerDiv.style.display === "block")
             {
                 repoContainerDiv.style.display = "none";
+                // change the tree arrow back
+                treeArrowRepo.src = 'img/arrow_right_white.png';
             } else {
                 repoContainerDiv.style.display = "block";
         }
@@ -298,6 +310,12 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
     var pluginCustomDescription = pluginData["CustomDescription"];
     //console.log("Custom Description: " + pluginCustomDescription);
 
+    // create the tree arrow image for plugins
+    var treeArrowPlugin = document.createElement('img');
+    treeArrowPlugin.src = 'img/arrow_right_blue.png';
+    treeArrowPlugin.id = 'treeArrowPlugin';
+    treeArrowPlugin.className = 'treeArrowPlugin';
+
     var pluginContainerDiv = document.createElement('div');
     pluginContainerDiv.id = pluginName.replace(/\s/g,'') + "Container";
     this.parentElemDiv.appendChild(pluginContainerDiv);
@@ -306,6 +324,7 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
     pluginNameDiv.id = 'pluginName' + pluginName.replace(/\s/g,'');
     pluginNameDiv.className = 'pluginName';
     pluginNameDiv.innerHTML = pluginName;
+    pluginNameDiv.appendChild(treeArrowPlugin);
     pluginContainerDiv.appendChild(pluginNameDiv);
     pluginContainerDiv.className = 'pluginContainer';
 
@@ -324,8 +343,12 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
             pluginNameDiv.classList.toggle("active");
             if (pluginDescriptionDiv.style.display === "block")
                 {
+                // show the tree arrow as active
+                treeArrowPlugin.src = 'img/arrow_right_blue.png';
                 pluginDescriptionDiv.style.display = "none";
                 } else {
+                // change the tree arrow back
+                treeArrowPlugin.src = 'img/arrow_down_blue.png';
                 pluginDescriptionDiv.style.display = "block";
                 }
             e.stopPropagation();
