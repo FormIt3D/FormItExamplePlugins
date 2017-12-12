@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<title>Recharge String Attributes</title>
+<META NAME="Title" CONTENT="Assign Attributes">
+<META NAME="Author" CONTENT="Jeff Hauswirth">
+<script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
+<script type="text/javascript" src="wsmattribute.js"></script>
+<script type="text/javascript">
+    FormItInterface.AddEventListener("DOMContentLoaded");
+</script>
+</head>
+<body>
+<h1>WSM String Attributes</h1>
+<hr>
+<form name=a action="x.htm">
+        Key <input type=text name=key value = "ExampleWSMKey"><br>
+        Building Type <select name=buildingType>
+            <option value="Building A">Building A</option>
+            <option value="Building B">Building B</option>
+            <option value="Building C">Building C</option>
+            <option value="Building D">Building D</option>
+        </select>
+        <br>
+<input type=button value="Create Attribute" onClick="FormItExamplePlugins.ObjectAttributes2.Submit();">
+</form>
+</body>
+</html>
