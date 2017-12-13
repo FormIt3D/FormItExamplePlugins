@@ -1,0 +1,8 @@
+{
+    "PluginName": "QR Report",
+    "PluginDescription": "This is a plugin creates a spreadsheet of attributes.",
+    "Scripts": [
+        "PLUGINLOCATION/qrreport.js"
+    ]
+    ,"Panel": "PLUGINLOCATION/qrreport.html"
+}

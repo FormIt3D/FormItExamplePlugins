@@ -12,7 +12,7 @@ if (typeof FormItExamplePlugins.ObjectAttributes2 == 'undefined')
 FormItExamplePlugins.ObjectAttributes2.Submit = function()
 {
     var args = {
-        "key": document.a.key.value,
+        "key": "Building Type",
         "value": document.a.buildingType.value
     }
 
