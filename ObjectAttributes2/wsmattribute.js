@@ -15,7 +15,7 @@ FormItExamplePlugins.ObjectAttributes2.Submit = function()
         "key": document.a.key.value,
         "value": document.a.buildingType.value
     }
-    debugger;
+
     FormItInterface.ConsoleLog("Create Attribute");
     FormItInterface.ConsoleLog("args: " + JSON.stringify(args));
     FormItInterface.CallMethod("FormItExamplePlugins.ObjectAttributes2.ApplyWSMAttriblute", args);
