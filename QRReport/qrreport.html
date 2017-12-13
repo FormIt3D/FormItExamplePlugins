@@ -7,7 +7,19 @@
 <script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="qrreport.js"></script>
 <script type="text/javascript">
-    FormItInterface.Initialize();
+    FormItInterface.Initialize(function ()
+        {
+            //FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
+            // This will register a listener on the HTML UI side.
+            FormItInterface.SubscribeMessage("FormIt.Message.kModelChanged", function(msg)
+            {
+                var jsonMessage = JSON.parse(msg);
+                // This callback will be invoked whenever the signal is emitted on the C++/QML side.
+                FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
+                FormItExamplePlugins.QRReport.UpdateHTMLWithWSMAttribluteReportData();
+            });
+        }
+    );
 </script>
 </head>
 <body>
