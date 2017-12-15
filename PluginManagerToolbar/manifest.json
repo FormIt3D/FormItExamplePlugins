@@ -1,5 +1,5 @@
 {
-    "PluginName": "FormIt Plugin Manager Toolbar",
+    "PluginName": "Plugin Manager Toolbar",
     "Scripts": [
         "PLUGINLOCATION/PluginManagerToolbar.js",
         "PLUGINLOCATION/../PluginManagerPlugin/PluginManager.js"
