@@ -26,7 +26,7 @@ FormItExamplePlugins.QRReport.GetWSMAttribluteReportData = function()
     var buildingTypesAttribs = WSM.APIGetStringAttributesByKeyReadOnly(
         histID,
         WSM.INVALID_ID,
-        "BuildingType");
+        "Building Type");
 
     console.log("Building Types attribs:" + buildingTypesAttribs);
 
