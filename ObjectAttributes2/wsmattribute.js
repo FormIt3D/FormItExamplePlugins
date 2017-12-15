@@ -119,7 +119,7 @@ FormItExamplePlugins.ObjectAttributes2.SelectionChanged = function()
         let objectType = WSM.APIGetObjectTypeReadOnly(WSMObj.History, WSMObj.Object);
 
         // Only handle bodies and meshes for now
-        if (objectType == WSM.nBodyType || objectType == WSM.nMeshType) {
+        if (objectType == WSM.nBodyType || objectType == WSM.nMeshType || objectType == WSM.nGroupType) {
             buildingInfo["NoSelection"] = false;
             let attr = WSM.Utils.GetStringAttributeForObject(WSMObj.History, WSMObj.Object, this.BuildingTypeKey);
             count++;
