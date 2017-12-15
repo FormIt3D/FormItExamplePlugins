@@ -24,11 +24,11 @@ FormItExamplePlugins.ObjectAttributes2.ApplyBuildingTypeAttriblute = function(ty
     if (FormIt.Selection.HasSelections())
     {
         FormIt.UndoManagement.BeginState();
-        let selectedObjs = FormIt.Selection.GetSelections();
+        var selectedObjs = FormIt.Selection.GetSelections();
         selectedObjs.forEach(function(obj)
         {
             console.log("obj: " + JSON.stringify(obj));
-            let WSMObj = obj.ids[obj.ids.length - 1];
+            var WSMObj = obj.ids[obj.ids.length - 1];
             console.log("WSMObj: " + JSON.stringify(WSMObj));
             WSM.Utils.SetOrCreateStringAttributeForObject(WSMObj.History,
                 WSMObj.Object,
@@ -49,9 +49,9 @@ FormItExamplePlugins.ObjectAttributes2.SelectionChangedHTML = function()
 {
     FormItInterface.CallMethod("FormItExamplePlugins.ObjectAttributes2.SelectionChanged", "", function(buildingInfo)
     {
-        let typeMenu = document.getElementById("buildingTypeMenu");
-        let nameField = document.getElementById("buildingNameField");
-        let noSelection = JSON.parse(buildingInfo).NoSelection;
+        var typeMenu = document.getElementById("buildingTypeMenu");
+        var nameField = document.getElementById("buildingNameField");
+        var noSelection = JSON.parse(buildingInfo).NoSelection;
 
         // No selection. Disable entire menu
         if (noSelection) {
@@ -62,22 +62,22 @@ FormItExamplePlugins.ObjectAttributes2.SelectionChangedHTML = function()
         }
         // Something is selected
         else {
-            let multipleTypes = JSON.parse(buildingInfo).MultipleTypes;
-            let multipleNames = JSON.parse(buildingInfo).MultipleNames;
+            var multipleTypes = JSON.parse(buildingInfo).MultipleTypes;
+            var multipleNames = JSON.parse(buildingInfo).MultipleNames;
 
             // Multiple objects with different type
             typeMenu.disabled = false;
-            let lastIndex = typeMenu.options.length -1;
+            var lastIndex = typeMenu.options.length -1;
             if (multipleTypes) {
                 typeMenu.options[lastIndex].hidden = false;
                 typeMenu.selectedIndex = lastIndex;
             }
             // One or more objects with the same type
             else {
-                let selectedType = JSON.parse(buildingInfo).Value;
+                var selectedType = JSON.parse(buildingInfo).Value;
                 typeMenu.options[lastIndex].hidden = true;
-                let selectedIndex = 0;
-                for(let i = 0; i < typeMenu.options.length; i++) {
+                var selectedIndex = 0;
+                for(var i = 0; i < typeMenu.options.length; i++) {
                     if (typeMenu.options[i].value == selectedType) {
                         selectedIndex = i;
                         break;
@@ -103,25 +103,25 @@ FormItExamplePlugins.ObjectAttributes2.SelectionChangedHTML = function()
 // type menu and buildign name field properly
 FormItExamplePlugins.ObjectAttributes2.SelectionChanged = function()
 {
-    let buildingInfo = {};
+    var buildingInfo = {};
     buildingInfo["Value"] = "None";
     buildingInfo["MultipleTypes"] = false;
     buildingInfo["MultipleNames"] = false;
     buildingInfo["NoSelection"] = true;
     buildingInfo["Name"] = "";
 
-    let selectedObjs = FormIt.Selection.GetSelections();
-    let count = 0;
+    var selectedObjs = FormIt.Selection.GetSelections();
+    var count = 0;
     selectedObjs.forEach(function(obj)
     {
-        let WSMObj = obj.ids[obj.ids.length - 1];
+        var WSMObj = obj.ids[obj.ids.length - 1];
 
-        let objectType = WSM.APIGetObjectTypeReadOnly(WSMObj.History, WSMObj.Object);
+        var objectType = WSM.APIGetObjectTypeReadOnly(WSMObj.History, WSMObj.Object);
 
         // Only handle bodies and meshes for now
         if (objectType == WSM.nBodyType || objectType == WSM.nMeshType || objectType == WSM.nGroupType) {
             buildingInfo["NoSelection"] = false;
-            let attr = WSM.Utils.GetStringAttributeForObject(WSMObj.History, WSMObj.Object, this.BuildingTypeKey);
+            var attr = WSM.Utils.GetStringAttributeForObject(WSMObj.History, WSMObj.Object, this.BuildingTypeKey);
             count++;
 
             // Has a building type attribute
@@ -139,7 +139,7 @@ FormItExamplePlugins.ObjectAttributes2.SelectionChanged = function()
             }
 
             // Get object name
-            let props = WSM.APIGetObjectPropertiesReadOnly(WSMObj.History, WSMObj.Object);
+            var props = WSM.APIGetObjectPropertiesReadOnly(WSMObj.History, WSMObj.Object);
             buildingInfo["Name"] = props.sObjectName;
         }
     }, this);
@@ -164,10 +164,10 @@ FormItExamplePlugins.ObjectAttributes2.ApplyBuildingNameAttribute = function(nam
     if (FormIt.Selection.HasSelections())
     {
         FormIt.UndoManagement.BeginState();
-        let selectedObjs = FormIt.Selection.GetSelections();
-        let WSMObj = selectedObjs[0].ids[selectedObjs[0].ids.length - 1];
+        var selectedObjs = FormIt.Selection.GetSelections();
+        var WSMObj = selectedObjs[0].ids[selectedObjs[0].ids.length - 1];
 
-        let props = WSM.APIGetObjectPropertiesReadOnly(WSMObj.History, WSMObj.Object);
+        var props = WSM.APIGetObjectPropertiesReadOnly(WSMObj.History, WSMObj.Object);
         WSM.APISetObjectProperties(WSMObj.History, WSMObj.Object, name, props.bReportAreaByLevel);
 
         FormIt.UndoManagement.EndState("Assign Building Name");
