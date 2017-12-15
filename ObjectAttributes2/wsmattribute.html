@@ -1,27 +1,49 @@
 
 <html>
 <head>
-<title>Recharge String Attributes</title>
-<META NAME="Title" CONTENT="Assign Attributes">
-<META NAME="Author" CONTENT="Jeff Hauswirth">
+<title>Recharge Building Type and Name Attributes</title>
+<META NAME="Title" CONTENT="Assign Building Type and Name Attributes">
+<META NAME="Author" CONTENT="Jeff Hauswirth and Markus Bonn">
 <script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="wsmattribute.js"></script>
 <script type="text/javascript">
-    FormItInterface.AddEventListener("DOMContentLoaded");
+    FormItInterface.Initialize(function ()
+    {
+        FormItInterface.SubscribeMessage("FormIt.Message.kSelectionsChanged", function(msg)
+        {
+            FormItExamplePlugins.ObjectAttributes2.SelectionChangedHTML();
+        });
+    });
+
 </script>
 </head>
 <body>
-<h1>Attribute</h1>
+<h1>Building Info</h1>
 <hr>
 <form name=a action="x.htm">
-        Building Type <select name=buildingType>
-            <option value="Building A">Building A</option>
-            <option value="Building B">Building B</option>
-            <option value="Building C">Building C</option>
-            <option value="Building D">Building D</option>
-        </select>
-        <br>
-<input type=button value="Create Attribute" onClick="FormItExamplePlugins.ObjectAttributes2.Submit();">
+    Type <select disabled=true
+                onchange="FormItExamplePlugins.ObjectAttributes2.ChangeType();"
+                name=buildingType
+                id=buildingTypeMenu
+                selectedIndex=0 >
+        <option value="None" disabled=true>Select A Type</option>
+        <option value="Residential">Residential</option>
+        <option value="Parking">Parking</option>
+        <option value="Retail">Retail</option>
+        <option value="Mixed Use">Mixed Use</option>
+        <option value="Arts">Arts</option>
+        <option value="Business">Business</option>
+        <option value="Multiple" disabled=true>Multiple</option>
+    </select>
+    <br>
+    <br>
+    Name <input type=text
+                disabled=true
+                id=buildingNameField
+                name=buildingName
+                value = "Enter a building name"
+                onblur="FormItExamplePlugins.ObjectAttributes2.ChangeName();"><br>
+
 </form>
 </body>
 </html>

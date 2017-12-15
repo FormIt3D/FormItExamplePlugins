@@ -1,6 +1,6 @@
 {
-    "PluginName": "Assign Attributes",
-    "PluginDescription": "This is a plugin that creates a panel which allows you to view and change WSM string attributes.",
+    "PluginName": "Building Type",
+    "PluginDescription": "This is a plugin that creates a panel which allows you to view and assign a building type and building name attribute.",
     "Scripts": [
         "PLUGINLOCATION/wsmattribute.js"
     ]
