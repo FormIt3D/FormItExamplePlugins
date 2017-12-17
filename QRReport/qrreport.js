@@ -30,14 +30,12 @@ FormItExamplePlugins.QRReport.GetWSMAttribluteReportData = function()
 
     console.log("Building Types attribs:" + buildingTypesAttribs);
 
-    var buildings = {};
+    var levelIDs = FormIt.Levels.GetLevels(histID, true);
+
+    var buildings = [];
     buildingTypesAttribs.forEach(function(buildingTypesAttrib)
         {
             var attribInfo = WSM.APIGetStringAttributeKeyValueReadOnly(histID, buildingTypesAttrib);
-            if (typeof buildings[attribInfo.sValue] === 'undefined')
-            {
-                buildings[attribInfo.sValue] = 0;
-            }
             console.log("buildingTypesAttrib: " + buildingTypesAttrib + " attribInfo: " + JSON.stringify(attribInfo));
             //var owners = WSM.APIGetTopLevelOwnersReadOnly(histID, const size_t nObjectID, std::vector<size_t>& aOwnerIDs);
             var isGroup = WSM.Utils.IsObjectType(attribInfo.aOwnerIDs, WSM.nGroupType);
@@ -52,8 +50,21 @@ FormItExamplePlugins.QRReport.GetWSMAttribluteReportData = function()
             var isBody = WSM.Utils.IsObjectType(attribInfo.aOwnerIDs, WSM.nBodyType);
             if (isBody)
             {
+                //debugger;
+                var id = attribInfo.aOwnerIDs[0];
+                var props = WSM.APIGetObjectPropertiesReadOnly(histID, id);
                 console.log("Is nBodyType");
-                buildings[attribInfo.sValue]++;
+                building = { buildingType: attribInfo.sValue, name: props.sObjectName };
+                var levelAreas = [];
+                if (levelIDs)
+                {
+                    levelIDs.forEach(function(levelID) {
+                        levelAreas.push(FormIt.Levels.GetAreaForObjects(histID, levelID, attribInfo.aOwnerIDs));
+                        }
+                    );
+                }
+                building.levelAreas = levelAreas;
+                buildings.push(building);
             }
         }
     );
