@@ -16,7 +16,8 @@
                 var jsonMessage = JSON.parse(msg);
                 // This callback will be invoked whenever the signal is emitted on the C++/QML side.
                 FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
-                FormItExamplePlugins.QRReport.UpdateHTMLWithWSMAttribluteReportData();
+                //FormItExamplePlugins.QRReport.UpdateHTMLWithWSMAttribluteReportData();
+                //UpdateData();
             });
         }
     );
@@ -26,6 +27,19 @@
 <h1>Attributes Report</h1>
 <hr>
 <body>
-        <ul id="BuildingTypes"></ul>
+    <ul id="BuildingTypes"></ul>
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize-button" style="display: none;">Authorize</button>
+    <button id="signout-button" style="display: none;">Sign Out</button>
+    <br>
+    <button id="OpenSpreadSheet" onClick="openSpreadsheet();">Open Spreadsheet</button>
+    <br>
+    <button id="Update Data" onClick="UpdateData();">Update Data</button>
 </body>
+
+<script type="text/javascript" src="gsheets.js"></script>
+<script async defer src="https://apis.google.com/js/api.js"
+onload="this.onload=function(){};handleClientLoad()"
+onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
 </html>
