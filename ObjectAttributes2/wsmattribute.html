@@ -16,6 +16,17 @@
     });
 
 </script>
+<script type="text/javascript">
+    function clickPress(event)
+    {
+        if (event.keyCode == 13)
+        {
+            FormItExamplePlugins.ObjectAttributes2.ChangeName();
+            event.stopPropagation();
+            event.preventDefault();
+        }
+}
+</script>
 </head>
 <body>
 <h1>Building Info</h1>
@@ -42,7 +53,9 @@
                 id=buildingNameField
                 name=buildingName
                 value = "Enter a building name"
-                onblur="FormItExamplePlugins.ObjectAttributes2.ChangeName();"><br>
+                onblur="FormItExamplePlugins.ObjectAttributes2.ChangeName();"
+                onkeypress="clickPress(event)">
+    <br>
 
 </form>
 </body>
