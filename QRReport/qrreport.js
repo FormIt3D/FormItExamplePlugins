@@ -62,8 +62,8 @@ FormItExamplePlugins.QRReport.GetWSMAttribluteReportData = function()
                         levelAreas.push(FormIt.Levels.GetAreaForObjects(histID, levelID, attribInfo.aOwnerIDs));
                         }
                     );
+                    building.levelAreas = levelAreas;
                 }
-                building.levelAreas = levelAreas;
                 buildings.push(building);
             }
         }

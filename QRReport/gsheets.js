@@ -256,7 +256,7 @@ function UpdateData() {
     {
         buildings = JSON.parse(buildings);
         var values = [];
-        values.push(["Usage", "Name", "Area (sf)"]);
+        values.push(["Usage", "Name", "Level Area (sf)", "Building Area (sf)"]);
 
         var params = {
             spreadsheetId: QRReport.spreadsheetId,
@@ -268,8 +268,12 @@ function UpdateData() {
 
         for (var buildingIndex in buildings)
         {
+            var startRow = -1;
+
+            var numRowsAdded = 0;
             var building = buildings[buildingIndex];
             var levelAreas = building.levelAreas;
+
             for (var levelIndex in levelAreas)
             {
                 if (building.levelAreas[levelIndex] > 0)
@@ -279,9 +283,30 @@ function UpdateData() {
                     row.push(building.buildingType);
                     row.push(building.name);
                     row.push(building.levelAreas[levelIndex]);
+
+                    if (startRow < 0)
+                    {
+                        startRow = values.length + 1;
+                    }
+
                     values.push(row);
+                    numRowsAdded++;
                 }
             }
+            if (numRowsAdded == 0)
+            {
+                values.push([building.buildingType, building.name]);
+            }
+            if (startRow > 0)
+            {
+                values.push(["","","","=SUM(C" + startRow + ":C" + values.length + ")"]);
+            }
+            else
+            {
+                values.push([""]);
+            }
+
+            startRow = -1;
         }
 
         var params = {
