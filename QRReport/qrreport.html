@@ -19,6 +19,27 @@
                 //FormItExamplePlugins.QRReport.UpdateHTMLWithWSMAttribluteReportData();
                 //UpdateData();
             });
+            FormItInterface.SubscribeMessage("FormIt.Message.kSceneAdded", function(msg)
+            {
+                var jsonMessage = JSON.parse(msg);
+                // This callback will be invoked whenever the signal is emitted on the C++/QML side.
+                FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
+                createSheet(jsonMessage.payload);
+            });
+            FormItInterface.SubscribeMessage("FormIt.Message.kSceneActivated", function(msg)
+            {
+                var jsonMessage = JSON.parse(msg);
+                // This callback will be invoked whenever the signal is emitted on the C++/QML side.
+                FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
+                setCurrentSheet(jsonMessage.payload);
+            });
+            FormItInterface.SubscribeMessage("FormIt.Message.kSceneRemoved", function(msg)
+            {
+                var jsonMessage = JSON.parse(msg);
+                // This callback will be invoked whenever the signal is emitted on the C++/QML side.
+                FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
+                deleteSheet(jsonMessage.payload);
+            });
         }
     );
 </script>

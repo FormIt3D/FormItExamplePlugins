@@ -104,9 +104,14 @@ function handleSignoutClick(event) {
     gapi.auth2.getAuthInstance().signOut();
 }
 
-
-function createSheet()
+function createSheet(newSheetName)
 {
+    // Check if the sheet exists.
+    if (QRReport.sheets[newSheetName])
+    {
+        return;
+    }
+
     var params = {
         // The spreadsheet to apply the updates to.
         spreadsheetId: QRReport.spreadsheetId
@@ -117,11 +122,7 @@ function createSheet()
             {
             "addSheet": {
                 "properties": {
-                "title": "Deposits",
-                "gridProperties": {
-                    "rowCount": 20,
-                    "columnCount": 12
-                },
+                "title": newSheetName,
                 "tabColor": {
                     "red": 1.0,
                     "green": 0.3,
@@ -138,9 +139,47 @@ function createSheet()
         // TODO: Change code below to process the `response` object:
         console.log(response.result);
         console.log("Added sheet, setting data...");
+        QRReport.sheets[newSheetName] = response.result.replies[0].addSheet.properties.sheetId;
     }, function(reason) {
         console.error('error: ' + reason.result.error.message);
     });
+}
+
+function deleteSheet(sheetName)
+{
+    // Check if the sheet exists.
+    if (!QRReport.sheets[sheetName])
+    {
+        return;
+    }
+
+    var params = {
+        // The spreadsheet to apply the updates to.
+        spreadsheetId: QRReport.spreadsheetId
+    };
+
+    var batchUpdateSpreadsheetRequestBody =
+        {"requests": [
+            {"deleteSheet":
+                {"sheetId": QRReport.sheets[sheetName]
+                }
+            }
+        ]};
+
+    var request = gapi.client.sheets.spreadsheets.batchUpdate(params, batchUpdateSpreadsheetRequestBody);
+    request.then(function(response) {
+        // TODO: Change code below to process the `response` object:
+        console.log(response.result);
+        console.log("Added sheet, setting data...");
+        delete QRReport.sheets[sheetName];
+    }, function(reason) {
+        console.error('error: ' + reason.result.error.message);
+    });
+}
+
+function setCurrentSheet(sceneName)
+{
+    QRReport.sheets.currentSheet = QRReport.sheets[sceneName];
 }
 
 function openSpreadsheet()
@@ -203,7 +242,6 @@ function UpdateData() {
 
     var request = gapi.client.sheets.spreadsheets.batchUpdate(params, batchUpdateSpreadsheetRequestBody);
     request.then(function(response) {
-
 
     // TODO (hauswij):  Get data from formit model and then reformat to load into the spreadsheet.
     var range = {
