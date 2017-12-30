@@ -164,34 +164,34 @@ FormItExamplePlugins.GetSelectionParameters.getOperationType = function()
     {
         function checkIfCylinder()
         {
-            // check the face IDs for cylinder attribute, then push the results of analysis into an array
+            // for ever face, get the cylinder analysis results
             for (var i = 0; i < FormItExamplePlugins.GetSelectionParameters.arrays.faceIDArray[0].length; i ++)
             {
                 var faceOnCylinderAnalysis = WSM.APIIsFaceOnCylinderReadOnly(nHistoryID, FormItExamplePlugins.GetSelectionParameters.arrays.faceIDArray[0][i]);
                 FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray.push(faceOnCylinderAnalysis);
                 //console.log("Face on cylinder analysis array: " + JSON.stringify(FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray));
             }
+            
+            // look through the results, and the first one to true for isOnCylinder ends the function and returns the index that was true
             for (var j = 0; j < FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray.length; j++)
             {
-                //console.log(JSON.stringify(FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray[j]["bHasCylinderAttribute"]));
                 if (FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray[j]["bHasCylinderAttribute"] === true)
                 {
-                    var bIsAnyFaceOnCylinder = true;
-                    return bIsAnyFaceOnCylinder;
+                    var cylinderTestResults = ["true", j];
+                    return cylinderTestResults;
                 }
 
                 else
                 {
-                    var bIsAnyFaceOnCylinder = false;
-                    return bIsAnyFaceOnCylinder;
+                    var cylinderTestResults = false;
                 }
             }
         }
 
-        var bIsFaceOnCylinder = checkIfCylinder();
+        cylinderTestResults = checkIfCylinder();
 
-        // if any of the faces have a cylinder attribute, this is a cylinder
-        if (bIsFaceOnCylinder)
+        // if any of the faces have a cylinder attribute, we'll assume a cylinder because it's also one body
+        if (cylinderTestResults)
         {
             var operationType = "cylinder";
         }
@@ -255,7 +255,7 @@ FormItExamplePlugins.GetSelectionParameters.getOperationType = function()
 FormItExamplePlugins.GetSelectionParameters.getBoundingBox = function()
 {
     var boundingBox = WSM.APIGetBoxReadOnly(nHistoryID, FormItExamplePlugins.GetSelectionParameters.arrays.nObjectIDArray[0]);
-    console.log("Bounding box: " + JSON.stringify(boundingBox));
+    //console.log("Bounding box: " + JSON.stringify(boundingBox));
 
     var lowerX = boundingBox["lower"]["x"];
     var upperX = boundingBox["upper"]["x"];
@@ -325,7 +325,7 @@ FormItExamplePlugins.GetSelectionParameters.execute = function(args)
         var boundingBoxDimensions = FormItExamplePlugins.GetSelectionParameters.getBoundingBox();
 
         // report the radius
-        var cylinderRadius = FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray[0]["radius"];
+        var cylinderRadius = FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray[cylinderTestResults[1]]["radius"];
         console.log("\nCylinder radius: " + cylinderRadius);
 
         // report the height
