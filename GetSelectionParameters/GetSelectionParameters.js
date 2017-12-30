@@ -350,8 +350,8 @@ FormItExamplePlugins.GetSelectionParameters.execute = function(args)
         console.log("\nMixed or multiple selection set(s) detected.");
 
         // get the bounding box
-        console.log("\nGetting bounding box...");
-        var boundingBoxDimensions = FormItExamplePlugins.GetSelectionParameters.getBoundingBox();
+        //console.log("\nGetting bounding box...");
+        //var boundingBoxDimensions = FormItExamplePlugins.GetSelectionParameters.getBoundingBox();
     }
 
 }
