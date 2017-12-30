@@ -1,0 +1,9 @@
+{
+    "PluginName": "Get Selection Parameters",
+    "PluginDescription": "Retrieves useful parameters about the current selection.",
+    "Scripts": [
+        "PLUGINLOCATION/GetSelectionParameters.js",
+        "PLUGINLOCATION/Utils.js"
+    ]
+    ,"Panel": "PLUGINLOCATION/index.html"
+}
