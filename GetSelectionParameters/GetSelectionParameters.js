@@ -324,7 +324,7 @@ FormItExamplePlugins.GetSelectionParameters.execute = function(args)
         console.log("\nGetting bounding box...");
         var boundingBoxDimensions = FormItExamplePlugins.GetSelectionParameters.getBoundingBox();
 
-        // report the radius
+        // report the radius by checking the face analysis array, and accessing the first face that tested positive for cylinder attribute
         var cylinderRadius = FormItExamplePlugins.GetSelectionParameters.arrays.faceOnCylinderAnalysisArray[cylinderTestResults[1]]["radius"];
         console.log("\nCylinder radius: " + cylinderRadius);
 
