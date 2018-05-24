@@ -10,7 +10,8 @@
         {
             "name": "Draw: Circle",
             "command": "Draw: Circle",
-            "iconText": "Cr"
+            "iconText": "Cr",
+            "iconURL": "https://formit3d.github.io/FormItExamplePlugins/Toolbar1/circle.png"
         }
         ,
         {
