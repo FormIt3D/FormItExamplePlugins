@@ -10,8 +10,13 @@
         {
             "name": "Draw: Circle",
             "command": "Draw: Circle",
-            "iconText": "Cr",
-            "iconURL": "http://www.homeschoolmath.net/teaching/g/circles/rad_example.gif"
+            "iconText": "Cr"
+        }
+        ,
+        {
+            "name": "Only One Panel",
+            "command": "ToolbarPlugin.CreatePanel",
+            "iconText": "OP"
         }
     ]
 }
