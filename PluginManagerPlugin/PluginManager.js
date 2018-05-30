@@ -1,6 +1,8 @@
 /* known repo URLs:
 
 https://formit3d.github.io/FormItExamplePlugins
+https://formit3d.github.io/FormItWorkflowPlugins
+
 https://deanstein.github.io/PluginPlayground
 https://jhauswirth.github.io/FormItPlugins
 
