@@ -11,7 +11,13 @@
             "name": "Draw: Circle",
             "command": "Draw: Circle",
             "iconText": "Cr",
-            "iconURL": "http://www.homeschoolmath.net/teaching/g/circles/rad_example.gif"
+            "iconURL": "https://formit3d.github.io/FormItExamplePlugins/Toolbar1/circle.png"
+        }
+        ,
+        {
+            "name": "Only One Panel",
+            "command": "ToolbarPlugin.CreatePanel",
+            "iconText": "OP"
         }
     ]
 }
