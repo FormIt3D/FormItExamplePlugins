@@ -1,8 +1,10 @@
 /* known repo URLs:
 
+FormIt default:
 https://formit3d.github.io/FormItExamplePlugins
 https://formit3d.github.io/FormItWorkflowPlugins
 
+FormIt team members:
 https://deanstein.github.io/PluginPlayground
 https://jhauswirth.github.io/FormItPlugins
 
@@ -65,11 +67,15 @@ FormItExamplePlugins.PluginManager.GetAddedRepos = function()
 }
 
 FormItExamplePlugins.PluginManager.createHeader = function() {
+    var headerContainer = document.createElement('div');
+    headerContainer.id = 'headerContainer';
+    window.document.body.appendChild(headerContainer);
+
     var headerDiv = document.createElement('div');
     headerDiv.id = 'header';
     headerDiv.className = 'header';
-    headerDiv.innerHTML = 'PLUGIN MANAGER';
-    window.document.body.appendChild(headerDiv);
+    headerDiv.innerHTML = 'Plugin Manager';
+    headerContainer.appendChild(headerDiv);
 
     var linkRepoContainer = document.createElement('div');
     linkRepoContainer.style = "display: block";
@@ -111,6 +117,31 @@ FormItExamplePlugins.PluginManager.createHeader = function() {
             submitURL();
         }
     }
+}
+
+FormItExamplePlugins.PluginManager.createFooter = function() {
+    var footerContainer = document.createElement('div');
+    footerContainer.id = 'footerContainer';
+    footerContainer.className = 'footerContainer';
+    window.document.body.appendChild(footerContainer);
+
+    var footerDiv = document.createElement('div');
+    footerDiv.id = 'footerDiv';
+    footerDiv.className = 'footerDiv';
+    footerContainer.appendChild(footerDiv);
+
+    var footerText = document.createElement('a');
+    footerText.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/")
+    footerDiv.appendChild(footerText);
+}
+
+FormItExamplePlugins.PluginManager.createPluginContainerDiv = function ()
+{
+    // create the container for plugin repository listing
+    var repoListContainer = document.createElement('div');
+    repoListContainer.id = 'repoListContainer';
+    repoListContainer.className = 'repoListContainer';
+    window.document.body.appendChild(repoListContainer);
 }
 
 FormItExamplePlugins.PluginManager.RemovePluginFromInstalled = function(pluginLocation)
@@ -200,25 +231,23 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     repoElemDiv.id = repoPlugins.RepoName.replace(/\s/g,'');
     unlinkRepoButton.id = repoElemDiv.id + 'unlinkRepoButton';
     repoElemDiv.className = "repoName";
-    //repoElemDiv.innerHTML = treeArrow;
     repoElemDiv.innerHTML = repoPlugins.RepoName;
     repoElemDiv.appendChild(treeArrowRepo);
-    window.document.body.appendChild(repoElemDiv);
-    window.document.body.appendChild(unlinkRepoButton);
+
+    document.getElementById(repoListContainer.id).appendChild(repoElemDiv);
+    document.getElementById(repoListContainer.id).appendChild(unlinkRepoButton);
 
     unlinkRepoButton.onclick = function()
     {
         var confirmUnlink = confirm("Are you sure you want to unlink this plugin repository? \n\n" + repoPlugins.RepoName + "\n" + unlinkURL);
         if (confirmUnlink)
         {
-            // if removing the example plugins, do it without iterating over the list of AddedRepos
-            if (repoElemDiv.id == "FormItExamplePlugins")
+            // if removing the example plugins or workflow plugins, do it without iterating over the list of AddedRepos
+            if (repoElemDiv.id == "FormItExamplePlugins" || repoElemDiv.id == "FormItWorkflowPlugins")
             {
                 document.getElementById(repoElemDiv.id).remove();
                 // also remove the unlink button div
                 document.getElementById(unlinkRepoButton.id).remove();
-                //TODO: add divs and links to website for when examples are unlinked and no other repos are linked
-                var examplesUnlinked = true;
             }
             else
             {
@@ -230,6 +259,12 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
                     FormItExamplePlugins.PluginManager.AddedRepos.filter(function(element) { return element !== unlinkURL; });
                 // NOTE: Need to save the list of repos on the FormIt side.
                 FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.SaveRepos', JSON.stringify(FormItExamplePlugins.PluginManager.AddedRepos));
+            }
+            // check if both default plugins are uninstalled and provide a link to reinstall them
+            if (!(document.getElementById("FormItExamplePlugins")) && !(document.getElementById("FormItWorkflowPlugins")))
+            {
+                var examplesUnlinked = true;
+
             }
             if (!successfulUnlink)
             {
@@ -387,7 +422,12 @@ FormItExamplePlugins.PluginManager.CreatePlugins = function()
     console.log("---> FormItExamplePlugins.PluginManager.CreatePlugins");
     //Clear the body to reconstruct the plugin UI.
     //document.body.innerHTML = "";
+
+    // build the component UI parts
     FormItExamplePlugins.PluginManager.createHeader();
+    FormItExamplePlugins.PluginManager.createPluginContainerDiv();
+    FormItExamplePlugins.PluginManager.createFooter();
+
     if (true)
     {
         //Start by getting internal plugins and adding them to the panel.
