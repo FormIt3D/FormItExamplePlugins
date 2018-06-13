@@ -1,7 +1,0 @@
-{
-    "PluginName": "Flip Along",
-    "ToolbarURL": "PLUGINLOCATION/toolbar.json",
-    "Scripts": [
-        "PLUGINLOCATION/flipalong.js"
-    ]
-}

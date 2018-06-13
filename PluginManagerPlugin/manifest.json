@@ -1,6 +1,6 @@
 {
     "PluginName": "Plugin Manager Panel",
-    "PluginDescription": "This is the Plugin Manager Plugin that manages all plugins through a plugin.",
+    "PluginDescription": "Use the Plugin Manager to add plugin repositories, and install/uninstall plugins from repositories.",
     "Scripts": [
         "PLUGINLOCATION/PluginManager.js"
     ]
