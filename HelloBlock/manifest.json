@@ -3,7 +3,8 @@
     "PluginDescription": "This is a plugin that creates a panel which allows you to input the dimensions of a cube and create it along the origin.",
     "Scripts": [
         "PLUGINLOCATION/block.js"
-    ]
-    ,"Panel": "PLUGINLOCATION/hello_block.html",
+    ],
+    "Panel": "PLUGINLOCATION/hello_block.html",
+    "PanelIcon": "PLUGINLOCATION/hello_block.png",
     "CustomDescription": "customdescription.html"
 }
