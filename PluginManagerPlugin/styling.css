@@ -5,26 +5,42 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     background-color: white;
     font-family: Arial;
     color: grey;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
     padding: 0px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 20px;
+}
+
+.footerContainer {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footerDiv {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .linkRepoInput {
     display: inline-block;
     border: 1px solid #4676A9;
     padding: 8px;
-    margin-top: 10px;
+    margin-top: 20px;
     /* make input take up 100% minus spacing, minus button width */
     width: -moz-calc(100% - 10px - 35px);
     width: -webkit-calc(100% - 10px - 35px);
