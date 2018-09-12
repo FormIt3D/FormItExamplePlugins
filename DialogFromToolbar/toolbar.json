@@ -2,7 +2,7 @@
     "name": "Dialog From Toolbar",
     "buttons": [
         {
-            "name": "Plugin Manager",
+            "name": "Dialog From Toolbar",
             "command": "DialogFromToolbar.ShowDialog",
             "iconText": "DT"
         }
