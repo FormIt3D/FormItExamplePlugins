@@ -31,9 +31,9 @@ body {
 
 .footerDiv {
     width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
+    background-color: #ebebeb;
+    font-family: sans-serif;
+    padding: 10px;
 }
 
 .linkRepoInput {
