@@ -130,9 +130,17 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.className = 'footerDiv';
     footerContainer.appendChild(footerDiv);
 
-    var footerText = document.createElement('a');
-    footerText.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/")
-    footerDiv.appendChild(footerText);
+    var footerDescriptionText = document.createTextNode("FormIt Plugins unleash the power of FormIt's JavaScript API to enable powerful, custom 3D workflows. ");
+    footerDiv.appendChild(footerDescriptionText);
+
+    footerDiv.appendChild(document.createElement('p'));
+    footerDiv.appendChild(document.createElement('p'));
+
+    var footerLinkTextA = document.createElement('a');
+    var footerLinkText = document.createTextNode("Learn how to build and run your own FormIt Plugins.");
+    footerLinkTextA.appendChild(footerLinkText);
+    footerLinkTextA.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/docs/HowTo.html");
+    footerDiv.appendChild(footerLinkTextA);
 }
 
 FormItExamplePlugins.PluginManager.createPluginContainerDiv = function ()
@@ -426,7 +434,9 @@ FormItExamplePlugins.PluginManager.CreatePlugins = function()
     // build the component UI parts
     FormItExamplePlugins.PluginManager.createHeader();
     FormItExamplePlugins.PluginManager.createPluginContainerDiv();
-    FormItExamplePlugins.PluginManager.createFooter();
+
+    // temporarily turning off the footer due to styling issues
+    //FormItExamplePlugins.PluginManager.createFooter();
 
     if (true)
     {
