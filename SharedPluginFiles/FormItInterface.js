@@ -6,57 +6,6 @@ const WEB = "Web";
 if (window.location.href.indexOf("?Web")  > -1)
 {
     FormItInterface.Platform = WEB;
-    // Add the post-robot script only for Web.
-    const script = document.createElement('script');
-    script.src = "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/post-robot.js";
-    script.type = 'text/javascript';
-    script.onload = () => {
-        postRobot.CONFIG.LOG_LEVEL = 'error';
-        FormItInterface.ConsoleLog = console.log;
-        FormItInterface.SubscribeMessage = function(msg, handler)
-        {
-            if (!FormItInterface.MessageHandlers)
-            {
-                FormItInterface.MessageHandlers = [];
-            }
-            FormItInterface.MessageHandlers[msg] = handler;
-            //console.log("Subscribing to:" + msg + "\n");
-            postRobot.send(parent, 'FormIt.PubSub', msg).then(function(event) {
-                //console.log('Event Data: ', JSON.stringify(event.data));
-                }).catch(function(err) {
-                    // Handle any errors that stopped our call from going through
-                    console.error(err);
-            });
-        };
-
-        FormItInterface.UnsubscribeMessage = function(msg) { FormItInterface.MessageHandlers[msg] = undefined; };
-
-        document.addEventListener("DOMContentLoaded", function () {
-
-            if (!postRobot['FormItPluginMsgEventInitialized'])
-                {
-                    postRobot.on('FormIt.PluginMsgEvent',
-                    function(event) {
-                        //console.log('(Web side) msg: ', event.data);
-                        var jsonMessage = JSON.parse(event.data);
-                        var msgHandler = FormItInterface.MessageHandlers[jsonMessage.msg];
-                        if (!!msgHandler)
-                        {
-                            msgHandler(event.data);
-                        }
-                    });
-                    postRobot.FormItPluginMsgEventInitialized = true;
-                }
-
-            if (callbackMethod)
-            {
-                callbackMethod();
-            }
-        });
-     };
-    script.onabort = () => { throw new Error((`load '${script.src}' - aborted`)) };
-    script.onerror = () => { throw new Error((`load '${script.src}' - error`)) };
-    document.head.appendChild(script);
 }
 else
 {
@@ -137,5 +86,55 @@ FormItInterface.Initialize = function(callbackMethod)
                 }
             });
         });
+    } else
+    {
+        // Add the post-robot script only for Web.
+        const script = document.createElement('script');
+        script.src = "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/post-robot.js";
+        script.type = 'text/javascript';
+        script.onload = () => {
+            postRobot.CONFIG.LOG_LEVEL = 'error';
+            FormItInterface.ConsoleLog = console.log;
+            FormItInterface.SubscribeMessage = function(msg, handler)
+            {
+                if (!FormItInterface.MessageHandlers)
+                {
+                    FormItInterface.MessageHandlers = [];
+                }
+                FormItInterface.MessageHandlers[msg] = handler;
+                //console.log("Subscribing to:" + msg + "\n");
+                postRobot.send(parent, 'FormIt.PubSub', msg).then(function(event) {
+                    //console.log('Event Data: ', JSON.stringify(event.data));
+                    }).catch(function(err) {
+                        // Handle any errors that stopped our call from going through
+                        console.error(err);
+                });
+            };
+
+            FormItInterface.UnsubscribeMessage = function(msg) { FormItInterface.MessageHandlers[msg] = undefined; };
+
+            if (!postRobot['FormItPluginMsgEventInitialized'])
+                {
+                    postRobot.on('FormIt.PluginMsgEvent',
+                    function(event) {
+                        //console.log('(Web side) msg: ', event.data);
+                        var jsonMessage = JSON.parse(event.data);
+                        var msgHandler = FormItInterface.MessageHandlers[jsonMessage.msg];
+                        if (!!msgHandler)
+                        {
+                            msgHandler(event.data);
+                        }
+                    });
+                    postRobot.FormItPluginMsgEventInitialized = true;
+                }
+
+            if (callbackMethod)
+            {
+                callbackMethod();
+            }
+        };
+        script.onabort = () => { throw new Error((`load '${script.src}' - aborted`)) };
+        script.onerror = () => { throw new Error((`load '${script.src}' - error`)) };
+        document.head.appendChild(script);
     }
 }
