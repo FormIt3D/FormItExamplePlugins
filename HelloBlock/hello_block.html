@@ -12,12 +12,22 @@
 <body>
 <h1>Hello Block!</h1>
 <hr>
-<form name=a action="x.htm">
-Width <input type=number name=width value = 10.0><br>
+<form id="CreateBlockForm" name=a action="x.htm">
+Width <input id="width" type=number name=width value = 10.0><br>
 Length <input type=number name=length value = 10.0><br>
 Height <input type=number name=height value = 10.0><br>
-<input type=button value="Create Block" onClick="Submit();">
+<input id="CreateBlockBtn" type=button value="Create Block" onClick="Submit();">
 </form>
+
+<script>
+    var CreateBlockBtn = document.getElementById("CreateBlockForm");
+    CreateBlockBtn.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("CreateBlockBtn").click();
+        }
+    });
+    </script>
 
 </body>
 </html>

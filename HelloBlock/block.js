@@ -1,7 +1,6 @@
 // CreateBlock runs from Pyramid.
 function CreateBlock(args)
 {
-    //debugger;
     var histID = FormIt.GroupEdit.GetEditingHistoryID();
     var pt1 = WSM.Geom.Point3d(0.0, 0.0, 0.0);
     var pt2 = WSM.Geom.Point3d(args.w, args.l, args.h);
@@ -16,7 +15,7 @@ function Submit()
     "l": parseFloat(document.a.length.value),
     "h": parseFloat(document.a.height.value)
     }
-    console.log("CreateBlock");
-    console.log("args");
+    //console.log("CreateBlock");
+    //console.log("args");
     FormItInterface.CallMethod("CreateBlock", args);
 }
