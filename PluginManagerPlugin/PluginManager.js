@@ -211,7 +211,7 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
 {
     // create the tree arrow image for repos
     var treeArrowRepo = document.createElement('img');
-    treeArrowRepo.src = 'img/arrow_right_white.png';
+    treeArrowRepo.src = 'img/arrow_right_blue.png';
     treeArrowRepo.id = 'treeArrowRepo';
     treeArrowRepo.className = 'treeArrowRepo';
 
@@ -293,21 +293,39 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
         e.stopPropagation();
     }
 
-    // start accordion collapsed
-    repoContainerDiv.style.display = "none";
+    // expand or collapse the repo list when clicked
     repoElemDiv.onclick = function()
     {
         repoElemDiv.classList.toggle("active");
         // show the tree arrow as active
-        treeArrowRepo.src = 'img/arrow_down_blue.png';
+        treeArrowRepo.src = 'img/arrow_down_white.png';
         if (repoContainerDiv.style.display === "block")
             {
                 repoContainerDiv.style.display = "none";
                 // change the tree arrow back
-                treeArrowRepo.src = 'img/arrow_right_white.png';
+                treeArrowRepo.src = 'img/arrow_right_blue.png';
             } else {
                 repoContainerDiv.style.display = "block";
         }
+    }
+
+    // optionally start all repos expanded to reveal nested plugins
+    var startReposExpanded = false;
+
+    if (startReposExpanded == true) 
+    {
+        repoElemDiv.click();
+    } else 
+    {
+        repoContainerDiv.style.display = "none";
+    }
+
+    // optionally start the workflow plugins expanded to reveal nested plugins
+    var startWorkflowPluginRepoExpanded = true;
+
+    if (document.getElementById('FormItWorkflowPlugins') && startWorkflowPluginRepoExpanded == true && document.getElementById('FormItWorkflowPluginsContainer').style.display == "none")
+    {
+        document.getElementById('FormItWorkflowPlugins').click();
     }
 
     // Now add the plugins.
@@ -364,6 +382,7 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
     // start accordion collapsed
     pluginDescriptionDiv.style.display = "none";
 
+    // expand or collapse the plugin list when clicked
     pluginNameDiv.onclick = function(e)
         {
             pluginNameDiv.classList.toggle("active");
@@ -393,6 +412,7 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
     checkboxElem.type = 'checkbox';
     checkboxElem.setAttribute("title", "Install this plugin");
     checkboxElem.name = 'plugInCheckBox';
+    checkboxElem.className = "checkmark";
     checkboxElem.checked = FormItExamplePlugins.PluginManager.InstalledPlugins.indexOf(pluginLocation) > -1;
     checkboxElemDiv.onclick = function(e)
     {
