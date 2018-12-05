@@ -1,6 +1,6 @@
 {
     "PluginName": "Hello Block!",
-    "PluginDescription": "This is a plugin that creates a panel which allows you to input the dimensions of a cube and create it along the origin.",
+    "PluginDescription": "Creates a panel with an HTML form that allows dimensional input for a 3D block which will get generated at the world origin.",
     "Scripts": [
         "PLUGINLOCATION/block.js"
     ],

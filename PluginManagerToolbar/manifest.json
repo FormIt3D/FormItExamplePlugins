@@ -1,5 +1,6 @@
 {
     "PluginName": "Plugin Manager Toolbar",
+    "PluginDescription": "Creates a toolbar button to launch the Plugin Manager in a modeless window.",
     "Scripts": [
         "PLUGINLOCATION/PluginManagerToolbar.js",
         "PLUGINLOCATION/../PluginManagerPlugin/PluginManager.js"

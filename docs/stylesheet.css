@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 5px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a, a:visited {
+    color: #4676a9;
+}
+
+a:hover {
+    color: rgb(162, 194, 204);
+}
+
+img {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.imgList {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.imgLarge {
+    max-width: 1000px;
+}
+
+.pageTitle {
+    margin: 10px;
+    color: RGB(100, 100, 100);
+    font-weight: bold;
+}
+
+.pageSubtitle {
+    margin: 10px;
+    color: RGB(150, 150, 150);
+    font-weight: lighter;
+}
+
+.pageBlurb {
+    margin: 10px;
+    color: RGB(100, 100, 100);
+}
+
+.categoryTitle {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: RGB(100, 100, 100);
+    font-weight: bold;
+}
+
+.categoryDetailTitle {
+    margin: 0;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    color: RGB(100, 100, 100);
+}
+
+.categoryDetailBody {
+    margin: 0;
+    padding: 10px;
+    color: RGB(100, 100, 100);
+}
+
+.categoryDetailList {
+    color: RGB(100, 100, 100);
+    margin-left: 20px;
+    margin-top: 0;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+.categoryDetailCode {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.categoryDetailCode span {
+    padding: 2px;
+    background-color: RGB(240,240,240);
+}
+
+.categoryBlock {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: RGB(230, 230, 230);
+}
+
+.categoryDetailBlock {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.iFrameContainer {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.iFrame {
+    position: absolute;
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+

@@ -1,5 +1,6 @@
 {
-    "PluginName": "Toolbar Example",
+    "PluginName": "Toolbar UI",
+    "PluginDescription": "Creates an example toolbar UI with custom icons.",
     "ToolbarURL": "PLUGINLOCATION/toolbar.json",
     "Scripts": [
         "PLUGINLOCATION/toolbarplugin.js"

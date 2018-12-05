@@ -7,7 +7,7 @@
   "Messages",
   "ModalDialog",
   "ModelessDialog",
-  "PluginManagerPlugin",
-  "PluginManagerToolbar"
+  "PluginManagerToolbar",
+  "Toolbar1"
   ]
 }

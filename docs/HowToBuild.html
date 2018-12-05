@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Building FormIt Plugins</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<body>
+<h1 class="pageTitle">Building FormIt JavaScript Plugins</h1>
+<h2 class="pageSubtitle">Learn How to Assemble, Test, and Host Your Own Plugins</h2>
+<p class="pageBlurb">FormIt's JavaScript plugin infrastructure allows the creation of custom 3D workflows and bespoke modeling functionality, using a variety of UI types and a powerful API.</p>
+
+<h3 class="categoryDetailTitle">Jump to...</h3>
+<ul class="categoryDetailList">
+    <li><a href="#SettingUpEnvironment">Setting Up Your Environment</a></li>
+    <li><a href="#SettingUpFormIt">Setting Up FormIt</a></li>
+    <li><a href="#WorkingWithSamplePlugins">Working With Sample Plugins</a></li>
+    <li><a href="#GeneralPluginSetup">General Plugin Setup</a></li>
+    <li><a href="#CreatingToolbarPlugin">Creating a Toolbar Plugin</a></li>
+    <li><a href="#CreatingHTMLPanelPlugin">Creating an HTML Panel Plugin</a></li>
+    <li><a href="#TestingPlugins">Testing Plugins</a></li>
+    <li><a href="#DebuggingPlugins">Debugging Plugins</a></li>
+    <li><a href="#HostingPlugins">Hosting Plugins</a></li>
+</ul>
+<h3 class="categoryDetailTitle">Useful Links</h3>
+<ul class="categoryDetailList">
+    <li><a href="FormItJSAPI/group__mod__jsapi__formit.html">FormIt Core JS API</a></li>
+    <li><a href="FormItJSAPI/group__mod__jsapi__wsm.html">FormIt Modeling Kernel (WSM) JS API</a></li>
+</ul>
+
+<div class="categoryBlock" id="SettingUpEnvironment">
+    <h2 class="categoryTitle">Setting Up Your Environment</h2>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">Plugin development is currently limited to Windows OS environments.</p>
+        <h3 class="categoryDetailTitle">Get the Source Code</h3>
+        <ul class="categoryDetailList">
+            <li>Clone the FormIt plugin repos, which demonstrate the various UI types and some of the functionality that can be achieved with plugins:</li>
+            <ul>
+                <li><a href="https://github.com/FormIt3D/FormItExamplePlugins">FormIt Example Plugins</a></li>
+                <li><a href="https://github.com/FormIt3D/FormItWorkflowPlugins">FormIt Workflow Plugins</a></li>
+            </ul>
+            <li>You can also download <a href="https://desktop.github.com/">GitHub Desktop</a>, which provides an easy-to-use interface for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repos.</li>
+        </ul>
+        <h3 class="categoryDetailTitle">Start a Web Server</h3>
+        <p class="categoryDetailBody">Plugin files and directories need to be hosted on a web server for FormIt to load from.</p>
+        <p class="categoryDetailBody">A simple web server that works well is npm's <a href="https://www.npmjs.com/package/http-server">http-server</a>, which you can install by:</p>
+        <ul class="categoryDetailList">
+            <li>In Windows</li>
+            <ul>
+                <li>Start > type "cmd" > right-click <i>Command Prompt</i> > select <i>Run as Administrator</i></li>
+            </ul>
+            <!--<li>Mac</li>
+            <ul>
+                <li>Start a Terminal</i></li>
+            </ul>-->
+            <li>In Command Prompt<!-- or Terminal-->, enter the following to install npm's <i>http-server</i> globally:</li>
+            <ul>
+                <li class="categoryDetailCode"><span>npm install http-server -g</span></li>
+            </ul>
+            <li>Navigate to the directory containing the <i>FormIt Example Plugins</i> and <i>FormIt Workflow Plugins</i> folders, then enter:</li>
+            <ul>
+                <li class="categoryDetailCode"><span>http-server</span></li>
+            </ul>
+            <li>In a web browser (Google Chrome is suggested), navigate to the following:</li>
+                <ul>
+                    <li class="categoryDetailCode"><span>http://localhost:8080</span></li>
+                    <li>If you use a different web server than npm, the default address/port might be different.</li>
+                </ul>
+            <li>Your server is properly configured if you can see the <i>FormItExamplePlugins</i> and <i>FormItWorkflowPlugins</i> folders listed in the browser.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="categoryBlock" id="SettingUpFormIt">
+        <h2 class="categoryTitle">Setting Up FormIt</h2>
+        <div class="categoryDetailBlock">
+            <p class="categoryDetailBody">In order to test and build plugins, you'll need FormIt for Window v16.0 or later.</p>
+            <h3 class="categoryDetailTitle">Enable Development Windows</h3>
+            <ul class="categoryDetailList">
+                <li>Toggle the Script Editor and Script Output in FormIt for Windows:</li>
+                <ul>
+                    <li>Window menu > check <i>Script Editor</i> and <i>Script Output</i></li>
+                    <li><img src="images/EnableDevelopmentWindows.png" class="imgList"></li>
+                </ul>
+            </ul>
+            <p class="categoryDetailBody">Once toggled, the Script Editor and Script Output will appear at the bottom of the FormIt window.</p>
+            <p class="categoryDetailBody">Switch between the Script Editor and Script Output by using the buttons at the bottom.</p>
+            <img src="images/ScriptEditorDefaultState.png">
+            <p class="categoryDetailBody">You can also get both panels to show up side-by-side by clicking the button next to the "x" in the upper right corner to detach one of the panels, then drag and drop the panels next to each other:</p>
+            <img src="images/ScriptEditor+ScriptOutputConfiguration.gif" class="imgLarge">
+            <ul class="categoryDetailList">
+                    <li><b>Script Editor</b></li>
+                    <ul>
+                        <li>The Script Editor provides a simple development environment where you can write and test code.</li>
+                        <li>The Script Editor stores written code inside a <span class="categoryDetailCode"><span>scratch.js</span></span> file in the directory where the FormIt exe is located.</li>
+                        <li>At the top are two buttons:</li>
+                        <ul>
+                            <li><b>Run</b></li>
+                            <ul>
+                                <li>Executes all code written in the window.</li>
+                            </ul>
+                            <li><b>Run Selection</b></li>
+                            <ul>
+                                <li>Executes only the selected/highlighted lines of code.</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                <li><b>Script Output</b></li>
+                <ul>
+                    <li>The Script Output window will display any messages printed to the console from plugins.</li>
+                    <li>You can clear the output by running <span class="categoryDetailCode"><span>console.clear();</span></span> in the Script Editor.</li>
+                </ul>
+            </ul>   
+        </div>
+    </div>
+
+    <div class="categoryBlock" id="WorkingWithSamplePlugins">
+        <h2 class="categoryTitle">Working With the Sample Plugins</h2>
+        <div class="categoryDetailBlock">
+                <p class="categoryDetailBody">If you've cloned the repositories and set up a web server from the <a href="#SettingUpEnvironment">previous steps</a>, you can now get the local plugins to show up in FormIt.</p>
+                <p class="categoryDetailBody">You can load or install any of the plugins from the example repositories. For the purposes of this exercise, you'll install both a panel-based and toolbar-based plugin. We'll assume your npm http-server is running on port 8080 hosting both example repositories.</p>
+                <h3 class="categoryDetailTitle"><b>Load vs. Install:</b></h3>
+                <ul class="categoryDetailList">
+                        <li><span class="categoryDetailCode"><span>FormIt.LoadPlugin();</span></span> loads the plugin only for that session. It will be unloaded automatically when the app is closed and restarted.</li>
+                        <ul>
+                            <li>Great for temporarily manifesting a plugin for testing, for this session only.</li>
+                        </ul>
+                        <li><span class="categoryDetailCode"><span>FormIt.InstallPlugin();</span></span> makes the plugin persist between sessions using a registry key.</li>
+                        <ul>
+                            <li>Use <span class="categoryDetailCode"><span>FormIt.UninstallPlugin();</span></span> to uninstall.</li>
+                            <li>Great for plugins you'll use frequently between sessions.</li>
+                            <li>On Windows, the following registry keys are used to persist plugins and their repos:</li>
+                            <ul>
+                                <li>Plugin repositories: <span class="categoryDetailCode"> <span>Computer\HKEY_CURRENT_USER\Software\Autodesk\FormIt 360\Plugins\FormItExamplePlugins.PluginManagerPlugin</span></span>
+                                </li>
+                                <li>Plugins: <span class="categoryDetailCode"> <span>Computer\HKEY_CURRENT_USER\Software\Autodesk\FormIt 360\Plugins\FormItExamplePlugins.InstalledPlugins</span></span>
+                                </li>
+                            </ul>
+                        </ul>
+                    <li>In the following examples, unless otherwise noted, feel free to use <i>Install</i> and <i>Load</i> interchangeably depending on whether you want the results of the exercise to be persistent or not.</li>
+                </ul>
+                <h3 class="categoryDetailTitle"><b>Toolbar Plugin Sample</b></h3>
+                <ul class="categoryDetailList">
+                    <li>In the Script Editor, run the following:</li>
+                    <ul>
+                        <li>If running a local server:</li>
+                        <ul>
+                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("http://localhost:8080/FormItWorkflowPlugins/FlipAlong");</span></span></li>
+                        </ul>
+                        <li>If loading from the <a href="https://formit3d.github.io/FormItWorkflowPlugins">FormIt Github repo</a> (requires an internet connection):</li>
+                        <ul>
+                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("https://formit3d.github.io/FormItWorkflowPlugins/FlipAlong");</span></span></li>
+                        </ul>
+                    </ul>
+                    <li>You should see the Flip Along toolbar appear at the top of the application window:</li>
+                    <li>
+                        <img src="images/FlipAlongToolbar.png" class="imgList">
+                    </li>
+                </ul>
+                <h3 class="categoryDetailTitle"><b>HTML Panel Plugin Sample</b></h3>
+                <ul class="categoryDetailList">
+                    <li>In the Script Editor, run the following:</li>
+                    <ul>
+                        <li>If running a local server:</li>
+                        <ul>
+                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("http://localhost:8080/FormItExamplePlugins/HelloBlock");</span></span></li>
+                        </ul>
+                        <li>If loading from the <a href="https://formit3d.github.io/FormItExamplePlugins">FormIt Github repo</a> (requires an internet connection):</li>
+                        <ul>
+                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("https://formit3d.github.io/FormItExamplePlugins/HelloBlock");</span></span></li>
+                        </ul>
+                    </ul>
+                    <li>You should see the Hello Block! panel appear on the right side of the application window:</li>
+                    <li>
+                        <img src="images/HelloBlockPanel.png" class="imgList">
+                    </li>
+                </ul>
+                <h3 class="categoryDetailTitle"><b>Modal + Modeless Dialog Plugin Sample</b></h3>
+                <p class="categoryDetailBody">Dialog plugins are unique: they can only be loaded, not installed.</p>
+                <ul class="categoryDetailList">
+                    <li>In the Script Editor, run the following:</li>
+                    <ul>
+                        <li>If running a local server:</li>
+                        <ul>
+                            <li>Modal: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("http://localhost:8080/FormItExamplePlugins/ModalDialog");</span></span></li>
+                            <li>Modeless: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("http://localhost:8080/FormItExamplePlugins/ModelessDialog");</span></span></li>
+                        </ul>
+                        <li>If loading from the <a href="https://formit3d.github.io/FormItExamplePlugins">FormIt Github repo</a> (requires an internet connection):</li>
+                        <ul>
+                            <li>Modal: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("https://formit3d.github.io/FormItExamplePlugins/ModalDialog");</span></span></li>
+                            <li>Modal: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("https://formit3d.github.io/FormItExamplePlugins/ModelessDialog");</span></span></li>
+                        </ul>
+                    </ul>
+                    <li>You should see the Hello Block! panel from the HTML Panel example appear on screen as either a modal or modeless dialog.</li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="categoryBlock" id="GeneralPluginSetup">
+        <h2 class="categoryTitle">General Plugin Setup</h2>
+        <div class="categoryDetailBlock">
+            <p class="categoryDetailBody">FormIt plugins are comprised of a key core component called a <i>manifest.json</i> file. The manifest file is a <a href="http://www.json.org/">JSON object</a> that tells the FormIt infrastructure what files to fetch and what kind of plugin to create.</p>
+            <p class="categoryDetailBody">A <i>manifest.json</i> file has the following structure, but has additional properties depending on whether it's a toolbar or a panel-based plugin (see the following sections for more info):</p>
+            <p class="categoryDetailCode">
+                <pre>
+{
+    "PluginName" : "[PluginName]",
+    "PluginDescription": "[PluginDescription]",
+    "Scripts": [
+        "PLUGINLOCATION/[script1].js",
+        "PLUGINLOCATION/[script2].js",
+        ...
+        "PLUGINLOCATION/[scriptn].js"
+    ]
+}               </pre> 
+            </p>
+            <p class="categoryDetailBody">A typical plugin includes these JSON properties:</p>
+            <ul class="categoryDetailList">
+                <li>"PluginName" represents the name of the plugin for internal and most display purposes, including for the <a href="../index.html">Plugin Manager</a>.</li>
+                <li>"PluginDescription" is used by the <a href="../index.html">Plugin Manager</a> to communicate the plugin's capabilities before installing it.</li>
+                <li>"Scripts" lists the required external scripts associated with the plugin that will be loaded into the FormIt application and can be executed when plugin functionality is invoked.</li>
+            </ul>
+            <p class="categoryDetailBody">Start your plugin development by creating a manifest.json file in your plugin folder. Next, you'll need to decide if you are making a toolbar or panel-based plugin.</p>
+            <p class="categoryDetailBody"><b>Note:</b> the use of PLUGINLOCATION throughout the manifest.json file above is essential and also case sensitive. FormIt will replace PLUGINLOCATION with the server location for the plugin.</p>
+    </div>
+</div> 
+
+<div class="categoryBlock" id="CreatingToolbarPlugin">
+        <h2 class="categoryTitle">Creating a Toolbar Plugin</h2>
+        <div class="categoryDetailBlock">
+            <p class="categoryDetailBody">A toolbar-based plugin has a <i>manifest.json</i> file with the following structure:</p>
+            <p class="categoryDetailCode">
+                <pre>
+{
+    "PluginName": "Flip Along",
+    "PluginDescription": "Creates a toolbar with X, Y, and Z buttons to quickly flip selected geometry in the direction of the selected axis.",
+    "ToolbarURL": "PLUGINLOCATION/toolbar.json",
+    "Scripts": [
+        "PLUGINLOCATION/flipalong.js"
+    ]
+}               </pre>            
+            </p>
+            <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginStructure">standard JSON properties</a>, a toolbar-based plugin includes these special JSON properties:</p>
+            <ul class="categoryDetailList">
+                <li>"ToolbarURL" tells FormIt that this plugin is a toolbar, and links to the location of another JSON file that describes the toolbar's functionality.</li>
+            </ul>
+            <p class="categoryDetailBody">After creating a manifest file like the one described above, you'll need to create the <i>toolbar.json</i> file which defines the toolbar buttons, their names, text, icons, and the onClick function assigned to each button. The toolbar's JSON file will have the following format:</p>
+            <p class="categoryDetailCode">
+                <pre>
+{
+    "name": "Flip Along Toolbar",
+    "buttons": [
+        {
+            "name": "Flip Along X",
+            "command": "FlipAlongPlugin.ButtonX",
+            "iconText": "X",
+            "iconURL": "[Icon URL]"
+        },
+        {
+            "name": "Flip Along Y",
+            "command": "FlipAlongPlugin.ButtonY",
+            "iconText": "Y",
+            "iconURL": "[Icon URL]"
+        },
+        {
+            "name": "Flip Along Z",
+            "command": "FlipAlongPlugin.ButtonZ",
+            "iconText": "Z",
+            "iconURL": "[Icon URL]"
+        }
+    ]
+}               </pre>            
+            </p>
+            <p class="categoryDetailBody">The <i>toolbar.json</i> file includes these JSON properties:</p>
+            <ul class="categoryDetailList">
+                <li>"name" represents the name of the overall toolbar, and is used internally to associate all the buttons to the single toolbar menu.</li>
+                <li>"buttons" represent individual buttons added inside of the toolbar. A toolbar can have any number of buttons.</li>
+                <ul>
+                    <li>"name" is used to define the button's internal name which is used to associate the button to the toolbar, as well as to the button's onClick function.</li>
+                    <li>"command" is used to define the function of the button, which can come in one of two forms: a JavaScript function (which can be defined in a script contained in the <i>manifest.json</i> "Scripts" field), or a FormIt Command i.e. "Draw: Circle". You can obtain a list of FormIt commands by running the Messages plugin.</li>
+                    <li>"iconText" is used to set the tooltip and description text in the button. If an icon URL is not provided, the text will create an auto-generated icon of formatted text.</li>
+                    <li>"iconURL" can be set to use a custom icon for the button.</li>
+                </ul>
+            </ul>
+            <p class="categoryDetailBody">After the buttons have all been defined in the <i>toolbar.json</i> file, the plugin is ready to go. If there are any additional JavaScript functions you would like to define, add them to the same folder as the <i>manifest.json</i> file and be sure to add the file reference to the "Scripts" field of the manifest file as well so that FormIt can find the files.</p>
+    </div>
+</div>
+
+<div class="categoryBlock" id="CreatingHTMLPanelPlugin">
+        <h2 class="categoryTitle">Creating an HTML Panel Plugin</h2>
+        <div class="categoryDetailBlock">
+            <p class="categoryDetailBody">A panel-based plugin that displays an HTML page has a <i>manifest.json</i> file with the following structure:</p>
+            <p class="categoryDetailCode">
+                <pre>
+{
+    "PluginName": "Hello Block!",
+    "PluginDescription": "Creates a panel with an HTML form that allows dimensional input for a 3D block which will get generated at the world origin.",
+    "Scripts": [
+        "PLUGINLOCATION/block.js"
+    ],
+    "Panel": "PLUGINLOCATION/hello_block.html",
+    "PanelIcon": "PLUGINLOCATION/hello_block.png"
+}               </pre>
+            </p>
+            <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginStructure">standard JSON properties</a>, a panel-based plugin includes these special JSON properties:</p>
+            <ul class="categoryDetailList">
+                <li>"Panel" tells FormIt that this plugin is a panel, and links to the location of the HTML file that should be loaded in the panel.</li>
+                <ul>
+                    <li>The HTML file will need links in the header to the appropriate JavaScript files, as well as to a CSS file for styling.</li>
+                    <li>The HTML file will render in the FormIt panel as it would in a browser.</li>
+                    <li>You can see examples of rich HTML interfaces in our <a href="https://formit3d.github.io/FormItWorkflowPlugins">FormIt Workflow Plugins repo</a>.</li>
+                </ul>
+                <li>"PanelIcon" defines an icon to appear in the tab for this panel on the right side of the application. If undefined, FormIt creates an automatic icon using the initials from the name of the plugin.</li>
+            </ul>
+            <p class="categoryDetailBody">Once your HTML, CSS, and JavScript files are set up, you can begin testing your HTML panel plugin by loading it or installing it.</p>
+    </div>
+</div>
+
+<div class="categoryBlock" id="TestingPlugins">
+    <h2 class="categoryTitle">Testing Plugins</h2>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">If your web server is running <a href="#SettingUpEnvironment">per the instructions above</a>, you can test your in-progress plugins easily using the built-in <a href="#SettingUpFormIt">Script Editor</a> in FormIt for Windows:</p>
+        <p class="categoryDetailBody">We recommend using <span class="categoryDetailCode"><span>FormIt.LoadPlugin("URL");</span></span> when testing, which loads plugins temporarily for this session (they will disappear when FormIt is restarted). Once testing is complete, you can persist the plugin between sessions using <span class="categoryDetailCode"><span>FormIt.InstallPlugin("URL");</span></span>.</p>
+        <ul class="categoryDetailList">
+                <li><b>FormIt for Windows v16</b></li>
+                <ul>
+                    <li><b>Toolbar + HTML Panel Plugins</b></li>
+                    <ul>
+                        <li>Load your plugin into FormIt to see the latest UI and test the latest functionality:</li>
+                        <ul>
+                            <li class="categoryDetailCode"><span>FormIt.LoadPlugin("http://localhost:8080/YourPluginName");</span></li>
+                        </ul>
+                        <li>Make some changes, then load the plugin again using the command above.</li>
+                        <ul>
+                            <li>You can load many instances of the same plugin in the current session as you test, each with its own UI.</li>
+                            <li>Be sure to use the latest UI instance to ensure you're testing your most recent changes.</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <!--
+                <li><b>FormIt for Windows v17 and newer</b></li>
+                <ul>
+                    <li><b>Toolbar Plugins</b></li>
+                    <ul>
+                        <li>Load your plugin into FormIt to see the latest UI and test the latest functionality:</li>
+                        <ul>
+                            <li class="categoryDetailCode"><span>FormIt.LoadPlugin("http://localhost:8080/YourPluginName");</span></li>
+                        </ul>
+                        <li>Make some changes, then load the plugin again using the command above.</li>
+                        <ul>
+                            <li>You can load many instances of the same plugin in the current session as you test, each with its own UI.</li>
+                            <li>Be sure to use the latest UI instance to ensure you're testing your most recent changes.</li>
+                        </ul>
+                    </ul>
+                    <li><b>HTML Panel Plugins</b></li>
+                    <ul>
+                        <li>Load your plugin into FormIt to see the latest UI and test the latest functionality:</li>
+                        <ul>
+                            <li class="categoryDetailCode"><span>FormIt.LoadPlugin("http://localhost:8080/YourPluginName");</span></li>
+                        </ul>
+                        <li>Make some changes, then simply right-click the panel and select "Hard Reload" to reload the panel with the latest HTML, CSS, and scripts.</li>
+                    </ul>
+                </ul>
+                -->
+            </ul>
+    </div>
+</div>
+
+<div class="categoryBlock" id="DebuggingPlugins">
+        <h2 class="categoryTitle">Debugging Plugins</h2>
+        <div class="categoryDetailBlock">
+            <p class="categoryDetailBody">Panel-based FormIt plugins utilize two distinct JavaScript engines. One is in the panel displaying the HTML, and another engine which is built in to FormIt for Windows. These JavaScript engines are actually in two different processes.</p>
+            <p class="categoryDetailBody">To debug in FormIt-side code (for toolbars or panels), you can enter the following to pop the desktop application's built-in JS debugger:</p>
+            <ul class="categoryDetailList">
+                <li class="categoryDetailCode"><span>debugger;</span></li>
+            </ul>
+            <p class="categoryDetailBody">To debug HTML-side code (for panels only), including scripts and styling:</p>
+            <ul class="categoryDetailList">
+                <li><b>FormIt for Windows v16</b></li>
+                <ul>
+                    <li>Ensure FormIt is running and the plugin you want to debug is visible.</li>
+                    <li>Use Google Chrome (required) to navigate to the following address:</li>
+                    <li><a href="http://localhost:23654/">http://localhost:23654/</a></li>
+                </ul>
+                <!--
+                <li><b>FormIt for Windows v17 and newer</b></li>
+                <ul>
+                    <li>Right-click on the panel and choose "Debug", which will open Chrome (required) to a page where you can select the panel plugin you want to debug.</li>
+                </ul>
+                -->
+            </ul>
+            <p class="categoryDetailBody">Learn more about <a href="https://doc.qt.io/qt-5/qtwebengine-debugging.html">Qt Web Engine Debugging and Profiling</a></p>
+        </div>
+</div>
+
+<div class="categoryBlock" id="HostingPlugins">
+        <h2 class="categoryTitle">Hosting Plugins</h2>
+        <div class="categoryDetailBlock">
+            <p class="categoryDetailBody">Built a useful plugin that you want to share? Host your repository on GitHub so others can install your plugins from the <a href="../index.html">Plugin Manager</a>!</p>
+            <ul class="categoryDetailList">
+                <li>Sign up for a free <a href="https://github.com/join">GitHub account</a>.</li>
+                <li>Download <a href="https://desktop.github.com/">GitHub Desktop</a>, a free tool for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repositories.</li>
+                <li>Use GitHub Desktop to clone your new (empty) GitHub repository to your local machine.</li>
+                <li>On your local machine, make a new folder inside the GitHub folder (created by GitHub Desktop) to store all your plugins.</li>
+                <ul>
+                    <li>This folder is your FormIt plugin repository, so name it something distinct when viewed in the Plugin Manager. We'll use the name <i>Joe's Plugins</i> as an example.</li>
+                </ul>
+                <li>Move your plugin files and folders to the new <i>Joe's Plugins</i> folder. Each plugin should be in its own subfolder.</li>
+                <li>In the <i>Joe's Plugins</i> folder, make a new <i>plugins.json</i> file, which controls which of the subfolders (plugins) will appear when the repo is loaded in the Plugin Manager:</li>
+            </ul>
+            <p class="categoryDetailCode">
+                <pre>
+{
+  "RepoName": "Joe's Plugins",
+  "Plugins": 
+  [
+  "MyFormItPlugin1",
+  "MyFormItPlugin2"
+  ]
+}               </pre>
+            </p>
+            <ul class="categoryDetailList">
+                <li>Use GitHub Desktop to push your plugin files and directories to your repository.</li>
+                <li>Enable GitHub Pages in your repository so FormIt can load and display your GitHub-hosted plugins.</li>
+                <ul>
+                    <li>Go to your new GitHub plugins repo, i.e. <span class=categoryDetailCode>https://github.com/Joe/JoesPlugins</span></li>
+                    <li>In the top-right corner, click the Settings tab.</li>
+                    <li>Scroll down to the GitHub Pages section, enable GitHub Pages, and use the <i>master</i> branch.</li>
+                </ul>
+            </ul>
+            <p class="categoryDetailBody">You should now be able to load your GitHub-hosted plugin repository in the Plugin Manager by entering its URL (for our example, <span class=categoryDetailCode>https://github.com/Joe/JoesPlugins</span>) in the box at the top and hitting the (+) button. Learn more about the <a href="../index.html">Plugin Manager</a>.</p>
+            <p class="categoryDetailBody">At this point, you can continue adding, modifying, and testing plugins locally, and when you're ready to publish, use GitHub Desktop to push your changes to your GitHub repo. Anyone consuming your repo and plugins will always get the latest code when they start FormIt.</p>
+        </div>
+    </div>
+
+<div class="categoryBlock" id="PluginHelp">
+    <h2 class="categoryTitle">Help With FormIt Plugins</h2>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">Trying to use or build a plugin and running into issues? We're here to help. Use the links below to reach out and get support.</p>
+        <ul class="categoryDetailList">
+            <li>Get help using plugins from the <a href="https://github.com/FormIt3D/FormItWorkflowPlugins/issues/new">FormIt Workflow Plugins</a> repository.</li>
+            <li>Get help building plugins from the <a href="https://github.com/FormIt3D/FormItExamplePlugins/issues/new">FormIt Example Plugins</a> repository.</li>
+        </ul>
+    </div>
+</div>
+
+</body></html>
