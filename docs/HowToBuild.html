@@ -82,7 +82,7 @@
         <p class="categoryDetailBody"><b>Optionally start your server from the IDE</b></p>
         <p class="categoryDetailBody">Now, you have the option of starting the server you installed previously right inside Visual Studio Code, instead of from a separate terminal window:</p>
         <ul class="categoryDetailList">
-                <li>View > Integrated Terminal (or shortcut Ctrl + `)</li>
+                <li>View > Terminal (or shortcut Ctrl + `)</li>
                 <li>You should already be in the correct folder, so simply run the command to start your npm http-server from previous steps:</li>
                 <li class="categoryDetailCode"><span>http-server</span></li>
                 <li>You can confirm your server is running correctly by following the "Verify the Web Server" steps above.</li>
@@ -259,7 +259,7 @@
     ]
 }               </pre>            
             </p>
-            <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginStructure">standard JSON properties</a>, a toolbar-based plugin includes these special JSON properties:</p>
+            <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginSetup">standard JSON properties</a>, a toolbar-based plugin includes these special JSON properties:</p>
             <ul class="categoryDetailList">
                 <li>"ToolbarURL" tells FormIt that this plugin is a toolbar, and links to the location of another JSON file that describes the toolbar's functionality.</li>
             </ul>
@@ -321,13 +321,13 @@
     "PanelIcon": "PLUGINLOCATION/hello_block.png"
 }               </pre>
             </p>
-            <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginStructure">standard JSON properties</a>, a panel-based plugin includes these special JSON properties:</p>
+            <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginSetup">standard JSON properties</a>, a panel-based plugin includes these special JSON properties:</p>
             <ul class="categoryDetailList">
                 <li>"Panel" tells FormIt that this plugin is a panel, and links to the location of the HTML file that should be loaded in the panel.</li>
                 <ul>
                     <li>The HTML file will need links in the header to the appropriate JavaScript files, as well as to a CSS file for styling.</li>
                     <li>The HTML file will render in the FormIt panel as it would in a browser.</li>
-                    <li>You can see examples of rich HTML interfaces in our <a href="https://formit3d.github.io/FormItWorkflowPlugins" target="_blank">FormIt Workflow Plugins repo</a>.</li>
+                    <li>You can see examples of rich HTML interfaces in our <a href="https://github.com/FormIt3D/FormItWorkflowPlugins" target="_blank">FormIt Workflow Plugins repo</a>.</li>
                 </ul>
                 <li>"PanelIcon" defines an icon to appear in the tab for this panel on the right side of the application. If undefined, FormIt creates an automatic icon using the initials from the name of the plugin.</li>
             </ul>
@@ -394,6 +394,24 @@
                 <li class="categoryDetailCode"><span>debugger;</span></li>
             </ul>
             <p class="categoryDetailBody">To debug HTML-side code (for panels only), including scripts and styling:</p>
+            <p class="categoryDetailBody">First, add a required Windows Environment Variable to enable HTML debugging (first-time setup only):</p>
+            <ul class="categoryDetailList">
+                    <li>In Windows, hit Start and type "environment", then choose "Edit System Environment Variables".</li>
+                    <li>In the System Variables section, click "New..."</li>
+                    <li>Add the following:</li>
+                    <ul>
+                        <li>Variable Name: <span class="categoryDetailCode"> <span>QTWEBENGINE_REMOTE_DEBUGGING</span></span></li>
+                        <li>Value: <span class="categoryDetailCode"> <span>2364</span></span></li>
+                    </ul>
+                    <li>Hit "OK" on all dialogs.</li>
+                    <!--
+                    <li><b>FormIt for Windows v17 and newer</b></li>
+                    <ul>
+                        <li>Right-click on the panel and choose "Debug", which will open Chrome (required) to a page where you can select the panel plugin you want to debug.</li>
+                    </ul>
+                    -->
+                </ul>
+            <p class="categoryDetailBody">Once you've added the required Environment Variable (first-time setup only), proceed based on the version of FormIt:</p>
             <ul class="categoryDetailList">
                 <li><b>FormIt for Windows v16</b></li>
                 <ul>
@@ -415,7 +433,7 @@
 <div class="categoryBlock" id="HostingPlugins">
         <h2 class="categoryTitle">Hosting Plugins</h2>
         <div class="categoryDetailBlock">
-            <p class="categoryDetailBody">Built a useful plugin that you want to share? Host your repository on GitHub so others can install your plugins from the <a href="../index.html">Plugin Manager</a>!</p>
+            <p class="categoryDetailBody">Built a useful plugin that you want to share? Host your repository on GitHub so others can install your plugins from the <a href="../index.html" target="_blank">Plugin Manager</a>!</p>
             <ul class="categoryDetailList">
                 <li>Sign up for a free <a href="https://github.com/join" target="_blank">GitHub account</a>.</li>
                 <li>Download <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>, a free tool for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repositories.</li>
