@@ -53,6 +53,12 @@ FormItExamplePlugins.PluginManager.SaveRepoLink = function(repoURL)
     return true;
 }
 
+FormItExamplePlugins.PluginManager.ShowDialog = function(dialogParams)
+{
+    FormIt.Commands.RegisterJSCommand("FormItExamplePlugins.PluginManager.ShowDialog");
+    FormItInterface.CallMethod("CreateDialogBox", dialogParams);
+}
+
 FormItExamplePlugins.PluginManager.GetAddedRepos = function()
 {
     // Make sure the app supports SaveAppData/RestoreAppData
@@ -139,11 +145,11 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     var footerLinkTextA = document.createElement('a');
     var footerLinkText = document.createTextNode("Learn how to build and run your own FormIt Plugins.");
     footerLinkTextA.appendChild(footerLinkText);
-    footerLinkTextA.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/docs/HowTo.html");
+    footerLinkTextA.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/index.html");
     footerDiv.appendChild(footerLinkTextA);
 }
 
-FormItExamplePlugins.PluginManager.createPluginContainerDiv = function ()
+FormItExamplePlugins.PluginManager.createPluginContainerDiv = function()
 {
     // create the container for plugin repository listing
     var repoListContainer = document.createElement('div');
@@ -172,13 +178,17 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
 
     var originURL = document.URL;
     originURL = originURL.replace('FormItExamplePlugins.PluginManagerPlugin\/PluginManager.html', '');
+    
+    // TODO: add a console clear here when it's available from FormItInterface
+    FormItInterface.ConsoleLog("FormIt Plugin Manager");
     //console.log("pluginsites: " + this.responseText);
+
     var repoArray = JSON.parse(this.responseText);
     for(var i=0; i < repoArray.length; i++)
     {
          // Now add the plugins.
         var repoURL = repoArray[i];
-        FormItInterface.ConsoleLog("Making div: " + repoURL);
+        FormItInterface.ConsoleLog("Loading repository: " + repoURL);
         FormItExamplePlugins.PluginManager.MakePluginRepoDiv(repoURL);
     }
 
@@ -223,7 +233,18 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     repoInfoButton.className = 'repoInfoButton';
 
     // prevent clicks on the info button from triggering the parent accordion
+    // TODO: get this to open the repo in a webview
     repoInfoButton.onclick = function(e) {
+
+        /*
+        var dialogParams = {
+            "PluginName": "Dialog From Toolbar",
+            "DialogBox": "PLUGINLOCATION/../HelloBlock/hello_block.html",
+            "DialogBoxWidth": 500,
+            "DialogBoxHeight": 300,
+            "DialogBoxType": "Modeless"};
+        FormItExamplePlugins.PluginManagerPlugin.ShowDialog(dialogParams);
+        */
         e.stopPropagation();
     }
 
@@ -285,8 +306,20 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
     var repoContainerDiv = document.createElement('div');
     repoContainerDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Container";
     repoContainerDiv.className = "repoContainer";
+
     repoElemDiv.appendChild(repoInfoButton);
     repoElemDiv.appendChild(repoContainerDiv);
+
+    // repo description
+    var repoDescriptionDiv = document.createElement('div');
+    repoDescriptionDiv.id = repoPlugins.RepoName.replace(/\s/g,'') + "Description";
+    repoDescriptionDiv.className = "repoDescription";
+    repoDescriptionDiv.innerHTML = repoPlugins.RepoDescription;
+
+    // if a repo description was provided, show it
+    if (repoPlugins.RepoDescription) {
+        repoContainerDiv.appendChild(repoDescriptionDiv);
+    }
 
     // prevent clicks on repo divs from triggering the parent accordion
     repoContainerDiv.onclick = function(e) {
@@ -340,19 +373,20 @@ FormItExamplePlugins.PluginManager.AddPluginRepo = function()
         }, this);
 }
 
-
 FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
 {
     //TODO: Check if this plugin is in installed plugin list and skip if it is not.
     var pluginData = JSON.parse(this.responseText);
+    var pluginLocation = this.PluginURL;
+    //console.log("Plugin URL: " + pluginLocation);
     var pluginName = pluginData["PluginName"];
     //console.log("Creating Plugin: " + pluginName);
-    var pluginLocation = this.PluginURL;
-    console.log("Plugin URL: " + pluginLocation);
     var pluginDescription = pluginData["PluginDescription"];
     //NOTE: "CustomDescription": *.html
     var pluginCustomDescription = pluginData["CustomDescription"];
     //console.log("Custom Description: " + pluginCustomDescription);
+    var pluginType = pluginData["PluginType"];
+    var pluginAuthor = pluginData["PluginAuthor"];
 
     // create the tree arrow image for plugins
     var treeArrowPlugin = document.createElement('img');
@@ -430,17 +464,19 @@ FormItExamplePlugins.PluginManager.MakePluginDiv = function(plugin)
     }
     checkboxElemDiv.appendChild(checkboxElem);
 
-    //Thing will diverge here with custom description...
+    //Things will diverge here with custom description...
     if(pluginCustomDescription != undefined || pluginDescription != undefined)
     {
-        pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
+        
+        pluginDescriptionDiv.innerHTML = pluginDescription.replace(/\n/g,"<br>") + "<br><br>" + "Plugin Type: " + pluginType + "<br>";
+
     }
     else
     {
         if(pluginDescription == undefined)
         {
             pluginDescription = "Description not provided for this plugin.";
-            pluginDescriptionDiv.appendChild(document.createTextNode(pluginDescription));
+            pluginDescriptionDiv.innerHTML = pluginDescription;
         }
     }
 }

@@ -1,5 +1,6 @@
 {
-  "RepoName": "FormIt Example Plugins",
+  "RepoName": "FormIt Example UI Plugins",
+  "RepoDescription": "Learn how FormIt plugins work through simple UI examples.",
   "Plugins":
   [
   "DialogFromToolbar",

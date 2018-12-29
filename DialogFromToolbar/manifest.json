@@ -1,6 +1,7 @@
 {
-    "PluginName": "Dialog From Toolbar",
-    "PluginDescription": "Creates an example toolbar UI that launches a dialog.",
+    "PluginName": "Dialog From Toolbar UI",
+    "PluginDescription": "Creates a toolbar UI with a button that launches an HTML page in a dialog.",
+    "PluginType": "Toolbar",
     "Scripts": [ "PLUGINLOCATION/dialogfromtoolbar.js", "PLUGINLOCATION/../HelloBlock/block.js" ],
     "ToolbarURL": "PLUGINLOCATION/toolbar.json"
 }

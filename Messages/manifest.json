@@ -1,5 +1,7 @@
 {
-    "PluginName": "Messages",
+    "PluginName": "FormIt Messages",
+    "PluginDescription": "Creates a panel that displays an interactive list of messages that FormIt sends and listens for.",
+    "PluginType": "Panel",
     "Scripts": [ "PLUGINLOCATION/messages.js" ],
     "Panel": "PLUGINLOCATION/messages.html"
 }

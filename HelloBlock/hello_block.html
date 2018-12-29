@@ -2,7 +2,7 @@
 <head><link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 <title>Hello Block!</title>
 <META NAME="Title" CONTENT="Hello Block!">
-<META NAME="Author" CONTENT="FormIt Team">
+<META NAME="Author" CONTENT="Autodesk FormIt">
 <script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
 <script type="text/javascript" src="block.js"></script>
 <script type="text/javascript">
@@ -11,16 +11,19 @@
 </head>
 <body>
 <h1>Hello Block!</h1>
+
+<p>Create a cuboid of the given size at the origin.</p>
+
 <form id="CreateBlockForm" name=a action="x.htm">
-<input id="width" type=number name=width value = 10.0> Width<br>
-<input type=number name=length value = 10.0> Length<br>
-<input type=number name=height value = 10.0> Height<br>
+<input id="width" type=number name=width value = 12.0> Width<br>
+<input type=number name=length value = 12.0> Length<br>
+<input type=number name=height value = 12.0> Height<br>
 <input id="CreateBlockBtn" type=button value="Create Block" onClick="Submit();">
 </form>
 
 <script>
-    var CreateBlockBtn = document.getElementById("CreateBlockForm");
-    CreateBlockBtn.addEventListener("keyup", function(event) {
+    var CreateBlockForm = document.getElementById("CreateBlockForm");
+    CreateBlockForm.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 13) {
             document.getElementById("CreateBlockBtn").click();

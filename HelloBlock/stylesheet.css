@@ -57,3 +57,13 @@ form {
     font-family: Arial;
     margin-left: 0px;
 }
+
+p, ul {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 20px;
+}

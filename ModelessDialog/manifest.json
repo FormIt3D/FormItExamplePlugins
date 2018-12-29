@@ -1,10 +1,12 @@
 {
-    "PluginName": "Modeless Hello Block",
+    "PluginName": "Modeless HTML Dialog UI",
+    "PluginDescription": "Creates a modeless dialog UI that displays an HTML page which can generate FormIt geometry.",
+    "PluginType": "Dialog",
     "Scripts": [
         "PLUGINLOCATION/../HelloBlock/block.js"
     ],
     "DialogBox": "PLUGINLOCATION/../HelloBlock/hello_block.html",
     "DialogBoxWidth": 300,
-    "DialogBoxHeight": 180,
+    "DialogBoxHeight": 300,
     "DialogBoxType": "Modeless"
 }

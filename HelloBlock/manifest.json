@@ -1,6 +1,7 @@
 {
-    "PluginName": "Hello Block!",
-    "PluginDescription": "Creates a panel with an HTML form that allows dimensional input for a 3D block which will get generated at the world origin.",
+    "PluginName": "HTML Panel UI",
+    "PluginDescription": "Creates a panel UI that displays an HTML page, which provides an interface to generate a FormIt cuboid by XYZ dimensions.",
+    "PluginType": "Panel",
     "Scripts": [
         "PLUGINLOCATION/block.js"
     ],

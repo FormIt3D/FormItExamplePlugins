@@ -1,11 +1,13 @@
 {
-    "PluginName": "Modal Hello Block",
+    "PluginName": "Modal HTML Dialog UI",
+    "PluginDescription": "Creates a modal dialog UI that displays an HTML page which can generate FormIt geometry.",
+    "PluginType": "Dialog",
     "Scripts": [
         "PLUGINLOCATION/../HelloBlock/block.js"
     ],
     "DialogBox": "PLUGINLOCATION/../HelloBlock/hello_block.html",
     "DialogBoxGUID": "53baa9e2-b293-4b1b-a74d-eb554d746013",
     "DialogBoxWidth": 300,
-    "DialogBoxHeight": 180,
+    "DialogBoxHeight": 300,
     "DialogBoxType": "Modal"
 }

@@ -206,6 +206,19 @@ body {
     padding-bottom: 6px;
 }
 
+.repoDescription {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: .95em;
+    color: black;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transition: display 0.2s ease-out;
+    line-height: 20px;
+}
+
 .pluginName {
     color: #4676A9;
     background-color: white;

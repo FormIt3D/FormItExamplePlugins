@@ -1,0 +1,62 @@
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+p {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: Arial;
+  color: grey;
+}
+
+.instructions {
+  line-height: 20px;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.instructions ul {
+  padding-left: 40px;
+}
+
+/* Style the list items */
+.FormItMessagesUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 8px;
+  background: #eee;
+  font-size: 18px;
+  font-family: Arial;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.FormItMessagesUL li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.FormItMessagesUL li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, darken the background color */
+.FormItMessagesUL li.checked {
+  background: #888;
+  color: #fff;
+}
