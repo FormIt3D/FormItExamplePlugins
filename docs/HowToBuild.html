@@ -52,7 +52,7 @@
             <ul>
                 <li>Start a Terminal</i></li>
             </ul>-->
-            <li>In Command Prompt<!-- or Terminal-->, enter the following to install npm's <i>http-server</i> globally:</li>
+            <li>In Command Prompt<!-- or Terminal-->, enter the following to install npm's <i>http-server</i> globally (one-time setup):</li>
             <ul>
                 <li class="categoryDetailCode"><span>npm install http-server -g</span></li>
             </ul>
@@ -223,7 +223,8 @@
             <p class="categoryDetailCode">
                 <pre>
 {
-    "PluginName" : "[PluginName]",
+    "PluginName": "[PluginName]",
+    "PluginType": "[PluginType]"
     "PluginDescription": "[PluginDescription]",
     "Scripts": [
         "PLUGINLOCATION/[script1].js",
@@ -236,6 +237,7 @@
             <p class="categoryDetailBody">A typical plugin includes these JSON properties:</p>
             <ul class="categoryDetailList">
                 <li>"PluginName" represents the name of the plugin for internal and most display purposes, including for the <a href="../index.html" target="_blank">Plugin Manager</a>.</li>
+                <li>"PluginType" represents the type of the plugin, so users know what to look for when they install the plugin, and is used in the <a href="../index.html" target="_blank">Plugin Manager</a> description.</li>
                 <li>"PluginDescription" is used by the <a href="../index.html" target="_blank">Plugin Manager</a> to communicate the plugin's capabilities before installing it.</li>
                 <li>"Scripts" lists the required external scripts associated with the plugin that will be loaded into the FormIt application and can be executed when plugin functionality is invoked.</li>
             </ul>
@@ -252,6 +254,7 @@
                 <pre>
 {
     "PluginName": "Flip Along",
+    "PluginType": "Toolbar",
     "PluginDescription": "Creates a toolbar with X, Y, and Z buttons to quickly flip selected geometry in the direction of the selected axis.",
     "ToolbarURL": "PLUGINLOCATION/toolbar.json",
     "Scripts": [
@@ -313,6 +316,7 @@
                 <pre>
 {
     "PluginName": "Hello Block!",
+    "PluginType": "Panel",
     "PluginDescription": "Creates a panel with an HTML form that allows dimensional input for a 3D block which will get generated at the world origin.",
     "Scripts": [
         "PLUGINLOCATION/block.js"
@@ -382,6 +386,7 @@
                 </ul>
                 -->
             </ul>
+            <p class="categoryDetailBody">To test how a plugin or a repository will appear in the Plugin Manager, see <a href="#HostingPlugins">Hosting Plugins.</a></p>
     </div>
 </div>
 
@@ -436,6 +441,7 @@
         <h2 class="categoryTitle">Hosting Plugins</h2>
         <div class="categoryDetailBlock">
             <p class="categoryDetailBody">Built a useful plugin that you want to share? Host your repository on GitHub so others can install your plugins from the <a href="../index.html" target="_blank">Plugin Manager</a>!</p>
+            <p class="categoryDetailBody"><b>Hosting Your Repo + Plugins on GitHub</b></p>
             <ul class="categoryDetailList">
                 <li>Sign up for a free <a href="https://github.com/join" target="_blank">GitHub account</a>.</li>
                 <li>Download <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>, a free tool for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repositories.</li>
@@ -469,6 +475,15 @@
             </ul>
             <p class="categoryDetailBody">You should now be able to load your GitHub-hosted plugin repository in the Plugin Manager by entering its URL (for our example, <span class=categoryDetailCode>https://github.com/Joe/JoesPlugins</span>) in the box at the top and hitting the (+) button. Learn more about the <a href="../index.html" target="_blank">Plugin Manager</a>.</p>
             <p class="categoryDetailBody">At this point, you can continue adding, modifying, and testing plugins locally, and when you're ready to publish, use GitHub Desktop to push your changes to your GitHub repo. Anyone consuming your repo and plugins will always get the latest code when they start FormIt.</p>
+            <p class="categoryDetailBody"><b>Previewing Your Plugin with the Plugin Manager</b></p>
+            <p class="categoryDetailBody">To preview how your hosted repo/plugins would appear in the Plugin Manager (updated title, description, etc) before it's pushed to GitHub, you'll need to clone the <a href="https://github.com/FormIt3D/FormItExamplePlugins">FormItExamplePlugins</a> repo and host the Plugin Manager locally.</p>  
+            <p class="categoryDetailBody">Due to restrictions with mixed HTTP and HTTPS content, you cannot use the production version of the Plugin Manager with a locally-hosted version of your plugin.</p>
+            <p class="categoryDetailBody">Once you've cloned the FormitExamplePlugins repo above, <a href="#SettingUpEnvironment">start a local server</a> in the folder containing the FormItExamplePlugins folder. Then, enter the following in the Script Editor in FormIt for Windows, select the text, and hit the "Run Selected" button:</p>
+            <ul class="categoryDetailList">
+                <li class="categoryDetailCode"><span>FormIt.LoadPlugin("http://localhost:8080/FormItExamplePlugins/PluginManagerPlugin");</span></li>
+            </ul>
+            <p class="categoryDetailBody">Then, you can paste your repo URL (in our example, <span class=categoryDetailCode>http://localhost:8080/Joe</span>) into the box at the top of the Plugin Manager, and hit the (+) button to add your locally-hosted repository to the Plugin Manager.</p>
+            <p class="categoryDetailBody">If nothing happens, check that your server is running where you expect it to, and that the URL is pointing to the correct folder relative to your server.</p>
         </div>
     </div>
 

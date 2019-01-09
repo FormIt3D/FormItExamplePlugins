@@ -29,6 +29,7 @@ img {
 }
 
 .imgLarge {
+    max-height: 600px;
     max-width: 1000px;
 }
 
