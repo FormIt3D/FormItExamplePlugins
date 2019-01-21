@@ -393,28 +393,43 @@
 <div class="categoryBlock" id="DebuggingPlugins">
         <h2 class="categoryTitle">Debugging Plugins</h2>
         <div class="categoryDetailBlock">
-            <p class="categoryDetailBody">Panel-based FormIt plugins utilize two distinct JavaScript engines. One is in the panel displaying the HTML, and another engine which is built in to FormIt for Windows. These JavaScript engines are actually in two different processes.</p>
+            <p class="categoryDetailBody">Panel-based FormIt plugins utilize two distinct JavaScript engines. One is in the panel displaying the HTML, and another engine which is built-in to FormIt for Windows. These JavaScript engines are actually in two different processes.</p>
+            <p class="categoryDetailBody"><b>FormIt Debugging</b></p>
             <p class="categoryDetailBody">To debug in FormIt-side code (for toolbars or panels), you can enter the following to pop the desktop application's built-in JS debugger:</p>
             <ul class="categoryDetailList">
                 <li class="categoryDetailCode"><span>debugger;</span></li>
             </ul>
+            <p class="categoryDetailBody"><b>HTML Debugging</b></p>
             <p class="categoryDetailBody">To debug HTML-side code (for panels only), including scripts and styling:</p>
             <p class="categoryDetailBody">First, add a required Windows Environment Variable to enable HTML debugging (first-time setup only):</p>
             <ul class="categoryDetailList">
                     <li>In Windows, hit Start and type "environment", then choose "Edit System Environment Variables".</li>
                     <li>In the dialog that appears, click "Environment Variables..."</li>
                     <li>In the System Variables section, click "New..."</li>
-                    <li>Add the following:</li>
+                    <li>Add the following, depending on the version of FormIt:</li>
                     <ul>
-                        <li>Variable Name: <span class="categoryDetailCode"> <span>QTWEBENGINE_REMOTE_DEBUGGING</span></span></li>
-                        <li>Value: <span class="categoryDetailCode"> <span>23654</span></span></li>
+                        <li><b>FormIt for Windows v16</b></li>
+                        <ul>
+                            <li>Variable Name: <span class="categoryDetailCode"> <span>QTWEBENGINE_REMOTE_DEBUGGING</span></span></li>
+                            <li>Value: <span class="categoryDetailCode"> <span>23654</span></span></li>
+                        </ul>
                     </ul>
+                    <!--
+                    <ul>
+                        <li><b>FormIt for Windows v17 and newer</b></li>
+                        <ul>
+                            <li>Variable Name: <span class="categoryDetailCode"> <span>QTWEBENGINE_REMOTE_DEBUGGING</span></span></li>
+                            <li>Value: <span class="categoryDetailCode"> <span>23655</span></span> or higher</li>
+                        </ul>
+                    </ul>
+                    -->
                     <li>Hit "OK" on all dialogs.</li>
                     <li>You may need to restart FormIt for this to take effect.</li>
                     <!--
                     <li><b>FormIt for Windows v17 and newer</b></li>
                     <ul>
                         <li>Right-click on the panel and choose "Debug", which will open Chrome (required) to a page where you can select the panel plugin you want to debug.</li>
+                        <li>This will use the port number you specified above in the Environment Variable.</li>
                     </ul>
                     -->
                 </ul>
