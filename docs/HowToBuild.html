@@ -44,7 +44,11 @@
         <p class="categoryDetailBody">Plugin files and directories need to be hosted on a web server for FormIt to load from.</p>
         <p class="categoryDetailBody">A simple web server that works well is npm's <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a>, which you can install by:</p>
         <ul class="categoryDetailList">
-            <li>In Windows</li>
+            <li>First, download and install <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> if it's not already installed (one-time setup).</li>
+            <ul>
+                <li>If you encounter errors in the following steps, try restarting your computer for the NodeJS installation to complete.</li>
+            </ul>
+            <li>In Windows, start a Command Prompt as an administrator:</li>
             <ul>
                 <li>Start > type "cmd" > right-click <i>Command Prompt</i> > select <i>Run as Administrator</i></li>
             </ul>
@@ -59,6 +63,7 @@
             <li>Navigate to the directory containing the <i>FormIt Example Plugins</i> and <i>FormIt Workflow Plugins</i> folders, then enter:</li>
             <ul>
                 <li class="categoryDetailCode"><span>http-server</span></li>
+                <li>Accept any Windows prompts that warn about the new local server.</li>
                 <li>Note you can use your IDE to start the server, too. See the "Install an IDE" section below.</li>
             </ul>
         </ul>
