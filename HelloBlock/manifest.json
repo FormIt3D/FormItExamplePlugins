@@ -3,7 +3,8 @@
     "PluginDescription": "Creates a panel UI that displays an HTML page, which provides an interface to generate a FormIt cuboid by XYZ dimensions.",
     "PluginType": "Panel",
     "Scripts": [
-        "PLUGINLOCATION/block.js"
+        "PLUGINLOCATION/block.js",
+        "http://localhost:8080/FormItExamplePlugins/SharedPluginFiles/PluginUtils.js"
     ],
     "Panel": "PLUGINLOCATION/hello_block.html",
     "PanelIcon": "PLUGINLOCATION/hello_block.png",
