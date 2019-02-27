@@ -4,6 +4,7 @@
 <META NAME="Title" CONTENT="Hello Block!">
 <META NAME="Author" CONTENT="Autodesk FormIt">
 <script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
+<script type="text/javascript" src="https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/PluginUtils.js"></script>
 <script type="text/javascript" src="block.js"></script>
 <script type="text/javascript">
     FormItInterface.Initialize();
@@ -14,7 +15,7 @@
 
 <p>Create a cuboid of the given size at the origin.</p>
 
-<form id="CreateBlockForm" name=a action="x.htm">
+<form id="CreateBlockForm" name=a>
 <input id="width" type=number name=width value = 12.0> Width<br>
 <input type=number name=length value = 12.0> Length<br>
 <input type=number name=height value = 12.0> Height<br>
@@ -22,14 +23,8 @@
 </form>
 
 <script>
-    var CreateBlockForm = document.getElementById("CreateBlockForm");
-    CreateBlockForm.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("CreateBlockBtn").click();
-        }
-    });
-    </script>
+    FormIt.PluginUtils.HandleEnter("CreateBlockForm", "CreateBlockBtn");
+</script>
 
 </body>
 </html>
