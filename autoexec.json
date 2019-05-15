@@ -1,3 +1,4 @@
 {
-  "load": ["https://formit3d.github.io/FormItExamplePlugins/PluginManagerPlugin", "https://formit3d.github.io/FormItWorkflowPlugins/SetLocationDialog"]
+  "load": ["https://formit3d.github.io/FormItExamplePlugins/PluginManagerPlugin", "https://formit3d.github.io/FormItWorkflowPlugins/SetLocationDialog"],
+  "v1":  ["https://formit3d.github.io/FormItExamplePlugins/PluginManagerPlugin", "https://formit3d.github.io/FormItWorkflowPlugins/SetLocation/v1"]
 }
