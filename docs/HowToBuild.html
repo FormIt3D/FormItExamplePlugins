@@ -404,7 +404,28 @@
             </ul>
             <p class="categoryDetailBody"><b>HTML Debugging</b></p>
             <p class="categoryDetailBody">To debug HTML-side code (for panels only), including scripts and styling:</p>
-            <p class="categoryDetailBody">First, add a required Windows Environment Variable to enable HTML debugging (first-time setup only):</p>
+            <ul class="categoryDetailList">
+                <li><b>FormIt for Windows v17 and newer</b></li>
+                <ul>
+                    <li>In Windows, hit Start and type "PowerShell", right-click it, and Run as Administrator</li>
+                    <li>Copy and paste the following, then hit Enter:</li>
+                    <ul>
+                        <li><span class="categoryDetailCode"> <span>$env:QTWEBENGINE_REMOTE_DEBUGGING="3000"</span></span></li>
+                        <li>This sets an Environment Variable for this session.</li>
+                    </ul>
+                    <li>Now copy and paste the following, then hit Enter:</li>
+                    <ul>
+                        <li><span class="categoryDetailCode"> <span>start "$env:ProgramFiles\Autodesk\FormIt\FormIt.exe"</span></span></li>
+                        <li>This will start FormIt using this Environment Variable, for this session.</li>
+                        <li>Note: this assumes FormIt is installed in the Program Files directory.</li>
+                    </ul>
+                </ul>
+                <li><b>FormIt for Windows v16</b></li>
+                <ul>
+                    <li>Repeat the steps above, but using <span class="categoryDetailCode"><span>23654</span></span> in the first command, instead of 3000.</li>
+                </ul>
+            </ul>  
+            <!--
             <ul class="categoryDetailList">
                     <li>In Windows, hit Start and type "environment", then choose "Edit System Environment Variables".</li>
                     <li>In the dialog that appears, click "Environment Variables..."</li>
@@ -427,21 +448,22 @@
                     <li>Hit "OK" on all dialogs.</li>
                     <li>You may need to restart FormIt for this to take effect.</li>
                 </ul>
-            <p class="categoryDetailBody">Once you've added the required Environment Variable (first-time setup only), proceed based on the version of FormIt:</p>
+                --->
+            <p class="categoryDetailBody">Once you've started FormIt with the Environment Variable as described above, proceed based on the version of FormIt:</p>
             <ul class="categoryDetailList">
+                <li><b>FormIt for Windows v17 and newer</b></li>
+                <ul>
+                    <li>Simply right-click on the plugin panel and choose "Debug", which will open Chrome (required).</li>
+                    <li>This will automatically use the port number you specified above in the Environment Variable.</li>
+                </ul>
                 <li><b>FormIt for Windows v16</b></li>
                 <ul>
-                    <li>Ensure FormIt is running and the plugin you want to debug is visible.</li>
+                    <li>Ensure the plugin you want to debug is visible.</li>
                     <li>Use Google Chrome (required) to navigate to the following address:</li>
                     <li><a href="http://localhost:23654/" target="_blank">http://localhost:23654/</a></li>
                 </ul>
-                <li><b>FormIt for Windows v17 and newer</b></li>
-                <ul>
-                    <li>Right-click on the panel and choose "Debug", which will open Chrome (required) to a page where you can select the panel plugin you want to debug.</li>
-                    <li>This will use the port number you specified above in the Environment Variable.</li>
-                    <li>If the Chrome page opens with a "Tray Popup" item instead of the expected plugins, you may need to increment the Environment Variable number, restart FormIt, and try again.</li>
-                </ul>
             </ul>
+            <p class="categoryDetailBody">Now you can select the plugin you want to debug from the list, and Chrome will take you to the debugger, where you can inspect elements and view the console, etc.</p>
             <p class="categoryDetailBody">Learn more about <a href="https://doc.qt.io/qt-5/qtwebengine-debugging.html" target="_blank">Qt Web Engine Debugging and Profiling</a></p>
         </div>
 </div>
