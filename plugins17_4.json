@@ -1,0 +1,14 @@
+{
+  "RepoName": "FormIt Example UI Plugins",
+  "RepoDescription": "Learn how FormIt plugins work through simple UI examples.",
+  "Plugins":
+  [
+    "DialogFromToolbar",
+    "HelloBlock/17_4",
+    "Messages",
+    "ModalDialog",
+    "ModelessDialog",
+    "PluginManagerToolbar",
+    "Toolbar1"
+  ]
+}
