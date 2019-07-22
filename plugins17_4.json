@@ -4,7 +4,7 @@
   "Plugins":
   [
     "DialogFromToolbar",
-    "HelloBlock/17_4",
+    "HelloBlock/v17_4",
     "Messages",
     "ModalDialog",
     "ModelessDialog",
