@@ -4,6 +4,6 @@
     "Scripts": [
         "PLUGINLOCATION/PluginManager.js"
     ]
-    ,"Panel": "PLUGINLOCATION/PluginManager.html",
+    ,"Panel": "PLUGINLOCATION/PluginManager_test.html",
     "PanelIcon": "PLUGINLOCATION/img/plugin_manager.png"
 }
