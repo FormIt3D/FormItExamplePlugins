@@ -2,8 +2,8 @@
     "PluginName": "Plugin Manager",
     "PluginDescription": "Provides access to useful example plugins from the FormIt team, as well as the ability to link your own personal local or GitHub plugin repos to build and test your own FormIt plugins.",
     "Scripts": [
-        "PLUGINLOCATION/v17_4/PluginManager.js"
+        "PLUGINLOCATION/PluginManager.js"
     ]
     ,"Panel": "PLUGINLOCATION/v17_4/PluginManager.html",
-    "PanelIcon": "PLUGINLOCATION/v17_4/img/plugin_manager.png"
+    "PanelIcon": "PLUGINLOCATION/img/plugin_manager.png"
 }
