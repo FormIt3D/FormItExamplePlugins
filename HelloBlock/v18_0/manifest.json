@@ -4,7 +4,7 @@
     "PluginType": "Panel",
     "Scripts": [
         "PLUGINLOCATION/block.js",
-        "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/PluginUtils17_4.js"
+        "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/PluginUtils18_0.js"
     ],
     "Panel": "PLUGINLOCATION/hello_block.html",
     "PanelIcon": "PLUGINLOCATION/hello_block.png",
