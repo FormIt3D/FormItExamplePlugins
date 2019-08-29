@@ -209,7 +209,7 @@ FormItExamplePlugins.PluginManager.MakePluginRepoDivs = function()
 FormItExamplePlugins.PluginManager.MakePluginRepoDiv = function(repoURL)
 {
     // Now add the plugins.
-    var pluginsManifest = repoURL + "/plugins18_0.json";
+    var pluginsManifest = repoURL + "/plugins.json";
     var request = new XMLHttpRequest();
     request.addEventListener("load", FormItExamplePlugins.PluginManager.AddPluginRepo);
     request.pluginSiteURL = repoURL;
