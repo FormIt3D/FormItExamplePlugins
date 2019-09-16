@@ -1,12 +1,41 @@
 body {
     padding: 0;
-    margin: 5px;
+    margin: 0;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+#headerContainer{
+    flex-shrink: 0;
+}
+
+#repoListContainer{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+#footerContainer{
+    flex-shrink: 0;
+    width:100%;
+    font-size:14px;
+}
+
+#footerContainer a{
+    display:block;
+    margin-top:10px;
+    color: #4676a9;
+}
+
+#footerContainer a:visited{
+    color: #4676a9;
 }
 
 .header {
@@ -20,13 +49,7 @@ body {
     padding: 0px;
     margin-top: 5px;
     margin-bottom: 20px;
-}
 
-.footerContainer {
-    height: 100%;
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
 }
 
 .footerDiv {
