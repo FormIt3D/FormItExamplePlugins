@@ -143,10 +143,20 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.appendChild(document.createElement('p'));
 
     var footerLinkTextA = document.createElement('a');
-    var footerLinkText = document.createTextNode("Learn how to build and run your own FormIt Plugins.");
+    var footerLinkText = document.createTextNode("Learn how to build and run your own FormIt Plugins");
     footerLinkTextA.appendChild(footerLinkText);
     footerLinkTextA.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/index.html");
     footerDiv.appendChild(footerLinkTextA);
+
+    var resetRepoListLink = document.createElement('a');
+    var repoListText = document.createTextNode("Reset managed plugins");
+    resetRepoListLink.appendChild(repoListText);
+    resetRepoListLink.setAttribute("href", "javascript:void(0);");
+    footerDiv.appendChild(resetRepoListLink);
+
+    resetRepoListLink.onclick = function(){
+        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.SaveRepos', JSON.stringify([]));
+    }
 }
 
 FormItExamplePlugins.PluginManager.createPluginContainerDiv = function()
@@ -491,8 +501,7 @@ FormItExamplePlugins.PluginManager.CreatePlugins = function()
     FormItExamplePlugins.PluginManager.createHeader();
     FormItExamplePlugins.PluginManager.createPluginContainerDiv();
 
-    // temporarily turning off the footer due to styling issues
-    //FormItExamplePlugins.PluginManager.createFooter();
+    FormItExamplePlugins.PluginManager.createFooter();
 
     if (true)
     {
