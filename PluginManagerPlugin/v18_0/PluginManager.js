@@ -155,7 +155,6 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.appendChild(resetRepoListLink);
 
     resetRepoListLink.onclick = function(){
-
         var confirmed = window.confirm('Reset the Plugin Manager to the default repositories? This will remove any custom linked repositories.')
 
         if (confirmed){
