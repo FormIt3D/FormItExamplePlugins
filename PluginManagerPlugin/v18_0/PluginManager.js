@@ -55,7 +55,6 @@ FormItExamplePlugins.PluginManager.SaveRepoLink = function(repoURL)
 
 FormItExamplePlugins.PluginManager.ShowDialog = function(dialogParams)
 {
-    debugger;
     FormIt.Commands.RegisterJSCommand("FormItExamplePlugins.PluginManager.ShowDialog");
     FormItInterface.CallMethod("CreateDialogBox", dialogParams);
 }
