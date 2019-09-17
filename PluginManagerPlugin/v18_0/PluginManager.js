@@ -55,6 +55,7 @@ FormItExamplePlugins.PluginManager.SaveRepoLink = function(repoURL)
 
 FormItExamplePlugins.PluginManager.ShowDialog = function(dialogParams)
 {
+    debugger;
     FormIt.Commands.RegisterJSCommand("FormItExamplePlugins.PluginManager.ShowDialog");
     FormItInterface.CallMethod("CreateDialogBox", dialogParams);
 }
@@ -155,7 +156,13 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.appendChild(resetRepoListLink);
 
     resetRepoListLink.onclick = function(){
-        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.SaveRepos', JSON.stringify([]));
+
+        var confirmed = window.confirm('Reset the Plugin Manager to the default repositories? This will remove any custom linked repositories.')
+
+        if (confirmed){
+            FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.SaveRepos', JSON.stringify([]));
+            window.location.reload(true);
+        }
     }
 }
 
