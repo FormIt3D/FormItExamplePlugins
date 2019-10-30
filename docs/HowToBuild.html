@@ -134,7 +134,7 @@
                     <li>The Script Output window will display any messages printed to the console from plugins.</li>
                     <li>You can clear the output by running <span class="categoryDetailCode"><span>console.clear();</span></span> in the Script Editor.</li>
                 </ul>
-            </ul>   
+            </ul>
         </div>
     </div>
 
@@ -237,7 +237,7 @@
         ...
         "PLUGINLOCATION/[scriptn].js"
     ]
-}               </pre> 
+}               </pre>
             </p>
             <p class="categoryDetailBody">A typical plugin includes these JSON properties:</p>
             <ul class="categoryDetailList">
@@ -249,7 +249,7 @@
             <p class="categoryDetailBody">Start your plugin development by creating a manifest.json file in your plugin folder. Next, you'll need to decide if you are making a toolbar or panel-based plugin.</p>
             <p class="categoryDetailBody"><b>Note:</b> the use of PLUGINLOCATION throughout the manifest.json file above is essential and also case sensitive. FormIt will replace PLUGINLOCATION with the server location for the plugin.</p>
     </div>
-</div> 
+</div>
 
 <div class="categoryBlock" id="CreatingToolbarPlugin">
         <h2 class="categoryTitle">Creating a Toolbar Plugin</h2>
@@ -265,7 +265,7 @@
     "Scripts": [
         "PLUGINLOCATION/flipalong.js"
     ]
-}               </pre>            
+}               </pre>
             </p>
             <p class="categoryDetailBody">In addition to the <a href="#GeneralPluginSetup">standard JSON properties</a>, a toolbar-based plugin includes these special JSON properties:</p>
             <ul class="categoryDetailList">
@@ -296,7 +296,7 @@
             "iconURL": "[Icon URL]"
         }
     ]
-}               </pre>            
+}               </pre>
             </p>
             <p class="categoryDetailBody">The <i>toolbar.json</i> file includes these JSON properties:</p>
             <ul class="categoryDetailList">
@@ -343,6 +343,63 @@
             <p class="categoryDetailBody">Once your HTML, CSS, and JavScript files are set up, you can begin testing your HTML panel plugin by loading it or installing it.</p>
     </div>
 </div>
+
+
+<div class="categoryBlock" id="VersioningPlugins">
+    <h2 class="categoryTitle">Versioning Plugins (Optional step)</h2>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">As you continue to develop and update your plugin, it is possible that you will want to version your plugin. The most probable reason for implempenting plugin versioning is because FormIt's APIs can change between versions. You'll want to update your plugin to make use of newer APIs, but also keep your plugin working for older FormIt clients.</p>
+        <p class="categoryDetailBody">Starting with FormIt <b>v18.0</b>, to implement versioning follow some simple steps:</p>
+        <ul class="categoryDetailList">
+            <li>Add a <i>versions.json</i> file to the root of your plugin directory/repository</li>
+        </ul>
+
+        <p class="categoryDetailBody"><i>versions.json</i> should have the following structure:</p>
+        <p class="categoryDetailCode">
+            <pre>
+            [
+                {
+                    "version":{
+                        "major":18,
+                        "minor":0
+                    },
+                    "path":"myV18Path"
+                },
+                {
+                    "version":{
+                        "major":18,
+                        "minor":1
+                    },
+                    "path":"myV18.1Path"
+                }
+            ]
+            </pre>
+        </p>
+
+        <ul class="categoryDetailList">
+            <li>The above paths <i>myV18Path</i> and <i>myV18.1Path</i> must be valid subpaths from the root of your directory/repository. The easiest and most straight-forward way of doing this is to move your plugin code into sub directories. Using the above versions.json, a sample directory structure would be the following:</li>
+            <ul>
+                <li><b>versions.json</b> (file)</li>
+                <li><b>myV18Path</b> (directory)</li>
+                <ul>
+                    <li><b>manifest.json</b> (file)</li>
+                    <li><b>plugin.html</b> (file)</li>
+                    <li><b>plugin.js</b> (file)</li>
+                </ul>
+                <li><b>myV18.1Path</b> (directory)</li>
+                <ul>
+                    <li><b>manifest.json</b> (file)</li>
+                    <li><b>plugin.html</b> (file)</li>
+                    <li><b>plugin.js</b> (file)</li>
+                </ul>
+            </ul>
+        </ul>
+
+        <p class="categoryDetailBody">It is also possible to use git branches/tags/commits for your paths. Those details won't be covered here, but it's enitrely possible to separate your plugins versions this way.</p>
+
+    </div>
+</div>
+
 
 <div class="categoryBlock" id="TestingPlugins">
     <h2 class="categoryTitle">Testing Plugins</h2>
@@ -424,7 +481,7 @@
                 <ul>
                     <li>Repeat the steps above, but using <span class="categoryDetailCode"><span>23654</span></span> in the first command, instead of 3000.</li>
                 </ul>
-            </ul>  
+            </ul>
             <!--
             <ul class="categoryDetailList">
                     <li>In Windows, hit Start and type "environment", then choose "Edit System Environment Variables".</li>
@@ -488,7 +545,7 @@
                 <pre>
 {
   "RepoName": "Joe's Plugins",
-  "Plugins": 
+  "Plugins":
   [
   "MyFormItPlugin1",
   "MyFormItPlugin2"
@@ -507,7 +564,7 @@
             <p class="categoryDetailBody">You should now be able to load your GitHub-hosted plugin repository in the Plugin Manager by entering its URL (for our example, <span class=categoryDetailCode>https://github.com/Joe/JoesPlugins</span>) in the box at the top and hitting the (+) button. Learn more about the <a href="../index.html" target="_blank">Plugin Manager</a>.</p>
             <p class="categoryDetailBody">At this point, you can continue adding, modifying, and testing plugins locally, and when you're ready to publish, use GitHub Desktop to push your changes to your GitHub repo. Anyone consuming your repo and plugins will always get the latest code when they start FormIt.</p>
             <p class="categoryDetailBody"><b>Previewing Your Plugin with the Plugin Manager</b></p>
-            <p class="categoryDetailBody">To preview how your hosted repo/plugins would appear in the Plugin Manager (updated title, description, etc) before it's pushed to GitHub, you'll need to clone the <a href="https://github.com/FormIt3D/FormItExamplePlugins">FormItExamplePlugins</a> repo and host the Plugin Manager locally.</p>  
+            <p class="categoryDetailBody">To preview how your hosted repo/plugins would appear in the Plugin Manager (updated title, description, etc) before it's pushed to GitHub, you'll need to clone the <a href="https://github.com/FormIt3D/FormItExamplePlugins">FormItExamplePlugins</a> repo and host the Plugin Manager locally.</p>
             <p class="categoryDetailBody">Due to restrictions with mixed HTTP and HTTPS content, you cannot use the production version of the Plugin Manager with a locally-hosted version of your plugin.</p>
             <p class="categoryDetailBody">Once you've cloned the FormitExamplePlugins repo above, <a href="#SettingUpEnvironment">start a local server</a> in the folder containing the FormItExamplePlugins folder. Then, enter the following in the Script Editor in FormIt for Windows, select the text, and hit the "Run Selected" button:</p>
             <ul class="categoryDetailList">
