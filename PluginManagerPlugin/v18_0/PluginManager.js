@@ -141,14 +141,14 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.className = 'footerDiv';
     footerContainer.appendChild(footerDiv);
 
-    var footerDescriptionText = document.createTextNode("FormIt JavaScript plugins enable powerful, custom 3D workflows.");
+    var footerDescriptionText = document.createTextNode("Use FormIt JavaScript plugins to build powerful, custom 3D workflows.");
     footerDiv.appendChild(footerDescriptionText);
 
     footerDiv.appendChild(document.createElement('p'));
     footerDiv.appendChild(document.createElement('p'));
 
     var footerLearnToBuildLink = document.createElement('a');
-    var footerLearnToBuildText = document.createTextNode("Learn how to build and run your own FormIt Plugins");
+    var footerLearnToBuildText = document.createTextNode("Learn how to build and run your own FormIt plugins");
     footerLearnToBuildLink.appendChild(footerLearnToBuildText);
     footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
     footerDiv.appendChild(footerLearnToBuildLink);
@@ -158,7 +158,7 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     }
 
     var resetRepoListLink = document.createElement('a');
-    var repoListText = document.createTextNode("Reset managed plugins");
+    var repoListText = document.createTextNode("Reset plugin repositories");
     resetRepoListLink.appendChild(repoListText);
     resetRepoListLink.setAttribute("href", "javascript:void(0);");
     footerDiv.appendChild(resetRepoListLink);
