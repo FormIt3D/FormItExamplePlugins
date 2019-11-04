@@ -72,6 +72,11 @@ FormItExamplePlugins.PluginManager.GetAddedRepos = function()
     return '[]';
 }
 
+FormItExamplePlugins.PluginManager.OpenURL = function()
+{
+    FormIt.OpenURL('https://formit3d.github.io/FormItExamplePlugins/index.html'); 
+}
+
 FormItExamplePlugins.PluginManager.createHeader = function() {
     var headerContainer = document.createElement('div');
     headerContainer.id = 'headerContainer';
@@ -136,17 +141,21 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.className = 'footerDiv';
     footerContainer.appendChild(footerDiv);
 
-    var footerDescriptionText = document.createTextNode("FormIt Plugins unleash the power of FormIt's JavaScript API to enable powerful, custom 3D workflows. ");
+    var footerDescriptionText = document.createTextNode("FormIt JavaScript plugins enable powerful, custom 3D workflows.");
     footerDiv.appendChild(footerDescriptionText);
 
     footerDiv.appendChild(document.createElement('p'));
     footerDiv.appendChild(document.createElement('p'));
 
-    var footerLinkTextA = document.createElement('a');
-    var footerLinkText = document.createTextNode("Learn how to build and run your own FormIt Plugins");
-    footerLinkTextA.appendChild(footerLinkText);
-    footerLinkTextA.setAttribute("href", "https://formit3d.github.io/FormItExamplePlugins/index.html");
-    footerDiv.appendChild(footerLinkTextA);
+    var footerLearnToBuildLink = document.createElement('a');
+    var footerLearnToBuildText = document.createTextNode("Learn how to build and run your own FormIt Plugins");
+    footerLearnToBuildLink.appendChild(footerLearnToBuildText);
+    footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
+    footerDiv.appendChild(footerLearnToBuildLink);
+
+    footerLearnToBuildLink.onclick = function() {
+        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenURL', "");
+    }
 
     var resetRepoListLink = document.createElement('a');
     var repoListText = document.createTextNode("Reset managed plugins");
