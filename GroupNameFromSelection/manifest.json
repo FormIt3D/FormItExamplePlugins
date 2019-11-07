@@ -1,0 +1,8 @@
+{
+    "PluginName": "Group Name From Selection",
+    "PluginDescription": "Selection of one Object of type WSM.nInstanceType, this plugin will write to the console the name of the Group.",
+    "PluginType": "Panel",
+    "Scripts": [
+        "PLUGINLOCATION/GroupNameFromSelection.js"
+    ]
+}
