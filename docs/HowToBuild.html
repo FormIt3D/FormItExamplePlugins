@@ -99,7 +99,7 @@
 <div class="categoryBlock" id="SettingUpFormIt">
         <h2 class="categoryTitle">Setting Up FormIt</h2>
         <div class="categoryDetailBlock">
-            <p class="categoryDetailBody">In order to test and build plugins, you'll need FormIt for Window v16.0 or later.</p>
+            <p class="categoryDetailBody">In order to test and build plugins, you'll need FormIt for Window v17.0 or later.</p>
             <h3 class="categoryDetailTitle">Enable Development Windows</h3>
             <ul class="categoryDetailList">
                 <li>Toggle the Script Editor and Script Output in FormIt for Windows:</li>
@@ -408,21 +408,6 @@
         <p class="categoryDetailBody">If your web server is running <a href="#SettingUpEnvironment">per the instructions above</a>, you can test your in-progress plugins easily using the built-in <a href="#SettingUpFormIt">Script Editor</a> in FormIt for Windows:</p>
         <p class="categoryDetailBody">We recommend using <span class="categoryDetailCode"><span>FormIt.LoadPlugin("URL");</span></span> when testing, which loads plugins temporarily for this session (they will disappear when FormIt is restarted). Once testing is complete, you can persist the plugin between sessions using <span class="categoryDetailCode"><span>FormIt.InstallPlugin("URL");</span></span>.</p>
         <ul class="categoryDetailList">
-                <li><b>FormIt for Windows v16</b></li>
-                <ul>
-                    <li><b>Toolbar + HTML Panel Plugins</b></li>
-                    <ul>
-                        <li>Load your plugin into FormIt to see the latest UI and test the latest functionality:</li>
-                        <ul>
-                            <li class="categoryDetailCode"><span>FormIt.LoadPlugin("http://localhost:8080/YourPluginName");</span></li>
-                        </ul>
-                        <li>Make some changes, then load the plugin again using the command above.</li>
-                        <ul>
-                            <li>You can load many instances of the same plugin in the current session as you test, each with its own UI.</li>
-                            <li>Be sure to use the latest UI instance to ensure you're testing your most recent changes.</li>
-                        </ul>
-                    </ul>
-                </ul>
                 <li><b>FormIt for Windows v17 and newer</b></li>
                 <ul>
                     <li><b>Toolbar Plugins</b></li>
@@ -478,10 +463,6 @@
                         <li>Note: this assumes FormIt is installed in the Program Files directory.</li>
                     </ul>
                 </ul>
-                <li><b>FormIt for Windows v16</b></li>
-                <ul>
-                    <li>Repeat the steps above, but using <span class="categoryDetailCode"><span>23654</span></span> in the first command, instead of 3000.</li>
-                </ul>
             </ul>
             <!--
             <ul class="categoryDetailList">
@@ -513,12 +494,6 @@
                 <ul>
                     <li>Simply right-click on the plugin panel and choose "Debug", which will open Chrome (required).</li>
                     <li>This will automatically use the port number you specified above in the Environment Variable.</li>
-                </ul>
-                <li><b>FormIt for Windows v16</b></li>
-                <ul>
-                    <li>Ensure the plugin you want to debug is visible.</li>
-                    <li>Use Google Chrome (required) to navigate to the following address:</li>
-                    <li><a href="http://localhost:23654/" target="_blank">http://localhost:23654/</a></li>
                 </ul>
             </ul>
             <p class="categoryDetailBody">Now you can select the plugin you want to debug from the list, and Chrome will take you to the debugger, where you can inspect elements and view the console, etc.</p>
