@@ -72,9 +72,14 @@ FormItExamplePlugins.PluginManager.GetAddedRepos = function()
     return '[]';
 }
 
-FormItExamplePlugins.PluginManager.OpenURL = function()
+FormItExamplePlugins.PluginManager.OpenAboutPluginsURL = function()
 {
     FormIt.OpenURL('https://formit3d.github.io/FormItExamplePlugins/index.html'); 
+}
+
+FormItExamplePlugins.PluginManager.OpenBuildPluginsURL = function()
+{
+    FormIt.OpenURL('https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html'); 
 }
 
 FormItExamplePlugins.PluginManager.createHeader = function() {
@@ -141,29 +146,45 @@ FormItExamplePlugins.PluginManager.createFooter = function() {
     footerDiv.className = 'footerDiv';
     footerContainer.appendChild(footerDiv);
 
-    var footerDescriptionText = document.createTextNode("Use FormIt JavaScript plugins to build powerful, custom 3D workflows.");
+    var footerDescriptionText = document.createTextNode("Powered by FormIt JavaScript plugins");
     footerDiv.appendChild(footerDescriptionText);
 
-    footerDiv.appendChild(document.createElement('p'));
-    footerDiv.appendChild(document.createElement('p'));
+    var footerDivUL = document.createElement('ul');
+    footerDiv.appendChild(footerDivUL);
 
-    var footerLearnToBuildLink = document.createElement('a');
-    var footerLearnToBuildText = document.createTextNode("Learn how to build and run your own FormIt plugins");
-    footerLearnToBuildLink.appendChild(footerLearnToBuildText);
-    footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
-    footerDiv.appendChild(footerLearnToBuildLink);
+    var footerLearnAboutPluginsLI = document.createElement('li');
+    var footerLearnAboutPluginsLink = document.createElement('a');
+    var footerLearnAboutPluginsText = document.createTextNode("Learn about plugins");
+    footerLearnAboutPluginsLink.appendChild(footerLearnAboutPluginsText);
+    footerLearnAboutPluginsLink.setAttribute("href", "javascript:void(0);");
+    footerDivUL.appendChild(footerLearnAboutPluginsLI);
+    footerLearnAboutPluginsLI.appendChild(footerLearnAboutPluginsLink);
 
-    footerLearnToBuildLink.onclick = function() {
-        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenURL', "");
+    footerLearnAboutPluginsLink.onclick = function() {
+        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenAboutPluginsURL', "");
     }
 
-    var resetRepoListLink = document.createElement('a');
-    var repoListText = document.createTextNode("Reset plugin repositories");
-    resetRepoListLink.appendChild(repoListText);
-    resetRepoListLink.setAttribute("href", "javascript:void(0);");
-    footerDiv.appendChild(resetRepoListLink);
+    var footerLearnToBuildLI = document.createElement('li');
+    var footerLearnToBuildLink = document.createElement('a');
+    var footerLearnToBuildText = document.createTextNode("Build your own");
+    footerLearnToBuildLink.appendChild(footerLearnToBuildText);
+    footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
+    footerDivUL.appendChild(footerLearnToBuildLI);
+    footerLearnToBuildLI.appendChild(footerLearnToBuildLink);
 
-    resetRepoListLink.onclick = function(){
+    footerLearnToBuildLink.onclick = function() {
+        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenBuildPluginsURL', "");
+    }
+
+    var resetReposDiv = document.createElement('p');
+    var resetReposListLink = document.createElement('a');
+    var repoListText = document.createTextNode("Reset repos");
+    resetReposDiv.appendChild(resetReposListLink);
+    resetReposListLink.appendChild(repoListText);
+    resetReposListLink.setAttribute("href", "javascript:void(0);");
+    footerDiv.appendChild(resetReposDiv);
+
+    resetReposListLink.onclick = function(){
         var confirmed = window.confirm('Reset the Plugin Manager to the default repositories? This will remove any custom linked repositories.')
 
         if (confirmed){

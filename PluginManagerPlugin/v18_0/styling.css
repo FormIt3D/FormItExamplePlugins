@@ -13,29 +13,37 @@ body {
     overflow: hidden;
 }
 
+input[type="checkbox"] {
+    position: relative;
+    height: 1.45em;
+    width: 1.45em;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -1.5em;
+}
+
+li:before{
+    content: ' ';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: grey;
+    position: absolute;
+    top: 6px;
+    left: -15px;
+}
+
 #headerContainer{
+    padding: 5px 5px 0px 5px;
     flex-shrink: 0;
-}
-
-#repoListContainer{
-    flex-grow: 1;
-    overflow: auto;
-}
-
-#footerContainer{
-    flex-shrink: 0;
-    width:100%;
-    font-size:14px;
-}
-
-#footerContainer a{
-    display:block;
-    margin-top:10px;
-    color: #4676a9;
-}
-
-#footerContainer a:visited{
-    color: #4676a9;
 }
 
 .header {
@@ -49,13 +57,6 @@ body {
     padding: 0px;
     margin-top: 5px;
     margin-bottom: 20px;
-
-}
-
-.footerDiv {
-    background-color: #ebebeb;
-    font-family: sans-serif;
-    padding: 10px;
 }
 
 .linkRepoInput {
@@ -85,8 +86,6 @@ body {
     width: 35px;
     height: 35px;
     float: right;
-
-    /* make margin-top = linkRepoInput padding */
     margin-top: 19px;
     background-color: transparent;
     background: url("img/button_add@2x.png");
@@ -100,6 +99,12 @@ body {
 
 .linkRepoButton:hover {
     background-color: #C3E8F4;
+}
+
+#repoListContainer{
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0px 5px 0px 5px;
 }
 
 .treeArrowRepo {
@@ -231,7 +236,6 @@ body {
 .repoDescription {
     font-family: sans-serif;
     font-weight: normal;
-    font-size: .95em;
     color: black;
     padding-top: 15px;
     padding-right: 10px;
@@ -307,9 +311,32 @@ body {
     margin-top: -2px;
 }
 
+.footerDiv {
+    background-color: hsl(0, 0%, 97%);
+    font-family: sans-serif;
+    padding: 15px;
+}
 
-input[type="checkbox"] {
-    position: relative;
-    height: 1.45em;
-    width: 1.45em;
+#footerContainer {
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#footerContainer p {
+    margin-bottom: 0;
+}
+
+#footerContainer a {
+    color: #4676a9;
+    text-decoration: none;
+}
+
+#footerContainer a:hover {
+    color: rgb(158, 189, 199);
+}
+
+#footerContainer a:visited {
+    color: #4676a9;
 }
