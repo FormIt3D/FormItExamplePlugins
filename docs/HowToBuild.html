@@ -442,8 +442,8 @@
         Plugins can be debugged in either the Windows application, or the web application.
 
         <ul class="categoryDetailList">
-            <li><a href="#DebuggingWindows">Debugging plugins on Windows</a></li>
-            <li><a href="#DebuggingWeb">Debugging plugins on web (easier option)</a></li>
+            <li><a href="#DebuggingWindows">Debugging plugins on Windows (not recommended)</a></li>
+            <li><a href="#DebuggingWeb">Debugging plugins on web (recommended/easier option)</a></li>
         </ul>
     </div>
 </div>
@@ -451,9 +451,9 @@
 <div class="categoryBlock" id="DebuggingWindows">
     <h2 class="categoryTitle">Debugging plugins on Windows</h2>
 
-    <p>Important note: A recent change requires that debugging plugins through the Windows app now requires a browser other than Chrome/Firefox. Opera is one of these browsers, and can be installed from https://www.opera.com/</p>
+    <p>Important note: A recent change requires that debugging plugins through the Windows app now requires a browser other than Chrome/Firefox. Opera is one of these browsers, and can be installed from https://www.opera.com/ . Using Opera, you will not be able to visualize your plugin, but you can at least debug your code.</p>
 
-    <p>For ease of debugging, we recommend <a href="#DebuggingWeb">debugging your plugin using our web application.</a></p>
+    <p>For those reasons, and for ease of debugging, we recommend <a href="#DebuggingWeb">debugging your plugin using our web application.</a></p>
 
     <div class="categoryDetailBlock">
         <p class="categoryDetailBody">Panel-based FormIt plugins utilize two distinct JavaScript engines. One is in the panel displaying the HTML, and another engine which is built-in to FormIt for Windows. These JavaScript engines are actually in two different processes.</p>
