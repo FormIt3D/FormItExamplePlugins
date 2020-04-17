@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+svg {
+    fill: white;
+    width: 27px;
+    margin: 4px 0 0 4px;
+    stroke-width: 20px;
+    stroke: #6F94BB;
+}
+
+svg:hover{
+    fill: #6F94BB;
+    stroke: white;
+}
+
+#NotificationCount{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 25px;
+    left: 28px;
+}
+
+#NotificationCount span {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.displayNone{
+    display:none;
+}
