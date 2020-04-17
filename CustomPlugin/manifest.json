@@ -5,7 +5,6 @@
         "PLUGINLOCATION/main_app_script.js",
         "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/PluginUtils.js"
     ],
-    "PluginIframeURL": "PLUGINLOCATION/toolUI.html",
     "MessagingChannel": "CustomPlugin",
     "PluginType": "Toolbar",
     "ToolbarURL": "PLUGINLOCATION/customtoolbar.json"
