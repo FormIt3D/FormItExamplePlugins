@@ -1,0 +1,9 @@
+{
+    "PluginName": "Highcharts",
+    "PluginDescription": "Highcharts",
+    "PluginType": "Panel",
+    "Scripts": [
+    ],
+    "Panel": "PLUGINLOCATION/highcharts.html"
+
+}
