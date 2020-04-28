@@ -1,0 +1,10 @@
+{
+    "name": "CustomPlugin",
+    "buttons": [
+        {
+            "name": "CustomPlugin",
+            "iframeMenu": "PLUGINLOCATION/menu.html",
+            "iconIframeURL": "PLUGINLOCATION/toolUI.html"
+        }
+    ]
+}
