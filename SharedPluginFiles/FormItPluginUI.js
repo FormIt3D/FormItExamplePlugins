@@ -20,7 +20,7 @@ FormIt.PluginUI.createHorizontalModuleContainer = function(parent)
 }
 
 // create a typical text input and a label - no button (the onKeyUpFunction commits the contents)
-FormIt.PluginUI.createTextInputModule = function(moduleParent, moduleLabelText, moduleID, moduleClassName, inputID, inputOnKeyUpFunction) 
+FormIt.PluginUI.createTextInputModule = function(moduleParent, moduleLabelText, moduleID, moduleClassName, inputID, submitTextFunction) 
 {
     var textInputModuleContainer = document.createElement('form');
     textInputModuleContainer.id = moduleID;
@@ -38,22 +38,22 @@ FormIt.PluginUI.createTextInputModule = function(moduleParent, moduleLabelText, 
     textInput.setAttribute("type", "text");
     textInputModuleContainer.appendChild(textInput);
 
+    // execute the submit function when user changes focus away from this input
+    textInput.onblur = function()
+    {
+        submitTextFunction();
+    }
+
+    // prevent enter from refreshing the page
     textInput.onkeydown = function()
     {
         if (event.keyCode === 13)
         {
-            
-        // don't let Enter refresh the page
             event.preventDefault();
         }
     }
-
     textInput.onkeyup = function()
     {
-        // execute the desired function
-        inputOnKeyUpFunction();
-
-        // don't let Enter refresh the page
         if (event.keyCode === 13)
         {
             event.preventDefault();
