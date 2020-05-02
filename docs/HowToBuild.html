@@ -31,7 +31,7 @@
 <div class="categoryBlock" id="SettingUpEnvironment">
     <h2 class="categoryTitle">Setting Up Your Environment</h2>
     <div class="categoryDetailBlock">
-        <p class="categoryDetailBody">Plugin development is currently limited to Windows OS environments.</p>
+        <p class="categoryDetailBody">Plugin development is supported in FormIt for Windows and FormIt for Web.</p>
         <h3 class="categoryDetailTitle">Get the Source Code</h3>
         <ul class="categoryDetailList">
             <li>Clone the FormIt plugin repos, which demonstrate the various UI types and some of the functionality that can be achieved with plugins:</li>
@@ -41,8 +41,9 @@
             </ul>
             <li>You can also download <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>, which provides an easy-to-use interface for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repos.</li>
         </ul>
-        <h3 class="categoryDetailTitle">Start a Web Server (FormIt for Windows)</h3>
-        <p class="categoryDetailBody">This section assumes you're using FormIt for Windows for plugin development.</p>
+        <h3 class="categoryDetailTitle">Start a Web Server</h3>
+        <p class="categoryDetailBody"><b>FormIt for Windows</b></p>
+        <p class="categoryDetailBody">FormIt for Windows only requires a simple HTTP server to host plugins on a local web server.</p>
         <p class="categoryDetailBody">An HTTP server that works well is npm's <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a>, which you can install by:</p>
         <ul class="categoryDetailList">
             <li>First, download and install <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> if it's not already installed (one-time setup).</li>
@@ -67,101 +68,97 @@
                 <li class="categoryDetailCode"><span>http-server</span></li>
             </ul>
         </ul>
-
-
-        <h3 class="categoryDetailTitle">Start a Web Server (FormIt for Web)</h3>
-        <p class="categoryDetailBody">Developing on FormIt Web? This requires an HTTPS server for local debugging.</p>
-        <p class="categoryDetailBody">Plugin files and directories need to be hosted on a HTTPS server for FormIt Web to load from.</p>
-        <p class="categoryDetailBody">Before the HTTPS server can be run, OpenSSL must be installed and configured. Instructions to install OpenSSL are located <a href="https://www.cloudinsidr.com/content/how-to-install-the-most-recent-version-of-openssl-on-windows-10-in-64-bit/" target="_blank">here</a>.
-        </p>
-        <p class="categoryDetailBody">Open a command prompt to the directory above where the files that need served.
-            This example assumes the FormItExamplePlugins and FormItWorkflowPlugins repos have been cloned locally.  This is a directory listing of where to start the server.</p>
-        <pre><code>
-            Directory of c:\git\FormIt3D
-            04/09/2020  02:00 PM	&lt;DIR&gt;      	.
-            04/09/2020  02:00 PM	&lt;DIR&gt;      	..
-            04/09/2020  01:46 PM	1,228 cert.pem
-            01/24/2020  12:03 PM	&lt;DIR&gt;      	FormItExamplePlugins
-            12/24/2019  02:43 PM	&lt;DIR&gt;      	FormItWorkflowPlugins
-            04/09/2020  01:44 PM	1,732 key.pem
-                           2 File(s)      	2,960 bytes
-                           4 Dir(s)  167,606,239,232 bytes free
-        </code></pre>
-        <p class="categoryDetailBody">Run the following OpenSSL command from the directory that the HTTPS server needs to server the files.  Note: Replace <code>[OPENSSL_INSTALL_DIR]</code> with the directory where openssl.exe lives.</p>
-        <pre><code class="categoryDetailCode">[OPENSSL_INSTALL_DIR]\OpenSSL-Win64\bin\openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
-        </code></pre>
-        <p class="categoryDetailBody">A HTTPS server that works well is npm's <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a>, which you can install by:</p>
-        <ul class="categoryDetailList">
-            <li>First, download and install <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> if it's not already installed (one-time setup).</li>
-            <ul>
-                <li>If you encounter errors in the following steps, try restarting your computer for the NodeJS installation to complete.</li>
-            </ul>
-            <li>In the Command Prompt<!-- or Terminal-->, enter the following to install npm's <i>http-server</i> globally (one-time setup):</li>
-            <ul>
-                <li class="categoryDetailCode"><span>npm install http-server -g</span></li>
-            </ul>
-            <li>Navigate to the directory containing the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders.  This should be the same directory that the OpenSSL command was run.  Run this command to start the server:</li>
-            <ul>
-                <li class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></li>
-                <li>Accept any Windows prompts that warn about the new local server.</li>
-                <li>A new web page now opens.  Click the Advanced button and the “Proceed to 127.0.0.1 (unsafe)” link.</li>
-                <li>Your server is properly configured if you can see the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders listed in the browser.</li>
-                <li>Note you can use your IDE to start the server, too. See the "Install an IDE" section below.</li>
-            </ul>
-        </ul>
-
-        <p class="categoryDetailBody"><b>Configuring FormIt Web</b></p>
-        <p class="categoryDetailBody">Now open <a href="https://app.formit.autodesk.com/" target="_blank">FormIt Web</a> </p>
-        <p class="categoryDetailBody">Open the browser’s DevTools (F12) in the FormIt Web page.  In this new DevTools view, go to Application tab/Service Workers and enable Bypass for network:</p><img src="bypassnetwork.png" alt="Bypass for network">
-        <p class="categoryDetailBody">And also click the Unregister link: </p><img src="unregister.png" alt="Unregister">
-        <p class="categoryDetailBody">Try loading a plugin from the local repo in the DevTools console input:</p>
-        <ul><pre><code class="categoryDetailCode"><span>FormIt.LoadPlugin("https://127.0.0.1:8000/FormItExamplePlugins/HelloBlock");</span></code></pre></ul>
-        <img src="consoleinput.png" alt="Console Input">
-        <p class="categoryDetailBody"><b>Note:</b>  Once all these steps are working, all that will need to be done to work on local plugins is to start the server in the correct location:</p>
-        <ul><pre><code class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></code></pre></ul>
-
-        <h3 class="categoryDetailTitle">Verify the Web Server</h3>
-        <ul class="categoryDetailList">
-            <li>In a web browser (Google Chrome is suggested), navigate to the following:</li>
-                <ul>
-                    <li class="categoryDetailCode"><span>https://127.0.0.1:8000/FormItExamplePlugins/HelloBlock/manifest.json</span></li>
-                    This should be seen:
-                    <p class="categoryDetailCode">
-                        <pre>
-        {
-            "PluginName": "HTML Panel UI",
-            "PluginDescription": "Creates a panel UI that displays an HTML page, which provides an interface to generate a FormIt cuboid by XYZ dimensions.",
-            "PluginType": "Panel",
-            "Scripts": [
-                "PLUGINLOCATION/block.js",
-                "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/PluginUtils.js"
-            ],
-            "Panel": "PLUGINLOCATION/hello_block.html",
-            "PanelIcon": "PLUGINLOCATION/hello_block.png",
-            "CustomDescription": "customdescription.html"
-        }
-    </p></pre>
-                    <li>If you use a different web server than npm, the default address/port might be different.</li>
+            <p class="categoryDetailBody"><b>Verify the Web Server</b></p>
+                <ul class="categoryDetailList">
+                    <li>In a web browser, navigate to the following:</li>
+                        <ul>
+                            <li class="categoryDetailCode"><span>http://localhost:8080/FormItExamplePlugins/HelloBlock/manifest.json</span></li>
+                        </ul>
+                        <li>You should see a json object in the browser window.</li>
+                        <li>If you use a different web server than npm, the default address/port might be different.</li>
+                    </ul>
                 </ul>
         </ul>
-
-
-        <h3 class="categoryDetailTitle">Install an IDE</h3>
-        <p class="categoryDetailBody">Write your code in an integrated development environment (IDE) that helps identify issues, correct syntax errors, and includes a terminal for running your local server.</p>
-        <p class="categoryDetailBody">A free IDE that works well for FormIt plugin development is Microsoft's <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a>.</p>
-        <p class="categoryDetailBody">Once installed:</p>
-        <ul class="categoryDetailList">
-            <li>File > Open Folder</li>
-            <li>Select the folder that contains your plugin files and folders.</li>
-        </ul>
-        <p class="categoryDetailBody"><b>Optionally start your server from the IDE</b></p>
-        <p class="categoryDetailBody">Now, you have the option of starting the server you installed previously right inside Visual Studio Code, instead of from a separate terminal window:</p>
-        <ul class="categoryDetailList">
-                <li>View > Terminal (or shortcut Ctrl + `)</li>
-                <li>You should already be in the correct folder, so simply run the command to start your npm http-server from previous steps:</li>
-                <li class="categoryDetailCode"><span>http-server</span></li>
-                <li>You can confirm your server is running correctly by following the "Verify the Web Server" steps above.</li>
+            <p class="categoryDetailBody"><b>FormIt for Web</b></p>
+            <p class="categoryDetailBody">Developing on FormIt Web requires an HTTPS server for local debugging.</p>
+            <p class="categoryDetailBody">Plugin files and directories need to be hosted on a HTTPS server for FormIt Web to load from.</p>
+            <p class="categoryDetailBody">Before the HTTPS server can be run, OpenSSL must be installed and configured. Instructions to install OpenSSL are located <a href="https://www.cloudinsidr.com/content/how-to-install-the-most-recent-version-of-openssl-on-windows-10-in-64-bit/" target="_blank">here</a>.
+            </p>
+            <p class="categoryDetailBody">Open a command prompt to the directory above where the files that need served.
+                This example assumes the FormItExamplePlugins and FormItWorkflowPlugins repos have been cloned locally.  This is a directory listing of where to start the server.</p>
+            <pre><code>
+                Directory of c:\git\FormIt3D
+                04/09/2020  02:00 PM	&lt;DIR&gt;      	.
+                04/09/2020  02:00 PM	&lt;DIR&gt;      	..
+                04/09/2020  01:46 PM	1,228 cert.pem
+                01/24/2020  12:03 PM	&lt;DIR&gt;      	FormItExamplePlugins
+                12/24/2019  02:43 PM	&lt;DIR&gt;      	FormItWorkflowPlugins
+                04/09/2020  01:44 PM	1,732 key.pem
+                               2 File(s)      	2,960 bytes
+                               4 Dir(s)  167,606,239,232 bytes free
+            </code></pre>
+            <p class="categoryDetailBody">Run the following OpenSSL command from the directory that the HTTPS server needs to server the files.  Note: Replace <code>[OPENSSL_INSTALL_DIR]</code> with the directory where openssl.exe lives.</p>
+            <pre><code class="categoryDetailCode">[OPENSSL_INSTALL_DIR]\OpenSSL-Win64\bin\openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+            </code></pre>
+            <p class="categoryDetailBody">A HTTPS server that works well is npm's <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a>, which you can install by:</p>
+            <ul class="categoryDetailList">
+                <li>First, download and install <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> if it's not already installed (one-time setup).</li>
+                <ul>
+                    <li>If you encounter errors in the following steps, try restarting your computer for the NodeJS installation to complete.</li>
+                </ul>
+                <li>In the Command Prompt<!-- or Terminal-->, enter the following to install npm's <i>http-server</i> globally (one-time setup):</li>
+                <ul>
+                    <li class="categoryDetailCode"><span>npm install http-server -g</span></li>
+                </ul>
+                <li>Navigate to the directory containing the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders.  This should be the same directory that the OpenSSL command was run.  Run this command to start the server:</li>
+                <ul>
+                    <li class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></li>
+                    <li>Accept any Windows prompts that warn about the new local server.</li>
+                    <li>A new web page now opens.  Click the Advanced button and the “Proceed to 127.0.0.1 (unsafe)” link.</li>
+                    <li>Your server is properly configured if you can see the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders listed in the browser.</li>
+                    <li>Note you can use your IDE to start the server, too. See the "Install an IDE" section below.</li>
+                </ul>
             </ul>
+    
+            <p class="categoryDetailBody"><b>Configuring FormIt Web</b></p>
+            <p class="categoryDetailBody">Now open <a href="https://app.formit.autodesk.com/" target="_blank">FormIt Web</a> </p>
+            <p class="categoryDetailBody">Open the browser’s DevTools (F12) in the FormIt Web page.  In this new DevTools view, go to Application tab/Service Workers and enable Bypass for network:</p><img src="bypassnetwork.png" alt="Bypass for network">
+            <p class="categoryDetailBody">And also click the Unregister link: </p><img src="unregister.png" alt="Unregister">
+            <p class="categoryDetailBody">Try loading a plugin from the local repo in the DevTools console input:</p>
+            <ul><pre><code class="categoryDetailCode"><span>FormIt.LoadPlugin("https://127.0.0.1:8000/FormItExamplePlugins/HelloBlock");</span></code></pre></ul>
+            <img src="consoleinput.png" alt="Console Input">
+            <p class="categoryDetailBody"><b>Note:</b>  Once all these steps are working, all that will need to be done to work on local plugins is to start the server in the correct location:</p>
+            <ul><pre><code class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></code></pre></ul>
+    
+            <p class="categoryDetailBody"><b>Verify the Web Server</b></p>
+            <ul class="categoryDetailList">
+                <li>In a web browser, navigate to the following:</li>
+                <ul class="categoryDetailList">
+                    <li class="categoryDetailCode"><span>https://127.0.0.1:8000/FormItExamplePlugins/HelloBlock/manifest.json</span></li>
+                </ul>
+                <li>You should see a json object in the browser window.</li>
+                <li>If you use a different web server than npm, the default address/port might be different.</li>
+            </ul>
+            </ul>
+            </ul>
+    
+    
+            <h3 class="categoryDetailTitle">Install an IDE</h3>
+            <p class="categoryDetailBody">Write your code in an integrated development environment (IDE) that helps identify issues, correct syntax errors, and includes a terminal for running your local server.</p>
+            <p class="categoryDetailBody">A free IDE that works well for FormIt plugin development is Microsoft's <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a>.</p>
+            <p class="categoryDetailBody">Once installed:</p>
+            <ul class="categoryDetailList">
+                <li>File > Open Folder</li>
+                <li>Select the folder that contains your plugin files and folders.</li>
+            </ul>
+            <p class="categoryDetailBody"><b>Optionally start your server from the IDE</b></p>
+            <p class="categoryDetailBody">Now, you have the option of starting the server you installed previously right inside Visual Studio Code, instead of from a separate terminal window:</p>
+            <ul class="categoryDetailList">
+                    <li>View > Terminal (or shortcut Ctrl + `)</li>
+                    <li>You should already be in the correct folder, so simply run the command to start your npm http-server from previous steps:</li>
+                    <li class="categoryDetailCode"><span>http-server</span></li>
+                    <li>You can confirm your server is running correctly by following the "Verify the Web Server" steps above.</li>
+        </ul>
     </div>
 </div>
 
@@ -508,70 +505,25 @@
 <div class="categoryBlock" id="DebuggingPlugins">
     <h2 class="categoryTitle">Debugging Plugins</h2>
     <div class="categoryDetailBlock">
-        Plugins can be debugged in either the Windows application, or the web application.
-
-        <ul class="categoryDetailList">
-            <li><a href="#DebuggingWindows">Debugging plugins on FormIt for Windows</a></li>
-            <li><a href="#DebuggingWeb">Debugging plugins on FormIt for Web</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="categoryBlock" id="DebuggingWindows">
-    <h2 class="categoryTitle">Debugging Plugins Using FormIt for Windows</h2>
-
-    <p>Important note: A recent change means that debugging plugins through the Windows app now requires a browser other than Chrome/Firefox. Opera is one of these browsers, and can be installed from https://www.opera.com/ . Using Opera, you will not be able to visualize your plugin, but you can at least debug your code.</p>
-
-    <p>For those reasons, and for ease of debugging, we recommend <a href="#DebuggingWeb">debugging your plugin using our web application.</a></p>
-
-    <div class="categoryDetailBlock">
-        <p class="categoryDetailBody">Panel-based FormIt plugins utilize two distinct JavaScript engines. One is in the panel displaying the HTML, and another engine which is built-in to FormIt for Windows. These JavaScript engines are actually in two different processes.</p>
-        <p class="categoryDetailBody"><b>FormIt Debugging</b></p>
-        <p class="categoryDetailBody">To debug in FormIt-side code (for toolbars or panels), you can enter the following to pop the desktop application's built-in JS debugger:</p>
+        <p class="categoryDetailBody">FormIt plugins utilize two distinct JavaScript engines: one in the panel displaying the HTML, and another engine in the FormIt client, which can make calls to FormIt and its geometry kernel. These JavaScript engines are in two different processes.</p>
+        
+        <p class="categoryDetailBody"><b>Client-Side (FormIt) Debugging</b></p>
+        <p class="categoryDetailBody">To debug in FormIt-side code, which applies to both toolbar- and panel-based plugins, you can add a line in the code to pop the desktop application's built-in JS debugger:</p>
         <ul class="categoryDetailList">
             <li class="categoryDetailCode"><span>debugger;</span></li>
         </ul>
-        <p class="categoryDetailBody"><b>HTML Debugging</b></p>
-        <p class="categoryDetailBody">To debug HTML-side code (for panels only), including scripts and styling:</p>
+        <p class="categoryDetailBody"><b>Web-Side (HTML) Debugging</b></p>
+        <p class="categoryDetailBody">Panel-based FormIt plugins offer HTML-based UI debugging, since the panels are fundamentally HTML websites with styling and scripts.</p>
+        <p class="categoryDetailBody">To debug HTML-side code for plugins built into a panel, including scripts and styling:</p>
         <ul class="categoryDetailList">
-            <li><b>FormIt for Windows v17 and newer</b></li>
+            <li><b>FormIt for Windows 2021.1 and newer</b></li>
             <ul>
-                <li>In Windows, hit Start and type "PowerShell"</li>
-                <li>In PowerShell, copy and paste the following, then hit Enter:</li>
-                <ul>
-                    <li><span class="categoryDetailCode"> <span>$env:QTWEBENGINE_REMOTE_DEBUGGING="3000"</span></span></li>
-                    <li>This sets an Environment Variable for this session.</li>
-                </ul>
-                <li>Now copy and paste the following, then hit Enter:</li>
-                <ul>
-                    <li><span class="categoryDetailCode"> <span>start "$env:ProgramFiles\Autodesk\FormIt\FormIt.exe"</span></span></li>
-                    <li>This will start FormIt using this Environment Variable, for this session.</li>
-                    <li>Note: this assumes FormIt is installed in the Program Files directory.</li>
-                </ul>
+                <li>Right-click on the plugin HTML page and click "Debug" to display the application's built-in HTML debugger.</li>
             </ul>
-        </ul>
-        <p class="categoryDetailBody">Once you've started FormIt with the Environment Variable as described above, proceed based on the version of FormIt:</p>
-        <ul class="categoryDetailList">
-            <li><b>FormIt for Windows v17 and newer</b></li>
+            <li><b>FormIt for Web</b></li>
             <ul>
-                <li>Right-click on the plugin panel and choose "Debug", which will open your default browser.</li>
-                <li>This will automatically use the port number you specified above in the Environment Variable.</li>
-                <li>Important: copy the value from the browser's address bar and paste into a browser like Opera https://www.opera.com/</li>
-                <li>In Opera, you can now set breakpoints and debug your code like usual.</li>
+                <li>Use shortcut F12, or Ctrl + Shift+ I, to pull up the browser's HTML debugger.</li>
             </ul>
-        </ul>
-        <p class="categoryDetailBody">Now you can select the plugin you want to debug from the list, and Chrome will take you to the debugger, where you can inspect elements and view the console, etc.</p>
-        <p class="categoryDetailBody">Learn more about <a href="https://doc.qt.io/qt-5/qtwebengine-debugging.html" target="_blank">Qt Web Engine Debugging and Profiling</a></p>
-    </div>
-</div>
-
-<div class="categoryBlock" id="DebuggingWeb">
-    <h2 class="categoryTitle">Debugging Plugins Using FormIt for Web</h2>
-    <div class="categoryDetailBlock">
-        <p class="categoryDetailBody">Install your plugin as normal.</p>
-        <p class="categoryDetailBody">Open the developer tools in your browser. In Chrome this is through the ... menu > More Tools > Developer tools. A shortcut is either F12 or Ctrl + Shift + I.</p>
-        <p class="categoryDetailBody">Here you can debug and inspect your plugin all in the same process.</p>
-        <p class="categoryDetailBody">There are so many tools to debug your plugin. To learn abut these tools, <a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank">a great resource is here for Chrome.</a></p>
     </div>
 </div>
 
