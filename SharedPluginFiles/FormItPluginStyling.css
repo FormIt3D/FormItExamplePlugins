@@ -19,6 +19,11 @@ form {
     margin-left: 0px;
 }
 
+.inputLabel {
+    width: auto;
+    align-self: center;
+}
+
 input {
     border: 1px solid #4676a9;
     padding: 4px;
@@ -36,6 +41,8 @@ input:hover {
     outline: none;
 }
 
+
+/* checkbox */
 input[type=checkbox] {
     display: inline-block;
     width: 20px;
@@ -43,6 +50,7 @@ input[type=checkbox] {
     margin-left: 55px;
 }
 
+/* button */
 input[type=button] {
     color: white;
     background-color: #4676a9;
@@ -82,17 +90,6 @@ input[type=button]:disabled {
     padding-right: 10px;
     outline: none;
     width: auto;
-}
-
-input[type=text] {
-    /*
-    margin-left: 5px;
-    */
-}
-
-.inputLabel {
-    width: auto;
-    align-self: center;
 }
 
 /* contains an input and its label */
