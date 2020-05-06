@@ -1,5 +1,86 @@
 /* this stylesheet will eventually cover styling for all first-party FormIt plugins */
 
+/* overall body - configured to contain stacked sections, like header/content/footer */
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+/* the header: plugin title and subtitle*/
+.headerContainer
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* the content container is the area between the header and the footer */
+.contentContainer
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1;
+}
+
+/* the footer: information about plugins, and this plugin specifically */
+.footerDiv {
+    background-color: hsl(0, 0%, 97%);
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+.footerContainer {
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footerContainer p {
+    margin-bottom: 0;
+}
+
+.footerContainer a {
+    color: #4676a9;
+    text-decoration: none;
+}
+
+.footerContainer a:hover {
+    color: rgb(158, 189, 199);
+}
+
+.footerContainer a:visited {
+    color: #4676a9;
+}
+
+/* unordered lists */
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -1.5em;
+}
+
+li:before{
+    content: ' ';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: grey;
+    position: absolute;
+    top: 6px;
+    left: -15px;
+}
+
 /* top-level header, for distinguishing between multiple sections in one plugin*/
 h1 {
     font-size: 20px;
