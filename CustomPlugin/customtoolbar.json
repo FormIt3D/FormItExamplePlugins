@@ -4,7 +4,9 @@
         {
             "name": "CustomPlugin",
             "iframeMenu": "PLUGINLOCATION/menu.html",
-            "iconIframeURL": "PLUGINLOCATION/toolUI.html"
+            "iconIframeURL": "PLUGINLOCATION/toolUI.html",
+            "webMenu": "PLUGINLOCATION/menu.html",
+            "iconWebURL": "PLUGINLOCATION/toolUI.html"
         }
     ]
 }
