@@ -6,7 +6,11 @@
             "iframeMenu": "PLUGINLOCATION/menu.html",
             "iconIframeURL": "PLUGINLOCATION/toolUI.html",
             "webMenu": "PLUGINLOCATION/menu.html",
-            "iconWebURL": "PLUGINLOCATION/toolUI.html"
+            "iconWebURL": "PLUGINLOCATION/toolUI.html",
+            "menuSize": {
+                "width": 200,
+                "height": 200
+            }
         }
     ]
 }
