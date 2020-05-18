@@ -1,6 +1,5 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin:0;
 }
 
 svg {
@@ -23,8 +22,8 @@ svg:hover{
     color: white;
     border-radius: 15px;
     position: absolute;
-    top: 20px;
-    left: 18px;
+    top: 25px;
+    left: 28px;
 }
 
 #NotificationCount span {

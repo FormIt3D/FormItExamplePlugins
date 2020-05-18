@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link rel="stylesheet" type="text/css" href="menu_stylesheet.css"/>
+    <script type="text/javascript" src="../SharedPluginFiles/FormItInterface.js"></script>
+    <script type="text/javascript" src="../SharedPluginFiles/MessagingUtils.js"></script>
+    <script type="text/javascript" src="../SharedPluginFiles/PluginUtils.js"></script>
+    <script type="text/javascript">
+        FormItInterface.Initialize();
+    </script>
+</head>
+<body>
+<ul>
+    <li>
+        <input type="checkbox" id="item1" name="item1">
+        <label for="item1">
+            <span>Test</span>
+        </label>
+    </li>
+    <li>
+        <input type="checkbox" id="item2" name="item2">
+        <label for="item2">
+            <span>A new tool! <a id="APITest" href="javascript:void(0);">Create Block</a>!</span>
+        </label>
+    </li>
+</ul>
+
+<script>
+    document.getElementById("APITest").addEventListener("click", () => {
+        var args = {
+            "w": 10,
+            "l": 10,
+            "h": 10
+        }
+        FormItInterface.CallMethod("CreateBlock_MAIN", args);
+    });
+
+    const inputs = [...document.getElementsByTagName("input")];
+
+    inputs.forEach((input) => {
+        input.addEventListener("change", () => {
+            dispatchCount();
+        })
+    });
+
+    const dispatchCount = () => {
+        const uncheckedCount = inputs.reduce((accumulator, input) => {
+
+            if (!input.checked){
+                accumulator++;
+            }
+
+            return accumulator;
+        }, 0);
+
+        FormIt.MessagingUtils.dipatchMessage("CustomPlugin", {uncheckedCount});
+    }
+
+    dispatchCount();
+
+</script>
+</body>
+</html>

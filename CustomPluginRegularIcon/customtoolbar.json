@@ -1,0 +1,14 @@
+{
+    "name": "CustomPlugin2",
+    "buttons": [
+        {
+            "name": "CustomPlugin2",
+            "iconURL": "PLUGINLOCATION/hello_block.png",
+            "webMenu": "PLUGINLOCATION/menu.html",
+            "menuSize": {
+                "width": 50,
+                "height": 50
+            }
+        }
+    ]
+}

@@ -53,6 +53,8 @@ FormItInterface.Initialize = function(callbackMethod)
             //console.log("new QWebChannel");
             new QWebChannel(qt.webChannelTransport, function (channel)
             {
+                FormItInterface.EmitMessage = channel.objects.FormItInterface.EmitMessage;
+
                 // This will display the message in both the web debugger connected to the HTML UI
                 // and the console in FormIt.
                 FormItInterface.ConsoleLog = function(msg)
