@@ -1,0 +1,25 @@
+body{
+    background: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul{
+    margin:10px;
+}
+
+li {
+    margin-top:5px;
+    border:solid 1px gray;
+    border-radius:5px;
+    padding:5px;
+}
+
+li:hover{
+    background-color:aliceblue;
+    cursor:pointer;
+}
+
+.item object{
+    width:25px;
+    float:left;
+}
