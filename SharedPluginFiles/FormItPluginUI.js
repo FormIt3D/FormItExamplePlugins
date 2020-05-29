@@ -8,6 +8,9 @@ if (typeof FormIt.PluginUI === 'undefined')
     FormIt.PluginUI = {};
 }
 
+// the existing input value, used to fall back to if nothing changed after user leaves the field
+var existingTextInputValue = "";
+
 // create a container to host multiple child elements, organizing them horizontally
 FormIt.PluginUI.createHorizontalModuleContainer = function(parent)
 {
@@ -38,10 +41,20 @@ FormIt.PluginUI.createTextInputModule = function(moduleParent, moduleLabelText, 
     textInput.setAttribute("type", "text");
     textInputModuleContainer.appendChild(textInput);
 
+    // when in focus, record the existing value, so we can fall back to this if nothing changed
+    textInput.onfocus = function()
+    {
+        existingTextInputValue = textInput.value;
+    }
+
     // execute the submit function when user changes focus away from this input
     textInput.onblur = function()
     {
-        submitTextFunction();
+        // only if the value is different than it was when we started, do we submit the function
+        if (textInput.value != existingTextInputValue)
+        {
+            submitTextFunction();
+        }
     }
 
     // prevent enter from refreshing the page
