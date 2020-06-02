@@ -138,5 +138,10 @@ FormItInterface.Initialize = function(callbackMethod)
         script.onabort = () => { throw new Error((`load '${script.src}' - aborted`)) };
         script.onerror = () => { throw new Error((`load '${script.src}' - error`)) };
         document.head.appendChild(script);
+
+        window.PluginDialog = window.PluginDialog || {};
+        window.PluginDialog.Close = function(dialogNamespace) {
+            FormItInterface.CallMethod(`${dialogNamespace}.Close`, "");
+        };
     }
 }
