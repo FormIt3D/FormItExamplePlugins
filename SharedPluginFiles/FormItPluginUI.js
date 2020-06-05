@@ -1,15 +1,85 @@
-if (typeof FormIt === 'undefined')
-{
-    FormIt = {};
+// initialize namespaces
+window.FormIt = window.FormIt || {};
+FormIt.PluginUI = FormIt.PluginUI || {};
+
+// all text or number inputs
+FormIt.PluginUI.AlphaNumericInput = class AlphaNumericInput {
+    constructor() {
+        this.existingInputValue = undefined;
+    }
+
+    // these events need to be attached to every input
+    attachEvents() {
+        this.input.addEventListener("focus", (event) => {
+
+            // keep track of the existing input value - used to prevent submission if nothing changed
+            this.existingInputValue = event.currentTarget.value;
+
+        });
+
+        this.input.addEventListener("blur", (event) => {
+
+            // ensure that only if the value is different than it was when we started, do we submit the function
+            if (event.currentTarget.value !== this.existingInputValue)
+            {
+                this.submitTextFunction();
+            }
+
+        });
+
+        this.input.addEventListener("keydown", (event) => {
+            if (event.keyCode === 13)
+            {
+                event.preventDefault();
+            }
+        });
+
+        this.input.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13)
+            {
+                event.preventDefault();
+            }
+        });
+    }
 }
 
-if (typeof FormIt.PluginUI === 'undefined')
-{
-    FormIt.PluginUI = {};
-}
+// typical text input and a label - no button (the onblur event commits the contents)
+FormIt.PluginUI.TextInputModule = class TextInputModule extends FormIt.PluginUI.AlphaNumericInput {
+    constructor(moduleLabelText, moduleID, moduleClassName, inputID, submitTextFunction) {
+        
+        // call the super function
+        super();
 
-// the existing input value, used to fall back to if nothing changed after user leaves the field
-var existingTextInputValue = "";
+        // initialize the arguments
+        this.moduleLabelText = moduleLabelText;
+        this.moduleID = moduleID;
+        this.moduleClassName = moduleClassName;
+        this.inputID = inputID;
+        this.submitTextFunction = submitTextFunction;
+
+        // build and attach events
+        this.build();
+        this.attachEvents();
+    }
+
+    // construct and append the UI elements
+    build() {
+        this.container = document.createElement('form');
+        this.container.id = this.moduleID;
+        this.container.className = this.moduleClassName;
+
+        var textInputLabel = document.createElement('div');
+        textInputLabel.className = 'inputLabel';
+        textInputLabel.innerHTML = this.moduleLabelText;
+        this.container.appendChild(textInputLabel);
+
+        this.input = document.createElement('input');
+        this.input.id = this.inputID;
+        this.input.className = this.moduleClassName;
+        this.input.setAttribute("type", "text");
+        this.container.appendChild(this.input);
+    }
+}
 
 // create a container to host multiple child elements, organizing them horizontally
 FormIt.PluginUI.createHorizontalModuleContainer = function(parent)
@@ -20,60 +90,6 @@ FormIt.PluginUI.createHorizontalModuleContainer = function(parent)
     parent.appendChild(multiModuleContainer);
 
     return multiModuleContainer;
-}
-
-// create a typical text input and a label - no button (the onKeyUpFunction commits the contents)
-FormIt.PluginUI.createTextInputModule = function(moduleParent, moduleLabelText, moduleID, moduleClassName, inputID, submitTextFunction) 
-{
-    var textInputModuleContainer = document.createElement('form');
-    textInputModuleContainer.id = moduleID;
-    textInputModuleContainer.className = moduleClassName;
-    moduleParent.appendChild(textInputModuleContainer)
-
-    var textInputLabel = document.createElement('div');
-    textInputLabel.className = 'inputLabel';
-    textInputLabel.innerHTML = moduleLabelText;
-    textInputModuleContainer.appendChild(textInputLabel);
-
-    var textInput = document.createElement('input');
-    textInput.id = inputID;
-    textInput.className = moduleClassName;
-    textInput.setAttribute("type", "text");
-    textInputModuleContainer.appendChild(textInput);
-
-    // when in focus, record the existing value, so we can fall back to this if nothing changed
-    textInput.onfocus = function()
-    {
-        existingTextInputValue = textInput.value;
-    }
-
-    // execute the submit function when user changes focus away from this input
-    textInput.onblur = function()
-    {
-        // only if the value is different than it was when we started, do we submit the function
-        if (textInput.value != existingTextInputValue)
-        {
-            submitTextFunction();
-        }
-    }
-
-    // prevent enter from refreshing the page
-    textInput.onkeydown = function()
-    {
-        if (event.keyCode === 13)
-        {
-            event.preventDefault();
-        }
-    }
-    textInput.onkeyup = function()
-    {
-        if (event.keyCode === 13)
-        {
-            event.preventDefault();
-        }
-    }
-
-    return textInputModuleContainer;
 }
 
 // create a typical FormIt Plugin footer with information about the plugin
