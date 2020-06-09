@@ -35,9 +35,9 @@ function MessagesPluginSubscribe(msg)
     }
 
     // Assign the message handling function that will be called for the given message.
-    FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = function(msg)
+    FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = function(payload)
     {
-        console.log("(FormIt Side) msg: " + msg);
+        console.log("(FormIt Side) msg: " + msg + " Payload: " + payload);
     };
     FormItExamplePlugins.Messages.MessagesPluginListener.listener.SubscribeMessage(msg);
 
@@ -70,9 +70,9 @@ function MessagesPluginSubscribe(msg)
     }
 
     // Assign the message handling function that will be called for the given message.
-    FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = function(msg)
+    FormItExamplePlugins.Messages.MessagesPluginListener.listener[msg] = function(payload)
     {
-        console.log("(FormIt Side) msg: " + msg);
+        console.log("(FormIt Side) msg: " + msg + " Payload: " + payload);
     };
     FormItExamplePlugins.Messages.MessagesPluginListener.listener.SubscribeMessage(msg);
 

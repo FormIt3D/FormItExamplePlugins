@@ -70,7 +70,12 @@ FormItInterface.Initialize = function(callbackMethod)
                         channel.objects.FormItInterface.FormItMessage[msg] = handler;
                         if (!channel.objects.FormItInterface.FormItMessage.connected)
                         {
-                            channel.objects.FormItInterface.FormItMessage.connect(function(arg) {channel.objects.FormItInterface.FormItMessage[msg](arg)});
+                            var msgFunc = function(arg)
+                            {
+                                var jsonArg = JSON.parse(arg);
+                                channel.objects.FormItInterface.FormItMessage[jsonArg.msg](jsonArg.payload)
+                            };
+                            channel.objects.FormItInterface.FormItMessage.connect(msgFunc);
                             channel.objects.FormItInterface.FormItMessage.connected = true;
                         }
                     }
