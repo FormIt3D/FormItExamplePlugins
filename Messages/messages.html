@@ -39,11 +39,10 @@ FormItInterface.Initialize(function () {
         {
             //FormItInterface.ConsoleLog("Subscribe: " + ev.target.innerText);
             // This will register a listener on the HTML UI side.
-            FormItInterface.SubscribeMessage(ev.target.innerText, function(msg)
+            FormItInterface.SubscribeMessage(ev.target.innerText, function(payload)
             {
-                var jsonMessage = JSON.parse(msg);
                 // This callback will be invoked whenever the signal is emitted on the C++/QML side.
-                FormItInterface.ConsoleLog("(Web Side) Message: " + JSON.stringify(jsonMessage));
+                FormItInterface.ConsoleLog("(Web Side) msg: " + ev.target.innerText + " Paylaod: " + payload);
             });
             //FormItInterface.ConsoleLog("About to call MessagesPluginSubscribe");
             // This will register a listener on the FormIt side.
