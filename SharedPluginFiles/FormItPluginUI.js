@@ -2,29 +2,94 @@
 window.FormIt = window.FormIt || {};
 FormIt.PluginUI = FormIt.PluginUI || {};
 
+// typical header - can be used at the top of a whole plugin, or at the top of a subsection
+FormIt.PluginUI.HeaderModule = class HeaderModule {
+    constructor(headerTitle, headerSubtitle, moduleClassName) {
+
+        // initialize the arguments
+        this.headerTitle = headerTitle;
+        this.headerSubtitle = headerSubtitle;
+        this.moduleClassName = moduleClassName;
+        
+        // build
+        this.element = this.build();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create a container for the header
+        var headerContainer = document.createElement('div');
+        headerContainer.id = this.moduleID;
+        headerContainer.className = this.moduleClassName
+
+        // create the header elements
+        var titleDiv = document.createElement('h1');
+        titleDiv.innerHTML = this.headerTitle;
+        headerContainer.appendChild(titleDiv);
+
+        var subtitleDiv = document.createElement('p');
+        subtitleDiv.innerHTML =  this.headerSubtitle;
+        headerContainer.appendChild(subtitleDiv);
+
+        return headerContainer;
+    }
+}
+
+// typical button
+FormIt.PluginUI.Button = class Button {
+    constructor(buttonText, onClickFunction) {
+
+        // initialize the arguments
+        this.buttonText = buttonText;
+        this.onClickFunction = onClickFunction;
+
+        // build and attach events
+        this.element = this.build();
+        this.attachEvents();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create a container for the header
+        this.button = document.createElement("input")
+        this.button.setAttribute("type", "button")
+        this.button.value = this.buttonText;
+        
+        return this.button;
+    }
+
+    attachEvents() {
+        this.button.addEventListener('click', this.onClickFunction);
+    }
+
+}
+
 // all text or number inputs
 FormIt.PluginUI.AlphaNumericInput = class AlphaNumericInput {
-    constructor() {
+    constructor(submitTextFunction) {
         this.existingInputValue = undefined;
+        this.submitTextFunction - submitTextFunction;
     }
 
     // these events need to be attached to every input
     attachEvents() {
         this.input.addEventListener("focus", (event) => {
-
             // keep track of the existing input value - used to prevent submission if nothing changed
             this.existingInputValue = event.currentTarget.value;
-
         });
 
         this.input.addEventListener("blur", (event) => {
 
-            // ensure that only if the value is different than it was when we started, do we submit the function
-            if (event.currentTarget.value !== this.existingInputValue)
+            if (this.submitTextFunction)
             {
-                this.submitTextFunction();
+                // ensure that only if the value is different than it was when we started, do we submit the function
+                if (event.currentTarget.value !== this.existingInputValue)
+                {
+                    this.submitTextFunction();
+                }
             }
-
         });
 
         this.input.addEventListener("keydown", (event) => {
@@ -58,28 +123,133 @@ FormIt.PluginUI.TextInputModule = class TextInputModule extends FormIt.PluginUI.
         this.submitTextFunction = submitTextFunction;
 
         // build and attach events
-        this.build();
+        this.element = this.build();
         this.attachEvents();
     }
 
     // construct and append the UI elements
     build() {
-        this.container = document.createElement('form');
-        this.container.id = this.moduleID;
-        this.container.className = this.moduleClassName;
+        
+        // create the container
+        var container = document.createElement('form');
+        container.id = this.moduleID;
+        container.className = this.moduleClassName;
 
+        // create the label
         var textInputLabel = document.createElement('div');
         textInputLabel.className = 'inputLabel';
         textInputLabel.innerHTML = this.moduleLabelText;
-        this.container.appendChild(textInputLabel);
+        container.appendChild(textInputLabel);
 
+        // create the input
         this.input = document.createElement('input');
         this.input.id = this.inputID;
         this.input.className = this.moduleClassName;
         this.input.setAttribute("type", "text");
-        this.container.appendChild(this.input);
+        container.appendChild(this.input);
+
+        return container;
     }
 }
+
+// typical numeric input and a label - no button (the onblur event commits the contents)
+FormIt.PluginUI.NumberInputModule = class NumberInputModule extends FormIt.PluginUI.AlphaNumericInput {
+    constructor(moduleLabelText, moduleID, moduleClassName, inputID, submitTextFunction) {
+        
+        // call the super function
+        super();
+
+        // initialize the arguments
+        this.moduleLabelText = moduleLabelText;
+        this.moduleID = moduleID;
+        this.moduleClassName = moduleClassName;
+        this.inputID = inputID;
+        this.submitTextFunction = submitTextFunction;
+
+        // build and attach events
+        this.element = this.build();
+        this.attachEvents();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create the container
+        var container = document.createElement('form');
+        container.id = this.moduleID;
+        container.className = this.moduleClassName;
+
+        // create the label
+        var textInputLabel = document.createElement('div');
+        textInputLabel.className = 'inputLabel';
+        textInputLabel.innerHTML = this.moduleLabelText;
+        container.appendChild(textInputLabel);
+
+        // create the input
+        this.input = document.createElement('input');
+        this.input.id = this.inputID;
+        this.input.className = this.moduleClassName;
+        this.input.setAttribute("type", "number");
+        container.appendChild(this.input);
+
+        return container;
+    }
+}
+
+// typical footer
+FormIt.PluginUI.FooterModule = class FooterModule {
+    constructor() {
+       
+        // build
+        this.element = this.build();
+    }
+
+    // construct and append the UI elements
+    build() {
+
+        var footerContainer = document.createElement('div');
+        footerContainer.id = 'footerContainer';
+        footerContainer.className = 'footerContainer';
+    
+        var footerDiv = document.createElement('div');
+        footerDiv.id = 'footerDiv';
+        footerDiv.className = 'footerDiv';
+        footerContainer.appendChild(footerDiv);
+    
+        var footerDescriptionText = document.createTextNode("Powered by FormIt JavaScript plugins");
+        footerDiv.appendChild(footerDescriptionText);
+    
+        var footerDivUL = document.createElement('ul');
+        footerDiv.appendChild(footerDivUL);
+    
+        var footerLearnAboutPluginsLI = document.createElement('li');
+        var footerLearnAboutPluginsLink = document.createElement('a');
+        var footerLearnAboutPluginsText = document.createTextNode("Learn about plugins");
+        footerLearnAboutPluginsLink.appendChild(footerLearnAboutPluginsText);
+        footerLearnAboutPluginsLink.setAttribute("href", "javascript:void(0);");
+        footerDivUL.appendChild(footerLearnAboutPluginsLI);
+        footerLearnAboutPluginsLI.appendChild(footerLearnAboutPluginsLink);
+    
+        footerLearnAboutPluginsLink.onclick = function() {
+            FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenAboutPluginsURL', "");
+        }
+    
+        var footerLearnToBuildLI = document.createElement('li');
+        var footerLearnToBuildLink = document.createElement('a');
+        var footerLearnToBuildText = document.createTextNode("Build your own");
+        footerLearnToBuildLink.appendChild(footerLearnToBuildText);
+        footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
+        footerDivUL.appendChild(footerLearnToBuildLI);
+        footerLearnToBuildLI.appendChild(footerLearnToBuildLink);
+    
+        footerLearnToBuildLink.onclick = function() {
+            FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenBuildPluginsURL', "");
+        }
+
+        return footerContainer;
+    }
+}
+
 
 // create a container to host multiple child elements, organizing them horizontally
 FormIt.PluginUI.createHorizontalModuleContainer = function(parent)

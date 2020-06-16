@@ -12,13 +12,6 @@ body {
     overflow: hidden;
 }
 
-/* the header: plugin title and subtitle*/
-.headerContainer
-{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 /* the content container is the area between the header and the footer */
 .contentContainer
 {
@@ -89,7 +82,7 @@ h1 {
 }
 
 /* typical body text */
-p {
+p, ul {
     font-family: Arial;
     line-height: 20px;
 }
@@ -111,7 +104,6 @@ input {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
-    height: 25px;
 }
 
 input:hover {
@@ -120,6 +112,10 @@ input:hover {
     margin-top: 5px;
     margin-bottom: 5px;
     outline: none;
+}
+
+input[type=number] {
+    width: 30%;
 }
 
 
@@ -132,33 +128,28 @@ input[type=checkbox] {
 }
 
 /* button */
-input[type=button] {
+input[type=button], input[type=submit] {
     color: white;
     background-color: #4676a9;
     border: 1px solid #4676a9;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 20px;
+    padding: 7px;
     outline: none;
     width: auto;
 }
 
-input[type=button]:hover {
+input[type=button]:hover, input[type=submit]:hover {
     color: white;
     background-color: #4676a9;
     border: 2px solid #c3e8f4;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 6px;
 }
 
-input[type=button]:focus {
+input[type=button]:focus, input[type=submit]:focus {
     color: white;
     background-color: #4676a9;
     border: 2px solid #c3e8f4;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 6px;
     outline: none;
 }
 
@@ -166,9 +157,6 @@ input[type=button]:disabled {
     color: white;
     background-color: darkgrey;
     border: 1px solid darkgrey;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
     outline: none;
     width: auto;
 }
