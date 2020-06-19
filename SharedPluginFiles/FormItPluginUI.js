@@ -102,6 +102,7 @@ FormIt.PluginUI.AlphaNumericInput = class AlphaNumericInput {
         this.input.addEventListener("keyup", (event) => {
             if (event.keyCode === 13)
             {
+                this.submitTextFunction();
                 event.preventDefault();
             }
         });
