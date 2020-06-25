@@ -6,6 +6,7 @@ if (typeof FormIt === 'undefined')
 FormIt.PluginUtils = {};
 
 // convert the given length into the current FormIt units
+// this function only works on the FormIt side
 FormIt.PluginUtils.currentUnits = function(length)
 {
     var currentUnitType = FormIt.Model.GetUnitTypeCurrent();
@@ -30,7 +31,6 @@ FormIt.PluginUtils.currentUnits = function(length)
         // if it's none of these, we're in feet, which is the default
         // so return the length unchanged
         default:
-            console.log("Did we get here?");
             return length;
     }
 }
