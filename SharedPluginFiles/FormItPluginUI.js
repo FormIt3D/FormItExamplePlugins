@@ -2,6 +2,45 @@
 window.FormIt = window.FormIt || {};
 FormIt.PluginUI = FormIt.PluginUI || {};
 
+/// UI utilities ///
+
+// converts a numeric value to a properly-formatted FormIt dimension string
+FormIt.PluginUI.convertValueToDimensionString = function(value, callbackFunction)
+{
+    // if the value is not a number, it could be a dimension string already
+    // so try to convert it to a number
+    if (isNaN(Number(value)))
+    {
+        window.FormItInterface.CallMethod("FormIt.StringConversion.StringToLinearValue", value, function(result)
+        {
+            // parse the result
+            result = JSON.parse(result);
+
+            // if the API indicates it was able to convert the dimension to a value, return it
+            if (result.first === true)
+            {
+                window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", Number(result.second), callbackFunction);
+            }
+            // otherwise, the value was not a valid number or dimension
+            // so return a single unit of value
+            else
+            {
+                window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", 1, callbackFunction);
+            }
+        });
+    }
+    // otherwise, it's already a valid number, so convert it to a dimension string
+    else 
+    {
+        window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", Number(value), function(result) 
+        {
+            callbackFunction(result);
+        });
+    }
+}
+
+/// UI classes and modules ///
+
 // typical header - can be used at the top of a whole plugin, or at the top of a subsection
 FormIt.PluginUI.HeaderModule = class HeaderModule {
     constructor(headerTitle, headerSubtitle, moduleClassName) {
@@ -21,7 +60,7 @@ FormIt.PluginUI.HeaderModule = class HeaderModule {
         // create a container for the header
         var headerContainer = document.createElement('div');
         headerContainer.id = this.moduleID;
-        headerContainer.className = this.moduleClassName
+        headerContainer.className = this.moduleClassName;
 
         // create the header elements
         var titleDiv = document.createElement('h1');
@@ -53,8 +92,8 @@ FormIt.PluginUI.Button = class Button {
     build() {
         
         // create a container for the header
-        this.button = document.createElement("input")
-        this.button.setAttribute("type", "button")
+        this.button = document.createElement("input");
+        this.button.setAttribute("type", "button");
         this.button.value = this.buttonText;
         
         return this.button;
@@ -70,7 +109,7 @@ FormIt.PluginUI.Button = class Button {
 FormIt.PluginUI.AlphaNumericInput = class AlphaNumericInput {
     constructor(submitTextFunction) {
         this.existingInputValue = undefined;
-        this.submitTextFunction - submitTextFunction;
+        this.submitTextFunction = submitTextFunction;
     }
 
     // these events need to be attached to every input
@@ -87,7 +126,16 @@ FormIt.PluginUI.AlphaNumericInput = class AlphaNumericInput {
                 // ensure that only if the value is different than it was when we started, do we submit the function
                 if (event.currentTarget.value !== this.existingInputValue)
                 {
-                    this.submitTextFunction();
+                    const resultCallback = (returnVal) => {
+
+                        returnVal = JSON.parse(returnVal);
+
+                        if (returnVal){
+                            this.input.value = returnVal;
+                        }
+                    }
+
+                    this.submitTextFunction(event.currentTarget.value, resultCallback);
                 }
             }
         });
@@ -102,14 +150,22 @@ FormIt.PluginUI.AlphaNumericInput = class AlphaNumericInput {
         this.input.addEventListener("keyup", (event) => {
             if (event.keyCode === 13)
             {
-                this.submitTextFunction();
+                const resultCallback = (returnVal) => {
+
+                    returnVal = JSON.parse(returnVal);
+
+                    if (returnVal){
+                        this.input.value = returnVal;
+                    }
+                }
+                this.submitTextFunction(event.currentTarget.value, resultCallback);
                 event.preventDefault();
             }
         });
     }
 }
 
-// typical text input and a label - no button (the onblur event commits the contents)
+// typical text/dimension input and a label - no button
 FormIt.PluginUI.TextInputModule = class TextInputModule extends FormIt.PluginUI.AlphaNumericInput {
     constructor(moduleLabelText, moduleID, moduleClassName, inputID, submitTextFunction) {
         
@@ -145,7 +201,6 @@ FormIt.PluginUI.TextInputModule = class TextInputModule extends FormIt.PluginUI.
         // create the input
         this.input = document.createElement('input');
         this.input.id = this.inputID;
-        this.input.className = this.moduleClassName;
         this.input.setAttribute("type", "text");
         container.appendChild(this.input);
 
@@ -153,7 +208,7 @@ FormIt.PluginUI.TextInputModule = class TextInputModule extends FormIt.PluginUI.
     }
 }
 
-// typical numeric input and a label - no button (the onblur event commits the contents)
+// typical numeric input and a label
 FormIt.PluginUI.NumberInputModule = class NumberInputModule extends FormIt.PluginUI.AlphaNumericInput {
     constructor(moduleLabelText, moduleID, moduleClassName, inputID, submitTextFunction) {
         
@@ -189,9 +244,46 @@ FormIt.PluginUI.NumberInputModule = class NumberInputModule extends FormIt.Plugi
         // create the input
         this.input = document.createElement('input');
         this.input.id = this.inputID;
-        this.input.className = this.moduleClassName;
         this.input.setAttribute("type", "number");
         container.appendChild(this.input);
+
+        return container;
+    }
+}
+
+// typical checkbox input
+FormIt.PluginUI.CheckboxModule = class CheckboxModule {
+    constructor(labelText, moduleID, moduleClassName, inputID) {
+       
+        // initialize the arguments
+        this.labelText = labelText;
+        this.moduleID = moduleID;
+        this.moduleClassName = moduleClassName;
+        this.inputID = inputID;
+
+        // build
+        this.element = this.build();
+    }
+
+    // construct and append the UI elements
+    build() {
+
+        // build the container
+        var container = document.createElement('form');
+        container.id = this.moduleID;
+        container.className = this.moduleClassName;
+
+        // create the checkbox
+        this.input = document.createElement('input');
+        this.input.id = this.inputID;
+        this.input.setAttribute("type", "checkbox");
+        container.appendChild(this.input);
+
+        // create the label
+        var checkboxLabel = document.createElement('div');
+        checkboxLabel.className = 'inputLabel';
+        checkboxLabel.innerHTML = this.labelText;
+        container.appendChild(checkboxLabel);
 
         return container;
     }
@@ -261,47 +353,4 @@ FormIt.PluginUI.createHorizontalModuleContainer = function(parent)
     parent.appendChild(multiModuleContainer);
 
     return multiModuleContainer;
-}
-
-// create a typical FormIt Plugin footer with information about the plugin
-FormIt.PluginUI.createFooter = function() {
-    var footerContainer = document.createElement('div');
-    footerContainer.id = 'footerContainer';
-    footerContainer.className = 'footerContainer';
-    window.document.body.appendChild(footerContainer);
-
-    var footerDiv = document.createElement('div');
-    footerDiv.id = 'footerDiv';
-    footerDiv.className = 'footerDiv';
-    footerContainer.appendChild(footerDiv);
-
-    var footerDescriptionText = document.createTextNode("Powered by FormIt JavaScript plugins");
-    footerDiv.appendChild(footerDescriptionText);
-
-    var footerDivUL = document.createElement('ul');
-    footerDiv.appendChild(footerDivUL);
-
-    var footerLearnAboutPluginsLI = document.createElement('li');
-    var footerLearnAboutPluginsLink = document.createElement('a');
-    var footerLearnAboutPluginsText = document.createTextNode("Learn about plugins");
-    footerLearnAboutPluginsLink.appendChild(footerLearnAboutPluginsText);
-    footerLearnAboutPluginsLink.setAttribute("href", "javascript:void(0);");
-    footerDivUL.appendChild(footerLearnAboutPluginsLI);
-    footerLearnAboutPluginsLI.appendChild(footerLearnAboutPluginsLink);
-
-    footerLearnAboutPluginsLink.onclick = function() {
-        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenAboutPluginsURL', "");
-    }
-
-    var footerLearnToBuildLI = document.createElement('li');
-    var footerLearnToBuildLink = document.createElement('a');
-    var footerLearnToBuildText = document.createTextNode("Build your own");
-    footerLearnToBuildLink.appendChild(footerLearnToBuildText);
-    footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
-    footerDivUL.appendChild(footerLearnToBuildLI);
-    footerLearnToBuildLI.appendChild(footerLearnToBuildLink);
-
-    footerLearnToBuildLink.onclick = function() {
-        FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenBuildPluginsURL', "");
-    }
 }

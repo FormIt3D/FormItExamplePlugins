@@ -5,8 +5,10 @@ if (typeof FormIt === 'undefined')
 
 FormIt.PluginUtils = {};
 
+///// CLIENT SIDE /////
+// these functions call FormIt APIs and can only be called from within the FormIt context
+
 // convert the given length into the current FormIt units
-// this function only works on the FormIt side
 FormIt.PluginUtils.currentUnits = function(length)
 {
     var currentUnitType = FormIt.Model.GetUnitTypeCurrent();
@@ -35,7 +37,12 @@ FormIt.PluginUtils.currentUnits = function(length)
     }
 }
 
+///// WEB SIDE (Deprecated) /////
+// these functions call HTML APIs and can only be called from within the DOM context
+// deprecated: FormItPluginUI.js is where new web-side utilities and classes should go
+
 // Function to prevent HTML page from reloading when hitting ENTER.
+// deprecated: use FormItPluginUI classes, which handle Enter automatically
 FormIt.PluginUtils.HandleEnter = function(formId, buttonId)
 {
     var formElement = document.getElementById(formId);

@@ -59,7 +59,8 @@ ul {
 li {
     list-style-type: none;
     position: relative;
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     margin-left: -1.5em;
 }
 
@@ -118,13 +119,12 @@ input[type=number] {
     width: 30%;
 }
 
-
 /* checkbox */
 input[type=checkbox] {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-left: 55px;
+    margin-right: 7px;
 }
 
 /* button */
@@ -132,7 +132,7 @@ input[type=button], input[type=submit] {
     color: white;
     background-color: #4676a9;
     border: 1px solid #4676a9;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 7px;
     outline: none;
     width: auto;
@@ -163,13 +163,26 @@ input[type=button]:disabled {
 
 /* contains an input and its label */
 .inputModuleContainer {
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* used for the first input module after header/instructions */
+.inputModuleContainerTop {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* used when the input module is not part of a layout with other input modules */
+.inputModuleContainerStandalone {
+    margin-bottom: 0px;
 }
 
 /* contains multiple modules */
 .multiModuleContainer {
     display: flex;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* hide and show UI based on logic */
