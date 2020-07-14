@@ -7,23 +7,23 @@ FormIt.PluginUI = FormIt.PluginUI || {};
 // converts a numeric value to a properly-formatted FormIt dimension string
 FormIt.PluginUI.convertValueToDimensionString = function(value, callbackFunction)
 {
-        window.FormItInterface.CallMethod("FormIt.StringConversion.StringToLinearValue", value, function(result)
-        {
-            // parse the result
-            result = JSON.parse(result);
+    window.FormItInterface.CallMethod("FormIt.StringConversion.StringToLinearValue", value, function(result)
+    {
+        // parse the result
+        result = JSON.parse(result);
 
-            // if the API indicates it was able to convert the dimension to a value, return it
-            if (result.first === true)
-            {
-                window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", Number(result.second), callbackFunction);
-            }
-            // otherwise, the value was not a valid number or dimension
-            // so return a single unit of value
-            else
-            {
-                window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", 1, callbackFunction);
-            }
-        });
+        // if the API indicates it was able to convert the dimension to a value, return it
+        if (result.first === true)
+        {
+            window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", Number(result.second), callbackFunction);
+        }
+        // otherwise, the value was not a valid number or dimension
+        // so return a single unit of value
+        else
+        {
+            window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", 1, callbackFunction);
+        }
+    });
 }
 
 /// UI classes and modules ///
