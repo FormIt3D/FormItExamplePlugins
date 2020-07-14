@@ -7,10 +7,6 @@ FormIt.PluginUI = FormIt.PluginUI || {};
 // converts a numeric value to a properly-formatted FormIt dimension string
 FormIt.PluginUI.convertValueToDimensionString = function(value, callbackFunction)
 {
-    // if the value is not a number, it could be a dimension string already
-    // so try to convert it to a number
-    if (isNaN(Number(value)))
-    {
         window.FormItInterface.CallMethod("FormIt.StringConversion.StringToLinearValue", value, function(result)
         {
             // parse the result
@@ -28,15 +24,6 @@ FormIt.PluginUI.convertValueToDimensionString = function(value, callbackFunction
                 window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", 1, callbackFunction);
             }
         });
-    }
-    // otherwise, it's already a valid number, so convert it to a dimension string
-    else 
-    {
-        window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", Number(value), function(result) 
-        {
-            callbackFunction(result);
-        });
-    }
 }
 
 /// UI classes and modules ///
