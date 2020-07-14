@@ -4,7 +4,8 @@ FormIt.PluginUI = FormIt.PluginUI || {};
 
 /// UI utilities ///
 
-// converts a numeric value to a properly-formatted FormIt dimension string
+// converts a value to a properly-formatted FormIt dimension string
+// according to the current units
 FormIt.PluginUI.convertValueToDimensionString = function(value, callbackFunction)
 {
     window.FormItInterface.CallMethod("FormIt.StringConversion.StringToLinearValue", value, function(result)
@@ -12,7 +13,7 @@ FormIt.PluginUI.convertValueToDimensionString = function(value, callbackFunction
         // parse the result
         result = JSON.parse(result);
 
-        // if the API indicates it was able to convert the dimension to a value, return it
+        // if the API was able to convert the value to a dimension, return it
         if (result.first === true)
         {
             window.FormItInterface.CallMethod("FormIt.StringConversion.LinearValueToString", Number(result.second), callbackFunction);
