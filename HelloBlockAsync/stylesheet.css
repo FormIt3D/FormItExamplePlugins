@@ -1,0 +1,69 @@
+h1 {
+    font-size: 20px;
+    font-family: Arial;
+    color: grey;
+}
+
+input {
+    border: 1px solid #4676a9;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 75px;
+}
+
+input:hover {
+    border: 2px solid #c3e8f4;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+input[type=button], input[type=submit] {
+    color: white;
+    background-color: #4676a9;
+    border: 1px solid #4676a9;
+    margin-top: 20px;
+    padding: 7px;
+    outline: none;
+    width: auto;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+    color: white;
+    background-color: #4676a9;
+    border: 2px solid #c3e8f4;
+    margin-top: 20px;
+    padding: 6px;
+}
+
+input[type=button]:focus, input[type=submit]:focus {
+    color: white;
+    background-color: #4676a9;
+    border: 2px solid #c3e8f4;
+    margin-top: 20px;
+    padding: 6px;
+    outline: none;
+}
+
+form {
+    font-family: Arial;
+    margin-left: 0px;
+}
+
+p, ul {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 20px;
+}

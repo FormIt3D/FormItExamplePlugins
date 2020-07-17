@@ -86,6 +86,11 @@ FormItInterface.Initialize = function(callbackMethod)
                     var stringArgs = JSON.stringify(args);
                     channel.objects.FormItInterface.CallMethod(method, stringArgs, callbackMethod);
                 }
+                FormItInterface.CallMethodDirect = function(args, callbackMethod)
+                {
+                    var stringArgs = JSON.stringify(args);
+                    channel.objects.FormItInterface.CallMethodDirect(stringArgs, callbackMethod);
+                }
                 window.PluginDialog = channel.objects.PluginDialog;
                 if (callbackMethod)
                 {
