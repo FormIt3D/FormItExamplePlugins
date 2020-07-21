@@ -35,6 +35,26 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
     }
 }
 
+FormItInterface.CallMethodDirect = function(args, callbackMethod)
+{
+    if(FormItInterface.Platform == WEB)
+    {
+        postRobot.send(parent, 'FormIt.PluginMsgDirect', {'args': args}).then(function(event) {
+            if (callbackMethod)
+            {
+                callbackMethod(event.data);
+            }
+        }).catch(function(err) {
+            // Handle any errors that stopped our call from going through
+            console.error(err);
+        });
+    }
+    else
+    {
+        console.log("Platform has not been integrated yet!");
+    }
+}
+
 //TODO(hauswij): Remove this once all the plugins are converted to use FormItInterface.Initialize.
 FormItInterface.AddEventListener = function(eventSignal, callbackMethod)
 {
