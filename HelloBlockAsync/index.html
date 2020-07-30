@@ -8,6 +8,12 @@
     <body>
         <h1>Hello Block!</h1>
         <p>Create a cuboid of the given size at the origin.</p>
-        <create-block-button></create-block-button>
+
+        <div>
+            <input id="width" type=number value="12.0">Width</input><br/>
+            <input id="height" type=number value="12.0">Length</input><br/>
+            <input id="length" type=number value="12.0">Height</input><br/>
+            <create-block-button id="block-button" width="#width" height="#height" length="#length"></create-block-button>
+        </div>
     </body>
 </html>
