@@ -5,6 +5,7 @@
   [
   "DialogFromToolbar",
   "HelloBlock",
+  "HelloBlockAsync",
   "Messages",
   "ModalDialog",
   "ModelessDialog",
