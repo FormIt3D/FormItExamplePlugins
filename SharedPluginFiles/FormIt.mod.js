@@ -1,5 +1,5 @@
 // This file is auto-generated
-import { FormItInterface } from '/SharedPluginFiles/FormItInterface.mod.js';
+import { FormItInterface } from './FormItInterface.mod.js';
 // This file is auto-generated
 
     // Wrapper for calling "native" code as async functions
