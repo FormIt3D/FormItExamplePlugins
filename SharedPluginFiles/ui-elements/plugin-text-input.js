@@ -1,4 +1,7 @@
-// TODO
+// FormIt plugin text input shared element
+// Usage: <plugin-input label="Label: "></plugin-input>
+//
+// Attributes:"on-input" or the onInput class property. Triggered when the user hits the enter key.
 
 class TextInputModule extends HTMLElement {
     constructor() {

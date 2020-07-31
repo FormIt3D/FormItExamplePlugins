@@ -1,3 +1,6 @@
+// Shared header for plugin panels
+// Usage: <plugin-header title="Title text">Longer subtitle text</plugin-header>
+
 class HeaderModule extends HTMLElement {
     constructor() {
         super();
@@ -5,14 +8,16 @@ class HeaderModule extends HTMLElement {
         this.shadow = this.attachShadow({mode: 'open'});
         const css = document.createElement('style');
         css.innerHTML = `
+* {
+    font-family: Arial;
+}
+
 h1 {
     font-size: 20px;
-    font-family: Arial;
     color: grey;
 }
 
 p {
-    font-family: Arial;
     line-height: 20px;
 }
         `;
