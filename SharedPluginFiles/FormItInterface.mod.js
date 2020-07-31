@@ -64,19 +64,28 @@ FormItInterface.PluginWindow = window;
 
 if(FormItInterface.Platform == WINDOWS)
 {
+    const messageHandlers = new Map();
+    let currMessageHandlerID = 0;
     let qtChannel = null;
-    let SubscribeMessageInternal = function(msg, handler)
+    let SubscribeMessageInternal = function(msg, handler, id)
     {
         qtChannel.objects.FormItInterface.SubscribeMessage(msg);
         if (handler)
         {
-            qtChannel.objects.FormItInterface.FormItMessage[msg] = handler;
+            if (!messageHandlers.has(msg)) {
+                messageHandlers.set(msg, new Map());
+            }
+            messageHandlers.get(msg).set(id, handler);
             if (!qtChannel.objects.FormItInterface.FormItMessage.connected)
             {
                 var msgFunc = function(arg)
                 {
                     var jsonArg = JSON.parse(arg);
-                    qtChannel.objects.FormItInterface.FormItMessage[jsonArg.msg](jsonArg.payload)
+                    if (messageHandlers.has(jsonArg.msg)) {
+                        for (const [key, val] of messageHandlers.get(msg)) {
+                            val(jsonArg.payload);
+                        }
+                    }
                 };
                 qtChannel.objects.FormItInterface.FormItMessage.connect(msgFunc);
                 qtChannel.objects.FormItInterface.FormItMessage.connected = true;
@@ -86,18 +95,28 @@ if(FormItInterface.Platform == WINDOWS)
 
     let queuedMessageHandlers = [];
     FormItInterface.SubscribeMessage = (msg, handler) => {
+        const id = currMessageHandlerID++;
         if (qtChannel) {
-            SubscribeMessageInternal(msg, handler);
+            SubscribeMessageInternal(msg, handler, id);
         } else {
             queuedMessageHandlers.push({
                 msg: msg,
-                handler: handler
+                handler: handler,
+                id: id
             });
         }
+        return id;
     };
     FormItInterface.EmitMessage = null;
     FormItInterface.ConsoleLog = console.log;
-    FormItInterface.UnsubscribeMessage = null;
+    FormItInterface.UnsubscribeMessage = (msg, id) => {
+        if (id !== undefined && messageHandlers.get(msg) && messageHandlers.get(msg).get(id)) {
+            messageHandlers.get(msg).delete(id);
+        } else {
+            messageHandlers.delete(msg);
+            qtChannel.objects.FormItInterface.UnsubscribeMessage(msg);
+        }
+    };
 
     const script = document.createElement('script');
     script.type = "text/javascript";
@@ -115,7 +134,6 @@ if(FormItInterface.Platform == WINDOWS)
                 console.log(msg);
                 channel.objects.FormItInterface.ConsoleLog(msg);
             }
-            FormItInterface.UnsubscribeMessage = channel.objects.FormItInterface.UnsubscribeMessage;
             FormItInterface.CallMethod = function(method, args, callbackMethod)
             {
                 var stringArgs = JSON.stringify(args);
@@ -131,7 +149,7 @@ if(FormItInterface.Platform == WINDOWS)
             qtChannel = channel;
 
             for (const h of queuedMessageHandlers) {
-                SubscribeMessageInternal(h.msg, h.handler);
+                SubscribeMessageInternal(h.msg, h.handler, h.id);
             }
         });
     };
