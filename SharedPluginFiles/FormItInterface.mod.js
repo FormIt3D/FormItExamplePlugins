@@ -139,15 +139,16 @@ if(FormItInterface.Platform == WINDOWS)
 }
 else
 {
+    let currMessageHandlerID = 0;
     const MessageHandlers = {};
     FormItInterface.ConsoleLog = console.log;
-    let SubscribeMessageInternal = function(msg, handler)
+    let SubscribeMessageInternal = function(msg, handler, id)
     {
         // TODO need to store more information to properly "unsubscribe"
         if (!MessageHandlers[msg]) {
-            MessageHandlers[msg] = [];
+            MessageHandlers[msg] = {};
         }
-        MessageHandlers[msg].push(handler);
+        MessageHandlers[msg][id] = handler;
 
         //console.log("Subscribing to:" + msg + "\n");
         postRobot.send(parent, 'FormIt.PubSub', msg).then(function(event) {
@@ -159,17 +160,25 @@ else
     };
     let queuedMessageHandlers = [];
     FormItInterface.SubscribeMessage = (msg, handler) => {
+        const id = currMessageHandlerID++;
         if (window.postRobot) {
-            SubscribeMessageInternal(msg, handler);
+            SubscribeMessageInternal(msg, handler, id);
         } else {
             queuedMessageHandlers.push({
                 msg: msg,
-                handler: handler
+                handler: handler,
+                id: id
             });
         }
     };
 
-    FormItInterface.UnsubscribeMessage = function(msg) { FormItInterface.MessageHandlers[msg] = undefined; };
+    FormItInterface.UnsubscribeMessage = function(msg, id) {
+        if (id !== undefined && msg in MessageHandlers) {
+            MessageHandlers[msg][id] = undefined;
+        } else {
+            MessageHandlers[msg] = undefined;
+        }
+    };
 
     // Add the post-robot script only for Web.
     if (!window.postRobot) {
@@ -180,7 +189,7 @@ else
             postRobot.CONFIG.LOG_LEVEL = 'error';
 
             for (const h of queuedMessageHandlers) {
-                SubscribeMessageInternal(h.msg, h.handler);
+                SubscribeMessageInternal(h.msg, h.handler, h.id);
             }
             queuedMessageHandlers = [];
 
@@ -189,10 +198,13 @@ else
                 postRobot.on('FormIt.PluginMsgEvent', event => {
                     //console.log('(Web side) msg: ', event.data);
                     var jsonMessage = JSON.parse(event.data);
-                    for (const msgHandler of MessageHandlers[jsonMessage.msg]) {
-                        if (!!msgHandler)
-                        {
-                            msgHandler(event.data);
+                    const obj = MessageHandlers[jsonMessage.msg];
+                    if (obj) {
+                        for (const key in obj) {
+                            if (obj[key])
+                            {
+                                obj[key](event.data);
+                            }
                         }
                     }
                 });
