@@ -1,0 +1,8 @@
+{
+    "PluginName": "Hello Async",
+    "PluginDescription": "Testing async JS API",
+    "PluginType": "Panel",
+    "Panel": "PLUGINLOCATION/index.html",
+    "PanelIcon": "PLUGINLOCATION/hello_block.png",
+    "CustomDescription": "customdescription.html"
+}

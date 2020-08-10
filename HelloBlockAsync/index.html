@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Hello Block!</title>
+    <META NAME="Title" CONTENT="Hello Block!">
+    <META NAME="Author" CONTENT="Autodesk FormIt">
+    <script type="module" src="block.js"></script>
+</head>
+    <body>
+        <h1>Hello Block!</h1>
+        <p>Create a cuboid of the given size at the origin.</p>
+
+        <div>
+            <input id="width" type=number value="12.0">Width</input><br/>
+            <input id="height" type=number value="12.0">Length</input><br/>
+            <input id="length" type=number value="12.0">Height</input><br/>
+            <create-block-button id="block-button" width="#width" height="#height" length="#length"></create-block-button>
+        </div>
+    </body>
+</html>
