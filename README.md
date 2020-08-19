@@ -3,7 +3,7 @@ Learn how to use FormIt plugins: https://formit3d.github.io/FormItExamplePlugins
 
 Learn how to build FormIt plugins: https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html
 
-© Copyright 2019 Autodesk, Inc. All rights reserved.
+© Copyright 2020 Autodesk, Inc. All rights reserved.
 
 •	[Privacy Policy](http://usa.autodesk.com/privacy/)
 
