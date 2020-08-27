@@ -18,7 +18,7 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
     if(FormItInterface.Platform == WEB)
     {
-        postRobot.send(parent, 'FormIt.PluginMsg', {'method': method, 'args': args}).then(function(event) {
+        postRobot.send(parent, 'FormIt.PluginMsg', {'method': method, 'args': args},{ timeout: 10000 }).then(function(event) {
             //console.log('Event Data: ', JSON.stringify(event.data));
             if (callbackMethod)
             {
