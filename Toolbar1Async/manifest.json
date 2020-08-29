@@ -1,0 +1,18 @@
+{
+    "PluginName": "Toolbar UI (async)",
+    "PluginDescription": "Creates a toolbar UI with buttons and custom icons.",
+    "PluginType": "Toolbar",
+    "PluginEntry": "index.html",
+    "ToolbarButtons": [
+        {
+            "iconText": "TB",
+            "iconURL": "circle.png",
+            "command": "window.AlertFormItVersion"
+        },
+        {
+            "iconText": "CB",
+            "iconURL": "block.png",
+            "command": "window.CreateBlock"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="module">
+        import { FormIt, WSM } from '../SharedPluginFiles/FormIt.mod.js';
+
+        window.AlertFormItVersion = async (data) => {
+            const version = await FormIt.GetVersion();
+            alert(`Toolbar clicked! Event data = ${JSON.stringify(version)}`);
+        };
+
+        window.CreateBlock = async (data) => {
+            const pt1 = WSM.Geom.Point3d(-6, -6, 0);
+            const pt2 = WSM.Geom.Point3d(6, 6, 12);
+            const history = FormIt.GroupEdit.GetEditingHistoryID();
+            WSM.APICreateBlock(await history, await pt1, await pt2);
+        };
+    </script>
+</body>
+
+</html>
