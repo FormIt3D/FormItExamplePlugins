@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="module">
+        import { MyFormItLib } from './lib.js';
+        const lib = new MyFormItLib();
+
+        window.AlertFormItVersion = async () => { lib.alertVersions(); };
+        window.CreateBlock = async () => { lib.createBlock(); };
+    </script>
+</body>
+
+</html>

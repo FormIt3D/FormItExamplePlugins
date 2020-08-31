@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Hello Block!</title>
+        <META NAME="Title" CONTENT="Panel using shared code">
+        <META NAME="Author" CONTENT="Autodesk FormIt">
+    </head>
+    <body>
+        <button>Create Block</button>
+        <script type="module">
+            import { MyFormItLib } from './lib.js';
+            const lib = new MyFormItLib();
+            document.querySelector('button').addEventListener('click', lib.createBlock.bind(lib));
+        </script>
+    </body>
+</html>
