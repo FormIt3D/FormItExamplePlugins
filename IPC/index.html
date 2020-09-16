@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <button>Create IPC Connection</button>
+        <script type="module">
+            import {FormIt, WSM} from '../SharedPluginFiles/FormIt.mod.js';
+            document.querySelector('button').addEventListener('click', async () =>{
+                const ipcConfig = {
+                    objectName: 'FormIt::IPC::Config',
+                    subID: 3002
+                };
+                const ipcHandle = await FormIt.IPC.CreateConnection(ipcConfig);
+                alert(`ipchHandle = ${ipcHandle}`);
+
+                window.HandleFormItIPCMessage = (msg) => {
+                    alert(`received message: ${msg}`);
+                };
+            });
+        </script>
+    </body>
+</html>

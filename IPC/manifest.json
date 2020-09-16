@@ -1,0 +1,7 @@
+{
+    "PluginName": "Simple IPC example",
+    "PluginDescription": "Simple IPC example",
+    "PluginType": "Panel",
+    "Panel": "index.html"
+}
+
