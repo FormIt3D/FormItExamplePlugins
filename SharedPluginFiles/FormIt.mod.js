@@ -1,5 +1,5 @@
 // This file is auto-generated
-import { FormItInterface } from './FormItInterface.mod.js';
+import { FormItInterface } from '/SharedPluginFiles/FormItInterface.mod.js';
 // This file is auto-generated
 
     // Wrapper for calling "native" code as async functions
@@ -9,385 +9,349 @@ import { FormItInterface } from './FormItInterface.mod.js';
         });
     };
 const WSM = {};
-    
-    WSM.APIGetActiveHistory = function() {
-        const args = {
-            TestAPI: "WSM.APIGetActiveHistory"
-        };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateHistory = function(nHistoryID,bNonTemporary) {
-        const args = {
-            TestAPI: "WSM.APICreateHistory",
+        WSM.APIGetActiveHistory = function() {
+            const args = {
+                TestAPI: "WSM.APIGetActiveHistory"
+            };
+            return callAsyncAPI(args);
+        };
+
+        WSM.APICreateHistory = function(nHistoryID,bNonTemporary) {
+            const args = {
+                TestAPI: "WSM.APICreateHistory",
 nHistoryID: nHistoryID,
     bNonTemporary: bNonTemporary
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIChangeHistoryID = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIChangeHistoryID",
+        WSM.APIChangeHistoryID = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIChangeHistoryID",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDeleteHistory = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIDeleteHistory",
+        WSM.APIDeleteHistory = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIDeleteHistory",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDeleteAllHistories = function() {
-        const args = {
-            TestAPI: "WSM.APIDeleteAllHistories"
+        WSM.APIDeleteAllHistories = function() {
+            const args = {
+                TestAPI: "WSM.APIDeleteAllHistories"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllHistoriesReadOnly = function(bWithTemporary) {
-        const args = {
-            TestAPI: "WSM.APIGetAllHistoriesReadOnly",
+        WSM.APIGetAllHistoriesReadOnly = function(bWithTemporary) {
+            const args = {
+                TestAPI: "WSM.APIGetAllHistoriesReadOnly",
 bWithTemporary: bWithTemporary
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllReachableHistoriesReadOnly = function(nHistoryID,bGoUp) {
-        const args = {
-            TestAPI: "WSM.APIGetAllReachableHistoriesReadOnly",
+        WSM.APIGetAllReachableHistoriesReadOnly = function(nHistoryID,bGoUp) {
+            const args = {
+                TestAPI: "WSM.APIGetAllReachableHistoriesReadOnly",
 nHistoryID: nHistoryID,
     bGoUp: bGoUp
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIUndoHistory = function(nHistoryID,bAndDeleteRedo,nApplyOnDeltaID) {
-        const args = {
-            TestAPI: "WSM.APIUndoHistory",
+        WSM.APIUndoHistory = function(nHistoryID,bAndDeleteRedo,nApplyOnDeltaID) {
+            const args = {
+                TestAPI: "WSM.APIUndoHistory",
 nHistoryID: nHistoryID,
     bAndDeleteRedo: bAndDeleteRedo,
     nApplyOnDeltaID: nApplyOnDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRedoHistory = function(nHistoryID,nApplyOnDeltaID) {
-        const args = {
-            TestAPI: "WSM.APIRedoHistory",
+        WSM.APIRedoHistory = function(nHistoryID,nApplyOnDeltaID) {
+            const args = {
+                TestAPI: "WSM.APIRedoHistory",
 nHistoryID: nHistoryID,
     nApplyOnDeltaID: nApplyOnDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIUndoHistoryToDelta = function(nHistoryID,nDeltaID) {
-        const args = {
-            TestAPI: "WSM.APIUndoHistoryToDelta",
+        WSM.APIUndoHistoryToDelta = function(nHistoryID,nDeltaID) {
+            const args = {
+                TestAPI: "WSM.APIUndoHistoryToDelta",
 nHistoryID: nHistoryID,
     nDeltaID: nDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRedoHistoryToDelta = function(nHistoryID,nDeltaID) {
-        const args = {
-            TestAPI: "WSM.APIRedoHistoryToDelta",
+        WSM.APIRedoHistoryToDelta = function(nHistoryID,nDeltaID) {
+            const args = {
+                TestAPI: "WSM.APIRedoHistoryToDelta",
 nHistoryID: nHistoryID,
     nDeltaID: nDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDeleteAllRedoHistory = function(nHistoryID,bReuseDiscardedObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIDeleteAllRedoHistory",
+        WSM.APIDeleteAllRedoHistory = function(nHistoryID,bReuseDiscardedObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIDeleteAllRedoHistory",
 nHistoryID: nHistoryID,
     bReuseDiscardedObjectIDs: bReuseDiscardedObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICanUndoHistoryReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APICanUndoHistoryReadOnly",
+        WSM.APICanUndoHistoryReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APICanUndoHistoryReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICanRedoHistoryReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APICanRedoHistoryReadOnly",
+        WSM.APICanRedoHistoryReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APICanRedoHistoryReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICanUndoHistoryToDeltaReadOnly = function(nHistoryID,nDeltaID) {
-        const args = {
-            TestAPI: "WSM.APICanUndoHistoryToDeltaReadOnly",
+        WSM.APICanUndoHistoryToDeltaReadOnly = function(nHistoryID,nDeltaID) {
+            const args = {
+                TestAPI: "WSM.APICanUndoHistoryToDeltaReadOnly",
 nHistoryID: nHistoryID,
     nDeltaID: nDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICanRedoHistoryToDeltaReadOnly = function(nHistoryID,nDeltaID) {
-        const args = {
-            TestAPI: "WSM.APICanRedoHistoryToDeltaReadOnly",
+        WSM.APICanRedoHistoryToDeltaReadOnly = function(nHistoryID,nDeltaID) {
+            const args = {
+                TestAPI: "WSM.APICanRedoHistoryToDeltaReadOnly",
 nHistoryID: nHistoryID,
     nDeltaID: nDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIUndoOrRedoHistoryToDelta = function(nHistoryID,nDeltaID,bAndDeleteRedo) {
-        const args = {
-            TestAPI: "WSM.APIUndoOrRedoHistoryToDelta",
+        WSM.APIUndoOrRedoHistoryToDelta = function(nHistoryID,nDeltaID,bAndDeleteRedo) {
+            const args = {
+                TestAPI: "WSM.APIUndoOrRedoHistoryToDelta",
 nHistoryID: nHistoryID,
     nDeltaID: nDeltaID,
     bAndDeleteRedo: bAndDeleteRedo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllHistoryDeltasReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetAllHistoryDeltasReadOnly",
+        WSM.APIGetAllHistoryDeltasReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetAllHistoryDeltasReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetHistoryDeltasReadOnly = function(nHistoryID,nStartDeltaID,nEndDeltaID) {
-        const args = {
-            TestAPI: "WSM.APIGetHistoryDeltasReadOnly",
+        WSM.APIGetHistoryDeltasReadOnly = function(nHistoryID,nStartDeltaID,nEndDeltaID) {
+            const args = {
+                TestAPI: "WSM.APIGetHistoryDeltasReadOnly",
 nHistoryID: nHistoryID,
     nStartDeltaID: nStartDeltaID,
     nEndDeltaID: nEndDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMergeDeltas = function(nHistoryID,nStartDeltaID,nEndDeltaID,bReuseDiscardedObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIMergeDeltas",
+        WSM.APIMergeDeltas = function(nHistoryID,nStartDeltaID,nEndDeltaID,bReuseDiscardedObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIMergeDeltas",
 nHistoryID: nHistoryID,
     nStartDeltaID: nStartDeltaID,
     nEndDeltaID: nEndDeltaID,
     bReuseDiscardedObjectIDs: bReuseDiscardedObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIReverseFaces = function(nHistoryID,aFaceIDs) {
-        const args = {
-            TestAPI: "WSM.APIReverseFaces",
+        WSM.APIReverseFaces = function(nHistoryID,aFaceIDs) {
+            const args = {
+                TestAPI: "WSM.APIReverseFaces",
 nHistoryID: nHistoryID,
     aFaceIDs: aFaceIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICheckValidityReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APICheckValidityReadOnly",
+        WSM.APICheckValidityReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APICheckValidityReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICheckHistoryValidityReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APICheckHistoryValidityReadOnly",
+        WSM.APICheckHistoryValidityReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APICheckHistoryValidityReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIComputeAreaReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIComputeAreaReadOnly",
+        WSM.APIComputeAreaReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIComputeAreaReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIComputeVolumeReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIComputeVolumeReadOnly",
+        WSM.APIComputeVolumeReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIComputeVolumeReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICopyObject = function(nHistoryID,nToHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APICopyObject",
+        WSM.APICopyObject = function(nHistoryID,nToHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APICopyObject",
 nHistoryID: nHistoryID,
     nToHistoryID: nToHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDragFace = function(nHistoryID,nObjectID,nDistance,bMerge) {
-        const args = {
-            TestAPI: "WSM.APIDragFace",
+        WSM.APIDragFace = function(nHistoryID,nObjectID,nDistance,bMerge) {
+            const args = {
+                TestAPI: "WSM.APIDragFace",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     nDistance: nDistance,
     bMerge: bMerge
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDragFaces = function(nHistoryID,aaFaceIDs,aDists,aDirs,bMerge) {
-        const args = {
-            TestAPI: "WSM.APIDragFaces",
+        WSM.APIDragFaces = function(nHistoryID,aaFaceIDs,aDists,aDirs,bMerge) {
+            const args = {
+                TestAPI: "WSM.APIDragFaces",
 nHistoryID: nHistoryID,
     aaFaceIDs: aaFaceIDs,
     aDists: aDists,
     aDirs: aDirs,
     bMerge: bMerge
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIScaleFace = function(nHistoryID,nFaceID,aScaleFactor) {
-        const args = {
-            TestAPI: "WSM.APIScaleFace",
+        WSM.APIScaleFace = function(nHistoryID,nFaceID,aScaleFactor) {
+            const args = {
+                TestAPI: "WSM.APIScaleFace",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     aScaleFactor: aScaleFactor
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetObjectProperties = function(nHistoryID,nObjectID,sObjectName,bReportAreaByLevel,aDefaultLevelIDs) {
-        const args = {
-            TestAPI: "WSM.APISetObjectProperties",
+        WSM.APISetObjectProperties = function(nHistoryID,nObjectID,sObjectName,bReportAreaByLevel,aDefaultLevelIDs) {
+            const args = {
+                TestAPI: "WSM.APISetObjectProperties",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     sObjectName: sObjectName,
     bReportAreaByLevel: bReportAreaByLevel,
     aDefaultLevelIDs: aDefaultLevelIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIOffsetFace = function(nHistoryID,nFaceID,dOffsetDistance,bOffsetHolesToo,trans,bReadOnly) {
-        const args = {
-            TestAPI: "WSM.APIOffsetFace",
+        WSM.APIOffsetFace = function(nHistoryID,nFaceID,dOffsetDistance,bOffsetHolesToo,trans,bReadOnly) {
+            const args = {
+                TestAPI: "WSM.APIOffsetFace",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     dOffsetDistance: dOffsetDistance,
     bOffsetHolesToo: bOffsetHolesToo,
     trans: trans,
     bReadOnly: bReadOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APITaperFace = function(nHistoryID,nFaceID,dRadians,axis) {
-        const args = {
-            TestAPI: "WSM.APITaperFace",
+        WSM.APITaperFace = function(nHistoryID,nFaceID,dRadians,axis) {
+            const args = {
+                TestAPI: "WSM.APITaperFace",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     dRadians: dRadians,
     axis: axis
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRotateFace = function(nHistoryID,nFaceID,aRadian) {
-        const args = {
-            TestAPI: "WSM.APIRotateFace",
+        WSM.APIRotateFace = function(nHistoryID,nFaceID,aRadian) {
+            const args = {
+                TestAPI: "WSM.APIRotateFace",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     aRadian: aRadian
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRotateFaceBetweenPoints = function(nHistoryID,nFaceID,startPt,endPt) {
-        const args = {
-            TestAPI: "WSM.APIRotateFaceBetweenPoints",
+        WSM.APIRotateFaceBetweenPoints = function(nHistoryID,nFaceID,startPt,endPt) {
+            const args = {
+                TestAPI: "WSM.APIRotateFaceBetweenPoints",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     startPt: startPt,
     endPt: endPt
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMergeBody = function(nHistoryID,nBodyID,dSmoothCosAngle) {
-        const args = {
-            TestAPI: "WSM.APIMergeBody",
+        WSM.APIMergeBody = function(nHistoryID,nBodyID,dSmoothCosAngle) {
+            const args = {
+                TestAPI: "WSM.APIMergeBody",
 nHistoryID: nHistoryID,
     nBodyID: nBodyID,
     dSmoothCosAngle: dSmoothCosAngle
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateBlock = function(nHistoryID,point3d1,point3d2) {
-        const args = {
-            TestAPI: "WSM.APICreateBlock",
+        WSM.APICreateBlock = function(nHistoryID,point3d1,point3d2) {
+            const args = {
+                TestAPI: "WSM.APICreateBlock",
 nHistoryID: nHistoryID,
     point3d1: point3d1,
     point3d2: point3d2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateCircleOrArc = function(nHistoryID,radius,posCenter,xAxis,yAxis,dStartParam,dEndParam,accuracyORcount,bReadOnly,trans,nMinimumNumberOfFacets) {
-        const args = {
-            TestAPI: "WSM.APICreateCircleOrArc",
+        WSM.APICreateCircleOrArc = function(nHistoryID,radius,posCenter,xAxis,yAxis,dStartParam,dEndParam,accuracyORcount,bReadOnly,trans,nMinimumNumberOfFacets) {
+            const args = {
+                TestAPI: "WSM.APICreateCircleOrArc",
 nHistoryID: nHistoryID,
     radius: radius,
     posCenter: posCenter,
@@ -399,14 +363,13 @@ nHistoryID: nHistoryID,
     bReadOnly: bReadOnly,
     trans: trans,
     nMinimumNumberOfFacets: nMinimumNumberOfFacets
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateCircleOrArcFromPoints = function(nHistoryID,arcStartPos,arcEndPos,thirdPoint,accuracyORcount,bReadOnly,trans,nMinimumNumberOfFacets,bCircle) {
-        const args = {
-            TestAPI: "WSM.APICreateCircleOrArcFromPoints",
+        WSM.APICreateCircleOrArcFromPoints = function(nHistoryID,arcStartPos,arcEndPos,thirdPoint,accuracyORcount,bReadOnly,trans,nMinimumNumberOfFacets,bCircle) {
+            const args = {
+                TestAPI: "WSM.APICreateCircleOrArcFromPoints",
 nHistoryID: nHistoryID,
     arcStartPos: arcStartPos,
     arcEndPos: arcEndPos,
@@ -416,28 +379,26 @@ nHistoryID: nHistoryID,
     trans: trans,
     nMinimumNumberOfFacets: nMinimumNumberOfFacets,
     bCircle: bCircle
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateHermiteSpline = function(nHistoryID,aControlPoints,bClosed,startTangent,endTangent,bReadOnly) {
-        const args = {
-            TestAPI: "WSM.APICreateHermiteSpline",
+        WSM.APICreateHermiteSpline = function(nHistoryID,aControlPoints,bClosed,startTangent,endTangent,bReadOnly) {
+            const args = {
+                TestAPI: "WSM.APICreateHermiteSpline",
 nHistoryID: nHistoryID,
     aControlPoints: aControlPoints,
     bClosed: bClosed,
     startTangent: startTangent,
     endTangent: endTangent,
     bReadOnly: bReadOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateClampedHermiteSplineDataReadOnly = function(nHistoryID,aControlPointsOld,startTangentOld,endTangentOld,bClosedOld,aVertexIDsOnSpline,nNumberOfNewContolPoints) {
-        const args = {
-            TestAPI: "WSM.APICreateClampedHermiteSplineDataReadOnly",
+        WSM.APICreateClampedHermiteSplineDataReadOnly = function(nHistoryID,aControlPointsOld,startTangentOld,endTangentOld,bClosedOld,aVertexIDsOnSpline,nNumberOfNewContolPoints) {
+            const args = {
+                TestAPI: "WSM.APICreateClampedHermiteSplineDataReadOnly",
 nHistoryID: nHistoryID,
     aControlPointsOld: aControlPointsOld,
     startTangentOld: startTangentOld,
@@ -445,267 +406,244 @@ nHistoryID: nHistoryID,
     bClosedOld: bClosedOld,
     aVertexIDsOnSpline: aVertexIDsOnSpline,
     nNumberOfNewContolPoints: nNumberOfNewContolPoints
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateRectangle = function(nHistoryID,firstEdgePt1,firstEdgePt2,projectionPt,bReadOnly) {
-        const args = {
-            TestAPI: "WSM.APICreateRectangle",
+        WSM.APICreateRectangle = function(nHistoryID,firstEdgePt1,firstEdgePt2,projectionPt,bReadOnly) {
+            const args = {
+                TestAPI: "WSM.APICreateRectangle",
 nHistoryID: nHistoryID,
     firstEdgePt1: firstEdgePt1,
     firstEdgePt2: firstEdgePt2,
     projectionPt: projectionPt,
     bReadOnly: bReadOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateHemisphere = function(nHistoryID,nRadius,centerPt,nAccuracyORcount) {
-        const args = {
-            TestAPI: "WSM.APICreateHemisphere",
+        WSM.APICreateHemisphere = function(nHistoryID,nRadius,centerPt,nAccuracyORcount) {
+            const args = {
+                TestAPI: "WSM.APICreateHemisphere",
 nHistoryID: nHistoryID,
     nRadius: nRadius,
     centerPt: centerPt,
     nAccuracyORcount: nAccuracyORcount
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateCone = function(nHistoryID,nRadius,nHeight,centerPt,nAccuracyORcount) {
-        const args = {
-            TestAPI: "WSM.APICreateCone",
+        WSM.APICreateCone = function(nHistoryID,nRadius,nHeight,centerPt,nAccuracyORcount) {
+            const args = {
+                TestAPI: "WSM.APICreateCone",
 nHistoryID: nHistoryID,
     nRadius: nRadius,
     nHeight: nHeight,
     centerPt: centerPt,
     nAccuracyORcount: nAccuracyORcount
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISweep = function(nHistoryID,aProfile,aPath,bRemoveUnusedProfileAndPath) {
-        const args = {
-            TestAPI: "WSM.APISweep",
+        WSM.APISweep = function(nHistoryID,aProfile,aPath,bRemoveUnusedProfileAndPath) {
+            const args = {
+                TestAPI: "WSM.APISweep",
 nHistoryID: nHistoryID,
     aProfile: aProfile,
     aPath: aPath,
     bRemoveUnusedProfileAndPath: bRemoveUnusedProfileAndPath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIOffset3d = function(nHistoryID,nObjectID,dDistance) {
-        const args = {
-            TestAPI: "WSM.APIOffset3d",
+        WSM.APIOffset3d = function(nHistoryID,nObjectID,dDistance) {
+            const args = {
+                TestAPI: "WSM.APIOffset3d",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     dDistance: dDistance
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIShell = function(nHistoryID,nBodyID,dDistance) {
-        const args = {
-            TestAPI: "WSM.APIShell",
+        WSM.APIShell = function(nHistoryID,nBodyID,dDistance) {
+            const args = {
+                TestAPI: "WSM.APIShell",
 nHistoryID: nHistoryID,
     nBodyID: nBodyID,
     dDistance: dDistance
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIBlend = function(nHistoryID,dRadius,aPathIDs,accuracyORcount,nMinimumNumberOfFacets) {
-        const args = {
-            TestAPI: "WSM.APIBlend",
+        WSM.APIBlend = function(nHistoryID,dRadius,aPathIDs,accuracyORcount,nMinimumNumberOfFacets) {
+            const args = {
+                TestAPI: "WSM.APIBlend",
 nHistoryID: nHistoryID,
     dRadius: dRadius,
     aPathIDs: aPathIDs,
     accuracyORcount: accuracyORcount,
     nMinimumNumberOfFacets: nMinimumNumberOfFacets
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIOffsetEdges = function(nHistoryID,nEdgeIDs,dOffsetDistance,trans,bReadOnly) {
-        const args = {
-            TestAPI: "WSM.APIOffsetEdges",
+        WSM.APIOffsetEdges = function(nHistoryID,nEdgeIDs,dOffsetDistance,trans,bReadOnly) {
+            const args = {
+                TestAPI: "WSM.APIOffsetEdges",
 nHistoryID: nHistoryID,
     nEdgeIDs: nEdgeIDs,
     dOffsetDistance: dOffsetDistance,
     trans: trans,
     bReadOnly: bReadOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICover = function(nHistoryID,aEdgeIDs,bMerge) {
-        const args = {
-            TestAPI: "WSM.APICover",
+        WSM.APICover = function(nHistoryID,aEdgeIDs,bMerge) {
+            const args = {
+                TestAPI: "WSM.APICover",
 nHistoryID: nHistoryID,
     aEdgeIDs: aEdgeIDs,
     bMerge: bMerge
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoft = function(nHistoryID,aaProfileIDs,bDeleteInteriorProfileFaces) {
-        const args = {
-            TestAPI: "WSM.APILoft",
+        WSM.APILoft = function(nHistoryID,aaProfileIDs,bDeleteInteriorProfileFaces) {
+            const args = {
+                TestAPI: "WSM.APILoft",
 nHistoryID: nHistoryID,
     aaProfileIDs: aaProfileIDs,
     bDeleteInteriorProfileFaces: bDeleteInteriorProfileFaces
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIExtrudeEdges = function(nHistoryID,aProfileIDs,t) {
-        const args = {
-            TestAPI: "WSM.APIExtrudeEdges",
+        WSM.APIExtrudeEdges = function(nHistoryID,aProfileIDs,t) {
+            const args = {
+                TestAPI: "WSM.APIExtrudeEdges",
 nHistoryID: nHistoryID,
     aProfileIDs: aProfileIDs,
     t: t
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadAXMFile = function(nHistoryID,sFilePath,isImport,logOutputPath) {
-        const args = {
-            TestAPI: "WSM.APILoadAXMFile",
+        WSM.APILoadAXMFile = function(nHistoryID,sFilePath,isImport,logOutputPath) {
+            const args = {
+                TestAPI: "WSM.APILoadAXMFile",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath,
     isImport: isImport,
     logOutputPath: logOutputPath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadMaterialsFromAXMFile = function(nHistoryID,sFilePath) {
-        const args = {
-            TestAPI: "WSM.APILoadMaterialsFromAXMFile",
+        WSM.APILoadMaterialsFromAXMFile = function(nHistoryID,sFilePath) {
+            const args = {
+                TestAPI: "WSM.APILoadMaterialsFromAXMFile",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveToAXMFileReadOnly = function(nHistoryID,aObjectIDs,sFilePath,aPreviewImage,bWithChildren) {
-        const args = {
-            TestAPI: "WSM.APISaveToAXMFileReadOnly",
+        WSM.APISaveToAXMFileReadOnly = function(nHistoryID,aObjectIDs,sFilePath,aPreviewImage,bWithChildren) {
+            const args = {
+                TestAPI: "WSM.APISaveToAXMFileReadOnly",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     sFilePath: sFilePath,
     aPreviewImage: aPreviewImage,
     bWithChildren: bWithChildren
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadFromFile = function(nHistoryID,sFilePath,eFileType,dMaxDistanceFromOrigin,dScaleFactor) {
-        const args = {
-            TestAPI: "WSM.APILoadFromFile",
+        WSM.APILoadFromFile = function(nHistoryID,sFilePath,eFileType,dMaxDistanceFromOrigin,dScaleFactor) {
+            const args = {
+                TestAPI: "WSM.APILoadFromFile",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath,
     eFileType: eFileType,
     dMaxDistanceFromOrigin: dMaxDistanceFromOrigin,
     dScaleFactor: dScaleFactor
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadFromFacets = function(nHistoryID,facetsData,dMaxDistanceFromOrigin,dRemoveDuplicateTol) {
-        const args = {
-            TestAPI: "WSM.APILoadFromFacets",
+        WSM.APILoadFromFacets = function(nHistoryID,facetsData,dMaxDistanceFromOrigin,dRemoveDuplicateTol) {
+            const args = {
+                TestAPI: "WSM.APILoadFromFacets",
 nHistoryID: nHistoryID,
     facetsData: facetsData,
     dMaxDistanceFromOrigin: dMaxDistanceFromOrigin,
     dRemoveDuplicateTol: dRemoveDuplicateTol
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveLastDeltaToBinaryFile = function(nHistoryID,sFilePath) {
-        const args = {
-            TestAPI: "WSM.APISaveLastDeltaToBinaryFile",
+        WSM.APISaveLastDeltaToBinaryFile = function(nHistoryID,sFilePath) {
+            const args = {
+                TestAPI: "WSM.APISaveLastDeltaToBinaryFile",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveDeltaToBinaryStringReadOnly = function(nHistoryID,nDeltaID) {
-        const args = {
-            TestAPI: "WSM.APISaveDeltaToBinaryStringReadOnly",
+        WSM.APISaveDeltaToBinaryStringReadOnly = function(nHistoryID,nDeltaID) {
+            const args = {
+                TestAPI: "WSM.APISaveDeltaToBinaryStringReadOnly",
 nHistoryID: nHistoryID,
     nDeltaID: nDeltaID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetLastDeltaIDReadOnly = function(nHistoryID,nBeforeLast) {
-        const args = {
-            TestAPI: "WSM.APIGetLastDeltaIDReadOnly",
+        WSM.APIGetLastDeltaIDReadOnly = function(nHistoryID,nBeforeLast) {
+            const args = {
+                TestAPI: "WSM.APIGetLastDeltaIDReadOnly",
 nHistoryID: nHistoryID,
     nBeforeLast: nBeforeLast
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveDeltaToSolidDefReadOnly = function(nHistoryID,bForUndo) {
-        const args = {
-            TestAPI: "WSM.APISaveDeltaToSolidDefReadOnly",
+        WSM.APISaveDeltaToSolidDefReadOnly = function(nHistoryID,bForUndo) {
+            const args = {
+                TestAPI: "WSM.APISaveDeltaToSolidDefReadOnly",
 nHistoryID: nHistoryID,
     bForUndo: bForUndo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIAddSolidDefGuids = function(nHistoryID,aObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIAddSolidDefGuids",
+        WSM.APIAddSolidDefGuids = function(nHistoryID,aObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIAddSolidDefGuids",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadDeltaFromBinaryString = function(nHistoryID,base64Str,nDeltaID,base64encoded) {
-        const args = {
-            TestAPI: "WSM.APILoadDeltaFromBinaryString",
+        WSM.APILoadDeltaFromBinaryString = function(nHistoryID,base64Str,nDeltaID,base64encoded) {
+            const args = {
+                TestAPI: "WSM.APILoadDeltaFromBinaryString",
 nHistoryID: nHistoryID,
     base64Str: base64Str,
     nDeltaID: nDeltaID,
     base64encoded: base64encoded
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveToFileReadOnly = function(nHistoryID,aObjectIDs,sFilePath,eFileType,bWithChildren,dExportScale,aExcludedObjects,aLayerDisplayedNegateVec) {
-        const args = {
-            TestAPI: "WSM.APISaveToFileReadOnly",
+        WSM.APISaveToFileReadOnly = function(nHistoryID,aObjectIDs,sFilePath,eFileType,bWithChildren,dExportScale,aExcludedObjects,aLayerDisplayedNegateVec) {
+            const args = {
+                TestAPI: "WSM.APISaveToFileReadOnly",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     sFilePath: sFilePath,
@@ -714,422 +652,384 @@ nHistoryID: nHistoryID,
     dExportScale: dExportScale,
     aExcludedObjects: aExcludedObjects,
     aLayerDisplayedNegateVec: aLayerDisplayedNegateVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveAllActiveObjectsToBinaryFileReadOnly = function(nHistoryID,sFilePath) {
-        const args = {
-            TestAPI: "WSM.APISaveAllActiveObjectsToBinaryFileReadOnly",
+        WSM.APISaveAllActiveObjectsToBinaryFileReadOnly = function(nHistoryID,sFilePath) {
+            const args = {
+                TestAPI: "WSM.APISaveAllActiveObjectsToBinaryFileReadOnly",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveHistoryToBinaryFileReadOnly = function(nHistoryID,sFilePath,aLayerDisplayedNegateVec) {
-        const args = {
-            TestAPI: "WSM.APISaveHistoryToBinaryFileReadOnly",
+        WSM.APISaveHistoryToBinaryFileReadOnly = function(nHistoryID,sFilePath,aLayerDisplayedNegateVec) {
+            const args = {
+                TestAPI: "WSM.APISaveHistoryToBinaryFileReadOnly",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath,
     aLayerDisplayedNegateVec: aLayerDisplayedNegateVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveHistoryToBinaryStringReadOnly = function(nHistoryID,bBase64Encode,aLayerDisplayedNegateVec) {
-        const args = {
-            TestAPI: "WSM.APISaveHistoryToBinaryStringReadOnly",
+        WSM.APISaveHistoryToBinaryStringReadOnly = function(nHistoryID,bBase64Encode,aLayerDisplayedNegateVec) {
+            const args = {
+                TestAPI: "WSM.APISaveHistoryToBinaryStringReadOnly",
 nHistoryID: nHistoryID,
     bBase64Encode: bBase64Encode,
     aLayerDisplayedNegateVec: aLayerDisplayedNegateVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISaveToStringReadOnly = function(nHistoryID,aObjectIDs,bWithChildren,aExcludedObjects,aLayerDisplayedNegateVec,eFileType) {
-        const args = {
-            TestAPI: "WSM.APISaveToStringReadOnly",
+        WSM.APISaveToStringReadOnly = function(nHistoryID,aObjectIDs,bWithChildren,aExcludedObjects,aLayerDisplayedNegateVec,eFileType) {
+            const args = {
+                TestAPI: "WSM.APISaveToStringReadOnly",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     bWithChildren: bWithChildren,
     aExcludedObjects: aExcludedObjects,
     aLayerDisplayedNegateVec: aLayerDisplayedNegateVec,
     eFileType: eFileType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadFromString = function(nHistoryID,saveString,eFileType,dMaxDistanceFromOrigin,dScaleFactor) {
-        const args = {
-            TestAPI: "WSM.APILoadFromString",
+        WSM.APILoadFromString = function(nHistoryID,saveString,eFileType,dMaxDistanceFromOrigin,dScaleFactor) {
+            const args = {
+                TestAPI: "WSM.APILoadFromString",
 nHistoryID: nHistoryID,
     saveString: saveString,
     eFileType: eFileType,
     dMaxDistanceFromOrigin: dMaxDistanceFromOrigin,
     dScaleFactor: dScaleFactor
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadHistoryFromBinaryString = function(nHistoryID,base64Str,base64encoded) {
-        const args = {
-            TestAPI: "WSM.APILoadHistoryFromBinaryString",
+        WSM.APILoadHistoryFromBinaryString = function(nHistoryID,base64Str,base64encoded) {
+            const args = {
+                TestAPI: "WSM.APILoadHistoryFromBinaryString",
 nHistoryID: nHistoryID,
     base64Str: base64Str,
     base64encoded: base64encoded
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILoadDeltaFromBinaryFile = function(nHistoryID,sFilePath) {
-        const args = {
-            TestAPI: "WSM.APILoadDeltaFromBinaryFile",
+        WSM.APILoadDeltaFromBinaryFile = function(nHistoryID,sFilePath) {
+            const args = {
+                TestAPI: "WSM.APILoadDeltaFromBinaryFile",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreatePolyline = function(nHistoryID,aPoint3ds,bForceClosed) {
-        const args = {
-            TestAPI: "WSM.APICreatePolyline",
+        WSM.APICreatePolyline = function(nHistoryID,aPoint3ds,bForceClosed) {
+            const args = {
+                TestAPI: "WSM.APICreatePolyline",
 nHistoryID: nHistoryID,
     aPoint3ds: aPoint3ds,
     bForceClosed: bForceClosed
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateExtrusion = function(nHistoryID,aPoint3ds,dist) {
-        const args = {
-            TestAPI: "WSM.APICreateExtrusion",
+        WSM.APICreateExtrusion = function(nHistoryID,aPoint3ds,dist) {
+            const args = {
+                TestAPI: "WSM.APICreateExtrusion",
 nHistoryID: nHistoryID,
     aPoint3ds: aPoint3ds,
     dist: dist
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateCylinder = function(nHistoryID,aPosCenter,aRadius,aHeight,aAccuracyORcount,aAxis) {
-        const args = {
-            TestAPI: "WSM.APICreateCylinder",
+        WSM.APICreateCylinder = function(nHistoryID,aPosCenter,aRadius,aHeight,aAccuracyORcount,aAxis) {
+            const args = {
+                TestAPI: "WSM.APICreateCylinder",
 nHistoryID: nHistoryID,
     aPosCenter: aPosCenter,
     aRadius: aRadius,
     aHeight: aHeight,
     aAccuracyORcount: aAccuracyORcount,
     aAxis: aAxis
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetBodyFacesReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetBodyFacesReadOnly",
+        WSM.APIGetBodyFacesReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetBodyFacesReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRegisterProgressCallbacksReadOnly = function(startCbkStr,progressCbkStr,finishCbkStr,progressIncrement,progressStart,progressEnd) {
-        const args = {
-            TestAPI: "WSM.APIRegisterProgressCallbacksReadOnly",
+        WSM.APIRegisterProgressCallbacksReadOnly = function(startCbkStr,progressCbkStr,finishCbkStr,progressIncrement,progressStart,progressEnd) {
+            const args = {
+                TestAPI: "WSM.APIRegisterProgressCallbacksReadOnly",
 startCbkStr: startCbkStr,
     progressCbkStr: progressCbkStr,
     finishCbkStr: finishCbkStr,
     progressIncrement: progressIncrement,
     progressStart: progressStart,
     progressEnd: progressEnd
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetTopLevelOwnersReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetTopLevelOwnersReadOnly",
+        WSM.APIGetTopLevelOwnersReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetTopLevelOwnersReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectsByTypeReadOnly = function(nHistoryID,nObjectID,nType,bUpstream) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectsByTypeReadOnly",
+        WSM.APIGetObjectsByTypeReadOnly = function(nHistoryID,nObjectID,nType,bUpstream) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectsByTypeReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     nType: nType,
     bUpstream: bUpstream
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllObjectsByTypeReadOnly = function(nHistoryID,nType) {
-        const args = {
-            TestAPI: "WSM.APIGetAllObjectsByTypeReadOnly",
+        WSM.APIGetAllObjectsByTypeReadOnly = function(nHistoryID,nType) {
+            const args = {
+                TestAPI: "WSM.APIGetAllObjectsByTypeReadOnly",
 nHistoryID: nHistoryID,
     nType: nType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectTypeReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectTypeReadOnly",
+        WSM.APIGetObjectTypeReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectTypeReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectNameReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectNameReadOnly",
+        WSM.APIGetObjectNameReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectNameReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectPropertiesReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectPropertiesReadOnly",
+        WSM.APIGetObjectPropertiesReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectPropertiesReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly = function(nHistoryID,nObjectType,bForUndo) {
-        const args = {
-            TestAPI: "WSM.APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly",
+        WSM.APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly = function(nHistoryID,nObjectType,bForUndo) {
+            const args = {
+                TestAPI: "WSM.APIGetCreatedChangedAndDeletedInActiveDeltaReadOnly",
 nHistoryID: nHistoryID,
     nObjectType: nObjectType,
     bForUndo: bForUndo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly = function(nHistoryID,nStartDelta,nEndDelta,aObjectTypes) {
-        const args = {
-            TestAPI: "WSM.APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly",
+        WSM.APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly = function(nHistoryID,nStartDelta,nEndDelta,aObjectTypes) {
+            const args = {
+                TestAPI: "WSM.APIGetCreatedChangedAndDeletedInDeltaRangeReadOnly",
 nHistoryID: nHistoryID,
     nStartDelta: nStartDelta,
     nEndDelta: nEndDelta,
     aObjectTypes: aObjectTypes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetEdgeOrVertexMarkedSmoothReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetEdgeOrVertexMarkedSmoothReadOnly",
+        WSM.APIGetEdgeOrVertexMarkedSmoothReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetEdgeOrVertexMarkedSmoothReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetEdgesOrVerticesMarkedSmooth = function(nHistoryID,aObjectIDs,bSmooth) {
-        const args = {
-            TestAPI: "WSM.APISetEdgesOrVerticesMarkedSmooth",
+        WSM.APISetEdgesOrVerticesMarkedSmooth = function(nHistoryID,aObjectIDs,bSmooth) {
+            const args = {
+                TestAPI: "WSM.APISetEdgesOrVerticesMarkedSmooth",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     bSmooth: bSmooth
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsEdgeSilhouetteReadOnly = function(nHistoryID,nEdgeID,cameraPos,cameraDir,bPerspectiveView) {
-        const args = {
-            TestAPI: "WSM.APIIsEdgeSilhouetteReadOnly",
+        WSM.APIIsEdgeSilhouetteReadOnly = function(nHistoryID,nEdgeID,cameraPos,cameraDir,bPerspectiveView) {
+            const args = {
+                TestAPI: "WSM.APIIsEdgeSilhouetteReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID,
     cameraPos: cameraPos,
     cameraDir: cameraDir,
     bPerspectiveView: bPerspectiveView
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDetectSilhouettesReadOnly = function(nHistoryID,nEdgeIDs,cameraPos,cameraDir,bPerspectiveView,bSmoothOnly) {
-        const args = {
-            TestAPI: "WSM.APIDetectSilhouettesReadOnly",
+        WSM.APIDetectSilhouettesReadOnly = function(nHistoryID,nEdgeIDs,cameraPos,cameraDir,bPerspectiveView,bSmoothOnly) {
+            const args = {
+                TestAPI: "WSM.APIDetectSilhouettesReadOnly",
 nHistoryID: nHistoryID,
     nEdgeIDs: nEdgeIDs,
     cameraPos: cameraPos,
     cameraDir: cameraDir,
     bPerspectiveView: bPerspectiveView,
     bSmoothOnly: bSmoothOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDetectFreeEdgesReadOnly = function(nHistoryID,nEdgeIDs) {
-        const args = {
-            TestAPI: "WSM.APIDetectFreeEdgesReadOnly",
+        WSM.APIDetectFreeEdgesReadOnly = function(nHistoryID,nEdgeIDs) {
+            const args = {
+                TestAPI: "WSM.APIDetectFreeEdgesReadOnly",
 nHistoryID: nHistoryID,
     nEdgeIDs: nEdgeIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsEdgeManifoldReadOnly = function(nHistoryID,nEdgeID) {
-        const args = {
-            TestAPI: "WSM.APIIsEdgeManifoldReadOnly",
+        WSM.APIIsEdgeManifoldReadOnly = function(nHistoryID,nEdgeID) {
+            const args = {
+                TestAPI: "WSM.APIIsEdgeManifoldReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFacePlaneReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetFacePlaneReadOnly",
+        WSM.APIGetFacePlaneReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetFacePlaneReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceCentroidPoint3dReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceCentroidPoint3dReadOnly",
+        WSM.APIGetFaceCentroidPoint3dReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceCentroidPoint3dReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceConnectedComponentReadOnly = function(nHistoryID,nFaceID,bUseVertices,bSmooth) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceConnectedComponentReadOnly",
+        WSM.APIGetFaceConnectedComponentReadOnly = function(nHistoryID,nFaceID,bUseVertices,bSmooth) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceConnectedComponentReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     bUseVertices: bUseVertices,
     bSmooth: bSmooth
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceVariantReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceVariantReadOnly",
+        WSM.APIGetFaceVariantReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceVariantReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceVertexNormalsReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceVertexNormalsReadOnly",
+        WSM.APIGetFaceVertexNormalsReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceVertexNormalsReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetVertexPoint3dReadOnly = function(nHistoryID,nVertexID) {
-        const args = {
-            TestAPI: "WSM.APIGetVertexPoint3dReadOnly",
+        WSM.APIGetVertexPoint3dReadOnly = function(nHistoryID,nVertexID) {
+            const args = {
+                TestAPI: "WSM.APIGetVertexPoint3dReadOnly",
 nHistoryID: nHistoryID,
     nVertexID: nVertexID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetIdOfActiveDeltaReadOnly = function(nHistoryID,nDeltaOffset) {
-        const args = {
-            TestAPI: "WSM.APIGetIdOfActiveDeltaReadOnly",
+        WSM.APIGetIdOfActiveDeltaReadOnly = function(nHistoryID,nDeltaOffset) {
+            const args = {
+                TestAPI: "WSM.APIGetIdOfActiveDeltaReadOnly",
 nHistoryID: nHistoryID,
     nDeltaOffset: nDeltaOffset
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetBodyEdgesReadOnly = function(nHistoryID,nBodyID) {
-        const args = {
-            TestAPI: "WSM.APIGetBodyEdgesReadOnly",
+        WSM.APIGetBodyEdgesReadOnly = function(nHistoryID,nBodyID) {
+            const args = {
+                TestAPI: "WSM.APIGetBodyEdgesReadOnly",
 nHistoryID: nHistoryID,
     nBodyID: nBodyID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllNonOwnedReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetAllNonOwnedReadOnly",
+        WSM.APIGetAllNonOwnedReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetAllNonOwnedReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllConnectedNonOwnedReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetAllConnectedNonOwnedReadOnly",
+        WSM.APIGetAllConnectedNonOwnedReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetAllConnectedNonOwnedReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRayFireReadOnly = function(nHistoryID,line3dPickRay,dRayRadius,bVertices,bEdges,bFaces) {
-        const args = {
-            TestAPI: "WSM.APIRayFireReadOnly",
+        WSM.APIRayFireReadOnly = function(nHistoryID,line3dPickRay,dRayRadius,bVertices,bEdges,bFaces) {
+            const args = {
+                TestAPI: "WSM.APIRayFireReadOnly",
 nHistoryID: nHistoryID,
     line3dPickRay: line3dPickRay,
     dRayRadius: dRayRadius,
     bVertices: bVertices,
     bEdges: bEdges,
     bFaces: bFaces
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRayFireSortedReadOnly = function(nHistoryID,line3dPickRay,dRayRadius,bVertices,bEdges,bFaces,dMaxParam,bSearchInGroups) {
-        const args = {
-            TestAPI: "WSM.APIRayFireSortedReadOnly",
+        WSM.APIRayFireSortedReadOnly = function(nHistoryID,line3dPickRay,dRayRadius,bVertices,bEdges,bFaces,dMaxParam,bSearchInGroups) {
+            const args = {
+                TestAPI: "WSM.APIRayFireSortedReadOnly",
 nHistoryID: nHistoryID,
     line3dPickRay: line3dPickRay,
     dRayRadius: dRayRadius,
@@ -1138,14 +1038,13 @@ nHistoryID: nHistoryID,
     bFaces: bFaces,
     dMaxParam: dMaxParam,
     bSearchInGroups: bSearchInGroups
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIntersectsNegativeSideOfPlanesReadOnly = function(nHistoryID,aPlanes,dTol,bVertices,bEdges,bFaces,bStrict,line3dPickRay,bSearchInGroups,bPickInstances) {
-        const args = {
-            TestAPI: "WSM.APIIntersectsNegativeSideOfPlanesReadOnly",
+        WSM.APIIntersectsNegativeSideOfPlanesReadOnly = function(nHistoryID,aPlanes,dTol,bVertices,bEdges,bFaces,bStrict,line3dPickRay,bSearchInGroups,bPickInstances) {
+            const args = {
+                TestAPI: "WSM.APIIntersectsNegativeSideOfPlanesReadOnly",
 nHistoryID: nHistoryID,
     aPlanes: aPlanes,
     dTol: dTol,
@@ -1156,199 +1055,180 @@ nHistoryID: nHistoryID,
     line3dPickRay: line3dPickRay,
     bSearchInGroups: bSearchInGroups,
     bPickInstances: bPickInstances
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APITransformObject = function(nHistoryID,nObjectID,transf3d) {
-        const args = {
-            TestAPI: "WSM.APITransformObject",
+        WSM.APITransformObject = function(nHistoryID,nObjectID,transf3d) {
+            const args = {
+                TestAPI: "WSM.APITransformObject",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     transf3d: transf3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APITransformObjects = function(nHistoryID,aObjectIDs,transf3d) {
-        const args = {
-            TestAPI: "WSM.APITransformObjects",
+        WSM.APITransformObjects = function(nHistoryID,aObjectIDs,transf3d) {
+            const args = {
+                TestAPI: "WSM.APITransformObjects",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     transf3d: transf3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDeleteObject = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIDeleteObject",
+        WSM.APIDeleteObject = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIDeleteObject",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDeleteObjects = function(nHistoryID,aObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIDeleteObjects",
+        WSM.APIDeleteObjects = function(nHistoryID,aObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIDeleteObjects",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateEmptyBody = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APICreateEmptyBody",
+        WSM.APICreateEmptyBody = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APICreateEmptyBody",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIAddFaceComponentToBody = function(nHistoryID,nFaceID,nBodyID) {
-        const args = {
-            TestAPI: "WSM.APIAddFaceComponentToBody",
+        WSM.APIAddFaceComponentToBody = function(nHistoryID,nFaceID,nBodyID) {
+            const args = {
+                TestAPI: "WSM.APIAddFaceComponentToBody",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     nBodyID: nBodyID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMoveVertices = function(nHistoryID,aVertexIDs,aNewVertexPositions) {
-        const args = {
-            TestAPI: "WSM.APIMoveVertices",
+        WSM.APIMoveVertices = function(nHistoryID,aVertexIDs,aNewVertexPositions) {
+            const args = {
+                TestAPI: "WSM.APIMoveVertices",
 nHistoryID: nHistoryID,
     aVertexIDs: aVertexIDs,
     aNewVertexPositions: aNewVertexPositions
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMoveObject = function(nHistoryID,objectID,displacement) {
-        const args = {
-            TestAPI: "WSM.APIMoveObject",
+        WSM.APIMoveObject = function(nHistoryID,objectID,displacement) {
+            const args = {
+                TestAPI: "WSM.APIMoveObject",
 nHistoryID: nHistoryID,
     objectID: objectID,
     displacement: displacement
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMoveObjects = function(nHistoryID,objectIDs,transf3d) {
-        const args = {
-            TestAPI: "WSM.APIMoveObjects",
+        WSM.APIMoveObjects = function(nHistoryID,objectIDs,transf3d) {
+            const args = {
+                TestAPI: "WSM.APIMoveObjects",
 nHistoryID: nHistoryID,
     objectIDs: objectIDs,
     transf3d: transf3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDumpResults = function() {
-        const args = {
-            TestAPI: "WSM.APIDumpResults"
+        WSM.APIDumpResults = function() {
+            const args = {
+                TestAPI: "WSM.APIDumpResults"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetResultsCount = function() {
-        const args = {
-            TestAPI: "WSM.APIGetResultsCount"
+        WSM.APIGetResultsCount = function() {
+            const args = {
+                TestAPI: "WSM.APIGetResultsCount"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIClearResults = function() {
-        const args = {
-            TestAPI: "WSM.APIClearResults"
+        WSM.APIClearResults = function() {
+            const args = {
+                TestAPI: "WSM.APIClearResults"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIConnectPoint3ds = function(nHistoryID,point3d1,point3d2) {
-        const args = {
-            TestAPI: "WSM.APIConnectPoint3ds",
+        WSM.APIConnectPoint3ds = function(nHistoryID,point3d1,point3d2) {
+            const args = {
+                TestAPI: "WSM.APIConnectPoint3ds",
 nHistoryID: nHistoryID,
     point3d1: point3d1,
     point3d2: point3d2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIConnectVertexAndPoint3d = function(nHistoryID,nVertexID,point3d) {
-        const args = {
-            TestAPI: "WSM.APIConnectVertexAndPoint3d",
+        WSM.APIConnectVertexAndPoint3d = function(nHistoryID,nVertexID,point3d) {
+            const args = {
+                TestAPI: "WSM.APIConnectVertexAndPoint3d",
 nHistoryID: nHistoryID,
     nVertexID: nVertexID,
     point3d: point3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIConnectVertices = function(nHistoryID,nVertexID1,nVertexID2) {
-        const args = {
-            TestAPI: "WSM.APIConnectVertices",
+        WSM.APIConnectVertices = function(nHistoryID,nVertexID1,nVertexID2) {
+            const args = {
+                TestAPI: "WSM.APIConnectVertices",
 nHistoryID: nHistoryID,
     nVertexID1: nVertexID1,
     nVertexID2: nVertexID2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIImprint = function(nHistoryID,nObjectID1,nObjectID2,bChangeBoth) {
-        const args = {
-            TestAPI: "WSM.APIImprint",
+        WSM.APIImprint = function(nHistoryID,nObjectID1,nObjectID2,bChangeBoth) {
+            const args = {
+                TestAPI: "WSM.APIImprint",
 nHistoryID: nHistoryID,
     nObjectID1: nObjectID1,
     nObjectID2: nObjectID2,
     bChangeBoth: bChangeBoth
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIImprintWithPlane = function(nHistoryID,nObjectID,plane) {
-        const args = {
-            TestAPI: "WSM.APIImprintWithPlane",
+        WSM.APIImprintWithPlane = function(nHistoryID,nObjectID,plane) {
+            const args = {
+                TestAPI: "WSM.APIImprintWithPlane",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     plane: plane
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsEdgeOnCircleReadOnly = function(nHistoryID,nEdgeID) {
-        const args = {
-            TestAPI: "WSM.APIIsEdgeOnCircleReadOnly",
+        WSM.APIIsEdgeOnCircleReadOnly = function(nHistoryID,nEdgeID) {
+            const args = {
+                TestAPI: "WSM.APIIsEdgeOnCircleReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIEditCircleEdges = function(nHistoryID,nEdgeIDs,radius,center,normal,xaxis,angle) {
-        const args = {
-            TestAPI: "WSM.APIEditCircleEdges",
+        WSM.APIEditCircleEdges = function(nHistoryID,nEdgeIDs,radius,center,normal,xaxis,angle) {
+            const args = {
+                TestAPI: "WSM.APIEditCircleEdges",
 nHistoryID: nHistoryID,
     nEdgeIDs: nEdgeIDs,
     radius: radius,
@@ -1356,363 +1236,329 @@ nHistoryID: nHistoryID,
     normal: normal,
     xaxis: xaxis,
     angle: angle
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsEdgeOnSplineReadOnly = function(nHistoryID,nEdgeID) {
-        const args = {
-            TestAPI: "WSM.APIIsEdgeOnSplineReadOnly",
+        WSM.APIIsEdgeOnSplineReadOnly = function(nHistoryID,nEdgeID) {
+            const args = {
+                TestAPI: "WSM.APIIsEdgeOnSplineReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIEditSplineEdges = function(nHistoryID,nEdgeIDs,aControlPoints,bClosed,startTangent,endTangent) {
-        const args = {
-            TestAPI: "WSM.APIEditSplineEdges",
+        WSM.APIEditSplineEdges = function(nHistoryID,nEdgeIDs,aControlPoints,bClosed,startTangent,endTangent) {
+            const args = {
+                TestAPI: "WSM.APIEditSplineEdges",
 nHistoryID: nHistoryID,
     nEdgeIDs: nEdgeIDs,
     aControlPoints: aControlPoints,
     bClosed: bClosed,
     startTangent: startTangent,
     endTangent: endTangent
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsFaceOnCylinderReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIIsFaceOnCylinderReadOnly",
+        WSM.APIIsFaceOnCylinderReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIIsFaceOnCylinderReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIEditCylinderFaces = function(nHistoryID,nFaceIDs,radius,center,normal,xaxis) {
-        const args = {
-            TestAPI: "WSM.APIEditCylinderFaces",
+        WSM.APIEditCylinderFaces = function(nHistoryID,nFaceIDs,radius,center,normal,xaxis) {
+            const args = {
+                TestAPI: "WSM.APIEditCylinderFaces",
 nHistoryID: nHistoryID,
     nFaceIDs: nFaceIDs,
     radius: radius,
     center: center,
     normal: normal,
     xaxis: xaxis
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsFaceOnSphereReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIIsFaceOnSphereReadOnly",
+        WSM.APIIsFaceOnSphereReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIIsFaceOnSphereReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIEditSphereFaces = function(nHistoryID,nFaceIDs,radius,center,normal,xaxis) {
-        const args = {
-            TestAPI: "WSM.APIEditSphereFaces",
+        WSM.APIEditSphereFaces = function(nHistoryID,nFaceIDs,radius,center,normal,xaxis) {
+            const args = {
+                TestAPI: "WSM.APIEditSphereFaces",
 nHistoryID: nHistoryID,
     nFaceIDs: nFaceIDs,
     radius: radius,
     center: center,
     normal: normal,
     xaxis: xaxis
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsFaceOnExtrudeReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIIsFaceOnExtrudeReadOnly",
+        WSM.APIIsFaceOnExtrudeReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIIsFaceOnExtrudeReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsFaceOnBlendReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIIsFaceOnBlendReadOnly",
+        WSM.APIIsFaceOnBlendReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIIsFaceOnBlendReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIUnite = function(nHistoryID,nObjectID1,nObjectID2,aExtraObjectsIDs) {
-        const args = {
-            TestAPI: "WSM.APIUnite",
+        WSM.APIUnite = function(nHistoryID,nObjectID1,nObjectID2,aExtraObjectsIDs) {
+            const args = {
+                TestAPI: "WSM.APIUnite",
 nHistoryID: nHistoryID,
     nObjectID1: nObjectID1,
     nObjectID2: nObjectID2,
     aExtraObjectsIDs: aExtraObjectsIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISubtract = function(nHistoryID,nObjectID1,nObjectID2,aExtraObjectsIDs) {
-        const args = {
-            TestAPI: "WSM.APISubtract",
+        WSM.APISubtract = function(nHistoryID,nObjectID1,nObjectID2,aExtraObjectsIDs) {
+            const args = {
+                TestAPI: "WSM.APISubtract",
 nHistoryID: nHistoryID,
     nObjectID1: nObjectID1,
     nObjectID2: nObjectID2,
     aExtraObjectsIDs: aExtraObjectsIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIUniteNonDestructive = function(blank,tools) {
-        const args = {
-            TestAPI: "WSM.APIUniteNonDestructive",
+        WSM.APIUniteNonDestructive = function(blank,tools) {
+            const args = {
+                TestAPI: "WSM.APIUniteNonDestructive",
 blank: blank,
     tools: tools
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISubtractNonDestructive = function(blank,tools) {
-        const args = {
-            TestAPI: "WSM.APISubtractNonDestructive",
+        WSM.APISubtractNonDestructive = function(blank,tools) {
+            const args = {
+                TestAPI: "WSM.APISubtractNonDestructive",
 blank: blank,
     tools: tools
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISeparate = function(nHistoryID,nBodyID) {
-        const args = {
-            TestAPI: "WSM.APISeparate",
+        WSM.APISeparate = function(nHistoryID,nBodyID) {
+            const args = {
+                TestAPI: "WSM.APISeparate",
 nHistoryID: nHistoryID,
     nBodyID: nBodyID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISlice = function(nHistoryID,nDestinationHistoryID,nObjectID,plane) {
-        const args = {
-            TestAPI: "WSM.APISlice",
+        WSM.APISlice = function(nHistoryID,nDestinationHistoryID,nObjectID,plane) {
+            const args = {
+                TestAPI: "WSM.APISlice",
 nHistoryID: nHistoryID,
     nDestinationHistoryID: nDestinationHistoryID,
     nObjectID: nObjectID,
     plane: plane
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetMemorySizeReadOnly = function(nHistoryID,bCollapsedHistoryWithLiveObjsOnly) {
-        const args = {
-            TestAPI: "WSM.APIGetMemorySizeReadOnly",
+        WSM.APIGetMemorySizeReadOnly = function(nHistoryID,bCollapsedHistoryWithLiveObjsOnly) {
+            const args = {
+                TestAPI: "WSM.APIGetMemorySizeReadOnly",
 nHistoryID: nHistoryID,
     bCollapsedHistoryWithLiveObjsOnly: bCollapsedHistoryWithLiveObjsOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetVersionReadOnly = function() {
-        const args = {
-            TestAPI: "WSM.APIGetVersionReadOnly"
+        WSM.APIGetVersionReadOnly = function() {
+            const args = {
+                TestAPI: "WSM.APIGetVersionReadOnly"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetBoxReadOnly = function(nHistoryID,nObjectID,transf) {
-        const args = {
-            TestAPI: "WSM.APIGetBoxReadOnly",
+        WSM.APIGetBoxReadOnly = function(nHistoryID,nObjectID,transf) {
+            const args = {
+                TestAPI: "WSM.APIGetBoxReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     transf: transf
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIEnableJournaling = function(nHistoryID,sFilePath,bIncludeReadOnly) {
-        const args = {
-            TestAPI: "WSM.APIEnableJournaling",
+        WSM.APIEnableJournaling = function(nHistoryID,sFilePath,bIncludeReadOnly) {
+            const args = {
+                TestAPI: "WSM.APIEnableJournaling",
 nHistoryID: nHistoryID,
     sFilePath: sFilePath,
     bIncludeReadOnly: bIncludeReadOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIEnableJournalingTypes = function(aTypes) {
-        const args = {
-            TestAPI: "WSM.APIEnableJournalingTypes",
+        WSM.APIEnableJournalingTypes = function(aTypes) {
+            const args = {
+                TestAPI: "WSM.APIEnableJournalingTypes",
 aTypes: aTypes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDisableJournaling = function() {
-        const args = {
-            TestAPI: "WSM.APIDisableJournaling"
+        WSM.APIDisableJournaling = function() {
+            const args = {
+                TestAPI: "WSM.APIDisableJournaling"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIFaceContainsPointReadOnly = function(nHistoryID,nFaceID,point) {
-        const args = {
-            TestAPI: "WSM.APIFaceContainsPointReadOnly",
+        WSM.APIFaceContainsPointReadOnly = function(nHistoryID,nFaceID,point) {
+            const args = {
+                TestAPI: "WSM.APIFaceContainsPointReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     point: point
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetInvalidID = function() {
-        const args = {
-            TestAPI: "WSM.APIGetInvalidID"
+        WSM.APIGetInvalidID = function() {
+            const args = {
+                TestAPI: "WSM.APIGetInvalidID"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIValidID = function(nID) {
-        const args = {
-            TestAPI: "WSM.APIValidID",
+        WSM.APIValidID = function(nID) {
+            const args = {
+                TestAPI: "WSM.APIValidID",
 nID: nID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.FacetsBodyData = function(m_points,m_polygonIndices,m_polygonSmoothingIds,m_colors,m_polygonColorIndices,m_pointColors) {
-        const args = {
-            TestAPI: "WSM.FacetsBodyData",
+        WSM.FacetsBodyData = function(m_points,m_polygonIndices,m_polygonSmoothingIds,m_colors,m_polygonColorIndices,m_pointColors) {
+            const args = {
+                TestAPI: "WSM.FacetsBodyData",
 m_points: m_points,
     m_polygonIndices: m_polygonIndices,
     m_polygonSmoothingIds: m_polygonSmoothingIds,
     m_colors: m_colors,
     m_polygonColorIndices: m_polygonColorIndices,
     m_pointColors: m_pointColors
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.GroupInstancePath = function(objectIDs) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath",
+        WSM.GroupInstancePath = function(objectIDs) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath",
 objectIDs: objectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.GroupInstancePathAreEqual = function(path1,path2) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePathAreEqual",
+        WSM.GroupInstancePathAreEqual = function(path1,path2) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePathAreEqual",
 path1: path1,
     path2: path2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.ObjectHistoryID = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.ObjectHistoryID",
+        WSM.ObjectHistoryID = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.ObjectHistoryID",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.ObjectHistoryIDAreEqual = function(id1,id2) {
-        const args = {
-            TestAPI: "WSM.ObjectHistoryIDAreEqual",
+        WSM.ObjectHistoryIDAreEqual = function(id1,id2) {
+            const args = {
+                TestAPI: "WSM.ObjectHistoryIDAreEqual",
 id1: id1,
     id2: id2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.Color = function(r,g,b,a) {
-        const args = {
-            TestAPI: "WSM.Color",
+        WSM.Color = function(r,g,b,a) {
+            const args = {
+                TestAPI: "WSM.Color",
 r: r,
     g: g,
     b: b,
     a: a
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.ColorAreEqual = function(c1,c2) {
-        const args = {
-            TestAPI: "WSM.ColorAreEqual",
+        WSM.ColorAreEqual = function(c1,c2) {
+            const args = {
+                TestAPI: "WSM.ColorAreEqual",
 c1: c1,
     c2: c2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetCoedgeDirectionReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetCoedgeDirectionReadOnly",
+        WSM.APIGetCoedgeDirectionReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetCoedgeDirectionReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetConvexityReadOnly = function(nHistoryID,nEdgeOrLoopID) {
-        const args = {
-            TestAPI: "WSM.APIGetConvexityReadOnly",
+        WSM.APIGetConvexityReadOnly = function(nHistoryID,nEdgeOrLoopID) {
+            const args = {
+                TestAPI: "WSM.APIGetConvexityReadOnly",
 nHistoryID: nHistoryID,
     nEdgeOrLoopID: nEdgeOrLoopID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetConvexityConnectedComponentReadOnly = function(nHistoryID,nLoopOrFaceID,nConvexity) {
-        const args = {
-            TestAPI: "WSM.APIGetConvexityConnectedComponentReadOnly",
+        WSM.APIGetConvexityConnectedComponentReadOnly = function(nHistoryID,nLoopOrFaceID,nConvexity) {
+            const args = {
+                TestAPI: "WSM.APIGetConvexityConnectedComponentReadOnly",
 nHistoryID: nHistoryID,
     nLoopOrFaceID: nLoopOrFaceID,
     nConvexity: nConvexity
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICopyOrSketchAndTransformObjects = function(nFromHistoryID,nToHistoryID,aFromObjectIDs,transform,nNumCopies,bGroupBodies,groupTransf3d) {
-        const args = {
-            TestAPI: "WSM.APICopyOrSketchAndTransformObjects",
+        WSM.APICopyOrSketchAndTransformObjects = function(nFromHistoryID,nToHistoryID,aFromObjectIDs,transform,nNumCopies,bGroupBodies,groupTransf3d) {
+            const args = {
+                TestAPI: "WSM.APICopyOrSketchAndTransformObjects",
 nFromHistoryID: nFromHistoryID,
     nToHistoryID: nToHistoryID,
     aFromObjectIDs: aFromObjectIDs,
@@ -1720,66 +1566,60 @@ nFromHistoryID: nFromHistoryID,
     nNumCopies: nNumCopies,
     bGroupBodies: bGroupBodies,
     groupTransf3d: groupTransf3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetObjectsMaterial = function(nHistoryID,aObjectIDs,nMaterialID) {
-        const args = {
-            TestAPI: "WSM.APISetObjectsMaterial",
+        WSM.APISetObjectsMaterial = function(nHistoryID,aObjectIDs,nMaterialID) {
+            const args = {
+                TestAPI: "WSM.APISetObjectsMaterial",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     nMaterialID: nMaterialID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetFaceBacksideMaterial = function(nHistoryID,aFaceIDs,nMaterialID) {
-        const args = {
-            TestAPI: "WSM.APISetFaceBacksideMaterial",
+        WSM.APISetFaceBacksideMaterial = function(nHistoryID,aFaceIDs,nMaterialID) {
+            const args = {
+                TestAPI: "WSM.APISetFaceBacksideMaterial",
 nHistoryID: nHistoryID,
     aFaceIDs: aFaceIDs,
     nMaterialID: nMaterialID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceBacksideMaterialReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceBacksideMaterialReadOnly",
+        WSM.APIGetFaceBacksideMaterialReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceBacksideMaterialReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectAttributesReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectAttributesReadOnly",
+        WSM.APIGetObjectAttributesReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectAttributesReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectMaterialReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectMaterialReadOnly",
+        WSM.APIGetObjectMaterialReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectMaterialReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateMaterial = function(nHistoryID,nColor,dHorizonalScale,dVerticalScale,nTextureID,sMaterialName,sMaterialIdentifier,aAdditionalRenderData,aAdditionalTextures) {
-        const args = {
-            TestAPI: "WSM.APICreateMaterial",
+        WSM.APICreateMaterial = function(nHistoryID,nColor,dHorizonalScale,dVerticalScale,nTextureID,sMaterialName,sMaterialIdentifier,aAdditionalRenderData,aAdditionalTextures) {
+            const args = {
+                TestAPI: "WSM.APICreateMaterial",
 nHistoryID: nHistoryID,
     nColor: nColor,
     dHorizonalScale: dHorizonalScale,
@@ -1789,14 +1629,13 @@ nHistoryID: nHistoryID,
     sMaterialIdentifier: sMaterialIdentifier,
     aAdditionalRenderData: aAdditionalRenderData,
     aAdditionalTextures: aAdditionalTextures
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateMaterialWithTexture = function(nHistoryID,nColor,dHorizonalScale,dVerticalScale,aBitmapData,bUseBitmapAlpha,sMaterialName,sMaterialIdentifier,aAdditionalRenderData,aAdditionalTextures,sTextureName) {
-        const args = {
-            TestAPI: "WSM.APICreateMaterialWithTexture",
+        WSM.APICreateMaterialWithTexture = function(nHistoryID,nColor,dHorizonalScale,dVerticalScale,aBitmapData,bUseBitmapAlpha,sMaterialName,sMaterialIdentifier,aAdditionalRenderData,aAdditionalTextures,sTextureName) {
+            const args = {
+                TestAPI: "WSM.APICreateMaterialWithTexture",
 nHistoryID: nHistoryID,
     nColor: nColor,
     dHorizonalScale: dHorizonalScale,
@@ -1808,230 +1647,209 @@ nHistoryID: nHistoryID,
     aAdditionalRenderData: aAdditionalRenderData,
     aAdditionalTextures: aAdditionalTextures,
     sTextureName: sTextureName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetMaterialColor = function(nHistoryID,nMaterialID,nColor) {
-        const args = {
-            TestAPI: "WSM.APISetMaterialColor",
+        WSM.APISetMaterialColor = function(nHistoryID,nMaterialID,nColor) {
+            const args = {
+                TestAPI: "WSM.APISetMaterialColor",
 nHistoryID: nHistoryID,
     nMaterialID: nMaterialID,
     nColor: nColor
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetMaterialData = function(nHistoryID,nMaterialID,nColor,dHorizontalScale,dVerticalScale,nTextureID) {
-        const args = {
-            TestAPI: "WSM.APISetMaterialData",
+        WSM.APISetMaterialData = function(nHistoryID,nMaterialID,nColor,dHorizontalScale,dVerticalScale,nTextureID) {
+            const args = {
+                TestAPI: "WSM.APISetMaterialData",
 nHistoryID: nHistoryID,
     nMaterialID: nMaterialID,
     nColor: nColor,
     dHorizontalScale: dHorizontalScale,
     dVerticalScale: dVerticalScale,
     nTextureID: nTextureID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetMaterialTexture = function(nHistoryID,nMaterialID,dHorizontalScale,dVerticalScale,nTextureID) {
-        const args = {
-            TestAPI: "WSM.APISetMaterialTexture",
+        WSM.APISetMaterialTexture = function(nHistoryID,nMaterialID,dHorizontalScale,dVerticalScale,nTextureID) {
+            const args = {
+                TestAPI: "WSM.APISetMaterialTexture",
 nHistoryID: nHistoryID,
     nMaterialID: nMaterialID,
     dHorizontalScale: dHorizontalScale,
     dVerticalScale: dVerticalScale,
     nTextureID: nTextureID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetMaterialDataReadOnly = function(nHistoryID,nMaterialID) {
-        const args = {
-            TestAPI: "WSM.APIGetMaterialDataReadOnly",
+        WSM.APIGetMaterialDataReadOnly = function(nHistoryID,nMaterialID) {
+            const args = {
+                TestAPI: "WSM.APIGetMaterialDataReadOnly",
 nHistoryID: nHistoryID,
     nMaterialID: nMaterialID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateTexture = function(nHistoryID,aBitmapData,bUseBitmapAlpha,sTextureName) {
-        const args = {
-            TestAPI: "WSM.APICreateTexture",
+        WSM.APICreateTexture = function(nHistoryID,aBitmapData,bUseBitmapAlpha,sTextureName) {
+            const args = {
+                TestAPI: "WSM.APICreateTexture",
 nHistoryID: nHistoryID,
     aBitmapData: aBitmapData,
     bUseBitmapAlpha: bUseBitmapAlpha,
     sTextureName: sTextureName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetTextureDataReadOnly = function(nHistoryID,nTextureID) {
-        const args = {
-            TestAPI: "WSM.APIGetTextureDataReadOnly",
+        WSM.APIGetTextureDataReadOnly = function(nHistoryID,nTextureID) {
+            const args = {
+                TestAPI: "WSM.APIGetTextureDataReadOnly",
 nHistoryID: nHistoryID,
     nTextureID: nTextureID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetTextureData = function(nHistoryID,nTextureID,aBitmapData,bUseBitmapAlpha) {
-        const args = {
-            TestAPI: "WSM.APISetTextureData",
+        WSM.APISetTextureData = function(nHistoryID,nTextureID,aBitmapData,bUseBitmapAlpha) {
+            const args = {
+                TestAPI: "WSM.APISetTextureData",
 nHistoryID: nHistoryID,
     nTextureID: nTextureID,
     aBitmapData: aBitmapData,
     bUseBitmapAlpha: bUseBitmapAlpha
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectTextureCoordinatesReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectTextureCoordinatesReadOnly",
+        WSM.APIGetObjectTextureCoordinatesReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectTextureCoordinatesReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateLevelObjects = function(nHistoryID,aLevelsData) {
-        const args = {
-            TestAPI: "WSM.APICreateLevelObjects",
+        WSM.APICreateLevelObjects = function(nHistoryID,aLevelsData) {
+            const args = {
+                TestAPI: "WSM.APICreateLevelObjects",
 nHistoryID: nHistoryID,
     aLevelsData: aLevelsData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetLevelsData = function(nHistoryID,aLevelIDs,aLevelsData) {
-        const args = {
-            TestAPI: "WSM.APISetLevelsData",
+        WSM.APISetLevelsData = function(nHistoryID,aLevelIDs,aLevelsData) {
+            const args = {
+                TestAPI: "WSM.APISetLevelsData",
 nHistoryID: nHistoryID,
     aLevelIDs: aLevelIDs,
     aLevelsData: aLevelsData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetLevelDataReadOnly = function(nHistoryID,nLevelID) {
-        const args = {
-            TestAPI: "WSM.APIGetLevelDataReadOnly",
+        WSM.APIGetLevelDataReadOnly = function(nHistoryID,nLevelID) {
+            const args = {
+                TestAPI: "WSM.APIGetLevelDataReadOnly",
 nHistoryID: nHistoryID,
     nLevelID: nLevelID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetObjectsLevels = function(nHistoryID,aObjectIDs,aLevelsIDs) {
-        const args = {
-            TestAPI: "WSM.APISetObjectsLevels",
+        WSM.APISetObjectsLevels = function(nHistoryID,aObjectIDs,aLevelsIDs) {
+            const args = {
+                TestAPI: "WSM.APISetObjectsLevels",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     aLevelsIDs: aLevelsIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectLayersReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectLayersReadOnly",
+        WSM.APIGetObjectLayersReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectLayersReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetObjectLevelsReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIGetObjectLevelsReadOnly",
+        WSM.APIGetObjectLevelsReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIGetObjectLevelsReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsObjectLiveReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIIsObjectLiveReadOnly",
+        WSM.APIIsObjectLiveReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIIsObjectLiveReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsHistoryLiveReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIIsHistoryLiveReadOnly",
+        WSM.APIIsHistoryLiveReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIIsHistoryLiveReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsNonOwnedReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIIsNonOwnedReadOnly",
+        WSM.APIIsNonOwnedReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIIsNonOwnedReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetLocalCoordinateSystemReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetLocalCoordinateSystemReadOnly",
+        WSM.APIGetLocalCoordinateSystemReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetLocalCoordinateSystemReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetLocalCoordinateSystem = function(nHistoryID,transf3d) {
-        const args = {
-            TestAPI: "WSM.APISetLocalCoordinateSystem",
+        WSM.APISetLocalCoordinateSystem = function(nHistoryID,transf3d) {
+            const args = {
+                TestAPI: "WSM.APISetLocalCoordinateSystem",
 nHistoryID: nHistoryID,
     transf3d: transf3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateImageObject = function(nHistoryID,sName,nTextureID,fAlphaValue,bFeaturesVisible,aCornersVector) {
-        const args = {
-            TestAPI: "WSM.APICreateImageObject",
+        WSM.APICreateImageObject = function(nHistoryID,sName,nTextureID,fAlphaValue,bFeaturesVisible,aCornersVector) {
+            const args = {
+                TestAPI: "WSM.APICreateImageObject",
 nHistoryID: nHistoryID,
     sName: sName,
     nTextureID: nTextureID,
     fAlphaValue: fAlphaValue,
     bFeaturesVisible: bFeaturesVisible,
     aCornersVector: aCornersVector
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateImageObjectWithTexture = function(nHistoryID,sName,fAlphaValue,bFeaturesVisible,aCornersVector,aBitmapData,sTextureName) {
-        const args = {
-            TestAPI: "WSM.APICreateImageObjectWithTexture",
+        WSM.APICreateImageObjectWithTexture = function(nHistoryID,sName,fAlphaValue,bFeaturesVisible,aCornersVector,aBitmapData,sTextureName) {
+            const args = {
+                TestAPI: "WSM.APICreateImageObjectWithTexture",
 nHistoryID: nHistoryID,
     sName: sName,
     fAlphaValue: fAlphaValue,
@@ -2039,14 +1857,13 @@ nHistoryID: nHistoryID,
     aCornersVector: aCornersVector,
     aBitmapData: aBitmapData,
     sTextureName: sTextureName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateSatelliteImageObject = function(nHistoryID,sName,nTextureID,fAlphaValue,bFeaturesVisible,aCornersVector,coordinates,coordinatesSpan,aPixelDimensionsVector) {
-        const args = {
-            TestAPI: "WSM.APICreateSatelliteImageObject",
+        WSM.APICreateSatelliteImageObject = function(nHistoryID,sName,nTextureID,fAlphaValue,bFeaturesVisible,aCornersVector,coordinates,coordinatesSpan,aPixelDimensionsVector) {
+            const args = {
+                TestAPI: "WSM.APICreateSatelliteImageObject",
 nHistoryID: nHistoryID,
     sName: sName,
     nTextureID: nTextureID,
@@ -2056,25 +1873,23 @@ nHistoryID: nHistoryID,
     coordinates: coordinates,
     coordinatesSpan: coordinatesSpan,
     aPixelDimensionsVector: aPixelDimensionsVector
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMoveImage = function(nHistoryID,nImageID,nShift) {
-        const args = {
-            TestAPI: "WSM.APIMoveImage",
+        WSM.APIMoveImage = function(nHistoryID,nImageID,nShift) {
+            const args = {
+                TestAPI: "WSM.APIMoveImage",
 nHistoryID: nHistoryID,
     nImageID: nImageID,
     nShift: nShift
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetImageData = function(nHistoryID,nImageID,sName,nTextureID,fAlphaValue,bFeaturesVisible,aCornersVector) {
-        const args = {
-            TestAPI: "WSM.APISetImageData",
+        WSM.APISetImageData = function(nHistoryID,nImageID,sName,nTextureID,fAlphaValue,bFeaturesVisible,aCornersVector) {
+            const args = {
+                TestAPI: "WSM.APISetImageData",
 nHistoryID: nHistoryID,
     nImageID: nImageID,
     sName: sName,
@@ -2082,89 +1897,81 @@ nHistoryID: nHistoryID,
     fAlphaValue: fAlphaValue,
     bFeaturesVisible: bFeaturesVisible,
     aCornersVector: aCornersVector
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceFacetsReadOnly = function(nHistoryID,nFaceID) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceFacetsReadOnly",
+        WSM.APIGetFaceFacetsReadOnly = function(nHistoryID,nFaceID) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceFacetsReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetSatelliteData = function(nHistoryID,nImageID,coordinates,coordinatesSpan,aPixelDimensions) {
-        const args = {
-            TestAPI: "WSM.APISetSatelliteData",
+        WSM.APISetSatelliteData = function(nHistoryID,nImageID,coordinates,coordinatesSpan,aPixelDimensions) {
+            const args = {
+                TestAPI: "WSM.APISetSatelliteData",
 nHistoryID: nHistoryID,
     nImageID: nImageID,
     coordinates: coordinates,
     coordinatesSpan: coordinatesSpan,
     aPixelDimensions: aPixelDimensions
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRemoveSatelliteData = function(nHistoryID,nImageID) {
-        const args = {
-            TestAPI: "WSM.APIRemoveSatelliteData",
+        WSM.APIRemoveSatelliteData = function(nHistoryID,nImageID) {
+            const args = {
+                TestAPI: "WSM.APIRemoveSatelliteData",
 nHistoryID: nHistoryID,
     nImageID: nImageID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetImageDataReadOnly = function(nHistoryID,nImageID) {
-        const args = {
-            TestAPI: "WSM.APIGetImageDataReadOnly",
+        WSM.APIGetImageDataReadOnly = function(nHistoryID,nImageID) {
+            const args = {
+                TestAPI: "WSM.APIGetImageDataReadOnly",
 nHistoryID: nHistoryID,
     nImageID: nImageID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetSatelliteDataReadOnly = function(nHistoryID,nImageID) {
-        const args = {
-            TestAPI: "WSM.APIGetSatelliteDataReadOnly",
+        WSM.APIGetSatelliteDataReadOnly = function(nHistoryID,nImageID) {
+            const args = {
+                TestAPI: "WSM.APIGetSatelliteDataReadOnly",
 nHistoryID: nHistoryID,
     nImageID: nImageID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateGroup = function(nHistoryID,aObjectIDs,aInstanceTransforms,nReferencedHistoryID,transGeometry) {
-        const args = {
-            TestAPI: "WSM.APICreateGroup",
+        WSM.APICreateGroup = function(nHistoryID,aObjectIDs,aInstanceTransforms,nReferencedHistoryID,transGeometry) {
+            const args = {
+                TestAPI: "WSM.APICreateGroup",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs,
     aInstanceTransforms: aInstanceTransforms,
     nReferencedHistoryID: nReferencedHistoryID,
     transGeometry: transGeometry
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetRevitFamilyInformationReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetRevitFamilyInformationReadOnly",
+        WSM.APIGetRevitFamilyInformationReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetRevitFamilyInformationReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetRevitFamilyInformation = function(nHistoryID,bIsGeneratedFromRFA,bIsGeneratedFromBuiltinRFA,familyCategory,familyReference,familyType,familyExtraData) {
-        const args = {
-            TestAPI: "WSM.APISetRevitFamilyInformation",
+        WSM.APISetRevitFamilyInformation = function(nHistoryID,bIsGeneratedFromRFA,bIsGeneratedFromBuiltinRFA,familyCategory,familyReference,familyType,familyExtraData) {
+            const args = {
+                TestAPI: "WSM.APISetRevitFamilyInformation",
 nHistoryID: nHistoryID,
     bIsGeneratedFromRFA: bIsGeneratedFromRFA,
     bIsGeneratedFromBuiltinRFA: bIsGeneratedFromBuiltinRFA,
@@ -2172,256 +1979,235 @@ nHistoryID: nHistoryID,
     familyReference: familyReference,
     familyType: familyType,
     familyExtraData: familyExtraData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetGroupReferencedHistoryReadOnly = function(nHistoryID,nGroupID) {
-        const args = {
-            TestAPI: "WSM.APIGetGroupReferencedHistoryReadOnly",
+        WSM.APIGetGroupReferencedHistoryReadOnly = function(nHistoryID,nGroupOrInstanceID,bDeletedInstanceOK) {
+            const args = {
+                TestAPI: "WSM.APIGetGroupReferencedHistoryReadOnly",
 nHistoryID: nHistoryID,
-    nGroupID: nGroupID
+    nGroupOrInstanceID: nGroupOrInstanceID,
+    bDeletedInstanceOK: bDeletedInstanceOK
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetAllAggregateTransf3dsReadOnly = function(nReferencedHistoryID,nTopMostHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetAllAggregateTransf3dsReadOnly",
+        WSM.APIGetAllAggregateTransf3dsReadOnly = function(nReferencedHistoryID,nTopMostHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetAllAggregateTransf3dsReadOnly",
 nReferencedHistoryID: nReferencedHistoryID,
     nTopMostHistoryID: nTopMostHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIFlattenGroupsOrInstances = function(nHistoryID,aGroupOrInstanceIDs,bRecursive) {
-        const args = {
-            TestAPI: "WSM.APIFlattenGroupsOrInstances",
+        WSM.APIFlattenGroupsOrInstances = function(nHistoryID,aGroupOrInstanceIDs,bRecursive) {
+            const args = {
+                TestAPI: "WSM.APIFlattenGroupsOrInstances",
 nHistoryID: nHistoryID,
     aGroupOrInstanceIDs: aGroupOrInstanceIDs,
     bRecursive: bRecursive
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIAddInstancesToGroup = function(nHistoryID,nGroupID,aTransforms) {
-        const args = {
-            TestAPI: "WSM.APIAddInstancesToGroup",
+        WSM.APIAddInstancesToGroup = function(nHistoryID,nGroupID,aTransforms) {
+            const args = {
+                TestAPI: "WSM.APIAddInstancesToGroup",
 nHistoryID: nHistoryID,
     nGroupID: nGroupID,
     aTransforms: aTransforms
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateSeparateHistoriesForInstances = function(nHistoryID,aInstanceIDs,bNewGroupPerInstance) {
-        const args = {
-            TestAPI: "WSM.APICreateSeparateHistoriesForInstances",
+        WSM.APICreateSeparateHistoriesForInstances = function(nHistoryID,aInstanceIDs,bNewGroupPerInstance) {
+            const args = {
+                TestAPI: "WSM.APICreateSeparateHistoriesForInstances",
 nHistoryID: nHistoryID,
     aInstanceIDs: aInstanceIDs,
     bNewGroupPerInstance: bNewGroupPerInstance
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateStringAttribute = function(nHistoryID,sKey,sValue,aObjIDs,nCopyBehavior,bIsSharedOnSplit) {
-        const args = {
-            TestAPI: "WSM.APICreateStringAttribute",
+        WSM.APICreateStringAttribute = function(nHistoryID,sKey,sValue,aObjIDs,nCopyBehavior,bIsSharedOnSplit) {
+            const args = {
+                TestAPI: "WSM.APICreateStringAttribute",
 nHistoryID: nHistoryID,
     sKey: sKey,
     sValue: sValue,
     aObjIDs: aObjIDs,
     nCopyBehavior: nCopyBehavior,
     bIsSharedOnSplit: bIsSharedOnSplit
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetStringAttributeKeyValueReadOnly = function(nHistoryID,nStringAttributeID) {
-        const args = {
-            TestAPI: "WSM.APIGetStringAttributeKeyValueReadOnly",
+        WSM.APIGetStringAttributeKeyValueReadOnly = function(nHistoryID,nStringAttributeID) {
+            const args = {
+                TestAPI: "WSM.APIGetStringAttributeKeyValueReadOnly",
 nHistoryID: nHistoryID,
     nStringAttributeID: nStringAttributeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetStringAttributeValue = function(nHistoryID,nStringAttributeID,sValue) {
-        const args = {
-            TestAPI: "WSM.APISetStringAttributeValue",
+        WSM.APISetStringAttributeValue = function(nHistoryID,nStringAttributeID,sValue) {
+            const args = {
+                TestAPI: "WSM.APISetStringAttributeValue",
 nHistoryID: nHistoryID,
     nStringAttributeID: nStringAttributeID,
     sValue: sValue
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetStringAttributesByKeyReadOnly = function(nHistoryID,nObjectID,sKey) {
-        const args = {
-            TestAPI: "WSM.APIGetStringAttributesByKeyReadOnly",
+        WSM.APIGetStringAttributesByKeyReadOnly = function(nHistoryID,nObjectID,sKey) {
+            const args = {
+                TestAPI: "WSM.APIGetStringAttributesByKeyReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID,
     sKey: sKey
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetRenderableFaceReadOnly = function(nHistoryID,nFaceID,bCalculateTexCoords,bBackSide) {
-        const args = {
-            TestAPI: "WSM.APIGetRenderableFaceReadOnly",
+        WSM.APIGetRenderableFaceReadOnly = function(nHistoryID,nFaceID,bCalculateTexCoords,bBackSide) {
+            const args = {
+                TestAPI: "WSM.APIGetRenderableFaceReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     bCalculateTexCoords: bCalculateTexCoords,
     bBackSide: bBackSide
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetFaceUVDataAttributes = function(nHistoryID,aFaceIDs,rTransf3d,bReplaceTransform,tformCenter) {
-        const args = {
-            TestAPI: "WSM.APISetFaceUVDataAttributes",
+        WSM.APISetFaceUVDataAttributes = function(nHistoryID,aFaceIDs,rTransf3d,bReplaceTransform,tformCenter,tformUVCenter) {
+            const args = {
+                TestAPI: "WSM.APISetFaceUVDataAttributes",
 nHistoryID: nHistoryID,
     aFaceIDs: aFaceIDs,
     rTransf3d: rTransf3d,
     bReplaceTransform: bReplaceTransform,
-    tformCenter: tformCenter
+    tformCenter: tformCenter,
+    tformUVCenter: tformUVCenter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceUVDataTransformReadOnly = function(nHistoryID,nFaceID,bBackSide) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceUVDataTransformReadOnly",
+        WSM.APIGetFaceUVDataTransformReadOnly = function(nHistoryID,nFaceID,bBackSide) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceUVDataTransformReadOnly",
 nHistoryID: nHistoryID,
     nFaceID: nFaceID,
     bBackSide: bBackSide
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetFaceUVDataAttributeUVsReadOnly = function(nHistoryID,nFaceUVDataAttributeID) {
-        const args = {
-            TestAPI: "WSM.APIGetFaceUVDataAttributeUVsReadOnly",
+        WSM.APIGetFaceUVDataAttributeUVsReadOnly = function(nHistoryID,nFaceUVDataAttributeID) {
+            const args = {
+                TestAPI: "WSM.APIGetFaceUVDataAttributeUVsReadOnly",
 nHistoryID: nHistoryID,
     nFaceUVDataAttributeID: nFaceUVDataAttributeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetEdgePointsReadOnly = function(nHistoryID,nEdgeID) {
-        const args = {
-            TestAPI: "WSM.APIGetEdgePointsReadOnly",
+        WSM.APIGetEdgePointsReadOnly = function(nHistoryID,nEdgeID) {
+            const args = {
+                TestAPI: "WSM.APIGetEdgePointsReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsHistoryNonTemporaryReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIIsHistoryNonTemporaryReadOnly",
+        WSM.APIIsHistoryNonTemporaryReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIIsHistoryNonTemporaryReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateLayer = function(nHistoryID,name,bDisplayed) {
-        const args = {
-            TestAPI: "WSM.APICreateLayer",
+        WSM.APICreateLayer = function(nHistoryID,name,bDisplayed) {
+            const args = {
+                TestAPI: "WSM.APICreateLayer",
 nHistoryID: nHistoryID,
     name: name,
     bDisplayed: bDisplayed
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetLayerDataReadOnly = function(nHistoryID,nLayerID) {
-        const args = {
-            TestAPI: "WSM.APIGetLayerDataReadOnly",
+        WSM.APIGetLayerDataReadOnly = function(nHistoryID,nLayerID) {
+            const args = {
+                TestAPI: "WSM.APIGetLayerDataReadOnly",
 nHistoryID: nHistoryID,
     nLayerID: nLayerID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetLayerData = function(nHistoryID,nLayerID,name,bDisplayed) {
-        const args = {
-            TestAPI: "WSM.APISetLayerData",
+        WSM.APISetLayerData = function(nHistoryID,nLayerID,name,bDisplayed) {
+            const args = {
+                TestAPI: "WSM.APISetLayerData",
 nHistoryID: nHistoryID,
     nLayerID: nLayerID,
     name: name,
     bDisplayed: bDisplayed
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetLayersDisplayed = function(nHistoryID,aLayerIDs,bDisplayed) {
-        const args = {
-            TestAPI: "WSM.APISetLayersDisplayed",
+        WSM.APISetLayersDisplayed = function(nHistoryID,aLayerIDs,bDisplayed) {
+            const args = {
+                TestAPI: "WSM.APISetLayersDisplayed",
 nHistoryID: nHistoryID,
     aLayerIDs: aLayerIDs,
     bDisplayed: bDisplayed
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIAddObjectsLayers = function(nHistoryID,aLayerIDs,aObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIAddObjectsLayers",
+        WSM.APIAddObjectsLayers = function(nHistoryID,aLayerIDs,aObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIAddObjectsLayers",
 nHistoryID: nHistoryID,
     aLayerIDs: aLayerIDs,
     aObjectIDs: aObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIRemoveObjectsLayers = function(nHistoryID,aLayerIDs,aObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIRemoveObjectsLayers",
+        WSM.APIRemoveObjectsLayers = function(nHistoryID,aLayerIDs,aObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIRemoveObjectsLayers",
 nHistoryID: nHistoryID,
     aLayerIDs: aLayerIDs,
     aObjectIDs: aObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIAddRemoveObjectsLayers = function(nHistoryID,aAddLayerIDs,aRemoveLayerIDs,aObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIAddRemoveObjectsLayers",
+        WSM.APIAddRemoveObjectsLayers = function(nHistoryID,aAddLayerIDs,aRemoveLayerIDs,aObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIAddRemoveObjectsLayers",
 nHistoryID: nHistoryID,
     aAddLayerIDs: aAddLayerIDs,
     aRemoveLayerIDs: aRemoveLayerIDs,
     aObjectIDs: aObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateGeometryFromData = function(nHistoryID,aTextures,aMaterials,aLayers,aInstances,aFaceCollections,aEdges,aCurves,aImages,aGroupName,bCreateMesh) {
-        const args = {
-            TestAPI: "WSM.APICreateGeometryFromData",
+        WSM.APICreateGeometryFromData = function(nHistoryID,aTextures,aMaterials,aLayers,aInstances,aFaceCollections,aEdges,aCurves,aImages,aGroupName,bCreateMesh) {
+            const args = {
+                TestAPI: "WSM.APICreateGeometryFromData",
 nHistoryID: nHistoryID,
     aTextures: aTextures,
     aMaterials: aMaterials,
@@ -2433,1591 +2219,1431 @@ nHistoryID: nHistoryID,
     aImages: aImages,
     aGroupName: aGroupName,
     bCreateMesh: bCreateMesh
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateEdgesFromData = function(nHistoryID,aLayers,aEdges,aCurves,bCreateMesh,accuracyORcount) {
-        const args = {
-            TestAPI: "WSM.APICreateEdgesFromData",
+        WSM.APICreateEdgesFromData = function(nHistoryID,aLayers,aEdges,aCurves,bCreateMesh,accuracyORcount) {
+            const args = {
+                TestAPI: "WSM.APICreateEdgesFromData",
 nHistoryID: nHistoryID,
     aLayers: aLayers,
     aEdges: aEdges,
     aCurves: aCurves,
     bCreateMesh: bCreateMesh,
     accuracyORcount: accuracyORcount
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsEdgeMergeableReadOnly = function(nHistoryID,nEdgeID,bUseMaterial) {
-        const args = {
-            TestAPI: "WSM.APIIsEdgeMergeableReadOnly",
+        WSM.APIIsEdgeMergeableReadOnly = function(nHistoryID,nEdgeID,bUseMaterial) {
+            const args = {
+                TestAPI: "WSM.APIIsEdgeMergeableReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID,
     bUseMaterial: bUseMaterial
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetEdgeStyleReadOnly = function(nHistoryID,nEdgeID) {
-        const args = {
-            TestAPI: "WSM.APIGetEdgeStyleReadOnly",
+        WSM.APIGetEdgeStyleReadOnly = function(nHistoryID,nEdgeID) {
+            const args = {
+                TestAPI: "WSM.APIGetEdgeStyleReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetEdgesStyle = function(nHistoryID,aEdgeIDs,nColor) {
-        const args = {
-            TestAPI: "WSM.APISetEdgesStyle",
+        WSM.APISetEdgesStyle = function(nHistoryID,aEdgeIDs,nColor) {
+            const args = {
+                TestAPI: "WSM.APISetEdgesStyle",
 nHistoryID: nHistoryID,
     aEdgeIDs: aEdgeIDs,
     nColor: nColor
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsExactMatchReadOnly = function(nHistoryID1,nHistoryID2,nObjectID1,nObjectID2) {
-        const args = {
-            TestAPI: "WSM.APIIsExactMatchReadOnly",
+        WSM.APIIsExactMatchReadOnly = function(nHistoryID1,nHistoryID2,nObjectID1,nObjectID2) {
+            const args = {
+                TestAPI: "WSM.APIIsExactMatchReadOnly",
 nHistoryID1: nHistoryID1,
     nHistoryID2: nHistoryID2,
     nObjectID1: nObjectID1,
     nObjectID2: nObjectID2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIDebugObjectReadOnly = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.APIDebugObjectReadOnly",
+        WSM.APIDebugObjectReadOnly = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.APIDebugObjectReadOnly",
 nHistoryID: nHistoryID,
     nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetDynamoModelInformationReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetDynamoModelInformationReadOnly",
+        WSM.APIGetDynamoModelInformationReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetDynamoModelInformationReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APISetDynamoModelInformation = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APISetDynamoModelInformation",
+        WSM.APISetDynamoModelInformation = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APISetDynamoModelInformation",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.Is32Bit = function() {
-        const args = {
-            TestAPI: "WSM.Is32Bit"
+        WSM.Is32Bit = function() {
+            const args = {
+                TestAPI: "WSM.Is32Bit"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetConnectedEdgesReadOnly = function(nHistoryID,nEdgeID,bBreakOnNonSmooth) {
-        const args = {
-            TestAPI: "WSM.APIGetConnectedEdgesReadOnly",
+        WSM.APIGetConnectedEdgesReadOnly = function(nHistoryID,nEdgeID,bBreakOnNonSmooth) {
+            const args = {
+                TestAPI: "WSM.APIGetConnectedEdgesReadOnly",
 nHistoryID: nHistoryID,
     nEdgeID: nEdgeID,
     bBreakOnNonSmooth: bBreakOnNonSmooth
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetEnabledJournalingTypesReadOnly = function() {
-        const args = {
-            TestAPI: "WSM.APIGetEnabledJournalingTypesReadOnly"
+        WSM.APIGetEnabledJournalingTypesReadOnly = function() {
+            const args = {
+                TestAPI: "WSM.APIGetEnabledJournalingTypesReadOnly"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetHistoryReferencingGroupsReadOnly = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.APIGetHistoryReferencingGroupsReadOnly",
+        WSM.APIGetHistoryReferencingGroupsReadOnly = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.APIGetHistoryReferencingGroupsReadOnly",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetInstanceTransf3dReadOnly = function(nHistoryID,nInstanceID) {
-        const args = {
-            TestAPI: "WSM.APIGetInstanceTransf3dReadOnly",
+        WSM.APIGetInstanceTransf3dReadOnly = function(nHistoryID,nInstanceID) {
+            const args = {
+                TestAPI: "WSM.APIGetInstanceTransf3dReadOnly",
 nHistoryID: nHistoryID,
     nInstanceID: nInstanceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetPointsFromObjectIDsReadOnly = function(nHistoryID,aIDs) {
-        const args = {
-            TestAPI: "WSM.APIGetPointsFromObjectIDsReadOnly",
+        WSM.APIGetPointsFromObjectIDsReadOnly = function(nHistoryID,aIDs) {
+            const args = {
+                TestAPI: "WSM.APIGetPointsFromObjectIDsReadOnly",
 nHistoryID: nHistoryID,
     aIDs: aIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsJournalingReadOnly = function() {
-        const args = {
-            TestAPI: "WSM.APIIsJournalingReadOnly"
+        WSM.APIIsJournalingReadOnly = function() {
+            const args = {
+                TestAPI: "WSM.APIIsJournalingReadOnly"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICleanModel = function(nHistoryID,dEdgeTol) {
-        const args = {
-            TestAPI: "WSM.APICleanModel",
+        WSM.APICleanModel = function(nHistoryID,dEdgeTol) {
+            const args = {
+                TestAPI: "WSM.APICleanModel",
 nHistoryID: nHistoryID,
     dEdgeTol: dEdgeTol
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateMesh = function(nHistoryID,aPoints,aTriangles,aNormals,aUVs,aColors) {
-        const args = {
-            TestAPI: "WSM.APICreateMesh",
+        WSM.APICreateMesh = function(nHistoryID,aPoints,aTriangles,aNormals,aUVs,aColors) {
+            const args = {
+                TestAPI: "WSM.APICreateMesh",
 nHistoryID: nHistoryID,
     aPoints: aPoints,
     aTriangles: aTriangles,
     aNormals: aNormals,
     aUVs: aUVs,
     aColors: aColors
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetMeshDataReadOnly = function(nHistoryID,nMeshID) {
-        const args = {
-            TestAPI: "WSM.APIGetMeshDataReadOnly",
+        WSM.APIGetMeshDataReadOnly = function(nHistoryID,nMeshID) {
+            const args = {
+                TestAPI: "WSM.APIGetMeshDataReadOnly",
 nHistoryID: nHistoryID,
     nMeshID: nMeshID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMeshContainsPointReadOnly = function(nHistoryID,nMeshID,point) {
-        const args = {
-            TestAPI: "WSM.APIMeshContainsPointReadOnly",
+        WSM.APIMeshContainsPointReadOnly = function(nHistoryID,nMeshID,point) {
+            const args = {
+                TestAPI: "WSM.APIMeshContainsPointReadOnly",
 nHistoryID: nHistoryID,
     nMeshID: nMeshID,
     point: point
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMeshPointOnOrInsideIfManifoldReadOnly = function(nHistoryID,nMeshID,point) {
-        const args = {
-            TestAPI: "WSM.APIMeshPointOnOrInsideIfManifoldReadOnly",
+        WSM.APIMeshPointOnOrInsideIfManifoldReadOnly = function(nHistoryID,nMeshID,point) {
+            const args = {
+                TestAPI: "WSM.APIMeshPointOnOrInsideIfManifoldReadOnly",
 nHistoryID: nHistoryID,
     nMeshID: nMeshID,
     point: point
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMeshComputeSilhouetteEdgesReadOnly = function(nHistoryID,nMeshID,cameraPos,cameraDir,bPerspectiveView) {
-        const args = {
-            TestAPI: "WSM.APIMeshComputeSilhouetteEdgesReadOnly",
+        WSM.APIMeshComputeSilhouetteEdgesReadOnly = function(nHistoryID,nMeshID,cameraPos,cameraDir,bPerspectiveView) {
+            const args = {
+                TestAPI: "WSM.APIMeshComputeSilhouetteEdgesReadOnly",
 nHistoryID: nHistoryID,
     nMeshID: nMeshID,
     cameraPos: cameraPos,
     cameraDir: cameraDir,
     bPerspectiveView: bPerspectiveView
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIMeshComputeNonSmoothEdgesReadOnly = function(nHistoryID,nMeshID,dCosSmoothAngle) {
-        const args = {
-            TestAPI: "WSM.APIMeshComputeNonSmoothEdgesReadOnly",
+        WSM.APIMeshComputeNonSmoothEdgesReadOnly = function(nHistoryID,nMeshID,dCosSmoothAngle) {
+            const args = {
+                TestAPI: "WSM.APIMeshComputeNonSmoothEdgesReadOnly",
 nHistoryID: nHistoryID,
     nMeshID: nMeshID,
     dCosSmoothAngle: dCosSmoothAngle
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIConvertMeshesToObjects = function(nHistoryID,aMeshIDs,dCosSmoothAngle) {
-        const args = {
-            TestAPI: "WSM.APIConvertMeshesToObjects",
+        WSM.APIConvertMeshesToObjects = function(nHistoryID,aMeshIDs,dCosSmoothAngle) {
+            const args = {
+                TestAPI: "WSM.APIConvertMeshesToObjects",
 nHistoryID: nHistoryID,
     aMeshIDs: aMeshIDs,
     dCosSmoothAngle: dCosSmoothAngle
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILinkMeshesForConversion = function(nHistoryID,aMeshIDs) {
-        const args = {
-            TestAPI: "WSM.APILinkMeshesForConversion",
+        WSM.APILinkMeshesForConversion = function(nHistoryID,aMeshIDs) {
+            const args = {
+                TestAPI: "WSM.APILinkMeshesForConversion",
 nHistoryID: nHistoryID,
     aMeshIDs: aMeshIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIConvertObjectsToMeshes = function(nHistoryID,aObjectIDs) {
-        const args = {
-            TestAPI: "WSM.APIConvertObjectsToMeshes",
+        WSM.APIConvertObjectsToMeshes = function(nHistoryID,aObjectIDs) {
+            const args = {
+                TestAPI: "WSM.APIConvertObjectsToMeshes",
 nHistoryID: nHistoryID,
     aObjectIDs: aObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateVertex = function(nHistoryID,position) {
-        const args = {
-            TestAPI: "WSM.APICreateVertex",
+        WSM.APICreateVertex = function(nHistoryID,position) {
+            const args = {
+                TestAPI: "WSM.APICreateVertex",
 nHistoryID: nHistoryID,
     position: position
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIFlattenFaces = function(nHistoryID,aFaceIDs,dTol) {
-        const args = {
-            TestAPI: "WSM.APIFlattenFaces",
+        WSM.APIFlattenFaces = function(nHistoryID,aFaceIDs,dTol) {
+            const args = {
+                TestAPI: "WSM.APIFlattenFaces",
 nHistoryID: nHistoryID,
     aFaceIDs: aFaceIDs,
     dTol: dTol
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreateLineMesh = function(nHistoryID,aPoints,aIndices,aCounts) {
-        const args = {
-            TestAPI: "WSM.APICreateLineMesh",
+        WSM.APICreateLineMesh = function(nHistoryID,aPoints,aIndices,aCounts) {
+            const args = {
+                TestAPI: "WSM.APICreateLineMesh",
 nHistoryID: nHistoryID,
     aPoints: aPoints,
     aIndices: aIndices,
     aCounts: aCounts
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetLineMeshDataReadOnly = function(nHistoryID,nLineMeshID) {
-        const args = {
-            TestAPI: "WSM.APIGetLineMeshDataReadOnly",
+        WSM.APIGetLineMeshDataReadOnly = function(nHistoryID,nLineMeshID) {
+            const args = {
+                TestAPI: "WSM.APIGetLineMeshDataReadOnly",
 nHistoryID: nHistoryID,
     nLineMeshID: nLineMeshID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILineMeshContainsPointReadOnly = function(nHistoryID,nLineMeshID,point) {
-        const args = {
-            TestAPI: "WSM.APILineMeshContainsPointReadOnly",
+        WSM.APILineMeshContainsPointReadOnly = function(nHistoryID,nLineMeshID,point) {
+            const args = {
+                TestAPI: "WSM.APILineMeshContainsPointReadOnly",
 nHistoryID: nHistoryID,
     nLineMeshID: nLineMeshID,
     point: point
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APILineMeshGetPointsOnNegativeSideOfPlanesReadOnly = function(nHistoryID,nLineMeshID,aPlanes,line3dPickRay,dTol) {
-        const args = {
-            TestAPI: "WSM.APILineMeshGetPointsOnNegativeSideOfPlanesReadOnly",
+        WSM.APILineMeshGetPointsOnNegativeSideOfPlanesReadOnly = function(nHistoryID,nLineMeshID,aPlanes,line3dPickRay,dTol) {
+            const args = {
+                TestAPI: "WSM.APILineMeshGetPointsOnNegativeSideOfPlanesReadOnly",
 nHistoryID: nHistoryID,
     nLineMeshID: nLineMeshID,
     aPlanes: aPlanes,
     line3dPickRay: line3dPickRay,
     dTol: dTol
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APICreatePointMesh = function(nHistoryID,aPoints) {
-        const args = {
-            TestAPI: "WSM.APICreatePointMesh",
+        WSM.APICreatePointMesh = function(nHistoryID,aPoints) {
+            const args = {
+                TestAPI: "WSM.APICreatePointMesh",
 nHistoryID: nHistoryID,
     aPoints: aPoints
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIGetPointMeshDataReadOnly = function(nHistoryID,nPointMeshID) {
-        const args = {
-            TestAPI: "WSM.APIGetPointMeshDataReadOnly",
+        WSM.APIGetPointMeshDataReadOnly = function(nHistoryID,nPointMeshID) {
+            const args = {
+                TestAPI: "WSM.APIGetPointMeshDataReadOnly",
 nHistoryID: nHistoryID,
     nPointMeshID: nPointMeshID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIPointMeshContainsPointReadOnly = function(nHistoryID,nPointMeshID,point) {
-        const args = {
-            TestAPI: "WSM.APIPointMeshContainsPointReadOnly",
+        WSM.APIPointMeshContainsPointReadOnly = function(nHistoryID,nPointMeshID,point) {
+            const args = {
+                TestAPI: "WSM.APIPointMeshContainsPointReadOnly",
 nHistoryID: nHistoryID,
     nPointMeshID: nPointMeshID,
     point: point
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIIsMeshManifoldReadOnly = function(nHistoryID,nMeshID) {
-        const args = {
-            TestAPI: "WSM.APIIsMeshManifoldReadOnly",
+        WSM.APIIsMeshManifoldReadOnly = function(nHistoryID,nMeshID) {
+            const args = {
+                TestAPI: "WSM.APIIsMeshManifoldReadOnly",
 nHistoryID: nHistoryID,
     nMeshID: nMeshID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    WSM.APIPointMeshGetPointsOnNegativeSideOfPlanesReadOnly = function(nHistoryID,nPointMeshID,aPlanes,dTol) {
-        const args = {
-            TestAPI: "WSM.APIPointMeshGetPointsOnNegativeSideOfPlanesReadOnly",
+        WSM.APIPointMeshGetPointsOnNegativeSideOfPlanesReadOnly = function(nHistoryID,nPointMeshID,aPlanes,dTol) {
+            const args = {
+                TestAPI: "WSM.APIPointMeshGetPointsOnNegativeSideOfPlanesReadOnly",
 nHistoryID: nHistoryID,
     nPointMeshID: nPointMeshID,
     aPlanes: aPlanes,
     dTol: dTol
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.InferenceEngine = {};
-        
-    WSM.InferenceEngine.FindInputPoint = function(pickRay,previousInputPoint) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.FindInputPoint",
+
+        WSM.InferenceEngine.FindInputPoint = function(pickRay,previousInputPoint) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.FindInputPoint",
 pickRay: pickRay,
         previousInputPoint: previousInputPoint
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.Reset = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.Reset"
+        WSM.InferenceEngine.Reset = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.Reset"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.Reset = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.Reset"
+        WSM.InferenceEngine.Reset = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.Reset"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.FindInputPoint = function(pickRay,previousInputPoint) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.FindInputPoint",
+        WSM.InferenceEngine.FindInputPoint = function(pickRay,previousInputPoint) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.FindInputPoint",
 pickRay: pickRay,
         previousInputPoint: previousInputPoint
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.InputPointsAreEqual = function(inputPoint1,inputPoint2) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.InputPointsAreEqual",
+        WSM.InferenceEngine.InputPointsAreEqual = function(inputPoint1,inputPoint2) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.InputPointsAreEqual",
 inputPoint1: inputPoint1,
         inputPoint2: inputPoint2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.DisableHoveredInferences = function(disable) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.DisableHoveredInferences",
+        WSM.InferenceEngine.DisableHoveredInferences = function(disable) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.DisableHoveredInferences",
 disable: disable
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.PushHoveredLineInference = function(inference) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.PushHoveredLineInference",
+        WSM.InferenceEngine.PushHoveredLineInference = function(inference) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.PushHoveredLineInference",
 inference: inference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.PushHoveredPointInference = function(inference) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.PushHoveredPointInference",
+        WSM.InferenceEngine.PushHoveredPointInference = function(inference) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.PushHoveredPointInference",
 inference: inference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.AddPointInference = function(inference) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.AddPointInference",
+        WSM.InferenceEngine.AddPointInference = function(inference) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.AddPointInference",
 inference: inference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.AddLineInference = function(inference) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.AddLineInference",
+        WSM.InferenceEngine.AddLineInference = function(inference) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.AddLineInference",
 inference: inference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.AddPlaneInference = function(inference) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.AddPlaneInference",
+        WSM.InferenceEngine.AddPlaneInference = function(inference) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.AddPlaneInference",
 inference: inference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.LockInference = function(inference) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.LockInference",
+        WSM.InferenceEngine.LockInference = function(inference) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.LockInference",
 inference: inference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.ReleaseLockedInference = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.ReleaseLockedInference"
+        WSM.InferenceEngine.ReleaseLockedInference = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.ReleaseLockedInference"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.HaveLockedInference = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.HaveLockedInference"
+        WSM.InferenceEngine.HaveLockedInference = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.HaveLockedInference"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.SetVertexSnappingOnSplines = function(snap) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.SetVertexSnappingOnSplines",
+        WSM.InferenceEngine.SetVertexSnappingOnSplines = function(snap) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.SetVertexSnappingOnSplines",
 snap: snap
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.SetUseExternalInputPointFinder = function(use) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.SetUseExternalInputPointFinder",
+        WSM.InferenceEngine.SetUseExternalInputPointFinder = function(use) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.SetUseExternalInputPointFinder",
 use: use
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.SetUseExternalInputPointFinderForTesting = function(use) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.SetUseExternalInputPointFinderForTesting",
+        WSM.InferenceEngine.SetUseExternalInputPointFinderForTesting = function(use) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.SetUseExternalInputPointFinderForTesting",
 use: use
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.IgnoreObject = function(nObjectID,andChildren) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.IgnoreObject",
+        WSM.InferenceEngine.IgnoreObject = function(nObjectID,andChildren) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.IgnoreObject",
 nObjectID: nObjectID,
         andChildren: andChildren
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.ClearIgnoreObjects = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.ClearIgnoreObjects"
+        WSM.InferenceEngine.ClearIgnoreObjects = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.ClearIgnoreObjects"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.UseAsObscuringObject = function(nObjectID,andChildren) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.UseAsObscuringObject",
+        WSM.InferenceEngine.UseAsObscuringObject = function(nObjectID,andChildren) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.UseAsObscuringObject",
 nObjectID: nObjectID,
         andChildren: andChildren
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.LineInference = function(line3d,lineInferenceType) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.LineInference",
+        WSM.InferenceEngine.LineInference = function(line3d,lineInferenceType) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.LineInference",
 line3d: line3d,
         lineInferenceType: lineInferenceType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.PointInference = function(point3d) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.PointInference",
+        WSM.InferenceEngine.PointInference = function(point3d) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.PointInference",
 point3d: point3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.InputPoint = function(point3d) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.InputPoint",
+        WSM.InferenceEngine.InputPoint = function(point3d) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.InputPoint",
 point3d: point3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.AddLineInferencesForObject = function(groupInstancePath) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.AddLineInferencesForObject",
+        WSM.InferenceEngine.AddLineInferencesForObject = function(groupInstancePath) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.AddLineInferencesForObject",
 groupInstancePath: groupInstancePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.SetHoveredInferencesEnabled = function(enabled) {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.SetHoveredInferencesEnabled",
+        WSM.InferenceEngine.SetHoveredInferencesEnabled = function(enabled) {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.SetHoveredInferencesEnabled",
 enabled: enabled
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.ClearCustomPointInferences = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.ClearCustomPointInferences"
+        WSM.InferenceEngine.ClearCustomPointInferences = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.ClearCustomPointInferences"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.ClearCustomLineInferences = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.ClearCustomLineInferences"
+        WSM.InferenceEngine.ClearCustomLineInferences = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.ClearCustomLineInferences"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.InferenceEngine.ClearCustomPlaneInference = function() {
-        const args = {
-            TestAPI: "WSM.InferenceEngine.ClearCustomPlaneInference"
+        WSM.InferenceEngine.ClearCustomPlaneInference = function() {
+            const args = {
+                TestAPI: "WSM.InferenceEngine.ClearCustomPlaneInference"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.Geom = {};
-        
-    WSM.Geom.Interval3d = function(minPoint3d,maxPoint3d) {
-        const args = {
-            TestAPI: "WSM.Geom.Interval3d",
+
+        WSM.Geom.Interval3d = function(minPoint3d,maxPoint3d) {
+            const args = {
+                TestAPI: "WSM.Geom.Interval3d",
 minPoint3d: minPoint3d,
         maxPoint3d: maxPoint3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Interval3dAreEqual = function(interval3d1,interval3d2) {
-        const args = {
-            TestAPI: "WSM.Geom.Interval3dAreEqual",
+        WSM.Geom.Interval3dAreEqual = function(interval3d1,interval3d2) {
+            const args = {
+                TestAPI: "WSM.Geom.Interval3dAreEqual",
 interval3d1: interval3d1,
         interval3d2: interval3d2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.MakeRotationTransform = function(axis,angle) {
-        const args = {
-            TestAPI: "WSM.Geom.MakeRotationTransform",
+        WSM.Geom.MakeRotationTransform = function(axis,angle) {
+            const args = {
+                TestAPI: "WSM.Geom.MakeRotationTransform",
 axis: axis,
         angle: angle
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.MakeScalingTransform = function(scaleCenter,factorVec) {
-        const args = {
-            TestAPI: "WSM.Geom.MakeScalingTransform",
+        WSM.Geom.MakeScalingTransform = function(scaleCenter,factorVec) {
+            const args = {
+                TestAPI: "WSM.Geom.MakeScalingTransform",
 scaleCenter: scaleCenter,
         factorVec: factorVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.MakeRigidTransform = function(origin,xDir,yDir,zDir) {
-        const args = {
-            TestAPI: "WSM.Geom.MakeRigidTransform",
+        WSM.Geom.MakeRigidTransform = function(origin,xDir,yDir,zDir) {
+            const args = {
+                TestAPI: "WSM.Geom.MakeRigidTransform",
 origin: origin,
         xDir: xDir,
         yDir: yDir,
         zDir: zDir
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.TranslateTransform = function(trans,moveVec) {
-        const args = {
-            TestAPI: "WSM.Geom.TranslateTransform",
+        WSM.Geom.TranslateTransform = function(trans,moveVec) {
+            const args = {
+                TestAPI: "WSM.Geom.TranslateTransform",
 trans: trans,
         moveVec: moveVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Transf3d = function() {
-        const args = {
-            TestAPI: "WSM.Geom.Transf3d"
+        WSM.Geom.Transf3d = function() {
+            const args = {
+                TestAPI: "WSM.Geom.Transf3d"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.InvertTransform = function(trans) {
-        const args = {
-            TestAPI: "WSM.Geom.InvertTransform",
+        WSM.Geom.InvertTransform = function(trans) {
+            const args = {
+                TestAPI: "WSM.Geom.InvertTransform",
 trans: trans
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.IsIdentityTransform = function(trans) {
-        const args = {
-            TestAPI: "WSM.Geom.IsIdentityTransform",
+        WSM.Geom.IsIdentityTransform = function(trans) {
+            const args = {
+                TestAPI: "WSM.Geom.IsIdentityTransform",
 trans: trans
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Transf3dAreEqual = function(trans1,trans2) {
-        const args = {
-            TestAPI: "WSM.Geom.Transf3dAreEqual",
+        WSM.Geom.Transf3dAreEqual = function(trans1,trans2) {
+            const args = {
+                TestAPI: "WSM.Geom.Transf3dAreEqual",
 trans1: trans1,
         trans2: trans2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Point2d = function(x,y) {
-        const args = {
-            TestAPI: "WSM.Geom.Point2d",
+        WSM.Geom.Point2d = function(x,y) {
+            const args = {
+                TestAPI: "WSM.Geom.Point2d",
 x: x,
         y: y
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Point2dAreEqual = function(pt1,pt2) {
-        const args = {
-            TestAPI: "WSM.Geom.Point2dAreEqual",
+        WSM.Geom.Point2dAreEqual = function(pt1,pt2) {
+            const args = {
+                TestAPI: "WSM.Geom.Point2dAreEqual",
 pt1: pt1,
         pt2: pt2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Point3d = function(x,y,z) {
-        const args = {
-            TestAPI: "WSM.Geom.Point3d",
+        WSM.Geom.Point3d = function(x,y,z) {
+            const args = {
+                TestAPI: "WSM.Geom.Point3d",
 x: x,
         y: y,
         z: z
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Point3dAreEqual = function(pt1,pt2) {
-        const args = {
-            TestAPI: "WSM.Geom.Point3dAreEqual",
+        WSM.Geom.Point3dAreEqual = function(pt1,pt2) {
+            const args = {
+                TestAPI: "WSM.Geom.Point3dAreEqual",
 pt1: pt1,
         pt2: pt2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Line3d = function(point3d) {
-        const args = {
-            TestAPI: "WSM.Geom.Line3d",
+        WSM.Geom.Line3d = function(point3d) {
+            const args = {
+                TestAPI: "WSM.Geom.Line3d",
 point3d: point3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Line3dAreEqual = function(line1,line2) {
-        const args = {
-            TestAPI: "WSM.Geom.Line3dAreEqual",
+        WSM.Geom.Line3dAreEqual = function(line1,line2) {
+            const args = {
+                TestAPI: "WSM.Geom.Line3dAreEqual",
 line1: line1,
         line2: line2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Vector3d = function(x,y,z) {
-        const args = {
-            TestAPI: "WSM.Geom.Vector3d",
+        WSM.Geom.Vector3d = function(x,y,z) {
+            const args = {
+                TestAPI: "WSM.Geom.Vector3d",
 x: x,
         y: y,
         z: z
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Vector3dAreEqual = function(v1,v2) {
-        const args = {
-            TestAPI: "WSM.Geom.Vector3dAreEqual",
+        WSM.Geom.Vector3dAreEqual = function(v1,v2) {
+            const args = {
+                TestAPI: "WSM.Geom.Vector3dAreEqual",
 v1: v1,
         v2: v2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.UnitVector3d = function(x,y,z) {
-        const args = {
-            TestAPI: "WSM.Geom.UnitVector3d",
+        WSM.Geom.UnitVector3d = function(x,y,z) {
+            const args = {
+                TestAPI: "WSM.Geom.UnitVector3d",
 x: x,
         y: y,
         z: z
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.UnitVector3dAreEqual = function(v1,v2) {
-        const args = {
-            TestAPI: "WSM.Geom.UnitVector3dAreEqual",
+        WSM.Geom.UnitVector3dAreEqual = function(v1,v2) {
+            const args = {
+                TestAPI: "WSM.Geom.UnitVector3dAreEqual",
 v1: v1,
         v2: v2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Plane = function(pt,normal) {
-        const args = {
-            TestAPI: "WSM.Geom.Plane",
+        WSM.Geom.Plane = function(pt,normal) {
+            const args = {
+                TestAPI: "WSM.Geom.Plane",
 pt: pt,
         normal: normal
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.PlaneAreEqual = function(plane1,plane2) {
-        const args = {
-            TestAPI: "WSM.Geom.PlaneAreEqual",
+        WSM.Geom.PlaneAreEqual = function(plane1,plane2) {
+            const args = {
+                TestAPI: "WSM.Geom.PlaneAreEqual",
 plane1: plane1,
         plane2: plane2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Vector2d = function(x,y) {
-        const args = {
-            TestAPI: "WSM.Geom.Vector2d",
+        WSM.Geom.Vector2d = function(x,y) {
+            const args = {
+                TestAPI: "WSM.Geom.Vector2d",
 x: x,
         y: y
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.Vector2dAreEqual = function(v1,v2) {
-        const args = {
-            TestAPI: "WSM.Geom.Vector2dAreEqual",
+        WSM.Geom.Vector2dAreEqual = function(v1,v2) {
+            const args = {
+                TestAPI: "WSM.Geom.Vector2dAreEqual",
 v1: v1,
         v2: v2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.IsPoint3d = function() {
-        const args = {
-            TestAPI: "WSM.Geom.IsPoint3d"
+        WSM.Geom.IsPoint3d = function() {
+            const args = {
+                TestAPI: "WSM.Geom.IsPoint3d"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.IsVector3d = function() {
-        const args = {
-            TestAPI: "WSM.Geom.IsVector3d"
+        WSM.Geom.IsVector3d = function() {
+            const args = {
+                TestAPI: "WSM.Geom.IsVector3d"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.IsTransf3d = function() {
-        const args = {
-            TestAPI: "WSM.Geom.IsTransf3d"
+        WSM.Geom.IsTransf3d = function() {
+            const args = {
+                TestAPI: "WSM.Geom.IsTransf3d"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.IsLine3d = function() {
-        const args = {
-            TestAPI: "WSM.Geom.IsLine3d"
+        WSM.Geom.IsLine3d = function() {
+            const args = {
+                TestAPI: "WSM.Geom.IsLine3d"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Geom.IsPlane = function() {
-        const args = {
-            TestAPI: "WSM.Geom.IsPlane"
+        WSM.Geom.IsPlane = function() {
+            const args = {
+                TestAPI: "WSM.Geom.IsPlane"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.Utils = {};
-        
-    WSM.Utils.AngleFullCircleInRadians = function(normal,vecA,vecB,returnPositive) {
-        const args = {
-            TestAPI: "WSM.Utils.AngleFullCircleInRadians",
+
+        WSM.Utils.AngleFullCircleInRadians = function(normal,vecA,vecB,returnPositive) {
+            const args = {
+                TestAPI: "WSM.Utils.AngleFullCircleInRadians",
 normal: normal,
         vecA: vecA,
         vecB: vecB,
         returnPositive: returnPositive
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.AppendSelectionToGroupInstancePathArray = function(aInput,aOutput) {
-        const args = {
-            TestAPI: "WSM.Utils.AppendSelectionToGroupInstancePathArray",
+        WSM.Utils.AppendSelectionToGroupInstancePathArray = function(aInput,aOutput) {
+            const args = {
+                TestAPI: "WSM.Utils.AppendSelectionToGroupInstancePathArray",
 aInput: aInput,
         aOutput: aOutput
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.AppendToGroupInstancePathArray = function(nHistoryID,aInput,aOutput) {
-        const args = {
-            TestAPI: "WSM.Utils.AppendToGroupInstancePathArray",
+        WSM.Utils.AppendToGroupInstancePathArray = function(nHistoryID,aInput,aOutput) {
+            const args = {
+                TestAPI: "WSM.Utils.AppendToGroupInstancePathArray",
 nHistoryID: nHistoryID,
         aInput: aInput,
         aOutput: aOutput
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ComputeFaceCentroid = function(historyID,faceID) {
-        const args = {
-            TestAPI: "WSM.Utils.ComputeFaceCentroid",
+        WSM.Utils.ComputeFaceCentroid = function(historyID,faceID) {
+            const args = {
+                TestAPI: "WSM.Utils.ComputeFaceCentroid",
 historyID: historyID,
         faceID: faceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ComputeFaceNormal = function(historyID,faceID) {
-        const args = {
-            TestAPI: "WSM.Utils.ComputeFaceNormal",
+        WSM.Utils.ComputeFaceNormal = function(historyID,faceID) {
+            const args = {
+                TestAPI: "WSM.Utils.ComputeFaceNormal",
 historyID: historyID,
         faceID: faceID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ConvertToFaces = function(aPaths) {
-        const args = {
-            TestAPI: "WSM.Utils.ConvertToFaces",
+        WSM.Utils.ConvertToFaces = function(aPaths) {
+            const args = {
+                TestAPI: "WSM.Utils.ConvertToFaces",
 aPaths: aPaths
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ConvertToTopLevel = function(nHistoryID,aObjectIDs,bAllowInstances,bAllowOwnedFaces) {
-        const args = {
-            TestAPI: "WSM.Utils.ConvertToTopLevel",
+        WSM.Utils.ConvertToTopLevel = function(nHistoryID,aObjectIDs,bAllowInstances,bAllowOwnedFaces) {
+            const args = {
+                TestAPI: "WSM.Utils.ConvertToTopLevel",
 nHistoryID: nHistoryID,
         aObjectIDs: aObjectIDs,
         bAllowInstances: bAllowInstances,
         bAllowOwnedFaces: bAllowOwnedFaces
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ConvertToTopLevelPaths = function(aPaths,bAllowInstances,bAllowOwnedFaces) {
-        const args = {
-            TestAPI: "WSM.Utils.ConvertToTopLevelPaths",
+        WSM.Utils.ConvertToTopLevelPaths = function(aPaths,bAllowInstances,bAllowOwnedFaces) {
+            const args = {
+                TestAPI: "WSM.Utils.ConvertToTopLevelPaths",
 aPaths: aPaths,
         bAllowInstances: bAllowInstances,
         bAllowOwnedFaces: bAllowOwnedFaces
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.DeleteObjectsIncludeSmoothAttachments = function(nHistoryID,toDelete) {
-        const args = {
-            TestAPI: "WSM.Utils.DeleteObjectsIncludeSmoothAttachments",
+        WSM.Utils.DeleteObjectsIncludeSmoothAttachments = function(nHistoryID,toDelete) {
+            const args = {
+                TestAPI: "WSM.Utils.DeleteObjectsIncludeSmoothAttachments",
 nHistoryID: nHistoryID,
         toDelete: toDelete
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ExpandSelection = function(path,selectionlevel,filter,bCanExpandInstances) {
-        const args = {
-            TestAPI: "WSM.Utils.ExpandSelection",
+        WSM.Utils.ExpandSelection = function(path,selectionlevel,filter,bCanExpandInstances) {
+            const args = {
+                TestAPI: "WSM.Utils.ExpandSelection",
 path: path,
         selectionlevel: selectionlevel,
         filter: filter,
         bCanExpandInstances: bCanExpandInstances
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetAllNonOwnedGeometricObjects = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.Utils.GetAllNonOwnedGeometricObjects",
+        WSM.Utils.GetAllNonOwnedGeometricObjects = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.Utils.GetAllNonOwnedGeometricObjects",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetAxisAlignedBoundingBox = function(aObjectIDs,CS) {
-        const args = {
-            TestAPI: "WSM.Utils.GetAxisAlignedBoundingBox",
+        WSM.Utils.GetAxisAlignedBoundingBox = function(aObjectIDs,CS) {
+            const args = {
+                TestAPI: "WSM.Utils.GetAxisAlignedBoundingBox",
 aObjectIDs: aObjectIDs,
         CS: CS
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetCoedgePoints = function(nHistoryID,coedgeID) {
-        const args = {
-            TestAPI: "WSM.Utils.GetCoedgePoints",
+        WSM.Utils.GetCoedgePoints = function(nHistoryID,coedgeID) {
+            const args = {
+                TestAPI: "WSM.Utils.GetCoedgePoints",
 nHistoryID: nHistoryID,
         coedgeID: coedgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetEdgeCurveType = function(nHistoryID,edgeId) {
-        const args = {
-            TestAPI: "WSM.Utils.GetEdgeCurveType",
+        WSM.Utils.GetEdgeCurveType = function(nHistoryID,edgeId) {
+            const args = {
+                TestAPI: "WSM.Utils.GetEdgeCurveType",
 nHistoryID: nHistoryID,
         edgeId: edgeId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetEdgeIDFromCoedge = function(nHistoryID,coedgeID) {
-        const args = {
-            TestAPI: "WSM.Utils.GetEdgeIDFromCoedge",
+        WSM.Utils.GetEdgeIDFromCoedge = function(nHistoryID,coedgeID) {
+            const args = {
+                TestAPI: "WSM.Utils.GetEdgeIDFromCoedge",
 nHistoryID: nHistoryID,
         coedgeID: coedgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetEdgeLine = function(nHistoryID,edge) {
-        const args = {
-            TestAPI: "WSM.Utils.GetEdgeLine",
+        WSM.Utils.GetEdgeLine = function(nHistoryID,edge) {
+            const args = {
+                TestAPI: "WSM.Utils.GetEdgeLine",
 nHistoryID: nHistoryID,
         edge: edge
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetFaceIDFromCoedge = function(nHistoryID,coedgeID) {
-        const args = {
-            TestAPI: "WSM.Utils.GetFaceIDFromCoedge",
+        WSM.Utils.GetFaceIDFromCoedge = function(nHistoryID,coedgeID) {
+            const args = {
+                TestAPI: "WSM.Utils.GetFaceIDFromCoedge",
 nHistoryID: nHistoryID,
         coedgeID: coedgeID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetFacePoints = function(facePath) {
-        const args = {
-            TestAPI: "WSM.Utils.GetFacePoints",
+        WSM.Utils.GetFacePoints = function(facePath) {
+            const args = {
+                TestAPI: "WSM.Utils.GetFacePoints",
 facePath: facePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetGroupInstanceNonOwnedGeometricObjects = function(instance) {
-        const args = {
-            TestAPI: "WSM.Utils.GetGroupInstanceNonOwnedGeometricObjects",
+        WSM.Utils.GetGroupInstanceNonOwnedGeometricObjects = function(instance) {
+            const args = {
+                TestAPI: "WSM.Utils.GetGroupInstanceNonOwnedGeometricObjects",
 instance: instance
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetMemoryInfo = function(nHistoryID) {
-        const args = {
-            TestAPI: "WSM.Utils.GetMemoryInfo",
+        WSM.Utils.GetMemoryInfo = function(nHistoryID) {
+            const args = {
+                TestAPI: "WSM.Utils.GetMemoryInfo",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetVertexCurveAttributes = function(historyID,vertexID) {
-        const args = {
-            TestAPI: "WSM.Utils.GetVertexCurveAttributes",
+        WSM.Utils.GetVertexCurveAttributes = function(historyID,vertexID) {
+            const args = {
+                TestAPI: "WSM.Utils.GetVertexCurveAttributes",
 historyID: historyID,
         vertexID: vertexID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.HasSmoothEdge = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.HasSmoothEdge",
+        WSM.Utils.HasSmoothEdge = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.HasSmoothEdge",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsBackFace = function(path,cameraPos,cameraDir,perspectiveView) {
-        const args = {
-            TestAPI: "WSM.Utils.IsBackFace",
+        WSM.Utils.IsBackFace = function(path,cameraPos,cameraDir,perspectiveView) {
+            const args = {
+                TestAPI: "WSM.Utils.IsBackFace",
 path: path,
         cameraPos: cameraPos,
         cameraDir: cameraDir,
         perspectiveView: perspectiveView
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsLayerHidden = function(nHistoryID,id) {
-        const args = {
-            TestAPI: "WSM.Utils.IsLayerHidden",
+        WSM.Utils.IsLayerHidden = function(nHistoryID,id) {
+            const args = {
+                TestAPI: "WSM.Utils.IsLayerHidden",
 nHistoryID: nHistoryID,
         id: id
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsObjectHidden = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.IsObjectHidden",
+        WSM.Utils.IsObjectHidden = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.IsObjectHidden",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsObjectHiddenByPath = function(path) {
-        const args = {
-            TestAPI: "WSM.Utils.IsObjectHiddenByPath",
+        WSM.Utils.IsObjectHiddenByPath = function(path) {
+            const args = {
+                TestAPI: "WSM.Utils.IsObjectHiddenByPath",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsObjectType = function(path,nObjectTypes) {
-        const args = {
-            TestAPI: "WSM.Utils.IsObjectType",
+        WSM.Utils.IsObjectType = function(path,nObjectTypes) {
+            const args = {
+                TestAPI: "WSM.Utils.IsObjectType",
 path: path,
         nObjectTypes: nObjectTypes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsOnCurveJunction = function(nHistoryID,nVertexID,bInferencing) {
-        const args = {
-            TestAPI: "WSM.Utils.IsOnCurveJunction",
+        WSM.Utils.IsOnCurveJunction = function(nHistoryID,nVertexID,bInferencing) {
+            const args = {
+                TestAPI: "WSM.Utils.IsOnCurveJunction",
 nHistoryID: nHistoryID,
         nVertexID: nVertexID,
         bInferencing: bInferencing
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsSelectAllConnected = function(nHistoryID,selectedObjectIDs) {
-        const args = {
-            TestAPI: "WSM.Utils.IsSelectAllConnected",
+        WSM.Utils.IsSelectAllConnected = function(nHistoryID,selectedObjectIDs) {
+            const args = {
+                TestAPI: "WSM.Utils.IsSelectAllConnected",
 nHistoryID: nHistoryID,
         selectedObjectIDs: selectedObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsSilhouetteEdge = function(nHistoryID,edgeId,cameraPos,cameraDir,perspectiveView) {
-        const args = {
-            TestAPI: "WSM.Utils.IsSilhouetteEdge",
+        WSM.Utils.IsSilhouetteEdge = function(nHistoryID,edgeId,cameraPos,cameraDir,perspectiveView) {
+            const args = {
+                TestAPI: "WSM.Utils.IsSilhouetteEdge",
 nHistoryID: nHistoryID,
         edgeId: edgeId,
         cameraPos: cameraPos,
         cameraDir: cameraDir,
         perspectiveView: perspectiveView
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsSmooth = function(path) {
-        const args = {
-            TestAPI: "WSM.Utils.IsSmooth",
+        WSM.Utils.IsSmooth = function(path) {
+            const args = {
+                TestAPI: "WSM.Utils.IsSmooth",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsTopLevelObjectHidden = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.IsTopLevelObjectHidden",
+        WSM.Utils.IsTopLevelObjectHidden = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.IsTopLevelObjectHidden",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsTopLevelObjectHiddenByPath = function(path) {
-        const args = {
-            TestAPI: "WSM.Utils.IsTopLevelObjectHiddenByPath",
+        WSM.Utils.IsTopLevelObjectHiddenByPath = function(path) {
+            const args = {
+                TestAPI: "WSM.Utils.IsTopLevelObjectHiddenByPath",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsVertexEditable = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.IsVertexEditable",
+        WSM.Utils.IsVertexEditable = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.IsVertexEditable",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.IsVertexOnCurve = function(historyID,vertexID) {
-        const args = {
-            TestAPI: "WSM.Utils.IsVertexOnCurve",
+        WSM.Utils.IsVertexOnCurve = function(historyID,vertexID) {
+            const args = {
+                TestAPI: "WSM.Utils.IsVertexOnCurve",
 historyID: historyID,
         vertexID: vertexID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.MakePickRayFromWindow = function(firstWindowSelectPoint,secondWindowSelectPoint) {
-        const args = {
-            TestAPI: "WSM.Utils.MakePickRayFromWindow",
+        WSM.Utils.MakePickRayFromWindow = function(firstWindowSelectPoint,secondWindowSelectPoint) {
+            const args = {
+                TestAPI: "WSM.Utils.MakePickRayFromWindow",
 firstWindowSelectPoint: firstWindowSelectPoint,
         secondWindowSelectPoint: secondWindowSelectPoint
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.MatchesSelectionType = function(selectedObjectIDs,aNewSelectedObjects,bSelectAll) {
-        const args = {
-            TestAPI: "WSM.Utils.MatchesSelectionType",
+        WSM.Utils.MatchesSelectionType = function(selectedObjectIDs,aNewSelectedObjects,bSelectAll) {
+            const args = {
+                TestAPI: "WSM.Utils.MatchesSelectionType",
 selectedObjectIDs: selectedObjectIDs,
         aNewSelectedObjects: aNewSelectedObjects,
         bSelectAll: bSelectAll
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ObjectCanBeHidden = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.ObjectCanBeHidden",
+        WSM.Utils.ObjectCanBeHidden = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.ObjectCanBeHidden",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickBody = function(pickray) {
-        const args = {
-            TestAPI: "WSM.Utils.PickBody",
+        WSM.Utils.PickBody = function(pickray) {
+            const args = {
+                TestAPI: "WSM.Utils.PickBody",
 pickray: pickray
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickGeometry = function(pickray,pickFilter,bAllowAdjustRayRadius) {
-        const args = {
-            TestAPI: "WSM.Utils.PickGeometry",
+        WSM.Utils.PickGeometry = function(pickray,pickFilter,bAllowAdjustRayRadius) {
+            const args = {
+                TestAPI: "WSM.Utils.PickGeometry",
 pickray: pickray,
         pickFilter: pickFilter,
         bAllowAdjustRayRadius: bAllowAdjustRayRadius
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickObjectsWithFilter = function(pickray,filter,currentSelectionLevel) {
-        const args = {
-            TestAPI: "WSM.Utils.PickObjectsWithFilter",
+        WSM.Utils.PickObjectsWithFilter = function(pickray,filter,currentSelectionLevel) {
+            const args = {
+                TestAPI: "WSM.Utils.PickObjectsWithFilter",
 pickray: pickray,
         filter: filter,
         currentSelectionLevel: currentSelectionLevel
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickObjectsWithRay = function(pickray,pickFilter,bAllowAdjustRayRadius,bIgnoreInContext) {
-        const args = {
-            TestAPI: "WSM.Utils.PickObjectsWithRay",
+        WSM.Utils.PickObjectsWithRay = function(pickray,pickFilter,bAllowAdjustRayRadius,bIgnoreInContext) {
+            const args = {
+                TestAPI: "WSM.Utils.PickObjectsWithRay",
 pickray: pickray,
         pickFilter: pickFilter,
         bAllowAdjustRayRadius: bAllowAdjustRayRadius,
         bIgnoreInContext: bIgnoreInContext
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.RayFireWithObjects = function(objectIds,ray) {
-        const args = {
-            TestAPI: "WSM.Utils.RayFireWithObjects",
+        WSM.Utils.RayFireWithObjects = function(objectIds,ray) {
+            const args = {
+                TestAPI: "WSM.Utils.RayFireWithObjects",
 objectIds: objectIds,
         ray: ray
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.RemoveHiddenObjects = function(nHistoryID,aObjectIDs,aObjectsInGroupsVec) {
-        const args = {
-            TestAPI: "WSM.Utils.RemoveHiddenObjects",
+        WSM.Utils.RemoveHiddenObjects = function(nHistoryID,aObjectIDs,aObjectsInGroupsVec) {
+            const args = {
+                TestAPI: "WSM.Utils.RemoveHiddenObjects",
 nHistoryID: nHistoryID,
         aObjectIDs: aObjectIDs,
         aObjectsInGroupsVec: aObjectsInGroupsVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.SelectionFromGroupInstancePathArray = function(aInput) {
-        const args = {
-            TestAPI: "WSM.Utils.SelectionFromGroupInstancePathArray",
+        WSM.Utils.SelectionFromGroupInstancePathArray = function(aInput) {
+            const args = {
+                TestAPI: "WSM.Utils.SelectionFromGroupInstancePathArray",
 aInput: aInput
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.SelectionToGroupInstancePath = function(nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.SelectionToGroupInstancePath",
+        WSM.Utils.SelectionToGroupInstancePath = function(nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.SelectionToGroupInstancePath",
 nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.SelectionToGroupInstancePathArray = function(aInput) {
-        const args = {
-            TestAPI: "WSM.Utils.SelectionToGroupInstancePathArray",
+        WSM.Utils.SelectionToGroupInstancePathArray = function(aInput) {
+            const args = {
+                TestAPI: "WSM.Utils.SelectionToGroupInstancePathArray",
 aInput: aInput
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.SetToOwnerBody = function(path) {
-        const args = {
-            TestAPI: "WSM.Utils.SetToOwnerBody",
+        WSM.Utils.SetToOwnerBody = function(path) {
+            const args = {
+                TestAPI: "WSM.Utils.SetToOwnerBody",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.TestPickImages = function(nHistoryID,imageIds,pickRay) {
-        const args = {
-            TestAPI: "WSM.Utils.TestPickImages",
+        WSM.Utils.TestPickImages = function(nHistoryID,imageIds,pickRay) {
+            const args = {
+                TestAPI: "WSM.Utils.TestPickImages",
 nHistoryID: nHistoryID,
         imageIds: imageIds,
         pickRay: pickRay
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ObjectIDsAreEqual = function(id1,id2) {
-        const args = {
-            TestAPI: "WSM.Utils.ObjectIDsAreEqual",
+        WSM.Utils.ObjectIDsAreEqual = function(id1,id2) {
+            const args = {
+                TestAPI: "WSM.Utils.ObjectIDsAreEqual",
 id1: id1,
         id2: id2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GroupInstancePathsAreEqual = function(path1,path2) {
-        const args = {
-            TestAPI: "WSM.Utils.GroupInstancePathsAreEqual",
+        WSM.Utils.GroupInstancePathsAreEqual = function(path1,path2) {
+            const args = {
+                TestAPI: "WSM.Utils.GroupInstancePathsAreEqual",
 path1: path1,
         path2: path2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickRay = function(pickrayLine,planes,screenPickRayRadius,perspectiveScaleFactor,baseRadius,normalizedScreenPoint) {
-        const args = {
-            TestAPI: "WSM.Utils.PickRay",
+        WSM.Utils.PickRay = function(pickrayLine,planes,screenPickRayRadius,perspectiveScaleFactor,baseRadius,normalizedScreenPoint) {
+            const args = {
+                TestAPI: "WSM.Utils.PickRay",
 pickrayLine: pickrayLine,
         planes: planes,
         screenPickRayRadius: screenPickRayRadius,
         perspectiveScaleFactor: perspectiveScaleFactor,
         baseRadius: baseRadius,
         normalizedScreenPoint: normalizedScreenPoint
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickRayFromLine = function(pickrayLine) {
-        const args = {
-            TestAPI: "WSM.Utils.PickRayFromLine",
+        WSM.Utils.PickRayFromLine = function(pickrayLine) {
+            const args = {
+                TestAPI: "WSM.Utils.PickRayFromLine",
 pickrayLine: pickrayLine
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.PickRayFromNormalizedScreenPoint = function(ptX,ptY,yUp) {
-        const args = {
-            TestAPI: "WSM.Utils.PickRayFromNormalizedScreenPoint",
+        WSM.Utils.PickRayFromNormalizedScreenPoint = function(ptX,ptY,yUp) {
+            const args = {
+                TestAPI: "WSM.Utils.PickRayFromNormalizedScreenPoint",
 ptX: ptX,
         ptY: ptY,
         yUp: yUp
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GroupInstancePathArray = function() {
-        const args = {
-            TestAPI: "WSM.Utils.GroupInstancePathArray"
+        WSM.Utils.GroupInstancePathArray = function() {
+            const args = {
+                TestAPI: "WSM.Utils.GroupInstancePathArray"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetGroupInstancePathFinalObjectHistoryID = function(ObjectIDs) {
-        const args = {
-            TestAPI: "WSM.Utils.GetGroupInstancePathFinalObjectHistoryID",
+        WSM.Utils.GetGroupInstancePathFinalObjectHistoryID = function(ObjectIDs) {
+            const args = {
+                TestAPI: "WSM.Utils.GetGroupInstancePathFinalObjectHistoryID",
 ObjectIDs: ObjectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ObjectHistoryIDArray = function() {
-        const args = {
-            TestAPI: "WSM.Utils.ObjectHistoryIDArray"
+        WSM.Utils.ObjectHistoryIDArray = function() {
+            const args = {
+                TestAPI: "WSM.Utils.ObjectHistoryIDArray"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ObjectIDArray = function(objectIDs) {
-        const args = {
-            TestAPI: "WSM.Utils.ObjectIDArray",
+        WSM.Utils.ObjectIDArray = function(objectIDs) {
+            const args = {
+                TestAPI: "WSM.Utils.ObjectIDArray",
 objectIDs: objectIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.SetOrCreateStringAttributeForObject = function(nHistoryID,nObjectID,key,value,nCB,bIsSharedOnSplit) {
-        const args = {
-            TestAPI: "WSM.Utils.SetOrCreateStringAttributeForObject",
+        WSM.Utils.SetOrCreateStringAttributeForObject = function(nHistoryID,nObjectID,key,value,nCB,bIsSharedOnSplit) {
+            const args = {
+                TestAPI: "WSM.Utils.SetOrCreateStringAttributeForObject",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID,
         key: key,
         value: value,
         nCB: nCB,
         bIsSharedOnSplit: bIsSharedOnSplit
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetStringAttributeForObject = function(nHistoryID,nObjectID,key) {
-        const args = {
-            TestAPI: "WSM.Utils.GetStringAttributeForObject",
+        WSM.Utils.GetStringAttributeForObject = function(nHistoryID,nObjectID,key) {
+            const args = {
+                TestAPI: "WSM.Utils.GetStringAttributeForObject",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID,
         key: key
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ObjectTypeFilter = function() {
-        const args = {
-            TestAPI: "WSM.Utils.ObjectTypeFilter"
+        WSM.Utils.ObjectTypeFilter = function() {
+            const args = {
+                TestAPI: "WSM.Utils.ObjectTypeFilter"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.ObjectHistoryID = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "WSM.Utils.ObjectHistoryID",
+        WSM.Utils.ObjectHistoryID = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "WSM.Utils.ObjectHistoryID",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.AppHelper = {};
-        
-    WSM.AppHelper.Initialize = function() {
-        const args = {
-            TestAPI: "WSM.AppHelper.Initialize"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.AppHelper.GetHistoryID = function() {
-        const args = {
-            TestAPI: "WSM.AppHelper.GetHistoryID"
+        WSM.AppHelper.Initialize = function() {
+            const args = {
+                TestAPI: "WSM.AppHelper.Initialize"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.AppHelper.GetDisplayHistoryID = function() {
-        const args = {
-            TestAPI: "WSM.AppHelper.GetDisplayHistoryID"
+        WSM.AppHelper.GetHistoryID = function() {
+            const args = {
+                TestAPI: "WSM.AppHelper.GetHistoryID"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.AppHelper.NewModel = function() {
-        const args = {
-            TestAPI: "WSM.AppHelper.NewModel"
+        WSM.AppHelper.GetDisplayHistoryID = function() {
+            const args = {
+                TestAPI: "WSM.AppHelper.GetDisplayHistoryID"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
+        WSM.AppHelper.NewModel = function() {
+            const args = {
+                TestAPI: "WSM.AppHelper.NewModel"
+            };
+            return callAsyncAPI(args);
+        };
 WSM.Atf = {};
-        
-    WSM.Atf.APITestAtfLoopBack = function(nFromHistoryID,nToHistoryID,defaultColorVec,aNonOwnedObjectIDs,aExcludedObjects,bWantPolygonMeshFromBrep,aLayerDisplayedNegateVec) {
-        const args = {
-            TestAPI: "WSM.Atf.APITestAtfLoopBack",
+
+        WSM.Atf.APITestAtfLoopBack = function(nFromHistoryID,nToHistoryID,defaultColorVec,aNonOwnedObjectIDs,aExcludedObjects,bWantPolygonMeshFromBrep,aLayerDisplayedNegateVec) {
+            const args = {
+                TestAPI: "WSM.Atf.APITestAtfLoopBack",
 nFromHistoryID: nFromHistoryID,
         nToHistoryID: nToHistoryID,
         defaultColorVec: defaultColorVec,
@@ -4025,27 +3651,25 @@ nFromHistoryID: nFromHistoryID,
         aExcludedObjects: aExcludedObjects,
         bWantPolygonMeshFromBrep: bWantPolygonMeshFromBrep,
         aLayerDisplayedNegateVec: aLayerDisplayedNegateVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Atf.APILoadWithATF = function(nHistoryID,sFilePath,eFileType,nOptions,nUnits) {
-        const args = {
-            TestAPI: "WSM.Atf.APILoadWithATF",
+        WSM.Atf.APILoadWithATF = function(nHistoryID,sFilePath,eFileType,nOptions,nUnits) {
+            const args = {
+                TestAPI: "WSM.Atf.APILoadWithATF",
 nHistoryID: nHistoryID,
         sFilePath: sFilePath,
         eFileType: eFileType,
         nOptions: nOptions,
         nUnits: nUnits
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Atf.APIWriteWithATF = function(nHistoryID,sFilePath,eFileType,aNonOwnedObjectIDs,aExcludedObjects,defaultColorVec,cameraVec,aLayerDisplayedNegateVec) {
-        const args = {
-            TestAPI: "WSM.Atf.APIWriteWithATF",
+        WSM.Atf.APIWriteWithATF = function(nHistoryID,sFilePath,eFileType,aNonOwnedObjectIDs,aExcludedObjects,defaultColorVec,cameraVec,aLayerDisplayedNegateVec) {
+            const args = {
+                TestAPI: "WSM.Atf.APIWriteWithATF",
 nHistoryID: nHistoryID,
         sFilePath: sFilePath,
         eFileType: eFileType,
@@ -4054,1857 +3678,1654 @@ nHistoryID: nHistoryID,
         defaultColorVec: defaultColorVec,
         cameraVec: cameraVec,
         aLayerDisplayedNegateVec: aLayerDisplayedNegateVec
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.RenderHelper = {};
-        
-    WSM.RenderHelper.APIGetObjectFacesRenderDataReadOnly = function(historyID,objectID) {
-        const args = {
-            TestAPI: "WSM.RenderHelper.APIGetObjectFacesRenderDataReadOnly",
+
+        WSM.RenderHelper.APIGetObjectFacesRenderDataReadOnly = function(historyID,objectID) {
+            const args = {
+                TestAPI: "WSM.RenderHelper.APIGetObjectFacesRenderDataReadOnly",
 historyID: historyID,
         objectID: objectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.RenderHelper.APIGetFacesRenderDataReadOnly = function(historyID,faceIDs) {
-        const args = {
-            TestAPI: "WSM.RenderHelper.APIGetFacesRenderDataReadOnly",
+        WSM.RenderHelper.APIGetFacesRenderDataReadOnly = function(historyID,faceIDs) {
+            const args = {
+                TestAPI: "WSM.RenderHelper.APIGetFacesRenderDataReadOnly",
 historyID: historyID,
         faceIDs: faceIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.RenderHelper.APIGetEdgesRenderDataReadOnly = function(historyID,edgeIDs,includeSmooth) {
-        const args = {
-            TestAPI: "WSM.RenderHelper.APIGetEdgesRenderDataReadOnly",
+        WSM.RenderHelper.APIGetEdgesRenderDataReadOnly = function(historyID,edgeIDs,includeSmooth) {
+            const args = {
+                TestAPI: "WSM.RenderHelper.APIGetEdgesRenderDataReadOnly",
 historyID: historyID,
         edgeIDs: edgeIDs,
         includeSmooth: includeSmooth
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.Sat = {};
-        
-    WSM.Sat.APILoadSatFile = function(nHistoryID,sFilePath) {
-        const args = {
-            TestAPI: "WSM.Sat.APILoadSatFile",
+
+        WSM.Sat.APILoadSatFile = function(nHistoryID,sFilePath) {
+            const args = {
+                TestAPI: "WSM.Sat.APILoadSatFile",
 nHistoryID: nHistoryID,
         sFilePath: sFilePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.GroupInstancePath = {};
-        
-    WSM.GroupInstancePath.IsValid = function(groupInstancePath) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath.IsValid",
-groupInstancePath: groupInstancePath
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.GroupInstancePath.GetFinalObjectHistoryID = function(groupInstancePath) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath.GetFinalObjectHistoryID",
+        WSM.GroupInstancePath.IsValid = function(groupInstancePath) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath.IsValid",
 groupInstancePath: groupInstancePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.GroupInstancePath.GetTopObjectHistoryID = function(groupInstancePath) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath.GetTopObjectHistoryID",
+        WSM.GroupInstancePath.GetFinalObjectHistoryID = function(groupInstancePath) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath.GetFinalObjectHistoryID",
 groupInstancePath: groupInstancePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.GroupInstancePath.AppendObjectHistoryID = function(groupInstancePath,nObjectID) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath.AppendObjectHistoryID",
+        WSM.GroupInstancePath.GetTopObjectHistoryID = function(groupInstancePath) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath.GetTopObjectHistoryID",
+groupInstancePath: groupInstancePath
+            };
+            return callAsyncAPI(args);
+        };
+
+        WSM.GroupInstancePath.AppendObjectHistoryID = function(groupInstancePath,nObjectID) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath.AppendObjectHistoryID",
 groupInstancePath: groupInstancePath,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.GroupInstancePath.GetObjectTransform = function(groupInstancePath) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath.GetObjectTransform",
+        WSM.GroupInstancePath.GetObjectTransform = function(groupInstancePath) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath.GetObjectTransform",
 groupInstancePath: groupInstancePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.GroupInstancePath.IsPrefixOf = function(path1,path2) {
-        const args = {
-            TestAPI: "WSM.GroupInstancePath.IsPrefixOf",
+        WSM.GroupInstancePath.IsPrefixOf = function(path1,path2) {
+            const args = {
+                TestAPI: "WSM.GroupInstancePath.IsPrefixOf",
 path1: path1,
         path2: path2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.Test = {};
-        
-    WSM.Test.AnyDictionaryRoundTrip = function(dict) {
-        const args = {
-            TestAPI: "WSM.Test.AnyDictionaryRoundTrip",
-dict: dict
-        };
-        return callAsyncAPI(args);
-    };
 
+        WSM.Test.AnyDictionaryRoundTrip = function(dict) {
+            const args = {
+                TestAPI: "WSM.Test.AnyDictionaryRoundTrip",
+dict: dict
+            };
+            return callAsyncAPI(args);
+        };
 WSM.Skup = {};
-        
-    WSM.Skup.APIReadSketchupFile = function(nHistoryID,filename) {
-        const args = {
-            TestAPI: "WSM.Skup.APIReadSketchupFile",
+
+        WSM.Skup.APIReadSketchupFile = function(nHistoryID,filename) {
+            const args = {
+                TestAPI: "WSM.Skup.APIReadSketchupFile",
 nHistoryID: nHistoryID,
         filename: filename
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 WSM.Tools = {};
-        
-    WSM.Tools.CompareOutputFiles = function(sGoodFile,sResultFile) {
-        const args = {
-            TestAPI: "WSM.Tools.CompareOutputFiles",
+
+        WSM.Tools.CompareOutputFiles = function(sGoodFile,sResultFile) {
+            const args = {
+                TestAPI: "WSM.Tools.CompareOutputFiles",
 sGoodFile: sGoodFile,
         sResultFile: sResultFile
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIReset = function() {
-        const args = {
-            TestAPI: "WSM.Tools.APIReset"
+        WSM.Tools.APIReset = function() {
+            const args = {
+                TestAPI: "WSM.Tools.APIReset"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APICreateTool = function(nType,toolArgs) {
-        const args = {
-            TestAPI: "WSM.Tools.APICreateTool",
+        WSM.Tools.APICreateTool = function(nType,toolArgs) {
+            const args = {
+                TestAPI: "WSM.Tools.APICreateTool",
 nType: nType,
         toolArgs: toolArgs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIDestroyTool = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIDestroyTool",
+        WSM.Tools.APIDestroyTool = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIDestroyTool",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIGetAllLiveToolsReadOnly = function() {
-        const args = {
-            TestAPI: "WSM.Tools.APIGetAllLiveToolsReadOnly"
+        WSM.Tools.APIGetAllLiveToolsReadOnly = function() {
+            const args = {
+                TestAPI: "WSM.Tools.APIGetAllLiveToolsReadOnly"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIGetToolTypeReadOnly = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIGetToolTypeReadOnly",
+        WSM.Tools.APIGetToolTypeReadOnly = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIGetToolTypeReadOnly",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIGetResultDescriptionReadOnly = function(nResult) {
-        const args = {
-            TestAPI: "WSM.Tools.APIGetResultDescriptionReadOnly",
+        WSM.Tools.APIGetResultDescriptionReadOnly = function(nResult) {
+            const args = {
+                TestAPI: "WSM.Tools.APIGetResultDescriptionReadOnly",
 nResult: nResult
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIGetToolStateReadOnly = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIGetToolStateReadOnly",
+        WSM.Tools.APIGetToolStateReadOnly = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIGetToolStateReadOnly",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIResetTool = function(nToolID,nReason) {
-        const args = {
-            TestAPI: "WSM.Tools.APIResetTool",
+        WSM.Tools.APIResetTool = function(nToolID,nReason) {
+            const args = {
+                TestAPI: "WSM.Tools.APIResetTool",
 nToolID: nToolID,
         nReason: nReason
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIResetToolModelChange = function(nToolID,data) {
-        const args = {
-            TestAPI: "WSM.Tools.APIResetToolModelChange",
+        WSM.Tools.APIResetToolModelChange = function(nToolID,data) {
+            const args = {
+                TestAPI: "WSM.Tools.APIResetToolModelChange",
 nToolID: nToolID,
         data: data
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIUpdateCurrentPoint = function(nToolID,pickray) {
-        const args = {
-            TestAPI: "WSM.Tools.APIUpdateCurrentPoint",
+        WSM.Tools.APIUpdateCurrentPoint = function(nToolID,pickray) {
+            const args = {
+                TestAPI: "WSM.Tools.APIUpdateCurrentPoint",
 nToolID: nToolID,
         pickray: pickray
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIUpdatePointPick = function(nToolID,nPointIndex,pickray,bFinal) {
-        const args = {
-            TestAPI: "WSM.Tools.APIUpdatePointPick",
+        WSM.Tools.APIUpdatePointPick = function(nToolID,nPointIndex,pickray,bFinal) {
+            const args = {
+                TestAPI: "WSM.Tools.APIUpdatePointPick",
 nToolID: nToolID,
         nPointIndex: nPointIndex,
         pickray: pickray,
         bFinal: bFinal
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIUpdatePoint = function(nToolID,nPointIndex,pInputPoint,bFinal) {
-        const args = {
-            TestAPI: "WSM.Tools.APIUpdatePoint",
+        WSM.Tools.APIUpdatePoint = function(nToolID,nPointIndex,pInputPoint,bFinal) {
+            const args = {
+                TestAPI: "WSM.Tools.APIUpdatePoint",
 nToolID: nToolID,
         nPointIndex: nPointIndex,
         pInputPoint: pInputPoint,
         bFinal: bFinal
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APILockInference = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APILockInference",
+        WSM.Tools.APILockInference = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APILockInference",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIUnlockInference = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIUnlockInference",
+        WSM.Tools.APIUnlockInference = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIUnlockInference",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIPickAndPlacePoint = function(nToolID,pickray) {
-        const args = {
-            TestAPI: "WSM.Tools.APIPickAndPlacePoint",
+        WSM.Tools.APIPickAndPlacePoint = function(nToolID,pickray) {
+            const args = {
+                TestAPI: "WSM.Tools.APIPickAndPlacePoint",
 nToolID: nToolID,
         pickray: pickray
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIPlacePoint = function(nToolID,pInputPoint) {
-        const args = {
-            TestAPI: "WSM.Tools.APIPlacePoint",
+        WSM.Tools.APIPlacePoint = function(nToolID,pInputPoint) {
+            const args = {
+                TestAPI: "WSM.Tools.APIPlacePoint",
 nToolID: nToolID,
         pInputPoint: pInputPoint
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIFinalize = function(nToolID,pickray) {
-        const args = {
-            TestAPI: "WSM.Tools.APIFinalize",
+        WSM.Tools.APIFinalize = function(nToolID,pickray) {
+            const args = {
+                TestAPI: "WSM.Tools.APIFinalize",
 nToolID: nToolID,
         pickray: pickray
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIGetCurrentPointReadOnly = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIGetCurrentPointReadOnly",
+        WSM.Tools.APIGetCurrentPointReadOnly = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIGetCurrentPointReadOnly",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIGetPointReadOnly = function(nToolID,nPointIndex) {
-        const args = {
-            TestAPI: "WSM.Tools.APIGetPointReadOnly",
+        WSM.Tools.APIGetPointReadOnly = function(nToolID,nPointIndex) {
+            const args = {
+                TestAPI: "WSM.Tools.APIGetPointReadOnly",
 nToolID: nToolID,
         nPointIndex: nPointIndex
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APISetOperationMode = function(nToolID,nMode) {
-        const args = {
-            TestAPI: "WSM.Tools.APISetOperationMode",
+        WSM.Tools.APISetOperationMode = function(nToolID,nMode) {
+            const args = {
+                TestAPI: "WSM.Tools.APISetOperationMode",
 nToolID: nToolID,
         nMode: nMode
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIResetCurrentPoint = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIResetCurrentPoint",
+        WSM.Tools.APIResetCurrentPoint = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIResetCurrentPoint",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APISetDefaultPoints = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APISetDefaultPoints",
+        WSM.Tools.APISetDefaultPoints = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APISetDefaultPoints",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APISetEditingMode = function(nToolID,bEditingMode) {
-        const args = {
-            TestAPI: "WSM.Tools.APISetEditingMode",
+        WSM.Tools.APISetEditingMode = function(nToolID,bEditingMode) {
+            const args = {
+                TestAPI: "WSM.Tools.APISetEditingMode",
 nToolID: nToolID,
         bEditingMode: bEditingMode
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APICreateGeometry = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APICreateGeometry",
+        WSM.Tools.APICreateGeometry = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APICreateGeometry",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModResetModel = function(nToolID,bDeleteRedo) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModResetModel",
+        WSM.Tools.APIModResetModel = function(nToolID,bDeleteRedo) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModResetModel",
 nToolID: nToolID,
         bDeleteRedo: bDeleteRedo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModSetObjectsToModify = function(nToolID,aObjectsToModify) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModSetObjectsToModify",
+        WSM.Tools.APIModSetObjectsToModify = function(nToolID,aObjectsToModify) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModSetObjectsToModify",
 nToolID: nToolID,
         aObjectsToModify: aObjectsToModify
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModSetObjectsToModifyGroupInstancePath = function(nToolID,aObjectsToModify) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModSetObjectsToModifyGroupInstancePath",
+        WSM.Tools.APIModSetObjectsToModifyGroupInstancePath = function(nToolID,aObjectsToModify) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModSetObjectsToModifyGroupInstancePath",
 nToolID: nToolID,
         aObjectsToModify: aObjectsToModify
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModIsInteractiveReadOnly = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModIsInteractiveReadOnly",
+        WSM.Tools.APIModIsInteractiveReadOnly = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModIsInteractiveReadOnly",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModFiltersInitialSelectionReadOnly = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModFiltersInitialSelectionReadOnly",
+        WSM.Tools.APIModFiltersInitialSelectionReadOnly = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModFiltersInitialSelectionReadOnly",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModDoModification = function(nToolID,bEndOfContinuous) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModDoModification",
+        WSM.Tools.APIModDoModification = function(nToolID,bEndOfContinuous) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModDoModification",
 nToolID: nToolID,
         bEndOfContinuous: bEndOfContinuous
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APIModGetFinishMessageReadOnly = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APIModGetFinishMessageReadOnly",
+        WSM.Tools.APIModGetFinishMessageReadOnly = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APIModGetFinishMessageReadOnly",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Tools.APICameraChanged = function(nToolID) {
-        const args = {
-            TestAPI: "WSM.Tools.APICameraChanged",
+        WSM.Tools.APICameraChanged = function(nToolID) {
+            const args = {
+                TestAPI: "WSM.Tools.APICameraChanged",
 nToolID: nToolID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 const FormIt = {};
-    
-    FormIt.GetSnap = function() {
-        const args = {
-            TestAPI: "FormIt.GetSnap"
-        };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetSnap = function(bSnap) {
-        const args = {
-            TestAPI: "FormIt.SetSnap",
+        FormIt.GetSnap = function() {
+            const args = {
+                TestAPI: "FormIt.GetSnap"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.SetSnap = function(bSnap) {
+            const args = {
+                TestAPI: "FormIt.SetSnap",
 bSnap: bSnap
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetTouchEnabled = function() {
-        const args = {
-            TestAPI: "FormIt.GetTouchEnabled"
+        FormIt.GetTouchEnabled = function() {
+            const args = {
+                TestAPI: "FormIt.GetTouchEnabled"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetTouchEnabled = function(bTouchEnabled) {
-        const args = {
-            TestAPI: "FormIt.SetTouchEnabled",
+        FormIt.SetTouchEnabled = function(bTouchEnabled) {
+            const args = {
+                TestAPI: "FormIt.SetTouchEnabled",
 bTouchEnabled: bTouchEnabled
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.ImportFile = function(sFileName,bGroupImport,nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.ImportFile",
+        FormIt.ImportFile = function(sFileName,bGroupImport,nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.ImportFile",
 sFileName: sFileName,
     bGroupImport: bGroupImport,
     nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.OpenFile = function(sFileName) {
-        const args = {
-            TestAPI: "FormIt.OpenFile",
+        FormIt.OpenFile = function(sFileName) {
+            const args = {
+                TestAPI: "FormIt.OpenFile",
 sFileName: sFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.LoadPreviewImage = function(sFileName) {
-        const args = {
-            TestAPI: "FormIt.LoadPreviewImage",
+        FormIt.LoadPreviewImage = function(sFileName) {
+            const args = {
+                TestAPI: "FormIt.LoadPreviewImage",
 sFileName: sFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.OpenFile = function(sFileName) {
-        const args = {
-            TestAPI: "FormIt.OpenFile",
+        FormIt.OpenFile = function(sFileName) {
+            const args = {
+                TestAPI: "FormIt.OpenFile",
 sFileName: sFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SaveFile = function(sFileName,saveOptions,previewImage,forSave) {
-        const args = {
-            TestAPI: "FormIt.SaveFile",
+        FormIt.SaveFile = function(sFileName,saveOptions,previewImage,forSave) {
+            const args = {
+                TestAPI: "FormIt.SaveFile",
 sFileName: sFileName,
     saveOptions: saveOptions,
     previewImage: previewImage,
     forSave: forSave
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SaveFileForEnergyAnalysis = function(sFileName) {
-        const args = {
-            TestAPI: "FormIt.SaveFileForEnergyAnalysis",
+        FormIt.SaveFileForEnergyAnalysis = function(sFileName) {
+            const args = {
+                TestAPI: "FormIt.SaveFileForEnergyAnalysis",
 sFileName: sFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetGeoLocationData = function(geodata) {
-        const args = {
-            TestAPI: "FormIt.SetGeoLocationData",
+        FormIt.SetGeoLocationData = function(geodata) {
+            const args = {
+                TestAPI: "FormIt.SetGeoLocationData",
 geodata: geodata
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetRenderData = function(renderdata) {
-        const args = {
-            TestAPI: "FormIt.SetRenderData",
+        FormIt.SetRenderData = function(renderdata) {
+            const args = {
+                TestAPI: "FormIt.SetRenderData",
 renderdata: renderdata
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetTimeNow = function() {
-        const args = {
-            TestAPI: "FormIt.GetTimeNow"
+        FormIt.GetTimeNow = function() {
+            const args = {
+                TestAPI: "FormIt.GetTimeNow"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.FitToModel = function(aIncludeImage,withTransition) {
-        const args = {
-            TestAPI: "FormIt.FitToModel",
+        FormIt.FitToModel = function(aIncludeImage,withTransition) {
+            const args = {
+                TestAPI: "FormIt.FitToModel",
 aIncludeImage: aIncludeImage,
     withTransition: withTransition
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.FitToSelection = function(withTransition) {
-        const args = {
-            TestAPI: "FormIt.FitToSelection",
+        FormIt.FitToSelection = function(withTransition) {
+            const args = {
+                TestAPI: "FormIt.FitToSelection",
 withTransition: withTransition
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.HomeView3d = function(withTransition) {
-        const args = {
-            TestAPI: "FormIt.HomeView3d",
+        FormIt.HomeView3d = function(withTransition) {
+            const args = {
+                TestAPI: "FormIt.HomeView3d",
 withTransition: withTransition
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.TopView = function() {
-        const args = {
-            TestAPI: "FormIt.TopView"
+        FormIt.TopView = function() {
+            const args = {
+                TestAPI: "FormIt.TopView"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetViewDirection = function(type) {
-        const args = {
-            TestAPI: "FormIt.SetViewDirection",
+        FormIt.SetViewDirection = function(type) {
+            const args = {
+                TestAPI: "FormIt.SetViewDirection",
 type: type
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetViewDirection = function() {
-        const args = {
-            TestAPI: "FormIt.GetViewDirection"
+        FormIt.GetViewDirection = function() {
+            const args = {
+                TestAPI: "FormIt.GetViewDirection"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.NewFile = function(forced) {
-        const args = {
-            TestAPI: "FormIt.NewFile",
+        FormIt.NewFile = function(forced) {
+            const args = {
+                TestAPI: "FormIt.NewFile",
 forced: forced
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.Version = function() {
-        const args = {
-            TestAPI: "FormIt.Version"
+        FormIt.Version = function() {
+            const args = {
+                TestAPI: "FormIt.Version"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetCurveAccuracyOrCountDefault = function(accuracyORcount) {
-        const args = {
-            TestAPI: "FormIt.SetCurveAccuracyOrCountDefault",
+        FormIt.SetCurveAccuracyOrCountDefault = function(accuracyORcount) {
+            const args = {
+                TestAPI: "FormIt.SetCurveAccuracyOrCountDefault",
 accuracyORcount: accuracyORcount
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetCurveAccuracyOrCountDefault = function() {
-        const args = {
-            TestAPI: "FormIt.GetCurveAccuracyOrCountDefault"
+        FormIt.GetCurveAccuracyOrCountDefault = function() {
+            const args = {
+                TestAPI: "FormIt.GetCurveAccuracyOrCountDefault"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetSurfaceAccuracyOrCountDefault = function(accuracyORcount) {
-        const args = {
-            TestAPI: "FormIt.SetSurfaceAccuracyOrCountDefault",
+        FormIt.SetSurfaceAccuracyOrCountDefault = function(accuracyORcount) {
+            const args = {
+                TestAPI: "FormIt.SetSurfaceAccuracyOrCountDefault",
 accuracyORcount: accuracyORcount
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetSurfaceAccuracyOrCountDefault = function() {
-        const args = {
-            TestAPI: "FormIt.GetSurfaceAccuracyOrCountDefault"
+        FormIt.GetSurfaceAccuracyOrCountDefault = function() {
+            const args = {
+                TestAPI: "FormIt.GetSurfaceAccuracyOrCountDefault"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetUnitTypeDefault = function() {
-        const args = {
-            TestAPI: "FormIt.GetUnitTypeDefault"
+        FormIt.GetUnitTypeDefault = function() {
+            const args = {
+                TestAPI: "FormIt.GetUnitTypeDefault"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetUnitTypeDefault = function(unitType) {
-        const args = {
-            TestAPI: "FormIt.SetUnitTypeDefault",
+        FormIt.SetUnitTypeDefault = function(unitType) {
+            const args = {
+                TestAPI: "FormIt.SetUnitTypeDefault",
 unitType: unitType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.IsWSRAvailable = function() {
-        const args = {
-            TestAPI: "FormIt.IsWSRAvailable"
+        FormIt.IsWSRAvailable = function() {
+            const args = {
+                TestAPI: "FormIt.IsWSRAvailable"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SuspendMessaging = function(bSuppress,nTopLevelHistory) {
-        const args = {
-            TestAPI: "FormIt.SuspendMessaging",
+        FormIt.SuspendMessaging = function(bSuppress,nTopLevelHistory) {
+            const args = {
+                TestAPI: "FormIt.SuspendMessaging",
 bSuppress: bSuppress,
     nTopLevelHistory: nTopLevelHistory
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.ResumeMessaging = function() {
-        const args = {
-            TestAPI: "FormIt.ResumeMessaging"
+        FormIt.ResumeMessaging = function() {
+            const args = {
+                TestAPI: "FormIt.ResumeMessaging"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.ChangeTargetBuildableArea = function(value) {
-        const args = {
-            TestAPI: "FormIt.ChangeTargetBuildableArea",
+        FormIt.ChangeTargetBuildableArea = function(value) {
+            const args = {
+                TestAPI: "FormIt.ChangeTargetBuildableArea",
 value: value
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetBuildingType = function() {
-        const args = {
-            TestAPI: "FormIt.GetBuildingType"
+        FormIt.GetBuildingType = function() {
+            const args = {
+                TestAPI: "FormIt.GetBuildingType"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetBuildingType = function(value) {
-        const args = {
-            TestAPI: "FormIt.SetBuildingType",
+        FormIt.SetBuildingType = function(value) {
+            const args = {
+                TestAPI: "FormIt.SetBuildingType",
 value: value
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.WriteAppDefaultContentToFile = function(id,path) {
-        const args = {
-            TestAPI: "FormIt.WriteAppDefaultContentToFile",
+        FormIt.WriteAppDefaultContentToFile = function(id,path) {
+            const args = {
+                TestAPI: "FormIt.WriteAppDefaultContentToFile",
 id: id,
     path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.DeleteImage = function(nHistoryID,imageID) {
-        const args = {
-            TestAPI: "FormIt.DeleteImage",
+        FormIt.DeleteImage = function(nHistoryID,imageID) {
+            const args = {
+                TestAPI: "FormIt.DeleteImage",
 nHistoryID: nHistoryID,
     imageID: imageID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.HandleHUDTextInput = function(dimensionID,inputText) {
-        const args = {
-            TestAPI: "FormIt.HandleHUDTextInput",
+        FormIt.HandleHUDTextInput = function(dimensionID,inputText) {
+            const args = {
+                TestAPI: "FormIt.HandleHUDTextInput",
 dimensionID: dimensionID,
     inputText: inputText
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetAppDefaultContentsWithoutAXM = function() {
-        const args = {
-            TestAPI: "FormIt.GetAppDefaultContentsWithoutAXM"
+        FormIt.GetAppDefaultContentsWithoutAXM = function() {
+            const args = {
+                TestAPI: "FormIt.GetAppDefaultContentsWithoutAXM"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetKeyboardShortcutsEnabled = function(enabled) {
-        const args = {
-            TestAPI: "FormIt.SetKeyboardShortcutsEnabled",
+        FormIt.SetKeyboardShortcutsEnabled = function(enabled) {
+            const args = {
+                TestAPI: "FormIt.SetKeyboardShortcutsEnabled",
 enabled: enabled
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetShowEditableDimensions = function() {
-        const args = {
-            TestAPI: "FormIt.GetShowEditableDimensions"
+        FormIt.GetShowEditableDimensions = function() {
+            const args = {
+                TestAPI: "FormIt.GetShowEditableDimensions"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.SetShowEditableDimensions = function(show) {
-        const args = {
-            TestAPI: "FormIt.SetShowEditableDimensions",
+        FormIt.SetShowEditableDimensions = function(show) {
+            const args = {
+                TestAPI: "FormIt.SetShowEditableDimensions",
 show: show
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetVersion = function() {
-        const args = {
-            TestAPI: "FormIt.GetVersion"
+        FormIt.GetVersion = function() {
+            const args = {
+                TestAPI: "FormIt.GetVersion"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetAlwaysShowInferences = function() {
-        const args = {
-            TestAPI: "FormIt.GetAlwaysShowInferences"
-        };
-        return callAsyncAPI(args);
-    };
-
-    
-    FormIt.SetAlwaysShowInferences = function(bAlwaysShowInferences) {
-        const args = {
-            TestAPI: "FormIt.SetAlwaysShowInferences",
-bAlwaysShowInferences: bAlwaysShowInferences
-        };
-        return callAsyncAPI(args);
-    };
-
-    
-    FormIt.ImportToGroup = function(sFileType,sFilePath) {
-        const args = {
-            TestAPI: "FormIt.ImportToGroup",
+        FormIt.ImportToGroup = function(sFileType,sFilePath) {
+            const args = {
+                TestAPI: "FormIt.ImportToGroup",
 sFileType: sFileType,
     sFilePath: sFilePath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.CallJS = function(funcName,paramsJSON) {
-        const args = {
-            TestAPI: "FormIt.CallJS",
+        FormIt.CallJS = function(funcName,paramsJSON) {
+            const args = {
+                TestAPI: "FormIt.CallJS",
 funcName: funcName,
     paramsJSON: paramsJSON
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-    
-    FormIt.GetContextMenuOptions = function() {
-        const args = {
-            TestAPI: "FormIt.GetContextMenuOptions"
+        FormIt.GetContextMenuOptions = function() {
+            const args = {
+                TestAPI: "FormIt.GetContextMenuOptions"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Analysis = {};
 FormIt.Analysis.Solar = {};
-            
-    FormIt.Analysis.Solar.EnterAnalysisMode = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.EnterAnalysisMode"
-        };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.ToggleAnalysisMode = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.ToggleAnalysisMode"
+        FormIt.Analysis.Solar.EnterAnalysisMode = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.EnterAnalysisMode"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.ExitAnalysisMode = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.ExitAnalysisMode"
+        FormIt.Analysis.Solar.ToggleAnalysisMode = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.ToggleAnalysisMode"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.ToggleFaceSelections = function(aFacePaths) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.ToggleFaceSelections",
+        FormIt.Analysis.Solar.ExitAnalysisMode = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.ExitAnalysisMode"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Analysis.Solar.ToggleFaceSelections = function(aFacePaths) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.ToggleFaceSelections",
 aFacePaths: aFacePaths
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.ResetAnalysis = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.ResetAnalysis"
+        FormIt.Analysis.Solar.ResetAnalysis = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.ResetAnalysis"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.SetMethod = function(bMonthlyPeak) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.SetMethod",
+        FormIt.Analysis.Solar.SetMethod = function(bMonthlyPeak) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.SetMethod",
 bMonthlyPeak: bMonthlyPeak
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.SetPeakMonth = function(month) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.SetPeakMonth",
+        FormIt.Analysis.Solar.SetPeakMonth = function(month) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.SetPeakMonth",
 month: month
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetPeakMonth = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetPeakMonth"
+        FormIt.Analysis.Solar.GetPeakMonth = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetPeakMonth"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetMethod = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetMethod"
+        FormIt.Analysis.Solar.GetMethod = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetMethod"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetLimits = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetLimits"
+        FormIt.Analysis.Solar.GetLimits = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetLimits"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetUnitString = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetUnitString"
+        FormIt.Analysis.Solar.GetUnitString = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetUnitString"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.IsInSolarAnalysisMode = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.IsInSolarAnalysisMode"
+        FormIt.Analysis.Solar.IsInSolarAnalysisMode = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.IsInSolarAnalysisMode"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.IsNewAnalysisEnabled = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.IsNewAnalysisEnabled"
+        FormIt.Analysis.Solar.IsNewAnalysisEnabled = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.IsNewAnalysisEnabled"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.IsAnalysisInProgress = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.IsAnalysisInProgress"
+        FormIt.Analysis.Solar.IsAnalysisInProgress = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.IsAnalysisInProgress"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.CanAnalyze = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.CanAnalyze"
+        FormIt.Analysis.Solar.CanAnalyze = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.CanAnalyze"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetWeatherDataStatus = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetWeatherDataStatus"
+        FormIt.Analysis.Solar.GetWeatherDataStatus = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetWeatherDataStatus"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.SetWeatherDataStatus = function(status) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.SetWeatherDataStatus",
+        FormIt.Analysis.Solar.SetWeatherDataStatus = function(status) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.SetWeatherDataStatus",
 status: status
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetNumTooltipsToShow = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetNumTooltipsToShow"
+        FormIt.Analysis.Solar.GetNumTooltipsToShow = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetNumTooltipsToShow"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.SetNumTooltipsToShow = function(numToolTips) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.SetNumTooltipsToShow",
+        FormIt.Analysis.Solar.SetNumTooltipsToShow = function(numToolTips) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.SetNumTooltipsToShow",
 numToolTips: numToolTips
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.Analyze = function(bNeedInterrupt,dInterruptTime,nPreviousStep) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.Analyze",
+        FormIt.Analysis.Solar.Analyze = function(bNeedInterrupt,dInterruptTime,nPreviousStep) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.Analyze",
 bNeedInterrupt: bNeedInterrupt,
             dInterruptTime: dInterruptTime,
             nPreviousStep: nPreviousStep
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.CancelAnalysis = function() {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.CancelAnalysis"
+        FormIt.Analysis.Solar.CancelAnalysis = function() {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.CancelAnalysis"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-            
-    FormIt.Analysis.Solar.GetValueFromFaceAtPoint = function(face,pt) {
-        const args = {
-            TestAPI: "FormIt.Analysis.Solar.GetValueFromFaceAtPoint",
+        FormIt.Analysis.Solar.GetValueFromFaceAtPoint = function(face,pt) {
+            const args = {
+                TestAPI: "FormIt.Analysis.Solar.GetValueFromFaceAtPoint",
 face: face,
             pt: pt
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.AutoSave = {};
-        
-    FormIt.AutoSave.Enable = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.Enable"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.Disable = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.Disable"
+        FormIt.AutoSave.Enable = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.Enable"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.IsEnabled = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.IsEnabled"
+        FormIt.AutoSave.Disable = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.Disable"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.SetConfig = function(config) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.SetConfig",
+        FormIt.AutoSave.IsEnabled = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.IsEnabled"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.AutoSave.SetConfig = function(config) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.SetConfig",
 config: config
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.SetConfigFromPath = function(path) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.SetConfigFromPath",
+        FormIt.AutoSave.SetConfigFromPath = function(path) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.SetConfigFromPath",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.GetConfig = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.GetConfig"
+        FormIt.AutoSave.GetConfig = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.GetConfig"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.GetDefaultConfig = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.GetDefaultConfig"
+        FormIt.AutoSave.GetDefaultConfig = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.GetDefaultConfig"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.StartSignalThread = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.StartSignalThread"
+        FormIt.AutoSave.StartSignalThread = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.StartSignalThread"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.StopSignalThread = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.StopSignalThread"
+        FormIt.AutoSave.StopSignalThread = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.StopSignalThread"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.Save = function(force) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.Save",
+        FormIt.AutoSave.Save = function(force) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.Save",
 force: force
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.GetExistingBackupFile = function(path) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.GetExistingBackupFile",
+        FormIt.AutoSave.GetExistingBackupFile = function(path) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.GetExistingBackupFile",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.Cleanup = function(force) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.Cleanup",
+        FormIt.AutoSave.Cleanup = function(force) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.Cleanup",
 force: force
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.AddProtectedFile = function(path) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.AddProtectedFile",
+        FormIt.AutoSave.AddProtectedFile = function(path) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.AddProtectedFile",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.ClearProtectedFiles = function() {
-        const args = {
-            TestAPI: "FormIt.AutoSave.ClearProtectedFiles"
+        FormIt.AutoSave.ClearProtectedFiles = function() {
+            const args = {
+                TestAPI: "FormIt.AutoSave.ClearProtectedFiles"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.AutoSave.IsFileProtected = function(path) {
-        const args = {
-            TestAPI: "FormIt.AutoSave.IsFileProtected",
+        FormIt.AutoSave.IsFileProtected = function(path) {
+            const args = {
+                TestAPI: "FormIt.AutoSave.IsFileProtected",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Cameras = {};
-        
-    FormIt.Cameras.GetCameraData = function() {
-        const args = {
-            TestAPI: "FormIt.Cameras.GetCameraData"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Cameras.SetCameraData = function(cameraData) {
-        const args = {
-            TestAPI: "FormIt.Cameras.SetCameraData",
+        FormIt.Cameras.GetCameraData = function() {
+            const args = {
+                TestAPI: "FormIt.Cameras.GetCameraData"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Cameras.SetCameraData = function(cameraData) {
+            const args = {
+                TestAPI: "FormIt.Cameras.SetCameraData",
 cameraData: cameraData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Cameras.AlignWithFace = function(facePath,withTransition) {
-        const args = {
-            TestAPI: "FormIt.Cameras.AlignWithFace",
+        FormIt.Cameras.AlignWithFace = function(facePath,withTransition) {
+            const args = {
+                TestAPI: "FormIt.Cameras.AlignWithFace",
 facePath: facePath,
         withTransition: withTransition
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Cameras.GetViewportSize = function() {
-        const args = {
-            TestAPI: "FormIt.Cameras.GetViewportSize"
+        FormIt.Cameras.GetViewportSize = function() {
+            const args = {
+                TestAPI: "FormIt.Cameras.GetViewportSize"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Cameras.SetViewportSize = function(x,y) {
-        const args = {
-            TestAPI: "FormIt.Cameras.SetViewportSize",
+        FormIt.Cameras.SetViewportSize = function(x,y) {
+            const args = {
+                TestAPI: "FormIt.Cameras.SetViewportSize",
 x: x,
         y: y
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Cameras.SetProjectionType = function(projectionType) {
-        const args = {
-            TestAPI: "FormIt.Cameras.SetProjectionType",
+        FormIt.Cameras.SetProjectionType = function(projectionType) {
+            const args = {
+                TestAPI: "FormIt.Cameras.SetProjectionType",
 projectionType: projectionType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Cameras.GetProjectionType = function() {
-        const args = {
-            TestAPI: "FormIt.Cameras.GetProjectionType"
+        FormIt.Cameras.GetProjectionType = function() {
+            const args = {
+                TestAPI: "FormIt.Cameras.GetProjectionType"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Clipboard = {};
-        
-    FormIt.Clipboard.GetJSONStringForClipboard = function() {
-        const args = {
-            TestAPI: "FormIt.Clipboard.GetJSONStringForClipboard"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Clipboard.SetJSONStringFromClipboard = function(str) {
-        const args = {
-            TestAPI: "FormIt.Clipboard.SetJSONStringFromClipboard",
+        FormIt.Clipboard.GetJSONStringForClipboard = function() {
+            const args = {
+                TestAPI: "FormIt.Clipboard.GetJSONStringForClipboard"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Clipboard.SetJSONStringFromClipboard = function(str) {
+            const args = {
+                TestAPI: "FormIt.Clipboard.SetJSONStringFromClipboard",
 str: str
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Collaboration = {};
-        
-    FormIt.Collaboration.Connect = function(sSessionLink) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.Connect",
+
+        FormIt.Collaboration.Connect = function(sSessionLink) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.Connect",
 sSessionLink: sSessionLink
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.IsConnected = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.IsConnected"
+        FormIt.Collaboration.IsConnected = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.IsConnected"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.Disconnect = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.Disconnect"
+        FormIt.Collaboration.Disconnect = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.Disconnect"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.GetSessionId = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.GetSessionId"
+        FormIt.Collaboration.GetSessionId = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.GetSessionId"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.IsSessionOwner = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.IsSessionOwner"
+        FormIt.Collaboration.IsSessionOwner = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.IsSessionOwner"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.IsFollowingCamera = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.IsFollowingCamera"
+        FormIt.Collaboration.IsFollowingCamera = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.IsFollowingCamera"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.FollowCamera = function(sUserId) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.FollowCamera",
+        FormIt.Collaboration.FollowCamera = function(sUserId) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.FollowCamera",
 sUserId: sUserId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.GetFollowingCameraUserID = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.GetFollowingCameraUserID"
+        FormIt.Collaboration.GetFollowingCameraUserID = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.GetFollowingCameraUserID"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.UnFollowCamera = function() {
-        const args = {
-            TestAPI: "FormIt.Collaboration.UnFollowCamera"
+        FormIt.Collaboration.UnFollowCamera = function() {
+            const args = {
+                TestAPI: "FormIt.Collaboration.UnFollowCamera"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.ReceiveCreateRefHistory = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.ReceiveCreateRefHistory",
+        FormIt.Collaboration.ReceiveCreateRefHistory = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.ReceiveCreateRefHistory",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.ReceiveHistory = function(nHistoryID,sBase64History,bIsOwner) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.ReceiveHistory",
+        FormIt.Collaboration.ReceiveHistory = function(nHistoryID,sBase64History,bIsOwner) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.ReceiveHistory",
 nHistoryID: nHistoryID,
         sBase64History: sBase64History,
         bIsOwner: bIsOwner
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.ReceiveDelta = function(nHistoryID,nDeltaID,sBase64Delta) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.ReceiveDelta",
+        FormIt.Collaboration.ReceiveDelta = function(nHistoryID,nDeltaID,sBase64Delta) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.ReceiveDelta",
 nHistoryID: nHistoryID,
         nDeltaID: nDeltaID,
         sBase64Delta: sBase64Delta
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.ReceiveUndoRedo = function(nHistoryID,nUndoValue,nBaseDeltaID,sBase64Delta) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.ReceiveUndoRedo",
+        FormIt.Collaboration.ReceiveUndoRedo = function(nHistoryID,nUndoValue,nBaseDeltaID,sBase64Delta) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.ReceiveUndoRedo",
 nHistoryID: nHistoryID,
         nUndoValue: nUndoValue,
         nBaseDeltaID: nBaseDeltaID,
         sBase64Delta: sBase64Delta
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Collaboration.ReceiveDataAcceptance = function(nHistoryID,nDataType,nDeltaID,bAccepted) {
-        const args = {
-            TestAPI: "FormIt.Collaboration.ReceiveDataAcceptance",
+        FormIt.Collaboration.ReceiveDataAcceptance = function(nHistoryID,nDataType,nDeltaID,bAccepted) {
+            const args = {
+                TestAPI: "FormIt.Collaboration.ReceiveDataAcceptance",
 nHistoryID: nHistoryID,
         nDataType: nDataType,
         nDeltaID: nDeltaID,
         bAccepted: bAccepted
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Configuration = {};
-        
-    FormIt.Configuration.GetToolGroupUUIDs = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetToolGroupUUIDs"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetContextMenuToolUUIDs = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetContextMenuToolUUIDs"
+        FormIt.Configuration.GetToolGroupUUIDs = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetToolGroupUUIDs"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetContextMenuToolUUIDFromActionId = function(actionId) {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetContextMenuToolUUIDFromActionId",
+        FormIt.Configuration.GetContextMenuToolUUIDs = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetContextMenuToolUUIDs"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Configuration.GetContextMenuToolUUIDFromActionId = function(actionId) {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetContextMenuToolUUIDFromActionId",
 actionId: actionId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetContextMenuActionIdFromToolUUID = function(toolUUID) {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetContextMenuActionIdFromToolUUID",
+        FormIt.Configuration.GetContextMenuActionIdFromToolUUID = function(toolUUID) {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetContextMenuActionIdFromToolUUID",
 toolUUID: toolUUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetToolGroupInfo = function(toolGroupUUID) {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetToolGroupInfo",
+        FormIt.Configuration.GetToolGroupInfo = function(toolGroupUUID) {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetToolGroupInfo",
 toolGroupUUID: toolGroupUUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetToolInfo = function(toolUUID) {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetToolInfo",
+        FormIt.Configuration.GetToolInfo = function(toolUUID) {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetToolInfo",
 toolUUID: toolUUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.IsPaletteConfigured = function(paletteUUID) {
-        const args = {
-            TestAPI: "FormIt.Configuration.IsPaletteConfigured",
+        FormIt.Configuration.IsPaletteConfigured = function(paletteUUID) {
+            const args = {
+                TestAPI: "FormIt.Configuration.IsPaletteConfigured",
 paletteUUID: paletteUUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.IsProjectBarConfigured = function(projectBarUUID) {
-        const args = {
-            TestAPI: "FormIt.Configuration.IsProjectBarConfigured",
+        FormIt.Configuration.IsProjectBarConfigured = function(projectBarUUID) {
+            const args = {
+                TestAPI: "FormIt.Configuration.IsProjectBarConfigured",
 projectBarUUID: projectBarUUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.ConfigureFromJSON = function(configurationJSON) {
-        const args = {
-            TestAPI: "FormIt.Configuration.ConfigureFromJSON",
+        FormIt.Configuration.ConfigureFromJSON = function(configurationJSON) {
+            const args = {
+                TestAPI: "FormIt.Configuration.ConfigureFromJSON",
 configurationJSON: configurationJSON
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetAllPalettes = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetAllPalettes"
+        FormIt.Configuration.GetAllPalettes = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetAllPalettes"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetAllProjectBarItems = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetAllProjectBarItems"
+        FormIt.Configuration.GetAllProjectBarItems = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetAllProjectBarItems"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetAllToolGroups = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetAllToolGroups"
+        FormIt.Configuration.GetAllToolGroups = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetAllToolGroups"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetAllToolGroupTools = function(toolGroupUUID) {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetAllToolGroupTools",
+        FormIt.Configuration.GetAllToolGroupTools = function(toolGroupUUID) {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetAllToolGroupTools",
 toolGroupUUID: toolGroupUUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetAllContextMenuTools = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetAllContextMenuTools"
+        FormIt.Configuration.GetAllContextMenuTools = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetAllContextMenuTools"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.GetAllImplicitTools = function() {
-        const args = {
-            TestAPI: "FormIt.Configuration.GetAllImplicitTools"
+        FormIt.Configuration.GetAllImplicitTools = function() {
+            const args = {
+                TestAPI: "FormIt.Configuration.GetAllImplicitTools"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Configuration.IsShortcutCommandConfigured = function(commandName) {
-        const args = {
-            TestAPI: "FormIt.Configuration.IsShortcutCommandConfigured",
+        FormIt.Configuration.IsShortcutCommandConfigured = function(commandName) {
+            const args = {
+                TestAPI: "FormIt.Configuration.IsShortcutCommandConfigured",
 commandName: commandName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Dynamo = {};
-        
-    FormIt.Dynamo.HasFormItBakeToFormItNode = function(dynFileName) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.HasFormItBakeToFormItNode",
+
+        FormIt.Dynamo.HasFormItBakeToFormItNode = function(dynFileName) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.HasFormItBakeToFormItNode",
 dynFileName: dynFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.HasFormItSelectionNodes = function(dynFileName) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.HasFormItSelectionNodes",
+        FormIt.Dynamo.HasFormItSelectionNodes = function(dynFileName) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.HasFormItSelectionNodes",
 dynFileName: dynFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.IsDynamoHistory = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.IsDynamoHistory",
+        FormIt.Dynamo.IsDynamoHistory = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.IsDynamoHistory",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.GetUuid = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.GetUuid",
+        FormIt.Dynamo.GetDynamoHistoryInPath = function(path) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetDynamoHistoryInPath",
+path: path
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Dynamo.GetDynamoHistoryInCurrentContext = function() {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetDynamoHistoryInCurrentContext"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Dynamo.GetUuid = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetUuid",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.GetSelectedDynamoHistory = function() {
-        const args = {
-            TestAPI: "FormIt.Dynamo.GetSelectedDynamoHistory"
+        FormIt.Dynamo.GetSelectedDynamoHistory = function() {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetSelectedDynamoHistory"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.IsDynamoHistory = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.IsDynamoHistory",
+        FormIt.Dynamo.IsDynamoHistory = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.IsDynamoHistory",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.GetDynamoFile = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.GetDynamoFile",
+        FormIt.Dynamo.GetDynamoFile = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetDynamoFile",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.SetDynamoFile = function(historyId,script,GUID) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.SetDynamoFile",
+        FormIt.Dynamo.SetDynamoFile = function(historyId,script,GUID) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.SetDynamoFile",
 historyId: historyId,
         script: script,
         GUID: GUID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.GetDynamoGroupName = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.GetDynamoGroupName",
+        FormIt.Dynamo.GetDynamoGroupName = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetDynamoGroupName",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.WriteDYNFile = function(historyId,path) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.WriteDYNFile",
+        FormIt.Dynamo.WriteDYNFile = function(historyId,path) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.WriteDYNFile",
 historyId: historyId,
         path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.GetInputNodes = function(historyId,bIsSetAsInput) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.GetInputNodes",
+        FormIt.Dynamo.GetInputNodes = function(historyId,bIsSetAsInput) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetInputNodes",
 historyId: historyId,
         bIsSetAsInput: bIsSetAsInput
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.GetDynamoFileBakeNodes = function(DYNFileName) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.GetDynamoFileBakeNodes",
+        FormIt.Dynamo.GetDynamoFileBakeNodes = function(DYNFileName) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.GetDynamoFileBakeNodes",
 DYNFileName: DYNFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.DYNRemoveBakeNodesSATFiles = function(DYNFileName) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.DYNRemoveBakeNodesSATFiles",
+        FormIt.Dynamo.DYNRemoveBakeNodesSATFiles = function(DYNFileName) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.DYNRemoveBakeNodesSATFiles",
 DYNFileName: DYNFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.DYNBakeNodesSATFilesExist = function(DYNFileName) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.DYNBakeNodesSATFilesExist",
+        FormIt.Dynamo.DYNAnyBakeNodeSATFilesExist = function(DYNFileName) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.DYNAnyBakeNodeSATFilesExist",
 DYNFileName: DYNFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Dynamo.UpdateRenderer = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.Dynamo.UpdateRenderer",
+        FormIt.Dynamo.UpdateRenderer = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.Dynamo.UpdateRenderer",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Files = {};
-        
-    FormIt.Files.GetSupportedFilesList = function(action,type,dialogType) {
-        const args = {
-            TestAPI: "FormIt.Files.GetSupportedFilesList",
+
+        FormIt.Files.GetSupportedFilesList = function(action,type,dialogType) {
+            const args = {
+                TestAPI: "FormIt.Files.GetSupportedFilesList",
 action: action,
         type: type,
         dialogType: dialogType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Files.IsFileSupported = function(extension,action,type,dialogType) {
-        const args = {
-            TestAPI: "FormIt.Files.IsFileSupported",
+        FormIt.Files.IsFileSupported = function(extension,action,type,dialogType) {
+            const args = {
+                TestAPI: "FormIt.Files.IsFileSupported",
 extension: extension,
         action: action,
         type: type,
         dialogType: dialogType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.FileSystem = {};
-        
-    FormIt.FileSystem.FileExists = function(path) {
-        const args = {
-            TestAPI: "FormIt.FileSystem.FileExists",
-path: path
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.FileSystem.Remove = function(path) {
-        const args = {
-            TestAPI: "FormIt.FileSystem.Remove",
+        FormIt.FileSystem.FileExists = function(path) {
+            const args = {
+                TestAPI: "FormIt.FileSystem.FileExists",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
+        FormIt.FileSystem.Remove = function(path) {
+            const args = {
+                TestAPI: "FormIt.FileSystem.Remove",
+path: path
+            };
+            return callAsyncAPI(args);
+        };
 FormIt.Forge = {};
 FormIt.Forge.UI = {};
-            
-    FormIt.Forge.UI.ErrorCodeToUIMessage = function(code) {
-        const args = {
-            TestAPI: "FormIt.Forge.UI.ErrorCodeToUIMessage",
+
+        FormIt.Forge.UI.ErrorCodeToUIMessage = function(code) {
+            const args = {
+                TestAPI: "FormIt.Forge.UI.ErrorCodeToUIMessage",
 code: code
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.GroupEdit = {};
-        
-    FormIt.GroupEdit.GetEditingHistoryID = function() {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.GetEditingHistoryID"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.GetInContextEditingPath = function() {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.GetInContextEditingPath"
+        FormIt.GroupEdit.GetEditingHistoryID = function() {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.GetEditingHistoryID"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.SetInContextEditingPath = function(path) {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.SetInContextEditingPath",
+        FormIt.GroupEdit.GetInContextEditingPath = function() {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.GetInContextEditingPath"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.GroupEdit.SetInContextEditingPath = function(path) {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.SetInContextEditingPath",
 path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.IsEditingInContext = function() {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.IsEditingInContext"
+        FormIt.GroupEdit.IsEditingInContext = function() {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.IsEditingInContext"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.EndEditInContext = function() {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.EndEditInContext"
+        FormIt.GroupEdit.EndEditInContext = function() {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.EndEditInContext"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.ExitToParentContext = function() {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.ExitToParentContext"
+        FormIt.GroupEdit.ExitToParentContext = function() {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.ExitToParentContext"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.GetShowEditedGroupOnly = function() {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.GetShowEditedGroupOnly"
+        FormIt.GroupEdit.GetShowEditedGroupOnly = function() {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.GetShowEditedGroupOnly"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.GroupEdit.SetShowEditedGroupOnly = function(show) {
-        const args = {
-            TestAPI: "FormIt.GroupEdit.SetShowEditedGroupOnly",
+        FormIt.GroupEdit.SetShowEditedGroupOnly = function(show) {
+            const args = {
+                TestAPI: "FormIt.GroupEdit.SetShowEditedGroupOnly",
 show: show
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.HUDManager = {};
-        
-    FormIt.HUDManager.GetNumWidgets = function() {
-        const args = {
-            TestAPI: "FormIt.HUDManager.GetNumWidgets"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.HUDManager.WidgetTextInput = function(widgetID,text) {
-        const args = {
-            TestAPI: "FormIt.HUDManager.WidgetTextInput",
+        FormIt.HUDManager.GetNumWidgets = function() {
+            const args = {
+                TestAPI: "FormIt.HUDManager.GetNumWidgets"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.HUDManager.WidgetTextInput = function(widgetID,text) {
+            const args = {
+                TestAPI: "FormIt.HUDManager.WidgetTextInput",
 widgetID: widgetID,
         text: text
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.HUDManager.ResetHUD = function() {
-        const args = {
-            TestAPI: "FormIt.HUDManager.ResetHUD"
+        FormIt.HUDManager.ResetHUD = function() {
+            const args = {
+                TestAPI: "FormIt.HUDManager.ResetHUD"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.ImageManager = {};
-        
-    FormIt.ImageManager.ReloadImageLayerWithImage = function(nHistoryID,nLayerID,imageFile) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.ReloadImageLayerWithImage",
+
+        FormIt.ImageManager.ReloadImageLayerWithImage = function(nHistoryID,nLayerID,imageFile) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.ReloadImageLayerWithImage",
 nHistoryID: nHistoryID,
         nLayerID: nLayerID,
         imageFile: imageFile
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.ReloadImageLayerWithPlaceholder = function(nHistoryID,nLayerID) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.ReloadImageLayerWithPlaceholder",
+        FormIt.ImageManager.ReloadImageLayerWithPlaceholder = function(nHistoryID,nLayerID) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.ReloadImageLayerWithPlaceholder",
 nHistoryID: nHistoryID,
         nLayerID: nLayerID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.GetData = function(nHistoryID,nImageID,aIncludeSatelliteData) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.GetData",
+        FormIt.ImageManager.GetData = function(nHistoryID,nImageID,aIncludeSatelliteData) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.GetData",
 nHistoryID: nHistoryID,
         nImageID: nImageID,
         aIncludeSatelliteData: aIncludeSatelliteData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.GetAllImages = function(nHistoryID,nSort) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.GetAllImages",
+        FormIt.ImageManager.GetAllImages = function(nHistoryID,nSort) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.GetAllImages",
 nHistoryID: nHistoryID,
         nSort: nSort
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.ImportImage = function(nHistoryID,fileName,pixelWidth,pixelHeight,worldWidth,worldHeight,isSatelliteImage,addToSelections) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.ImportImage",
+        FormIt.ImageManager.ImportImage = function(nHistoryID,fileName,pixelWidth,pixelHeight,worldWidth,worldHeight,isSatelliteImage,addToSelections) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.ImportImage",
 nHistoryID: nHistoryID,
         fileName: fileName,
         pixelWidth: pixelWidth,
@@ -5913,497 +5334,456 @@ nHistoryID: nHistoryID,
         worldHeight: worldHeight,
         isSatelliteImage: isSatelliteImage,
         addToSelections: addToSelections
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.SetImageName = function(nHistoryID,imageID,name) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.SetImageName",
+        FormIt.ImageManager.SetImageName = function(nHistoryID,imageID,name) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.SetImageName",
 nHistoryID: nHistoryID,
         imageID: imageID,
         name: name
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.SetImageAlpha = function(nHistoryID,imageID,fAlpha,bFinalChange) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.SetImageAlpha",
+        FormIt.ImageManager.SetImageAlpha = function(nHistoryID,imageID,fAlpha,bFinalChange) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.SetImageAlpha",
 nHistoryID: nHistoryID,
         imageID: imageID,
         fAlpha: fAlpha,
         bFinalChange: bFinalChange
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.SetImagePosition = function(nHistoryID,imageID,nPosition) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.SetImagePosition",
+        FormIt.ImageManager.SetImagePosition = function(nHistoryID,imageID,nPosition) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.SetImagePosition",
 nHistoryID: nHistoryID,
         imageID: imageID,
         nPosition: nPosition
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.ImageManager.ReloadTerrain = function(nHistoryID,nImageID,imageFile,nRows,nCols,elevations) {
-        const args = {
-            TestAPI: "FormIt.ImageManager.ReloadTerrain",
+        FormIt.ImageManager.ReloadTerrain = function(nHistoryID,nImageID,imageFile,nRows,nCols,elevations) {
+            const args = {
+                TestAPI: "FormIt.ImageManager.ReloadTerrain",
 nHistoryID: nHistoryID,
         nImageID: nImageID,
         imageFile: imageFile,
         nRows: nRows,
         nCols: nCols,
         elevations: elevations
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Layers = {};
-        
-    FormIt.Layers.GetAllLayers = function() {
-        const args = {
-            TestAPI: "FormIt.Layers.GetAllLayers"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.GetLayerData = function(layerID) {
-        const args = {
-            TestAPI: "FormIt.Layers.GetLayerData",
+        FormIt.Layers.GetAllLayers = function() {
+            const args = {
+                TestAPI: "FormIt.Layers.GetAllLayers"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Layers.GetLayerData = function(layerID) {
+            const args = {
+                TestAPI: "FormIt.Layers.GetLayerData",
 layerID: layerID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.GetAllLayerData = function() {
-        const args = {
-            TestAPI: "FormIt.Layers.GetAllLayerData"
+        FormIt.Layers.GetAllLayerData = function() {
+            const args = {
+                TestAPI: "FormIt.Layers.GetAllLayerData"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.AddLayer = function(historyID,layerName,visible) {
-        const args = {
-            TestAPI: "FormIt.Layers.AddLayer",
+        FormIt.Layers.AddLayer = function(historyID,layerName,visible) {
+            const args = {
+                TestAPI: "FormIt.Layers.AddLayer",
 historyID: historyID,
         layerName: layerName,
         visible: visible
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.IsValid = function(layerID) {
-        const args = {
-            TestAPI: "FormIt.Layers.IsValid",
+        FormIt.Layers.IsValid = function(layerID) {
+            const args = {
+                TestAPI: "FormIt.Layers.IsValid",
 layerID: layerID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.SetLayersVisibility = function(aLayersVisibility) {
-        const args = {
-            TestAPI: "FormIt.Layers.SetLayersVisibility",
+        FormIt.Layers.SetLayersVisibility = function(aLayersVisibility) {
+            const args = {
+                TestAPI: "FormIt.Layers.SetLayersVisibility",
 aLayersVisibility: aLayersVisibility
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.SetLayerVisibility = function(layerName,visibility) {
-        const args = {
-            TestAPI: "FormIt.Layers.SetLayerVisibility",
+        FormIt.Layers.SetLayerVisibility = function(layerName,visibility) {
+            const args = {
+                TestAPI: "FormIt.Layers.SetLayerVisibility",
 layerName: layerName,
         visibility: visibility
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.LayerExists = function(layerName) {
-        const args = {
-            TestAPI: "FormIt.Layers.LayerExists",
+        FormIt.Layers.LayerExists = function(layerName) {
+            const args = {
+                TestAPI: "FormIt.Layers.LayerExists",
 layerName: layerName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.DeleteLayers = function(aLayerIDs) {
-        const args = {
-            TestAPI: "FormIt.Layers.DeleteLayers",
+        FormIt.Layers.DeleteLayers = function(aLayerIDs) {
+            const args = {
+                TestAPI: "FormIt.Layers.DeleteLayers",
 aLayerIDs: aLayerIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.IsValidLayerName = function(layerID,newLayerName) {
-        const args = {
-            TestAPI: "FormIt.Layers.IsValidLayerName",
+        FormIt.Layers.IsValidLayerName = function(layerID,newLayerName) {
+            const args = {
+                TestAPI: "FormIt.Layers.IsValidLayerName",
 layerID: layerID,
         newLayerName: newLayerName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.SetLayerName = function(layerID,newLayerName) {
-        const args = {
-            TestAPI: "FormIt.Layers.SetLayerName",
+        FormIt.Layers.SetLayerName = function(layerID,newLayerName) {
+            const args = {
+                TestAPI: "FormIt.Layers.SetLayerName",
 layerID: layerID,
         newLayerName: newLayerName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.AssignLayerToObjects = function(layerID,aObjects) {
-        const args = {
-            TestAPI: "FormIt.Layers.AssignLayerToObjects",
+        FormIt.Layers.AssignLayerToObjects = function(layerID,aObjects) {
+            const args = {
+                TestAPI: "FormIt.Layers.AssignLayerToObjects",
 layerID: layerID,
         aObjects: aObjects
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.RemoveLayersFromObjects = function(layerIDs,aObjects) {
-        const args = {
-            TestAPI: "FormIt.Layers.RemoveLayersFromObjects",
+        FormIt.Layers.RemoveLayersFromObjects = function(layerIDs,aObjects) {
+            const args = {
+                TestAPI: "FormIt.Layers.RemoveLayersFromObjects",
 layerIDs: layerIDs,
         aObjects: aObjects
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.GetAllObjectsOnLayers = function(layerIDs) {
-        const args = {
-            TestAPI: "FormIt.Layers.GetAllObjectsOnLayers",
-layerIDs: layerIDs
+        FormIt.Layers.GetAllObjectsOnLayers = function(layerIDs,allHistories) {
+            const args = {
+                TestAPI: "FormIt.Layers.GetAllObjectsOnLayers",
+layerIDs: layerIDs,
+        allHistories: allHistories
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.ChangeLayerOrder = function(layerID,newPosition) {
-        const args = {
-            TestAPI: "FormIt.Layers.ChangeLayerOrder",
+        FormIt.Layers.ChangeLayerOrder = function(layerID,newPosition) {
+            const args = {
+                TestAPI: "FormIt.Layers.ChangeLayerOrder",
 layerID: layerID,
         newPosition: newPosition
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.GetObjectLayerID = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "FormIt.Layers.GetObjectLayerID",
+        FormIt.Layers.GetObjectLayerID = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "FormIt.Layers.GetObjectLayerID",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.IsValidObjectForLayerAssignment = function(nHistoryID,nObjectID) {
-        const args = {
-            TestAPI: "FormIt.Layers.IsValidObjectForLayerAssignment",
+        FormIt.Layers.IsValidObjectForLayerAssignment = function(nHistoryID,nObjectID) {
+            const args = {
+                TestAPI: "FormIt.Layers.IsValidObjectForLayerAssignment",
 nHistoryID: nHistoryID,
         nObjectID: nObjectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.GetLayerList = function() {
-        const args = {
-            TestAPI: "FormIt.Layers.GetLayerList"
+        FormIt.Layers.GetLayerList = function() {
+            const args = {
+                TestAPI: "FormIt.Layers.GetLayerList"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Layers.GetLayerID = function(layerName) {
-        const args = {
-            TestAPI: "FormIt.Layers.GetLayerID",
+        FormIt.Layers.GetObjectsLayerList = function(groupInstacePathArray) {
+            const args = {
+                TestAPI: "FormIt.Layers.GetObjectsLayerList",
+groupInstacePathArray: groupInstacePathArray
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Layers.GetLayerID = function(layerName) {
+            const args = {
+                TestAPI: "FormIt.Layers.GetLayerID",
 layerName: layerName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Levels = {};
-        
-    FormIt.Levels.AddLevels = function(nHistoryID,numLevels,startElevation,deltaElevation) {
-        const args = {
-            TestAPI: "FormIt.Levels.AddLevels",
+
+        FormIt.Levels.AddLevels = function(nHistoryID,numLevels,startElevation,deltaElevation) {
+            const args = {
+                TestAPI: "FormIt.Levels.AddLevels",
 nHistoryID: nHistoryID,
         numLevels: numLevels,
         startElevation: startElevation,
         deltaElevation: deltaElevation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.AutoRenameLevels = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Levels.AutoRenameLevels",
+        FormIt.Levels.AutoRenameLevels = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Levels.AutoRenameLevels",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.ChangeLevelElevation = function(nHistoryID,levelID,newElevation) {
-        const args = {
-            TestAPI: "FormIt.Levels.ChangeLevelElevation",
+        FormIt.Levels.ChangeLevelElevation = function(nHistoryID,levelID,newElevation) {
+            const args = {
+                TestAPI: "FormIt.Levels.ChangeLevelElevation",
 nHistoryID: nHistoryID,
         levelID: levelID,
         newElevation: newElevation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.ChangeLevelName = function(levelID,levelName) {
-        const args = {
-            TestAPI: "FormIt.Levels.ChangeLevelName",
+        FormIt.Levels.ChangeLevelName = function(levelID,levelName) {
+            const args = {
+                TestAPI: "FormIt.Levels.ChangeLevelName",
 levelID: levelID,
         levelName: levelName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.CreateDefaultLevels = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Levels.CreateDefaultLevels",
+        FormIt.Levels.CreateDefaultLevels = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Levels.CreateDefaultLevels",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.DeleteLevels = function(nHistoryID,aLevelIDs) {
-        const args = {
-            TestAPI: "FormIt.Levels.DeleteLevels",
+        FormIt.Levels.DeleteLevels = function(nHistoryID,aLevelIDs) {
+            const args = {
+                TestAPI: "FormIt.Levels.DeleteLevels",
 nHistoryID: nHistoryID,
         aLevelIDs: aLevelIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetDefaultLevelHeight = function() {
-        const args = {
-            TestAPI: "FormIt.Levels.GetDefaultLevelHeight"
+        FormIt.Levels.GetDefaultLevelHeight = function() {
+            const args = {
+                TestAPI: "FormIt.Levels.GetDefaultLevelHeight"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetLevels = function(nHistoryID,sortByElevation) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetLevels",
+        FormIt.Levels.GetLevels = function(nHistoryID,sortByElevation) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetLevels",
 nHistoryID: nHistoryID,
         sortByElevation: sortByElevation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetLevelsVisible = function() {
-        const args = {
-            TestAPI: "FormIt.Levels.GetLevelsVisible"
+        FormIt.Levels.GetLevelsVisible = function() {
+            const args = {
+                TestAPI: "FormIt.Levels.GetLevelsVisible"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetNumLevels = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetNumLevels",
+        FormIt.Levels.GetNumLevels = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetNumLevels",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetMinLevelElevation = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetMinLevelElevation",
+        FormIt.Levels.GetMinLevelElevation = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetMinLevelElevation",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetMaxLevelElevation = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetMaxLevelElevation",
+        FormIt.Levels.GetMaxLevelElevation = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetMaxLevelElevation",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetLevelData = function(nHistoryID,levelID) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetLevelData",
+        FormIt.Levels.GetLevelData = function(nHistoryID,levelID) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetLevelData",
 nHistoryID: nHistoryID,
         levelID: levelID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetLevelsData = function(nHistoryID,sortByElevation) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetLevelsData",
+        FormIt.Levels.GetLevelsData = function(nHistoryID,sortByElevation) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetLevelsData",
 nHistoryID: nHistoryID,
         sortByElevation: sortByElevation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetLevelIDsFromSelectedObjects = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetLevelIDsFromSelectedObjects",
+        FormIt.Levels.GetLevelIDsFromSelectedObjects = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetLevelIDsFromSelectedObjects",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.HasLevelsInProject = function(checkVisibleOnly) {
-        const args = {
-            TestAPI: "FormIt.Levels.HasLevelsInProject",
+        FormIt.Levels.HasLevelsInProject = function(checkVisibleOnly) {
+            const args = {
+                TestAPI: "FormIt.Levels.HasLevelsInProject",
 checkVisibleOnly: checkVisibleOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.IsExistingLevel = function(nHistoryID,levelName) {
-        const args = {
-            TestAPI: "FormIt.Levels.IsExistingLevel",
+        FormIt.Levels.IsExistingLevel = function(nHistoryID,levelName) {
+            const args = {
+                TestAPI: "FormIt.Levels.IsExistingLevel",
 nHistoryID: nHistoryID,
         levelName: levelName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.IsExistingLevelByElevation = function(nHistoryID,elevation) {
-        const args = {
-            TestAPI: "FormIt.Levels.IsExistingLevelByElevation",
+        FormIt.Levels.IsExistingLevelByElevation = function(nHistoryID,elevation) {
+            const args = {
+                TestAPI: "FormIt.Levels.IsExistingLevelByElevation",
 nHistoryID: nHistoryID,
         elevation: elevation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.IsValidLevelDeltaElevation = function(nHistoryID,deltaElevationString,numLevels) {
-        const args = {
-            TestAPI: "FormIt.Levels.IsValidLevelDeltaElevation",
+        FormIt.Levels.IsValidLevelDeltaElevation = function(nHistoryID,deltaElevationString,numLevels) {
+            const args = {
+                TestAPI: "FormIt.Levels.IsValidLevelDeltaElevation",
 nHistoryID: nHistoryID,
         deltaElevationString: deltaElevationString,
         numLevels: numLevels
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.IsValidLevelElevation = function(nHistoryID,levelId,elevationString) {
-        const args = {
-            TestAPI: "FormIt.Levels.IsValidLevelElevation",
+        FormIt.Levels.IsValidLevelElevation = function(nHistoryID,levelId,elevationString) {
+            const args = {
+                TestAPI: "FormIt.Levels.IsValidLevelElevation",
 nHistoryID: nHistoryID,
         levelId: levelId,
         elevationString: elevationString
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.IsValidLevelName = function(levelID,levelName) {
-        const args = {
-            TestAPI: "FormIt.Levels.IsValidLevelName",
+        FormIt.Levels.IsValidLevelName = function(levelID,levelName) {
+            const args = {
+                TestAPI: "FormIt.Levels.IsValidLevelName",
 levelID: levelID,
         levelName: levelName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.IsValidNumberOfLevelsToAdd = function(nHistoryID,numLevelsString,deltaElevation) {
-        const args = {
-            TestAPI: "FormIt.Levels.IsValidNumberOfLevelsToAdd",
+        FormIt.Levels.IsValidNumberOfLevelsToAdd = function(nHistoryID,numLevelsString,deltaElevation) {
+            const args = {
+                TestAPI: "FormIt.Levels.IsValidNumberOfLevelsToAdd",
 nHistoryID: nHistoryID,
         numLevelsString: numLevelsString,
         deltaElevation: deltaElevation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.SetLevelsToSelectedObjects = function(nHistoryID,aLevelList) {
-        const args = {
-            TestAPI: "FormIt.Levels.SetLevelsToSelectedObjects",
+        FormIt.Levels.SetLevelsToSelectedObjects = function(nHistoryID,aLevelList) {
+            const args = {
+                TestAPI: "FormIt.Levels.SetLevelsToSelectedObjects",
 nHistoryID: nHistoryID,
         aLevelList: aLevelList
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.SetLevelsVisible = function(aVisible) {
-        const args = {
-            TestAPI: "FormIt.Levels.SetLevelsVisible",
+        FormIt.Levels.SetLevelsVisible = function(aVisible) {
+            const args = {
+                TestAPI: "FormIt.Levels.SetLevelsVisible",
 aVisible: aVisible
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.SetReportAreaByLevelsOnSelection = function(bON) {
-        const args = {
-            TestAPI: "FormIt.Levels.SetReportAreaByLevelsOnSelection",
+        FormIt.Levels.SetReportAreaByLevelsOnSelection = function(bON) {
+            const args = {
+                TestAPI: "FormIt.Levels.SetReportAreaByLevelsOnSelection",
 bON: bON
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Levels.GetAreaForObjects = function(nHistoryID,aLevelId,aObjectIds) {
-        const args = {
-            TestAPI: "FormIt.Levels.GetAreaForObjects",
+        FormIt.Levels.GetAreaForObjects = function(nHistoryID,aLevelId,aObjectIds) {
+            const args = {
+                TestAPI: "FormIt.Levels.GetAreaForObjects",
 nHistoryID: nHistoryID,
         aLevelId: aLevelId,
         aObjectIds: aObjectIds
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.MaterialProvider = {};
-        
-    FormIt.MaterialProvider.MaterialData = function(color,textureData,scale,useAlpha,materialName,materialIdentifier,textureName,aAdditionalRenderData,aAdditionalTextures) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.MaterialData",
+
+        FormIt.MaterialProvider.MaterialData = function(color,textureData,scale,useAlpha,materialName,materialIdentifier,textureName,aAdditionalRenderData,aAdditionalTextures) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.MaterialData",
 color: color,
         textureData: textureData,
         scale: scale,
@@ -6413,1293 +5793,1186 @@ color: color,
         textureName: textureName,
         aAdditionalRenderData: aAdditionalRenderData,
         aAdditionalTextures: aAdditionalTextures
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.CreateMaterial = function(libraryType,materialData) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.CreateMaterial",
+        FormIt.MaterialProvider.CreateMaterial = function(libraryType,materialData) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.CreateMaterial",
 libraryType: libraryType,
         materialData: materialData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.GetMaterialData = function(libraryType,materialId) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.GetMaterialData",
+        FormIt.MaterialProvider.GetMaterialData = function(libraryType,materialId) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.GetMaterialData",
 libraryType: libraryType,
         materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.SetMaterialData = function(libraryType,materialId,materialData) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.SetMaterialData",
+        FormIt.MaterialProvider.SetMaterialData = function(libraryType,materialId,materialData) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.SetMaterialData",
 libraryType: libraryType,
         materialId: materialId,
         materialData: materialData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.GetMaterialName = function(libraryType,materialId) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.GetMaterialName",
+        FormIt.MaterialProvider.GetMaterialName = function(libraryType,materialId) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.GetMaterialName",
 libraryType: libraryType,
         materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.GetMaterials = function(libraryType) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.GetMaterials",
+        FormIt.MaterialProvider.GetMaterials = function(libraryType) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.GetMaterials",
 libraryType: libraryType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.DeleteMaterials = function(libraryType,materialIds) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.DeleteMaterials",
+        FormIt.MaterialProvider.DeleteMaterials = function(libraryType,materialIds) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.DeleteMaterials",
 libraryType: libraryType,
         materialIds: materialIds
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.GetMaterialPreviewImage = function(libraryType,materialId) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.GetMaterialPreviewImage",
+        FormIt.MaterialProvider.GetMaterialPreviewImage = function(libraryType,materialId) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.GetMaterialPreviewImage",
 libraryType: libraryType,
         materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.IsValidMaterialName = function(libraryType,materialId,newName) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.IsValidMaterialName",
+        FormIt.MaterialProvider.IsValidMaterialName = function(libraryType,materialId,newName) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.IsValidMaterialName",
 libraryType: libraryType,
         materialId: materialId,
         newName: newName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.GetNewMaterialName = function(libraryType,baseName) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.GetNewMaterialName",
+        FormIt.MaterialProvider.GetNewMaterialName = function(libraryType,baseName) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.GetNewMaterialName",
 libraryType: libraryType,
         baseName: baseName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.IsValidMaterial = function(libraryType,materialId) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.IsValidMaterial",
+        FormIt.MaterialProvider.IsValidMaterial = function(libraryType,materialId) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.IsValidMaterial",
 libraryType: libraryType,
         materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.MaterialProvider.CanModify = function(libraryType,materialId) {
-        const args = {
-            TestAPI: "FormIt.MaterialProvider.CanModify",
+        FormIt.MaterialProvider.CanModify = function(libraryType,materialId) {
+            const args = {
+                TestAPI: "FormIt.MaterialProvider.CanModify",
 libraryType: libraryType,
         materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Messaging = {};
-        
-    FormIt.Messaging.GetMessages = function() {
-        const args = {
-            TestAPI: "FormIt.Messaging.GetMessages"
-        };
-        return callAsyncAPI(args);
-    };
 
+        FormIt.Messaging.GetMessages = function() {
+            const args = {
+                TestAPI: "FormIt.Messaging.GetMessages"
+            };
+            return callAsyncAPI(args);
+        };
 FormIt.Model = {};
-        
-    FormIt.Model.GetHistoryID = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetHistoryID"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetMemorySize = function(bCollapsedHistoryWithLiveObjsOnly) {
-        const args = {
-            TestAPI: "FormIt.Model.GetMemorySize",
+        FormIt.Model.GetHistoryID = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetHistoryID"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Model.GetMemorySize = function(bCollapsedHistoryWithLiveObjsOnly) {
+            const args = {
+                TestAPI: "FormIt.Model.GetMemorySize",
 bCollapsedHistoryWithLiveObjsOnly: bCollapsedHistoryWithLiveObjsOnly
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetUnitTypeCurrent = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetUnitTypeCurrent"
+        FormIt.Model.GetUnitTypeCurrent = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetUnitTypeCurrent"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetUnitType = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetUnitType"
+        FormIt.Model.GetUnitType = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetUnitType"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetUnitTypeCurrent = function(unitType) {
-        const args = {
-            TestAPI: "FormIt.Model.SetUnitTypeCurrent",
+        FormIt.Model.SetUnitTypeCurrent = function(unitType) {
+            const args = {
+                TestAPI: "FormIt.Model.SetUnitTypeCurrent",
 unitType: unitType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetUnitType = function(unitType) {
-        const args = {
-            TestAPI: "FormIt.Model.SetUnitType",
+        FormIt.Model.SetUnitType = function(unitType) {
+            const args = {
+                TestAPI: "FormIt.Model.SetUnitType",
 unitType: unitType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.IsImperialUnitType = function(unitType) {
-        const args = {
-            TestAPI: "FormIt.Model.IsImperialUnitType",
+        FormIt.Model.IsImperialUnitType = function(unitType) {
+            const args = {
+                TestAPI: "FormIt.Model.IsImperialUnitType",
 unitType: unitType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetGroupHistoryName = function(nHistoryID) {
-        const args = {
-            TestAPI: "FormIt.Model.GetGroupHistoryName",
+        FormIt.Model.GetGroupHistoryName = function(nHistoryID) {
+            const args = {
+                TestAPI: "FormIt.Model.GetGroupHistoryName",
 nHistoryID: nHistoryID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetGroupHistoryName = function(nHistoryID,sHistoryName) {
-        const args = {
-            TestAPI: "FormIt.Model.SetGroupHistoryName",
+        FormIt.Model.SetGroupHistoryName = function(nHistoryID,sHistoryName) {
+            const args = {
+                TestAPI: "FormIt.Model.SetGroupHistoryName",
 nHistoryID: nHistoryID,
         sHistoryName: sHistoryName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.IsModified = function() {
-        const args = {
-            TestAPI: "FormIt.Model.IsModified"
+        FormIt.Model.IsModified = function() {
+            const args = {
+                TestAPI: "FormIt.Model.IsModified"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.ResetModified = function() {
-        const args = {
-            TestAPI: "FormIt.Model.ResetModified"
+        FormIt.Model.ResetModified = function() {
+            const args = {
+                TestAPI: "FormIt.Model.ResetModified"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetCurveAccuracyOrCountCurrent = function(accuracyORcount) {
-        const args = {
-            TestAPI: "FormIt.Model.SetCurveAccuracyOrCountCurrent",
+        FormIt.Model.SetCurveAccuracyOrCountCurrent = function(accuracyORcount) {
+            const args = {
+                TestAPI: "FormIt.Model.SetCurveAccuracyOrCountCurrent",
 accuracyORcount: accuracyORcount
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetCurveAccuracyOrCountCurrent = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetCurveAccuracyOrCountCurrent"
+        FormIt.Model.GetCurveAccuracyOrCountCurrent = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetCurveAccuracyOrCountCurrent"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetPropertiesForHistory = function(nHistoryID,editingPath) {
-        const args = {
-            TestAPI: "FormIt.Model.GetPropertiesForHistory",
+        FormIt.Model.GetPropertiesForHistory = function(nHistoryID,editingPath) {
+            const args = {
+                TestAPI: "FormIt.Model.GetPropertiesForHistory",
 nHistoryID: nHistoryID,
         editingPath: editingPath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetPropertiesForSelected = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetPropertiesForSelected"
+        FormIt.Model.GetPropertiesForSelected = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetPropertiesForSelected"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetObjectName = function(objectID) {
-        const args = {
-            TestAPI: "FormIt.Model.GetObjectName",
+        FormIt.Model.GetObjectName = function(objectID) {
+            const args = {
+                TestAPI: "FormIt.Model.GetObjectName",
 objectID: objectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetObjectName = function(objectID,name) {
-        const args = {
-            TestAPI: "FormIt.Model.SetObjectName",
+        FormIt.Model.SetObjectName = function(objectID,name) {
+            const args = {
+                TestAPI: "FormIt.Model.SetObjectName",
 objectID: objectID,
         name: name
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.ObjectReportsAreaByLevel = function(objectID) {
-        const args = {
-            TestAPI: "FormIt.Model.ObjectReportsAreaByLevel",
+        FormIt.Model.ObjectReportsAreaByLevel = function(objectID) {
+            const args = {
+                TestAPI: "FormIt.Model.ObjectReportsAreaByLevel",
 objectID: objectID
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetSurfaceAccuracyOrCountCurrent = function(accuracy) {
-        const args = {
-            TestAPI: "FormIt.Model.SetSurfaceAccuracyOrCountCurrent",
+        FormIt.Model.SetSurfaceAccuracyOrCountCurrent = function(accuracy) {
+            const args = {
+                TestAPI: "FormIt.Model.SetSurfaceAccuracyOrCountCurrent",
 accuracy: accuracy
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetSurfaceAccuracyOrCountCurrent = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetSurfaceAccuracyOrCountCurrent"
+        FormIt.Model.GetSurfaceAccuracyOrCountCurrent = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetSurfaceAccuracyOrCountCurrent"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetProjectSiteArea = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetProjectSiteArea"
+        FormIt.Model.GetProjectSiteArea = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetProjectSiteArea"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.SetTotalAreaOfSite = function(area) {
-        const args = {
-            TestAPI: "FormIt.Model.SetTotalAreaOfSite",
+        FormIt.Model.SetTotalAreaOfSite = function(area) {
+            const args = {
+                TestAPI: "FormIt.Model.SetTotalAreaOfSite",
 area: area
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetProjectTargetArea = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetProjectTargetArea"
+        FormIt.Model.GetProjectTargetArea = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetProjectTargetArea"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Model.GetTotalGrossArea = function() {
-        const args = {
-            TestAPI: "FormIt.Model.GetTotalGrossArea"
+        FormIt.Model.GetTotalGrossArea = function() {
+            const args = {
+                TestAPI: "FormIt.Model.GetTotalGrossArea"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Scenes = {};
-        
-    FormIt.Scenes.SceneNameExists = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SceneNameExists",
+
+        FormIt.Scenes.SceneNameExists = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SceneNameExists",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.IsValidSceneName = function(oldSceneName,newSceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.IsValidSceneName",
+        FormIt.Scenes.IsValidSceneName = function(oldSceneName,newSceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.IsValidSceneName",
 oldSceneName: oldSceneName,
         newSceneName: newSceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetSceneName = function(oldSceneName,newSceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetSceneName",
+        FormIt.Scenes.SetSceneName = function(oldSceneName,newSceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetSceneName",
 oldSceneName: oldSceneName,
         newSceneName: newSceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.AddNewScene = function(afterSceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.AddNewScene",
+        FormIt.Scenes.AddNewScene = function(afterSceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.AddNewScene",
 afterSceneName: afterSceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetScene = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetScene",
+        FormIt.Scenes.GetScene = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetScene",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetScenes = function() {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetScenes"
+        FormIt.Scenes.GetScenes = function() {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetScenes"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetScenes = function(scenes) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetScenes",
+        FormIt.Scenes.SetScenes = function(scenes) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetScenes",
 scenes: scenes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.AddScene = function(scene,afterSceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.AddScene",
+        FormIt.Scenes.AddScene = function(scene,afterSceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.AddScene",
 scene: scene,
         afterSceneName: afterSceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.RemoveScene = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.RemoveScene",
+        FormIt.Scenes.RemoveScene = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.RemoveScene",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.DuplicateScene = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.DuplicateScene",
+        FormIt.Scenes.DuplicateScene = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.DuplicateScene",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetSceneNames = function() {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetSceneNames"
+        FormIt.Scenes.GetSceneNames = function() {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetSceneNames"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.ScenesAreEqual = function(sceneName,scene) {
-        const args = {
-            TestAPI: "FormIt.Scenes.ScenesAreEqual",
+        FormIt.Scenes.ScenesAreEqual = function(sceneName,scene) {
+            const args = {
+                TestAPI: "FormIt.Scenes.ScenesAreEqual",
 sceneName: sceneName,
         scene: scene
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetPresentationMode = function(start,sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetPresentationMode",
+        FormIt.Scenes.SetPresentationMode = function(start,sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetPresentationMode",
 start: start,
         sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.IsPresenting = function() {
-        const args = {
-            TestAPI: "FormIt.Scenes.IsPresenting"
+        FormIt.Scenes.IsPresenting = function() {
+            const args = {
+                TestAPI: "FormIt.Scenes.IsPresenting"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.UpdateScene = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.UpdateScene",
+        FormIt.Scenes.UpdateScene = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.UpdateScene",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetPropertiesToCapture = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetPropertiesToCapture",
+        FormIt.Scenes.GetPropertiesToCapture = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetPropertiesToCapture",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetPropertiesToCapture = function(sceneName,properties) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetPropertiesToCapture",
+        FormIt.Scenes.SetPropertiesToCapture = function(sceneName,properties) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetPropertiesToCapture",
 sceneName: sceneName,
         properties: properties
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.ActivateScene = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.ActivateScene",
+        FormIt.Scenes.ActivateScene = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.ActivateScene",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.MoveSceneUp = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.MoveSceneUp",
+        FormIt.Scenes.MoveSceneUp = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.MoveSceneUp",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.MoveSceneDown = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.MoveSceneDown",
+        FormIt.Scenes.MoveSceneDown = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.MoveSceneDown",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.RearrangeScenes = function(oldPos,newPos) {
-        const args = {
-            TestAPI: "FormIt.Scenes.RearrangeScenes",
+        FormIt.Scenes.RearrangeScenes = function(oldPos,newPos) {
+            const args = {
+                TestAPI: "FormIt.Scenes.RearrangeScenes",
 oldPos: oldPos,
         newPos: newPos
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetNumberOfScenes = function() {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetNumberOfScenes"
+        FormIt.Scenes.GetNumberOfScenes = function() {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetNumberOfScenes"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetNumberOfScenesWithAnimation = function() {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetNumberOfScenesWithAnimation"
+        FormIt.Scenes.GetNumberOfScenesWithAnimation = function() {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetNumberOfScenesWithAnimation"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetPauseTime = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetPauseTime",
+        FormIt.Scenes.GetPauseTime = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetPauseTime",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetPauseTime = function(sceneName,pauseTime) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetPauseTime",
+        FormIt.Scenes.SetPauseTime = function(sceneName,pauseTime) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetPauseTime",
 sceneName: sceneName,
         pauseTime: pauseTime
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.IsValidScenePauseTime = function(pauseTimeString) {
-        const args = {
-            TestAPI: "FormIt.Scenes.IsValidScenePauseTime",
+        FormIt.Scenes.IsValidScenePauseTime = function(pauseTimeString) {
+            const args = {
+                TestAPI: "FormIt.Scenes.IsValidScenePauseTime",
 pauseTimeString: pauseTimeString
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.IsValidSceneTransitionTime = function(transitionTimeString) {
-        const args = {
-            TestAPI: "FormIt.Scenes.IsValidSceneTransitionTime",
+        FormIt.Scenes.IsValidSceneTransitionTime = function(transitionTimeString) {
+            const args = {
+                TestAPI: "FormIt.Scenes.IsValidSceneTransitionTime",
 transitionTimeString: transitionTimeString
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.IsValidSceneCameraSpeed = function(speedString) {
-        const args = {
-            TestAPI: "FormIt.Scenes.IsValidSceneCameraSpeed",
+        FormIt.Scenes.IsValidSceneCameraSpeed = function(speedString) {
+            const args = {
+                TestAPI: "FormIt.Scenes.IsValidSceneCameraSpeed",
 speedString: speedString
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetTransitionTime = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetTransitionTime",
+        FormIt.Scenes.GetTransitionTime = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetTransitionTime",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetTransitionTime = function(sceneName,transitionTime) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetTransitionTime",
+        FormIt.Scenes.SetTransitionTime = function(sceneName,transitionTime) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetTransitionTime",
 sceneName: sceneName,
         transitionTime: transitionTime
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetCameraSpeed = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetCameraSpeed",
+        FormIt.Scenes.GetCameraSpeed = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetCameraSpeed",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetCameraSpeed = function(sceneName,cameraSpeed) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetCameraSpeed",
+        FormIt.Scenes.SetCameraSpeed = function(sceneName,cameraSpeed) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetCameraSpeed",
 sceneName: sceneName,
         cameraSpeed: cameraSpeed
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetIncludeInAnimation = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetIncludeInAnimation",
+        FormIt.Scenes.GetIncludeInAnimation = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetIncludeInAnimation",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetIncludeInAnimation = function(sceneName,bIncludeInAnimation) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetIncludeInAnimation",
+        FormIt.Scenes.SetIncludeInAnimation = function(sceneName,bIncludeInAnimation) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetIncludeInAnimation",
 sceneName: sceneName,
         bIncludeInAnimation: bIncludeInAnimation
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetUseCameraSpeed = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetUseCameraSpeed",
+        FormIt.Scenes.GetUseCameraSpeed = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetUseCameraSpeed",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetUseCameraSpeed = function(sceneName,bUseCameraSpeed) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetUseCameraSpeed",
+        FormIt.Scenes.SetUseCameraSpeed = function(sceneName,bUseCameraSpeed) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetUseCameraSpeed",
 sceneName: sceneName,
         bUseCameraSpeed: bUseCameraSpeed
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetTransitionTimeUsed = function(sceneName) {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetTransitionTimeUsed",
+        FormIt.Scenes.GetTransitionTimeUsed = function(sceneName) {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetTransitionTimeUsed",
 sceneName: sceneName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.SetEditCameras = function(bEditCameras) {
-        const args = {
-            TestAPI: "FormIt.Scenes.SetEditCameras",
+        FormIt.Scenes.SetEditCameras = function(bEditCameras) {
+            const args = {
+                TestAPI: "FormIt.Scenes.SetEditCameras",
 bEditCameras: bEditCameras
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Scenes.GetEditCameras = function() {
-        const args = {
-            TestAPI: "FormIt.Scenes.GetEditCameras"
+        FormIt.Scenes.GetEditCameras = function() {
+            const args = {
+                TestAPI: "FormIt.Scenes.GetEditCameras"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.StringConversion = {};
-        
-    FormIt.StringConversion.LinearValueToString = function(val,forceFeetOrMeter) {
-        const args = {
-            TestAPI: "FormIt.StringConversion.LinearValueToString",
+
+        FormIt.StringConversion.LinearValueToString = function(val,forceFeetOrMeter) {
+            const args = {
+                TestAPI: "FormIt.StringConversion.LinearValueToString",
 val: val,
         forceFeetOrMeter: forceFeetOrMeter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.StringConversion.StringToLinearValue = function(val,forceFeetOrMeter) {
-        const args = {
-            TestAPI: "FormIt.StringConversion.StringToLinearValue",
+        FormIt.StringConversion.StringToLinearValue = function(val,forceFeetOrMeter) {
+            const args = {
+                TestAPI: "FormIt.StringConversion.StringToLinearValue",
 val: val,
         forceFeetOrMeter: forceFeetOrMeter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.StringConversion.AreaValueToString = function(val,forceFeetOrMeter) {
-        const args = {
-            TestAPI: "FormIt.StringConversion.AreaValueToString",
+        FormIt.StringConversion.AreaValueToString = function(val,forceFeetOrMeter) {
+            const args = {
+                TestAPI: "FormIt.StringConversion.AreaValueToString",
 val: val,
         forceFeetOrMeter: forceFeetOrMeter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.StringConversion.StringToAreaValue = function(val,forceFeetOrMeter) {
-        const args = {
-            TestAPI: "FormIt.StringConversion.StringToAreaValue",
+        FormIt.StringConversion.StringToAreaValue = function(val,forceFeetOrMeter) {
+            const args = {
+                TestAPI: "FormIt.StringConversion.StringToAreaValue",
 val: val,
         forceFeetOrMeter: forceFeetOrMeter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.StringConversion.VolumeValueToString = function(val,forceFeetOrMeter) {
-        const args = {
-            TestAPI: "FormIt.StringConversion.VolumeValueToString",
+        FormIt.StringConversion.VolumeValueToString = function(val,forceFeetOrMeter) {
+            const args = {
+                TestAPI: "FormIt.StringConversion.VolumeValueToString",
 val: val,
         forceFeetOrMeter: forceFeetOrMeter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.StringConversion.StringToVolumeValue = function(val,forceFeetOrMeter) {
-        const args = {
-            TestAPI: "FormIt.StringConversion.StringToVolumeValue",
+        FormIt.StringConversion.StringToVolumeValue = function(val,forceFeetOrMeter) {
+            const args = {
+                TestAPI: "FormIt.StringConversion.StringToVolumeValue",
 val: val,
         forceFeetOrMeter: forceFeetOrMeter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
+FormIt.IPC = {};
 
+        FormIt.IPC.CreateConnection = function(config) {
+            const args = {
+                TestAPI: "FormIt.IPC.CreateConnection",
+config: config
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.IPC.Terminate = function(h) {
+            const args = {
+                TestAPI: "FormIt.IPC.Terminate",
+h: h
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.IPC.SendMessage = function(h,message) {
+            const args = {
+                TestAPI: "FormIt.IPC.SendMessage",
+h: h,
+        message: message
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.IPC.RunJSONCommand = function(message) {
+            const args = {
+                TestAPI: "FormIt.IPC.RunJSONCommand",
+message: message
+            };
+            return callAsyncAPI(args);
+        };
 FormIt.SectionPlanes = {};
-        
-    FormIt.SectionPlanes.Clear = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.Clear"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SetPlanes = function(planes) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SetPlanes",
+        FormIt.SectionPlanes.Clear = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.Clear"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.SectionPlanes.SetPlanes = function(planes) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SetPlanes",
 planes: planes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.GetPlanes = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.GetPlanes"
+        FormIt.SectionPlanes.GetPlanes = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.GetPlanes"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.GetInstances = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.GetInstances"
+        FormIt.SectionPlanes.GetInstances = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.GetInstances"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SetOutlineColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SetOutlineColor",
+        FormIt.SectionPlanes.SetOutlineColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SetOutlineColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.GetOutlineColor = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.GetOutlineColor"
+        FormIt.SectionPlanes.GetOutlineColor = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.GetOutlineColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SetOutlineSize = function(s) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SetOutlineSize",
+        FormIt.SectionPlanes.SetOutlineSize = function(s) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SetOutlineSize",
 s: s
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.GetOutlineSize = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.GetOutlineSize"
+        FormIt.SectionPlanes.GetOutlineSize = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.GetOutlineSize"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SetSectionIndicatorsVisibility = function(visible) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SetSectionIndicatorsVisibility",
+        FormIt.SectionPlanes.SetSectionIndicatorsVisibility = function(visible) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SetSectionIndicatorsVisibility",
 visible: visible
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SetPocheColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SetPocheColor",
+        FormIt.SectionPlanes.SetPocheColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SetPocheColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.GetPocheColor = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.GetPocheColor"
+        FormIt.SectionPlanes.GetPocheColor = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.GetPocheColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.EnablePocheColor = function(enable) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.EnablePocheColor",
+        FormIt.SectionPlanes.EnablePocheColor = function(enable) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.EnablePocheColor",
 enable: enable
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.IsPocheColorEnabled = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.IsPocheColorEnabled"
+        FormIt.SectionPlanes.IsPocheColorEnabled = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.IsPocheColorEnabled"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SectionPlaneHistoryChanged = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SectionPlaneHistoryChanged"
+        FormIt.SectionPlanes.SectionPlaneHistoryChanged = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SectionPlaneHistoryChanged"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.SetLastSectionRefHistory = function(historyId) {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.SetLastSectionRefHistory",
+        FormIt.SectionPlanes.SetLastSectionRefHistory = function(historyId) {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.SetLastSectionRefHistory",
 historyId: historyId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SectionPlanes.GetLastSectionRefHistory = function() {
-        const args = {
-            TestAPI: "FormIt.SectionPlanes.GetLastSectionRefHistory"
+        FormIt.SectionPlanes.GetLastSectionRefHistory = function() {
+            const args = {
+                TestAPI: "FormIt.SectionPlanes.GetLastSectionRefHistory"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Selection = {};
-        
-    FormIt.Selection.GetObjectTypeFilter = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.GetObjectTypeFilter"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.SetObjectTypeFilter = function(objectTypeFilter) {
-        const args = {
-            TestAPI: "FormIt.Selection.SetObjectTypeFilter",
+        FormIt.Selection.GetObjectTypeFilter = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.GetObjectTypeFilter"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Selection.SetObjectTypeFilter = function(objectTypeFilter) {
+            const args = {
+                TestAPI: "FormIt.Selection.SetObjectTypeFilter",
 objectTypeFilter: objectTypeFilter
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.ClearSelections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.ClearSelections"
+        FormIt.Selection.ClearSelections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.ClearSelections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.AddSelections = function(aSelection) {
-        const args = {
-            TestAPI: "FormIt.Selection.AddSelections",
+        FormIt.Selection.AddSelections = function(aSelection) {
+            const args = {
+                TestAPI: "FormIt.Selection.AddSelections",
 aSelection: aSelection
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.GetSelections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.GetSelections"
+        FormIt.Selection.GetSelections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.GetSelections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.SetSelections = function(selections) {
-        const args = {
-            TestAPI: "FormIt.Selection.SetSelections",
+        FormIt.Selection.SetSelections = function(selections) {
+            const args = {
+                TestAPI: "FormIt.Selection.SetSelections",
 selections: selections
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.SetPreSelections = function(firstPreselection,selections) {
-        const args = {
-            TestAPI: "FormIt.Selection.SetPreSelections",
+        FormIt.Selection.SetPreSelections = function(firstPreselection,selections) {
+            const args = {
+                TestAPI: "FormIt.Selection.SetPreSelections",
 firstPreselection: firstPreselection,
         selections: selections
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.HasPreSelections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.HasPreSelections"
+        FormIt.Selection.HasPreSelections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.HasPreSelections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.GetFirstPreSelectedObject = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.GetFirstPreSelectedObject"
+        FormIt.Selection.GetFirstPreSelectedObject = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.GetFirstPreSelectedObject"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.GetFirstSelectedObject = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.GetFirstSelectedObject"
+        FormIt.Selection.GetFirstSelectedObject = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.GetFirstSelectedObject"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.GetContextMenuObject = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.GetContextMenuObject"
+        FormIt.Selection.GetContextMenuObject = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.GetContextMenuObject"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.ClearPreSelections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.ClearPreSelections"
+        FormIt.Selection.ClearPreSelections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.ClearPreSelections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.IsSelected = function(objPath) {
-        const args = {
-            TestAPI: "FormIt.Selection.IsSelected",
+        FormIt.Selection.IsSelected = function(objPath) {
+            const args = {
+                TestAPI: "FormIt.Selection.IsSelected",
 objPath: objPath
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.SelectAll = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.SelectAll"
+        FormIt.Selection.SelectAll = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.SelectAll"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.HasSelections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.HasSelections"
+        FormIt.Selection.HasSelections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.HasSelections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.GetPreSelections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.GetPreSelections"
+        FormIt.Selection.GetPreSelections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.GetPreSelections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.CommitPreselections = function() {
-        const args = {
-            TestAPI: "FormIt.Selection.CommitPreselections"
+        FormIt.Selection.CommitPreselections = function() {
+            const args = {
+                TestAPI: "FormIt.Selection.CommitPreselections"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.CompareSelections = function(selection1,selection2) {
-        const args = {
-            TestAPI: "FormIt.Selection.CompareSelections",
+        FormIt.Selection.CompareSelections = function(selection1,selection2) {
+            const args = {
+                TestAPI: "FormIt.Selection.CompareSelections",
 selection1: selection1,
         selection2: selection2
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.ToggleObjects = function(selections) {
-        const args = {
-            TestAPI: "FormIt.Selection.ToggleObjects",
+        FormIt.Selection.ToggleObjects = function(selections) {
+            const args = {
+                TestAPI: "FormIt.Selection.ToggleObjects",
 selections: selections
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Selection.ApplyMaterialToSelection = function(id,backside) {
-        const args = {
-            TestAPI: "FormIt.Selection.ApplyMaterialToSelection",
+        FormIt.Selection.ApplyMaterialToSelection = function(id,backside) {
+            const args = {
+                TestAPI: "FormIt.Selection.ApplyMaterialToSelection",
 id: id,
         backside: backside
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Shortcuts = {};
-        
-    FormIt.Shortcuts.GetShortcutKeys = function() {
-        const args = {
-            TestAPI: "FormIt.Shortcuts.GetShortcutKeys"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Shortcuts.RestoreFromJSON = function(jsonStr) {
-        const args = {
-            TestAPI: "FormIt.Shortcuts.RestoreFromJSON",
+        FormIt.Shortcuts.GetShortcutKeys = function() {
+            const args = {
+                TestAPI: "FormIt.Shortcuts.GetShortcutKeys"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Shortcuts.RestoreFromJSON = function(jsonStr) {
+            const args = {
+                TestAPI: "FormIt.Shortcuts.RestoreFromJSON",
 jsonStr: jsonStr
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Shortcuts.GetJSON = function() {
-        const args = {
-            TestAPI: "FormIt.Shortcuts.GetJSON"
+        FormIt.Shortcuts.GetJSON = function() {
+            const args = {
+                TestAPI: "FormIt.Shortcuts.GetJSON"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Shortcuts.GetKeycodeString = function(key,modifier) {
-        const args = {
-            TestAPI: "FormIt.Shortcuts.GetKeycodeString",
+        FormIt.Shortcuts.GetKeycodeString = function(key,modifier) {
+            const args = {
+                TestAPI: "FormIt.Shortcuts.GetKeycodeString",
 key: key,
         modifier: modifier
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Commands = {};
-        
-    FormIt.Commands.GetCommands = function() {
-        const args = {
-            TestAPI: "FormIt.Commands.GetCommands"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Commands.DoCommand = function(command) {
-        const args = {
-            TestAPI: "FormIt.Commands.DoCommand",
+        FormIt.Commands.GetCommands = function() {
+            const args = {
+                TestAPI: "FormIt.Commands.GetCommands"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Commands.DoCommand = function(command) {
+            const args = {
+                TestAPI: "FormIt.Commands.DoCommand",
 command: command
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Commands.RegisterJSCommand = function(command) {
-        const args = {
-            TestAPI: "FormIt.Commands.RegisterJSCommand",
+        FormIt.Commands.RegisterJSCommand = function(command) {
+            const args = {
+                TestAPI: "FormIt.Commands.RegisterJSCommand",
 command: command
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.SketchMaterials = {};
-        
-    FormIt.SketchMaterials.GetWSMMaterialForHistory = function(historyId,materialId) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetWSMMaterialForHistory",
+
+        FormIt.SketchMaterials.GetWSMMaterialForHistory = function(historyId,materialId) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetWSMMaterialForHistory",
 historyId: historyId,
         materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.GetSketchMaterialFromWSMMaterial = function(historyId,wsmMaterialId) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetSketchMaterialFromWSMMaterial",
+        FormIt.SketchMaterials.GetSketchMaterialFromWSMMaterial = function(historyId,wsmMaterialId) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetSketchMaterialFromWSMMaterial",
 historyId: historyId,
         wsmMaterialId: wsmMaterialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.GetMaterialIDsFromObjects = function(aObjects) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetMaterialIDsFromObjects",
+        FormIt.SketchMaterials.GetMaterialIDsFromObjects = function(aObjects) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetMaterialIDsFromObjects",
 aObjects: aObjects
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.AssignMaterialToObjects = function(materialId,aObjects,uvTransf3d) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.AssignMaterialToObjects",
+        FormIt.SketchMaterials.AssignMaterialToObjects = function(materialId,aObjects,uvTransf3d) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.AssignMaterialToObjects",
 materialId: materialId,
         aObjects: aObjects,
         uvTransf3d: uvTransf3d
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.ChangeMaterialOrder = function(materialId,newPos) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.ChangeMaterialOrder",
+        FormIt.SketchMaterials.ChangeMaterialOrder = function(materialId,newPos) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.ChangeMaterialOrder",
 materialId: materialId,
         newPos: newPos
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.IsMaterialUsed = function(materialId) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.IsMaterialUsed",
+        FormIt.SketchMaterials.IsMaterialUsed = function(materialId) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.IsMaterialUsed",
 materialId: materialId
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.GetDefaultMaterialData = function(bBack) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetDefaultMaterialData",
+        FormIt.SketchMaterials.GetDefaultMaterialData = function(bBack) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetDefaultMaterialData",
 bBack: bBack
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.SetDefaultMaterialData = function(bBack,materialData) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.SetDefaultMaterialData",
+        FormIt.SketchMaterials.SetDefaultMaterialData = function(bBack,materialData) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.SetDefaultMaterialData",
 bBack: bBack,
         materialData: materialData
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.GetMaterialDataAttribute = function(materialData,attributeType) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetMaterialDataAttribute",
+        FormIt.SketchMaterials.GetMaterialDataAttribute = function(materialData,attributeType) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetMaterialDataAttribute",
 materialData: materialData,
         attributeType: attributeType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.SetMaterialDataAttribute = function(materialData,attributeType,value) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.SetMaterialDataAttribute",
+        FormIt.SketchMaterials.SetMaterialDataAttribute = function(materialData,attributeType,value) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.SetMaterialDataAttribute",
 materialData: materialData,
         attributeType: attributeType,
         value: value
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.GetMaterialDataMap = function(materialData,mapType) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetMaterialDataMap",
+        FormIt.SketchMaterials.GetMaterialDataMap = function(materialData,mapType) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetMaterialDataMap",
 materialData: materialData,
         mapType: mapType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.SetMaterialDataMap = function(materialData,mapType,map) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.SetMaterialDataMap",
+        FormIt.SketchMaterials.SetMaterialDataMap = function(materialData,mapType,map) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.SetMaterialDataMap",
 materialData: materialData,
         mapType: mapType,
         map: map
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.GetAllObjectsUsingMaterials = function(materialIds) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.GetAllObjectsUsingMaterials",
+        FormIt.SketchMaterials.GetAllObjectsUsingMaterials = function(materialIds) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.GetAllObjectsUsingMaterials",
 materialIds: materialIds
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SketchMaterials.UpdateMaterialFromParameters = function(materialID,parameters) {
-        const args = {
-            TestAPI: "FormIt.SketchMaterials.UpdateMaterialFromParameters",
+        FormIt.SketchMaterials.UpdateMaterialFromParameters = function(materialID,parameters) {
+            const args = {
+                TestAPI: "FormIt.SketchMaterials.UpdateMaterialFromParameters",
 materialID: materialID,
         parameters: parameters
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Statistics = {};
-        
-    FormIt.Statistics.OptOutTracking = function(isOptingOut) {
-        const args = {
-            TestAPI: "FormIt.Statistics.OptOutTracking",
+
+        FormIt.Statistics.OptOutTracking = function(isOptingOut) {
+            const args = {
+                TestAPI: "FormIt.Statistics.OptOutTracking",
 isOptingOut: isOptingOut
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Statistics.Log = function(UITrackingType) {
-        const args = {
-            TestAPI: "FormIt.Statistics.Log",
+        FormIt.Statistics.Log = function(UITrackingType) {
+            const args = {
+                TestAPI: "FormIt.Statistics.Log",
 UITrackingType: UITrackingType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.SunAndLocation = {};
-        
-    FormIt.SunAndLocation.AddSatelliteImage = function(centerLat,centerLon,latSpan,lonSpan,pixelWidth,pixelHeight,physicalWidth,physicalHeight,address,xOffset,yOffset) {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.AddSatelliteImage",
+
+        FormIt.SunAndLocation.AddSatelliteImage = function(centerLat,centerLon,latSpan,lonSpan,pixelWidth,pixelHeight,physicalWidth,physicalHeight,address,xOffset,yOffset) {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.AddSatelliteImage",
 centerLat: centerLat,
         centerLon: centerLon,
         latSpan: latSpan,
@@ -7711,1369 +6984,1232 @@ centerLat: centerLat,
         address: address,
         xOffset: xOffset,
         yOffset: yOffset
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.SetProjectAddress = function(address) {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.SetProjectAddress",
+        FormIt.SunAndLocation.SetProjectAddress = function(address) {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.SetProjectAddress",
 address: address
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.GetProjectAddress = function() {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.GetProjectAddress"
+        FormIt.SunAndLocation.GetProjectAddress = function() {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.GetProjectAddress"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.SetLocation = function(longitude,latitude) {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.SetLocation",
+        FormIt.SunAndLocation.SetLocation = function(longitude,latitude) {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.SetLocation",
 longitude: longitude,
         latitude: latitude
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.SetTimeOfDay = function(dTimeOfDay,bUpdateRender) {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.SetTimeOfDay",
+        FormIt.SunAndLocation.SetTimeOfDay = function(dTimeOfDay,bUpdateRender) {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.SetTimeOfDay",
 dTimeOfDay: dTimeOfDay,
         bUpdateRender: bUpdateRender
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.SetDate = function(nDay,nMonth,nYear,bUpdateRender) {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.SetDate",
+        FormIt.SunAndLocation.SetDate = function(nDay,nMonth,nYear,bUpdateRender) {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.SetDate",
 nDay: nDay,
         nMonth: nMonth,
         nYear: nYear,
         bUpdateRender: bUpdateRender
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.GetDaylightSavingTime = function() {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.GetDaylightSavingTime"
+        FormIt.SunAndLocation.GetDaylightSavingTime = function() {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.GetDaylightSavingTime"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.SetDaylightSavingTime = function(bEnable,bUpdateRender) {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.SetDaylightSavingTime",
+        FormIt.SunAndLocation.SetDaylightSavingTime = function(bEnable,bUpdateRender) {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.SetDaylightSavingTime",
 bEnable: bEnable,
         bUpdateRender: bUpdateRender
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.GetLocationDateTime = function() {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.GetLocationDateTime"
+        FormIt.SunAndLocation.GetLocationDateTime = function() {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.GetLocationDateTime"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.SunAndLocation.GetSunRiseAndSet = function() {
-        const args = {
-            TestAPI: "FormIt.SunAndLocation.GetSunRiseAndSet"
+        FormIt.SunAndLocation.GetSunRiseAndSet = function() {
+            const args = {
+                TestAPI: "FormIt.SunAndLocation.GetSunRiseAndSet"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Tools = {};
-        
-    FormIt.Tools.ClearTools = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.ClearTools"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.GetActiveToolType = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.GetActiveToolType"
+        FormIt.Tools.ClearTools = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.ClearTools"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.GetActiveToolSubType = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.GetActiveToolSubType"
+        FormIt.Tools.GetActiveToolType = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.GetActiveToolType"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.IsInContinuousAction = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.IsInContinuousAction"
+        FormIt.Tools.GetActiveToolSubType = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.GetActiveToolSubType"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.StartTool = function(toolType) {
-        const args = {
-            TestAPI: "FormIt.Tools.StartTool",
+        FormIt.Tools.IsInContinuousAction = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.IsInContinuousAction"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Tools.StartTool = function(toolType) {
+            const args = {
+                TestAPI: "FormIt.Tools.StartTool",
 toolType: toolType
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.BlendFacesOrEdges = function(val) {
-        const args = {
-            TestAPI: "FormIt.Tools.BlendFacesOrEdges",
+        FormIt.Tools.BlendFacesOrEdges = function(val) {
+            const args = {
+                TestAPI: "FormIt.Tools.BlendFacesOrEdges",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.FlattenGroups = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.FlattenGroups"
+        FormIt.Tools.FlattenGroups = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.FlattenGroups"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.OffsetBody = function(val) {
-        const args = {
-            TestAPI: "FormIt.Tools.OffsetBody",
+        FormIt.Tools.OffsetBody = function(val) {
+            const args = {
+                TestAPI: "FormIt.Tools.OffsetBody",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.Paintbrush = function(materialID,backside) {
-        const args = {
-            TestAPI: "FormIt.Tools.Paintbrush",
+        FormIt.Tools.Paintbrush = function(materialID,backside) {
+            const args = {
+                TestAPI: "FormIt.Tools.Paintbrush",
 materialID: materialID,
         backside: backside
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.ShellBodyOrFaces = function(val) {
-        const args = {
-            TestAPI: "FormIt.Tools.ShellBodyOrFaces",
+        FormIt.Tools.ShellBodyOrFaces = function(val) {
+            const args = {
+                TestAPI: "FormIt.Tools.ShellBodyOrFaces",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.ClearAllInferences = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.ClearAllInferences"
+        FormIt.Tools.ClearAllInferences = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.ClearAllInferences"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.InitToolsAPI = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.InitToolsAPI"
+        FormIt.Tools.InitToolsAPI = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.InitToolsAPI"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.SelectArrayTool = function(numCopies,copyDivide,groupBeforeCopy,radial) {
-        const args = {
-            TestAPI: "FormIt.Tools.SelectArrayTool",
+        FormIt.Tools.SelectArrayTool = function(numCopies,copyDivide,groupBeforeCopy,radial) {
+            const args = {
+                TestAPI: "FormIt.Tools.SelectArrayTool",
 numCopies: numCopies,
         copyDivide: copyDivide,
         groupBeforeCopy: groupBeforeCopy,
         radial: radial
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Tools.GetSecondaryTool = function() {
-        const args = {
-            TestAPI: "FormIt.Tools.GetSecondaryTool"
+        FormIt.Tools.GetSecondaryTool = function() {
+            const args = {
+                TestAPI: "FormIt.Tools.GetSecondaryTool"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.UI = {};
-        
-    FormIt.UI.LoadLangPack = function(filename) {
-        const args = {
-            TestAPI: "FormIt.UI.LoadLangPack",
-filename: filename
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UI.CreatePanel = function(title,url) {
-        const args = {
-            TestAPI: "FormIt.UI.CreatePanel",
+        FormIt.UI.LoadLangPack = function(filename) {
+            const args = {
+                TestAPI: "FormIt.UI.LoadLangPack",
+filename: filename
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.UI.CreatePanel = function(title,url) {
+            const args = {
+                TestAPI: "FormIt.UI.CreatePanel",
 title: title,
         url: url
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UI.CreateToolbar = function(tbJSON,URL) {
-        const args = {
-            TestAPI: "FormIt.UI.CreateToolbar",
+        FormIt.UI.CreateToolbar = function(tbJSON,URL) {
+            const args = {
+                TestAPI: "FormIt.UI.CreateToolbar",
 tbJSON: tbJSON,
         URL: URL
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UI.ShowNotification = function(message,notificationType,nTimeout) {
-        const args = {
-            TestAPI: "FormIt.UI.ShowNotification",
+        FormIt.UI.ShowNotification = function(message,notificationType,nTimeout) {
+            const args = {
+                TestAPI: "FormIt.UI.ShowNotification",
 message: message,
         notificationType: notificationType,
         nTimeout: nTimeout
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.UndoManagement = {};
-        
-    FormIt.UndoManagement.BeginState = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.BeginState"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.EndState = function(name,userName) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.EndState",
+        FormIt.UndoManagement.BeginState = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.BeginState"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.UndoManagement.EndState = function(name,userName) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.EndState",
 name: name,
         userName: userName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.RejectState = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.RejectState"
+        FormIt.UndoManagement.RejectState = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.RejectState"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.CanGlobalRedo = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.CanGlobalRedo"
+        FormIt.UndoManagement.CanGlobalRedo = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.CanGlobalRedo"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GlobalRedo = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GlobalRedo"
+        FormIt.UndoManagement.GlobalRedo = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GlobalRedo"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GlobalUndo = function(bAndDeleteRedo) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GlobalUndo",
+        FormIt.UndoManagement.GlobalUndo = function(bAndDeleteRedo) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GlobalUndo",
 bAndDeleteRedo: bAndDeleteRedo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.CanGlobalUndo = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.CanGlobalUndo"
+        FormIt.UndoManagement.CanGlobalUndo = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.CanGlobalUndo"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.CanRedo = function(nStates) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.CanRedo",
+        FormIt.UndoManagement.CanRedo = function(nStates) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.CanRedo",
 nStates: nStates
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.CanUndo = function(nStates) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.CanUndo",
+        FormIt.UndoManagement.CanUndo = function(nStates) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.CanUndo",
 nStates: nStates
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GetCurrentState = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GetCurrentState"
+        FormIt.UndoManagement.GetCurrentState = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GetCurrentState"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GetHistoryIDs = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GetHistoryIDs"
+        FormIt.UndoManagement.GetHistoryIDs = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GetHistoryIDs"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GetHistoryStates = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GetHistoryStates"
+        FormIt.UndoManagement.GetHistoryStates = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GetHistoryStates"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GetStateData = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GetStateData"
+        FormIt.UndoManagement.GetStateData = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GetStateData"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.GetStateHistories = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.GetStateHistories"
+        FormIt.UndoManagement.GetStateHistories = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.GetStateHistories"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.MergeCurrentStates = function(histories) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.MergeCurrentStates",
+        FormIt.UndoManagement.MergeCurrentStates = function(histories) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.MergeCurrentStates",
 histories: histories
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.MergeStateRange = function() {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.MergeStateRange"
+        FormIt.UndoManagement.MergeStateRange = function() {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.MergeStateRange"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.MergeStates = function(states) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.MergeStates",
+        FormIt.UndoManagement.MergeStates = function(states) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.MergeStates",
 states: states
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.NoteState = function(name,aHistories) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.NoteState",
+        FormIt.UndoManagement.NoteState = function(name,aHistories) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.NoteState",
 name: name,
         aHistories: aHistories
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.Redo = function(nStates) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.Redo",
+        FormIt.UndoManagement.Redo = function(nStates) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.Redo",
 nStates: nStates
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.RollTo = function(bAndDeleteRedo) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.RollTo",
+        FormIt.UndoManagement.RollTo = function(bAndDeleteRedo) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.RollTo",
 bAndDeleteRedo: bAndDeleteRedo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.SetLastStateName = function(stateName) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.SetLastStateName",
+        FormIt.UndoManagement.SetLastStateName = function(stateName) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.SetLastStateName",
 stateName: stateName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.SetStateName = function(stateName) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.SetStateName",
+        FormIt.UndoManagement.SetStateName = function(stateName) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.SetStateName",
 stateName: stateName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.UndoManagement.Undo = function(nStates,bAndDeleteRedo) {
-        const args = {
-            TestAPI: "FormIt.UndoManagement.Undo",
+        FormIt.UndoManagement.Undo = function(nStates,bAndDeleteRedo) {
+            const args = {
+                TestAPI: "FormIt.UndoManagement.Undo",
 nStates: nStates,
         bAndDeleteRedo: bAndDeleteRedo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Utils = {};
-        
-    FormIt.Utils.DecodeBase64Bytes = function(decodeBytes) {
-        const args = {
-            TestAPI: "FormIt.Utils.DecodeBase64Bytes",
+
+        FormIt.Utils.DecodeBase64Bytes = function(decodeBytes) {
+            const args = {
+                TestAPI: "FormIt.Utils.DecodeBase64Bytes",
 decodeBytes: decodeBytes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Utils.EncodeBase64Bytes = function(encodeBytes) {
-        const args = {
-            TestAPI: "FormIt.Utils.EncodeBase64Bytes",
+        FormIt.Utils.EncodeBase64Bytes = function(encodeBytes) {
+            const args = {
+                TestAPI: "FormIt.Utils.EncodeBase64Bytes",
 encodeBytes: encodeBytes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
+        FormIt.Utils.NewGuid = function() {
+            const args = {
+                TestAPI: "FormIt.Utils.NewGuid"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Utils.GuidFromString = function(hexStr) {
+            const args = {
+                TestAPI: "FormIt.Utils.GuidFromString",
+hexStr: hexStr
+            };
+            return callAsyncAPI(args);
+        };
 FormIt.VisualStyles = {};
-        
-    FormIt.VisualStyles.GetShadowsVisible = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetShadowsVisible"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetShadowsVisible = function(val) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetShadowsVisible",
+        FormIt.VisualStyles.GetShadowsVisible = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetShadowsVisible"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.VisualStyles.SetShadowsVisible = function(val) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetShadowsVisible",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetAlwaysDrawInstanceBoxes = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetAlwaysDrawInstanceBoxes"
+        FormIt.VisualStyles.GetAlwaysDrawInstanceBoxes = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetAlwaysDrawInstanceBoxes"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetAlwaysDrawInstanceBoxes = function(val) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetAlwaysDrawInstanceBoxes",
+        FormIt.VisualStyles.SetAlwaysDrawInstanceBoxes = function(val) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetAlwaysDrawInstanceBoxes",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsGroundPlaneVisible = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsGroundPlaneVisible"
+        FormIt.VisualStyles.IsGroundPlaneVisible = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsGroundPlaneVisible"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetGroundPlaneVisible = function(val) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetGroundPlaneVisible",
+        FormIt.VisualStyles.SetGroundPlaneVisible = function(val) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetGroundPlaneVisible",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsWorkPlaneVisible = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsWorkPlaneVisible"
+        FormIt.VisualStyles.IsWorkPlaneVisible = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsWorkPlaneVisible"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetWorkPlaneVisible = function(val) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetWorkPlaneVisible",
+        FormIt.VisualStyles.SetWorkPlaneVisible = function(val) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetWorkPlaneVisible",
 val: val
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetNorthArrowDisplay = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetNorthArrowDisplay"
+        FormIt.VisualStyles.GetNorthArrowDisplay = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetNorthArrowDisplay"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetNorthArrowDisplay = function(bOn) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetNorthArrowDisplay",
+        FormIt.VisualStyles.SetNorthArrowDisplay = function(bOn) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetNorthArrowDisplay",
 bOn: bOn
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.ToggleNorthArrowDisplay = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.ToggleNorthArrowDisplay"
+        FormIt.VisualStyles.ToggleNorthArrowDisplay = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.ToggleNorthArrowDisplay"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsNorthArrowVisible = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsNorthArrowVisible"
+        FormIt.VisualStyles.IsNorthArrowVisible = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsNorthArrowVisible"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetShowAxes = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetShowAxes"
+        FormIt.VisualStyles.GetShowAxes = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetShowAxes"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetShowAxes = function(bShow) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetShowAxes",
+        FormIt.VisualStyles.SetShowAxes = function(bShow) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetShowAxes",
 bShow: bShow
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetShowSilhouettes = function(bShow) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetShowSilhouettes",
+        FormIt.VisualStyles.SetShowSilhouettes = function(bShow) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetShowSilhouettes",
 bShow: bShow
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetShowEdges = function(bShow) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetShowEdges",
+        FormIt.VisualStyles.SetShowEdges = function(bShow) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetShowEdges",
 bShow: bShow
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsGridVisible = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsGridVisible"
+        FormIt.VisualStyles.IsGridVisible = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsGridVisible"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetGridVisible = function(bVisible) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetGridVisible",
+        FormIt.VisualStyles.SetGridVisible = function(bVisible) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetGridVisible",
 bVisible: bVisible
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetHighlightPreselect = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetHighlightPreselect"
+        FormIt.VisualStyles.GetHighlightPreselect = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetHighlightPreselect"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetHighlightPreselect = function(bHighlight) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetHighlightPreselect",
+        FormIt.VisualStyles.SetHighlightPreselect = function(bHighlight) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetHighlightPreselect",
 bHighlight: bHighlight
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetAmbientColorIntensity = function(i) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetAmbientColorIntensity",
+        FormIt.VisualStyles.SetAmbientColorIntensity = function(i) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetAmbientColorIntensity",
 i: i
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetAmbientColorIntensity = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetAmbientColorIntensity"
+        FormIt.VisualStyles.GetAmbientColorIntensity = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetAmbientColorIntensity"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetAmbientTextureIntensity = function(i) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetAmbientTextureIntensity",
+        FormIt.VisualStyles.SetAmbientTextureIntensity = function(i) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetAmbientTextureIntensity",
 i: i
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetAmbientTextureIntensity = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetAmbientTextureIntensity"
+        FormIt.VisualStyles.GetAmbientTextureIntensity = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetAmbientTextureIntensity"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetAmbientMaterialIntensity = function(i) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetAmbientMaterialIntensity",
+        FormIt.VisualStyles.SetAmbientMaterialIntensity = function(i) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetAmbientMaterialIntensity",
 i: i
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetSunShading = function(i) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetSunShading",
+        FormIt.VisualStyles.SetSunShading = function(i) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetSunShading",
 i: i
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetSunShading = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetSunShading"
+        FormIt.VisualStyles.GetSunShading = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetSunShading"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetShadowIntensity = function(i) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetShadowIntensity",
+        FormIt.VisualStyles.SetShadowIntensity = function(i) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetShadowIntensity",
 i: i
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetShadowIntensity = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetShadowIntensity"
+        FormIt.VisualStyles.GetShadowIntensity = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetShadowIntensity"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetAdvancedMaterialShaderType = function(type) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetAdvancedMaterialShaderType",
+        FormIt.VisualStyles.SetAdvancedMaterialShaderType = function(type) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetAdvancedMaterialShaderType",
 type: type
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetAdvancedMaterialShaderType = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetAdvancedMaterialShaderType"
+        FormIt.VisualStyles.GetAdvancedMaterialShaderType = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetAdvancedMaterialShaderType"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsSkyRendered = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsSkyRendered"
+        FormIt.VisualStyles.IsSkyRendered = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsSkyRendered"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetSkyRendered = function(b) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetSkyRendered",
+        FormIt.VisualStyles.SetSkyRendered = function(b) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetSkyRendered",
 b: b
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsFogRendered = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsFogRendered"
+        FormIt.VisualStyles.IsFogRendered = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsFogRendered"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetFogRendered = function(b) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetFogRendered",
+        FormIt.VisualStyles.SetFogRendered = function(b) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetFogRendered",
 b: b
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetSkyLowerColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetSkyLowerColor",
+        FormIt.VisualStyles.SetSkyLowerColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetSkyLowerColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetSkyLowerColor = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetSkyLowerColor"
+        FormIt.VisualStyles.GetSkyLowerColor = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetSkyLowerColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetSkyUpperColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetSkyUpperColor",
+        FormIt.VisualStyles.SetSkyUpperColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetSkyUpperColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetSkyUpperColor = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetSkyUpperColor"
+        FormIt.VisualStyles.GetSkyUpperColor = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetSkyUpperColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetBackgroundColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetBackgroundColor",
+        FormIt.VisualStyles.SetBackgroundColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetBackgroundColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetBackgroundColor = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetBackgroundColor"
+        FormIt.VisualStyles.GetBackgroundColor = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetBackgroundColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetGroundPlaneColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetGroundPlaneColor",
+        FormIt.VisualStyles.SetGroundPlaneColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetGroundPlaneColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetGroundPlaneColor = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetGroundPlaneColor"
+        FormIt.VisualStyles.GetGroundPlaneColor = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetGroundPlaneColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetWorkPlaneColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetWorkPlaneColor",
+        FormIt.VisualStyles.SetWorkPlaneColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetWorkPlaneColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetWorkPlaneColor = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetWorkPlaneColor"
+        FormIt.VisualStyles.GetWorkPlaneColor = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetWorkPlaneColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetSunEditorEnabled = function(bEnabled) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetSunEditorEnabled",
+        FormIt.VisualStyles.SetSunEditorEnabled = function(bEnabled) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetSunEditorEnabled",
 bEnabled: bEnabled
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetSunEditorEnabled = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetSunEditorEnabled"
+        FormIt.VisualStyles.GetSunEditorEnabled = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetSunEditorEnabled"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetEdgeWeight = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetEdgeWeight"
+        FormIt.VisualStyles.GetEdgeWeight = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetEdgeWeight"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetEdgeWeight = function(weight) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetEdgeWeight",
+        FormIt.VisualStyles.SetEdgeWeight = function(weight) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetEdgeWeight",
 weight: weight
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetEdgeColor = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetEdgeColor"
+        FormIt.VisualStyles.GetEdgeColor = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetEdgeColor"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetEdgeColor = function(color) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetEdgeColor",
+        FormIt.VisualStyles.SetEdgeColor = function(color) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetEdgeColor",
 color: color
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.GetSilhouetteWeight = function() {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.GetSilhouetteWeight"
+        FormIt.VisualStyles.GetSilhouetteWeight = function() {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.GetSilhouetteWeight"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetSilhouetteWeight = function(weight) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetSilhouetteWeight",
+        FormIt.VisualStyles.SetSilhouetteWeight = function(weight) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetSilhouetteWeight",
 weight: weight
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.IsRenderSettingActive = function(flag) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.IsRenderSettingActive",
+        FormIt.VisualStyles.IsRenderSettingActive = function(flag) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.IsRenderSettingActive",
 flag: flag
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.VisualStyles.SetRenderSettingFlags = function(flag,b) {
-        const args = {
-            TestAPI: "FormIt.VisualStyles.SetRenderSettingFlags",
+        FormIt.VisualStyles.SetRenderSettingFlags = function(flag,b) {
+            const args = {
+                TestAPI: "FormIt.VisualStyles.SetRenderSettingFlags",
 flag: flag,
         b: b
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Events = {};
-        
-    FormIt.Events.AreaSelectBegan = function(pt,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.AreaSelectBegan",
+
+        FormIt.Events.AreaSelectBegan = function(pt,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.AreaSelectBegan",
 pt: pt,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.AreaSelectChanged = function(pt,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.AreaSelectChanged",
+        FormIt.Events.AreaSelectChanged = function(pt,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.AreaSelectChanged",
 pt: pt,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.AreaSelectEnded = function(mods) {
-        const args = {
-            TestAPI: "FormIt.Events.AreaSelectEnded",
+        FormIt.Events.AreaSelectEnded = function(mods) {
+            const args = {
+                TestAPI: "FormIt.Events.AreaSelectEnded",
 mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.DoubleTap = function(pt,mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.DoubleTap",
+        FormIt.Events.DoubleTap = function(pt,mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.DoubleTap",
 pt: pt,
         mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.DoubleTapTwoTouches = function(pt,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.DoubleTapTwoTouches",
+        FormIt.Events.DoubleTapTwoTouches = function(pt,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.DoubleTapTwoTouches",
 pt: pt,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.HandleEvent = function(event) {
-        const args = {
-            TestAPI: "FormIt.Events.HandleEvent",
+        FormIt.Events.HandleEvent = function(event) {
+            const args = {
+                TestAPI: "FormIt.Events.HandleEvent",
 event: event
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.KeyDown = function(keyCode,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.KeyDown",
+        FormIt.Events.KeyDown = function(keyCode,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.KeyDown",
 keyCode: keyCode,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.KeyUp = function(keyCode,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.KeyUp",
+        FormIt.Events.KeyUp = function(keyCode,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.KeyUp",
 keyCode: keyCode,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.LongPress = function(pt,mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.LongPress",
+        FormIt.Events.LongPress = function(pt,mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.LongPress",
 pt: pt,
         mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.MouseDown = function(pt,button,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.MouseDown",
+        FormIt.Events.MouseDown = function(pt,button,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.MouseDown",
 pt: pt,
         button: button,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.MouseMove = function(pt,button,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.MouseMove",
+        FormIt.Events.MouseMove = function(pt,button,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.MouseMove",
 pt: pt,
         button: button,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.MouseOut = function(pt,button,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.MouseOut",
+        FormIt.Events.MouseOut = function(pt,button,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.MouseOut",
 pt: pt,
         button: button,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.MouseOver = function(pt,button,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.MouseOver",
+        FormIt.Events.MouseOver = function(pt,button,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.MouseOver",
 pt: pt,
         button: button,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.MouseUp = function(pt,button,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.MouseUp",
+        FormIt.Events.MouseUp = function(pt,button,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.MouseUp",
 pt: pt,
         button: button,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.MouseWheel = function(pt,delta,button,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.MouseWheel",
+        FormIt.Events.MouseWheel = function(pt,delta,button,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.MouseWheel",
 pt: pt,
         delta: delta,
         button: button,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.PanBegin = function(pt,nTouches,mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.PanBegin",
+        FormIt.Events.PanBegin = function(pt,nTouches,mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.PanBegin",
 pt: pt,
         nTouches: nTouches,
         mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.PanChanged = function(vec,nTouches,mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.PanChanged",
+        FormIt.Events.PanChanged = function(vec,nTouches,mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.PanChanged",
 vec: vec,
         nTouches: nTouches,
         mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.PanEnded = function(mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.PanEnded",
+        FormIt.Events.PanEnded = function(mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.PanEnded",
 mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.PinchBegan = function(pt,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.PinchBegan",
+        FormIt.Events.PinchBegan = function(pt,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.PinchBegan",
 pt: pt,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.PinchChanged = function(dDelta,mods) {
-        const args = {
-            TestAPI: "FormIt.Events.PinchChanged",
+        FormIt.Events.PinchChanged = function(dDelta,mods) {
+            const args = {
+                TestAPI: "FormIt.Events.PinchChanged",
 dDelta: dDelta,
         mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.PinchEnded = function(mods) {
-        const args = {
-            TestAPI: "FormIt.Events.PinchEnded",
+        FormIt.Events.PinchEnded = function(mods) {
+            const args = {
+                TestAPI: "FormIt.Events.PinchEnded",
 mods: mods
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.SingleTap = function(pt,mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.SingleTap",
+        FormIt.Events.SingleTap = function(pt,mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.SingleTap",
 pt: pt,
         mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Events.TouchBegan = function(pt,mods,isStylus) {
-        const args = {
-            TestAPI: "FormIt.Events.TouchBegan",
+        FormIt.Events.TouchBegan = function(pt,mods,isStylus) {
+            const args = {
+                TestAPI: "FormIt.Events.TouchBegan",
 pt: pt,
         mods: mods,
         isStylus: isStylus
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Testing = {};
-        
-    FormIt.Testing.DisableMessaging = function() {
-        const args = {
-            TestAPI: "FormIt.Testing.DisableMessaging"
-        };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.EnableMessaging = function() {
-        const args = {
-            TestAPI: "FormIt.Testing.EnableMessaging"
+        FormIt.Testing.DisableMessaging = function() {
+            const args = {
+                TestAPI: "FormIt.Testing.DisableMessaging"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.IsMessagingEnabled = function() {
-        const args = {
-            TestAPI: "FormIt.Testing.IsMessagingEnabled"
+        FormIt.Testing.EnableMessaging = function() {
+            const args = {
+                TestAPI: "FormIt.Testing.EnableMessaging"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.IsRunning = function() {
-        const args = {
-            TestAPI: "FormIt.Testing.IsRunning"
+        FormIt.Testing.IsMessagingEnabled = function() {
+            const args = {
+                TestAPI: "FormIt.Testing.IsMessagingEnabled"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.SetIsRunning = function(running) {
-        const args = {
-            TestAPI: "FormIt.Testing.SetIsRunning",
+        FormIt.Testing.IsRunning = function() {
+            const args = {
+                TestAPI: "FormIt.Testing.IsRunning"
+            };
+            return callAsyncAPI(args);
+        };
+
+        FormIt.Testing.SetIsRunning = function(running) {
+            const args = {
+                TestAPI: "FormIt.Testing.SetIsRunning",
 running: running
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.LoadFileAndCompare = function(sTestFile,sExtension,sCompareFileName) {
-        const args = {
-            TestAPI: "FormIt.Testing.LoadFileAndCompare",
+        FormIt.Testing.LoadFileAndCompare = function(sTestFile,sExtension,sCompareFileName) {
+            const args = {
+                TestAPI: "FormIt.Testing.LoadFileAndCompare",
 sTestFile: sTestFile,
         sExtension: sExtension,
         sCompareFileName: sCompareFileName
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.RunNativeTests = function() {
-        const args = {
-            TestAPI: "FormIt.Testing.RunNativeTests"
+        FormIt.Testing.RunNativeTests = function() {
+            const args = {
+                TestAPI: "FormIt.Testing.RunNativeTests"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.SetForgeMode = function(mode,path) {
-        const args = {
-            TestAPI: "FormIt.Testing.SetForgeMode",
+        FormIt.Testing.SetForgeMode = function(mode,path) {
+            const args = {
+                TestAPI: "FormIt.Testing.SetForgeMode",
 mode: mode,
         path: path
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.DownloadFile = function(token,fileInfo) {
-        const args = {
-            TestAPI: "FormIt.Testing.DownloadFile",
+        FormIt.Testing.DownloadFile = function(token,fileInfo) {
+            const args = {
+                TestAPI: "FormIt.Testing.DownloadFile",
 token: token,
         fileInfo: fileInfo
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.GetHubsWithProjects = function(token) {
-        const args = {
-            TestAPI: "FormIt.Testing.GetHubsWithProjects",
+        FormIt.Testing.GetHubsWithProjects = function(token) {
+            const args = {
+                TestAPI: "FormIt.Testing.GetHubsWithProjects",
 token: token
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Testing.CheckEntitlements = function(token) {
-        const args = {
-            TestAPI: "FormIt.Testing.CheckEntitlements",
+        FormIt.Testing.CheckEntitlements = function(token) {
+            const args = {
+                TestAPI: "FormIt.Testing.CheckEntitlements",
 token: token
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 FormIt.Settings = {};
-        
-    FormIt.Settings.SetNoInferenceSmoothEdgesAndPoints = function(bNoInference) {
-        const args = {
-            TestAPI: "FormIt.Settings.SetNoInferenceSmoothEdgesAndPoints",
+
+        FormIt.Settings.SetNoInferenceSmoothEdgesAndPoints = function(bNoInference) {
+            const args = {
+                TestAPI: "FormIt.Settings.SetNoInferenceSmoothEdgesAndPoints",
 bNoInference: bNoInference
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    FormIt.Settings.GetNoInferenceSmoothEdgesAndPoints = function() {
-        const args = {
-            TestAPI: "FormIt.Settings.GetNoInferenceSmoothEdgesAndPoints"
+        FormIt.Settings.GetNoInferenceSmoothEdgesAndPoints = function() {
+            const args = {
+                TestAPI: "FormIt.Settings.GetNoInferenceSmoothEdgesAndPoints"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-WSM.Utils = {};
-        
-    WSM.Utils.GetBoundsForVisibleHistoryBoundsHelper = function(paths,ExcludeImages,ExcludeSectionPlanes) {
-        const args = {
-            TestAPI: "WSM.Utils.GetBoundsForVisibleHistoryBoundsHelper",
+        WSM.Utils.GetBoundsForVisibleHistoryBoundsHelper = function(paths,ExcludeImages,ExcludeSectionPlanes) {
+            const args = {
+                TestAPI: "WSM.Utils.GetBoundsForVisibleHistoryBoundsHelper",
 paths: paths,
         ExcludeImages: ExcludeImages,
         ExcludeSectionPlanes: ExcludeSectionPlanes
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Utils.GetUTCOffset = function(longitude,latitude) {
-        const args = {
-            TestAPI: "WSM.Utils.GetUTCOffset",
+        WSM.Utils.GetUTCOffset = function(longitude,latitude) {
+            const args = {
+                TestAPI: "WSM.Utils.GetUTCOffset",
 longitude: longitude,
         latitude: latitude
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-WSM.Test = {};
-        
-    WSM.Test.HistoryObjects = function(historyObjects) {
-        const args = {
-            TestAPI: "WSM.Test.HistoryObjects",
+        WSM.Test.HistoryObjects = function(historyObjects) {
+            const args = {
+                TestAPI: "WSM.Test.HistoryObjects",
 historyObjects: historyObjects
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Test.Size_t = function(nID,nArrayIDs) {
-        const args = {
-            TestAPI: "WSM.Test.Size_t",
+        WSM.Test.Size_t = function(nID,nArrayIDs) {
+            const args = {
+                TestAPI: "WSM.Test.Size_t",
 nID: nID,
         nArrayIDs: nArrayIDs
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Test.LoadFromFileWithSuspend = function(nHistoryID,sFilePath,eFileType,dMaxDistanceFromOrigin) {
-        const args = {
-            TestAPI: "WSM.Test.LoadFromFileWithSuspend",
+        WSM.Test.LoadFromFileWithSuspend = function(nHistoryID,sFilePath,eFileType,dMaxDistanceFromOrigin) {
+            const args = {
+                TestAPI: "WSM.Test.LoadFromFileWithSuspend",
 nHistoryID: nHistoryID,
         sFilePath: sFilePath,
         eFileType: eFileType,
         dMaxDistanceFromOrigin: dMaxDistanceFromOrigin
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
 
-        
-    WSM.Test.ResetActiveHistory = function() {
-        const args = {
-            TestAPI: "WSM.Test.ResetActiveHistory"
+        WSM.Test.ResetActiveHistory = function() {
+            const args = {
+                TestAPI: "WSM.Test.ResetActiveHistory"
+            };
+            return callAsyncAPI(args);
         };
-        return callAsyncAPI(args);
-    };
-
 // This file is auto generated
 WSM.nObjectType = WSM.nObjectType || {};
 WSM.nObjectType.nUnSpecifiedType = 0;
@@ -9330,7 +8466,9 @@ FormIt.ToolType.EDIT_TEXTURES = 84;
 FormIt.ToolType.ALIGN_WITH_FACE = 85;
 FormIt.ToolType.DYNAMOSELECTION = 86;
 FormIt.ToolType.POLYGON = 87;
-FormIt.ToolType.WALL = 88;
+FormIt.ToolType.OFFSET_LINE = 88;
+FormIt.ToolType.CONFIRM_ACTION = 89;
+FormIt.ToolType.NUM_TOOLS = 90;
 WSM.Utils = WSM.Utils || {};
 WSM.Utils.CurveType = WSM.Utils.CurveType || {};
 WSM.Utils.CurveType.Unknown = 0;
@@ -9745,8 +8883,10 @@ FormIt.Forge.ErrorCode.CacheRefreshNeeded = 24;
 FormIt.Forge.ErrorCode.FileUpdateDenied = 25;
 FormIt.Forge.ErrorCode.ReceiveEmptyFileListContentLibrary = 26;
 FormIt.Forge.ErrorCode.NoPermissionsToShowContent = 27;
-FormIt.Forge.ErrorCode.NoPermissionsToShowRootContent = 28;
+FormIt.Forge.ErrorCode.NoPermissionsAndEmptyFileList = 28;
+FormIt.Forge.ErrorCode.NoPermissionsAndEmptyFileListContentLibrary = 29;
 FormIt.Forge.UI = FormIt.Forge.UI || {};
+FormIt.Forge.UI.Tooltip = FormIt.Forge.UI.Tooltip || {};
 FormIt.AutoSave = FormIt.AutoSave || {};
 FormIt.Web = FormIt.Web || {};
 FormIt.Web.RequestMethod = FormIt.Web.RequestMethod || {};
@@ -9755,6 +8895,7 @@ FormIt.Web.RequestMethod.PUT = 1;
 FormIt.Web.RequestMethod.POST = 2;
 FormIt.Graphics = FormIt.Graphics || {};
 FormIt.Utils = FormIt.Utils || {};
+FormIt.IPC = FormIt.IPC || {};
 WSM.nFileType = WSM.nFileType || {};
 WSM.nFileType.nFileTypeBinaryWSM = 0;
 WSM.nFileType.nFileTypeSAT = 1;
@@ -9834,7 +8975,7 @@ WSM.Tools.ToolType.ArcCenterRadius = 23;
 WSM.Tools.ToolType.FlattenFaces = 24;
 WSM.Tools.ToolType.EditTextures = 25;
 WSM.Tools.ToolType.Polygon = 26;
-WSM.Tools.ToolType.Wall = 27;
+WSM.Tools.ToolType.OffsetLine = 27;
 WSM.Tools.ToolType.NumToolTypes = 28;
 WSM.Tools.ToolState = WSM.Tools.ToolState || {};
 WSM.Tools.ToolState.FirstPt = 0;
@@ -9844,6 +8985,10 @@ WSM.Tools.ToolState.WaitingForInput = 3;
 WSM.Tools.ToolOperationMode = WSM.Tools.ToolOperationMode || {};
 WSM.Tools.ToolOperationMode.PRIMARY = 0;
 WSM.Tools.ToolOperationMode.SECONDARY = 1;
+WSM.Tools.ExecutionType = WSM.Tools.ExecutionType || {};
+WSM.Tools.ExecutionType.Unknown = 0;
+WSM.Tools.ExecutionType.Executed = 1;
+WSM.Tools.ExecutionType.NotExecuted = 2;
 WSM.Tools.ResultType = WSM.Tools.ResultType || {};
 WSM.Tools.ResultType.Good = 0;
 WSM.Tools.ResultType.NoAppHelperRegistered = 1;
@@ -9890,6 +9035,8 @@ FormIt.AutoSave = FormIt.AutoSave || {};
 FormIt.Web = FormIt.Web || {};
 FormIt.FRS = FormIt.FRS || {};
 FormIt.DebugMode = FormIt.DebugMode || {};
+FormIt.Revit = FormIt.Revit || {};
+FormIt.IPC = FormIt.IPC || {};
 FormIt.StringConversion = FormIt.StringConversion || {};
 FormIt.Model = FormIt.Model || {};
 FormIt.GroupEdit = FormIt.GroupEdit || {};
@@ -9923,6 +9070,8 @@ FormIt.Forge = FormIt.Forge || {};
 FormIt.Forge.UI = FormIt.Forge.UI || {};
 FormIt.Dynamo = FormIt.Dynamo || {};
 FormIt.SunAndLocation = FormIt.SunAndLocation || {};
+FormIt.Utils = FormIt.Utils || {};
+FormIt.IPC = FormIt.IPC || {};
 
     // Invalid ID
     WSM.INVALID_ID = 0xFFFFFFFF;
@@ -10204,7 +9353,9 @@ FormIt.ToolType.EDIT_TEXTURES = 84;
 FormIt.ToolType.ALIGN_WITH_FACE = 85;
 FormIt.ToolType.DYNAMOSELECTION = 86;
 FormIt.ToolType.POLYGON = 87;
-FormIt.ToolType.WALL = 88;
+FormIt.ToolType.OFFSET_LINE = 88;
+FormIt.ToolType.CONFIRM_ACTION = 89;
+FormIt.ToolType.NUM_TOOLS = 90;
 WSM.Utils = WSM.Utils || {};
 WSM.Utils.CurveType = WSM.Utils.CurveType || {};
 WSM.Utils.CurveType.Unknown = 0;
@@ -10619,8 +9770,10 @@ FormIt.Forge.ErrorCode.CacheRefreshNeeded = 24;
 FormIt.Forge.ErrorCode.FileUpdateDenied = 25;
 FormIt.Forge.ErrorCode.ReceiveEmptyFileListContentLibrary = 26;
 FormIt.Forge.ErrorCode.NoPermissionsToShowContent = 27;
-FormIt.Forge.ErrorCode.NoPermissionsToShowRootContent = 28;
+FormIt.Forge.ErrorCode.NoPermissionsAndEmptyFileList = 28;
+FormIt.Forge.ErrorCode.NoPermissionsAndEmptyFileListContentLibrary = 29;
 FormIt.Forge.UI = FormIt.Forge.UI || {};
+FormIt.Forge.UI.Tooltip = FormIt.Forge.UI.Tooltip || {};
 FormIt.AutoSave = FormIt.AutoSave || {};
 FormIt.Web = FormIt.Web || {};
 FormIt.Web.RequestMethod = FormIt.Web.RequestMethod || {};
@@ -10629,6 +9782,7 @@ FormIt.Web.RequestMethod.PUT = 1;
 FormIt.Web.RequestMethod.POST = 2;
 FormIt.Graphics = FormIt.Graphics || {};
 FormIt.Utils = FormIt.Utils || {};
+FormIt.IPC = FormIt.IPC || {};
 WSM.nFileType = WSM.nFileType || {};
 WSM.nFileType.nFileTypeBinaryWSM = 0;
 WSM.nFileType.nFileTypeSAT = 1;
@@ -10708,7 +9862,7 @@ WSM.Tools.ToolType.ArcCenterRadius = 23;
 WSM.Tools.ToolType.FlattenFaces = 24;
 WSM.Tools.ToolType.EditTextures = 25;
 WSM.Tools.ToolType.Polygon = 26;
-WSM.Tools.ToolType.Wall = 27;
+WSM.Tools.ToolType.OffsetLine = 27;
 WSM.Tools.ToolType.NumToolTypes = 28;
 WSM.Tools.ToolState = WSM.Tools.ToolState || {};
 WSM.Tools.ToolState.FirstPt = 0;
@@ -10718,6 +9872,10 @@ WSM.Tools.ToolState.WaitingForInput = 3;
 WSM.Tools.ToolOperationMode = WSM.Tools.ToolOperationMode || {};
 WSM.Tools.ToolOperationMode.PRIMARY = 0;
 WSM.Tools.ToolOperationMode.SECONDARY = 1;
+WSM.Tools.ExecutionType = WSM.Tools.ExecutionType || {};
+WSM.Tools.ExecutionType.Unknown = 0;
+WSM.Tools.ExecutionType.Executed = 1;
+WSM.Tools.ExecutionType.NotExecuted = 2;
 WSM.Tools.ResultType = WSM.Tools.ResultType || {};
 WSM.Tools.ResultType.Good = 0;
 WSM.Tools.ResultType.NoAppHelperRegistered = 1;
@@ -10764,6 +9922,8 @@ FormIt.AutoSave = FormIt.AutoSave || {};
 FormIt.Web = FormIt.Web || {};
 FormIt.FRS = FormIt.FRS || {};
 FormIt.DebugMode = FormIt.DebugMode || {};
+FormIt.Revit = FormIt.Revit || {};
+FormIt.IPC = FormIt.IPC || {};
 FormIt.StringConversion = FormIt.StringConversion || {};
 FormIt.Model = FormIt.Model || {};
 FormIt.GroupEdit = FormIt.GroupEdit || {};
@@ -10797,6 +9957,8 @@ FormIt.Forge = FormIt.Forge || {};
 FormIt.Forge.UI = FormIt.Forge.UI || {};
 FormIt.Dynamo = FormIt.Dynamo || {};
 FormIt.SunAndLocation = FormIt.SunAndLocation || {};
+FormIt.Utils = FormIt.Utils || {};
+FormIt.IPC = FormIt.IPC || {};
 
     // Invalid ID
     WSM.INVALID_ID = 0xFFFFFFFF;
