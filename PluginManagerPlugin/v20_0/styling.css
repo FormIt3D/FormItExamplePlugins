@@ -65,8 +65,7 @@ li:before{
     padding: 8px;
     margin-top: 20px;
     /* make input take up 100% minus spacing, minus button width */
-    width: -moz-calc(100% - 10px - 35px);
-    width: -webkit-calc(100% - 10px - 35px);
+    width: calc(100% - 10px - 35px);
     font-size: 0.72em;
 }
 
@@ -172,8 +171,7 @@ li:before{
     margin-right: 5px;
 
     /* make margin-top = ((repoName margin/2) + (button width - background-size) / 2) */
-    margin-top: -moz-calc((5px/2) + (35px - 25px)/2);
-    margin-top: -webkit-calc((5px/2) + (35px - 25px)/2);
+    margin-top: calc((5px/2) + (35px - 25px)/2);
 
     vertical-align: middle;
 
@@ -215,8 +213,7 @@ li:before{
     line-height: 35px;
 
     /* make div take up 100% minus spacing, minus button width, to allow for unlinkRepoButton */
-    width: -moz-calc(100% - 10px - 35px - 24px);
-    width: -webkit-calc(100% - 10px - 35px - 24px);
+    width: calc(100% - 10px - 35px - 24px);
     display: inline-block;
 }
 
