@@ -104,7 +104,15 @@ FormItInterface.Initialize = function(callbackMethod)
                 FormItInterface.CallMethod = function(method, args, callbackMethod)
                 {
                     var stringArgs = JSON.stringify(args);
-                    channel.objects.FormItInterface.CallMethod(method, stringArgs, callbackMethod);
+                    
+                    if (callbackMethod == null)
+                    {
+                        channel.objects.FormItInterface.CallMethod(method, stringArgs);
+                    }
+                    else
+                    {
+                        channel.objects.FormItInterface.CallMethod(method, stringArgs, callbackMethod);
+                    }
                 }
                 FormItInterface.CallMethodDirect = function(args, callbackMethod)
                 {
