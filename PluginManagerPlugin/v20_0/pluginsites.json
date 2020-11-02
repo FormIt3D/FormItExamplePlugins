@@ -1,4 +1,6 @@
 [
+  "http://localhost:8080/PluginPlayground",
   "https://formit3d.github.io/FormItExamplePlugins",
   "https://formit3d.github.io/FormItWorkflowPlugins"
+
 ]
