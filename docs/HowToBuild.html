@@ -8,7 +8,12 @@
 <h2 class="pageSubtitle">Learn How to Build, Test, and Host Your Own Plugins</h2>
 <p class="pageBlurb">FormIt's JavaScript plugin infrastructure allows the creation of custom 3D workflows and bespoke modeling functionality, using a variety of UI types and a powerful API.</p>
 
-<h3 class="categoryDetailTitle">Jump to...</h3>
+<h3 class="categoryDetailTitle">Jump to (First time plugin developers)...</h3>
+<ul class="categoryDetailList">
+    <li><a href="#PluginPlayground">Your first plugin from the Plugin Playground</a></li>
+</ul>
+
+<h3 class="categoryDetailTitle">Jump to (Advanced users)...</h3>
 <ul class="categoryDetailList">
     <li><a href="#SettingUpEnvironment">Setting Up Your Environment</a></li>
     <li><a href="#SettingUpFormIt">Setting Up FormIt</a></li>
@@ -22,12 +27,26 @@
     <li><a href="#DebuggingPlugins">Debugging Plugins</a></li>
     <li><a href="#HostingPlugins">Hosting Plugins</a></li>
 </ul>
+
 <h3 class="categoryDetailTitle">Useful Links</h3>
 <ul class="categoryDetailList">
     <li><a href="FormItJSAPI/group__mod__jsapi__formit.html" target="_blank">FormIt Core JS API</a></li>
     <li><a href="FormItJSAPI/group__mod__jsapi__wsm.html" target="_blank">FormIt Modeling Kernel (WSM) JS API</a></li>
     <li><a href="../index.html" target="_blank">Using Plugins + The Plugin Manager</a></li>
 </ul>
+
+<div class="categoryBlock" id="PluginPlayground">
+    <h2 class="categoryTitle">Your first plugin from the Plugin Playground</h2>
+    <div class="categoryDetailBlock">
+        <p>
+            Building a plugin can be intimidating at the beginning. To help with this, we've introduced a Plugin Playground, where you can write, test, debug, and see your plugin in action - never needing to leave the FormIt application.
+        </p>
+        <p>
+            <a href="https://formit3d.github.io/PluginPlayground/" target="_blank">Learn how to use the Plugin Playground</a>
+        </p>
+        <img src="https://formit3d.github.io/PluginPlayground/images/preview.png" alt="Plugin Playground">
+    </div>
+</div>
 
 <div class="categoryBlock" id="SettingUpEnvironment">
     <h2 class="categoryTitle">Setting Up Your Environment</h2>
@@ -120,7 +139,7 @@
                     <li>Note you can use your IDE to start the server, too. See the "Install an IDE" section below.</li>
                 </ul>
             </ul>
-    
+
             <p class="categoryDetailBody"><b>Configuring FormIt Web</b></p>
             <p class="categoryDetailBody">Now open <a href="https://app.formit.autodesk.com/" target="_blank">FormIt Web</a> </p>
             <p class="categoryDetailBody">Open the browser’s DevTools (F12) in the FormIt Web page.  In this new DevTools view, go to Application tab/Service Workers and enable Bypass for network:</p><img src="bypassnetwork.png" alt="Bypass for network">
@@ -130,7 +149,7 @@
             <img src="consoleinput.png" alt="Console Input">
             <p class="categoryDetailBody"><b>Note:</b>  Once all these steps are working, all that will need to be done to work on local plugins is to start the server in the correct location:</p>
             <ul><pre><code class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></code></pre></ul>
-    
+
             <p class="categoryDetailBody"><b>Verify the Web Server</b></p>
             <ul class="categoryDetailList">
                 <li>In a web browser, navigate to the following:</li>
@@ -142,8 +161,8 @@
             </ul>
             </ul>
             </ul>
-    
-    
+
+
             <h3 class="categoryDetailTitle">Install an IDE</h3>
             <p class="categoryDetailBody">Write your code in an integrated development environment (IDE) that helps identify issues, correct syntax errors, and includes a terminal for running your local server.</p>
             <p class="categoryDetailBody">A free IDE that works well for FormIt plugin development is Microsoft's <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a>.</p>
@@ -535,7 +554,7 @@
     <h2 class="categoryTitle">Debugging Plugins</h2>
     <div class="categoryDetailBlock">
         <p class="categoryDetailBody">FormIt plugins utilize two distinct JavaScript engines: one in the panel displaying the HTML, and another engine in the FormIt client, which can make calls to FormIt and its geometry kernel. These JavaScript engines are in two different processes.</p>
-        
+
         <p class="categoryDetailBody"><b>Client-Side (FormIt) Debugging</b></p>
         <p class="categoryDetailBody">To debug in FormIt-side code, which applies to both toolbar- and panel-based plugins, you can add a line in the code to pop the desktop application's built-in JS debugger:</p>
         <ul class="categoryDetailList">
