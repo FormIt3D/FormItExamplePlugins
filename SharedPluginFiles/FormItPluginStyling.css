@@ -20,43 +20,21 @@ body {
     flex-grow: 1;
 }
 
-/* the footer: information about plugins, and this plugin specifically */
-.footerDiv {
-    background-color: hsl(0, 0%, 97%);
-    font-family: sans-serif;
-    padding: 15px;
-}
-
-.footerContainer {
-    flex-shrink: 0;
-    width: 100%;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.footerContainer p {
-    margin-bottom: 0;
-}
-
-.footerContainer a {
-    color: #4676a9;
-    text-decoration: none;
-}
-
-.footerContainer a:hover {
-    color: rgb(158, 189, 199);
-}
-
-.footerContainer a:visited {
-    color: #4676a9;
+/* typical body text */
+.contentContainer p, 
+.contentContainer ul,
+#pluginFooterContainer ul {
+    font-family: Arial;
+    line-height: 20px;
 }
 
 /* unordered lists */
-ul {
+.contentContainer ul,
+#pluginFooterContainer ul {
     margin-bottom: 0;
 }
 
-li {
+.contentContainer li {
     list-style-type: none;
     position: relative;
     margin-top: 7px;
@@ -64,7 +42,7 @@ li {
     margin-left: -1.5em;
 }
 
-li:before{
+.contentContainer li:before {
     content: ' ';
     display: block;
     width: 5px;
@@ -87,24 +65,18 @@ h1:first-of-type {
     margin-top: 10px;
 }
 
-/* typical body text */
-p, ul {
-    font-family: Arial;
-    line-height: 20px;
-}
-
 /* forms + inputs */
-form {
+.contentContainer form {
     font-family: Arial;
     margin-left: 0px;
 }
 
-.inputLabel {
+.contentContainer .inputLabel {
     width: auto;
     align-self: center;
 }
 
-input {
+.contentContainer input {
     border: 1px solid #4676a9;
     padding: 4px;
     margin-top: 5px;
@@ -112,7 +84,7 @@ input {
     width: 100%;
 }
 
-input:hover {
+.contentContainer input:hover {
     border: 2px solid #c3e8f4;
     padding: 3px;
     margin-top: 5px;
@@ -120,12 +92,12 @@ input:hover {
     outline: none;
 }
 
-input[type=number] {
+.contentContainer input[type=number] {
     width: 30%;
 }
 
 /* checkbox */
-input[type=checkbox] {
+.contentContainer input[type=checkbox] {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -133,7 +105,7 @@ input[type=checkbox] {
 }
 
 /* button */
-input[type=button], input[type=submit] {
+.contentContainer input[type=button], input[type=submit] {
     color: white;
     background-color: #4676a9;
     border: 1px solid #4676a9;
@@ -144,14 +116,14 @@ input[type=button], input[type=submit] {
     width: auto;
 }
 
-input[type=button]:hover, input[type=submit]:hover {
+.contentContainer input[type=button]:hover, input[type=submit]:hover {
     color: white;
     background-color: #4676a9;
     border: 2px solid #c3e8f4;
     padding: 6px;
 }
 
-input[type=button]:focus, input[type=submit]:focus {
+.contentContainer input[type=button]:focus, input[type=submit]:focus {
     color: white;
     background-color: #4676a9;
     border: 2px solid #c3e8f4;
@@ -159,7 +131,7 @@ input[type=button]:focus, input[type=submit]:focus {
     outline: none;
 }
 
-input[type=button]:disabled {
+.contentContainer input[type=button]:disabled {
     color: white;
     background-color: darkgrey;
     border: 1px solid darkgrey;
@@ -227,4 +199,43 @@ input[type=button]:disabled {
 .infoListIndented {
     line-height: 25px;
     padding-left: 20px;
+}
+
+/* the footer: information about plugins, maybe some day a link to this plugin's change log */
+#pluginFooterDiv {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+#pluginFooterContainer {
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#pluginFooterContainer a {
+    color: #4676a9;
+    text-decoration: none;
+}
+
+#pluginFooterContainer a:hover {
+    color: rgb(158, 189, 199);
+}
+
+#pluginFooterContainer a:visited {
+    color: #4676a9;
+}
+
+#pluginFooterContainer #pluginFooterIcon {
+    float: left;
+    margin: 15px 25px 15px 15px;
+}
+
+#pluginFooterContainer li {
+    list-style-type: none;
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }

@@ -287,15 +287,17 @@ FormIt.PluginUI.FooterModule = class FooterModule {
 
     // construct and append the UI elements
     build() {
-
         var footerContainer = document.createElement('div');
-        footerContainer.id = 'footerContainer';
-        footerContainer.className = 'footerContainer';
+        footerContainer.id = 'pluginFooterContainer';
     
         var footerDiv = document.createElement('div');
-        footerDiv.id = 'footerDiv';
-        footerDiv.className = 'footerDiv';
+        footerDiv.id = 'pluginFooterDiv';
         footerContainer.appendChild(footerDiv);
+
+        var footerIcon = document.createElement('img');
+        footerIcon.src = 'https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/img/plugin_manager_grey.png';
+        footerIcon.id = 'pluginFooterIcon';
+        footerDiv.appendChild(footerIcon);
     
         var footerDescriptionText = document.createTextNode("Powered by FormIt JavaScript plugins");
         footerDiv.appendChild(footerDescriptionText);
