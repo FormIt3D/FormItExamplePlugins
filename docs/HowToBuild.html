@@ -26,6 +26,7 @@
     <li><a href="#TestingPlugins">Testing Plugins</a></li>
     <li><a href="#DebuggingPlugins">Debugging Plugins</a></li>
     <li><a href="#HostingPlugins">Hosting Plugins</a></li>
+    <li><a href="#PublishingPlugins">Publishing a plugin</a></li>
 </ul>
 
 <h3 class="categoryDetailTitle">Useful Links</h3>
@@ -632,6 +633,31 @@
             <p class="categoryDetailBody">To delete the web cache, simply delete the "cache" folder above, then reload the Plugin Manager to see the updated titles and descriptions.</p>
         </div>
     </div>
+
+<div class="categoryBlock" id="PublishingPlugins">
+    <h2 class="categoryTitle">Publishing a plugin</h2>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">If you created the plugin with the <a href="#PluginPlayground">Plugin Playground</a>, you can publish your plugin with the bullhorn icon.</p>
+        <img src="images/publish.png" alt="publish" />
+    </div>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">If you created the plugin without the <a href="#PluginPlayground">Plugin Playground</a>, you can publish your plugin by:</p>
+        <ul class="categoryDetailList">
+            <li>
+                <p class="categoryDetailBody">Adding a <b>formit-plugin</b> topic to your plugin's repository</p>
+                <img src="images/topic.png" alt="plugin topic" />
+            </li>
+            <li>
+                <p class="categoryDetailBody">Enabling GitHub pages on your project. This can be found and set in the Setting tabs of your repository.</p>
+                <p class="categoryDetailBody">Under the <b>GitHub Pages</b> section, choose the branch you want to use. Typically choose <b>master</b> or <b>main</b>.</p>
+                <img src="images/pages.png" alt="install pages" />
+            </li>
+        </ul>
+    </div>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">If you'd like your plugin to appear under the list of recommended plugins in the Plugin Manager, add an additional topic to your repository, <b>formit-plugin-recommended</b>. The FormIt team will then review your plugin.</p>
+    </div>
+</div>
 
 <div class="categoryBlock" id="PluginHelp">
     <h2 class="categoryTitle">Help With FormIt Plugins</h2>
