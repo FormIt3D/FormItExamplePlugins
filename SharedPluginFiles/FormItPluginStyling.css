@@ -21,7 +21,7 @@ body {
 }
 
 /* typical body text */
-.contentContainer p, 
+.contentContainer p,
 .contentContainer ul,
 #pluginFooterContainer ul {
     font-family: Arial;
@@ -230,7 +230,7 @@ h1:first-of-type {
 
 #pluginFooterContainer #pluginFooterIcon {
     float: left;
-    margin: 15px 25px 15px 15px;
+    margin: 15px 25px 35px 15px;
 }
 
 #pluginFooterContainer li {
