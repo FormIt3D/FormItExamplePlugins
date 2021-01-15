@@ -314,7 +314,7 @@ FormIt.PluginUI.FooterModule = class FooterModule {
         footerLearnAboutPluginsLI.appendChild(footerLearnAboutPluginsLink);
     
         footerLearnAboutPluginsLink.onclick = function() {
-            FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenAboutPluginsURL', "");
+            FormItInterface.CallMethod("FormIt.OpenURL", 'https://formit3d.github.io/FormItExamplePlugins/index.html');
         }
     
         var footerLearnToBuildLI = document.createElement('li');
@@ -326,7 +326,7 @@ FormIt.PluginUI.FooterModule = class FooterModule {
         footerLearnToBuildLI.appendChild(footerLearnToBuildLink);
     
         footerLearnToBuildLink.onclick = function() {
-            FormItInterface.CallMethod('FormItExamplePlugins.PluginManager.OpenBuildPluginsURL', "");
+            FormItInterface.CallMethod("FormIt.OpenURL", 'https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html');
         }
 
         return footerContainer;
