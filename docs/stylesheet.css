@@ -28,6 +28,11 @@ img {
     padding-bottom: 0px;
 }
 
+.imgSmall {
+    max-height: 300px;
+    max-width: 500px;
+}
+
 .imgLarge {
     max-height: 600px;
     max-width: 1000px;

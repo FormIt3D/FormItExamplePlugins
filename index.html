@@ -6,41 +6,34 @@
 <body>
 <h1 class="pageTitle">FormIt JavaScript Plugins</h1>
 <h2 class="pageSubtitle">Harness the Power of the FormIt Engine for Custom Workflows</h2>
-<p class="pageBlurb">FormIt's JavaScript plugin infrastructure enables bespoke 3D modeling workflows using a variety of UI types and a powerful API.</p>
+<p class="pageBlurb">FormIt's JavaScript plugin infrastructure enables cross-platform, bespoke 3D modeling workflows using a variety of UI types and a powerful API.</p>
 
 <div class="categoryBlock" id="UsingFormItPlugins">
     <h2 class="categoryTitle">Using FormIt Plugins</h2>
     <div class="categoryDetailBlock">
         <p class="categoryDetailBody">FormIt plugins are easy to use, manage, and build. Use the Plugin Manager to install useful plugins from the FormIt Team, or learn how to <a href="docs/HowToBuild.html" target="_blank"><b> build your own FormIt plugins!</b></a></p>
-        <h3 class="categoryDetailTitle">Plugin Manager</h3>
+        <h3 class="categoryDetailTitle">The FormIt Plugin Manager</h3>
         <p class="categoryDetailBody">The FormIt Plugin Manager is your one-stop shop for discovering and managing plugins.</p>
-        <p class="categoryDetailBody">Access to the Plugin Manager is limited to certain versions of FormIt:</p>
+        <p class="categoryDetailBody">The Plugin Manager is loaded automatically when FormIt starts, as long as FormIt has access to the internet.</p>
+        <p class="categoryDetailBody">Access it by clicking its tab icon on the right side of the app:</p>
         <ul class="categoryDetailList">
-                <li><b>FormIt for Windows v17 and newer</b></li>
-                    <ul>
-                        <li>The Plugin Manager is loaded automatically when FormIt starts, as long as FormIt has access to the internet.</li>
-                        <li>Access it by clicking its tab icon on the right side of the app:</li>
-                        <li><img class="imgList" src="docs/images/PluginManagerTab.PNG"></li>
-                    </ul>
-            </ul>
+            <li><img class="imgList" src="docs/images/PluginManagerTab.PNG"></li>
+            <li><img src="docs/images/PluginManager1.PNG" alt="The FormIt Plugin Manager" class="imgLarge"></li>
+        </ul>
 
-        <img src="docs/images/PluginManager1.PNG" alt="The FormIt Plugin Manager" class="imgLarge">
-
-        <p class="categoryDetailBody">The Plugin Manager categorizes a few types of plugins:</a></p>
+        <p class="categoryDetailBody">The Plugin Manager categorizes different types of plugins:</a></p>
         <ul class="categoryDetailList">
             <li><b>Installed plugins</b></li>
             <li><b>Recommended plugins</b></li>
             <ul>
-                <li>These are plugins that the FormIt team recommends to improve your workflows.</li>
-                <li>Plugins appear here after being approved by the FormIt team. More details to come on this in the future.</li>
+                <li>Plugins that the FormIt team recommends to expand FormIt's core functionality and unlock new workflows.</li>
+                <li>Community-developed plugins will appear here after being approved by the FormIt team. More details to come on this in the future.</li>
 
             </ul>
             <li><b>Public plugins</b></li>
             <ul>
-                <li>These are plugins built by the community.</li>
-                <li></li>
+                <li>Plugins built by the community, but which have not been reviewed or approved by the FormIt team.</li>
             </ul>
-            <li>Having issues? <a href="https://github.com/FormIt3D/FormItWorkflowPlugins/issues" target="_blank">Drop us a line on GitHub.</a></li>
         </ul>
         <p class="categoryDetailBody">The Plugin Manager is designed using a series of expandable and collapsible interfaces, which makes managing plugins and their repositories easy:</p>
         <ul class="categoryDetailList">
@@ -49,15 +42,16 @@
                 <li>Click on a plugin name to see its description.</li>
                 <li>Toggle the switch to install or uninstall it.</li>
                 <ul>
-                    <li>The plugin will manifest as a toolbar at the top of the application, a panel on the right side, or a dialog in the middle, depending on the plugin.</li>
+                    <li>The plugin will manifest as a toolbar at the top of the application, a panel on the right side, or a dialog in the middle, depending on the plugin type.</li>
                 </ul>
             </ul>
-            <li>You can also add a private URL of a plugin into the input at the bottom and hit (+):</li>
-            <img src="docs/images/addNew.png" alt="The FormIt Plugin Manager" class="imgLarge">
+            <li>If you're <a href="https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html" target="_blank">developing your own plugin</a>, you can add its private URL into the field at the bottom and hit (+):</li>
+            <img src="docs/images/addNew.png" alt="The FormIt Plugin Manager" class="imgSmall">
         </ul>
 
         <h3 class="categoryDetailTitle">How Plugins Work</h3>
         <ul class="categoryDetailList">
+                <li>Plugins are web-based, and available in FormIt for Windows and FormIt for Web.</li>
                 <li>Plugins are comprised of a series of files and folders hosted on GitHub, or on a local server when building your own.</li>
                 <li>External plugins (plugins not hosted locally) require an internet connection to initially load, which means:</li>
                 <ul>
@@ -65,7 +59,7 @@
                     <li>Once loaded, some external plugins can continue to work in offline mode for that session, but others might break until connectivity is restored.</li>
                     <li>External plugins load the latest code on the server at every run, so their functionality will update whenever the author pushes a change.</li>
                 </ul>
-                <li>Plugins are loaded asynchronously, which means the order of the repositories and plugins in the Plugin Manager may change between FormIt sessions.</li>
+                <li>Plugins are loaded asynchronously, which means the order of the plugins in the FormIt interface may change with each new session.</li>
                 <li>The Plugin Manager uses registry keys on Windows to store your installed repositories and plugins.</li>
                 <ul>
                     <li>If you need to reset your Plugin Manager to its defaults, delete the following registry key: </li>
@@ -75,12 +69,7 @@
                         <li><i>Note this will uninstall all user-added repos and plugins, resetting the Plugin Manager to include only the built-in repos and plugins.</i>
                         </li>
                     </ul>
-
                 </ul>
-                <li>FormIt plugins are under active development, and are currently limited to the following FormIt versions:</li>
-                  <ul>
-                    <li>FormIt for Windows v16 and newer</li>
-                  </ul>
               </ul>
     </div>
 </div>
@@ -89,37 +78,15 @@
     <h2 class="categoryTitle">Building FormIt Plugins</h2>
     <div class="categoryDetailBlock">
         <p class="categoryDetailBody">FormIt plugins are JavaScript-based and support both native and HTML UI, enabling rich interface experiences to support custom 3D modeling and computation workflows.</p>
-        <p class="categoryDetailBody">Developing FormIt plugins is as easy as it is rewarding. Use the links below to jump to different steps in the development process:</p>
-        <h3 class="categoryDetailTitle">Jump to...</h3>
-        <ul class="categoryDetailList">
-            <li><a href="docs/HowToBuild#SettingUpEnvironment" target="_blank">Setting Up Your Environment</a></li>
-            <li><a href="docs/HowToBuild#SettingUpFormIt" target="_blank">Setting Up FormIt</a></li>
-            <li><a href="docs/HowToBuild#WorkingWithSamplePlugins" target="_blank">Working With Sample Plugins</a></li>
-            <li><a href="docs/HowToBuild#GeneralPluginSetup" target="_blank">General Plugin Setup</a></li>
-            <li><a href="docs/HowToBuild#CreatingToolbarPlugin" target="_blank">Creating a Toolbar Plugin</a></li>
-            <li><a href="docs/HowToBuild#CreatingHTMLPanelPlugin" target="_blank">Creating an HTML Panel Plugin</a></li>
-            <li><a href="docs/HowToBuild#SingleManifest">Creating Panel and Toolbar buttons in a single plugin</a></li>
-            <li><a href="docs/HowToBuild#VersioningPlugins" target="_blank">Versioning Plugins</a></li>
-            <li><a href="docs/HowToBuild#TestingPlugins" target="_blank">Testing Plugins</a></li>
-            <li><a href="docs/HowToBuild#DebuggingPlugins" target="_blank">Debugging Plugins</a></li>
-            <li><a href="docs/HowToBuild#HostingPlugins" target="_blank">Hosting Plugins</a></li>
-        </ul>
-        <h3 class="categoryDetailTitle">Useful Links</h3>
-        <ul class="categoryDetailList">
-                <li><a href="docs/FormItJSAPI/group__mod__jsapi__formit.html" target="_blank">FormIt Core JS API</a></li>
-                <li><a href="docs/FormItJSAPI/group__mod__jsapi__wsm.html" target="_blank">FormIt Modeling Kernel (WSM) JS API</a></li>
-        </ul>
+        <p class="categoryDetailBody"><a href="https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html" target="_blank">Learn how to build, test, and publish FormIt plugins</a>.</p>
     </div>
 </div>
 
 <div class="categoryBlock" id="PluginHelp">
     <h2 class="categoryTitle">Help With FormIt Plugins</h2>
     <div class="categoryDetailBlock">
-        <p class="categoryDetailBody">Trying to use or build a plugin and running into issues? We're here to help. Use the links below to reach out and get support.</p>
-        <ul class="categoryDetailList">
-            <li>Get help using plugins from the <a href="https://github.com/FormIt3D/FormItWorkflowPlugins/issues" target="_blank">FormIt Workflow Plugins</a> repository.</li>
-            <li>Get help building plugins from the <a href="https://github.com/FormIt3D/FormItExamplePlugins/issues" target="_blank">FormIt Example Plugins</a> repository.</li>
-        </ul>
+        <p class="categoryDetailBody">Trying to use or build a plugin and running into issues? We're here to help.</p>
+        <p class="categoryDetailBody">Drop us a line on the <a href="https://forums.autodesk.com/t5/formit-forum/bd-p/142" target="_blank">Autodesk forums</a>.</p>
     </div>
 </div>
 
