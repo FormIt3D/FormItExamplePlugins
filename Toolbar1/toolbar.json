@@ -12,8 +12,7 @@
             "command": "Draw: Circle",
             "iconText": "Cr",
             "iconURL": "https://formit3d.github.io/FormItExamplePlugins/Toolbar1/circle.png"
-        }
-        ,
+        },
         {
             "name": "Only One Panel",
             "command": "ToolbarPlugin.CreatePanel",

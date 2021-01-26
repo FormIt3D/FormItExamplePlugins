@@ -1,19 +1,27 @@
 {
     "PluginName": "Toolbar UI (async)",
     "PluginDescription": "Creates a toolbar UI with buttons and custom icons.",
-    "ToolbarEntry": "index.html",
-    "ToolbarButtons": [
-        {
-            "iconText": "TB",
-            "iconURL": "circle.png",
-            "command": "window.AlertFormItVersion"
-        },
-        {
-            "iconText": "CB",
-            "iconURL": "block.png",
-            "command": "window.CreateBlock"
-        }
-    ],
-    "Panel": "panel.html",
-    "PanelIcon": "block.png"
+    "Toolbar":{
+        "BackgroundHtml": "index.html",
+        "name": "Toolbar async",
+        "buttons": [
+            {
+                "iconText": "AL",
+                "command": "AlertFormItVersion",
+                "useBackgroundContext": true
+            },
+            {
+                "iconText": "CB",
+                "iconURL": "block.png",
+                "command": "CreateBlock",
+                "useBackgroundContext": true
+            },
+            {
+                "name": "Draw: Circle",
+                "command": "Draw: Circle",
+                "iconText": "Cr",
+                "iconURL": "https://formit3d.github.io/FormItExamplePlugins/Toolbar1/circle.png"
+            }
+        ]
+    }
 }
