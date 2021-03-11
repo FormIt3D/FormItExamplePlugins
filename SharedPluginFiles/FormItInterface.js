@@ -18,7 +18,7 @@ FormItInterface.CallMethod = function(method, args, callbackMethod)
 {
     if(FormItInterface.Platform == WEB)
     {
-        postRobot.send(parent, 'FormIt.PluginMsg', {'method': method, 'args': args},{ timeout: 10000 }).then(function(event) {
+        postRobot.send(parent, 'FormIt.PluginMsg', {'method': method, 'args': args},{ timeout: 60000 }).then(function(event) {
             //console.log('Event Data: ', JSON.stringify(event.data));
             if (callbackMethod)
             {
@@ -104,7 +104,7 @@ FormItInterface.Initialize = function(callbackMethod)
                 FormItInterface.CallMethod = function(method, args, callbackMethod)
                 {
                     var stringArgs = JSON.stringify(args);
-                    
+
                     if (callbackMethod == null)
                     {
                         channel.objects.FormItInterface.CallMethod(method, stringArgs);
@@ -134,6 +134,7 @@ FormItInterface.Initialize = function(callbackMethod)
         script.type = 'text/javascript';
         script.onload = () => {
             postRobot.CONFIG.LOG_LEVEL = 'error';
+            postRobot.CONFIG.ACK_TIMEOUT = 60000;
             FormItInterface.ConsoleLog = console.log;
             FormItInterface.SubscribeMessage = function(msg, handler)
             {
