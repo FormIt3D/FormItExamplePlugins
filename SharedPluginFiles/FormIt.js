@@ -3600,9 +3600,12 @@ ptX: ptX,
             return callAsyncAPI(args);
         };
 
-        window.WSM.Utils.GroupInstancePathArray = function() {
+        window.WSM.Utils.GroupInstancePathArray = function(ObjectIDs, History, GroupInstancePath) {
             args = {
-                TestAPI: "WSM.Utils.GroupInstancePathArray"
+                TestAPI: "WSM.Utils.GroupInstancePathArray",
+                ObjectIDs: ObjectIDs,
+                History: History,
+                GroupInstancePath: GroupInstancePath
             };
             return callAsyncAPI(args);
         };
@@ -3615,9 +3618,11 @@ ObjectIDs: ObjectIDs
             return callAsyncAPI(args);
         };
 
-        window.WSM.Utils.ObjectHistoryIDArray = function() {
+        window.WSM.Utils.ObjectHistoryIDArray = function(ObjectIDs, History) {
             args = {
-                TestAPI: "WSM.Utils.ObjectHistoryIDArray"
+                TestAPI: "WSM.Utils.ObjectHistoryIDArray",
+                ObjectIDs: ObjectIDs,
+                History: History
             };
             return callAsyncAPI(args);
         };
