@@ -16,9 +16,9 @@ FormIt.PluginUtils.currentUnits = function(length)
     // the default FormIt unit is 1 foot,
     // so calculate all other units relative to that
     var kImperialInchFactor = 1/12;
-    var kMetricMeterFactor = 100.0 / (2.54 * 12.0);
-    var kMetricCentimeterFactor = kMetricMeterFactor / 100;
-    var kMetricMillimeterFactor = kMetricMeterFactor / 1000;
+    var kMetricMeterFactor = 0.3048;
+    var kMetricCentimeterFactor = kMetricMeterFactor * 100;
+    var kMetricMillimeterFactor = kMetricMeterFactor * 1000;
 
     switch (currentUnitType)
     {
