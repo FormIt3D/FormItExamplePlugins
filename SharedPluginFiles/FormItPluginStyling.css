@@ -1,6 +1,7 @@
-/* this stylesheet will eventually cover styling for all first-party FormIt plugins */
+/* make changes carefully:*/
+/* this stylesheet controls styling for all first-party FormIt plugins */
 
-/* overall body - configured to contain stacked sections, like header/content/footer */
+/* contains stacked sections: header/content/footer */
 body {
     padding: 0;
     margin: 0;
@@ -12,9 +13,10 @@ body {
     overflow: hidden;
 }
 
-/* the content container is the area between the header and the footer */
+/* the area between the header and the footer */
 .contentContainer
 {
+    font-family: Arial;
     padding-left: 10px;
     padding-right: 10px;
     flex-grow: 1;
@@ -24,8 +26,12 @@ body {
 .contentContainer p,
 .contentContainer ul,
 #pluginFooterContainer ul {
-    font-family: Arial;
     line-height: 20px;
+}
+
+.contentContainer .codeSnippet {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 /* unordered lists */
