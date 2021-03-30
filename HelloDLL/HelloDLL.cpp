@@ -1,6 +1,7 @@
 #include "pch.h"
 
-#include "HelloDLL.h"
+#include "FormItInclude/IScriptInstance.h"
+
 #include "MyClass.h"
 
 #include <sstream>

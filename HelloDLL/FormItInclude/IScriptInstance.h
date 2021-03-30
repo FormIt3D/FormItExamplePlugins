@@ -23,5 +23,5 @@ public:
 #define APIMETHOD(APIPREFIX, APINAME, PARAMS) scriptInstance->RegisterMethod(#APIPREFIX, #APINAME, PARAMS, [](IScriptInstance *scriptInstance, nlohmann::json &jin) -> nlohmann::json
 #define JSON_UNDEFINED "{}"
 #define REGISTERNAMESPACE(NS) if (scriptInstance) {scriptInstance->RegisterNamespaceHandler(NS);}
-#define REGISTERAPIMETHODSDCL extern "C" {__declspec(dllexport) void __stdcall RegisterAPIMethods(IScriptInstance*);}
-#define REGISTERAPIMETHODS void RegisterAPIMethods(IScriptInstance* scriptInstance)
+#define REGISTERAPIMETHODS extern "C" {__declspec(dllexport) void __stdcall RegisterAPIMethods(IScriptInstance*);} \
+                           void RegisterAPIMethods(IScriptInstance* scriptInstance)
