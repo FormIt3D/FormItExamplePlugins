@@ -207,6 +207,23 @@ h1:first-of-type {
     padding-left: 20px;
 }
 
+/* unsupported version container */
+#unsupportedVersionContainer {
+    background-color: #f2f2f2;
+    padding: 10px 10px 30px 10px;
+    margin-top: 20px;
+}
+
+#unsupportedVersionContainer #unsupportedVersionIcon {
+    float: left;
+    margin: 20px 20px 10px 10px;
+}
+
+#unsupportedVersionContainer a {
+    color: #4676a9;
+    text-decoration: none;
+}
+
 /* the footer: information about plugins, maybe some day a link to this plugin's change log */
 #pluginFooterDiv {
     background-color: #f2f2f2;

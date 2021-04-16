@@ -333,6 +333,61 @@ FormIt.PluginUI.FooterModule = class FooterModule {
     }
 }
 
+// message module for unsupported version
+// if a specific version is specified, the message will tell the user they need at least that version
+FormIt.PluginUI.UnsupportedVersionModule = class UnsupportedVersionModule {
+    constructor(versionString) {
+
+        // initialize the arguments
+        this.versionString = versionString;
+        
+        // build
+        this.element = this.build();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create a container
+        var unsupportedVersionContainer = document.createElement('div');
+        unsupportedVersionContainer.id = 'unsupportedVersionContainer';
+
+        // create the icon
+        var unsupportedVersionIcon = document.createElement('img');
+        // https://formit3d.github.io
+        unsupportedVersionIcon.src = '../../FormItExamplePlugins/SharedPluginFiles/img/info_grey.png';
+        unsupportedVersionIcon.id = 'unsupportedVersionIcon';
+        unsupportedVersionContainer.appendChild(unsupportedVersionIcon);
+
+        // create the message
+        var unsupportedVersionMessage = document.createElement('p');
+        unsupportedVersionContainer.appendChild(unsupportedVersionMessage);
+
+        // if the version is specified, use it
+        if (this.versionString)
+        {
+            unsupportedVersionMessage.innerHTML =  'FormIt ' + this.versionString + ' or newer is required to run this plugin.';
+        }
+        // otherwise, use a generic message
+        else
+        {
+            unsupportedVersionMessage.innerHTML =  'A newer version of FormIt is required to run this plugin.';
+        }
+
+        var downloadLink = document.createElement('a');
+        downloadLink.innerHTML =  'Download the latest version of FormIt.';
+        unsupportedVersionContainer.appendChild(downloadLink);
+
+        downloadLink.setAttribute("href", "javascript:void(0);");
+    
+        downloadLink.onclick = function() {
+            FormItInterface.CallMethod("FormIt.OpenURL", 'https://formit.autodesk.com/page/download');
+        }
+
+        return unsupportedVersionContainer;
+    }
+}
+
 
 // create a container to host multiple child elements, organizing them horizontally
 FormIt.PluginUI.createHorizontalModuleContainer = function(parent)
