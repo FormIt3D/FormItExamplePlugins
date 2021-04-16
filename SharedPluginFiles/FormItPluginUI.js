@@ -47,7 +47,7 @@ FormIt.PluginUI.HeaderModule = class HeaderModule {
         
         // create a container for the header
         var headerContainer = document.createElement('div');
-        headerContainer.id = this.moduleID;
+        headerContainer.id = 'pluginHeaderContainer';
         headerContainer.className = this.moduleClassName;
 
         // create the header elements
