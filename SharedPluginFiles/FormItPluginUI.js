@@ -355,7 +355,7 @@ FormIt.PluginUI.UnsupportedVersionModule = class UnsupportedVersionModule {
         // create the icon
         var unsupportedVersionIcon = document.createElement('img');
         // https://formit3d.github.io
-        unsupportedVersionIcon.src = '../../FormItExamplePlugins/SharedPluginFiles/img/info_grey.png';
+        unsupportedVersionIcon.src = 'https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/img/info_grey.png';
         unsupportedVersionIcon.id = 'unsupportedVersionIcon';
         unsupportedVersionContainer.appendChild(unsupportedVersionIcon);
 
