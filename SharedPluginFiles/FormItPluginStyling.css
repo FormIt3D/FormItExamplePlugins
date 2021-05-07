@@ -1,4 +1,4 @@
-/* make changes carefully:*/
+/* make changes carefully! */
 /* this stylesheet controls styling for all first-party FormIt plugins */
 
 /* contains stacked sections: header/content/footer */
@@ -20,6 +20,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     flex-grow: 1;
+    overflow-y: scroll;
 }
 
 /* typical body text */
