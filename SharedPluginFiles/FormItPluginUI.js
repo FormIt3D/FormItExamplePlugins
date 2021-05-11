@@ -63,6 +63,34 @@ FormIt.PluginUI.HeaderModule = class HeaderModule {
     }
 }
 
+// typical subheader - can be used to define a sub-section of a multi-plugin
+FormIt.PluginUI.SubheaderModule = class SubheaderModule {
+    constructor(subheaderTitle, moduleClassName) {
+
+        // initialize the arguments
+        this.subheaderTitle = subheaderTitle;
+        this.moduleClassName = moduleClassName;
+        
+        // build
+        this.element = this.build();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create a container for the header
+        var subheaderContainer = document.createElement('div');
+        subheaderContainer.id = 'subheaderContainer';
+        subheaderContainer.className = this.moduleClassName;
+
+        var subtitleDiv = document.createElement('p');
+        subtitleDiv.innerHTML =  this.subheaderTitle;
+        subheaderContainer.appendChild(subtitleDiv);
+
+        return subheaderContainer;
+    }
+}
+
 // typical button
 FormIt.PluginUI.Button = class Button {
     constructor(buttonText, onClickFunction) {

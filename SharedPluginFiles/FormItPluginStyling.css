@@ -72,6 +72,17 @@ h1:first-of-type {
     margin-top: 10px;
 }
 
+#subheaderContainer {
+    margin-top: 1.75em;
+    margin-bottom: 0em;
+}
+
+#subheaderContainer p {
+    margin: 0px;
+    font-weight: bold;
+    color: dimgrey;
+}
+
 /* forms + inputs */
 .contentContainer form {
     font-family: Arial;
