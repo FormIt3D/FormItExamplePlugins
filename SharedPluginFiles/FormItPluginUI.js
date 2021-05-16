@@ -80,7 +80,7 @@ FormIt.PluginUI.SubheaderModule = class SubheaderModule {
         
         // create a container for the header
         var subheaderContainer = document.createElement('div');
-        subheaderContainer.id = 'subheaderContainer';
+        subheaderContainer.id = 'pluginSubheaderContainer';
         subheaderContainer.className = this.moduleClassName;
 
         var subtitleDiv = document.createElement('p');
@@ -117,6 +117,81 @@ FormIt.PluginUI.Button = class Button {
 
     attachEvents() {
         this.button.addEventListener('click', this.onClickFunction);
+    }
+
+}
+
+// button with description
+FormIt.PluginUI.ButtonWithInfoToggleModule = class ButtonWithInfoToggleModule {
+    constructor(buttonText,buttonDescription, onClickFunction) {
+
+        // initialize the arguments
+        this.buttonText = buttonText;
+        this.buttonDescription = buttonDescription;
+        this.onClickFunction = onClickFunction;
+
+        // build and attach events
+        this.element = this.build();
+        this.attachEvents();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create a container for the button and description
+        this.moduleContainer = document.createElement("div");
+        this.moduleContainer.id = "buttonWithInfoToggleModule"
+
+        this.buttonRow = document.createElement("div");
+        this.buttonRow.id = "buttonWithInfoToggleRow";
+
+        this.moduleContainer.appendChild(this.buttonRow);
+
+        // create the button
+        this.button = document.createElement("input");
+        this.button.setAttribute("type", "button");
+        this.button.value = this.buttonText;
+        this.button.id = "buttonWithInfoToggle";
+        
+        this.buttonRow.appendChild(this.button);
+
+        // create the info button
+        this.infoButton = document.createElement("img");
+        this.infoButton.src = "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/img/info_blue.png";
+        this.infoButton.id = "infoToggle";
+
+        this.buttonRow.appendChild(this.infoButton);
+
+        // create the description div
+        this.descriptionDiv = document.createElement("div");
+        this.descriptionDiv.innerHTML = this.buttonDescription;
+        this.descriptionDiv.id = "infoToggleDescription";
+        this.descriptionDiv.className = "hide";
+
+        this.moduleContainer.appendChild(this.descriptionDiv);
+
+        return this.moduleContainer;
+    }
+
+    attachEvents() {
+        this.button.addEventListener('click', this.onClickFunction);
+
+        let descriptionDiv = this.descriptionDiv;
+        let infoButton = this.infoButton;
+        this.infoButton.addEventListener('click', function() {
+
+                if (descriptionDiv.className == "hide")
+                {
+                    descriptionDiv.className = "show";
+                    infoButton.className = 'infoToggleActive';
+                }
+                else
+                {
+                    descriptionDiv.className = "hide";
+                    infoButton.className = 'infoToggleInactive';
+                }
+
+        });
     }
 
 }

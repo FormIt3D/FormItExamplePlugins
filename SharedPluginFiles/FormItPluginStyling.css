@@ -72,12 +72,12 @@ h1:first-of-type {
     margin-top: 10px;
 }
 
-#subheaderContainer {
+#pluginSubheaderContainer {
     margin-top: 1.75em;
     margin-bottom: 0em;
 }
 
-#subheaderContainer p {
+#pluginSubheaderContainer p {
     margin: 0px;
     font-weight: bold;
     color: dimgrey;
@@ -157,6 +157,43 @@ h1:first-of-type {
     width: auto;
 }
 
+/* typical button with info toggle */
+#buttonWithInfoToggleRow {
+    display: flex;
+    align-items: center;
+}
+
+#buttonWithInfoToggle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* the info toggle */
+#infoToggle {
+    padding: 5px;
+    margin-left: 5px;
+    height: 20px;
+}
+
+#infoToggle:hover {
+    background-color: #c3e8f4;
+}
+
+.infoToggleActive {
+    background-color: #c3e8f4;
+}
+
+.infoToggleInactive {
+    background-color: transparent;
+}
+
+/* the info toggle description */
+#infoToggleDescription {
+    padding: 5px;
+    border: 5px solid #c3e8f4;
+    background: white;
+}
+
 /* contains an input and its label */
 .inputModuleContainer {
     margin-top: 10px;
@@ -198,8 +235,8 @@ h1:first-of-type {
 
 /* information containers - primarily used in Properties Plus */
 .infoContainer {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: #ededed;
     font-family: Arial;
     padding: 10px;
