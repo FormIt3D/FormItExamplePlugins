@@ -123,7 +123,7 @@ FormIt.PluginUI.Button = class Button {
 
 // button with description
 FormIt.PluginUI.ButtonWithInfoToggleModule = class ButtonWithInfoToggleModule {
-    constructor(buttonText,buttonDescription, onClickFunction) {
+    constructor(buttonText, buttonDescription, onClickFunction) {
 
         // initialize the arguments
         this.buttonText = buttonText;
@@ -192,6 +192,62 @@ FormIt.PluginUI.ButtonWithInfoToggleModule = class ButtonWithInfoToggleModule {
                 }
 
         });
+    }
+
+}
+
+// "deselect" button - used in Properties Plus
+FormIt.PluginUI.DeselectButtonModule = class DeselectButtonModule {
+    constructor(onClickFunction, deselectObjectType, buttonLabelText, moduleID, buttonLabelID) {
+
+        // initialize the arguments
+        this.onClickFunction = onClickFunction;
+        this.deselectObjectType = deselectObjectType;
+        this.buttonLabelText = buttonLabelText;
+        this.moduleID = moduleID;
+        this.buttonLabelID = buttonLabelID;
+
+        // build and attach events
+        this.element = this.build();
+        this.attachEvents();
+    }
+
+    // construct and append the UI elements
+    build() {
+        
+        // create a container for the button and label
+        this.moduleContainer = document.createElement("div");
+        this.moduleContainer.id = this.moduleID;
+
+        // create a row for flex styling
+        this.deselectButtonRow = document.createElement("div");
+        this.deselectButtonRow.id = "deselectButtonRow";
+        this.moduleContainer.appendChild(this.deselectButtonRow);
+
+        // create the deselect button
+        this.deselectButton = document.createElement("img");
+        this.deselectButton.src = "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/img/remove_blue.png";
+        this.deselectButton.id = "deselectButton";
+        this.deselectButton.title = "Click to remove this object type from the current selection."
+        this.deselectButtonRow.appendChild(this.deselectButton);
+
+        // create the button label
+        this.deselectButtonLabel = document.createElement("div");
+        this.deselectButtonLabel.innerHTML = this.buttonLabelText;
+        this.deselectButtonLabel.id = this.buttonLabelID;
+        this.deselectButtonRow.appendChild(this.deselectButtonLabel);
+
+        return this.moduleContainer;
+    }
+
+    attachEvents() {
+
+        this.deselectButton.addEventListener("click", () => {
+
+            this.onClickFunction(this.deselectObjectType);
+
+        });
+
     }
 
 }

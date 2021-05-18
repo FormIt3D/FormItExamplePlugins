@@ -187,11 +187,29 @@ h1:first-of-type {
     background-color: transparent;
 }
 
-/* the info toggle description */
+/* the info toggle */
 #infoToggleDescription {
     padding: 5px;
     border: 5px solid #c3e8f4;
     background: white;
+}
+
+/* deselect module */
+#deselectButtonRow {
+    display: flex;
+    align-items: center;
+}
+
+/* deselect button */
+#deselectButtonRow #deselectButton {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+#deselectButtonRow #deselectButton:hover {
+    background-color: #c3e8f4;
 }
 
 /* contains an input and its label */
