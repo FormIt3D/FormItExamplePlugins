@@ -54,10 +54,10 @@
         <p class="categoryDetailBody">Plugin development is supported in FormIt for Windows and FormIt for Web.</p>
         <h3 class="categoryDetailTitle">Get the Source Code</h3>
         <ul class="categoryDetailList">
-            <li>Clone the FormIt plugin repos, which demonstrate the various UI types and some of the functionality that can be achieved with plugins:</li>
+            <li>You can clone various first-party FormIt plugin repos, which demonstrate different UI types and some advanced functionality that can be achieved with plugins.</li>
+            <li>Each first-party plugin is now stored in its own repo. You'll find them all here:</li>
             <ul>
-                <li><a href="https://github.com/FormIt3D/FormItExamplePlugins" target="_blank">FormIt Example Plugins</a></li>
-                <li><a href="https://github.com/FormIt3D/FormItWorkflowPlugins" target="_blank">FormIt Workflow Plugins</a></li>
+                <li><a href="https://github.com/FormIt3D" target="_blank">FormIt3D Organization Repos</a></li>
             </ul>
             <li>You can also download <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>, which provides an easy-to-use interface for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repos.</li>
         </ul>
@@ -82,7 +82,7 @@
             <ul>
                 <li class="categoryDetailCode"><span>npm install http-server -g</span></li>
             </ul>
-            <li>In Command Prompt, navigate to the directory containing the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders.</li>
+            <li>In Command Prompt, navigate to the directory containing the folders of repos you've cloned.</li>
             <li>Run the following:</li>
             <ul>
                 <li class="categoryDetailCode"><span>http-server</span></li>
@@ -92,7 +92,7 @@
                 <ul class="categoryDetailList">
                     <li>In a web browser, navigate to the following:</li>
                         <ul>
-                            <li class="categoryDetailCode"><span>http://localhost:8080/FormItExamplePlugins/HelloBlock/manifest.json</span></li>
+                            <li class="categoryDetailCode"><span>http://localhost:8080/YourPluginFolder/manifest.json</span></li>
                         </ul>
                         <li>You should see a json object in the browser window.</li>
                         <li>If you use a different web server than npm, the default address/port might be different.</li>
@@ -100,68 +100,11 @@
                 </ul>
         </ul>
             <p class="categoryDetailBody"><b>FormIt for Web</b></p>
-            <p class="categoryDetailBody">Developing on FormIt Web requires an HTTPS server for local debugging.</p>
-            <p class="categoryDetailBody">Plugin files and directories need to be hosted on a HTTPS server for FormIt Web to load from.</p>
-            <p class="categoryDetailBody">Before the HTTPS server can be run, OpenSSL must be installed and configured. Instructions to install OpenSSL are located <a href="https://www.cloudinsidr.com/content/how-to-install-the-most-recent-version-of-openssl-on-windows-10-in-64-bit/" target="_blank">here</a>.
-            </p>
-            <p class="categoryDetailBody">Open a command prompt to the directory above where the files that need served.
-                This example assumes the FormItExamplePlugins and FormItWorkflowPlugins repos have been cloned locally.  This is a directory listing of where to start the server.</p>
-            <pre><code>
-                Directory of c:\git\FormIt3D
-                04/09/2020  02:00 PM	&lt;DIR&gt;      	.
-                04/09/2020  02:00 PM	&lt;DIR&gt;      	..
-                04/09/2020  01:46 PM	1,228 cert.pem
-                01/24/2020  12:03 PM	&lt;DIR&gt;      	FormItExamplePlugins
-                12/24/2019  02:43 PM	&lt;DIR&gt;      	FormItWorkflowPlugins
-                04/09/2020  01:44 PM	1,732 key.pem
-                               2 File(s)      	2,960 bytes
-                               4 Dir(s)  167,606,239,232 bytes free
-            </code></pre>
-            <p class="categoryDetailBody">Run the following OpenSSL command from the directory that the HTTPS server needs to server the files.  Note: Replace <code>[OPENSSL_INSTALL_DIR]</code> with the directory where openssl.exe lives.</p>
-            <pre><code class="categoryDetailCode">[OPENSSL_INSTALL_DIR]\OpenSSL-Win64\bin\openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
-            </code></pre>
-            <p class="categoryDetailBody">A HTTPS server that works well is npm's <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a>, which you can install by:</p>
-            <ul class="categoryDetailList">
-                <li>First, download and install <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> if it's not already installed (one-time setup).</li>
-                <ul>
-                    <li>If you encounter errors in the following steps, try restarting your computer for the NodeJS installation to complete.</li>
-                </ul>
-                <li>In the Command Prompt<!-- or Terminal-->, enter the following to install npm's <i>http-server</i> globally (one-time setup):</li>
-                <ul>
-                    <li class="categoryDetailCode"><span>npm install http-server -g</span></li>
-                </ul>
-                <li>Navigate to the directory containing the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders.  This should be the same directory that the OpenSSL command was run.  Run this command to start the server:</li>
-                <ul>
-                    <li class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></li>
-                    <li>Accept any Windows prompts that warn about the new local server.</li>
-                    <li>A new web page now opens.  Click the Advanced button and the “Proceed to 127.0.0.1 (unsafe)” link.</li>
-                    <li>Your server is properly configured if you can see the <span class="categoryDetailCode">FormItExamplePlugins</span> and <span class="categoryDetailCode">FormItWorkflowPlugins</span> folders listed in the browser.</li>
-                    <li>Note you can use your IDE to start the server, too. See the "Install an IDE" section below.</li>
-                </ul>
+            <p class="categoryDetailBody">To develop on FormIt Web, simply run the following command instead:</p>
+            <ul>
+                <li class="categoryDetailCode"><span>http-server --cors</span></li>
             </ul>
-
-            <p class="categoryDetailBody"><b>Configuring FormIt Web</b></p>
-            <p class="categoryDetailBody">Now open <a href="https://app.formit.autodesk.com/" target="_blank">FormIt Web</a> </p>
-            <p class="categoryDetailBody">Open the browser’s DevTools (F12) in the FormIt Web page.  In this new DevTools view, go to Application tab/Service Workers and enable Bypass for network:</p><img src="bypassnetwork.png" alt="Bypass for network">
-            <p class="categoryDetailBody">And also click the Unregister link: </p><img src="unregister.png" alt="Unregister">
-            <p class="categoryDetailBody">Try loading a plugin from the local repo in the DevTools console input:</p>
-            <ul><pre><code class="categoryDetailCode"><span>FormIt.LoadPlugin("https://127.0.0.1:8000/FormItExamplePlugins/HelloBlock");</span></code></pre></ul>
-            <img src="consoleinput.png" alt="Console Input">
-            <p class="categoryDetailBody"><b>Note:</b>  Once all these steps are working, all that will need to be done to work on local plugins is to start the server in the correct location:</p>
-            <ul><pre><code class="categoryDetailCode"><span>http-server -S -C cert.pem -o -p 8000 --cors</span></code></pre></ul>
-
-            <p class="categoryDetailBody"><b>Verify the Web Server</b></p>
-            <ul class="categoryDetailList">
-                <li>In a web browser, navigate to the following:</li>
-                <ul class="categoryDetailList">
-                    <li class="categoryDetailCode"><span>https://127.0.0.1:8000/FormItExamplePlugins/HelloBlock/manifest.json</span></li>
-                </ul>
-                <li>You should see a json object in the browser window.</li>
-                <li>If you use a different web server than npm, the default address/port might be different.</li>
-            </ul>
-            </ul>
-            </ul>
-
+            <p class="categoryDetailBody">You can verify the web server in the same way as outlined above for Windows.</p>
 
             <h3 class="categoryDetailTitle">Install an IDE</h3>
             <p class="categoryDetailBody">Write your code in an integrated development environment (IDE) that helps identify issues, correct syntax errors, and includes a terminal for running your local server.</p>
@@ -229,7 +172,7 @@
         <h2 class="categoryTitle">Working With the Sample Plugins</h2>
         <div class="categoryDetailBlock">
                 <p class="categoryDetailBody">If you've cloned the repositories and set up a web server from the <a href="#SettingUpEnvironment">previous steps</a>, you can now get the local plugins to show up in FormIt.</p>
-                <p class="categoryDetailBody">You can load or install any of the plugins from the example repositories. For the purposes of this exercise, you'll install both a panel-based and toolbar-based plugin. We'll assume your npm http-server is running on port 8080 hosting both example repositories.</p>
+                <p class="categoryDetailBody">You can load or install any of the plugins, but for the purposes of this exercise, you'll install both a panel-based and toolbar-based plugin. We'll assume your npm http-server is running on port 8080 hosting both example repositories.</p>
                 <h3 class="categoryDetailTitle"><b>Load vs. Install:</b></h3>
                 <ul class="categoryDetailList">
                         <li><span class="categoryDetailCode"><span>FormIt.LoadPlugin();</span></span> loads the plugin only for that session. It will be unloaded automatically when the app is closed and restarted.</li>
@@ -240,11 +183,9 @@
                         <ul>
                             <li>Use <span class="categoryDetailCode"><span>FormIt.UninstallPlugin();</span></span> to uninstall.</li>
                             <li>Great for plugins you'll use frequently between sessions.</li>
-                            <li>On Windows, the following registry keys are used to persist plugins and their repos:</li>
+                            <li>On Windows, the following registry keys are used to persist plugins:</li>
                             <ul>
-                                <li>Plugin repositories: <span class="categoryDetailCode"> <span>Computer\HKEY_CURRENT_USER\Software\Autodesk\FormIt 360\Plugins\FormItExamplePlugins.PluginManagerPlugin</span></span>
-                                </li>
-                                <li>Plugins: <span class="categoryDetailCode"> <span>Computer\HKEY_CURRENT_USER\Software\Autodesk\FormIt 360\Plugins\FormItExamplePlugins.InstalledPlugins</span></span>
+                                <li>Plugins: <span class="categoryDetailCode"> <span>Computer\HKEY_CURRENT_USER\Software\Autodesk\FormIt 360\Plugins\InstalledPlugins</span></span>
                                 </li>
                             </ul>
                         </ul>
@@ -256,11 +197,11 @@
                     <ul>
                         <li>If running a local server:</li>
                         <ul>
-                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("http://localhost:8080/FormItWorkflowPlugins/FlipAlong");</span></span></li>
+                            <li><span class="categoryDetailCode"> <span>FormIt.LoadPlugin("http://localhost:8080/FlipAlong");</span></span></li>
                         </ul>
-                        <li>If loading from the <a href="https://github.com/FormIt3D/FormItWorkflowPlugins" target="_blank">FormIt Github repo</a> (requires an internet connection):</li>
+                        <li>If loading from the <a href="https://github.com/FormIt3D/" target="_blank">FormIt Github repo</a> (requires an internet connection):</li>
                         <ul>
-                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("https://formit3d.github.io/FormItWorkflowPlugins/FlipAlong");</span></span></li>
+                            <li><span class="categoryDetailCode"> <span>FormIt.LoadPlugin("https://formit3d.github.io/FlipAlong");</span></span></li>
                         </ul>
                     </ul>
                     <li>You should see the Flip Along toolbar appear at the top of the application window:</li>
@@ -274,16 +215,16 @@
                     <ul>
                         <li>If running a local server:</li>
                         <ul>
-                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("http://localhost:8080/FormItExamplePlugins/HelloBlock");</span></span></li>
+                            <li><span class="categoryDetailCode"> <span>FormIt.LoadPlugin("http://localhost:8080/PropertiesPlus");</span></span></li>
                         </ul>
-                        <li>If loading from the <a href="https://github.com/FormIt3D/FormItExamplePlugins" target="_blank">FormIt Github repo</a> (requires an internet connection):</li>
+                        <li>If loading from the <a href="https://github.com/FormIt3D/" target="_blank">FormIt Github repo</a> (requires an internet connection):</li>
                         <ul>
-                            <li><span class="categoryDetailCode"> <span>FormIt.InstallPlugin("https://formit3d.github.io/FormItExamplePlugins/HelloBlock");</span></span></li>
+                            <li><span class="categoryDetailCode"> <span>FormIt.LoadPlugin("https://formit3d.github.io/PropertiesPlus");</span></span></li>
                         </ul>
                     </ul>
-                    <li>You should see the Hello Block! panel appear on the right side of the application window:</li>
+                    <li>You should see the Properties Plus panel appear on the right side of the application window:</li>
                     <li>
-                        <img src="images/HelloBlockPanel.PNG" class="imgList">
+                        <img src="images/PropertiesPlusPanel.PNG" class="imgList">
                     </li>
                 </ul>
                 <h3 class="categoryDetailTitle"><b>Modal + Modeless Dialog Plugin Sample</b></h3>
@@ -296,7 +237,7 @@
                             <li>Modal: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("http://localhost:8080/FormItExamplePlugins/ModalDialog");</span></span></li>
                             <li>Modeless: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("http://localhost:8080/FormItExamplePlugins/ModelessDialog");</span></span></li>
                         </ul>
-                        <li>If loading from the <a href="https://github.com/FormIt3D/FormItExamplePlugins" target="_blank">FormIt Github repo</a> (requires an internet connection):</li>
+                        <li>If loading from the <a href="https://github.com/FormIt3D/" target="_blank">FormIt Github repo</a> (requires an internet connection):</li>
                         <ul>
                             <li>Modal: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("https://formit3d.github.io/FormItExamplePlugins/ModalDialog");</span></span></li>
                             <li>Modal: <span class="categoryDetailCode"> <span>FormIt.LoadPlugin("https://formit3d.github.io/FormItExamplePlugins/ModelessDialog");</span></span></li>
@@ -423,7 +364,7 @@
                 <ul>
                     <li>The HTML file will need links in the header to the appropriate JavaScript files, as well as to a CSS file for styling.</li>
                     <li>The HTML file will render in the FormIt panel as it would in a browser.</li>
-                    <li>You can see examples of rich HTML interfaces in our <a href="https://github.com/FormIt3D/FormItWorkflowPlugins" target="_blank">FormIt Workflow Plugins repo</a>.</li>
+                    <li>You can see examples of rich HTML interfaces in our <a href="https://github.com/FormIt3D/" target="_blank">FormIt3D organization</a>.</li>
                 </ul>
                 <li>"PanelIcon" defines an icon to appear in the tab for this panel on the right side of the application. If undefined, FormIt creates an automatic icon using the initials from the name of the plugin.</li>
             </ul>
@@ -546,7 +487,19 @@
                     </ul>
                 </ul>
             </ul>
-            <p class="categoryDetailBody">To test how a plugin or a repository will appear in the Plugin Manager, see <a href="#HostingPlugins">Hosting Plugins.</a></p>
+            <p class="categoryDetailBody"><b>Previewing Your Plugin with the Plugin Manager</b></p>
+            <p class="categoryDetailBody">To preview how your plugin would appear in the Plugin Manager (updated title, description, etc) before it's pushed to GitHub, you can paste the localhost URL into the box at the bottom of the Plugin Manager:</p>
+            <img src="images/PluginManagerInstallLocal.PNG" class="imgList">
+            <p class="categoryDetailBody">Then look for your plugin in the Installed section at the top:</p>
+            <img src="images/PluginManagerInstalledList.PNG" class="imgList">
+            <p class="categoryDetailBody"><b>Force Clearing the Web Cache for .JSON Files</b></p>
+            <p class="categoryDetailBody">If you modify the title or description inside the manifest.json file for a plugin or repo, you may need to force clear the cache in FormIt for Windows to see those changes take effect the next time you reload the Plugin Manager.</p>
+            <p class="categoryDetailBody">FormIt for Windows stores its web cache here:</p>
+            <ul class="categoryDetailList">
+                <li class="categoryDetailCode"><span>C:\Users\user\AppData\Local\Autodesk\FormIt 360\QtWebEngine\Default</span></li>
+                <li>You'll need to enable hidden items in Windows Explorer to see the AppData folder.</li>
+            </ul>
+            <p class="categoryDetailBody">To delete the web cache, simply delete the "Default" folder above, then reload the Plugin Manager to see the updated titles and descriptions.</p>
     </div>
 </div>
 
@@ -584,26 +537,9 @@
             <ul class="categoryDetailList">
                 <li>Sign up for a free <a href="https://github.com/join" target="_blank">GitHub account</a>.</li>
                 <li>Download <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>, a free tool for cloning repos, seeing changes to files, and pushing/pulling changes between your local computer and online repositories.</li>
+                <li>Create a new repo to host your plugin on GitHub.</li>
                 <li>Use GitHub Desktop to clone your new (empty) GitHub repository to your local machine.</li>
-                <li>On your local machine, make a new folder inside the GitHub folder (created by GitHub Desktop) to store all your plugins.</li>
-                <ul>
-                    <li>This folder is your FormIt plugin repository, so name it something distinct when viewed in the Plugin Manager. We'll use the name <i>Joe's Plugins</i> as an example.</li>
-                </ul>
-                <li>Move your plugin files and folders to the new <i>Joe's Plugins</i> folder. Each plugin should be in its own subfolder.</li>
-                <li>In the <i>Joe's Plugins</i> folder, make a new <i>plugins.json</i> file, which controls which of the subfolders (plugins) will appear when the repo is loaded in the Plugin Manager:</li>
-            </ul>
-            <p class="categoryDetailCode">
-                <pre>
-{
-  "RepoName": "Joe's Plugins",
-  "Plugins":
-  [
-  "MyFormItPlugin1",
-  "MyFormItPlugin2"
-  ]
-}               </pre>
-            </p>
-            <ul class="categoryDetailList">
+                <li>Develop your plugin by adding new files to the repo folder locally.</li>
                 <li>Use GitHub Desktop to push your plugin files and directories to your repository.</li>
                 <li>Enable GitHub Pages in your repository so FormIt can load and display your GitHub-hosted plugins.</li>
                 <ul>
@@ -612,25 +548,7 @@
                     <li>Scroll down to the GitHub Pages section, enable GitHub Pages, and use the <i>master</i> branch.</li>
                 </ul>
             </ul>
-            <p class="categoryDetailBody">You should now be able to load your GitHub-hosted plugin repository in the Plugin Manager by entering its URL (for our example, <span class=categoryDetailCode>https://github.com/Joe/JoesPlugins</span>) in the box at the top and hitting the (+) button. Learn more about the <a href="../index.html" target="_blank">Plugin Manager</a>.</p>
-            <p class="categoryDetailBody">At this point, you can continue adding, modifying, and testing plugins locally, and when you're ready to publish, use GitHub Desktop to push your changes to your GitHub repo. Anyone consuming your repo and plugins will always get the latest code when they start FormIt.</p>
-            <p class="categoryDetailBody"><b>Previewing Your Plugin with the Plugin Manager</b></p>
-            <p class="categoryDetailBody">To preview how your hosted repo/plugins would appear in the Plugin Manager (updated title, description, etc) before it's pushed to GitHub, you'll need to clone the <a href="https://github.com/FormIt3D/FormItExamplePlugins">FormItExamplePlugins</a> repo and host the Plugin Manager locally.</p>
-            <p class="categoryDetailBody">Due to restrictions with mixed HTTP and HTTPS content, you cannot use the production version of the Plugin Manager with a locally-hosted version of your plugin.</p>
-            <p class="categoryDetailBody">Once you've cloned the FormitExamplePlugins repo above, <a href="#SettingUpEnvironment">start a local server</a> in the folder containing the FormItExamplePlugins folder. Then, enter the following in the Script Editor in FormIt for Windows, select the text, and hit the "Run Selected" button:</p>
-            <ul class="categoryDetailList">
-                <li class="categoryDetailCode"><span>FormIt.LoadPlugin("http://localhost:8080/FormItExamplePlugins/PluginManagerPlugin");</span></li>
-            </ul>
-            <p class="categoryDetailBody">Then, you can paste your repo URL (in our example, <span class=categoryDetailCode>http://localhost:8080/Joe</span>) into the box at the top of the Plugin Manager, and hit the (+) button to add your locally-hosted repository to the Plugin Manager.</p>
-            <p class="categoryDetailBody">If nothing happens, check that your server is running where you expect it to, and that the URL is pointing to the correct folder relative to your server.</p>
-            <p class="categoryDetailBody"><b>Force Clearing the Web Cache for .JSON Files</b></p>
-            <p class="categoryDetailBody">If you modify the title or description inside the manifest.json file for a plugin or repo, you may need to force clear the cache in FormIt for Windows to see those changes take effect the next time you reload the Plugin Manager.</p>
-            <p class="categoryDetailBody">FormIt for Windows stores its web cache here:</p>
-            <ul class="categoryDetailList">
-                <li class="categoryDetailCode"><span>C:\Users\user\AppData\Local\Autodesk\FormIt 360\cache</span></li>
-                <li>You'll need to enable hidden items in Windows Explorer to see the AppData folder.</li>
-            </ul>
-            <p class="categoryDetailBody">To delete the web cache, simply delete the "cache" folder above, then reload the Plugin Manager to see the updated titles and descriptions.</p>
+            <p class="categoryDetailBody">At this point, you can continue adding, modifying, and testing plugins locally, and when you're ready to publish, use GitHub Desktop or another Git client to push your changes to your GitHub repo. Anyone consuming your repo and plugins will always get the latest code when they start FormIt.</p>
         </div>
     </div>
 
@@ -662,12 +580,7 @@
 <div class="categoryBlock" id="PluginHelp">
     <h2 class="categoryTitle">Help With FormIt Plugins</h2>
     <div class="categoryDetailBlock">
-        <p class="categoryDetailBody">Trying to use or build a plugin and running into issues? We're here to help. Use the links below to reach out and get support.</p>
-        <ul class="categoryDetailList">
-            <li>Get help using plugins from the <a href="https://github.com/FormIt3D/FormItWorkflowPlugins/issues" target="_blank">FormIt Workflow Plugins</a> repository.</li>
-            <li>Get help building plugins from the <a href="https://github.com/FormIt3D/FormItExamplePlugins/issues" target="_blank">FormIt Example Plugins</a> repository.</li>
-        </ul>
-    </div>
+        <p class="categoryDetailBody">Having issues building or running plugins? Reach out to us on the <a href="https://forums.autodesk.com/t5/formit-forum/bd-p/142">FormIt forums.</a></p>
 </div>
 
 </body></html>
