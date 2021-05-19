@@ -72,6 +72,8 @@ h1:first-of-type {
     margin-top: 10px;
 }
 
+/* sub-header, for describing the plugin or sub-plugin */
+
 #pluginSubheaderContainer {
     margin-top: 1.75em;
     margin-bottom: 0em;
@@ -81,6 +83,11 @@ h1:first-of-type {
     margin: 0px;
     font-weight: bold;
     color: dimgrey;
+}
+
+#pluginSubheaderDescription {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* forms + inputs */
