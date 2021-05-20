@@ -6,6 +6,7 @@ var group__mod__jsapi__formit__selection =
     [ "ClearSelections", "group__mod__jsapi__formit__selection.html#ga21b300964792b552fa5f12b2344d4f9e", null ],
     [ "CommitPreselections", "group__mod__jsapi__formit__selection.html#ga75bca2f355d55be392ccf31f83a6e064", null ],
     [ "CompareSelections", "group__mod__jsapi__formit__selection.html#ga3c8801c3a03706d8328367f62f2947b8", null ],
+    [ "GetContextMenuObject", "group__mod__jsapi__formit__selection.html#ga87cb4357ee4b6c69e788dda9027d7186", null ],
     [ "GetFirstPreSelectedObject", "group__mod__jsapi__formit__selection.html#ga4f7a4946e8fa91cf1c163b97f9914630", null ],
     [ "GetFirstSelectedObject", "group__mod__jsapi__formit__selection.html#ga8ea8f923d1888dc36d416669dff8d121", null ],
     [ "GetObjectTypeFilter", "group__mod__jsapi__formit__selection.html#ga0b6afaf7b3cfd8f4fc66afeb42a38a2c", null ],

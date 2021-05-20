@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,7 +111,6 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__ui.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaf27366e1c32811b91b46d8c423124c85"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#gaf27366e1c32811b91b46d8c423124c85">FormIt.UI.LoadLangPack</a> (filename)</td></tr>
-<tr class="memdesc:gaf27366e1c32811b91b46d8c423124c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoadLangPack loads the JSON with file name filename and populates the component in the dictionary named component.  <a href="group__mod__jsapi__formit__ui.html#gaf27366e1c32811b91b46d8c423124c85">More...</a><br /></td></tr>
 <tr class="separator:gaf27366e1c32811b91b46d8c423124c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga929758faf4a34f6e3e8babaacef41b64"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#ga929758faf4a34f6e3e8babaacef41b64">FormIt.UI.CreatePanel</a> (title, url)</td></tr>
 <tr class="memdesc:ga929758faf4a34f6e3e8babaacef41b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreatePanel creates a dockable panel with the given name and displays the given URL.  <a href="group__mod__jsapi__formit__ui.html#ga929758faf4a34f6e3e8babaacef41b64">More...</a><br /></td></tr>
@@ -122,8 +121,36 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeafacf25e3a95f3fb3200d777b31a549"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#gaeafacf25e3a95f3fb3200d777b31a549">FormIt.UI.ShowNotification</a> (message, notificationType, nTimeout)</td></tr>
 <tr class="memdesc:gaeafacf25e3a95f3fb3200d777b31a549"><td class="mdescLeft">&#160;</td><td class="mdescRight">ShowNotification displays a notification message to the user.  <a href="group__mod__jsapi__formit__ui.html#gaeafacf25e3a95f3fb3200d777b31a549">More...</a><br /></td></tr>
 <tr class="separator:gaeafacf25e3a95f3fb3200d777b31a549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52de008ad5ad73869289264e26df62f4"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#ga52de008ad5ad73869289264e26df62f4">FormIt.UI.CloseNotification</a> (notificationHandle)</td></tr>
+<tr class="memdesc:ga52de008ad5ad73869289264e26df62f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseNotification closes notification message being displayed related to the notificationHandle passed as input parameter.  <a href="group__mod__jsapi__formit__ui.html#ga52de008ad5ad73869289264e26df62f4">More...</a><br /></td></tr>
+<tr class="separator:ga52de008ad5ad73869289264e26df62f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga52de008ad5ad73869289264e26df62f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.UI.CloseNotification </td>
+          <td>(</td>
+          <td class="paramtype">notificationHandle&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CloseNotification closes notification message being displayed related to the notificationHandle passed as input parameter. </p>
+<p>Parameters: In: handle Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">notificationHandle</td><td>FormIt.NotificationHandle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga929758faf4a34f6e3e8babaacef41b64"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,15 +237,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>LoadLangPack loads the JSON with file name filename and populates the component in the dictionary named component. </p>
-<p>Parameters: In: filename Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>String </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
-
 </div>
 </div>
 <a class="anchor" id="gaeafacf25e3a95f3fb3200d777b31a549"></a>
@@ -252,7 +270,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ShowNotification displays a notification message to the user. </p>
-<p>The nTimeout parameter is the time in ms that the notification should be displayed. A value of 0 means to use the default timeout. notificationType: FormIt.NotificationType.Unspecified FormIt.NotificationType.Information FormIt.NotificationType.Warning FormIt.NotificationType.Error Parameters: In: message, notificationType, nTimeout (OPTIONAL) Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The nTimeout parameter is the time in ms that the notification should be displayed. A value of 0 means to use the default timeout. notificationType: FormIt.NotificationType.Unspecified FormIt.NotificationType.Information FormIt.NotificationType.Warning FormIt.NotificationType.Error Parameters: In: message, notificationType, nTimeout (OPTIONAL) Out: NotificationHandle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">notificationType</td><td>FormIt.NotificationType </td></tr>
@@ -260,7 +278,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>notificationHandle </dd></dl>
 
 </div>
 </div>

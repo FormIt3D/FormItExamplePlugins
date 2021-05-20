@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,7 +111,6 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__sketchmater
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga05ca7c1363ae5c623cf69b7cdbef04fe"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga05ca7c1363ae5c623cf69b7cdbef04fe">FormIt.SketchMaterials.GetWSMMaterialForHistory</a> (historyId, materialId)</td></tr>
-<tr class="memdesc:ga05ca7c1363ae5c623cf69b7cdbef04fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="namespace_w_s_m.html" title="WSM namespace. ">WSM</a> material from the sketch material in the given history.  <a href="group__mod__jsapi__formit__sketchmaterials.html#ga05ca7c1363ae5c623cf69b7cdbef04fe">More...</a><br /></td></tr>
 <tr class="separator:ga05ca7c1363ae5c623cf69b7cdbef04fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72a686499692639028b82de83746a61d"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga72a686499692639028b82de83746a61d">FormIt.SketchMaterials.GetSketchMaterialFromWSMMaterial</a> (historyId, wsmMaterialId)</td></tr>
 <tr class="memdesc:ga72a686499692639028b82de83746a61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sketch material id from the <a class="el" href="namespace_w_s_m.html" title="WSM namespace. ">WSM</a> material.  <a href="group__mod__jsapi__formit__sketchmaterials.html#ga72a686499692639028b82de83746a61d">More...</a><br /></td></tr>
@@ -416,16 +415,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get the <a class="el" href="namespace_w_s_m.html" title="WSM namespace. ">WSM</a> material from the sketch material in the given history. </p>
-<p>If a <a class="el" href="namespace_w_s_m.html" title="WSM namespace. ">WSM</a> material does not exist, create one. If WSM.INVALID_ID is passed for the historyId, the first <a class="el" href="namespace_w_s_m.html" title="WSM namespace. ">WSM</a> material in the list is used. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">historyId</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff" title="ObjectHistoryID creation method In: nHistoryID, nObjectID Out: ObjectHistoryID. ">WSM.ObjectHistoryID</a> of the material </dd></dl>
 
 </div>
 </div>

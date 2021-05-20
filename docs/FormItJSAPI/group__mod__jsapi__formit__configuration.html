@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,7 +111,6 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__configurati
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga4a6a824f65da38238549e623098cf5c3"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__configuration.html#ga4a6a824f65da38238549e623098cf5c3">FormIt.Configuration.GetToolGroupUUIDs</a> ()</td></tr>
-<tr class="memdesc:ga4a6a824f65da38238549e623098cf5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector of UUIDs (as string) for the tool groups currently configured Parameters: In: Out: vector of tool group UUIDs.  <a href="group__mod__jsapi__formit__configuration.html#ga4a6a824f65da38238549e623098cf5c3">More...</a><br /></td></tr>
 <tr class="separator:ga4a6a824f65da38238549e623098cf5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga03b9a2058ec002aad31c2afc1008b216"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__configuration.html#ga03b9a2058ec002aad31c2afc1008b216">FormIt.Configuration.GetContextMenuToolUUIDs</a> ()</td></tr>
 <tr class="memdesc:ga03b9a2058ec002aad31c2afc1008b216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector of UUIDs (as string) for the tools in the context menu currently configured Parameters: In: Out: vector of tool UUIDs.  <a href="group__mod__jsapi__formit__configuration.html#ga03b9a2058ec002aad31c2afc1008b216">More...</a><br /></td></tr>
@@ -123,7 +122,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga9a47c3b75c2175de6b9cd448b950ce65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the tool UUID from a context menu action Parameters: In: tool UUID Out: action id.  <a href="group__mod__jsapi__formit__configuration.html#ga9a47c3b75c2175de6b9cd448b950ce65">More...</a><br /></td></tr>
 <tr class="separator:ga9a47c3b75c2175de6b9cd448b950ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1cf8f29f885c0093093a5f475f87931f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__configuration.html#ga1cf8f29f885c0093093a5f475f87931f">FormIt.Configuration.GetToolGroupInfo</a> (toolGroupUUID)</td></tr>
-<tr class="memdesc:ga1cf8f29f885c0093093a5f475f87931f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the info for a tool group, that the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace. ">UI</a> can use currently configured Parameters: In: UUID of tool group Out: vector of tool UUIDs, icon.  <a href="group__mod__jsapi__formit__configuration.html#ga1cf8f29f885c0093093a5f475f87931f">More...</a><br /></td></tr>
+<tr class="memdesc:ga1cf8f29f885c0093093a5f475f87931f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the info for a tool group, that the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace. ">UI</a> can use currently configured Parameters: In: UUID of tool group Out: vector of tool UUIDs, icon and other info.  <a href="group__mod__jsapi__formit__configuration.html#ga1cf8f29f885c0093093a5f475f87931f">More...</a><br /></td></tr>
 <tr class="separator:ga1cf8f29f885c0093093a5f475f87931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4758e52bbfc45abdeb38ef58e9dea311"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__configuration.html#ga4758e52bbfc45abdeb38ef58e9dea311">FormIt.Configuration.GetToolInfo</a> (toolUUID)</td></tr>
 <tr class="memdesc:ga4758e52bbfc45abdeb38ef58e9dea311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the info for a tool, that the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace. ">UI</a> can use Parameters: In: UUID of tool Out: tool name, tool icon, tool tip, formit tool type.  <a href="group__mod__jsapi__formit__configuration.html#ga4758e52bbfc45abdeb38ef58e9dea311">More...</a><br /></td></tr>
@@ -156,7 +155,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae18fa09957cd61290376bbb0bb784a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all formit native implicit tools ids and names Parameters: In: Out: vector of id - name pairs.  <a href="group__mod__jsapi__formit__configuration.html#gae18fa09957cd61290376bbb0bb784a78">More...</a><br /></td></tr>
 <tr class="separator:gae18fa09957cd61290376bbb0bb784a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffbd6f7431e25a0e264adbf68e758030"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__configuration.html#gaffbd6f7431e25a0e264adbf68e758030">FormIt.Configuration.IsShortcutCommandConfigured</a> (commandName)</td></tr>
-<tr class="memdesc:gaffbd6f7431e25a0e264adbf68e758030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a shortcut command is configuted Parameters: In: command name Out: true/false.  <a href="group__mod__jsapi__formit__configuration.html#gaffbd6f7431e25a0e264adbf68e758030">More...</a><br /></td></tr>
+<tr class="memdesc:gaffbd6f7431e25a0e264adbf68e758030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a shortcut command is configured Parameters: In: command name Out: true/false.  <a href="group__mod__jsapi__formit__configuration.html#gaffbd6f7431e25a0e264adbf68e758030">More...</a><br /></td></tr>
 <tr class="separator:gaffbd6f7431e25a0e264adbf68e758030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -342,7 +341,7 @@ Functions</h2></td></tr>
 <p>Returns the tool UUID from a context menu action Parameters: In: action id Out: tool UUID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">actionId</td><td>ContextMenuAction </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">actionId</td><td>FormIt.ContextMenuAction </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,14 +381,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the info for a tool group, that the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace. ">UI</a> can use currently configured Parameters: In: UUID of tool group Out: vector of tool UUIDs, icon. </p>
+<p>Returns the info for a tool group, that the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace. ">UI</a> can use currently configured Parameters: In: UUID of tool group Out: vector of tool UUIDs, icon and other info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">toolGroupUUID</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(result) }, { "Name" , to_json(name) }, { "Icon" , to_json(iconName) }, { "ToolTip" , to_json(toolTip) }, { "Tools" , to_json(toolUUIDs) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(result) }, { "Name" , to_json(name) }, { "Icon" , to_json(iconName) }, { "ToolTip" , to_json(toolTip) }, { "Tools" , to_json(toolUUIDs) }, { "IsForMainToolsMenu" , to_json(isForMainToolsMenu) } }; </dd></dl>
 
 </div>
 </div>
@@ -405,9 +404,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns a vector of UUIDs (as string) for the tool groups currently configured Parameters: In: Out: vector of tool group UUIDs. </p>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -500,7 +496,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns whether a shortcut command is configuted Parameters: In: command name Out: true/false. </p>
+<p>Returns whether a shortcut command is configured Parameters: In: command name Out: true/false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">commandName</td><td>String </td></tr>

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,11 +111,13 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__layers.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gafcb00791642c158f924e643e1b107d14"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gafcb00791642c158f924e643e1b107d14">FormIt.Layers.GetAllLayers</a> ()</td></tr>
-<tr class="memdesc:gafcb00791642c158f924e643e1b107d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetAllLayers gets a vector with all layer ids.  <a href="group__mod__jsapi__formit__layers.html#gafcb00791642c158f924e643e1b107d14">More...</a><br /></td></tr>
 <tr class="separator:gafcb00791642c158f924e643e1b107d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4cc449616997b99151645c2df9be5cf5"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga4cc449616997b99151645c2df9be5cf5">FormIt.Layers.GetLayerData</a> (layerID)</td></tr>
 <tr class="memdesc:ga4cc449616997b99151645c2df9be5cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerData gets the data for a single layer.  <a href="group__mod__jsapi__formit__layers.html#ga4cc449616997b99151645c2df9be5cf5">More...</a><br /></td></tr>
 <tr class="separator:ga4cc449616997b99151645c2df9be5cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe5121a7a09441a53ab1a26061ecf46"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gabbe5121a7a09441a53ab1a26061ecf46">FormIt.Layers.GetAllLayerData</a> ()</td></tr>
+<tr class="memdesc:gabbe5121a7a09441a53ab1a26061ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetAllLayerData gets the data for all layers.  <a href="group__mod__jsapi__formit__layers.html#gabbe5121a7a09441a53ab1a26061ecf46">More...</a><br /></td></tr>
+<tr class="separator:gabbe5121a7a09441a53ab1a26061ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14ac078eeac7e68988b848862727acfc"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga14ac078eeac7e68988b848862727acfc">FormIt.Layers.AddLayer</a> (historyID, layerName, visible)</td></tr>
 <tr class="memdesc:ga14ac078eeac7e68988b848862727acfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">AddLayer creates a new layer in the given history.  <a href="group__mod__jsapi__formit__layers.html#ga14ac078eeac7e68988b848862727acfc">More...</a><br /></td></tr>
 <tr class="separator:ga14ac078eeac7e68988b848862727acfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,21 +146,30 @@ Functions</h2></td></tr>
 <tr class="separator:gadaf8e65054f9454145b48711850b2103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e91e029ce8164704ce2d1e37c1e6a90"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga7e91e029ce8164704ce2d1e37c1e6a90">FormIt.Layers.RemoveLayersFromObjects</a> (layerIDs, aObjects)</td></tr>
 <tr class="separator:ga7e91e029ce8164704ce2d1e37c1e6a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ece3b6b726a726fb43b3df04343914a"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga2ece3b6b726a726fb43b3df04343914a">FormIt.Layers.GetAllObjectsOnLayers</a> (layerIDs)</td></tr>
-<tr class="memdesc:ga2ece3b6b726a726fb43b3df04343914a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetAllObjectsOnLayers gets all objects that are on the given layers.  <a href="group__mod__jsapi__formit__layers.html#ga2ece3b6b726a726fb43b3df04343914a">More...</a><br /></td></tr>
-<tr class="separator:ga2ece3b6b726a726fb43b3df04343914a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff2b52a341cd8d4c428979ea01afb16a"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gaff2b52a341cd8d4c428979ea01afb16a">FormIt.Layers.GetAllObjectsOnLayers</a> (layerIDs, allHistories)</td></tr>
+<tr class="memdesc:gaff2b52a341cd8d4c428979ea01afb16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetAllObjectsOnLayers gets all objects that are on the given layers.  <a href="group__mod__jsapi__formit__layers.html#gaff2b52a341cd8d4c428979ea01afb16a">More...</a><br /></td></tr>
+<tr class="separator:gaff2b52a341cd8d4c428979ea01afb16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2532c94c93565795055d56bb7480add0"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga2532c94c93565795055d56bb7480add0">FormIt.Layers.ChangeLayerOrder</a> (layerID, newPosition)</td></tr>
 <tr class="memdesc:ga2532c94c93565795055d56bb7480add0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ChangeLayerOrder gives a layer a new position in the list.  <a href="group__mod__jsapi__formit__layers.html#ga2532c94c93565795055d56bb7480add0">More...</a><br /></td></tr>
 <tr class="separator:ga2532c94c93565795055d56bb7480add0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga556b0adc2fcfb453f24366e171c4aae1"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga556b0adc2fcfb453f24366e171c4aae1">FormIt.Layers.GetObjectLayerID</a> (nHistoryID, nObjectID)</td></tr>
 <tr class="memdesc:ga556b0adc2fcfb453f24366e171c4aae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetObjectLayerID returns the layer id for the object.  <a href="group__mod__jsapi__formit__layers.html#ga556b0adc2fcfb453f24366e171c4aae1">More...</a><br /></td></tr>
 <tr class="separator:ga556b0adc2fcfb453f24366e171c4aae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e144d1df4ac0721e5a71004610fad5b"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga7e144d1df4ac0721e5a71004610fad5b">FormIt.Layers.GetLayerList</a> ()</td></tr>
-<tr class="memdesc:ga7e144d1df4ac0721e5a71004610fad5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerList gets a list of all layers as LayerData.  <a href="group__mod__jsapi__formit__layers.html#ga7e144d1df4ac0721e5a71004610fad5b">More...</a><br /></td></tr>
-<tr class="separator:ga7e144d1df4ac0721e5a71004610fad5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad24e932e1c1357ab1c753a692deca671"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gad24e932e1c1357ab1c753a692deca671">FormIt.Layers.IsValidObjectForLayerAssignment</a> (nHistoryID, nObjectID)</td></tr>
 <tr class="memdesc:gad24e932e1c1357ab1c753a692deca671"><td class="mdescLeft">&#160;</td><td class="mdescRight">IsValidObjectForLayerAssignment returns whether the given object can be assigned a layer object must be top level (non owned) or a group instance.  <a href="group__mod__jsapi__formit__layers.html#gad24e932e1c1357ab1c753a692deca671">More...</a><br /></td></tr>
 <tr class="separator:gad24e932e1c1357ab1c753a692deca671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e144d1df4ac0721e5a71004610fad5b"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga7e144d1df4ac0721e5a71004610fad5b">FormIt.Layers.GetLayerList</a> ()</td></tr>
+<tr class="memdesc:ga7e144d1df4ac0721e5a71004610fad5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerList gets a list of all layers as LayerData.  <a href="group__mod__jsapi__formit__layers.html#ga7e144d1df4ac0721e5a71004610fad5b">More...</a><br /></td></tr>
+<tr class="separator:ga7e144d1df4ac0721e5a71004610fad5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90bac5f5187e75473747d7a7104d7e1d"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga90bac5f5187e75473747d7a7104d7e1d">FormIt.Layers.GetObjectsLayerList</a> (groupInstacePathArray, bIncludeNoLayer)</td></tr>
+<tr class="memdesc:ga90bac5f5187e75473747d7a7104d7e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetObjectsLayerList returns the set of layers the given Objects are on.  <a href="group__mod__jsapi__formit__layers.html#ga90bac5f5187e75473747d7a7104d7e1d">More...</a><br /></td></tr>
+<tr class="separator:ga90bac5f5187e75473747d7a7104d7e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gac4cfbb5735adf6b3708cb4bcbdb40bd5">FormIt.Layers.GetLayerID</a> (layerName)</td></tr>
+<tr class="memdesc:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerID returns the formit layer id from a layer name or WSM.INVALID_ID if a layer with that name does not exist.  <a href="group__mod__jsapi__formit__layers.html#gac4cfbb5735adf6b3708cb4bcbdb40bd5">More...</a><br /></td></tr>
+<tr class="separator:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga498b2b2c292f3f303197c041e96d417f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f">FormIt.Layers.SetLayerPickable</a> (layerID, pickable)</td></tr>
+<tr class="memdesc:ga498b2b2c292f3f303197c041e96d417f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pickable status of a layer.  <a href="group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f">More...</a><br /></td></tr>
+<tr class="separator:ga498b2b2c292f3f303197c041e96d417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga14ac078eeac7e68988b848862727acfc"></a>
@@ -291,6 +302,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gabbe5121a7a09441a53ab1a26061ecf46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Layers.GetAllLayerData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetAllLayerData gets the data for all layers. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns layer data array. Returns array of LayerData </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="gafcb00791642c158f924e643e1b107d14"></a>
 <div class="memitem">
 <div class="memproto">
@@ -304,12 +333,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetAllLayers gets a vector with all layer ids. </p>
-<dl class="section return"><dt>Returns</dt><dd>Array of layer ids. </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="ga2ece3b6b726a726fb43b3df04343914a"></a>
+<a class="anchor" id="gaff2b52a341cd8d4c428979ea01afb16a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -317,8 +343,18 @@ Functions</h2></td></tr>
           <td class="memname">json FormIt.Layers.GetAllObjectsOnLayers </td>
           <td>(</td>
           <td class="paramtype">layerIDs&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">allHistories&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -327,6 +363,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerIDs</td><td>Array of layer ids </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allHistories</td><td>(optional) Include all Historys </td></tr>
   </table>
   </dd>
 </dl>
@@ -356,6 +393,31 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns layer data : id, name, visibility. Returns false if layerID does not exist. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac4cfbb5735adf6b3708cb4bcbdb40bd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Layers.GetLayerID </td>
+          <td>(</td>
+          <td class="paramtype">layerName&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetLayerID returns the formit layer id from a layer name or WSM.INVALID_ID if a layer with that name does not exist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>String </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Layer id or WSM.INVALID_ID </dd></dl>
 
 </div>
 </div>
@@ -410,6 +472,42 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Layer id or WSM.INVALID_ID </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga90bac5f5187e75473747d7a7104d7e1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Layers.GetObjectsLayerList </td>
+          <td>(</td>
+          <td class="paramtype">groupInstacePathArray&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bIncludeNoLayer&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetObjectsLayerList returns the set of layers the given Objects are on. </p>
+<p>If bIncludeNoLayer is true, an uninitialized LayerData will be added to the set. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bIncludeNoLayer</td><td>bool (optional) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">groupInstacePathArray</td><td>WSM.GroupInstancePathArray </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns array of layer data : id, name, visibility </dd></dl>
 
 </div>
 </div>
@@ -594,6 +692,42 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga498b2b2c292f3f303197c041e96d417f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Layers.SetLayerPickable </td>
+          <td>(</td>
+          <td class="paramtype">layerID&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pickable&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the pickable status of a layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int Id of the layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pickable</td><td>bool true to set the layer pickable, false to lock it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>

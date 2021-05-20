@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,16 +111,63 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__cameras.htm
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae7049e11523cbec87c37013fe09d1a42"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#gae7049e11523cbec87c37013fe09d1a42">FormIt.Cameras.GetCameraData</a> ()</td></tr>
-<tr class="memdesc:gae7049e11523cbec87c37013fe09d1a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parameters that define the current camera.  <a href="group__mod__jsapi__formit__cameras.html#gae7049e11523cbec87c37013fe09d1a42">More...</a><br /></td></tr>
 <tr class="separator:gae7049e11523cbec87c37013fe09d1a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedb337bea3b51706a8469004a5540530"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#gaedb337bea3b51706a8469004a5540530">FormIt.Cameras.SetCameraData</a> (cameraData)</td></tr>
 <tr class="memdesc:gaedb337bea3b51706a8469004a5540530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters that define the current camera.  <a href="group__mod__jsapi__formit__cameras.html#gaedb337bea3b51706a8469004a5540530">More...</a><br /></td></tr>
 <tr class="separator:gaedb337bea3b51706a8469004a5540530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f7d33e958291642628f2d17c7915377"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#ga5f7d33e958291642628f2d17c7915377">FormIt.Cameras.AlignWithFace</a> (facePath, withTransition)</td></tr>
+<tr class="memdesc:ga5f7d33e958291642628f2d17c7915377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera to look straight at the given face and zoom to fit it.  <a href="group__mod__jsapi__formit__cameras.html#ga5f7d33e958291642628f2d17c7915377">More...</a><br /></td></tr>
+<tr class="separator:ga5f7d33e958291642628f2d17c7915377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga781d8a364420cd86391b618b6ad92319"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#ga781d8a364420cd86391b618b6ad92319">FormIt.Cameras.GetViewportSize</a> ()</td></tr>
+<tr class="memdesc:ga781d8a364420cd86391b618b6ad92319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the camera width and height Parameters: Out: width and height of the current viewport.  <a href="group__mod__jsapi__formit__cameras.html#ga781d8a364420cd86391b618b6ad92319">More...</a><br /></td></tr>
+<tr class="separator:ga781d8a364420cd86391b618b6ad92319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20ef4a981653e405cf689d124535c59f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#ga20ef4a981653e405cf689d124535c59f">FormIt.Cameras.SetViewportSize</a> (x, y)</td></tr>
 <tr class="memdesc:ga20ef4a981653e405cf689d124535c59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameters that define the current camera.  <a href="group__mod__jsapi__formit__cameras.html#ga20ef4a981653e405cf689d124535c59f">More...</a><br /></td></tr>
 <tr class="separator:ga20ef4a981653e405cf689d124535c59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dd0be8dfe1fb683972751dffaa25f89"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#ga2dd0be8dfe1fb683972751dffaa25f89">FormIt.Cameras.SetProjectionType</a> (projectionType)</td></tr>
+<tr class="memdesc:ga2dd0be8dfe1fb683972751dffaa25f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera to perspective.  <a href="group__mod__jsapi__formit__cameras.html#ga2dd0be8dfe1fb683972751dffaa25f89">More...</a><br /></td></tr>
+<tr class="separator:ga2dd0be8dfe1fb683972751dffaa25f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafec38e56a1b06c8a73ea1b50d350865b"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__cameras.html#gafec38e56a1b06c8a73ea1b50d350865b">FormIt.Cameras.GetProjectionType</a> ()</td></tr>
+<tr class="memdesc:gafec38e56a1b06c8a73ea1b50d350865b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the camera to perspective.  <a href="group__mod__jsapi__formit__cameras.html#gafec38e56a1b06c8a73ea1b50d350865b">More...</a><br /></td></tr>
+<tr class="separator:gafec38e56a1b06c8a73ea1b50d350865b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga5f7d33e958291642628f2d17c7915377"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Cameras.AlignWithFace </td>
+          <td>(</td>
+          <td class="paramtype">facePath&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">withTransition&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the camera to look straight at the given face and zoom to fit it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">facePath</td><td>face to align camera with </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">withTransition</td><td>if true, camera trasition is animated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sucess </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="gae7049e11523cbec87c37013fe09d1a42"></a>
 <div class="memitem">
 <div class="memproto">
@@ -134,8 +181,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the parameters that define the current camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>FormIt.CameraData </dd></dl>
+</div>
+</div>
+<a class="anchor" id="gafec38e56a1b06c8a73ea1b50d350865b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Cameras.GetProjectionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the camera to perspective. </p>
+<p>Parameters: In: Out: projectionType </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga781d8a364420cd86391b618b6ad92319"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Cameras.GetViewportSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the camera width and height Parameters: Out: width and height of the current viewport. </p>
+<dl class="section return"><dt>Returns</dt><dd>{ { "width" , to_json(width) }, { "height" , to_json(height) } }; </dd></dl>
 
 </div>
 </div>
@@ -160,7 +240,32 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>sucess </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2dd0be8dfe1fb683972751dffaa25f89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Cameras.SetProjectionType </td>
+          <td>(</td>
+          <td class="paramtype">projectionType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the camera to perspective. </p>
+<p>Parameters: In: projectionType Out: </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">projectionType</td><td>FormIt.CameraProjectionType </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
