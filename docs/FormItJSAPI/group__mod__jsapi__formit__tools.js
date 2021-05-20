@@ -1,6 +1,7 @@
 var group__mod__jsapi__formit__tools =
 [
     [ "BlendFacesOrEdges", "group__mod__jsapi__formit__tools.html#gab8b48d7dd3f3edf2c04878cb4a63af99", null ],
+    [ "ClearAllInferences", "group__mod__jsapi__formit__tools.html#ga27cfb8bd7c836dbdbf131b2b8241a3ec", null ],
     [ "ClearTools", "group__mod__jsapi__formit__tools.html#gaa9f444a22081afc34db7fa2dbe8b4db6", null ],
     [ "FlattenGroups", "group__mod__jsapi__formit__tools.html#ga3422652bb7dd95ae9f7ef19764a69429", null ],
     [ "GetActiveToolSubType", "group__mod__jsapi__formit__tools.html#ga784f15a0c4db6cea725ae39765bf7f9a", null ],

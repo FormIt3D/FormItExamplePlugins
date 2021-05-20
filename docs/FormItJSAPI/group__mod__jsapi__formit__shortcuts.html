@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -119,6 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4df45cb51c892e42cda17f0aa2e37be0"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__shortcuts.html#ga4df45cb51c892e42cda17f0aa2e37be0">FormIt.Shortcuts.GetJSON</a> ()</td></tr>
 <tr class="memdesc:ga4df45cb51c892e42cda17f0aa2e37be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the shortcuts as a JSON string.  <a href="group__mod__jsapi__formit__shortcuts.html#ga4df45cb51c892e42cda17f0aa2e37be0">More...</a><br /></td></tr>
 <tr class="separator:ga4df45cb51c892e42cda17f0aa2e37be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fced66b3e3f95243881cb8358563ffb"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__shortcuts.html#ga6fced66b3e3f95243881cb8358563ffb">FormIt.Shortcuts.GetKeycodeString</a> (key, modifier)</td></tr>
+<tr class="memdesc:ga6fced66b3e3f95243881cb8358563ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetKeycodeString returns a human-readable keyboard shortcut string.  <a href="group__mod__jsapi__formit__shortcuts.html#ga6fced66b3e3f95243881cb8358563ffb">More...</a><br /></td></tr>
+<tr class="separator:ga6fced66b3e3f95243881cb8358563ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga4df45cb51c892e42cda17f0aa2e37be0"></a>
@@ -136,6 +139,42 @@ Functions</h2></td></tr>
 
 <p>Get the shortcuts as a JSON string. </p>
 <dl class="section return"><dt>Returns</dt><dd>A JSON string </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6fced66b3e3f95243881cb8358563ffb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.Shortcuts.GetKeycodeString </td>
+          <td>(</td>
+          <td class="paramtype">key&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">modifier&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetKeycodeString returns a human-readable keyboard shortcut string. </p>
+<p>In: key, modifier </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modifier</td><td>int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a human-readable keyboard shortcut string. </dd></dl>
 
 </div>
 </div>

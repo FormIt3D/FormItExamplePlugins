@@ -18,17 +18,24 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ]
       ] ]
     ] ],
-    [ "FormIt Plugin API Help", "^https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html", null ],
+    [ "File Members", "globals.html", [
+      [ "All", "globals.html", null ],
+      [ "Functions", "globals_func.html", null ],
+      [ "Variables", "globals_vars.html", null ],
+      [ "Macros", "globals_defs.html", null ]
+    ] ],
+    [ "FormIt Plugin API Help", "^https://formit3d.github.io/FormItExamplePlugins/", null ],
     [ "Autodesk FormIt Help", "^http://help.autodesk.com/view/FORMIT/ENU/", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"group__mod__jsapi__formit.html",
-"group__mod__jsapi__formit__selection.html#ga60d2bebee658f5f8bf0f94b1656ca9ca",
-"group__mod__jsapi__wsm.html#ga8a0b8bb624039fe1f4513f498366c5e3",
-"namespace_form_it_1_1_sun_and_location.html"
+"globals.html",
+"group__mod__jsapi__formit__model.html#ga03e4f8bbcb88956f5868ec0f2728a563",
+"group__mod__jsapi__wsm.html#ga01d5b44717675978f1d75f552385230d",
+"group__mod__jsapi__wsm.html#gaf3e53f69e39e47bf4e7dd6e327a1242e",
+"namespacemembers_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

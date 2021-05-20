@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt Plugin API
-   &#160;<span id="projectnumber">17.0.1</span>
+   &#160;<span id="projectnumber">v21.0.1 (2022.0.1)</span>
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="https://windows.help.formit.autodesk.com/Formit-Capabilities/formit-plugin-api.html"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
+      <li><a href="https://formit3d.github.io/FormItExamplePlugins/"><span>FormIt&#160;Plugin&#160;API&#160;Help</span></a></li>
       <li><a href="http://help.autodesk.com/view/FORMIT/ENU/"><span>Autodesk&#160;FormIt&#160;Help</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -151,8 +151,14 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetAllContextMenuTools()
 : <a class="el" href="group__mod__jsapi__formit__configuration.html#ga8fd625a60f6f7ed70e43319fc426424a">FormIt.Configuration</a>
 </li>
+<li>GetAllImages()
+: <a class="el" href="group__mod__jsapi__formit__imagemanager.html#ga12392a0bf68c3ebb5bda7e301c27d8be">FormIt.ImageManager</a>
+</li>
 <li>GetAllImplicitTools()
 : <a class="el" href="group__mod__jsapi__formit__configuration.html#gae18fa09957cd61290376bbb0bb784a78">FormIt.Configuration</a>
+</li>
+<li>GetAllLayerData()
+: <a class="el" href="group__mod__jsapi__formit__layers.html#gabbe5121a7a09441a53ab1a26061ecf46">FormIt.Layers</a>
 </li>
 <li>GetAllLayers()
 : <a class="el" href="group__mod__jsapi__formit__layers.html#gafcb00791642c158f924e643e1b107d14">FormIt.Layers</a>
@@ -161,7 +167,7 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#ga7467534f2fa92b382d75da8ab8f4dcd5">WSM.Utils</a>
 </li>
 <li>GetAllObjectsOnLayers()
-: <a class="el" href="group__mod__jsapi__formit__layers.html#ga2ece3b6b726a726fb43b3df04343914a">FormIt.Layers</a>
+: <a class="el" href="group__mod__jsapi__formit__layers.html#gaff2b52a341cd8d4c428979ea01afb16a">FormIt.Layers</a>
 </li>
 <li>GetAllObjectsUsingMaterials()
 : <a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga19f102d6bc70f0f67524bbd527defb58">FormIt.SketchMaterials</a>
@@ -187,6 +193,9 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetAmbientTextureIntensity()
 : <a class="el" href="group__mod__jsapi__formit__visualstyles.html#ga86da31dd1f5fc23482b91683a2ab9cf6">FormIt.VisualStyles</a>
 </li>
+<li>GetAppDefaultContentsWithoutAXM()
+: <a class="el" href="group__mod__jsapi__formit.html#ga1f3abb4f70e850e370800f5ec2a806a1">FormIt</a>
+</li>
 <li>GetAreaForObjects()
 : <a class="el" href="group__mod__jsapi__formit__levels.html#ga77108de656ee6fbe923a4867dad2d75d">FormIt.Levels</a>
 </li>
@@ -195,6 +204,9 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 </li>
 <li>GetBackgroundColor()
 : <a class="el" href="group__mod__jsapi__formit__visualstyles.html#ga48184d910228733937835aa1cfd3d9b1">FormIt.VisualStyles</a>
+</li>
+<li>GetBuildingType()
+: <a class="el" href="group__mod__jsapi__formit.html#ga462a2eedc22b78fca5435a50def210eb">FormIt</a>
 </li>
 <li>GetCameraData()
 : <a class="el" href="group__mod__jsapi__formit__cameras.html#gae7049e11523cbec87c37013fe09d1a42">FormIt.Cameras</a>
@@ -208,8 +220,14 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetCommands()
 : <a class="el" href="group__mod__jsapi__formit__commands.html#ga8319ea98295b1f5b1cc545c7b0a40b87">FormIt.Commands</a>
 </li>
+<li>GetConfig()
+: <a class="el" href="group__mod__jsapi__formit__autosave.html#ga35315626837fc4d9f9c904de48ecef10">FormIt.AutoSave</a>
+</li>
 <li>GetContextMenuActionIdFromToolUUID()
 : <a class="el" href="group__mod__jsapi__formit__configuration.html#ga9a47c3b75c2175de6b9cd448b950ce65">FormIt.Configuration</a>
+</li>
+<li>GetContextMenuObject()
+: <a class="el" href="group__mod__jsapi__formit__selection.html#ga87cb4357ee4b6c69e788dda9027d7186">FormIt.Selection</a>
 </li>
 <li>GetContextMenuToolUUIDFromActionId()
 : <a class="el" href="group__mod__jsapi__formit__configuration.html#ga2eaa4d744e72857d525fc510b48560fc">FormIt.Configuration</a>
@@ -220,8 +238,20 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetCurrentState()
 : <a class="el" href="group__mod__jsapi__formit__undomanagement.html#ga55effc21d3c69a7f4819ebf0f879b0ac">FormIt.UndoManagement</a>
 </li>
+<li>GetCurveAccuracyOrCountCurrent()
+: <a class="el" href="group__mod__jsapi__formit__model.html#ga3bc773a87130b31ea3ddf65f14a1273d">FormIt.Model</a>
+</li>
+<li>GetCurveAccuracyOrCountDefault()
+: <a class="el" href="group__mod__jsapi__formit.html#ga6063c04bd1fdc297f6cdfda74518a2a5">FormIt</a>
+</li>
 <li>GetData()
-: <a class="el" href="group__mod__jsapi__formit__image.html#ga1a28829c556b794e7ac8da55e6690369">FormIt.Image</a>
+: <a class="el" href="group__mod__jsapi__formit__imagemanager.html#gab0fbefe47125dad74856b97af4f6a0cf">FormIt.ImageManager</a>
+</li>
+<li>GetDaylightSavingTime()
+: <a class="el" href="group__mod__jsapi__formit__sunandlocation.html#ga54a470782534521b0163ff49c3f113d6">FormIt.SunAndLocation</a>
+</li>
+<li>GetDefaultConfig()
+: <a class="el" href="group__mod__jsapi__formit__autosave.html#gace4a8c630173a29eaf0a400f64054383">FormIt.AutoSave</a>
 </li>
 <li>GetDefaultLevelHeight()
 : <a class="el" href="group__mod__jsapi__formit__levels.html#ga22b3f2fda2ab75e1e88c6e06b1aa8b3e">FormIt.Levels</a>
@@ -229,11 +259,26 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetDefaultMaterialData()
 : <a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga06bc56c3ba34622c19b8d783cf8b087f">FormIt.SketchMaterials</a>
 </li>
+<li>GetDisplayHistoryID()
+: <a class="el" href="group__mod__jsapi__wsm__apphelper.html#ga1fc501466170a3e3ddc05a0b555a40a6">WSM.AppHelper</a>
+</li>
 <li>GetDynamoFile()
 : <a class="el" href="group__mod__jsapi__formit__dynamo.html#gaa1894793ceab0ec1e692ac8cda8f39db">FormIt.Dynamo</a>
 </li>
+<li>GetDynamoFileBakeNodes()
+: <a class="el" href="group__mod__jsapi__formit__dynamo.html#gaeaa3c69ec66326d1c4905859b97eefd4">FormIt.Dynamo</a>
+</li>
 <li>GetDynamoGroupName()
 : <a class="el" href="group__mod__jsapi__formit__dynamo.html#gab605327878772e0f1dc31c713623e2c8">FormIt.Dynamo</a>
+</li>
+<li>GetDynamoHistoryInCurrentContext()
+: <a class="el" href="group__mod__jsapi__formit__dynamo.html#gac3644619508b7cef47e527b35f656248">FormIt.Dynamo</a>
+</li>
+<li>GetDynamoHistoryInPath()
+: <a class="el" href="group__mod__jsapi__formit__dynamo.html#ga82b187444160df5e9a93fdf3ed3486a4">FormIt.Dynamo</a>
+</li>
+<li>GetEdgeColor()
+: <a class="el" href="group__mod__jsapi__formit__visualstyles.html#gaeef2b103c97e90a70511711f35d7c72a">FormIt.VisualStyles</a>
 </li>
 <li>GetEdgeCurveType()
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#ga45168be2dc298ccdf4d9dd857b4cee7d">WSM.Utils</a>
@@ -244,11 +289,17 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetEdgeLine()
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#ga08411ba2e49a19da7cc8d9e98f6c613b">WSM.Utils</a>
 </li>
+<li>GetEdgeWeight()
+: <a class="el" href="group__mod__jsapi__formit__visualstyles.html#ga84a4284d648b729c968c176cfb331f2b">FormIt.VisualStyles</a>
+</li>
 <li>GetEditCameras()
 : <a class="el" href="group__mod__jsapi__formit__scenes.html#gac0bb8da631c7c691b41496a4b7760f55">FormIt.Scenes</a>
 </li>
 <li>GetEditingHistoryID()
 : <a class="el" href="group__mod__jsapi__formit__groupedit.html#ga5489ab0ad58bb49527b90de26e9a1cc1">FormIt.GroupEdit</a>
+</li>
+<li>GetExistingBackupFile()
+: <a class="el" href="group__mod__jsapi__formit__autosave.html#ga7cc6aa33173c9998ec6d25be7e324247">FormIt.AutoSave</a>
 </li>
 <li>GetFaceIDFromCoedge()
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#gab814642a1818fefe9fa4eb556f0a36d7">WSM.Utils</a>
@@ -257,7 +308,7 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#ga636f0cda90da462e904ac601d5b77c71">WSM.Utils</a>
 </li>
 <li>GetFinalObjectHistoryID()
-: <a class="el" href="group__mod__jsapi__wsm__groupinstancepath.html#ga4b12b3349b4db05413329a3fbbaffe22">WSM.GroupInstancePath</a>
+: <a class="el" href="group__mod__jsapi__wsm__groupinstancepath.html#gab72283dba8ce68db455148e36152f31c">WSM.GroupInstancePath</a>
 </li>
 <li>GetFirstPreSelectedObject()
 : <a class="el" href="group__mod__jsapi__formit__selection.html#ga4f7a4946e8fa91cf1c163b97f9914630">FormIt.Selection</a>
@@ -277,11 +328,15 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetGroupInstanceNonOwnedGeometricObjects()
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#gae1f5f8e476eb2f5540ffa3cc5ba1f20b">WSM.Utils</a>
 </li>
+<li>GetGroupInstancePathFinalObjectHistoryID()
+: <a class="el" href="group__mod__jsapi__wsm__utils.html#ga92f664c1ba50c0be028aa1464c2526c7">WSM.Utils</a>
+</li>
 <li>GetHighlightPreselect()
 : <a class="el" href="group__mod__jsapi__formit__visualstyles.html#gae86e9fe456914ab55647897e5036260e">FormIt.VisualStyles</a>
 </li>
 <li>GetHistoryID()
 : <a class="el" href="group__mod__jsapi__formit__model.html#ga429407d750e202e0e178d5507471aab9">FormIt.Model</a>
+, <a class="el" href="group__mod__jsapi__wsm__apphelper.html#ga83414b93110d5ca59c957473761f3272">WSM.AppHelper</a>
 </li>
 <li>GetHistoryIDs()
 : <a class="el" href="group__mod__jsapi__formit__undomanagement.html#ga0f523bf8e46172f923906c5a4cada899">FormIt.UndoManagement</a>
@@ -295,6 +350,9 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetInContextEditingPath()
 : <a class="el" href="group__mod__jsapi__formit__groupedit.html#ga0398acaf74e8acb99df57a6da5a9dbc1">FormIt.GroupEdit</a>
 </li>
+<li>GetInputNodes()
+: <a class="el" href="group__mod__jsapi__formit__dynamo.html#ga128549907cdb6d5d137b78e41b9cfcfa">FormIt.Dynamo</a>
+</li>
 <li>GetInstances()
 : <a class="el" href="group__mod__jsapi__formit__sectionplanes.html#gaf17024f882b87776bd0827b9569397e5">FormIt.SectionPlanes</a>
 </li>
@@ -304,8 +362,17 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetJSONStringForClipboard()
 : <a class="el" href="group__mod__jsapi__formit__clipboard.html#ga4f39d8f34e5ebbe3533906357df5dd28">FormIt.Clipboard</a>
 </li>
+<li>GetKeycodeString()
+: <a class="el" href="group__mod__jsapi__formit__shortcuts.html#ga6fced66b3e3f95243881cb8358563ffb">FormIt.Shortcuts</a>
+</li>
+<li>GetLastSectionRefHistory()
+: <a class="el" href="group__mod__jsapi__formit__sectionplanes.html#ga0346912b62ecca4798a9e4898c6d22f9">FormIt.SectionPlanes</a>
+</li>
 <li>GetLayerData()
 : <a class="el" href="group__mod__jsapi__formit__layers.html#ga4cc449616997b99151645c2df9be5cf5">FormIt.Layers</a>
+</li>
+<li>GetLayerID()
+: <a class="el" href="group__mod__jsapi__formit__layers.html#gac4cfbb5735adf6b3708cb4bcbdb40bd5">FormIt.Layers</a>
 </li>
 <li>GetLayerList()
 : <a class="el" href="group__mod__jsapi__formit__layers.html#ga7e144d1df4ac0721e5a71004610fad5b">FormIt.Layers</a>
@@ -327,6 +394,9 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 </li>
 <li>GetLimits()
 : <a class="el" href="group__mod__jsapi__formit__analysis__solar.html#gaf4e2f1eff2a5a445d027a7f4860e9c34">FormIt.Analysis.Solar</a>
+</li>
+<li>GetLocationDateTime()
+: <a class="el" href="group__mod__jsapi__formit__sunandlocation.html#ga759064c06cd8df76d13db78ead2138ee">FormIt.SunAndLocation</a>
 </li>
 <li>GetMaterialData()
 : <a class="el" href="group__mod__jsapi__formit__materialprovider.html#ga5b8c8d60208c1c4ab6e85596201b81fe">FormIt.MaterialProvider</a>
@@ -386,13 +456,19 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 : <a class="el" href="group__mod__jsapi__formit__analysis__solar.html#ga69e08d9ddf951157ee68272f62e5c25a">FormIt.Analysis.Solar</a>
 </li>
 <li>GetNumWidgets()
-: <a class="el" href="group__mod__jsapi__formit__hud.html#gae66865008c5bcf9dd2fe8ddb86adaf3a">FormIt.HUD</a>
+: <a class="el" href="group__mod__jsapi__formit__hudmanager.html#ga48bfd30dc1da7fc575de06530afb19df">FormIt.HUDManager</a>
 </li>
 <li>GetObjectLayerID()
 : <a class="el" href="group__mod__jsapi__formit__layers.html#ga556b0adc2fcfb453f24366e171c4aae1">FormIt.Layers</a>
 </li>
+<li>GetObjectName()
+: <a class="el" href="group__mod__jsapi__formit__model.html#ga7ca2ab5b798dd582a3567345cc6e23f4">FormIt.Model</a>
+</li>
+<li>GetObjectsLayerList()
+: <a class="el" href="group__mod__jsapi__formit__layers.html#ga90bac5f5187e75473747d7a7104d7e1d">FormIt.Layers</a>
+</li>
 <li>GetObjectTransform()
-: <a class="el" href="group__mod__jsapi__wsm__groupinstancepath.html#gabe7fd8b4244ae3f4ff7047989465bce6">WSM.GroupInstancePath</a>
+: <a class="el" href="group__mod__jsapi__wsm__groupinstancepath.html#gabe871903c868389a939b91b71041ae28">WSM.GroupInstancePath</a>
 </li>
 <li>GetObjectTypeFilter()
 : <a class="el" href="group__mod__jsapi__formit__selection.html#ga0b6afaf7b3cfd8f4fc66afeb42a38a2c">FormIt.Selection</a>
@@ -421,6 +497,15 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetProjectAddress()
 : <a class="el" href="group__mod__jsapi__formit__sunandlocation.html#ga394027be35be114ebb7da0fc712d51d4">FormIt.SunAndLocation</a>
 </li>
+<li>GetProjectionType()
+: <a class="el" href="group__mod__jsapi__formit__cameras.html#gafec38e56a1b06c8a73ea1b50d350865b">FormIt.Cameras</a>
+</li>
+<li>GetProjectSiteArea()
+: <a class="el" href="group__mod__jsapi__formit__model.html#ga2079c91822b5a4df6af987229c9552c1">FormIt.Model</a>
+</li>
+<li>GetProjectTargetArea()
+: <a class="el" href="group__mod__jsapi__formit__model.html#ga1d0c1eb0b00f5190847be56a1e437c1e">FormIt.Model</a>
+</li>
 <li>GetPropertiesForHistory()
 : <a class="el" href="group__mod__jsapi__formit__model.html#ga8434fde7e942d3a87aad56a3ab401c6d">FormIt.Model</a>
 </li>
@@ -438,6 +523,9 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 </li>
 <li>GetScenes()
 : <a class="el" href="group__mod__jsapi__formit__scenes.html#ga6017addd4dbd6b21f742c68fbbb0a4ea">FormIt.Scenes</a>
+</li>
+<li>GetSelectedDynamoHistory()
+: <a class="el" href="group__mod__jsapi__formit__dynamo.html#ga3025f0c4dc1f06eee90be06c47a28777">FormIt.Dynamo</a>
 </li>
 <li>GetSelections()
 : <a class="el" href="group__mod__jsapi__formit__selection.html#ga0f555c99ccf3e13d54e52bc3f5a7c1cb">FormIt.Selection</a>
@@ -457,8 +545,14 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetShowAxes()
 : <a class="el" href="group__mod__jsapi__formit__visualstyles.html#gacd5222c1159433b6079c1f38c14623f7">FormIt.VisualStyles</a>
 </li>
+<li>GetShowEditableDimensions()
+: <a class="el" href="group__mod__jsapi__formit.html#ga549695812c3f714ec0c9542ae4204a4e">FormIt</a>
+</li>
 <li>GetShowEditedGroupOnly()
 : <a class="el" href="group__mod__jsapi__formit__groupedit.html#ga28467a5af511cfe8dff1193ccdbf30b0">FormIt.GroupEdit</a>
+</li>
+<li>GetSilhouetteWeight()
+: <a class="el" href="group__mod__jsapi__formit__visualstyles.html#ga6b4c6dee884f5849cd17bd768aa24027">FormIt.VisualStyles</a>
 </li>
 <li>GetSketchMaterialFromWSMMaterial()
 : <a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga72a686499692639028b82de83746a61d">FormIt.SketchMaterials</a>
@@ -484,8 +578,20 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetSunEditorEnabled()
 : <a class="el" href="group__mod__jsapi__formit__visualstyles.html#gac0cd8fc396c1ced5cbdabdec340dca71">FormIt.VisualStyles</a>
 </li>
+<li>GetSunRiseAndSet()
+: <a class="el" href="group__mod__jsapi__formit__sunandlocation.html#ga36df182df65191900ee168a7941b0892">FormIt.SunAndLocation</a>
+</li>
 <li>GetSunShading()
 : <a class="el" href="group__mod__jsapi__formit__visualstyles.html#ga03c2ac368eab20ba8db3bc9f37f24a85">FormIt.VisualStyles</a>
+</li>
+<li>GetSupportedFilesList()
+: <a class="el" href="group__mod__jsapi__formit__files.html#ga941fc06a564ffc892b147af97afcfab3">FormIt.Files</a>
+</li>
+<li>GetSurfaceAccuracyOrCountCurrent()
+: <a class="el" href="group__mod__jsapi__formit__model.html#gadbc5744a98e27aea8f48f0aeb560c8ad">FormIt.Model</a>
+</li>
+<li>GetSurfaceAccuracyOrCountDefault()
+: <a class="el" href="group__mod__jsapi__formit.html#ga9cb7def3d515e4037fa92bb5bdb2b18e">FormIt</a>
 </li>
 <li>GetTimeNow()
 : <a class="el" href="group__mod__jsapi__formit.html#ga6b73c79ba37cd2023da92e77c9b4bbc3">FormIt</a>
@@ -500,7 +606,10 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 : <a class="el" href="group__mod__jsapi__formit__configuration.html#ga4758e52bbfc45abdeb38ef58e9dea311">FormIt.Configuration</a>
 </li>
 <li>GetTopObjectHistoryID()
-: <a class="el" href="group__mod__jsapi__wsm__groupinstancepath.html#ga853cf36aa3e04df71d01cdb5c8c9aba0">WSM.GroupInstancePath</a>
+: <a class="el" href="group__mod__jsapi__wsm__groupinstancepath.html#ga9850fded133b4655c2e243ccee089cb2">WSM.GroupInstancePath</a>
+</li>
+<li>GetTotalGrossArea()
+: <a class="el" href="group__mod__jsapi__formit__model.html#ga03e4f8bbcb88956f5868ec0f2728a563">FormIt.Model</a>
 </li>
 <li>GetTouchEnabled()
 : <a class="el" href="group__mod__jsapi__formit.html#ga333902ea2865a7d8b813eff4403e30c1">FormIt</a>
@@ -517,17 +626,38 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 <li>GetUnitType()
 : <a class="el" href="group__mod__jsapi__formit__model.html#ga32e46a572a4d1dc18acd5bf4f8fc4ed9">FormIt.Model</a>
 </li>
+<li>GetUnitTypeCurrent()
+: <a class="el" href="group__mod__jsapi__formit__model.html#ga5e72995c378babe5d8da3a8810566a59">FormIt.Model</a>
+</li>
+<li>GetUnitTypeDefault()
+: <a class="el" href="group__mod__jsapi__formit.html#gac192223146ba90539b9ca21cd7e809bd">FormIt</a>
+</li>
 <li>GetUseCameraSpeed()
 : <a class="el" href="group__mod__jsapi__formit__scenes.html#gaafdd9f595be6e8da950b7908958b49cd">FormIt.Scenes</a>
+</li>
+<li>GetUuid()
+: <a class="el" href="group__mod__jsapi__formit__dynamo.html#ga161007f8b92664458bc21e2cf169cf46">FormIt.Dynamo</a>
 </li>
 <li>GetValueFromFaceAtPoint()
 : <a class="el" href="group__mod__jsapi__formit__analysis__solar.html#ga5c65a7996fb1b0f3578eeee333f36cce">FormIt.Analysis.Solar</a>
 </li>
+<li>GetVersion()
+: <a class="el" href="group__mod__jsapi__formit.html#gae6a82b88e26dd76df9d8fb8b5351d5ed">FormIt</a>
+</li>
 <li>GetVertexCurveAttributes()
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#ga8eceedec0ac4198e60fe6569113ac713">WSM.Utils</a>
 </li>
+<li>GetViewDirection()
+: <a class="el" href="group__mod__jsapi__formit.html#ga80557679df904bd3cc5508c2131e4388">FormIt</a>
+</li>
+<li>GetViewportSize()
+: <a class="el" href="group__mod__jsapi__formit__cameras.html#ga781d8a364420cd86391b618b6ad92319">FormIt.Cameras</a>
+</li>
 <li>GetWeatherDataStatus()
 : <a class="el" href="group__mod__jsapi__formit__analysis__solar.html#ga5c99dd6212ffc45f0051269c75d625da">FormIt.Analysis.Solar</a>
+</li>
+<li>GetWorkPlaneColor()
+: <a class="el" href="group__mod__jsapi__formit__visualstyles.html#ga28671bccd9ebdf2d00f9e8a4380d5f63">FormIt.VisualStyles</a>
 </li>
 <li>GetWSMMaterialForHistory()
 : <a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga05ca7c1363ae5c623cf69b7cdbef04fe">FormIt.SketchMaterials</a>
@@ -545,10 +675,13 @@ $(document).ready(function(){initNavTree('namespacemembers_g.html','');});
 : <a class="el" href="group__mod__jsapi__wsm.html#ga70c57f77154cd0d3ca534e75f74ded1c">WSM</a>
 </li>
 <li>GroupInstancePathArray()
-: <a class="el" href="group__mod__jsapi__wsm__utils.html#ga824268c10c543dc0c3f0d9045a720d66">WSM.Utils</a>
+: <a class="el" href="group__mod__jsapi__wsm__utils.html#gae6fb33a93834dc30959803c52460a81e">WSM.Utils</a>
 </li>
 <li>GroupInstancePathsAreEqual()
 : <a class="el" href="group__mod__jsapi__wsm__utils.html#ga1c015680eb1857e7e027a94db5961e0b">WSM.Utils</a>
+</li>
+<li>GuidFromString()
+: <a class="el" href="group__mod__jsapi__formit__utils.html#ga23cadf5e145f6149de96e49480c27120">FormIt.Utils</a>
 </li>
 </ul>
 </div><!-- contents -->
