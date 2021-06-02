@@ -9,6 +9,6 @@ var group__mod__formitcore__materialprovider__api__ref =
     [ "GetMaterials", "group__mod__formitcore__materialprovider__api__ref.html#ga9b480ea5551151ba53255902eae4af9b", null ],
     [ "GetNewMaterialName", "group__mod__formitcore__materialprovider__api__ref.html#gaf12d43c22eeffff8fa6f5c71e6bdd326", null ],
     [ "IsValidMaterial", "group__mod__formitcore__materialprovider__api__ref.html#ga9f7dfa1ad0f16bed82157318392cb4a3", null ],
-    [ "IsValidMaterialName", "group__mod__formitcore__materialprovider__api__ref.html#gad4f265b2488c1587abbf1fe2354fe8cc", null ],
+    [ "IsValidMaterialName", "group__mod__formitcore__materialprovider__api__ref.html#ga853dcece437e00ed808b6291646d24a6", null ],
     [ "SetMaterialData", "group__mod__formitcore__materialprovider__api__ref.html#ga5376543ac69cc401c3f63815e1e14b04", null ]
 ];

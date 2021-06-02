@@ -11,7 +11,7 @@ var group__mod__formitcore__ui__api__ref =
     [ "ShowConfirmationDialog", "group__mod__formitcore__ui__api__ref.html#gaa7ad358d218bf7dd5fbd711a17da6ed2", null ],
     [ "ShowConfirmationDialog", "group__mod__formitcore__ui__api__ref.html#gad7a4a05f893c2008da90232202a7368d", null ],
     [ "ShowMessageDialog", "group__mod__formitcore__ui__api__ref.html#ga38009d36d1c9e50ff79dfebe2b3e31de", null ],
+    [ "ShowNotification", "group__mod__formitcore__ui__api__ref.html#ga16a2c4d0fab6e401d06d527208ea44b7", null ],
     [ "ShowNotification", "group__mod__formitcore__ui__api__ref.html#ga40454868e04592c28bcb3f2fb180a16e", null ],
-    [ "ShowNotification", "group__mod__formitcore__ui__api__ref.html#ga1472ca2d0aff1253655404daa81575d3", null ],
     [ "ShowSelectionToolbar", "group__mod__formitcore__ui__api__ref.html#ga0ddffe9c9dbd429543d2517485fa3e1b", null ]
 ];

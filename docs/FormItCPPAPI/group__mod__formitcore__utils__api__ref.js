@@ -1,9 +1,5 @@
 var group__mod__formitcore__utils__api__ref =
 [
-    [ "UtilsImage", "class_form_it_1_1_utils_1_1_utils_image.html", [
-      [ "GetData", "class_form_it_1_1_utils_1_1_utils_image.html#a69c4f4c8758c81f3bf9fda5bb6bd80a7", null ],
-      [ "m_FYImage", "class_form_it_1_1_utils_1_1_utils_image.html#ac3edbbc454dc00e603d9aad55a012807", null ]
-    ] ],
     [ "Span", "struct_form_it_1_1_utils_1_1_span.html", [
       [ "TIter", "struct_form_it_1_1_utils_1_1_span.html#a8e1a6669b7079078ad46e3db559c2fb2", null ],
       [ "Span", "struct_form_it_1_1_utils_1_1_span.html#a2528a5c8db5299907c3d45fcc4b5b631", null ],
@@ -12,22 +8,18 @@ var group__mod__formitcore__utils__api__ref =
       [ "Span", "struct_form_it_1_1_utils_1_1_span.html#a7cfa2fdce07b239c3fcd7cbfb48115a5", null ],
       [ "Span", "struct_form_it_1_1_utils_1_1_span.html#afcffab043ff32568e437913f20f03db3", null ],
       [ "begin", "struct_form_it_1_1_utils_1_1_span.html#a97da283a433b9bb39c3c80fe166b4f27", null ],
-      [ "cbegin", "struct_form_it_1_1_utils_1_1_span.html#a9d2571e6ef3339105723b9dfb01a28cf", null ],
-      [ "cend", "struct_form_it_1_1_utils_1_1_span.html#a3f264a596892e4c59288b5e0920915cc", null ],
+      [ "cbegin", "struct_form_it_1_1_utils_1_1_span.html#a3b847c3c03b2c5997b09684b1265cbc0", null ],
+      [ "cend", "struct_form_it_1_1_utils_1_1_span.html#a27a4e686d9fccc3339a98c76cf778e1c", null ],
       [ "data", "struct_form_it_1_1_utils_1_1_span.html#a9ac7adaad445112f51955e95e79338c7", null ],
-      [ "empty", "struct_form_it_1_1_utils_1_1_span.html#a8f83182773db959415d8c291c9849308", null ],
+      [ "empty", "struct_form_it_1_1_utils_1_1_span.html#ab71faa3b475faf921765494e4e8e8968", null ],
       [ "end", "struct_form_it_1_1_utils_1_1_span.html#a166ebcab7e0b6ee8fcbaffb08a55a31c", null ],
+      [ "operator[]", "struct_form_it_1_1_utils_1_1_span.html#a765a877d54aea57d1948d78e789a4e59", null ],
       [ "operator[]", "struct_form_it_1_1_utils_1_1_span.html#ad1321ac4bbd3be1ad0d69b396ee4004b", null ],
-      [ "operator[]", "struct_form_it_1_1_utils_1_1_span.html#ae79dfe92c47cb60d34fe96f5d05ef51d", null ],
-      [ "size", "struct_form_it_1_1_utils_1_1_span.html#a17a93546e6fd321cc05ed2411bafeb86", null ]
+      [ "size", "struct_form_it_1_1_utils_1_1_span.html#ae93e8295fe63a0585a9a04411b844e5f", null ]
     ] ],
-    [ "CreateTextureFileFromData", "group__mod__formitcore__utils__api__ref.html#ga78de2c9f12120da1ae36f7f3b2023bcf", null ],
-    [ "DecodeBase64String", "group__mod__formitcore__utils__api__ref.html#ga746696310c51c920a29fa7a9b3b69997", null ],
     [ "DecodeBase64String", "group__mod__formitcore__utils__api__ref.html#ga6fa0e6df5f170d476dd5e141e0116700", null ],
-    [ "DecodeImage", "group__mod__formitcore__utils__api__ref.html#ga1724d211915f3502fc5ab4b06ad31094", null ],
+    [ "DecodeBase64String", "group__mod__formitcore__utils__api__ref.html#ga746696310c51c920a29fa7a9b3b69997", null ],
     [ "EncodeBase64String", "group__mod__formitcore__utils__api__ref.html#gad8368b387289e8fb99c6e37e84a2ee8a", null ],
-    [ "EncodeImageJPG", "group__mod__formitcore__utils__api__ref.html#gaaf89c6edb4f25bb68317f86a0eea6b53", null ],
-    [ "EncodeImagePNG", "group__mod__formitcore__utils__api__ref.html#gaf3d58e6bde7b657c54ddb65639ab7b37", null ],
     [ "EscapeURL", "group__mod__formitcore__utils__api__ref.html#gadd23ae78681bf615fa5738a46e1ecae0", null ],
     [ "EscapeURL", "group__mod__formitcore__utils__api__ref.html#ga844aeeb42b489ba6f252d697fb4528d0", null ],
     [ "FindReplaceString", "group__mod__formitcore__utils__api__ref.html#gab3248b6513aed9039aeb609cb4e93feb", null ],
@@ -37,7 +29,6 @@ var group__mod__formitcore__utils__api__ref =
     [ "GetTMFromString", "group__mod__formitcore__utils__api__ref.html#ga51ad9180fd68098601efda7264e63293", null ],
     [ "GuidFromString", "group__mod__formitcore__utils__api__ref.html#ga37091ed699b05aa4a957dedf620d690e", null ],
     [ "GuidToHexString", "group__mod__formitcore__utils__api__ref.html#ga195c903653e165dd6228c853d2fcf504", null ],
-    [ "LoadImageData", "group__mod__formitcore__utils__api__ref.html#ga837aa5a8e98e516a799819d075d06bcc", null ],
     [ "NarrowToWideString", "group__mod__formitcore__utils__api__ref.html#ga5cb81bc92b164fc756439fcf987820b2", null ],
     [ "NewGuid", "group__mod__formitcore__utils__api__ref.html#ga5985243ccd399808a0fd62b90d92bc77", null ],
     [ "ToFormItString", "group__mod__formitcore__utils__api__ref.html#gacd9858bde3b0851d4d070ed6abc4fac6", null ],

@@ -5,7 +5,6 @@ var group__mod__formitcore__sunandlocation__api__ref =
     [ "GetAutumnEquinox", "group__mod__formitcore__sunandlocation__api__ref.html#gae505933934f1ca1ed142a67961ec470b", null ],
     [ "GetDaylightSavingTime", "group__mod__formitcore__sunandlocation__api__ref.html#ga716480538b8d74f0b85d73728110cb37", null ],
     [ "GetDayOfYear", "group__mod__formitcore__sunandlocation__api__ref.html#gaf4c393ab6361742557631f59f5c54b21", null ],
-    [ "GetLightDirectionFromLocationData", "group__mod__formitcore__sunandlocation__api__ref.html#ga43edf17476f71d16158550f20154c4e8", null ],
     [ "GetLocationDateTime", "group__mod__formitcore__sunandlocation__api__ref.html#gaa5776a3b0200386aab83a7be809ab820", null ],
     [ "GetMonthAndDayFromDayOfYear", "group__mod__formitcore__sunandlocation__api__ref.html#gabb11de601d93be9186320eb2cc6e2679", null ],
     [ "GetProjectAddress", "group__mod__formitcore__sunandlocation__api__ref.html#ga744e41b7d2680aec0cba2d9590c4fdbe", null ],

@@ -6,8 +6,8 @@ var group__mod__formitcore__analysis__solar__api__ref =
       [ "kWeatherDataNotAvailableForLocation", "group__mod__formitcore__analysis__solar__api__ref.html#gga183e0569d3b31cb6dca8426ec7222802a3457bb4f503781a4939d0bcdb24eac61", null ],
       [ "kWeatherDataFormatError", "group__mod__formitcore__analysis__solar__api__ref.html#gga183e0569d3b31cb6dca8426ec7222802aeb154e995571681601b3b3d269b51699", null ]
     ] ],
-    [ "Analyze", "group__mod__formitcore__analysis__solar__api__ref.html#ga9d15e8699d8de52fc03c9c4cc5e0033a", null ],
     [ "Analyze", "group__mod__formitcore__analysis__solar__api__ref.html#ga0ab26497140ac4f8dd11431fbca4c0cc", null ],
+    [ "Analyze", "group__mod__formitcore__analysis__solar__api__ref.html#ga9d15e8699d8de52fc03c9c4cc5e0033a", null ],
     [ "CanAnalyze", "group__mod__formitcore__analysis__solar__api__ref.html#ga1e57ab2d21bdee1903b3b7eb069219e2", null ],
     [ "CancelAnalysis", "group__mod__formitcore__analysis__solar__api__ref.html#gaa3446e0853874d782e2cabf99939228d", null ],
     [ "EnterAnalysisMode", "group__mod__formitcore__analysis__solar__api__ref.html#gab24c29ba0191fa532510bd40dbfe5bc0", null ],

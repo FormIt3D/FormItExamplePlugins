@@ -1,9 +1,9 @@
 var struct_form_it_1_1_materials_1_1_material_data =
 [
-    [ "MaterialData", "struct_form_it_1_1_materials_1_1_material_data.html#a3785ff5189cff9e5a623887648ba4842", null ],
+    [ "MaterialData", "struct_form_it_1_1_materials_1_1_material_data.html#ad4f57d8b138537836045c8784dd27f27", null ],
     [ "MaterialData", "struct_form_it_1_1_materials_1_1_material_data.html#a6350508c350a50127ba2cb94ca44c0ce", null ],
-    [ "GetAttribute", "struct_form_it_1_1_materials_1_1_material_data.html#a152715edeae2f65986c1009dfecbf5f8", null ],
-    [ "GetMap", "struct_form_it_1_1_materials_1_1_material_data.html#abb9526179b0b7d0cebc5034c7a414ffa", null ],
+    [ "GetAttribute", "struct_form_it_1_1_materials_1_1_material_data.html#ac5ab776862dff8d671c2122c74e5a32c", null ],
+    [ "GetMap", "struct_form_it_1_1_materials_1_1_material_data.html#a58bf912025f40063b1c2b9d89dffcaff", null ],
     [ "GetPreviewImage", "struct_form_it_1_1_materials_1_1_material_data.html#a7e72700907943a8f18bb669367762c6a", null ],
     [ "SetAttribute", "struct_form_it_1_1_materials_1_1_material_data.html#af4047a45bb96a23ca09fa09cf266bbc0", null ],
     [ "SetMap", "struct_form_it_1_1_materials_1_1_material_data.html#a92296a4b6b4ff6a24950031e883536e6", null ],

@@ -19,10 +19,10 @@ var group__mod__formitcore__levels__api__ref =
     [ "HasLevelsInProject", "group__mod__formitcore__levels__api__ref.html#gaadb0ade949b69af4ca59cac1bf40303e", null ],
     [ "IsExistingLevel", "group__mod__formitcore__levels__api__ref.html#ga62b509ff5f4b976acbdf2633ef8e7d39", null ],
     [ "IsExistingLevelByElevation", "group__mod__formitcore__levels__api__ref.html#gaa0a05eb25fa7249206880e961f67ed42", null ],
-    [ "IsValidLevelDeltaElevation", "group__mod__formitcore__levels__api__ref.html#ga044b93d26c294834aa0fbeaac2f3a34f", null ],
-    [ "IsValidLevelElevation", "group__mod__formitcore__levels__api__ref.html#ga9327ec75706b21580846035b941449a7", null ],
-    [ "IsValidLevelName", "group__mod__formitcore__levels__api__ref.html#ga9645fb4ff6a65df3ef5151797be84c59", null ],
-    [ "IsValidNumberOfLevelsToAdd", "group__mod__formitcore__levels__api__ref.html#ga2f2de8b232cc37039cf5648312f09f1f", null ],
+    [ "IsValidLevelDeltaElevation", "group__mod__formitcore__levels__api__ref.html#gaefcc859f5394f6df2c86e87b70b8268d", null ],
+    [ "IsValidLevelElevation", "group__mod__formitcore__levels__api__ref.html#gadab719496c98c9af6a6de8346c55273e", null ],
+    [ "IsValidLevelName", "group__mod__formitcore__levels__api__ref.html#gad64ac2eaf8b7f40bb9e5fabb1eb3b3b1", null ],
+    [ "IsValidNumberOfLevelsToAdd", "group__mod__formitcore__levels__api__ref.html#ga961e6feda4480eb4b5942f14b38b83af", null ],
     [ "SetLevelsToSelectedObjects", "group__mod__formitcore__levels__api__ref.html#ga8bd83c90f9440e22d13dc501af8ada69", null ],
     [ "SetReportAreaByLevelsOnSelection", "group__mod__formitcore__levels__api__ref.html#ga2293e776ec5d054826185ea9e0ea5349", null ]
 ];

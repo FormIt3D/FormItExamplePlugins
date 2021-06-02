@@ -10,7 +10,6 @@ var group__mod__formitcore__model__api__ref =
     [ "GetSurfaceAccuracyOrCountCurrent", "group__mod__formitcore__model__api__ref.html#ga24e94942f023387b2b413ba40c1c3526", null ],
     [ "GetTotalGrossArea", "group__mod__formitcore__model__api__ref.html#ga66e5206f84810240803f807d3894e7a8", null ],
     [ "GetUnitTypeCurrent", "group__mod__formitcore__model__api__ref.html#ga6ea371e44bf48b4b5419752df14ded85", null ],
-    [ "ImperialLengthToCurrentUnitLength", "group__mod__formitcore__model__api__ref.html#ga807380991bf9df5fc5828f68dbce788d", null ],
     [ "IsImperialUnitType", "group__mod__formitcore__model__api__ref.html#ga4684c74e162c633666f30209c3a1abc2", null ],
     [ "IsModified", "group__mod__formitcore__model__api__ref.html#ga255839be080447f13081af31b80fac35", null ],
     [ "ObjectReportsAreaByLevel", "group__mod__formitcore__model__api__ref.html#gae0710fac190feb10e7a9407a9390fc48", null ],

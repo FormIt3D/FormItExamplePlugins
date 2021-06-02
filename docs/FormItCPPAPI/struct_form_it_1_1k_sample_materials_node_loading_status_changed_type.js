@@ -1,6 +1,6 @@
 var struct_form_it_1_1k_sample_materials_node_loading_status_changed_type =
 [
     [ "Payload", "struct_form_it_1_1k_sample_materials_node_loading_status_changed_type.html#a16293cb386d5559cd8533ce34df133f8", null ],
-    [ "extract", "struct_form_it_1_1k_sample_materials_node_loading_status_changed_type.html#a305f077a2747292b3c0f715ab3351478", null ],
-    [ "message", "struct_form_it_1_1k_sample_materials_node_loading_status_changed_type.html#ad1db8d75492f055bbf6a59a76e37d215", null ]
+    [ "extract", "struct_form_it_1_1k_sample_materials_node_loading_status_changed_type.html#af7356256a2339a9f7b2c3df977fe2f9d", null ],
+    [ "message", "struct_form_it_1_1k_sample_materials_node_loading_status_changed_type.html#acfd3591ebf79dc763c54bbc559b5e1b1", null ]
 ];

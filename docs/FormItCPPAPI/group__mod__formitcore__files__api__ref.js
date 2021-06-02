@@ -3,7 +3,7 @@ var group__mod__formitcore__files__api__ref =
     [ "FileOptions", "struct_form_it_1_1_files_1_1_file_options.html", [
       [ "FileOptions", "struct_form_it_1_1_files_1_1_file_options.html#a257a02c9c59ae7d4e3e64b0e2fbdd92a", null ],
       [ "FileOptions", "struct_form_it_1_1_files_1_1_file_options.html#a5206860cda04db88c54389cb80e14d22", null ],
-      [ "getWSMFileType", "struct_form_it_1_1_files_1_1_file_options.html#aec58afcf4ac778139d992601ba7e3790", null ],
+      [ "getWSMFileType", "struct_form_it_1_1_files_1_1_file_options.html#ae83319707af87dbe877281be35dc7c78", null ],
       [ "extensionString", "struct_form_it_1_1_files_1_1_file_options.html#afdc473eb42005fb95943ea1aabb3e9c4", null ],
       [ "formatString", "struct_form_it_1_1_files_1_1_file_options.html#a55eb25290ada16aead1f8aeb342c71a6", null ],
       [ "isDevOnly", "struct_form_it_1_1_files_1_1_file_options.html#aecca611709b3f580f89e8f9302dd8973", null ],
@@ -11,8 +11,8 @@ var group__mod__formitcore__files__api__ref =
     ] ],
     [ "FileOptionsList", "class_form_it_1_1_files_1_1_file_options_list.html", [
       [ "Add", "class_form_it_1_1_files_1_1_file_options_list.html#ae8a1cf35ecc97ff0aee00401c29cdf1f", null ],
-      [ "FindFromExtension", "class_form_it_1_1_files_1_1_file_options_list.html#a55462737db3dd2a505bb412b27a8340f", null ],
-      [ "GetList", "class_form_it_1_1_files_1_1_file_options_list.html#a03955653be978720b1cbf3fb9c2d4165", null ]
+      [ "FindFromExtension", "class_form_it_1_1_files_1_1_file_options_list.html#a9cc2f01049bb718db1b157311f5cccb5", null ],
+      [ "GetList", "class_form_it_1_1_files_1_1_file_options_list.html#a21a99e8819dadca44271770f2e70fa5f", null ]
     ] ],
     [ "Action", "group__mod__formitcore__files__api__ref.html#ga16592b71f962b33f6054b4b9e789a616", [
       [ "Open", "group__mod__formitcore__files__api__ref.html#gga16592b71f962b33f6054b4b9e789a616ac3bf447eabe632720a3aa1a7ce401274", null ],
@@ -22,8 +22,7 @@ var group__mod__formitcore__files__api__ref =
     ] ],
     [ "ContentType", "group__mod__formitcore__files__api__ref.html#ga92009419f2f498c13eeeebda1ce0b2ff", [
       [ "Type_Image", "group__mod__formitcore__files__api__ref.html#gga92009419f2f498c13eeeebda1ce0b2ffa8eca1c56d2b3355593ca188f16ff633c", null ],
-      [ "Type_3DModel", "group__mod__formitcore__files__api__ref.html#gga92009419f2f498c13eeeebda1ce0b2ffaf7cd00d2498564cc0525ca48f2859193", null ],
-      [ "Type_Movie", "group__mod__formitcore__files__api__ref.html#gga92009419f2f498c13eeeebda1ce0b2ffafc7dd2b1135fec5f3c19c06f100c9c77", null ]
+      [ "Type_3DModel", "group__mod__formitcore__files__api__ref.html#gga92009419f2f498c13eeeebda1ce0b2ffaf7cd00d2498564cc0525ca48f2859193", null ]
     ] ],
     [ "Types", "group__mod__formitcore__files__api__ref.html#ga548a5009b4890c6fc2924c29438ee968", [
       [ "AXM", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968a88ce6cce790a11377c9f305135e2d5d8", null ],
@@ -45,14 +44,10 @@ var group__mod__formitcore__files__api__ref =
       [ "SPD", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968aed504d8761c0f48e13d9d14e94a23627", null ],
       [ "JS", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968a5bc06f5800d415cc95e1349edbaca425", null ],
       [ "JSON", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968a0ecd11c1d7a287401d148a23bbd7a2f8", null ],
-      [ "ATFX", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968a7ca6b5a9fb0fb4a4ea5bb42cddee0c6f", null ],
-      [ "WMV", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968aa253a69d9e092225fb65b63d4daa3642", null ],
-      [ "MP4", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968a96e814dc4f7f2fa179d6d8f82d3b7e2f", null ]
+      [ "ATFX", "group__mod__formitcore__files__api__ref.html#gga548a5009b4890c6fc2924c29438ee968a7ca6b5a9fb0fb4a4ea5bb42cddee0c6f", null ]
     ] ],
-    [ "DECL", "group__mod__formitcore__files__api__ref.html#ga010a9a716785c5b1ed983ab97572f6dd", null ],
-    [ "DECL", "group__mod__formitcore__files__api__ref.html#ga54fcf31e7ad5c7fa109f89cb87a73e03", null ],
-    [ "DECL", "group__mod__formitcore__files__api__ref.html#ga8ea1513de01fe2eecfa120084bd51368", null ],
-    [ "DECL", "group__mod__formitcore__files__api__ref.html#gae817fcd979c74f8da6853991e2afac09", null ],
+    [ "DECL", "group__mod__formitcore__files__api__ref.html#gaedce7f8b065c965c3f311c457a83426d", null ],
+    [ "DECL", "group__mod__formitcore__files__api__ref.html#gae68feb24b971c86c77b4d61db39444bc", null ],
     [ "DECL_IMPORT", "group__mod__formitcore__files__api__ref.html#gaa63b75961f87a32a94dc8ce98f6b13c6", null ],
     [ "GetSupportedFilesList", "group__mod__formitcore__files__api__ref.html#gafd7129d2a594f3279d09ba838f05d5d0", null ],
     [ "IsFileSupported", "group__mod__formitcore__files__api__ref.html#gaf2a97e53987b2c7f66b4449643b08a70", null ],

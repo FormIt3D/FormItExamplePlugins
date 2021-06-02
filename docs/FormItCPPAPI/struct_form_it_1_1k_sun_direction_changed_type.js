@@ -1,4 +1,4 @@
 var struct_form_it_1_1k_sun_direction_changed_type =
 [
-    [ "message", "struct_form_it_1_1k_sun_direction_changed_type.html#a7275649c8b65c179dc9795d7a9202e2b", null ]
+    [ "message", "struct_form_it_1_1k_sun_direction_changed_type.html#a69d24b2d708680bc3990f513aed71eb7", null ]
 ];

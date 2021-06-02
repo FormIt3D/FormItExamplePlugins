@@ -1,13 +1,22 @@
 var group__mod__formitcore__graphics__api__ref =
 [
+    [ "FeatureFlags", "struct_form_it_1_1_graphics_1_1_feature_flags.html", [
+      [ "DrawGroundPlaneOnBottom", "struct_form_it_1_1_graphics_1_1_feature_flags.html#a2c1cff33d4e5caff08d1dcf6f19a0fe5", null ],
+      [ "Padding", "struct_form_it_1_1_graphics_1_1_feature_flags.html#a68e97951f293460633144bd18f7b9161", null ]
+    ] ],
     [ "DebugGetShowIds", "group__mod__formitcore__graphics__api__ref.html#ga25b0923386890f1a18b0d9ca9983f47d", null ],
     [ "DebugGetShowLine", "group__mod__formitcore__graphics__api__ref.html#gabacb22b3e79f72e6e99858e6e79f5874", null ],
     [ "DebugSetShowIds", "group__mod__formitcore__graphics__api__ref.html#ga897b5fd23fb3c72684558df24b696c4f", null ],
     [ "DebugSetShowLine", "group__mod__formitcore__graphics__api__ref.html#ga08d02c30d4c8bd31b1cc905e1dc7bd48", null ],
+    [ "GetCameraPosition", "group__mod__formitcore__graphics__api__ref.html#ga2c122833b23508204fb0e23ac914b103", null ],
+    [ "GetCameraWorldForward", "group__mod__formitcore__graphics__api__ref.html#ga573003b0dd97432fe9fd4379dee6fecc", null ],
+    [ "GetCameraWorldUp", "group__mod__formitcore__graphics__api__ref.html#ga1c6b3d5325fc77882f84d7c30b2c6f6d", null ],
+    [ "GetDefaultFeatureFlags", "group__mod__formitcore__graphics__api__ref.html#ga3cc927e3d74d85b5e46d94bd0d2775f6", null ],
     [ "GetDefaultSelectionColor", "group__mod__formitcore__graphics__api__ref.html#ga93ceac374fb38325f4b2caf5e34c69e2", null ],
     [ "GetDevicePixelRatio", "group__mod__formitcore__graphics__api__ref.html#ga3cb64d77fbb72d1483de9f8c679ab3e9", null ],
     [ "GetFaceBackDefault", "group__mod__formitcore__graphics__api__ref.html#ga5202688a3751cc51a2bef8d78e1f8c63", null ],
     [ "GetFaceFrontDefault", "group__mod__formitcore__graphics__api__ref.html#ga5d67bc217f472bd7698afeff2f35588d", null ],
+    [ "GetFeatureFlags", "group__mod__formitcore__graphics__api__ref.html#gac431d14a44149c805088086ad8a7200d", null ],
     [ "GetGridMajorScale", "group__mod__formitcore__graphics__api__ref.html#ga5c7cabc73f61f67015a343be914afa0a", null ],
     [ "GetGridMinorScale", "group__mod__formitcore__graphics__api__ref.html#ga94fd3d997ea6620167b61ce3ade3b9f8", null ],
     [ "GetLevelsVisible", "group__mod__formitcore__graphics__api__ref.html#gac6a4565d1021334ad01d0a63c5b40ecd", null ],
@@ -34,6 +43,7 @@ var group__mod__formitcore__graphics__api__ref =
     [ "SetDevicePixelRatio", "group__mod__formitcore__graphics__api__ref.html#ga9568fcef5acf95d447c5205da91dccf6", null ],
     [ "SetFaceBackDefault", "group__mod__formitcore__graphics__api__ref.html#gad2af33321d9de712fd6b91a0b7851f80", null ],
     [ "SetFaceFrontDefault", "group__mod__formitcore__graphics__api__ref.html#ga7847b114800c114687067d2d8454fed6", null ],
+    [ "SetFeatureFlags", "group__mod__formitcore__graphics__api__ref.html#ga9125a9e2aa04ef17791178a610a22cb1", null ],
     [ "SetHDEnabled", "group__mod__formitcore__graphics__api__ref.html#gad8f9b563ee06053a3156607e6742a2bf", null ],
     [ "SetLevelsVisible", "group__mod__formitcore__graphics__api__ref.html#ga1b3d307d7c919bfc0ac6138c20554ebf", null ],
     [ "SetRemainingTooltipCount", "group__mod__formitcore__graphics__api__ref.html#ga08676260a403f60a2b5f70a53eb1461e", null ],

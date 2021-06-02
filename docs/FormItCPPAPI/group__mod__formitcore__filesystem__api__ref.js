@@ -21,7 +21,7 @@ var group__mod__formitcore__filesystem__api__ref =
     [ "IsRegularFile", "group__mod__formitcore__filesystem__api__ref.html#ga637e38ba159a951212bde193b91e96d5", null ],
     [ "LastModifiedTime", "group__mod__formitcore__filesystem__api__ref.html#gab4934ce02ae5256cb32999d99708f051", null ],
     [ "OfstreamUTF8", "group__mod__formitcore__filesystem__api__ref.html#gab429a5e346c21e80c21dc9662c91d79c", null ],
-    [ "PathJoin", "group__mod__formitcore__filesystem__api__ref.html#gab7978b9d76702f1eaf45c7d882e0e14d", null ],
+    [ "PathJoin", "group__mod__formitcore__filesystem__api__ref.html#ga7d85be0da209fb522c792456f11d83ae", null ],
     [ "Remove", "group__mod__formitcore__filesystem__api__ref.html#ga607290c66cf7be4feabdf1dbcfbe556e", null ],
     [ "Split", "group__mod__formitcore__filesystem__api__ref.html#ga2b8bbcb92f82084d7966f5aae4a58542", null ]
 ];

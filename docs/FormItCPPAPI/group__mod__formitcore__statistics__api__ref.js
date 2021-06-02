@@ -115,9 +115,7 @@ var group__mod__formitcore__statistics__api__ref =
       [ "REVIT_CONNECTION_CLOSE", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1a621f04c5a563af8c38a638aef358a469", null ],
       [ "REVIT_CONNECTION_FAIL", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1a6d9cf14c810dc30b89d51d5acd1bc634", null ],
       [ "REVIT_CONNECTION_NO_DYN_PORT", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1ab4b74e8ddc91ce24566def97117d7de9", null ],
-      [ "REVIT_CONNECTION_NO_STATIC_PORT", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1aec6aaa2b0da51ddaefa969bd305e472a", null ],
-      [ "EXPORT_MOVIE", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1af72ce3a45c340074194196b18c407f18", null ],
-      [ "LOAD_ADDIN", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1a14fbae36d3b5809e22ce727350e3f9ab", null ]
+      [ "REVIT_CONNECTION_NO_STATIC_PORT", "group__mod__formitcore__statistics__api__ref.html#gga24c306edea86e2b66e8fa7befb1033e1aec6aaa2b0da51ddaefa969bd305e472a", null ]
     ] ],
     [ "Log", "group__mod__formitcore__statistics__api__ref.html#ga1f5d429e47d7a41a01d7c27b8b6c85b2", null ],
     [ "Log", "group__mod__formitcore__statistics__api__ref.html#ga044b4948493e2d80b6c843ad4b91629a", null ],

@@ -1,4 +1,4 @@
 var struct_form_it_1_1k_unfollow_camera_type =
 [
-    [ "message", "struct_form_it_1_1k_unfollow_camera_type.html#a6d36cebae97eb87f201e5efa71e376e9", null ]
+    [ "message", "struct_form_it_1_1k_unfollow_camera_type.html#af611df224891a169cf2721cde72cbe2d", null ]
 ];

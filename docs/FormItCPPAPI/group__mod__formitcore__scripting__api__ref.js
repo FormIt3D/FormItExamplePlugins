@@ -25,7 +25,6 @@ var group__mod__formitcore__scripting__api__ref =
     [ "RegisterFormItCoreShortcutsMethods", "group__mod__formitcore__scripting__api__ref.html#ga11b19eb4feb28873e17a2cf4904b81f2", null ],
     [ "RegisterFormItCoreSketchMaterialsMethods", "group__mod__formitcore__scripting__api__ref.html#ga0c0d2d38fdf5b203c604ce3d2db903f8", null ],
     [ "RegisterFormItCoreStatisticsMethods", "group__mod__formitcore__scripting__api__ref.html#ga57acc173cdae2284c958cf7a2a8b438e", null ],
-    [ "RegisterFormItCoreStringConversionMethods", "group__mod__formitcore__scripting__api__ref.html#gad62f056114922503b985c6a608537cdd", null ],
     [ "RegisterFormItCoreSunAndLocationMethods", "group__mod__formitcore__scripting__api__ref.html#ga6a996ec81356d8e5c7016ddf05e82923", null ],
     [ "RegisterFormItCoreToolsMethods", "group__mod__formitcore__scripting__api__ref.html#ga67371563fd5f113d4261205967f110fc", null ],
     [ "RegisterFormItCoreUIMethods", "group__mod__formitcore__scripting__api__ref.html#ga9ed76487c5b6cb2845383c2a447a50fe", null ],
