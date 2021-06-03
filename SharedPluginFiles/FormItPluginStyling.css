@@ -131,6 +131,7 @@ h1:first-of-type {
 
 /* button */
 .contentContainer input[type=button], input[type=submit] {
+    display: block;
     color: white;
     background-color: #4676a9;
     border: 1px solid #4676a9;
