@@ -1,5 +1,0 @@
-{
-    "PluginName": "Levels",
-    "Scripts": [ "PLUGINLOCATION/levels.js" ],
-    "Panel": "PLUGINLOCATION/levels.html"
-}
