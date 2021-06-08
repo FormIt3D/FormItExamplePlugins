@@ -13,6 +13,7 @@ var group__mod__jsapi__formit__model =
     [ "GetTotalGrossArea", "group__mod__jsapi__formit__model.html#ga03e4f8bbcb88956f5868ec0f2728a563", null ],
     [ "GetUnitType", "group__mod__jsapi__formit__model.html#ga32e46a572a4d1dc18acd5bf4f8fc4ed9", null ],
     [ "GetUnitTypeCurrent", "group__mod__jsapi__formit__model.html#ga5e72995c378babe5d8da3a8810566a59", null ],
+    [ "ImperialLengthToCurrentUnitLength", "group__mod__jsapi__formit__model.html#ga74655131f6f68780b513332899641024", null ],
     [ "IsImperialUnitType", "group__mod__jsapi__formit__model.html#ga3211519b565e8e7155f5557dd996e9a4", null ],
     [ "IsModified", "group__mod__jsapi__formit__model.html#ga62163e1ef3c59efa64ec0c98dc51f286", null ],
     [ "ObjectReportsAreaByLevel", "group__mod__jsapi__formit__model.html#gadd804bbc088cc550c7b69114749a5bfe", null ],

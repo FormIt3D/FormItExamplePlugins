@@ -2,6 +2,7 @@ var group__mod__jsapi__formit__sunandlocation =
 [
     [ "AddSatelliteImage", "group__mod__jsapi__formit__sunandlocation.html#ga5513c901349e76257501e63c81e786b8", null ],
     [ "GetDaylightSavingTime", "group__mod__jsapi__formit__sunandlocation.html#ga54a470782534521b0163ff49c3f113d6", null ],
+    [ "GetLightDirectionFromLocationData", "group__mod__jsapi__formit__sunandlocation.html#gac64733377457059edc125104cf2d3e1a", null ],
     [ "GetLocationDateTime", "group__mod__jsapi__formit__sunandlocation.html#ga759064c06cd8df76d13db78ead2138ee", null ],
     [ "GetProjectAddress", "group__mod__jsapi__formit__sunandlocation.html#ga394027be35be114ebb7da0fc712d51d4", null ],
     [ "GetSunRiseAndSet", "group__mod__jsapi__formit__sunandlocation.html#ga36df182df65191900ee168a7941b0892", null ],

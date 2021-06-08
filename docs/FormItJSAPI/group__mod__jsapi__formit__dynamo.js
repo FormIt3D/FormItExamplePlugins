@@ -8,6 +8,7 @@ var group__mod__jsapi__formit__dynamo =
     [ "GetDynamoGroupName", "group__mod__jsapi__formit__dynamo.html#gab605327878772e0f1dc31c713623e2c8", null ],
     [ "GetDynamoHistoryInCurrentContext", "group__mod__jsapi__formit__dynamo.html#gac3644619508b7cef47e527b35f656248", null ],
     [ "GetDynamoHistoryInPath", "group__mod__jsapi__formit__dynamo.html#ga82b187444160df5e9a93fdf3ed3486a4", null ],
+    [ "GetInputNode", "group__mod__jsapi__formit__dynamo.html#gae0c97739159dfaa819acd5fc26146811", null ],
     [ "GetInputNodes", "group__mod__jsapi__formit__dynamo.html#ga128549907cdb6d5d137b78e41b9cfcfa", null ],
     [ "GetSelectedDynamoHistory", "group__mod__jsapi__formit__dynamo.html#ga3025f0c4dc1f06eee90be06c47a28777", null ],
     [ "GetUuid", "group__mod__jsapi__formit__dynamo.html#ga161007f8b92664458bc21e2cf169cf46", null ],
