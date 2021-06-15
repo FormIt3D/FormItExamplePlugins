@@ -1,8 +1,5 @@
 var namespace_form_it_1_1_undo_management =
 [
-    [ "Detail", "namespace_form_it_1_1_undo_management_1_1_detail.html", [
-      [ "RegisterHistoryDeletionFunction", "group__mod__formitcore__undomanagement__detail__api__ref.html#gaa1a0c4b8a49deb8107b4c6b1a80d36c9", null ]
-    ] ],
     [ "HistoryID", "struct_form_it_1_1_undo_management_1_1_history_i_d.html", "struct_form_it_1_1_undo_management_1_1_history_i_d" ],
     [ "StateID", "struct_form_it_1_1_undo_management_1_1_state_i_d.html", "struct_form_it_1_1_undo_management_1_1_state_i_d" ],
     [ "JSStateID", "class_form_it_1_1_undo_management_1_1_j_s_state_i_d.html", "class_form_it_1_1_undo_management_1_1_j_s_state_i_d" ],

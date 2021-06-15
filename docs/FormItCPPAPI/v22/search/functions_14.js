@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['valuetostring_3452',['ValueToString',['../group__mod__formitcore__stringconversion__api__ref.html#ga5ace2d3fb44914ea750d906c5bd38b9f',1,'FormIt::StringConversion']]],
-  ['viewdownloadonly_3453',['ViewDownloadOnly',['../struct_form_it_1_1_forge_1_1_permissions_info.html#a6e204640206b29a7b751087e7c887746',1,'FormIt::Forge::PermissionsInfo']]],
-  ['viewdownloaduploadonly_3454',['ViewDownloadUploadOnly',['../struct_form_it_1_1_forge_1_1_permissions_info.html#a0216cab8f1440e2607da6bdd664c1d04',1,'FormIt::Forge::PermissionsInfo']]],
-  ['viewonly_3455',['ViewOnly',['../struct_form_it_1_1_forge_1_1_permissions_info.html#a3d0f14918e076e58fdb82cb3e112baee',1,'FormIt::Forge::PermissionsInfo']]],
-  ['volumevaluetostring_3456',['VolumeValueToString',['../group__mod__formitcore__stringconversion__api__ref.html#gaef923eaf5354b4c81ebbb6785e33e762',1,'FormIt::StringConversion']]]
+  ['_7eextensioninfo_2623',['~ExtensionInfo',['../struct_form_it_1_1_forge_1_1_extension_info.html#a585e704075d1852d05e1f5424984b33d',1,'FormIt::Forge::ExtensionInfo']]],
+  ['_7emessagelistener_2624',['~MessageListener',['../class_form_it_1_1_message_listener.html#af6ffe91cb6f3b3c956fdd6c74654cd72',1,'FormIt::MessageListener']]],
+  ['_7eresponse_2625',['~Response',['../class_form_it_1_1_web_1_1_response.html#ad6f31d36a3d9a60f61de3b3e1ddf2e42',1,'FormIt::Web::Response']]],
+  ['_7estatemanager_2626',['~StateManager',['../class_form_it_1_1_undo_management_1_1_state_manager.html#ad781151e41e3aae55b4be44bb3f8170b',1,'FormIt::UndoManagement::StateManager']]],
+  ['_7esuspend_2627',['~Suspend',['../class_form_it_1_1_undo_management_1_1_suspend.html#a0f8190f30aeacb695893b4761f853f8c',1,'FormIt::UndoManagement::Suspend']]]
 ];

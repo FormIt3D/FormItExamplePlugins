@@ -1,6 +1,6 @@
 var dir_0b94d82cec3da0705da2726aac24ca2b =
 [
-    [ "FormItCoreAPI.h", "_public_2_form_it_core_a_p_i_8h.html", null ],
+    [ "FormItCoreAPI.h", "_form_it_core_a_p_i_8h.html", null ],
     [ "FormItCoreAPIDLL.h", "_form_it_core_a_p_i_d_l_l_8h.html", "_form_it_core_a_p_i_d_l_l_8h" ],
     [ "FormItCoreExport.h", "_form_it_core_export_8h.html", "_form_it_core_export_8h" ],
     [ "FormItCoreMessages.h", "_form_it_core_messages_8h.html", "_form_it_core_messages_8h" ],

@@ -1,6 +1,5 @@
 var group__mod__formitcore__undomanagement__api__ref =
 [
-    [ "FormIt::UndoManagement::Detail API", "group__mod__formitcore__undomanagement__detail__api__ref.html", "group__mod__formitcore__undomanagement__detail__api__ref" ],
     [ "StateManager", "class_form_it_1_1_undo_management_1_1_state_manager.html", [
       [ "StateManager", "class_form_it_1_1_undo_management_1_1_state_manager.html#a3393762ad89ec7cc7ef3266b4bafec46", null ],
       [ "~StateManager", "class_form_it_1_1_undo_management_1_1_state_manager.html#ad781151e41e3aae55b4be44bb3f8170b", null ],

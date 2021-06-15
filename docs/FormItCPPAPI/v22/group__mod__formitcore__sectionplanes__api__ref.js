@@ -1,6 +1,5 @@
 var group__mod__formitcore__sectionplanes__api__ref =
 [
-    [ "FormIt::SectionPlanes::Attributes API", "group__mod__formitcore__sectionplanes__attributes__api__ref.html", "group__mod__formitcore__sectionplanes__attributes__api__ref" ],
     [ "Clear", "group__mod__formitcore__sectionplanes__api__ref.html#ga930bb3a3ba4f238e6fd1110968cb7189", null ],
     [ "EnablePocheColor", "group__mod__formitcore__sectionplanes__api__ref.html#ga9fa6b91a09abf965fae8061606e5a294", null ],
     [ "GetInstances", "group__mod__formitcore__sectionplanes__api__ref.html#gadd4e8be8a5ad7aafbe7100f099a20f48", null ],

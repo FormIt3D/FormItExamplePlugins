@@ -11,7 +11,7 @@ var modules =
     [ "FormIt::Shortcuts API", "group__mod__formitcore__shortcuts__api__ref.html", "group__mod__formitcore__shortcuts__api__ref" ],
     [ "FormIt::Tools API", "group__mod__formitcore__tools__api__ref.html", "group__mod__formitcore__tools__api__ref" ],
     [ "FormIt::Cameras API", "group__mod__formitcore__cameras__api__ref.html", "group__mod__formitcore__cameras__api__ref" ],
-    [ "FormIt::Graphics API", "group__mod__formitcore__graphics__api__ref.html", "group__mod__formitcore__graphics__api__ref" ],
+    [ "FormIt::Graphics API", "group__mod__formitcore__graphics__api__ref.html", null ],
     [ "FormIt::VisualStyles API", "group__mod__formitcore__visualstyles__api__ref.html", "group__mod__formitcore__visualstyles__api__ref" ],
     [ "FormIt::Selection API", "group__mod__formitcore__selection__api__ref.html", "group__mod__formitcore__selection__api__ref" ],
     [ "FormIt::Clipboard API", "group__mod__formitcore__clipboard__api__ref.html", "group__mod__formitcore__clipboard__api__ref" ],
