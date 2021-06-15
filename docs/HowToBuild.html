@@ -408,7 +408,7 @@
         <p class="categoryDetailBody">Starting with FormIt <b>v18.0</b>, you can implement versioning for your plugin in 3 simple steps:</p>
         <ul class="categoryDetailList">
             <li>Add a <i>versions.json</i> file to the root of your plugin directory</li>
-            <li>Specify each compatible FormIt version, and the directory containing that version, in <i>versions.json</i></li>
+            <li>Specify each compatible FormIt version, and the directory containing those plugin files, in <i>versions.json</i></li>
             <ul>
                 <li>Use the FormIt internal version number, or "Build Number", found in FormIt under Info > About.</li>
             </ul>
@@ -458,7 +458,17 @@
             </ul>
         </ul>
 
-        <p class="categoryDetailBody">It is also possible to use git branches/tags/commits for your paths.</p>
+        <p class="categoryDetailBody">It's also possible to use git branches/tags/commits for your paths.</p>
+
+        <p class="categoryDetailBody">If you're working with a pre-release or beta build of FormIt, and would like to test changes to a plugin that only works with the pre-release version:</p>
+
+        <ul class="categoryDetailList">
+            <li>Follow the steps above, except using the filename <i>versions_prerelease.json</i></li>
+            <li>If you commit <i>versions_prerelease</i> to your repo, you'll want to remove it when that pre-release version of FormIt is released</li>
+            <ul>
+                <li>Otherwise, future pre-release FormIt versions will be loading the plugin from a location that could be stale or intended for an older version</li>
+            </ul>
+        </ul>
 
     </div>
 </div>
