@@ -373,76 +373,83 @@
 </div>
 
 <div class="categoryBlock" id="SingleManifest">
-    <h2 class="categoryTitle">Using a single manifest file to create panel and toolbar plugins</h2>
+    <h2 class="categoryTitle">Creating a Combined HTML Panel and Toolbar with One Manifest</h2>
     <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">With a single <i>manifest.json</i>, you can initialize both a toolbar and an HTML panel, offering a variety of UI types and tools, all loaded from the same directory.</p>
         <pre>
-{
-    "PluginName": "Name...",
-    "PluginDescription": "Description...",
-    "ToolbarEntry": "index.html", <-- This is the "main entry" used to load/define all code used by your toolbar buttons
-    "ToolbarButtons": [ <-- Contains an entry for each toolbar button
-        {
-            "iconText": "TB",
-            "iconURL": "circle.png",
-            "command": "window.AlertFormItVersion" <-- Javascript that will run in the document defined by ToolbarEntry
-        },
-        {
-            "iconText": "CB",
-            "iconURL": "block.png",
-            "command": "window.CreateBlock"
-        }
-    ],
-    "Panel": "panel.html", <-- Panel entry point
-    "PanelIcon": "block.png" <-- Icon for your panel button
-}
+    {
+        "PluginName": "Name...",
+        "PluginDescription": "Description...",
+        "ToolbarEntry": "index.html", <-- This is the "main entry" used to load/define all code used by your toolbar buttons
+        "ToolbarButtons": [ <-- Contains an entry for each toolbar button
+            {
+                "iconText": "TB",
+                "iconURL": "circle.png",
+                "command": "window.AlertFormItVersion" <-- Javascript that will run in the document defined by ToolbarEntry
+            },
+            {
+                "iconText": "CB",
+                "iconURL": "block.png",
+                "command": "window.CreateBlock"
+            }
+        ],
+        "Panel": "panel.html", <-- Panel entry point
+        "PanelIcon": "block.png" <-- Icon for your panel button
+    }
         </pre>
-
-        See ToolbarPanelAsync for a working example. Note that this has only been tested using FormIt's async APIs.
     </div>
 </div>
 
 <div class="categoryBlock" id="VersioningPlugins">
-    <h2 class="categoryTitle">Versioning Plugins (Optional step)</h2>
+    <h2 class="categoryTitle">Versioning Plugins</h2>
     <div class="categoryDetailBlock">
-        <p class="categoryDetailBody">As you continue to develop and update your plugin, it is possible that you will want to version your plugin. The most probable reason for implempenting plugin versioning is because FormIt's APIs can change between versions. You'll want to update your plugin to make use of newer APIs, but also keep your plugin working for older FormIt clients.</p>
-        <p class="categoryDetailBody">Starting with FormIt <b>v18.0</b>, to implement versioning follow some simple steps:</p>
+        <p class="categoryDetailBody">As you develop and update your plugin, at some point, you may need to version the code. </p>
+        <p class="categoryDetailBody">For example, FormIt's APIs may change between releases, and while you may want the new version of your plugin to use new FormIt or WSM APIs, you'd also like to keep the plugin working in older clients.</p>
+        <p class="categoryDetailBody">Starting with FormIt <b>v18.0</b>, you can implement versioning for your plugin in 3 simple steps:</p>
         <ul class="categoryDetailList">
-            <li>Add a <i>versions.json</i> file to the root of your plugin directory/repository</li>
+            <li>Add a <i>versions.json</i> file to the root of your plugin directory</li>
+            <li>Specify each compatible FormIt version, and the directory containing that version, in <i>versions.json</i></li>
+            <ul>
+                <li>Use the FormIt internal version number, or "Build Number", found in FormIt under Info > About.</li>
+            </ul>
+            <li>Organize your plugin files and directories to match <i>versions.json</i></li>
         </ul>
-
-        <p class="categoryDetailBody"><i>versions.json</i> should have the following structure:</p>
+        <p class="categoryDetailBody">Your <i>versions.json</i> should look like this:</p>
         <p class="categoryDetailCode">
-            <pre>
-            [
-                {
-                    "version":{
-                        "major":18,
-                        "minor":0
-                    },
-                    "path":"myV18Path"
+        <pre>
+        [
+            {
+                "version":{
+                    "major":18,
+                    "minor":0
                 },
-                {
-                    "version":{
-                        "major":18,
-                        "minor":1
-                    },
-                    "path":"myV18.1Path"
-                }
-            ]
-            </pre>
+                "path":"v18_0"
+            },
+            {
+                "version":{
+                    "major":19,
+                    "minor":1
+                },
+                "path":"v19_0"
+            }
+        ]
+        </pre>
         </p>
 
-        <ul class="categoryDetailList">
-            <li>The above paths <i>myV18Path</i> and <i>myV18.1Path</i> must be valid subpaths from the root of your directory/repository. The easiest and most straight-forward way of doing this is to move your plugin code into sub directories. Using the above versions.json, a sample directory structure would be the following:</li>
+        <p></p>
+
+        <p class="categoryDetailBody">The above paths <i>v18_0</i> and <i>v19_0</i> must be valid subpaths from the root of your directory/repository. </p>
+
+        <p class="categoryDetailBody">A great way to handle this is to move your plugin code into subdirectories. Using the above <i>versions.json</i>, a directory structure would look like this:</p>
             <ul>
                 <li><b>versions.json</b> (file)</li>
-                <li><b>myV18Path</b> (directory)</li>
+                <li><b>v18_0</b> (directory)</li>
                 <ul>
                     <li><b>manifest.json</b> (file)</li>
                     <li><b>plugin.html</b> (file)</li>
                     <li><b>plugin.js</b> (file)</li>
                 </ul>
-                <li><b>myV18.1Path</b> (directory)</li>
+                <li><b>v19_0</b> (directory)</li>
                 <ul>
                     <li><b>manifest.json</b> (file)</li>
                     <li><b>plugin.html</b> (file)</li>
@@ -451,7 +458,7 @@
             </ul>
         </ul>
 
-        <p class="categoryDetailBody">It is also possible to use git branches/tags/commits for your paths. Those details won't be covered here, but it's enitrely possible to separate your plugins versions this way.</p>
+        <p class="categoryDetailBody">It is also possible to use git branches/tags/commits for your paths.</p>
 
     </div>
 </div>
