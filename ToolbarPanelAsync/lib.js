@@ -1,4 +1,4 @@
-import { FormIt, WSM } from '../SharedPluginFiles/FormIt.mod.js';
+import { FormIt, WSM } from 'https://formit3d.github.io/SharedPluginUtilities/FormIt.mod.js';
 
 class MyFormItLib {
     constructor() {
