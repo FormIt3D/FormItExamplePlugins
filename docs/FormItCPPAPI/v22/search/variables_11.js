@@ -1,23 +1,10 @@
 var searchData=
 [
-  ['savelocation_3102',['saveLocation',['../struct_form_it_1_1_save_information.html#a6ae9661b13c7ef0c283eb4ef00f2604a',1,'FormIt::SaveInformation']]],
-  ['savetype_3103',['saveType',['../struct_form_it_1_1_save_information.html#a1c39c76528f45f27285a521dbad00ccc',1,'FormIt::SaveInformation']]],
-  ['sfloorarearatio_3104',['sFloorAreaRatio',['../struct_form_it_1_1_selected_properties.html#af49cf72b822bc478fb25cc54c1ebce16',1,'FormIt::SelectedProperties']]],
-  ['sgrossarea_3105',['sGrossArea',['../struct_form_it_1_1_selected_properties.html#a2e71768dc72b2a549bafd8eac1ed3f83',1,'FormIt::SelectedProperties']]],
-  ['showedgeproperties_3106',['showEdgeProperties',['../struct_form_it_1_1_selected_properties.html#a287ad2d0edd5d4d7724589e1cfe3758e',1,'FormIt::SelectedProperties']]],
-  ['showfaceproperties_3107',['showFaceProperties',['../struct_form_it_1_1_selected_properties.html#af6a39bcd9ec0063ed7a8b3aa4884de66',1,'FormIt::SelectedProperties']]],
-  ['showgroupproperties_3108',['showGroupProperties',['../struct_form_it_1_1_selected_properties.html#aac41d5ed7a0a4be8c53754bb09dcf11f',1,'FormIt::SelectedProperties']]],
-  ['showimageproperties_3109',['showImageProperties',['../struct_form_it_1_1_selected_properties.html#a90d8437c43137b0e06eeb745dd11f894',1,'FormIt::SelectedProperties']]],
-  ['showinstanceproperties_3110',['showInstanceProperties',['../struct_form_it_1_1_selected_properties.html#aaea7242e46d4078d6032f85cf729e790',1,'FormIt::SelectedProperties']]],
-  ['showlayerproperties_3111',['showLayerProperties',['../struct_form_it_1_1_selected_properties.html#a61d591b959b55b11ec4ea89c0449b42e',1,'FormIt::SelectedProperties']]],
-  ['showlevels_3112',['showLevels',['../struct_form_it_1_1_selected_properties.html#a41c1445c49621f3692d3d5bf1b9de4a3',1,'FormIt::SelectedProperties']]],
-  ['showlinemeshproperties_3113',['showLineMeshProperties',['../struct_form_it_1_1_selected_properties.html#a77bc2eab434389729716917a1c51db4a',1,'FormIt::SelectedProperties']]],
-  ['showmeshproperties_3114',['showMeshProperties',['../struct_form_it_1_1_selected_properties.html#a942a964649f1c6c3408da15d72142851',1,'FormIt::SelectedProperties']]],
-  ['showobjectproperties_3115',['showObjectProperties',['../struct_form_it_1_1_selected_properties.html#af09fcf80f03c8900e19d57165211b8cf',1,'FormIt::SelectedProperties']]],
-  ['showpointmeshproperties_3116',['showPointMeshProperties',['../struct_form_it_1_1_selected_properties.html#a96abdb1e9df0cefbd1906231e69d27a5',1,'FormIt::SelectedProperties']]],
-  ['showsketchproperties_3117',['showSketchProperties',['../struct_form_it_1_1_selected_properties.html#af9c9d6fbfb1c861813d387db403a510c',1,'FormIt::SelectedProperties']]],
-  ['slocation_3118',['sLocation',['../struct_form_it_1_1_selected_properties.html#aaa3f5191160925befb86f64c17c7459a',1,'FormIt::SelectedProperties']]],
-  ['storage_5furi_3119',['storage_uri',['../struct_form_it_1_1_forge_1_1_file_info.html#ab337284bbcafd4b46631d51567937bbb',1,'FormIt::Forge::FileInfo']]],
-  ['surfacearea_3120',['surfaceArea',['../struct_form_it_1_1_selected_properties.html#ab0ab905ca7f635b0e0cf3ef4d017880a',1,'FormIt::SelectedProperties']]],
-  ['surfacetype_3121',['surfaceType',['../struct_form_it_1_1_selected_properties.html#a39f81a58660237e00461fc68ca709db2',1,'FormIt::SelectedProperties']]]
+  ['radius_4504',['radius',['../struct_form_it_1_1_selected_properties.html#a88ac54f27a032984a2642d9833c56d19',1,'FormIt::SelectedProperties']]],
+  ['revitfamilycategory_4505',['revitFamilyCategory',['../struct_form_it_1_1_selected_properties.html#aea6b7a9ea98f0fce8fe1e4a868614b84',1,'FormIt::SelectedProperties::revitFamilyCategory()'],['../struct_form_it_1_1_revit_family_information.html#a68e8cebd3859501d108f4868a23bfe05',1,'FormIt::RevitFamilyInformation::revitFamilyCategory()']]],
+  ['revitfamilyextradata_4506',['revitFamilyExtraData',['../struct_form_it_1_1_selected_properties.html#a1159fffac9209e614115c99df237439a',1,'FormIt::SelectedProperties::revitFamilyExtraData()'],['../struct_form_it_1_1_revit_family_information.html#aa9362cf53d7a23968c86157f75590488',1,'FormIt::RevitFamilyInformation::revitFamilyExtraData()']]],
+  ['revitfamilyinformation_5ffile_5fversion_4507',['REVITFAMILYINFORMATION_FILE_VERSION',['../group__mod__wsm__api__ref.html#ga0ec6f11ae868b7dedc65f20856f930fe',1,'WSM']]],
+  ['revitfamilyreference_4508',['revitFamilyReference',['../struct_form_it_1_1_selected_properties.html#a8815a15f6dd1596a31fd8fd4d2a7c964',1,'FormIt::SelectedProperties::revitFamilyReference()'],['../struct_form_it_1_1_revit_family_information.html#a476510c1a247ae24ba027ea44f98f821',1,'FormIt::RevitFamilyInformation::revitFamilyReference()']]],
+  ['revitfamilytype_4509',['revitFamilyType',['../struct_form_it_1_1_selected_properties.html#ab524f25e14b29c908f932e1246c67b92',1,'FormIt::SelectedProperties::revitFamilyType()'],['../struct_form_it_1_1_revit_family_information.html#ad274f2805487cbd0498b406ac6a95890',1,'FormIt::RevitFamilyInformation::revitFamilyType()']]],
+  ['rootfolderid_4510',['rootFolderId',['../struct_form_it_1_1_forge_1_1_project_info.html#aef26ed1ba7ec35c2e97b25ca81a29606',1,'FormIt::Forge::ProjectInfo']]]
 ];

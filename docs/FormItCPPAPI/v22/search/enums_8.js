@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['notificationtype_3179',['NotificationType',['../namespace_form_it.html#afb5a97d90622ea05a439c322a6bab524',1,'FormIt']]]
+  ['maptype_4607',['MapType',['../namespace_form_it_1_1_materials.html#a98cc1168f138ef43eb9acfa948c04132',1,'FormIt::Materials']]],
+  ['mousebutton_4608',['MouseButton',['../namespace_form_it.html#a5e28d883a270b91204f342d27bb8a140',1,'FormIt']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['guid_3142',['Guid',['../namespace_form_it_1_1_utils.html#abea037023a1a0342ef3c24f8415f52a4',1,'FormIt::Utils']]]
+  ['extensioninfoptr_4563',['ExtensionInfoPtr',['../namespace_form_it_1_1_forge.html#ada7b8e22702f1ac87521037dacff0715',1,'FormIt::Forge']]]
 ];

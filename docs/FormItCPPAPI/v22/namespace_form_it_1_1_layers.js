@@ -26,5 +26,6 @@ var namespace_form_it_1_1_layers =
     [ "SetLayerName", "group__mod__formitcore__layers__api__ref.html#ga7279462a17a1c5c8de4b33cea4d590b8", null ],
     [ "SetLayerPickable", "group__mod__formitcore__layers__api__ref.html#ga70f9ae9e8b1ebe930debe5de27a32b61", null ],
     [ "SetLayersVisibility", "group__mod__formitcore__layers__api__ref.html#ga918235c6c6bccbf95f709f8b0463b7ba", null ],
-    [ "SetLayerVisibility", "group__mod__formitcore__layers__api__ref.html#ga67c4049bc8d635682a0bb9fadb5d1f43", null ]
+    [ "SetLayerVisibility", "group__mod__formitcore__layers__api__ref.html#ga67c4049bc8d635682a0bb9fadb5d1f43", null ],
+    [ "SetLoadInRevit", "group__mod__formitcore__layers__api__ref.html#ga7d6370864741f8a903efe84a13753ed6", null ]
 ];

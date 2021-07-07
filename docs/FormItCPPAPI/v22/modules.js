@@ -15,7 +15,8 @@ var modules =
     [ "FormIt::VisualStyles API", "group__mod__formitcore__visualstyles__api__ref.html", "group__mod__formitcore__visualstyles__api__ref" ],
     [ "FormIt::Selection API", "group__mod__formitcore__selection__api__ref.html", "group__mod__formitcore__selection__api__ref" ],
     [ "FormIt::Clipboard API", "group__mod__formitcore__clipboard__api__ref.html", "group__mod__formitcore__clipboard__api__ref" ],
-    [ "FormIt::Analysis API", "group__mod__formitcore__analysis__api__ref.html", "group__mod__formitcore__analysis__api__ref" ],
+    [ "FormIt::Analysis API", "group__mod__formitcore__analysis__api__ref.html", null ],
+    [ "FormIt::Analysis::Solar API", "group__mod__formitcore__analysis__solar__api__ref.html", "group__mod__formitcore__analysis__solar__api__ref" ],
     [ "FormIt::Scenes API", "group__mod__formitcore__scenes__api__ref.html", "group__mod__formitcore__scenes__api__ref" ],
     [ "FormIt::Layers API", "group__mod__formitcore__layers__api__ref.html", "group__mod__formitcore__layers__api__ref" ],
     [ "FormIt::MaterialProvider API", "group__mod__formitcore__materialprovider__api__ref.html", "group__mod__formitcore__materialprovider__api__ref" ],
@@ -29,5 +30,7 @@ var modules =
     [ "FormIt::Dynamo API", "group__mod__formitcore__dynamo__api__ref.html", "group__mod__formitcore__dynamo__api__ref" ],
     [ "FormIt::SunAndLocation API", "group__mod__formitcore__sunandlocation__api__ref.html", "group__mod__formitcore__sunandlocation__api__ref" ],
     [ "FormIt::Utils API", "group__mod__formitcore__utils__api__ref.html", "group__mod__formitcore__utils__api__ref" ],
-    [ "FormIt Core Shortcut Command Strings", "group__mod__formit__core__sc.html", "group__mod__formit__core__sc" ]
+    [ "FormIt Core Shortcut Command Strings", "group__mod__formit__core__sc.html", "group__mod__formit__core__sc" ],
+    [ "WSM Core API Reference List", "group__mod__wsm__api__ref.html", "group__mod__wsm__api__ref" ],
+    [ "WSM::ApiProgress API", "group__mod__wsm__apiprogress__api__ref.html", "group__mod__wsm__apiprogress__api__ref" ]
 ];

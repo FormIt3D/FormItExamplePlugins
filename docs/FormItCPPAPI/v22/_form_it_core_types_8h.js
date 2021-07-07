@@ -52,7 +52,6 @@ var _form_it_core_types_8h =
     [ "MouseButton_ut", "_form_it_core_types_8h.html#a070a4c69d10ac6b57f29964561a44eeb", null ],
     [ "NotificationHandle", "_form_it_core_types_8h.html#a2209d1995b8c5fc8384dc879b82db4e3", null ],
     [ "SceneCaptureFlags_ut", "_form_it_core_types_8h.html#ae36359ffd1102f08bc0f3c182e67df7c", null ],
-    [ "string_t", "_form_it_core_types_8h.html#a7ae635a0a874a7404f431ecb9cd970c7", null ],
     [ "StringType", "_form_it_core_types_8h.html#ga728d668468cf8d2ac4469fa2cc15e132", null ],
     [ "SunLocationDataChange_t", "_form_it_core_types_8h.html#a8e78bd0089b7ea8d068d704759829f97", null ],
     [ "TBakeNodeToHistoryMap", "_form_it_core_types_8h.html#a146a29b640e255e214e911d53f47c9c4", null ],

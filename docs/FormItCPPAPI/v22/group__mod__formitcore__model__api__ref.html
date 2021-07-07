@@ -90,11 +90,12 @@ $(document).ready(function(){initNavTree('group__mod__formitcore__model__api__re
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
+<p>Get the id of the History of the main <a class="el" href="namespace_form_it_1_1_model.html">Model</a>. </p>
+<p><a class="el" href="group__mod__formitcore__model__api__ref.html#gae3694e869c6a25561870107870ac0363">GetHistoryID()</a> function. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae3694e869c6a25561870107870ac0363"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__model__api__ref.html#gae3694e869c6a25561870107870ac0363">FormIt::Model::GetHistoryID</a> ()</td></tr>
-<tr class="memdesc:gae3694e869c6a25561870107870ac0363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of the History of the main <a class="el" href="namespace_form_it_1_1_model.html">Model</a>.  <a href="group__mod__formitcore__model__api__ref.html#gae3694e869c6a25561870107870ac0363">More...</a><br /></td></tr>
 <tr class="separator:gae3694e869c6a25561870107870ac0363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga482e36f3600ae1b77423da11c0c12d9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__model__api__ref.html#ga482e36f3600ae1b77423da11c0c12d9d">FormIt::Model::GetMemorySize</a> (bool bCollapsedHistoryWithLiveObjsOnly)</td></tr>
 <tr class="memdesc:ga482e36f3600ae1b77423da11c0c12d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory size (in bytes) the History of the main <a class="el" href="namespace_form_it_1_1_model.html">Model</a> with all Object versions or collapsed history with only live Objects.  <a href="group__mod__formitcore__model__api__ref.html#ga482e36f3600ae1b77423da11c0c12d9d">More...</a><br /></td></tr>
@@ -218,8 +219,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the id of the History of the main <a class="el" href="namespace_form_it_1_1_model.html">Model</a>. </p>
-
 </div>
 </div>
 <a id="ga482e36f3600ae1b77423da11c0c12d9d"></a>
@@ -278,10 +277,9 @@ Functions</h2></td></tr>
 <p>Get the name for the given Object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History <br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td><br  />
- </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>ID of the given object </td></tr>
   </table>
   </dd>
 </dl>
@@ -485,10 +483,9 @@ Functions</h2></td></tr>
 <p>Get whether the Object reports area by level or not. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History <br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td><br  />
- </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>ID of the given object </td></tr>
   </table>
   </dd>
 </dl>
@@ -616,12 +613,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the name for the given Object. </p>
-<p>The Object type must be- WSM::nBodyType || WSM::nInstanceType || WSM::nMeshType || WSM::nLineMeshType || WSM::nPointMeshType </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The Object type must be- <a class="el" href="group__mod__wsm__api__ref.html#ggae8d1bf12a4f675d918f67e122218c71eaa74028309439475129451ac4b6bf59c0">WSM::nBodyType</a> || <a class="el" href="group__mod__wsm__api__ref.html#ggae8d1bf12a4f675d918f67e122218c71ea0fdebffb3f956cba21ece0907b648a71">WSM::nInstanceType</a> || <a class="el" href="group__mod__wsm__api__ref.html#ggae8d1bf12a4f675d918f67e122218c71eaa6e915d1835a4932e0a0f3393ce8b6dd">WSM::nMeshType</a> || <a class="el" href="group__mod__wsm__api__ref.html#ggae8d1bf12a4f675d918f67e122218c71ea3595261b24b2b6a4aa58ef1bf1a59b9d">WSM::nLineMeshType</a> || <a class="el" href="group__mod__wsm__api__ref.html#ggae8d1bf12a4f675d918f67e122218c71ead93d41ab4a463305d57710f9c00e79bd">WSM::nPointMeshType</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History <br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td><br  />
- </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>ID of the given object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the Object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">failOnWrongType</td><td>If any Object is of the wrong type, fail renaming all the Objects </td></tr>
   </table>

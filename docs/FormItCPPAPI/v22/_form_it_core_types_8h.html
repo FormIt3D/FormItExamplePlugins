@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('_form_it_core_types_8h.html',''); init
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">FormItCoreTypes.h File Reference</div>  </div>
@@ -96,7 +95,10 @@ $(document).ready(function(){initNavTree('_form_it_core_types_8h.html',''); init
 <div class="textblock"><p>Common/public <a class="el" href="namespace_form_it.html" title="Parent namespace that encompasses all FormIt core functionality.">FormIt</a> data types. </p>
 <p>If you add new enum types, be sure to run BuildAutomation/gen_api_typings_clang.py to re-generate formItCore/src/ScriptEngine/formItEnums.h. Eventually this file will be generated as part of the build process, but it needs to be manually generated for now.</p>
 <p>Declaration of <a class="el" href="namespace_form_it.html" title="Parent namespace that encompasses all FormIt core functionality.">FormIt</a> Core data types. </p>
-</div><div class="textblock"><code>#include &lt;array&gt;</code><br />
+</div><div class="textblock"><code>#include &quot;private/FY.h&quot;</code><br />
+<code>#include &quot;private/Geom.h&quot;</code><br />
+<code>#include &quot;private/Utility.h&quot;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
@@ -108,10 +110,10 @@ $(document).ready(function(){initNavTree('_form_it_core_types_8h.html',''); init
 <code>#include &quot;any/any.h&quot;</code><br />
 <code>#include &quot;json/json.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_form_it_core_export_8h.html">FormItCoreExport.h</a>&quot;</code><br />
-<code>#include &quot;WSM/Color.h&quot;</code><br />
-<code>#include &quot;WSM/ObjectHistoryID.h&quot;</code><br />
-<code>#include &quot;WSM/Point2d.h&quot;</code><br />
-<code>#include &quot;WSM/Vector2d.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_color_8h.html">WSM/Color.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_object_history_i_d_8h.html">WSM/ObjectHistoryID.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_point2d_8h.html">WSM/Point2d.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vector2d_8h.html">WSM/Vector2d.h</a>&quot;</code><br />
 <code>#include &quot;WSMUtils/utils.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -224,6 +226,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compact representation of BIM360 folder contents.  <a href="struct_form_it_1_1_forge_1_1_folder_contents.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1_forge_1_1_u_i_1_1_message.html">FormIt::Forge::UI::Message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+  <a href="struct_form_it_1_1_forge_1_1_u_i_1_1_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1_auto_save_1_1_config.html">FormIt::AutoSave::Config</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,14 +246,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_f_y"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_y.html">FY</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_geom"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_geom.html">Geom</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_w_s_m"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_w_s_m.html">WSM</a></td></tr>
-<tr class="memdesc:namespace_w_s_m"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward declaration <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceutility"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutility.html">utility</a></td></tr>
+<tr class="memdesc:namespace_w_s_m"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent namespace that encompasses all WSM core functionality. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_form_it"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html">FormIt</a></td></tr>
 <tr class="memdesc:namespace_form_it"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent namespace that encompasses all FormIt core functionality. <br /></td></tr>
@@ -289,8 +287,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7ae635a0a874a7404f431ecb9cd970c7"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutility.html#a7ae635a0a874a7404f431ecb9cd970c7">utility::string_t</a></td></tr>
-<tr class="separator:a7ae635a0a874a7404f431ecb9cd970c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a8b3e4cf04853d121312350b992727b6f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it_1_1_layers.html#a8b3e4cf04853d121312350b992727b6f">FormIt::Layers::LayerList</a> = std::vector&lt; LayerData &gt;</td></tr>
 <tr class="separator:a8b3e4cf04853d121312350b992727b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -870,7 +866,7 @@ Variables</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:af482041386a55281723db7743ddc12bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga728d668468cf8d2ac4469fa2cc15e132"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga728d668468cf8d2ac4469fa2cc15e132">FormIt::StringType</a> = <a class="el" href="namespaceutility.html#a7ae635a0a874a7404f431ecb9cd970c7">utility::string_t</a></td></tr>
+<tr class="memitem:ga728d668468cf8d2ac4469fa2cc15e132"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga728d668468cf8d2ac4469fa2cc15e132">FormIt::StringType</a> = utility::string_t</td></tr>
 <tr class="separator:ga728d668468cf8d2ac4469fa2cc15e132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2209d1995b8c5fc8384dc879b82db4e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a2209d1995b8c5fc8384dc879b82db4e3">FormIt::NotificationHandle</a> = std::shared_ptr&lt; NotificationHandleType &gt;</td></tr>
 <tr class="separator:a2209d1995b8c5fc8384dc879b82db4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -880,11 +876,11 @@ Variables</h2></td></tr>
 <tr class="separator:a070a4c69d10ac6b57f29964561a44eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e78bd0089b7ea8d068d704759829f97"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a8e78bd0089b7ea8d068d704759829f97">FormIt::SunLocationDataChange_t</a> = std::underlying_type&lt; SunLocationDataChange &gt;::type</td></tr>
 <tr class="separator:a8e78bd0089b7ea8d068d704759829f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac31e9fff404020697e67ac8ea305b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a8ac31e9fff404020697e67ac8ea305b7">FormIt::AllImageData</a> = std::vector&lt; std::pair&lt; WSM::ObjectHistoryID, <a class="el" href="class_form_it_1_1_image_data.html">FormIt::ImageData</a> &gt; &gt;</td></tr>
+<tr class="memitem:a8ac31e9fff404020697e67ac8ea305b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a8ac31e9fff404020697e67ac8ea305b7">FormIt::AllImageData</a> = std::vector&lt; std::pair&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a>, <a class="el" href="class_form_it_1_1_image_data.html">FormIt::ImageData</a> &gt; &gt;</td></tr>
 <tr class="separator:a8ac31e9fff404020697e67ac8ea305b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae36359ffd1102f08bc0f3c182e67df7c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#ae36359ffd1102f08bc0f3c182e67df7c">FormIt::SceneCaptureFlags_ut</a> = std::underlying_type&lt; SceneCaptureFlags &gt;::type</td></tr>
 <tr class="separator:ae36359ffd1102f08bc0f3c182e67df7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">FormIt::ModelChangedCallback</a> = std::function&lt; void(WSM::ModelChangeData const &amp;)&gt;</td></tr>
+<tr class="memitem:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">FormIt::ModelChangedCallback</a> = std::function&lt; void(<a class="el" href="struct_w_s_m_1_1_model_change_data.html">WSM::ModelChangeData</a> const &amp;)&gt;</td></tr>
 <tr class="memdesc:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_form_it_1_1_model.html">Model</a> changed callback type.  <a href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">More...</a><br /></td></tr>
 <tr class="separator:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325c64a125ec4f28e4a38840a1e4c60e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a325c64a125ec4f28e4a38840a1e4c60e">FormIt::enable_bitmask_operators</a> (SolidRendererFlags)</td></tr>

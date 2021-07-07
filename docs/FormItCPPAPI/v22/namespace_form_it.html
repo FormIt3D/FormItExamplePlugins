@@ -264,6 +264,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_layer_name_changed_type.html">kLayerNameChangedType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of a layer was changed. Payload : old name - new name pair.  <a href="struct_form_it_1_1k_layer_name_changed_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_layer_load_in_revit_changed_type.html">kLayerLoadInRevitChangedType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in Revit flag changed. Payload : layer id - load pair.  <a href="struct_form_it_1_1k_layer_load_in_revit_changed_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1_material_manager_changed_data.html">MaterialManagerChangedData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material messages <a class="el" href="namespace_form_it_1_1_materials.html">Materials</a> were added, changed, removed Payload : MaterialChangeData.  <a href="struct_form_it_1_1_material_manager_changed_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,10 +304,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_form_it_1_1k_material_changed_type.html" title="FormIt::kMaterialChangedType struct.">FormIt::kMaterialChangedType</a> struct.  <a href="struct_form_it_1_1k_material_changed_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_model_changed_type.html">kModelChangedType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 3d scene in <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> was changed somehow.  <a href="struct_form_it_1_1k_model_changed_type.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 3d scene in <a class="el" href="namespace_w_s_m.html" title="Parent namespace that encompasses all WSM core functionality.">WSM</a> was changed somehow.  <a href="struct_form_it_1_1k_model_changed_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_history_deleted_for_model_tree_only_type.html">kHistoryDeletedForModelTreeOnlyType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hack to make sure the model tree is updated correctly since we cannot use kModelChanged as WSM::ModelChangeData::Type::DeletedHistory is not broadcast (instead DeleteHistoryCaches is used).  <a href="struct_form_it_1_1k_history_deleted_for_model_tree_only_type.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hack to make sure the model tree is updated correctly since we cannot use kModelChanged as <a class="el" href="struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087eae40d6f2a797a5a2311b7cb215e95c6f9" title="A history has been deleted, including a temporary history.">WSM::ModelChangeData::Type::DeletedHistory</a> is not broadcast (instead DeleteHistoryCaches is used).  <a href="struct_form_it_1_1k_history_deleted_for_model_tree_only_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_new_model_requested_type.html">kNewModelRequestedType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a new model.  <a href="struct_form_it_1_1k_new_model_requested_type.html#details">More...</a><br /></td></tr>
@@ -658,11 +661,11 @@ Functions</h2></td></tr>
 <tr class="memitem:gab844337cae47c081146e5ca05817c45d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#gab844337cae47c081146e5ca05817c45d">GetVersion</a> ()</td></tr>
 <tr class="memdesc:gab844337cae47c081146e5ca05817c45d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__mod__formitcore__api__ref.html#gab844337cae47c081146e5ca05817c45d" title="GetVersion() function.">GetVersion()</a> function.  <a href="group__mod__formitcore__api__ref.html#gab844337cae47c081146e5ca05817c45d">More...</a><br /></td></tr>
 <tr class="separator:gab844337cae47c081146e5ca05817c45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27d41bb8fa536414a624b9fc57b2be4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga27d41bb8fa536414a624b9fc57b2be4a">FindLatestVersion</a> (const std::string &amp;versionJsonString)</td></tr>
-<tr class="memdesc:ga27d41bb8fa536414a624b9fc57b2be4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest version string from the given version.json.  <a href="group__mod__formitcore__api__ref.html#ga27d41bb8fa536414a624b9fc57b2be4a">More...</a><br /></td></tr>
-<tr class="separator:ga27d41bb8fa536414a624b9fc57b2be4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a6daca829f13ead3dea5dde985eae5d"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d">SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=WSM::INVALID_ID)</td></tr>
-<tr class="memdesc:ga8a6daca829f13ead3dea5dde985eae5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> until ResumeMessaging is called.  <a href="group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d">More...</a><br /></td></tr>
+<tr class="memitem:ga7d27f9a59681c5d553fbc47d28b5506e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga7d27f9a59681c5d553fbc47d28b5506e">FindLatestVersion</a> (const json &amp;versionJson, <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a> const &amp;testVersion={})</td></tr>
+<tr class="memdesc:ga7d27f9a59681c5d553fbc47d28b5506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest version string from the given version.json.  <a href="group__mod__formitcore__api__ref.html#ga7d27f9a59681c5d553fbc47d28b5506e">More...</a><br /></td></tr>
+<tr class="separator:ga7d27f9a59681c5d553fbc47d28b5506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a6daca829f13ead3dea5dde985eae5d"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d">SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=<a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a>)</td></tr>
+<tr class="memdesc:ga8a6daca829f13ead3dea5dde985eae5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="Parent namespace that encompasses all WSM core functionality.">WSM</a> until ResumeMessaging is called.  <a href="group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d">More...</a><br /></td></tr>
 <tr class="separator:ga8a6daca829f13ead3dea5dde985eae5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga594bf1f5fa1a78cfb382d496b5fc3ebf"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga594bf1f5fa1a78cfb382d496b5fc3ebf">ResumeMessaging</a> ()</td></tr>
 <tr class="memdesc:ga594bf1f5fa1a78cfb382d496b5fc3ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume messaging.  <a href="group__mod__formitcore__api__ref.html#ga594bf1f5fa1a78cfb382d496b5fc3ebf">More...</a><br /></td></tr>
@@ -721,6 +724,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9afbecb9566e2b1170429b6c483185a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga9afbecb9566e2b1170429b6c483185a1">ImportToGroup</a> (std::string const &amp;fileType, std::string const &amp;filePath)</td></tr>
 <tr class="memdesc:ga9afbecb9566e2b1170429b6c483185a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import to a Group we need to pass in the file type we need to pass in the filepath this return a reference ID.  <a href="group__mod__formitcore__api__ref.html#ga9afbecb9566e2b1170429b6c483185a1">More...</a><br /></td></tr>
 <tr class="separator:ga9afbecb9566e2b1170429b6c483185a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3aaebbbbccbd37af32d9d2754dcdb91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#gad3aaebbbbccbd37af32d9d2754dcdb91">SetLocaleForWeb</a> (std::string const &amp;nameCode)</td></tr>
+<tr class="memdesc:gad3aaebbbbccbd37af32d9d2754dcdb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the local for web we need to pass in the localtype this return a void.  <a href="group__mod__formitcore__api__ref.html#gad3aaebbbbccbd37af32d9d2754dcdb91">More...</a><br /></td></tr>
+<tr class="separator:gad3aaebbbbccbd37af32d9d2754dcdb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -1059,6 +1065,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6fa8e04af2470aa04e44a5f017383294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa66b1db40024ddfadd3f2d852037ea4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_layer_name_changed_type.html">kLayerNameChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#afa66b1db40024ddfadd3f2d852037ea4">kLayerNameChanged</a></td></tr>
 <tr class="separator:afa66b1db40024ddfadd3f2d852037ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53e4fd2f9f0f6d2f31710f6adf30ebd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_layer_load_in_revit_changed_type.html">kLayerLoadInRevitChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#ab53e4fd2f9f0f6d2f31710f6adf30ebd">kLayerLoadInRevitChanged</a></td></tr>
+<tr class="separator:ab53e4fd2f9f0f6d2f31710f6adf30ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af43862314e17fb39c2ea12494bda7b91"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_material_manager_changed_type.html">kMaterialManagerChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#af43862314e17fb39c2ea12494bda7b91">kMaterialManagerChanged</a></td></tr>
 <tr class="separator:af43862314e17fb39c2ea12494bda7b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac47a2bb43b63ddbe6318d84a01c5ee23"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_material_data_changed_type.html">kMaterialDataChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#ac47a2bb43b63ddbe6318d84a01c5ee23">kMaterialDataChanged</a></td></tr>
@@ -1629,7 +1637,7 @@ Variables</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:af482041386a55281723db7743ddc12bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga728d668468cf8d2ac4469fa2cc15e132"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga728d668468cf8d2ac4469fa2cc15e132">StringType</a> = <a class="el" href="namespaceutility.html#a7ae635a0a874a7404f431ecb9cd970c7">utility::string_t</a></td></tr>
+<tr class="memitem:ga728d668468cf8d2ac4469fa2cc15e132"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga728d668468cf8d2ac4469fa2cc15e132">StringType</a> = utility::string_t</td></tr>
 <tr class="separator:ga728d668468cf8d2ac4469fa2cc15e132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2209d1995b8c5fc8384dc879b82db4e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a2209d1995b8c5fc8384dc879b82db4e3">NotificationHandle</a> = std::shared_ptr&lt; <a class="el" href="struct_form_it_1_1_notification_handle_type.html">NotificationHandleType</a> &gt;</td></tr>
 <tr class="separator:a2209d1995b8c5fc8384dc879b82db4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1639,11 +1647,11 @@ Variables</h2></td></tr>
 <tr class="separator:a070a4c69d10ac6b57f29964561a44eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e78bd0089b7ea8d068d704759829f97"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a8e78bd0089b7ea8d068d704759829f97">SunLocationDataChange_t</a> = std::underlying_type&lt; <a class="el" href="namespace_form_it.html#ac92ccff1b6552ab33b6c656441fa3434">SunLocationDataChange</a> &gt;::type</td></tr>
 <tr class="separator:a8e78bd0089b7ea8d068d704759829f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac31e9fff404020697e67ac8ea305b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a8ac31e9fff404020697e67ac8ea305b7">AllImageData</a> = std::vector&lt; std::pair&lt; WSM::ObjectHistoryID, <a class="el" href="class_form_it_1_1_image_data.html">FormIt::ImageData</a> &gt; &gt;</td></tr>
+<tr class="memitem:a8ac31e9fff404020697e67ac8ea305b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a8ac31e9fff404020697e67ac8ea305b7">AllImageData</a> = std::vector&lt; std::pair&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a>, <a class="el" href="class_form_it_1_1_image_data.html">FormIt::ImageData</a> &gt; &gt;</td></tr>
 <tr class="separator:a8ac31e9fff404020697e67ac8ea305b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae36359ffd1102f08bc0f3c182e67df7c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#ae36359ffd1102f08bc0f3c182e67df7c">SceneCaptureFlags_ut</a> = std::underlying_type&lt; <a class="el" href="namespace_form_it.html#a049dd1e3c36534ebfad605a24eaab369">SceneCaptureFlags</a> &gt;::type</td></tr>
 <tr class="separator:ae36359ffd1102f08bc0f3c182e67df7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">ModelChangedCallback</a> = std::function&lt; void(WSM::ModelChangeData const &amp;)&gt;</td></tr>
+<tr class="memitem:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">ModelChangedCallback</a> = std::function&lt; void(<a class="el" href="struct_w_s_m_1_1_model_change_data.html">WSM::ModelChangeData</a> const &amp;)&gt;</td></tr>
 <tr class="memdesc:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_form_it_1_1_model.html">Model</a> changed callback type.  <a href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">More...</a><br /></td></tr>
 <tr class="separator:adb7cff1c089d1e398dcdf92a6f7dad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325c64a125ec4f28e4a38840a1e4c60e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a325c64a125ec4f28e4a38840a1e4c60e">enable_bitmask_operators</a> (<a class="el" href="namespace_form_it.html#ad0fceef1fc4cf365114b930d41b25313">SolidRendererFlags</a>)</td></tr>
@@ -1667,7 +1675,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespace_form_it.html#a8ac31e9fff404020697e67ac8ea305b7">FormIt::AllImageData</a> = typedef std::vector&lt;std::pair&lt;WSM::ObjectHistoryID, <a class="el" href="class_form_it_1_1_image_data.html">FormIt::ImageData</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="namespace_form_it.html#a8ac31e9fff404020697e67ac8ea305b7">FormIt::AllImageData</a> = typedef std::vector&lt;std::pair&lt;<a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a>, <a class="el" href="class_form_it_1_1_image_data.html">FormIt::ImageData</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1695,7 +1703,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">FormIt::ModelChangedCallback</a> = typedef std::function&lt;void(WSM::ModelChangeData const &amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="namespace_form_it.html#adb7cff1c089d1e398dcdf92a6f7dad74">FormIt::ModelChangedCallback</a> = typedef std::function&lt;void(<a class="el" href="struct_w_s_m_1_1_model_change_data.html">WSM::ModelChangeData</a> const &amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3538,6 +3546,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="struct_form_it_1_1k_invalidate_edges_type.html">kInvalidateEdgesType</a> FormIt::kInvalidateEdges</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab53e4fd2f9f0f6d2f31710f6adf30ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53e4fd2f9f0f6d2f31710f6adf30ebd">&#9670;&nbsp;</a></span>kLayerLoadInRevitChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_form_it_1_1k_layer_load_in_revit_changed_type.html">kLayerLoadInRevitChangedType</a> FormIt::kLayerLoadInRevitChanged</td>
         </tr>
       </table>
   </td>

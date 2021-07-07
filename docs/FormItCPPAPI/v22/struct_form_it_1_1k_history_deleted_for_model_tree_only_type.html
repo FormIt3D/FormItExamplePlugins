@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('struct_form_it_1_1k_history_deleted_fo
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>This is a hack to make sure the model tree is updated correctly since we cannot use kModelChanged as WSM::ModelChangeData::Type::DeletedHistory is not broadcast (instead DeleteHistoryCaches is used). </p>
+<div class="textblock"><p>This is a hack to make sure the model tree is updated correctly since we cannot use kModelChanged as <a class="el" href="struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087eae40d6f2a797a5a2311b7cb215e95c6f9" title="A history has been deleted, including a temporary history.">WSM::ModelChangeData::Type::DeletedHistory</a> is not broadcast (instead DeleteHistoryCaches is used). </p>
 <p>Either we need an API in core to expose the History cache mechanism or we need to broadcast the DeletedHistory message. Payload: History ID </p>
 </div>
 <p><code>#include &lt;FormItCoreMessages.h&gt;</code></p>

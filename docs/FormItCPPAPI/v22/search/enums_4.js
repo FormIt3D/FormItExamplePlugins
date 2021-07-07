@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['forgemode_3172',['ForgeMode',['../namespace_form_it_1_1_forge.html#a0bc66485e36ef288744f82dcc3a06aa8',1,'FormIt::Forge']]],
-  ['formitdialogbox_3173',['FormItDialogBox',['../namespace_form_it_1_1_u_i.html#aa704b5c358cb5d97f019d818735226c7',1,'FormIt::UI']]]
+  ['emessagetype_4600',['eMessageType',['../struct_form_it_1_1_collaboration_1_1_chat_message.html#ac51038e8c8d6145cedb085dcad77ce4a',1,'FormIt::Collaboration::ChatMessage']]],
+  ['errorcode_4601',['ErrorCode',['../namespace_form_it_1_1_forge.html#ab6a3413ca45ae84ab53747e11a07613c',1,'FormIt::Forge']]]
 ];

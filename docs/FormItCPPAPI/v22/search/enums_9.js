@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['readresult_3180',['ReadResult',['../namespace_form_it.html#a62564ed70889551494fa5d0a33508598',1,'FormIt']]],
-  ['requestmethod_3181',['RequestMethod',['../namespace_form_it_1_1_web.html#a9e4c95d1533848c22e126e6b112ad948',1,'FormIt::Web']]],
-  ['respformat_3182',['RespFormat',['../namespace_form_it_1_1_entitlement.html#ab5d268fd974daf198b31cf3ddb9d5d62',1,'FormIt::Entitlement']]],
-  ['restoreresult_3183',['RestoreResult',['../namespace_form_it.html#a12c181b422f1e223cc4c873c0bb37fb5',1,'FormIt']]]
+  ['nconvexity_4609',['nConvexity',['../group__mod__wsm__api__ref.html#gaf832f61f844671e84039deb215aec27b',1,'WSM']]],
+  ['ncopybehavior_4610',['nCopyBehavior',['../group__mod__wsm__api__ref.html#ga3a2ac5060e38411b98f6f43131b6c1de',1,'WSM']]],
+  ['nfiletype_4611',['nFileType',['../group__mod__wsm__api__ref.html#ga1cf03f9a3f3931d88af1f06cd1cbef68',1,'WSM']]],
+  ['nhistorycomparison_4612',['nHistoryComparison',['../group__mod__wsm__api__ref.html#gaea4a55caadb723f20975cdd6c0cd7d63',1,'WSM']]],
+  ['nloadingoptions_4613',['nLoadingOptions',['../group__mod__wsm__api__ref.html#ga8836358feedefa4fb3e5f53b7e749bd8',1,'WSM']]],
+  ['nobjecttype_4614',['nObjectType',['../group__mod__wsm__api__ref.html#gae8d1bf12a4f675d918f67e122218c71e',1,'WSM']]],
+  ['notificationtype_4615',['NotificationType',['../namespace_form_it.html#afb5a97d90622ea05a439c322a6bab524',1,'FormIt']]],
+  ['nresulttype_4616',['nResultType',['../class_w_s_m_1_1_result.html#a29e91da65625444ebb8ff349c0fa864b',1,'WSM::Result']]]
 ];

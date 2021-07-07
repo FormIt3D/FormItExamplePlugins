@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['maptype_3177',['MapType',['../namespace_form_it_1_1_materials.html#a98cc1168f138ef43eb9acfa948c04132',1,'FormIt::Materials']]],
-  ['mousebutton_3178',['MouseButton',['../namespace_form_it.html#a5e28d883a270b91204f342d27bb8a140',1,'FormIt']]]
+  ['librarytype_4605',['LibraryType',['../namespace_form_it.html#a1824ffee65a9c2c96c287a38177fccf8',1,'FormIt']]],
+  ['linearformattype_4606',['LinearFormatType',['../namespace_form_it.html#afded7d8096776433af4a08262f967fe1',1,'FormIt']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extensioninfoptr_3141',['ExtensionInfoPtr',['../namespace_form_it_1_1_forge.html#ada7b8e22702f1ac87521037dacff0715',1,'FormIt::Forge']]]
+  ['callbacktype_4562',['CallbackType',['../group__mod__wsm__api__ref.html#ga13ad45e35c66129a733a0c1df2652ecc',1,'WSM']]]
 ];

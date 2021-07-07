@@ -11,6 +11,7 @@ var group__mod__formitcore__sketchmaterials__api__ref =
     [ "HashValueForMaterialData", "group__mod__formitcore__sketchmaterials__api__ref.html#gaa56ecf7b50a91c01d9e7071e2d78199a", null ],
     [ "IsMaterialUsed", "group__mod__formitcore__sketchmaterials__api__ref.html#ga3def991c69b7a485c29e8ca15afa1e02", null ],
     [ "IsValidObjectForMaterialAssignment", "group__mod__formitcore__sketchmaterials__api__ref.html#ga83a9dd0bed87b5c87a6a57234154501a", null ],
+    [ "RearrangeMaterials", "group__mod__formitcore__sketchmaterials__api__ref.html#ga0953e74783a312b86825328541ba8d73", null ],
     [ "RemoveMaterialsForHistory", "group__mod__formitcore__sketchmaterials__api__ref.html#gafc588b8dd4117c1da3c79f5f96d49b43", null ],
     [ "SetDefaultMaterialData", "group__mod__formitcore__sketchmaterials__api__ref.html#ga017b7c43276c1b7575c3e255c41fdf8e", null ],
     [ "UpdateMaterialFromData", "group__mod__formitcore__sketchmaterials__api__ref.html#gaa5460616bde0c466e27eb0b972801c46", null ],
