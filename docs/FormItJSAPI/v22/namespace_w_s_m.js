@@ -7,7 +7,7 @@ var namespace_w_s_m =
       [ "NewModel", "group__mod__jsapi__wsm__apphelper.html#gabe55d7ef520c358f742e80c3639fc3d7", null ]
     ] ],
     [ "Atf", "namespace_w_s_m_1_1_atf.html", [
-      [ "APILoadWithATF", "group__mod__jsapi__wsm__atf.html#ga83f7ab7ade2e27368a2910d5c9d591e5", null ],
+      [ "APILoadWithATF", "group__mod__jsapi__wsm__atf.html#gaac0d14b5b67faf54e6849abcfee6e2e8", null ],
       [ "APITestAtfLoopBack", "group__mod__jsapi__wsm__atf.html#ga26a687d08e20893768466c0285d320ec", null ],
       [ "APIWriteWithATF", "group__mod__jsapi__wsm__atf.html#gad77d4130a637a6b6e3065b82507ddd66", null ]
     ] ],
@@ -161,6 +161,7 @@ var namespace_w_s_m =
       [ "IsObjectNotPickableByPath", "group__mod__jsapi__wsm__utils.html#ga1de03d671e2d922513e543dacdc53188", null ],
       [ "IsObjectType", "group__mod__jsapi__wsm__utils.html#ga5bbe659d41dc1fadbe0250e51b9b30e9", null ],
       [ "IsOnCurveJunction", "group__mod__jsapi__wsm__utils.html#ga20abe862d9f2213b742c3646062d224b", null ],
+      [ "IsOwnerOf", "group__mod__jsapi__wsm__utils.html#gad1b86638215a864b0ffe266617abde4e", null ],
       [ "IsSelectAllConnected", "group__mod__jsapi__wsm__utils.html#ga99ac89e69ed7b1c7473b530ac6e1c0c5", null ],
       [ "IsSilhouetteEdge", "group__mod__jsapi__wsm__utils.html#gabc0c58d06e109b77a0baf72bff152fca", null ],
       [ "IsSmooth", "group__mod__jsapi__wsm__utils.html#ga079ff4b3eb482d8450fe8c4c71c388ec", null ],
@@ -184,7 +185,6 @@ var namespace_w_s_m =
       [ "PickRayFromLine", "group__mod__jsapi__wsm__utils.html#gaed910eafd0ee4472c60892e1a89f3308", null ],
       [ "PickRayFromNormalizedScreenPoint", "group__mod__jsapi__wsm__utils.html#gaf3674a94f6873b13197176600b1fc96f", null ],
       [ "RayFireWithObjects", "group__mod__jsapi__wsm__utils.html#ga8a632feb69cef2d2d48ffcd210a79496", null ],
-      [ "RemoveHiddenObjects", "group__mod__jsapi__wsm__utils.html#ga11d30aecaf9423c49514402e308e3c6d", null ],
       [ "SelectionFromGroupInstancePathArray", "group__mod__jsapi__wsm__utils.html#ga9a893a29590cc2aa975993b94a19922c", null ],
       [ "SelectionToGroupInstancePath", "group__mod__jsapi__wsm__utils.html#gaade6498a5824849cee4688e3b794943f", null ],
       [ "SelectionToGroupInstancePathArray", "group__mod__jsapi__wsm__utils.html#ga18d471589c4a76d066daf2d611db5612", null ],
@@ -340,7 +340,7 @@ var namespace_w_s_m =
     [ "APIGetVertexPoint3dReadOnly", "group__mod__jsapi__wsm.html#ga3e6b35698559c932f70a8e10f77e545b", null ],
     [ "APIImprint", "group__mod__jsapi__wsm.html#ga9e085db0adb90e8b4503e7dd9c90e000", null ],
     [ "APIImprintWithPlane", "group__mod__jsapi__wsm.html#ga3594f8526625545bd804a2255f70dda1", null ],
-    [ "APIIntersectsNegativeSideOfPlanesReadOnly", "group__mod__jsapi__wsm.html#ga5d372b8cb8ae66b18fca67ab1ed44f15", null ],
+    [ "APIIntersectsNegativeSideOfPlanesReadOnly", "group__mod__jsapi__wsm.html#ga8add2079cfabbe6e727c457bba100aa1", null ],
     [ "APIIsEdgeManifoldReadOnly", "group__mod__jsapi__wsm.html#ga0bd2d39f0c8a4f0368bd3bb1ed954571", null ],
     [ "APIIsEdgeMergeableReadOnly", "group__mod__jsapi__wsm.html#gaf2ec27603554a90fd734a8d456ad004b", null ],
     [ "APIIsEdgeOnCircleReadOnly", "group__mod__jsapi__wsm.html#gaf1c47a2c2287482de6dc93a5ecc82fb7", null ],
@@ -386,7 +386,7 @@ var namespace_w_s_m =
     [ "APIPointMeshGetPointsOnNegativeSideOfPlanesReadOnly", "group__mod__jsapi__wsm.html#gaf3e53f69e39e47bf4e7dd6e327a1242e", null ],
     [ "APIPushMirrorTransformationsOntoGeometry", "group__mod__jsapi__wsm.html#ga3ac7ad17f2f3cc768a5aec9efb7bee36", null ],
     [ "APIRayFireReadOnly", "group__mod__jsapi__wsm.html#gadbc4997a662997cc60571981ecbb8871", null ],
-    [ "APIRayFireSortedReadOnly", "group__mod__jsapi__wsm.html#gaaf956387bd0b40eb97221eb2e206b5a9", null ],
+    [ "APIRayFireSortedReadOnly", "group__mod__jsapi__wsm.html#gabaf482c6f3f976cf8c55b5d9675cdcda", null ],
     [ "APIRedoHistory", "group__mod__jsapi__wsm.html#ga6e228044dab5d8a6b384a90e6e38d48a", null ],
     [ "APIRedoHistoryToDelta", "group__mod__jsapi__wsm.html#gade1ae8024cae4bf56908e034c42ccb57", null ],
     [ "APIRegisterProgressCallbacksReadOnly", "group__mod__jsapi__wsm.html#gaa54ac0b15482942b065917cb1bab73da", null ],

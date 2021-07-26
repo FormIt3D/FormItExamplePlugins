@@ -131,6 +131,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5804f9349bff575fd7ffc1784fabcdaa"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga5804f9349bff575fd7ffc1784fabcdaa">FormIt.SketchMaterials.UpdateMaterialFromParameters</a> (materialID, parameters)</td></tr>
 <tr class="memdesc:ga5804f9349bff575fd7ffc1784fabcdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the firefly material with the basic parameters.  <a href="group__mod__jsapi__formit__sketchmaterials.html#ga5804f9349bff575fd7ffc1784fabcdaa">More...</a><br /></td></tr>
 <tr class="separator:ga5804f9349bff575fd7ffc1784fabcdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bc67f8591d52209d091b64a219626bb"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sketchmaterials.html#ga7bc67f8591d52209d091b64a219626bb">FormIt.SketchMaterials.RearrangeMaterials</a> (materialIds, materialBeforeOrAfterId, insertAfter)</td></tr>
+<tr class="memdesc:ga7bc67f8591d52209d091b64a219626bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rearrange the materials to be put before or after the given other material.  <a href="group__mod__jsapi__formit__sketchmaterials.html#ga7bc67f8591d52209d091b64a219626bb">More...</a><br /></td></tr>
+<tr class="separator:ga7bc67f8591d52209d091b64a219626bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga2011cf6b1d590161799974db18f79752"></a>
@@ -446,6 +449,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga7bc67f8591d52209d091b64a219626bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bc67f8591d52209d091b64a219626bb">&#9670;&nbsp;</a></span>RearrangeMaterials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.SketchMaterials.RearrangeMaterials </td>
+          <td>(</td>
+          <td class="paramtype">materialIds&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">materialBeforeOrAfterId&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">insertAfter&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rearrange the materials to be put before or after the given other material. </p>
+<p>If the other material is WSM.INVALID_ID, the materials are placed at the end </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">materialIds</td><td>Array of material ids. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">materialBeforeOrAfterId</td><td>Id of material before or after which to insert, or WSM.INVALID_ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">insertAfter</td><td>true if inserting after materialBeforeOrAfterId. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+
+</div>
+</div>
 <a id="ga12d8cab61d7f9a8206ef3f3ebe6c5b70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga12d8cab61d7f9a8206ef3f3ebe6c5b70">&#9670;&nbsp;</a></span>SetDefaultMaterialData()</h2>
 
@@ -599,7 +647,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>

@@ -148,7 +148,8 @@ var namespace_form_it =
       [ "SetLayerName", "group__mod__jsapi__formit__layers.html#ga1c31426b27644eed282338857c2754a9", null ],
       [ "SetLayerPickable", "group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f", null ],
       [ "SetLayersVisibility", "group__mod__jsapi__formit__layers.html#ga93a5e9ca9c67c49a2f96cbc833d8f6cc", null ],
-      [ "SetLayerVisibility", "group__mod__jsapi__formit__layers.html#ga2ee6dad36b3add41e2c79c0816358d51", null ]
+      [ "SetLayerVisibility", "group__mod__jsapi__formit__layers.html#ga2ee6dad36b3add41e2c79c0816358d51", null ],
+      [ "SetLoadInRevit", "group__mod__jsapi__formit__layers.html#ga787011107de56766459a4b4c9ad607cf", null ]
     ] ],
     [ "Levels", "namespace_form_it_1_1_levels.html", [
       [ "AddLevels", "group__mod__jsapi__formit__levels.html#ga5fccccf904e90417cd49a37b9d7f4380", null ],
@@ -337,6 +338,7 @@ var namespace_form_it =
       [ "GetSketchMaterialFromWSMMaterial", "group__mod__jsapi__formit__sketchmaterials.html#ga72a686499692639028b82de83746a61d", null ],
       [ "GetWSMMaterialForHistory", "group__mod__jsapi__formit__sketchmaterials.html#ga05ca7c1363ae5c623cf69b7cdbef04fe", null ],
       [ "IsMaterialUsed", "group__mod__jsapi__formit__sketchmaterials.html#ga8fc6c61c5c90e229acdd6bd3dc508d38", null ],
+      [ "RearrangeMaterials", "group__mod__jsapi__formit__sketchmaterials.html#ga7bc67f8591d52209d091b64a219626bb", null ],
       [ "SetDefaultMaterialData", "group__mod__jsapi__formit__sketchmaterials.html#ga12d8cab61d7f9a8206ef3f3ebe6c5b70", null ],
       [ "SetMaterialDataAttribute", "group__mod__jsapi__formit__sketchmaterials.html#gab52aeeca7518631e6cf97390fc469bde", null ],
       [ "SetMaterialDataMap", "group__mod__jsapi__formit__sketchmaterials.html#gadfe049050276fbe48d480f1cce65c801", null ],
@@ -419,6 +421,14 @@ var namespace_form_it =
       [ "GuidFromString", "group__mod__jsapi__formit__utils.html#ga23cadf5e145f6149de96e49480c27120", null ],
       [ "NewGuid", "group__mod__jsapi__formit__utils.html#gab0bde8e345429f741b996769604ea4be", null ]
     ] ],
+    [ "View", "namespace_form_it_1_1_view.html", [
+      [ "FitToModel", "group__mod__jsapi__formit__view.html#ga0837bddedfa66ccf08438ac0b7aede64", null ],
+      [ "FitToSelection", "group__mod__jsapi__formit__view.html#gae640df1b2a87b2bf89a055373596b021", null ],
+      [ "GetViewDirection", "group__mod__jsapi__formit__view.html#ga4a58059efcad228cb3f39e8dd694e1a6", null ],
+      [ "HomeView3d", "group__mod__jsapi__formit__view.html#ga5a2fa10424815ffe3317ab7a2ddc6249", null ],
+      [ "SetViewDirection", "group__mod__jsapi__formit__view.html#ga999fbd5e554f9a9c8e9e4ef11d4f6861", null ],
+      [ "TopView", "group__mod__jsapi__formit__view.html#gae09cf187dcf0415b8ba1afb989db2bfb", null ]
+    ] ],
     [ "VisualStyles", "namespace_form_it_1_1_visual_styles.html", [
       [ "GetAdvancedMaterialShaderType", "group__mod__jsapi__formit__visualstyles.html#gab0db9bd47c56c6f6b60d6453a549bc76", null ],
       [ "GetAlwaysDrawInstanceBoxes", "group__mod__jsapi__formit__visualstyles.html#gac208413a9d716955f3ce1defe8c5f2be", null ],
@@ -480,10 +490,9 @@ var namespace_form_it =
     ] ],
     [ "CallJS", "group__mod__jsapi__formit.html#gaf9ff6b5d91f7e5d945fe113d359a5195", null ],
     [ "ChangeTargetBuildableArea", "group__mod__jsapi__formit.html#ga8dbd9de00b244cee2ca78b62d1c578bf", null ],
+    [ "ConsoleLog", "group__mod__jsapi__formit.html#gac21e6ff3cb0a28fdb5a93570130dd792", null ],
     [ "DeleteImage", "group__mod__jsapi__formit.html#ga5287e53d504635f1c85d71e34bccd5b7", null ],
-    [ "FindLatestVersion", "group__mod__jsapi__formit.html#gaaa083b41b77160c9a7e4c3d533cbe809", null ],
-    [ "FitToModel", "group__mod__jsapi__formit.html#ga04c3dfd98adcf8e802b8daac57e346ae", null ],
-    [ "FitToSelection", "group__mod__jsapi__formit.html#ga7fa671fc1b0bbf3c5028584192ee24b9", null ],
+    [ "FindLatestVersion", "group__mod__jsapi__formit.html#gadc9ea2cf19ee73eeefe10a3c4460d10b", null ],
     [ "GetAppDefaultContentsWithoutAXM", "group__mod__jsapi__formit.html#ga1f3abb4f70e850e370800f5ec2a806a1", null ],
     [ "GetBuildingType", "group__mod__jsapi__formit.html#ga462a2eedc22b78fca5435a50def210eb", null ],
     [ "GetCurveAccuracyOrCountDefault", "group__mod__jsapi__formit.html#ga6063c04bd1fdc297f6cdfda74518a2a5", null ],
@@ -494,10 +503,8 @@ var namespace_form_it =
     [ "GetTouchEnabled", "group__mod__jsapi__formit.html#ga333902ea2865a7d8b813eff4403e30c1", null ],
     [ "GetUnitTypeDefault", "group__mod__jsapi__formit.html#gac192223146ba90539b9ca21cd7e809bd", null ],
     [ "GetVersion", "group__mod__jsapi__formit.html#gae6a82b88e26dd76df9d8fb8b5351d5ed", null ],
-    [ "GetViewDirection", "group__mod__jsapi__formit.html#ga80557679df904bd3cc5508c2131e4388", null ],
     [ "HandleHUDTextInput", "group__mod__jsapi__formit.html#ga35d542c19ea71ce11f6d34f399ca8f74", null ],
-    [ "HomeView3d", "group__mod__jsapi__formit.html#ga434b526310ba1c7f4ba193570116326c", null ],
-    [ "ImportFile", "group__mod__jsapi__formit.html#gac0ac6ae9252e9bc2f7b101e2db23ffb0", null ],
+    [ "ImportFile", "group__mod__jsapi__formit.html#ga08efbf8c53ad9c458de8b5e8afa5a44e", null ],
     [ "ImportToGroup", "group__mod__jsapi__formit.html#gaff896c93a93a93138aad2c407a670ece", null ],
     [ "IsWSRAvailable", "group__mod__jsapi__formit.html#ga4acc7bf1ffa6c4854a99d48da8fcefcc", null ],
     [ "LoadPreviewImage", "group__mod__jsapi__formit.html#gaab1ecb373268be043b57c8c742307d45", null ],
@@ -510,15 +517,14 @@ var namespace_form_it =
     [ "SetCurveAccuracyOrCountDefault", "group__mod__jsapi__formit.html#gac414a121926a97459f12f3d3c6bd6f91", null ],
     [ "SetGeoLocationData", "group__mod__jsapi__formit.html#gae1eb161439ecf4abbc2189ae1d845d7e", null ],
     [ "SetKeyboardShortcutsEnabled", "group__mod__jsapi__formit.html#gaaf948638c6a7439bfa5c562cb4486b45", null ],
+    [ "SetLocaleForWeb", "group__mod__jsapi__formit.html#ga6d6f2d82c0644d22c1e88cbbe9248547", null ],
     [ "SetRenderData", "group__mod__jsapi__formit.html#gaa7b3bc46376707509c6a3dad66615e12", null ],
     [ "SetShowEditableDimensions", "group__mod__jsapi__formit.html#gaa4633c34d5a3c77c0e3194247d96184c", null ],
     [ "SetSnap", "group__mod__jsapi__formit.html#gafcbfbffe1c4874775cd2b8869d49b047", null ],
     [ "SetSurfaceAccuracyOrCountDefault", "group__mod__jsapi__formit.html#gada7318034743bdd8adb7a416e5d0f81a", null ],
     [ "SetTouchEnabled", "group__mod__jsapi__formit.html#gab929131640395aa72d0dc372e0cb6aac", null ],
     [ "SetUnitTypeDefault", "group__mod__jsapi__formit.html#gae40144c6f7d7ea90daa5d23ad1c94a30", null ],
-    [ "SetViewDirection", "group__mod__jsapi__formit.html#ga009a4abc145b75203e7af32661d2fd58", null ],
     [ "SuspendMessaging", "group__mod__jsapi__formit.html#ga4543709069c7cabff35c3050b66a1a4b", null ],
-    [ "TopView", "group__mod__jsapi__formit.html#ga4368c3dc4c28bebe477321d8bd84c15a", null ],
     [ "Version", "group__mod__jsapi__formit.html#ga29e3f7340e90048c57b8ac4f47fef741", null ],
     [ "WriteAppDefaultContentToFile", "group__mod__jsapi__formit.html#ga51a9a609bfd2976992bfb6926714fd1f", null ]
 ];

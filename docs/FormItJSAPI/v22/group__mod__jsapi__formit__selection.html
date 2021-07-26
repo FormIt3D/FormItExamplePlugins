@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__selection.h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga0b6afaf7b3cfd8f4fc66afeb42a38a2c"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__selection.html#ga0b6afaf7b3cfd8f4fc66afeb42a38a2c">FormIt.Selection.GetObjectTypeFilter</a> ()</td></tr>
+<tr class="memdesc:ga0b6afaf7b3cfd8f4fc66afeb42a38a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current ObjectTypeFilter.  <a href="group__mod__jsapi__formit__selection.html#ga0b6afaf7b3cfd8f4fc66afeb42a38a2c">More...</a><br /></td></tr>
 <tr class="separator:ga0b6afaf7b3cfd8f4fc66afeb42a38a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60d2bebee658f5f8bf0f94b1656ca9ca"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__selection.html#ga60d2bebee658f5f8bf0f94b1656ca9ca">FormIt.Selection.SetObjectTypeFilter</a> (objectTypeFilter)</td></tr>
 <tr class="memdesc:ga60d2bebee658f5f8bf0f94b1656ca9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current ObjectTypeFilter.  <a href="group__mod__jsapi__formit__selection.html#ga60d2bebee658f5f8bf0f94b1656ca9ca">More...</a><br /></td></tr>
@@ -201,7 +202,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#ApplyMaterialToSelection">ApplyMaterialToSelection</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td><a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">backside</td><td>bool </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -221,7 +230,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Clear the pre-selected objects. </p>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#ClearPreSelections">ClearPreSelections</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -241,7 +251,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Clears all of the selections. </p>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#ClearSelections">ClearSelections</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -261,7 +272,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CommitPreselections makes the pre-selections the current selections. </p>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#CommitPreselections">CommitPreselections</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -309,7 +321,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the object selected from the context menu click. </p>
-<p>Used by tools that are interested which object was picked through the context menu click </p><dl class="section return"><dt>Returns</dt><dd>The id of the object selected from the context menu click and the pick point through which the contextn meun was invoked </dd></dl>
+<p>Used by tools that are interested which object was picked through the context menu click </p><dl class="section return"><dt>Returns</dt><dd>The id of the object selected from the context menu click and the pick point through which the contextn meun was invoked</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#GetContextMenuObject">GetContextMenuObject</a> </p><dl class="section return"><dt>Returns</dt><dd>{ { "object" , to_json(path)}, { "pickPoint" , to_json(pickPoint)} }; </dd></dl>
 
 </div>
 </div>
@@ -329,7 +342,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the first pre-selection. </p>
-<p>It may not be the first element in m_PreSelectedObjects. </p><dl class="section return"><dt>Returns</dt><dd>The first pre-selected Object ID. </dd></dl>
+<p>It may not be the first element in m_PreSelectedObjects. </p><dl class="section return"><dt>Returns</dt><dd>The first pre-selected Object ID.</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#GetFirstPreSelectedObject">GetFirstPreSelectedObject</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -349,7 +363,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the first selection. </p>
-<p>It may not be the first element in m_SelectedObjects. </p><dl class="section return"><dt>Returns</dt><dd>The first selected Object ID. </dd></dl>
+<p>It may not be the first element in m_SelectedObjects. </p><dl class="section return"><dt>Returns</dt><dd>The first selected Object ID.</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#GetFirstSelectedObject">GetFirstSelectedObject</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -367,6 +382,35 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the current ObjectTypeFilter. </p>
+<dl class="section return"><dt>Returns</dt><dd>ObjectTypeFilter</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// JS Syntax:</span></div>
+<div class="line">var filter = <a class="code" href="namespace_form_it.html">FormIt</a>.<a class="code" href="namespace_form_it_1_1_selection.html">Selection</a>.GetObjectTypeFilter();</div>
+<div class="line">console.log(JSON.stringify(filter));</div>
+<div class="line"> </div>
+<div class="line">Result:</div>
+<div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;allowOwnedFaces&quot;</span>: <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;allowsGroupGeometry&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;bodies&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;edges&quot;</span> : <span class="keyword">true</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;faces&quot;</span> : <span class="keyword">true</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;instances&quot;</span> : <span class="keyword">true</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;meshes&quot;</span>: <span class="keyword">true</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;isSelectingProfile&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;minNumObjects&quot;</span> : 0,</div>
+<div class="line">    <span class="stringliteral">&quot;mustBeTopLevel&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;mustSelectAllConnected&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;objectName&quot;</span> : <span class="stringliteral">&quot;ObjectTypeFilter&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;restrictGroupGeometryToEditingPath&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;selectBodyIfAllSelected&quot;</span> : <span class="keyword">true</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;singleObjectOnly&quot;</span> : <span class="keyword">false</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;vertices&quot;</span> : <span class="keyword">false</span></div>
+<div class="line">}</div>
+<div class="ttc" id="anamespace_form_it_1_1_selection_html"><div class="ttname"><a href="namespace_form_it_1_1_selection.html">FormIt.Selection</a></div><div class="ttdoc">FormIt.Selection namespace.</div><div class="ttdef"><b>Definition:</b> jsapi_include.dox:2189</div></div>
+<div class="ttc" id="anamespace_form_it_html"><div class="ttname"><a href="namespace_form_it.html">FormIt</a></div><div class="ttdoc">FormIt namespace.</div><div class="ttdef"><b>Definition:</b> jsapi_include.dox:1121</div></div>
+</div><!-- fragment --><p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#GetObjectTypeFilter">GetObjectTypeFilter</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -386,7 +430,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the pre-selections. </p>
-<dl class="section return"><dt>Returns</dt><dd>{ first: , preselections: } Returns the first pre-selection and the full list of pre-selections. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ first: , preselections: } Returns the first pre-selection and the full list of pre-selections.</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#GetPreSelections">GetPreSelections</a> </p><dl class="section return"><dt>Returns</dt><dd>{ { "first" , to_json(<a class="el" href="group__mod__jsapi__formit__selection.html#ga4f7a4946e8fa91cf1c163b97f9914630" title="Get the first pre-selection.">FormIt.Selection.GetFirstPreSelectedObject()</a>)}, { "preselections" , to_json(<a class="el" href="group__mod__jsapi__formit__selection.html#ga7ddafd5c95931f3cdda010fef08ca71e" title="Get the pre-selections.">FormIt.Selection.GetPreSelections()</a>)} }; </dd></dl>
 
 </div>
 </div>
@@ -425,9 +470,8 @@ Functions</h2></td></tr>
 <div class="line">      <span class="stringliteral">&quot;objectName&quot;</span>: <span class="stringliteral">&quot;GroupInstancePath&quot;</span></div>
 <div class="line">  }</div>
 <div class="line">]</div>
-<div class="ttc" id="anamespace_form_it_1_1_selection_html"><div class="ttname"><a href="namespace_form_it_1_1_selection.html">FormIt.Selection</a></div><div class="ttdoc">FormIt.Selection namespace.</div><div class="ttdef"><b>Definition:</b> jsapi_include.dox:2195</div></div>
-<div class="ttc" id="anamespace_form_it_html"><div class="ttname"><a href="namespace_form_it.html">FormIt</a></div><div class="ttdoc">FormIt namespace.</div><div class="ttdef"><b>Definition:</b> jsapi_include.dox:1121</div></div>
-</div><!-- fragment --> 
+</div><!-- fragment --><p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#GetSelections">GetSelections</a> </p><dl class="section return"><dt>Returns</dt><dd>selections </dd></dl>
+
 </div>
 </div>
 <a id="ga44fbc53d85e32ffb2c5ab819191cadeb"></a>
@@ -446,7 +490,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if there are pre-selections. </p>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#HasPreSelections">HasPreSelections</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -466,7 +511,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>HasSelections returns true is there are selections. </p>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#HasSelections">HasSelections</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -504,7 +550,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Select all objects in the model. </p>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#SelectAll">SelectAll</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -534,7 +581,14 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// JS Syntax:</span></div>
 <div class="line"><a class="code" href="namespace_form_it.html">FormIt</a>.<a class="code" href="namespace_form_it_1_1_selection.html">Selection</a>.SetObjectTypeFilter(filter);</div>
-</div><!-- fragment --> 
+</div><!-- fragment --><p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__selection__api__ref.html#SetObjectTypeFilter">SetObjectTypeFilter</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectTypeFilter</td><td><a class="el" href="group__mod__jsapi__wsm__utils.html#gad4dcf86f993bbcb357569aa0ff94e605" title="Default constructor for WSM.Utils.ObjectTypeFilter.">WSM.Utils.ObjectTypeFilter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+
 </div>
 </div>
 <a id="ga6fd9ea3156ba7b0d9b8800015e1f883f"></a>

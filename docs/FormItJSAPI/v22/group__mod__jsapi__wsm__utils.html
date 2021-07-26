@@ -210,8 +210,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga6b9546679c43c44290d1fa9424d4a7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a632feb69cef2d2d48ffcd210a79496"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__utils.html#ga8a632feb69cef2d2d48ffcd210a79496">WSM.Utils.RayFireWithObjects</a> (objectIds, ray)</td></tr>
 <tr class="separator:ga8a632feb69cef2d2d48ffcd210a79496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11d30aecaf9423c49514402e308e3c6d"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__utils.html#ga11d30aecaf9423c49514402e308e3c6d">WSM.Utils.RemoveHiddenObjects</a> (nHistoryID, aObjectIDs, aObjectsInGroupsVec, aGroupAggregateTransf3dVec, paramIndexVec)</td></tr>
-<tr class="separator:ga11d30aecaf9423c49514402e308e3c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a893a29590cc2aa975993b94a19922c"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__utils.html#ga9a893a29590cc2aa975993b94a19922c">WSM.Utils.SelectionFromGroupInstancePathArray</a> (aInput)</td></tr>
 <tr class="separator:ga9a893a29590cc2aa975993b94a19922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaade6498a5824849cee4688e3b794943f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__utils.html#gaade6498a5824849cee4688e3b794943f">WSM.Utils.SelectionToGroupInstancePath</a> (nObjectID)</td></tr>
@@ -257,6 +255,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabaf76d74626cf3717dc6c8a08f1c5885"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__utils.html#gabaf76d74626cf3717dc6c8a08f1c5885">WSM.Utils.ObjectHistoryID</a> (nHistoryID, nObjectID)</td></tr>
 <tr class="memdesc:gabaf76d74626cf3717dc6c8a08f1c5885"><td class="mdescLeft">&#160;</td><td class="mdescRight">ObjectHistoryID creation method In: nHistoryID, nObjectID Out: ObjectHistoryID.  <a href="group__mod__jsapi__wsm__utils.html#gabaf76d74626cf3717dc6c8a08f1c5885">More...</a><br /></td></tr>
 <tr class="separator:gabaf76d74626cf3717dc6c8a08f1c5885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1b86638215a864b0ffe266617abde4e"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__utils.html#gad1b86638215a864b0ffe266617abde4e">WSM.Utils.IsOwnerOf</a> (parent, child)</td></tr>
+<tr class="memdesc:gad1b86638215a864b0ffe266617abde4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether parent is an owner of child Parameters: In: parent, child as <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> Out: true/false.  <a href="group__mod__jsapi__wsm__utils.html#gad1b86638215a864b0ffe266617abde4e">More...</a><br /></td></tr>
+<tr class="separator:gad1b86638215a864b0ffe266617abde4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga28540c795bcfd1ceba37c31b7abfee23"></a>
@@ -1396,6 +1397,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad1b86638215a864b0ffe266617abde4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1b86638215a864b0ffe266617abde4e">&#9670;&nbsp;</a></span>IsOwnerOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json WSM.Utils.IsOwnerOf </td>
+          <td>(</td>
+          <td class="paramtype">parent&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">child&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether parent is an owner of child Parameters: In: parent, child as <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> Out: true/false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">child</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+
+</div>
+</div>
 <a id="ga99ac89e69ed7b1c7473b530ac6e1c0c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga99ac89e69ed7b1c7473b530ac6e1c0c5">&#9670;&nbsp;</a></span>IsSelectAllConnected()</h2>
 
@@ -2217,52 +2256,6 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ray&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga11d30aecaf9423c49514402e308e3c6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga11d30aecaf9423c49514402e308e3c6d">&#9670;&nbsp;</a></span>RemoveHiddenObjects()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">json WSM.Utils.RemoveHiddenObjects </td>
-          <td>(</td>
-          <td class="paramtype">nHistoryID&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">aObjectIDs&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">aObjectsInGroupsVec&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">aGroupAggregateTransf3dVec&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">paramIndexVec&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__files.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga941fc06a564ffc892b147af97afcfab3"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__files.html#ga941fc06a564ffc892b147af97afcfab3">FormIt.Files.GetSupportedFilesList</a> (action, type, dialogType)</td></tr>
+<tr class="memdesc:ga941fc06a564ffc892b147af97afcfab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Platform's supported files Parameters: In: action File action (eg: Load or Save file) In: type File's content type (eg: 3D <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a> or Image) In: Dialog box which shows the supported file types(deafult local) Out: array of Files.FileOptions.  <a href="group__mod__jsapi__formit__files.html#ga941fc06a564ffc892b147af97afcfab3">More...</a><br /></td></tr>
 <tr class="separator:ga941fc06a564ffc892b147af97afcfab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17e9e7ae41a7143f35d0bb32c463be73"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__files.html#ga17e9e7ae41a7143f35d0bb32c463be73">FormIt.Files.IsFileSupported</a> (extension, action, type, dialogType)</td></tr>
 <tr class="memdesc:ga17e9e7ae41a7143f35d0bb32c463be73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a file extension is supported Parameters: In: extension File extension to check if is supported In: action File action (eg: Load or Save file) In: type File's content type (eg: 3D <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a> or Image) In: Dialog box which shows the supported file types(deafult local) Out: bool.  <a href="group__mod__jsapi__formit__files.html#ga17e9e7ae41a7143f35d0bb32c463be73">More...</a><br /></td></tr>
@@ -131,6 +132,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get Platform's supported files Parameters: In: action File action (eg: Load or Save file) In: type File's content type (eg: 3D <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a> or Image) In: Dialog box which shows the supported file types(deafult local) Out: array of Files.FileOptions. </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__files__api__ref.html#GetSupportedFilesList">GetSupportedFilesList</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>FormIt.Files.Action </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>FormIt.Files.ContentType </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dialogType</td><td>(OPTIONAL) FormIt.UI.FormItDialogBox </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ret.GetList() </dd></dl>
 
 </div>
 </div>
@@ -173,7 +185,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if a file extension is supported Parameters: In: extension File extension to check if is supported In: action File action (eg: Load or Save file) In: type File's content type (eg: 3D <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a> or Image) In: Dialog box which shows the supported file types(deafult local) Out: bool. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/index.html/group__mod__formitcore__files__api__ref.html#IsFileSupported">IsFileSupported</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">extension</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>FormIt.Files.Action </td></tr>

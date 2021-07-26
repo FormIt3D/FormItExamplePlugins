@@ -42,6 +42,15 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ]
       ] ]
     ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
+    ] ],
     [ "File Members", "globals.html", [
       [ "All", "globals.html", null ],
       [ "Functions", "globals_func.html", null ],
@@ -55,14 +64,14 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"globals.html",
-"group__mod__jsapi__formit__configuration.html#ga9a47c3b75c2175de6b9cd448b950ce65",
-"group__mod__jsapi__formit__model.html#ga370cc7eecf95a6366911f6aecf878909",
-"group__mod__jsapi__formit__sketchmaterials.html#gab52aeeca7518631e6cf97390fc469bde",
-"group__mod__jsapi__formit__visualstyles.html#gafdc53091a0482914fae923f59ff7aa33",
-"group__mod__jsapi__wsm.html#ga8541a5c3c49e260618a0dfb3859c84ea",
-"group__mod__jsapi__wsm.html#gaf1baa54e1d8b3209d9c04fc147ec0d28",
-"group__mod__jsapi__wsm__utils.html#ga1092338ba90cdef5b0aa70417f849952"
+"annotated.html",
+"group__mod__jsapi__formit__configuration.html#ga5f20e5775f245ea59da9a228d685fa78",
+"group__mod__jsapi__formit__model.html#ga22d94c2b801993419c1f0b1eb4da7d5e",
+"group__mod__jsapi__formit__sketchmaterials.html#ga4c5c5b0b159003de6ab9315862b52af4",
+"group__mod__jsapi__formit__visualstyles.html#gac2a925b225a7523720a4d7bb9bd1511d",
+"group__mod__jsapi__wsm.html#ga767d26efeff24d55167506f797aaaccc",
+"group__mod__jsapi__wsm.html#gae1c9370a7cbcd7abe7ce8d03e8ac5f38",
+"group__mod__jsapi__wsm__tools.html#gacac2df8aef25d00aacf7774a150a7e4b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
