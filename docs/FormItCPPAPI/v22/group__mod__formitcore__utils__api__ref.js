@@ -2,7 +2,7 @@ var group__mod__formitcore__utils__api__ref =
 [
     [ "UtilsImage", "class_form_it_1_1_utils_1_1_utils_image.html", [
       [ "GetData", "class_form_it_1_1_utils_1_1_utils_image.html#a69c4f4c8758c81f3bf9fda5bb6bd80a7", null ],
-      [ "m_FYImage", "class_form_it_1_1_utils_1_1_utils_image.html#ac3edbbc454dc00e603d9aad55a012807", null ]
+      [ "m_FYImage", "class_form_it_1_1_utils_1_1_utils_image.html#acf8a3146762861bda87690557a753877", null ]
     ] ],
     [ "Span", "struct_form_it_1_1_utils_1_1_span.html", [
       [ "TIter", "struct_form_it_1_1_utils_1_1_span.html#a8e1a6669b7079078ad46e3db559c2fb2", null ],
@@ -21,12 +21,12 @@ var group__mod__formitcore__utils__api__ref =
       [ "operator[]", "struct_form_it_1_1_utils_1_1_span.html#ad1321ac4bbd3be1ad0d69b396ee4004b", null ],
       [ "size", "struct_form_it_1_1_utils_1_1_span.html#ae93e8295fe63a0585a9a04411b844e5f", null ]
     ] ],
-    [ "CreateTextureFileFromData", "group__mod__formitcore__utils__api__ref.html#ga78de2c9f12120da1ae36f7f3b2023bcf", null ],
-    [ "DecodeImage", "group__mod__formitcore__utils__api__ref.html#ga1724d211915f3502fc5ab4b06ad31094", null ],
-    [ "EncodeImageJPG", "group__mod__formitcore__utils__api__ref.html#gabe50b04a82df264efe72223200638c66", null ],
-    [ "EncodeImagePNG", "group__mod__formitcore__utils__api__ref.html#gaf3d58e6bde7b657c54ddb65639ab7b37", null ],
-    [ "GuidFromString", "group__mod__formitcore__utils__api__ref.html#ga37091ed699b05aa4a957dedf620d690e", null ],
-    [ "GuidToHexString", "group__mod__formitcore__utils__api__ref.html#ga195c903653e165dd6228c853d2fcf504", null ],
-    [ "LoadImageData", "group__mod__formitcore__utils__api__ref.html#ga837aa5a8e98e516a799819d075d06bcc", null ],
+    [ "CreateTextureFileFromData", "group__mod__formitcore__utils__api__ref.html#gac0d8893c338e67775d09d952746229b9", null ],
+    [ "DecodeImage", "group__mod__formitcore__utils__api__ref.html#gaa5e090abc8d9d44413d278258415ee75", null ],
+    [ "EncodeImageJPG", "group__mod__formitcore__utils__api__ref.html#ga596be5e12978458e61b85ae86eab7a74", null ],
+    [ "EncodeImagePNG", "group__mod__formitcore__utils__api__ref.html#gaca171fec5ac758f9c0410618ba6941b5", null ],
+    [ "GuidFromString", "group__mod__formitcore__utils__api__ref.html#ga10c23679229629c622f884bfaf75d8d0", null ],
+    [ "GuidToHexString", "group__mod__formitcore__utils__api__ref.html#gac2f551c4661f6e4cb6c3475e603f92fa", null ],
+    [ "LoadImageData", "group__mod__formitcore__utils__api__ref.html#ga7a705cf7bb595b405e75acd5e9a4f2f5", null ],
     [ "NewGuid", "group__mod__formitcore__utils__api__ref.html#ga5985243ccd399808a0fd62b90d92bc77", null ]
 ];

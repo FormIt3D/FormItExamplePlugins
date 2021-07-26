@@ -16,7 +16,7 @@ var group__mod__formitcore__analysis__solar__api__ref =
     [ "GetMethod", "group__mod__formitcore__analysis__solar__api__ref.html#ga05610970eff6725ab26786d4f874adb9", null ],
     [ "GetNumTooltipsToShow", "group__mod__formitcore__analysis__solar__api__ref.html#ga051798a6aefb4b243dd4b8b9b473853b", null ],
     [ "GetPeakMonth", "group__mod__formitcore__analysis__solar__api__ref.html#ga05aac576f8e0973a67b6d68edba93682", null ],
-    [ "GetUnitString", "group__mod__formitcore__analysis__solar__api__ref.html#gaec7978505ceb3d7a0eb493305f26cefd", null ],
+    [ "GetUnitString", "group__mod__formitcore__analysis__solar__api__ref.html#ga139351b45c40b1329f9764672cdd38a1", null ],
     [ "GetWeatherDataStatus", "group__mod__formitcore__analysis__solar__api__ref.html#ga750c454296fb9128853cbcdda8ed96d5", null ],
     [ "IsAnalysisInProgress", "group__mod__formitcore__analysis__solar__api__ref.html#ga333a589b5f18b1ab6bae8cb76dda8d5c", null ],
     [ "IsInSolarAnalysisMode", "group__mod__formitcore__analysis__solar__api__ref.html#ga0d258921c840f29553c4d6d71f50dd51", null ],
@@ -27,5 +27,5 @@ var group__mod__formitcore__analysis__solar__api__ref =
     [ "SetPeakMonth", "group__mod__formitcore__analysis__solar__api__ref.html#ga0ea8fee3aa51089cd8111f1b0cfe56c6", null ],
     [ "SetWeatherDataStatus", "group__mod__formitcore__analysis__solar__api__ref.html#ga3dba21f45089fd19ddd6a6f4e38bd322", null ],
     [ "ToggleAnalysisMode", "group__mod__formitcore__analysis__solar__api__ref.html#ga8bfe5d01ae2a9bcacf4c19260c2df768", null ],
-    [ "kToggleAnalysis", "group__mod__formitcore__analysis__solar__api__ref.html#gab667ceaee3a3ea0f358fc8b5c8b88081", null ]
+    [ "kToggleAnalysis", "group__mod__formitcore__analysis__solar__api__ref.html#ga0eec876027730ec69ab99592c778153c", null ]
 ];

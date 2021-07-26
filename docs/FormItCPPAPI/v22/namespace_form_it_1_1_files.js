@@ -43,11 +43,11 @@ var namespace_form_it_1_1_files =
     [ "DECL", "group__mod__formitcore__files__api__ref.html#ga84a990f75ca4aaa0fe46c51647e4b1a6", null ],
     [ "DECL_IMPORT", "group__mod__formitcore__files__api__ref.html#gaa63b75961f87a32a94dc8ce98f6b13c6", null ],
     [ "GetSupportedFilesList", "group__mod__formitcore__files__api__ref.html#gafd7129d2a594f3279d09ba838f05d5d0", null ],
-    [ "IsFileSupported", "group__mod__formitcore__files__api__ref.html#gaf2a97e53987b2c7f66b4449643b08a70", null ],
+    [ "IsFileSupported", "group__mod__formitcore__files__api__ref.html#ga5cdebb91628c422a856c36933ff93b3b", null ],
     [ "json", "group__mod__formitcore__files__api__ref.html#ga8370535a2867f17dc0f9a442eeb4b32b", null ],
     [ "m_doubleSided", "group__mod__formitcore__files__api__ref.html#ga67303f050a4dbfd443df9b3c20358fb8", null ],
     [ "m_height", "group__mod__formitcore__files__api__ref.html#gadc8e1e177c60ebb9d2336390c21ae748", null ],
     [ "m_isAscii", "group__mod__formitcore__files__api__ref.html#gae17c87374fd392e21ca1e0e27a278f72", null ],
-    [ "m_version", "group__mod__formitcore__files__api__ref.html#gae4e667993757bacfe8862bfaa00da873", null ],
+    [ "m_version", "group__mod__formitcore__files__api__ref.html#ga353cc28feb35cf2eef918d026f623308", null ],
     [ "m_withHistory", "group__mod__formitcore__files__api__ref.html#ga968bb7e6cb36be57b7004f372c3ae416", null ]
 ];

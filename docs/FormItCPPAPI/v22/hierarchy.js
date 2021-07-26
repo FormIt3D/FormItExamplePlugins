@@ -1,7 +1,7 @@
 var hierarchy =
 [
     [ "WSM::AbstractLockGuard", "class_w_s_m_1_1_abstract_lock_guard.html", null ],
-    [ "std::any", null, [
+    [ "any", null, [
       [ "FormIt::MessagePayloadStruct", "struct_form_it_1_1_message_payload_struct.html", null ]
     ] ],
     [ "WSM::ATFCameraData", "struct_w_s_m_1_1_a_t_f_camera_data.html", null ],

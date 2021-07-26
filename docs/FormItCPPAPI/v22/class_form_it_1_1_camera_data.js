@@ -2,7 +2,7 @@ var class_form_it_1_1_camera_data =
 [
     [ "CameraData", "class_form_it_1_1_camera_data.html#abd7691bc9ae1b5e012ae336b8c9ba6fd", null ],
     [ "CameraData", "class_form_it_1_1_camera_data.html#ad624d7ea17f963f0bbde2a14cdc23e1e", null ],
-    [ "CameraData", "class_form_it_1_1_camera_data.html#a2122c0e1a2ddf7d580d90d5dd57868a4", null ],
+    [ "CameraData", "class_form_it_1_1_camera_data.html#af1ddbe28942f87c72c744a807d0d3a4f", null ],
     [ "operator!=", "class_form_it_1_1_camera_data.html#aa8ffd87f83c0f2c1275f6dd56e6e4395", null ],
     [ "operator==", "class_form_it_1_1_camera_data.html#a71114932f5752588bdd8f9ac9d170235", null ],
     [ "mDistanceToTarget", "class_form_it_1_1_camera_data.html#a426644e4c707b879343c2de25cdef177", null ],

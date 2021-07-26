@@ -1,10 +1,10 @@
 var group__mod__formitcore__model__api__ref =
 [
     [ "GetCurveAccuracyOrCountCurrent", "group__mod__formitcore__model__api__ref.html#gae82abfb0362be71a464e49f035055785", null ],
-    [ "GetGroupHistoryName", "group__mod__formitcore__model__api__ref.html#gaf535a290e01dd5e318cd8e181279e40e", null ],
+    [ "GetGroupHistoryName", "group__mod__formitcore__model__api__ref.html#gaba6b79316abf4ef15f6b0391843cc559", null ],
     [ "GetHistoryID", "group__mod__formitcore__model__api__ref.html#gae3694e869c6a25561870107870ac0363", null ],
     [ "GetMemorySize", "group__mod__formitcore__model__api__ref.html#ga482e36f3600ae1b77423da11c0c12d9d", null ],
-    [ "GetObjectName", "group__mod__formitcore__model__api__ref.html#gaad8d16544bda53bccdb407677225e7d1", null ],
+    [ "GetObjectName", "group__mod__formitcore__model__api__ref.html#ga49a163904bc52dd19cfbb4e4db977ca5", null ],
     [ "GetProjectSiteArea", "group__mod__formitcore__model__api__ref.html#ga81daf46dbf63795d8a9b6f8c2ebf029b", null ],
     [ "GetProjectTargetArea", "group__mod__formitcore__model__api__ref.html#gaab7dfcdd53279ba3708107c2e7573783", null ],
     [ "GetSurfaceAccuracyOrCountCurrent", "group__mod__formitcore__model__api__ref.html#ga24e94942f023387b2b413ba40c1c3526", null ],
@@ -16,8 +16,8 @@ var group__mod__formitcore__model__api__ref =
     [ "ObjectReportsAreaByLevel", "group__mod__formitcore__model__api__ref.html#gae0710fac190feb10e7a9407a9390fc48", null ],
     [ "ResetModified", "group__mod__formitcore__model__api__ref.html#ga0846015ced215249b0c281c84c7cd144", null ],
     [ "SetCurveAccuracyOrCountCurrent", "group__mod__formitcore__model__api__ref.html#ga1fde5eaeb5648f766ec9940d7e0d2eed", null ],
-    [ "SetGroupHistoryName", "group__mod__formitcore__model__api__ref.html#ga1f86d3da8216e0d3d819ab65adf0ec8b", null ],
-    [ "SetObjectName", "group__mod__formitcore__model__api__ref.html#gad7b0004fab6ef720df7bd3b1e5752024", null ],
+    [ "SetGroupHistoryName", "group__mod__formitcore__model__api__ref.html#ga5e8bac634e4ea29907018d5042c6b2ec", null ],
+    [ "SetObjectName", "group__mod__formitcore__model__api__ref.html#gac2765add39d535dc16184c3d4ac5942b", null ],
     [ "SetSurfaceAccuracyOrCountCurrent", "group__mod__formitcore__model__api__ref.html#gaa0b76b84ed8b2d65d3d5a59d510bd632", null ],
     [ "SetTotalAreaOfSite", "group__mod__formitcore__model__api__ref.html#gaf89044dc47c71b59a773cdd56e670f10", null ],
     [ "SetUnitTypeCurrent", "group__mod__formitcore__model__api__ref.html#gaf8c41524dc1bf47716dde4ec69da6993", null ]

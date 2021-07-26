@@ -10,7 +10,7 @@ var class_w_s_m_1_1_interval3d =
     [ "boundariesTouch", "class_w_s_m_1_1_interval3d.html#ae97c1ed836f14e5ba1dce8278bf68163", null ],
     [ "boundsLine", "class_w_s_m_1_1_interval3d.html#a84b16f2d13900d2e55d2355fa3ef2117", null ],
     [ "enlarge", "class_w_s_m_1_1_interval3d.html#af37d7411b1f13d67d0da9ee2f7a57a19", null ],
-    [ "getBoundsPoints", "class_w_s_m_1_1_interval3d.html#aecf7ffb19e4f7b6fd96c7840f24fe196", null ],
+    [ "getBoundsPoints", "class_w_s_m_1_1_interval3d.html#a6a89f4a17a365a56b716c46f8f39177b", null ],
     [ "init", "class_w_s_m_1_1_interval3d.html#aa2b8107b6c6bdddaa676880b4d667e60", null ],
     [ "intersectsPlane", "class_w_s_m_1_1_interval3d.html#a44793766c8d9ebadaadb51fcf210fcfe", null ],
     [ "intersectsRay", "class_w_s_m_1_1_interval3d.html#adfd2a78e5219a5815e0881a41bea3f93", null ],

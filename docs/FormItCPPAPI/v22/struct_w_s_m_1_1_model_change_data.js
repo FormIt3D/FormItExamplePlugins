@@ -16,12 +16,12 @@ var struct_w_s_m_1_1_model_change_data =
     [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#a9adbac9c1c4ec2398ac41aed810c0f2a", null ],
     [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#aebb82ab4b7998c911998dbbc8aa9814b", null ],
     [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#aa7f80228eed3de13d40a7fb14193f75a", null ],
-    [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#a7133fad2e1896268bcbbe2b517f714d0", null ],
+    [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#a5d661d91fe55450afe2af447055a0af3", null ],
     [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#a03254a81ca00d8f95a605b5cf373295d", null ],
-    [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#a2912fed72dd38f7d19f169a5c0c55963", null ],
+    [ "ModelChangeData", "struct_w_s_m_1_1_model_change_data.html#a7d5eadca3ccf00f0400411c929cf5dfa", null ],
     [ "m_nCurrentDelta", "struct_w_s_m_1_1_model_change_data.html#a2a8b6e12627536be1345e3a960d2396d", null ],
     [ "m_nHistoryID", "struct_w_s_m_1_1_model_change_data.html#a6246b0169629313d9b74689cd80cabd4", null ],
     [ "m_nPreviousDelta", "struct_w_s_m_1_1_model_change_data.html#ae9a6a8305eb838772dffb40240726785", null ],
     [ "m_nType", "struct_w_s_m_1_1_model_change_data.html#ae9b5bc1385dfaed0b6bd673ebfb2649d", null ],
-    [ "m_sAPIName", "struct_w_s_m_1_1_model_change_data.html#ad9dcf9fde0bf15de2bdc4af264b8582c", null ]
+    [ "m_sAPIName", "struct_w_s_m_1_1_model_change_data.html#ab9d4adfabfff1f293281fc2d31f950da", null ]
 ];

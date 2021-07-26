@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['jshistoryid_3624',['JSHistoryID',['../class_form_it_1_1_undo_management_1_1_j_s_history_i_d.html#acade9613f3e316d2f382ef7abb34c1ce',1,'FormIt::UndoManagement::JSHistoryID']]],
-  ['jsstateid_3625',['JSStateID',['../class_form_it_1_1_undo_management_1_1_j_s_state_i_d.html#a8009461e38db39a6e0a48d912108b8b4',1,'FormIt::UndoManagement::JSStateID']]]
+  ['jshistoryid_3650',['JSHistoryID',['../class_form_it_1_1_undo_management_1_1_j_s_history_i_d.html#a1523749b9e86f7a32f165987ae4e8e8f',1,'FormIt::UndoManagement::JSHistoryID']]],
+  ['jsstateid_3651',['JSStateID',['../class_form_it_1_1_undo_management_1_1_j_s_state_i_d.html#add4ba88b686f8f6becd960e48fdeda92',1,'FormIt::UndoManagement::JSStateID']]]
 ];

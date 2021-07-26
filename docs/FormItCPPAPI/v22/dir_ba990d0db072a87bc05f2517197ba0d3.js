@@ -18,5 +18,6 @@ var dir_ba990d0db072a87bc05f2517197ba0d3 =
     [ "Vector3d.h", "_vector3d_8h.html", "_vector3d_8h" ],
     [ "WSM_Constants.h", "_w_s_m___constants_8h.html", "_w_s_m___constants_8h" ],
     [ "WSMApi.h", "_w_s_m_api_8h.html", "_w_s_m_api_8h" ],
-    [ "WSMNew.h", "_w_s_m_new_8h.html", "_w_s_m_new_8h" ]
+    [ "WSMNew.h", "_w_s_m_new_8h.html", "_w_s_m_new_8h" ],
+    [ "WSMUtility.h", "_w_s_m_utility_8h.html", "_w_s_m_utility_8h" ]
 ];

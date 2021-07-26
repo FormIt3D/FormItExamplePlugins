@@ -1,9 +1,9 @@
 var namespace_form_it_1_1_materials =
 [
     [ "MaterialData", "struct_form_it_1_1_materials_1_1_material_data.html", "struct_form_it_1_1_materials_1_1_material_data" ],
-    [ "AdditionalMaterialAttibute", "namespace_form_it_1_1_materials.html#ae5f9f611dee3b6ea3370b1e515723bb8", null ],
-    [ "AdditionalMaterialTexture", "namespace_form_it_1_1_materials.html#aa0879352a6dade678f7d8f0b6d3c2784", null ],
-    [ "AdditionalMaterialTextureId", "namespace_form_it_1_1_materials.html#a08fb1a0d5d0a02f52fe1ae0cd78c8004", null ],
+    [ "AdditionalMaterialAttibute", "namespace_form_it_1_1_materials.html#a1e8196944deabdd9f032631788ea1935", null ],
+    [ "AdditionalMaterialTexture", "namespace_form_it_1_1_materials.html#a489d4e95b55e8093f0a89c0dfb98f897", null ],
+    [ "AdditionalMaterialTextureId", "namespace_form_it_1_1_materials.html#a66b6925758525b5052cad633503e4686", null ],
     [ "AttributeType", "namespace_form_it_1_1_materials.html#a0370f54ce8222a8b62b04073f05b8709", [
       [ "kGloss", "namespace_form_it_1_1_materials.html#a0370f54ce8222a8b62b04073f05b8709a8f0b40d2bef02e8d7876d2c80ffeb483", null ],
       [ "kReflectionDirect", "namespace_form_it_1_1_materials.html#a0370f54ce8222a8b62b04073f05b8709acadea3a3c7f22f3299aafb1de95ae02f", null ],

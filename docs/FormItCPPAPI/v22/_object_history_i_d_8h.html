@@ -96,8 +96,7 @@ $(document).ready(function(){initNavTree('_object_history_i_d_8h.html',''); init
 <p>All rights reserved.</p>
 <p>This computer source code and related instructions and comments are the unpublished confidential and proprietary information of Autodesk, Inc. and are protected under applicable copyright and trade secret law. They may not be disclosed to, copied or used by any third party without the prior written consent of Autodesk, Inc.</p>
 <p>Declaration of classes ObjectHistoryID and GroupInstancePath. </p>
-</div><div class="textblock"><code>#include &quot;Std.h&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+</div><div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;assert.h&quot;</code><br />
@@ -117,28 +116,28 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_w_s_m"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_w_s_m.html">WSM</a></td></tr>
-<tr class="memdesc:namespace_w_s_m"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent namespace that encompasses all WSM core functionality. <br /></td></tr>
+<tr class="memdesc:namespace_w_s_m"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward declaration <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga54f1e500c4b63b9de3e0a088f0c2c8f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#ga54f1e500c4b63b9de3e0a088f0c2c8f7">WSM::AppendToGroupInstancePathArray</a> (<a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> const &amp;path, std::vector&lt; size_t &gt; const &amp;aInput, std::vector&lt; <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &gt; &amp;aOutput)</td></tr>
-<tr class="memdesc:ga54f1e500c4b63b9de3e0a088f0c2c8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">WSM::GroupInstancePath</a> and a vector of objects ID values in the same history, and populates the <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">GroupInstancePath</a> vector with that data.  <a href="group__mod__wsm__api__ref.html#ga54f1e500c4b63b9de3e0a088f0c2c8f7">More...</a><br /></td></tr>
-<tr class="separator:ga54f1e500c4b63b9de3e0a088f0c2c8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa20d971bb5b20d991fd36929273aba7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#gaa20d971bb5b20d991fd36929273aba7c">WSM::AppendToGroupInstancePathArray</a> (size_t nHistoryID, std::vector&lt; size_t &gt; const &amp;aInput, std::vector&lt; <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &gt; &amp;aOutput)</td></tr>
-<tr class="memdesc:gaa20d971bb5b20d991fd36929273aba7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a history ID and a vector of objects ID values, and adds to the <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">GroupInstancePath</a> vector with that data.  <a href="group__mod__wsm__api__ref.html#gaa20d971bb5b20d991fd36929273aba7c">More...</a><br /></td></tr>
-<tr class="separator:gaa20d971bb5b20d991fd36929273aba7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77c36a1e362f3ee3e4a957291e7e60bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#ga77c36a1e362f3ee3e4a957291e7e60bf">WSM::AppendToGroupInstancePathArray</a> (size_t nHistoryID, std::vector&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a> &gt; const &amp;aInput, std::vector&lt; <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &gt; &amp;aOutput)</td></tr>
-<tr class="memdesc:ga77c36a1e362f3ee3e4a957291e7e60bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a history ID and a vector of objects ID values, and adds to the <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">GroupInstancePath</a> vector with that data.  <a href="group__mod__wsm__api__ref.html#ga77c36a1e362f3ee3e4a957291e7e60bf">More...</a><br /></td></tr>
-<tr class="separator:ga77c36a1e362f3ee3e4a957291e7e60bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a480cfaf2bdc083d3fcbfedd9c451bfe8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a480cfaf2bdc083d3fcbfedd9c451bfe8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_history_i_d_8h.html#a480cfaf2bdc083d3fcbfedd9c451bfe8">hash_combine</a> (std::size_t &amp;seed, T const &amp;v)</td></tr>
-<tr class="memdesc:a480cfaf2bdc083d3fcbfedd9c451bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is from boost:  <a href="_object_history_i_d_8h.html#a480cfaf2bdc083d3fcbfedd9c451bfe8">More...</a><br /></td></tr>
-<tr class="separator:a480cfaf2bdc083d3fcbfedd9c451bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7781e666ec22e6965695d02519ce2eff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#ga7781e666ec22e6965695d02519ce2eff">WSM::AppendToGroupInstancePathArray</a> (<a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> const &amp;path, 1::vector&lt; size_t &gt; const &amp;aInput, 1::vector&lt; <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &gt; &amp;aOutput)</td></tr>
+<tr class="memdesc:ga7781e666ec22e6965695d02519ce2eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">WSM::GroupInstancePath</a> and a vector of objects ID values in the same history, and populates the <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">GroupInstancePath</a> vector with that data.  <a href="group__mod__wsm__api__ref.html#ga7781e666ec22e6965695d02519ce2eff">More...</a><br /></td></tr>
+<tr class="separator:ga7781e666ec22e6965695d02519ce2eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecc5c8f4b276bbc9cfd37e44aa4a8be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#gaecc5c8f4b276bbc9cfd37e44aa4a8be3">WSM::AppendToGroupInstancePathArray</a> (size_t nHistoryID, 1::vector&lt; size_t &gt; const &amp;aInput, 1::vector&lt; <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &gt; &amp;aOutput)</td></tr>
+<tr class="memdesc:gaecc5c8f4b276bbc9cfd37e44aa4a8be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a history ID and a vector of objects ID values, and adds to the <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">GroupInstancePath</a> vector with that data.  <a href="group__mod__wsm__api__ref.html#gaecc5c8f4b276bbc9cfd37e44aa4a8be3">More...</a><br /></td></tr>
+<tr class="separator:gaecc5c8f4b276bbc9cfd37e44aa4a8be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff61c801191783a0ae5f6c77cafb6dbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#gaff61c801191783a0ae5f6c77cafb6dbf">WSM::AppendToGroupInstancePathArray</a> (size_t nHistoryID, 1::vector&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a> &gt; const &amp;aInput, 1::vector&lt; <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &gt; &amp;aOutput)</td></tr>
+<tr class="memdesc:gaff61c801191783a0ae5f6c77cafb6dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a history ID and a vector of objects ID values, and adds to the <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">GroupInstancePath</a> vector with that data.  <a href="group__mod__wsm__api__ref.html#gaff61c801191783a0ae5f6c77cafb6dbf">More...</a><br /></td></tr>
+<tr class="separator:gaff61c801191783a0ae5f6c77cafb6dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc21b60f50d5f85cb0e29017d3b4891"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5dc21b60f50d5f85cb0e29017d3b4891"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_history_i_d_8h.html#a5dc21b60f50d5f85cb0e29017d3b4891">hash_combine</a> (1::size_t &amp;seed, T const &amp;v)</td></tr>
+<tr class="memdesc:a5dc21b60f50d5f85cb0e29017d3b4891"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is from boost:  <a href="_object_history_i_d_8h.html#a5dc21b60f50d5f85cb0e29017d3b4891">More...</a><br /></td></tr>
+<tr class="separator:a5dc21b60f50d5f85cb0e29017d3b4891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a480cfaf2bdc083d3fcbfedd9c451bfe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a480cfaf2bdc083d3fcbfedd9c451bfe8">&#9670;&nbsp;</a></span>hash_combine()</h2>
+<a id="a5dc21b60f50d5f85cb0e29017d3b4891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc21b60f50d5f85cb0e29017d3b4891">&#9670;&nbsp;</a></span>hash_combine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +150,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void hash_combine </td>
           <td>(</td>
-          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramtype">1::size_t &amp;&#160;</td>
           <td class="paramname"><em>seed</em>, </td>
         </tr>
         <tr>

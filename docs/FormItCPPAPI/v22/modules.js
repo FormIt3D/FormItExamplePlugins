@@ -31,6 +31,7 @@ var modules =
     [ "FormIt::SunAndLocation API", "group__mod__formitcore__sunandlocation__api__ref.html", "group__mod__formitcore__sunandlocation__api__ref" ],
     [ "FormIt::Utils API", "group__mod__formitcore__utils__api__ref.html", "group__mod__formitcore__utils__api__ref" ],
     [ "FormIt Core Shortcut Command Strings", "group__mod__formit__core__sc.html", "group__mod__formit__core__sc" ],
-    [ "WSM Core API Reference List", "group__mod__wsm__api__ref.html", "group__mod__wsm__api__ref" ],
+    [ "WSM API Reference List", "group__mod__wsm__api__ref.html", "group__mod__wsm__api__ref" ],
+    [ "WSM::Std API", "group__mod__wsm__std__api__ref.html", null ],
     [ "WSM::ApiProgress API", "group__mod__wsm__apiprogress__api__ref.html", "group__mod__wsm__apiprogress__api__ref" ]
 ];
