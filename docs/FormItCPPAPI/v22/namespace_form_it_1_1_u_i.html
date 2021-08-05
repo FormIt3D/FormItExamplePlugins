@@ -98,7 +98,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3a1764077100d2335c81125b555c6b92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="namespace_form_it.html#adac11fdf20316d86ea2499beac5b6388">FormIt::NotificationHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__ui__api__ref.html#ga3a1764077100d2335c81125b555c6b92">ShowNotification</a> (const 1::string &amp;message, <a class="el" href="namespace_form_it.html#afb5a97d90622ea05a439c322a6bab524">NotificationType</a> type, int nTimeout=FormIt::UI::sDefaultNotificationTimeoutMs, <a class="el" href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">LinkCallback</a> linkCallback={})</td></tr>
+<tr class="memitem:ga3a1764077100d2335c81125b555c6b92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="namespace_form_it.html#adac11fdf20316d86ea2499beac5b6388">FormIt::NotificationHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__ui__api__ref.html#ga3a1764077100d2335c81125b555c6b92">ShowNotification</a> (const std::string &amp;message, <a class="el" href="namespace_form_it.html#afb5a97d90622ea05a439c322a6bab524">NotificationType</a> type, int nTimeout=FormIt::UI::sDefaultNotificationTimeoutMs, <a class="el" href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">LinkCallback</a> linkCallback={})</td></tr>
 <tr class="memdesc:ga3a1764077100d2335c81125b555c6b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a notification message to the user.  <a href="group__mod__formitcore__ui__api__ref.html#ga3a1764077100d2335c81125b555c6b92">More...</a><br /></td></tr>
 <tr class="separator:ga3a1764077100d2335c81125b555c6b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa704b5c358cb5d97f019d818735226c7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it_1_1_u_i.html#aa704b5c358cb5d97f019d818735226c7">FormItDialogBox</a> { <a class="el" href="namespace_form_it_1_1_u_i.html#aa704b5c358cb5d97f019d818735226c7a509820290d57f333403f490dde7316f4">Local</a> =0
@@ -125,7 +125,7 @@ Functions</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3f5eb6264f50896ef64ae0f10226127f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commonly used cursor types.  <a href="namespace_form_it_1_1_u_i.html#a3f5eb6264f50896ef64ae0f10226127f">More...</a><br /></td></tr>
 <tr class="separator:a3f5eb6264f50896ef64ae0f10226127f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405f83daae81affaecc0d9b63ccb010d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">LinkCallback</a> = 1::function&lt; void(1::string, <a class="el" href="namespace_form_it.html#adac11fdf20316d86ea2499beac5b6388">FormIt::NotificationHandle</a>)&gt;</td></tr>
+<tr class="memitem:a405f83daae81affaecc0d9b63ccb010d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">LinkCallback</a> = std::function&lt; void(std::string, <a class="el" href="namespace_form_it.html#adac11fdf20316d86ea2499beac5b6388">FormIt::NotificationHandle</a>)&gt;</td></tr>
 <tr class="memdesc:a405f83daae81affaecc0d9b63ccb010d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked when a hyperlink is clicked on in a notification dialog.  <a href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">More...</a><br /></td></tr>
 <tr class="separator:a405f83daae81affaecc0d9b63ccb010d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">FormIt::UI::LinkCallback</a> = typedef 1::function&lt;void(1::string, <a class="el" href="namespace_form_it.html#adac11fdf20316d86ea2499beac5b6388">FormIt::NotificationHandle</a>)&gt;</td>
+          <td class="memname">using <a class="el" href="namespace_form_it_1_1_u_i.html#a405f83daae81affaecc0d9b63ccb010d">FormIt::UI::LinkCallback</a> = typedef std::function&lt;void(std::string, <a class="el" href="namespace_form_it.html#adac11fdf20316d86ea2499beac5b6388">FormIt::NotificationHandle</a>)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
