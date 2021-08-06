@@ -140,14 +140,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AppendObjectHistoryID appends the given ObjectHistoryID to the end of the <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">GroupInstancePath</a> In: groupInstancePath, ObjectID Out: bool. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#AppendObjectHistoryID">AppendObjectHistoryID</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">groupInstancePath</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td><a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff" title="ObjectHistoryID creation method In: nHistoryID, nObjectID Out: ObjectHistoryID.">WSM.ObjectHistoryID</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>groupInstancePath </dd></dl>
 
 </div>
 </div>
@@ -168,14 +160,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetFinalObjectHistoryID returns the final ObjectHistoryID from the path. </p>
-<p>In: groupInstancePath Out: ObjectHistoryID</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#GetFinalObjectHistoryID">GetFinalObjectHistoryID</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">groupInstancePath</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>In: groupInstancePath Out: ObjectHistoryID </p>
 
 </div>
 </div>
@@ -196,14 +181,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetObjectTransform returns a transform that accounts for the instance transforms, if any. </p>
-<p>If the final object is also an instance, this also includes the transform of that instance. In: groupInstancePath Out: transform</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#GetObjectTransform">GetObjectTransform</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">groupInstancePath</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>transf3d </dd></dl>
+<p>If the final object is also an instance, this also includes the transform of that instance. In: groupInstancePath Out: transform </p>
 
 </div>
 </div>
@@ -224,14 +202,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetTopObjectHistoryID returns the top ObjectHistoryID from the path. </p>
-<p>In: groupInstancePath Out: ObjectHistoryID</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#GetTopObjectHistoryID">GetTopObjectHistoryID</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">groupInstancePath</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>In: groupInstancePath Out: ObjectHistoryID </p>
 
 </div>
 </div>
@@ -262,15 +233,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IsPrefixOf returns true if path1 path is a strict prefix of path2. </p>
-<p>In: path1, path2 Out: bool</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#IsPrefixOf">IsPrefixOf</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">path1</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">path2</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>In: path1, path2 Out: bool </p>
 
 </div>
 </div>
@@ -291,14 +254,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IsValid checks to see if there are enough IDs in the <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">GroupInstancePath</a> and they're not invalid. </p>
-<p>In: groupInstancePath Out: bool</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#IsValid">IsValid</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">groupInstancePath</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>In: groupInstancePath Out: bool </p>
 
 </div>
 </div>

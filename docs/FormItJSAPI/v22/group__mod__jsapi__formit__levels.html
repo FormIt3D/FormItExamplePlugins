@@ -94,7 +94,6 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__levels.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga5fccccf904e90417cd49a37b9d7f4380"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__levels.html#ga5fccccf904e90417cd49a37b9d7f4380">FormIt.Levels.AddLevels</a> (nHistoryID, numLevels, startElevation, deltaElevation)</td></tr>
-<tr class="memdesc:ga5fccccf904e90417cd49a37b9d7f4380"><td class="mdescLeft">&#160;</td><td class="mdescRight">AddLevels.  <a href="group__mod__jsapi__formit__levels.html#ga5fccccf904e90417cd49a37b9d7f4380">More...</a><br /></td></tr>
 <tr class="separator:ga5fccccf904e90417cd49a37b9d7f4380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga779aca6635d06159f990da327141fe65"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__levels.html#ga779aca6635d06159f990da327141fe65">FormIt.Levels.AutoRenameLevels</a> (nHistoryID)</td></tr>
 <tr class="memdesc:ga779aca6635d06159f990da327141fe65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames all levels with a default name according to the elevation order.  <a href="group__mod__jsapi__formit__levels.html#ga779aca6635d06159f990da327141fe65">More...</a><br /></td></tr>
@@ -210,28 +209,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>AddLevels. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">numLevels</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">startElevation</td><td>double </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">deltaElevation</td><td>double The offset to the next elevation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "LevelIds", array with new level ids}</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#AddLevels">AddLevels</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">numLevels</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">startElevation</td><td>double </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">deltaElevation</td><td>double </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(success) },{ "LevelIds" , to_json(aNewLevels) } }; </dd></dl>
-
 </div>
 </div>
 <a id="ga779aca6635d06159f990da327141fe65"></a>
@@ -254,17 +231,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#AutoRenameLevels">AutoRenameLevels</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#AutoRenameLevels">AutoRenameLevels</a> </dd></dl>
 
 </div>
 </div>
@@ -306,19 +279,13 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">levelID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">newElevation</td><td>double </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#ChangeLevelElevation">ChangeLevelElevation</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">levelID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newElevation</td><td>double </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#ChangeLevelElevation">ChangeLevelElevation</a> </dd></dl>
 
 </div>
 </div>
@@ -356,15 +323,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#ChangeLevelName">ChangeLevelName</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">levelID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">levelName</td><td>String </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#ChangeLevelName">ChangeLevelName</a> </dd></dl>
 
 </div>
 </div>
@@ -388,17 +349,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#CreateDefaultLevels">CreateDefaultLevels</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#CreateDefaultLevels">CreateDefaultLevels</a> </dd></dl>
 
 </div>
 </div>
@@ -433,18 +390,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aLevelIDs</td><td>Array of int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#DeleteLevels">DeleteLevels</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLevelIDs</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#DeleteLevels">DeleteLevels</a> </dd></dl>
 
 </div>
 </div>
@@ -489,16 +441,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>double area of level on given objects</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetAreaForObjects">GetAreaForObjects</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLevelId</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aObjectIds</td><td>Array of int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>double area of level on given objects <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetAreaForObjects">GetAreaForObjects</a> </dd></dl>
 
 </div>
 </div>
@@ -518,8 +463,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the default level height. </p>
-<dl class="section return"><dt>Returns</dt><dd>double Default Level Height</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetDefaultLevelHeight">GetDefaultLevelHeight</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>double Default Level Height <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetDefaultLevelHeight">GetDefaultLevelHeight</a> </dd></dl>
 
 </div>
 </div>
@@ -554,18 +500,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">levelID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "LevelData", data}</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelData">GetLevelData</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">levelID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(result.first) },{ "LevelData" , to_json(result.second) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "LevelData", data} <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelData">GetLevelData</a> </dd></dl>
 
 </div>
 </div>
@@ -589,17 +530,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "LevelsData", data}</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelIDsFromSelectedObjects">GetLevelIDsFromSelectedObjects</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(result) },{ "LevelsData" , to_json(aLevels) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "LevelsData", data} <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelIDsFromSelectedObjects">GetLevelIDsFromSelectedObjects</a> </dd></dl>
 
 </div>
 </div>
@@ -634,18 +571,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sortByElevation</td><td>bool - set to true to sort the levels by elevation in ascending order </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of Level IDs</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevels">GetLevels</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sortByElevation</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of Level IDs <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevels">GetLevels</a> </dd></dl>
 
 </div>
 </div>
@@ -680,18 +612,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sortByElevation</td><td>bool - set to true to sort the levels by elevation in ascending order </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of LevelData</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelsData">GetLevelsData</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sortByElevation</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of LevelData <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelsData">GetLevelsData</a> </dd></dl>
 
 </div>
 </div>
@@ -711,8 +638,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns if levels are visible. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if levels are visible</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelsVisible">GetLevelsVisible</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if levels are visible <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetLevelsVisible">GetLevelsVisible</a> </dd></dl>
 
 </div>
 </div>
@@ -736,17 +664,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The elevation of the highest level in the given history.</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetMaxLevelElevation">GetMaxLevelElevation</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The elevation of the highest level in the given history. <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetMaxLevelElevation">GetMaxLevelElevation</a> </dd></dl>
 
 </div>
 </div>
@@ -770,17 +694,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The elevation of the lowest level in the given history.</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetMinLevelElevation">GetMinLevelElevation</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The elevation of the lowest level in the given history. <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetMinLevelElevation">GetMinLevelElevation</a> </dd></dl>
 
 </div>
 </div>
@@ -804,17 +724,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of levels in the given history</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetNumLevels">GetNumLevels</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of levels in the given history <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#GetNumLevels">GetNumLevels</a> </dd></dl>
 
 </div>
 </div>
@@ -841,14 +757,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true, if there is at least one object with at least one level</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#HasLevelsInProject">HasLevelsInProject</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">checkVisibleOnly</td><td>bool </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true, if there is at least one object with at least one level <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#HasLevelsInProject">HasLevelsInProject</a> </dd></dl>
 
 </div>
 </div>
@@ -886,15 +797,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the Level exists</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsExistingLevel">IsExistingLevel</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">levelName</td><td>String </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the Level exists <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsExistingLevel">IsExistingLevel</a> </dd></dl>
 
 </div>
 </div>
@@ -967,16 +872,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "Elevation", elevation, "Error:", error }</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidLevelDeltaElevation">IsValidLevelDeltaElevation</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">deltaElevationString</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">numLevels</td><td>int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(valid.first) }, { "Elevation" , to_json(valid.second) }, { "Error" , to_json(errorMsg) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "Elevation", elevation, "Error:", error } <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidLevelDeltaElevation">IsValidLevelDeltaElevation</a> </dd></dl>
 
 </div>
 </div>
@@ -1021,16 +919,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "Elevation", elevation, "Error:", error }</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidLevelElevation">IsValidLevelElevation</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">levelId</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">elevationString</td><td>String </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(valid.first) }, { "Elevation" , to_json(valid.second) }, { "Error" , to_json(errorMsg) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "Elevation", elevation, "Error:", error } <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidLevelElevation">IsValidLevelElevation</a> </dd></dl>
 
 </div>
 </div>
@@ -1061,15 +952,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true is the given level name is valid. </p>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result", vaild },{ "Error", errorMsg } };</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidLevelName">IsValidLevelName</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">levelID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">levelName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(vaild) },{ "Error" , to_json(errorMsg) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ { "Result", vaild },{ "Error", errorMsg } }; <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidLevelName">IsValidLevelName</a> </dd></dl>
 
 </div>
 </div>
@@ -1114,16 +1006,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "Elevation", elevation, "Error:", error }</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidNumberOfLevelsToAdd">IsValidNumberOfLevelsToAdd</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">numLevelsString</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">deltaElevation</td><td>double </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(valid.first) }, { "NumLevels" , to_json(valid.second) }, { "Error" , to_json(errorMsg) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result:" result, "Elevation", elevation, "Error:", error } <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#IsValidNumberOfLevelsToAdd">IsValidNumberOfLevelsToAdd</a> </dd></dl>
 
 </div>
 </div>
@@ -1161,15 +1046,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#SetLevelsToSelectedObjects">SetLevelsToSelectedObjects</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLevelList</td><td>Array of int </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#SetLevelsToSelectedObjects">SetLevelsToSelectedObjects</a> </dd></dl>
 
 </div>
 </div>
@@ -1196,14 +1075,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#SetLevelsVisible">SetLevelsVisible</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aVisible</td><td>bool </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#SetLevelsVisible">SetLevelsVisible</a> </dd></dl>
 
 </div>
 </div>
@@ -1230,14 +1104,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#SetReportAreaByLevelsOnSelection">SetReportAreaByLevelsOnSelection</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bON</td><td>bool </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED <br  />
+<br  />
+ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__levels__api__ref.html#SetReportAreaByLevelsOnSelection">SetReportAreaByLevelsOnSelection</a> </dd></dl>
 
 </div>
 </div>

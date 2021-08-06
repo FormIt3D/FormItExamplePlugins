@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('group__mod__wsm__apiprogress__api__ref
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp9d937eb98c2866f012f363493bfa6d7e"></a>Start, Progress, and Finish callbacks for API progress reporting.</p>
 <p>They are passed to <a class="el" href="group__mod__wsm__api__ref.html#ga559bb0f5e92f510f3c4518de951e11f5" title="Register progress callback.">APIRegisterProgressCallbacksReadOnly()</a> together with progress bounds and increment. </p>
 </td></tr>
-<tr class="memitem:gae7f7a6f5b4e7e9045da4b29c36c05e46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">WSM::ApiProgress::StartCbk</a> = void(const 1::string &amp;)</td></tr>
+<tr class="memitem:gae7f7a6f5b4e7e9045da4b29c36c05e46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">WSM::ApiProgress::StartCbk</a> = void(const std::string &amp;)</td></tr>
 <tr class="memdesc:gae7f7a6f5b4e7e9045da4b29c36c05e46"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
  <a href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">More...</a><br /></td></tr>
 <tr class="separator:gae7f7a6f5b4e7e9045da4b29c36c05e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('group__mod__wsm__apiprogress__api__ref
 <tr class="separator:ga56e23c2f831917e6b6623696564fbc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4359e373cf404ac608e51f00da22603f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga4359e373cf404ac608e51f00da22603f">WSM::ApiProgress::FinishedCbk</a> = void(const <a class="el" href="class_w_s_m_1_1_result.html">Result</a> &amp;)</td></tr>
 <tr class="separator:ga4359e373cf404ac608e51f00da22603f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab22fdcdbb4d9c79c7943c5bad3bb25e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gab22fdcdbb4d9c79c7943c5bad3bb25e7">WSM::ApiProgress::StartCbkFn</a> = 1::function&lt; <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">StartCbk</a> &gt;</td></tr>
+<tr class="memitem:gab22fdcdbb4d9c79c7943c5bad3bb25e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gab22fdcdbb4d9c79c7943c5bad3bb25e7">WSM::ApiProgress::StartCbkFn</a> = std::function&lt; <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">StartCbk</a> &gt;</td></tr>
 <tr class="separator:gab22fdcdbb4d9c79c7943c5bad3bb25e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ce2b20621cb6b5532dd8935a537101d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga2ce2b20621cb6b5532dd8935a537101d">WSM::ApiProgress::ProgressCbkFn</a> = 1::function&lt; <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga56e23c2f831917e6b6623696564fbc9c">ProgressCbk</a> &gt;</td></tr>
+<tr class="memitem:ga2ce2b20621cb6b5532dd8935a537101d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga2ce2b20621cb6b5532dd8935a537101d">WSM::ApiProgress::ProgressCbkFn</a> = std::function&lt; <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga56e23c2f831917e6b6623696564fbc9c">ProgressCbk</a> &gt;</td></tr>
 <tr class="separator:ga2ce2b20621cb6b5532dd8935a537101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac96f0efc1e00ff7f0878f4cd43d9b90c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gac96f0efc1e00ff7f0878f4cd43d9b90c">WSM::ApiProgress::FinishedCbkFn</a> = 1::function&lt; <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga4359e373cf404ac608e51f00da22603f">FinishedCbk</a> &gt;</td></tr>
+<tr class="memitem:gac96f0efc1e00ff7f0878f4cd43d9b90c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gac96f0efc1e00ff7f0878f4cd43d9b90c">WSM::ApiProgress::FinishedCbkFn</a> = std::function&lt; <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga4359e373cf404ac608e51f00da22603f">FinishedCbk</a> &gt;</td></tr>
 <tr class="separator:gac96f0efc1e00ff7f0878f4cd43d9b90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('group__mod__wsm__apiprogress__api__ref
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gac96f0efc1e00ff7f0878f4cd43d9b90c">WSM::ApiProgress::FinishedCbkFn</a> = typedef 1::function&lt;<a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga4359e373cf404ac608e51f00da22603f">FinishedCbk</a>&gt;</td>
+          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gac96f0efc1e00ff7f0878f4cd43d9b90c">WSM::ApiProgress::FinishedCbkFn</a> = typedef std::function&lt;<a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga4359e373cf404ac608e51f00da22603f">FinishedCbk</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('group__mod__wsm__apiprogress__api__ref
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga2ce2b20621cb6b5532dd8935a537101d">WSM::ApiProgress::ProgressCbkFn</a> = typedef 1::function&lt;<a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga56e23c2f831917e6b6623696564fbc9c">ProgressCbk</a>&gt;</td>
+          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga2ce2b20621cb6b5532dd8935a537101d">WSM::ApiProgress::ProgressCbkFn</a> = typedef std::function&lt;<a class="el" href="group__mod__wsm__apiprogress__api__ref.html#ga56e23c2f831917e6b6623696564fbc9c">ProgressCbk</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('group__mod__wsm__apiprogress__api__ref
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">WSM::ApiProgress::StartCbk</a> = typedef void(const 1::string&amp;)</td>
+          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">WSM::ApiProgress::StartCbk</a> = typedef void(const std::string&amp;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('group__mod__wsm__apiprogress__api__ref
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gab22fdcdbb4d9c79c7943c5bad3bb25e7">WSM::ApiProgress::StartCbkFn</a> = typedef 1::function&lt;<a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">StartCbk</a>&gt;</td>
+          <td class="memname">using <a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gab22fdcdbb4d9c79c7943c5bad3bb25e7">WSM::ApiProgress::StartCbkFn</a> = typedef std::function&lt;<a class="el" href="group__mod__wsm__apiprogress__api__ref.html#gae7f7a6f5b4e7e9045da4b29c36c05e46">StartCbk</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
