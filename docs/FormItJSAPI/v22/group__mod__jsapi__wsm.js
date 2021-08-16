@@ -1,7 +1,16 @@
 var group__mod__jsapi__wsm =
 [
+    [ "WSM.AppHelper API", "group__mod__jsapi__wsm__apphelper.html", "group__mod__jsapi__wsm__apphelper" ],
+    [ "WSM.InferenceEngine API", "group__mod__jsapi__wsm__inferenceengine.html", "group__mod__jsapi__wsm__inferenceengine" ],
+    [ "WSM.Atf API", "group__mod__jsapi__wsm__atf.html", "group__mod__jsapi__wsm__atf" ],
+    [ "WSM.Geom API", "group__mod__jsapi__wsm__geom.html", "group__mod__jsapi__wsm__geom" ],
+    [ "WSM.RenderHelper API", "group__mod__jsapi__wsm__renderhelper.html", "group__mod__jsapi__wsm__renderhelper" ],
+    [ "WSM.Sat API", "group__mod__jsapi__wsm__sat.html", "group__mod__jsapi__wsm__sat" ],
     [ "WSM.GroupInstancePath API", "group__mod__jsapi__wsm__groupinstancepath.html", "group__mod__jsapi__wsm__groupinstancepath" ],
     [ "WSM.Test API", "group__mod__jsapi__wsm__test.html", null ],
+    [ "WSM.Skup API", "group__mod__jsapi__wsm__skup.html", "group__mod__jsapi__wsm__skup" ],
+    [ "WSM.Tools API", "group__mod__jsapi__wsm__tools.html", "group__mod__jsapi__wsm__tools" ],
+    [ "WSM.Utils API", "group__mod__jsapi__wsm__utils.html", "group__mod__jsapi__wsm__utils" ],
     [ "APIAddFaceComponentToBody", "group__mod__jsapi__wsm.html#ga1b4cf9bf795b7406f703919f6bcdb271", null ],
     [ "APIAddInstancesToGroup", "group__mod__jsapi__wsm.html#gae46c5150531ef0aa1aee40221f5181e0", null ],
     [ "APIAddObjectsLayers", "group__mod__jsapi__wsm.html#ga767d26efeff24d55167506f797aaaccc", null ],
