@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "std.numpunct", null, [
+    [ "numpunct", null, [
       [ "baseGroupingNumpunct", "classbase_grouping_numpunct.html", [
         [ "commaPeriodNumpunct", "classcomma_period_numpunct.html", null ],
         [ "periodCommaNumpunct", "classperiod_comma_numpunct.html", null ],
