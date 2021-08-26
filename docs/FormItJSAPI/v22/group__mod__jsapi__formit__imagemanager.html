@@ -164,14 +164,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all images in given history. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nSort</td><td>enum </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>FormIt.AllImageData </dd></dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nSort</td><td>enum</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>FormIt.AllImageData </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nSort</td><td>FormIt.SortOrder </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>data </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -206,15 +224,40 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets ImageData for a single image. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nImageID</td><td>size_t </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aIncludeSatelliteData</td><td>bool </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Image Data </dd></dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nImageID</td><td>size_t</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIncludeSatelliteData</td><td>bool</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>Image Data </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nImageID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aIncludeSatelliteData</td><td>(OPTIONAL, default = true) bool </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>data </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -279,9 +322,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all images in given history. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fileName,pixelWidth,pixelHeight,worldWidth,worldHeight,isSatelliteImage,addToSelections</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>imageID New Image ID </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pixelWidth</td><td>int </td></tr>
@@ -293,7 +344,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>imageID New Image ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>imageID </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -354,14 +407,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reloads a layer with a placeholder image. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nLayerID</td><td>size_t </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nLayerID</td><td>size_t</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nLayerID</td><td>int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -414,18 +485,64 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reloads terrain based on elevation data and an image. </p>
-<p>If the image file is not specified, re-uses the existing image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the image file is not specified, re-uses the existing image.</p><ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nImageID</td><td>size_t </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">imageFile</td><td>std.string </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nRows</td><td>size_t - the number of rows of elevation data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nCols</td><td>size_t - the number of columns of elevation data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">elevations</td><td>std.vector&lt;double&gt; </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>size_t</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nImageID</td><td>size_t</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imageFile</td><td>std.string</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nRows</td><td>size_t - the number of rows of elevation data</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nCols</td><td>size_t - the number of columns of elevation data</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elevations</td><td>std.vector&lt;double&gt;</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nImageID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imageFile</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nRows</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nCols</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elevations</td><td>Array of double </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -466,9 +583,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the Image alpha. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID,imageID,fAlpha,bFinalChange</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">imageID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fAlpha</td><td>float </td></tr>
@@ -476,7 +601,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -511,16 +638,26 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the Image name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID,imageID,name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">imageID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -555,16 +692,26 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the Image Position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID,imageID,nPosition</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">imageID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nPosition</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>

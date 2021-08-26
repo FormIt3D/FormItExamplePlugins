@@ -25,6 +25,7 @@ var searchData=
   ['getareaforobjects',['GetAreaForObjects',['../group__mod__jsapi__formit__levels.html#ga77108de656ee6fbe923a4867dad2d75d',1,'FormIt.Levels']]],
   ['getaxisalignedboundingbox',['GetAxisAlignedBoundingBox',['../group__mod__jsapi__wsm__utils.html#gaa347e070f44e0b77f3b173f28d38658a',1,'WSM.Utils']]],
   ['getbackgroundcolor',['GetBackgroundColor',['../group__mod__jsapi__formit__visualstyles.html#ga48184d910228733937835aa1cfd3d9b1',1,'FormIt.VisualStyles']]],
+  ['getbcp47namecode',['Getbcp47NameCode',['../group__mod__jsapi__formit__ui.html#ga368be1ef517db8455f4bedc2739ee652',1,'FormIt.UI']]],
   ['getbuildingtype',['GetBuildingType',['../group__mod__jsapi__formit.html#ga462a2eedc22b78fca5435a50def210eb',1,'FormIt']]],
   ['getcameradata',['GetCameraData',['../group__mod__jsapi__formit__cameras.html#gae7049e11523cbec87c37013fe09d1a42',1,'FormIt.Cameras']]],
   ['getcameraspeed',['GetCameraSpeed',['../group__mod__jsapi__formit__scenes.html#ga7d4521f624f6a5cfc35d6f8fe655f57a',1,'FormIt.Scenes']]],

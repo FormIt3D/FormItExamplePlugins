@@ -117,6 +117,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga0398acaf74e8acb99df57a6da5a9dbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the editing context path.  <a href="group__mod__jsapi__formit__groupedit.html#ga0398acaf74e8acb99df57a6da5a9dbc1">More...</a><br /></td></tr>
 <tr class="separator:ga0398acaf74e8acb99df57a6da5a9dbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a228d7bb5e3aff4b3d0538ab93e7a0e"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__groupedit.html#ga1a228d7bb5e3aff4b3d0538ab93e7a0e">FormIt.GroupEdit.SetInContextEditingPath</a> (path)</td></tr>
+<tr class="memdesc:ga1a228d7bb5e3aff4b3d0538ab93e7a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the editing context path.  <a href="group__mod__jsapi__formit__groupedit.html#ga1a228d7bb5e3aff4b3d0538ab93e7a0e">More...</a><br /></td></tr>
 <tr class="separator:ga1a228d7bb5e3aff4b3d0538ab93e7a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga352b75e6e466bba2df675dec21a89a88"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__groupedit.html#ga352b75e6e466bba2df675dec21a89a88">FormIt.GroupEdit.IsEditingInContext</a> ()</td></tr>
 <tr class="memdesc:ga352b75e6e466bba2df675dec21a89a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if edit in context is happening.  <a href="group__mod__jsapi__formit__groupedit.html#ga352b75e6e466bba2df675dec21a89a88">More...</a><br /></td></tr>
@@ -149,7 +150,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>End editing in context. </p>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<ul>
+<li><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd>
+<dd>
+JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -167,7 +173,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exit to the parent context. </p>
-<p>If editing a nested group, this method will exit to the parent context as defined by the editing path. </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<p>If editing a nested group, this method will exit to the parent context as defined by the editing path.</p><ul>
+<li><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd>
+<dd>
+JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -200,7 +211,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the editing context path. </p>
-<p>The path is to the specific instance that is being edited. </p><dl class="section return"><dt>Returns</dt><dd>Returns <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace. ">WSM.GroupInstancePath</a>. </dd></dl>
+<p>The path is to the specific instance that is being edited.</p><ul>
+<li><dl class="section return"><dt>Returns</dt><dd>Returns <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace. ">WSM.GroupInstancePath</a>. </dd>
+<dd>
+{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -218,7 +234,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the status of the "Show Edited Group Only" option. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if "Show Edited Group Only" is active. </dd></dl>
+<ul>
+<li><dl class="section return"><dt>Returns</dt><dd>Returns true if "Show Edited Group Only" is active. </dd>
+<dd>
+{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -236,7 +257,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if edit in context is happening. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if currently editing in context. </dd></dl>
+<ul>
+<li><dl class="section return"><dt>Returns</dt><dd>Returns true if currently editing in context. </dd>
+<dd>
+{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -253,6 +279,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the editing context path. </p>
+<p>The path is to the specific instance that should be edited.</p><ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace. ">WSM.GroupInstancePath</a></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>Returns success. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Array of int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -271,14 +317,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the status of the "Show Edited Group Only" option. </p>
+<ul>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace. ">WSM.GroupInstancePath</a></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace. ">WSM.GroupInstancePath</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">show</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>

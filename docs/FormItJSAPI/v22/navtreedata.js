@@ -42,9 +42,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__mod__jsapi__formit__materialprovider.html#ga0aa39db433eefebb63b3a0dd17135859",
-"group__mod__jsapi__formit__visualstyles.html#ga686047b355f0d67dad6827d9f71b29a6",
-"group__mod__jsapi__wsm.html#gac95e73901dd8b0a9fc85ae7b052d804b",
-"namespace_form_it_1_1_commands.html"
+"group__mod__jsapi__formit__visualstyles.html#ga659f9f0757fcd9ad96aea5b2dbfab542",
+"group__mod__jsapi__wsm.html#gac7d0893ba3fbd42844c410370f017200",
+"namespace_form_it_1_1_auto_save.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

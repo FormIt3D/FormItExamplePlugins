@@ -8,5 +8,6 @@ var searchData=
   ['topview',['TopView',['../group__mod__jsapi__formit__view.html#gae09cf187dcf0415b8ba1afb989db2bfb',1,'FormIt.View']]],
   ['transf3d',['Transf3d',['../group__mod__jsapi__wsm__geom.html#gaad9b8a5a1706b1f8b93d8d98839e56a6',1,'WSM.Geom']]],
   ['transf3dareequal',['Transf3dAreEqual',['../group__mod__jsapi__wsm__geom.html#ga30dfdf51baf02549ea56398ee685415c',1,'WSM.Geom']]],
-  ['translatetransform',['TranslateTransform',['../group__mod__jsapi__wsm__geom.html#gaa72657e114543ea552fe51f93011f0e9',1,'WSM.Geom']]]
+  ['translatetransform',['TranslateTransform',['../group__mod__jsapi__wsm__geom.html#gaa72657e114543ea552fe51f93011f0e9',1,'WSM.Geom']]],
+  ['translationlookup',['TranslationLookup',['../group__mod__jsapi__formit__ui.html#ga22544e00a5c662bc0166852ae808f3a9',1,'FormIt.UI']]]
 ];

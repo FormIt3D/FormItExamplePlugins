@@ -138,15 +138,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga6a3692c3b9434f55236ba2be643a4a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetDaylightSavingTime sets DST on/off.  <a href="group__mod__jsapi__formit__sunandlocation.html#ga6a3692c3b9434f55236ba2be643a4a6d">More...</a><br /></td></tr>
 <tr class="separator:ga6a3692c3b9434f55236ba2be643a4a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga759064c06cd8df76d13db78ead2138ee"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sunandlocation.html#ga759064c06cd8df76d13db78ead2138ee">FormIt.SunAndLocation.GetLocationDateTime</a> ()</td></tr>
-<tr class="memdesc:ga759064c06cd8df76d13db78ead2138ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLocationDateTime Parameters: In: Out: {{"objectName", "SunLocationData", "latitude":, "longitude":, "Time":, "UTCTimeZone":, "DSTOffset":, "Day":, "Month":, "Year":, "DSTEnabled":};.  <a href="group__mod__jsapi__formit__sunandlocation.html#ga759064c06cd8df76d13db78ead2138ee">More...</a><br /></td></tr>
+<tr class="memdesc:ga759064c06cd8df76d13db78ead2138ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLocationDateTime <br />
+Parameters:  <a href="group__mod__jsapi__formit__sunandlocation.html#ga759064c06cd8df76d13db78ead2138ee">More...</a><br /></td></tr>
 <tr class="separator:ga759064c06cd8df76d13db78ead2138ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36df182df65191900ee168a7941b0892"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sunandlocation.html#ga36df182df65191900ee168a7941b0892">FormIt.SunAndLocation.GetSunRiseAndSet</a> ()</td></tr>
-<tr class="memdesc:ga36df182df65191900ee168a7941b0892"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetSunRiseAndSet Parameters: In: Out: {"objectName"" "SunRiseData",
-       sunRises":, sunRise":,
-       sunSet":};.  <a href="group__mod__jsapi__formit__sunandlocation.html#ga36df182df65191900ee168a7941b0892">More...</a><br /></td></tr>
+<tr class="memdesc:ga36df182df65191900ee168a7941b0892"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetSunRiseAndSet <br />
+Parameters:  <a href="group__mod__jsapi__formit__sunandlocation.html#ga36df182df65191900ee168a7941b0892">More...</a><br /></td></tr>
 <tr class="separator:ga36df182df65191900ee168a7941b0892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac64733377457059edc125104cf2d3e1a"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__sunandlocation.html#gac64733377457059edc125104cf2d3e1a">FormIt.SunAndLocation.GetLightDirectionFromLocationData</a> (sunLocationData)</td></tr>
-<tr class="memdesc:gac64733377457059edc125104cf2d3e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLightDirectionFromLocationData Parameters: In:SunLocationData Out: {{"objectName", "Vector3d", "x":, "y":, "z": };.  <a href="group__mod__jsapi__formit__sunandlocation.html#gac64733377457059edc125104cf2d3e1a">More...</a><br /></td></tr>
+<tr class="memdesc:gac64733377457059edc125104cf2d3e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLightDirectionFromLocationData <br />
+Parameters:  <a href="group__mod__jsapi__formit__sunandlocation.html#gac64733377457059edc125104cf2d3e1a">More...</a><br /></td></tr>
 <tr class="separator:gac64733377457059edc125104cf2d3e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -244,7 +245,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetDaylightSavingTime true if DST is active. </p>
-<p>Parameters: In: Out: bool </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p><br />
+Parameters:</p><ul>
+<li>In:</li>
+<li>Out: bool <dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -262,14 +268,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetLightDirectionFromLocationData Parameters: In:SunLocationData Out: {{"objectName", "Vector3d", "x":, "y":, "z": };. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>GetLightDirectionFromLocationData <br />
+Parameters: </p>
+<ul>
+<li>In:SunLocationData</li>
+<li>Out: {{"objectName", "Vector3d", "x":, "y":, "z": }; <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sunLocationData</td><td>FormIt.SunLocationData </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -286,8 +297,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetLocationDateTime Parameters: In: Out: {{"objectName", "SunLocationData", "latitude":, "longitude":, "Time":, "UTCTimeZone":, "DSTOffset":, "Day":, "Month":, "Year":, "DSTEnabled":};. </p>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>GetLocationDateTime <br />
+Parameters: </p>
+<ul>
+<li>In:</li>
+<li>Out: {{"objectName", "SunLocationData", "latitude":, "longitude":, "Time":, "UTCTimeZone":, "DSTOffset":, "Day":, "Month":, "Year":, "DSTEnabled":}; <dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -305,7 +321,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetProjectAddress returns the location address. </p>
-<p>Parameters: In: Out: string </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p><br />
+Parameters:</p><ul>
+<li>In:</li>
+<li>Out: string <dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -322,10 +343,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetSunRiseAndSet Parameters: In: Out: {"objectName"" "SunRiseData",
+<p>GetSunRiseAndSet <br />
+Parameters: </p>
+<ul>
+<li>In:</li>
+<li>Out: {"objectName"" "SunRiseData",
        sunRises":, sunRise":,
-       sunSet":};. </p>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+       sunSet":}; <dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -372,7 +398,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetDate sets the date. </p>
-<p>Parameters: In: nDay, nMonth, nYear, bUpdateRender (OPTIONAL=true), bForceUpdateShadows(OPTIONAL=true) Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: nDay, nMonth, nYear, bUpdateRender (OPTIONAL=true), bForceUpdateShadows(OPTIONAL=true)</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nDay</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nMonth</td><td>int </td></tr>
@@ -383,6 +412,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -411,7 +442,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetDaylightSavingTime sets DST on/off. </p>
-<p>Parameters: In: nDay, nMonth, nYear, bUpdateRender Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: nDay, nMonth, nYear, bUpdateRender</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>bool </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bUpdateRender</td><td>(OPTIONAL, default = true) bool </td></tr>
@@ -419,6 +453,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -447,7 +483,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetLocation sets the location. </p>
-<p>Parameters: In: longitude, latitude Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: longitude, latitude</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">longitude</td><td>double </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">latitude</td><td>double </td></tr>
@@ -455,6 +494,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -473,13 +514,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetProjectAddress sets the location address. </p>
-<p>Parameters: In: address Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: address</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -514,7 +560,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetTimeOfDay sets the time of day. </p>
-<p>Parameters: In: dTimeOfDay, bUpdateRender (OPTIONAL=true), bForceUpdateShadows(OPTIONAL=true) Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: dTimeOfDay, bUpdateRender (OPTIONAL=true), bForceUpdateShadows(OPTIONAL=true)</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dTimeOfDay</td><td>double </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bUpdateRender</td><td>(OPTIONAL, default = true) bool </td></tr>
@@ -523,6 +572,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -540,7 +591,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>UpdateShadows updates the shadows. </p>
-<p>Parameters: In: Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<p><br />
+Parameters:</p><ul>
+<li>In:</li>
+<li>Out: JSON_UNDEFINED <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>

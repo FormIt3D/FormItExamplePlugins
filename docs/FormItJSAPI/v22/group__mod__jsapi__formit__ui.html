@@ -113,6 +113,16 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__ui.html',''
 Functions</h2></td></tr>
 <tr class="memitem:gaf27366e1c32811b91b46d8c423124c85"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#gaf27366e1c32811b91b46d8c423124c85">FormIt.UI.LoadLangPack</a> (filename)</td></tr>
 <tr class="separator:gaf27366e1c32811b91b46d8c423124c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga368be1ef517db8455f4bedc2739ee652"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#ga368be1ef517db8455f4bedc2739ee652">FormIt.UI.Getbcp47NameCode</a> ()</td></tr>
+<tr class="memdesc:ga368be1ef517db8455f4bedc2739ee652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="namespace_form_it.html" title="FormIt namespace. ">FormIt</a> Locale name code <br />
+Parameters:  <a href="group__mod__jsapi__formit__ui.html#ga368be1ef517db8455f4bedc2739ee652">More...</a><br /></td></tr>
+<tr class="separator:ga368be1ef517db8455f4bedc2739ee652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22544e00a5c662bc0166852ae808f3a9"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#ga22544e00a5c662bc0166852ae808f3a9">FormIt.UI.TranslationLookup</a> (value)</td></tr>
+<tr class="memdesc:ga22544e00a5c662bc0166852ae808f3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate lookup a English string Looks up an English string through all of the components from the current loaded language string files.  <a href="group__mod__jsapi__formit__ui.html#ga22544e00a5c662bc0166852ae808f3a9">More...</a><br /></td></tr>
+<tr class="separator:ga22544e00a5c662bc0166852ae808f3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7882797034f42394334b53ba0d8e65d8"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#ga7882797034f42394334b53ba0d8e65d8">FormIt.UI.AddorReplaceTranslation</a> (Component, EnglishString, TranslatedString)</td></tr>
+<tr class="memdesc:ga7882797034f42394334b53ba0d8e65d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add or replace an English string to Translate lookup with its corresponding translation.  <a href="group__mod__jsapi__formit__ui.html#ga7882797034f42394334b53ba0d8e65d8">More...</a><br /></td></tr>
+<tr class="separator:ga7882797034f42394334b53ba0d8e65d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga929758faf4a34f6e3e8babaacef41b64"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__ui.html#ga929758faf4a34f6e3e8babaacef41b64">FormIt.UI.CreatePanel</a> (title, url)</td></tr>
 <tr class="memdesc:ga929758faf4a34f6e3e8babaacef41b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreatePanel creates a dockable panel with the given name and displays the given URL.  <a href="group__mod__jsapi__formit__ui.html#ga929758faf4a34f6e3e8babaacef41b64">More...</a><br /></td></tr>
 <tr class="separator:ga929758faf4a34f6e3e8babaacef41b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +137,54 @@ Functions</h2></td></tr>
 <tr class="separator:ga52de008ad5ad73869289264e26df62f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga7882797034f42394334b53ba0d8e65d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.UI.AddorReplaceTranslation </td>
+          <td>(</td>
+          <td class="paramtype">Component&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EnglishString&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TranslatedString&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add or replace an English string to Translate lookup with its corresponding translation. </p>
+<p><br />
+Parameters:</p><ul>
+<li>In: Translation component string (eg FormItUI, FormItCore, <a class="el" href="namespace_w_s_m.html" title="WSM namespace. ">WSM</a> or "") English string Translated string</li>
+<li>Out: translated string <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Component</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">EnglishString</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">TranslatedString</td><td>String </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>stringTrans </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
 <a class="anchor" id="ga52de008ad5ad73869289264e26df62f4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,13 +200,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CloseNotification closes notification message being displayed related to the notificationHandle passed as input parameter. </p>
-<p>Parameters: In: handle Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: handle</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">notificationHandle</td><td>FormIt.NotificationHandle </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -177,7 +240,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CreatePanel creates a dockable panel with the given name and displays the given URL. </p>
-<p>Parameters: In: title, url Out: JSON_UNDEFINED <a class="el" href="group__mod__jsapi__formit__ui.html#ga929758faf4a34f6e3e8babaacef41b64" title="CreatePanel creates a dockable panel with the given name and displays the given URL. ">FormIt.UI.CreatePanel</a>("Hello Block!", "http://localhost:8000/hello_block.html"); </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: title, url</li>
+<li>Out: JSON_UNDEFINED <a class="el" href="group__mod__jsapi__formit__ui.html#ga929758faf4a34f6e3e8babaacef41b64" title="CreatePanel creates a dockable panel with the given name and displays the given URL. ">FormIt.UI.CreatePanel</a>("Hello Block!", "http://localhost:8000/hello_block.html"); <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>String </td></tr>
@@ -185,6 +251,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -213,7 +281,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CreateToolbar creates a toolbar with the structure given by the passed in JSON. </p>
-<p>Parameters: In: JSON description of toolbar Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+Parameters:</p><ul>
+<li>In: JSON description of toolbar</li>
+<li>Out: JSON_UNDEFINED <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tbJSON</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">URL</td><td>String </td></tr>
@@ -221,6 +292,31 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ga368be1ef517db8455f4bedc2739ee652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.UI.Getbcp47NameCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="namespace_form_it.html" title="FormIt namespace. ">FormIt</a> Locale name code <br />
+Parameters: </p>
+<ul>
+<li>In:</li>
+<li>Out: QT Locale name string code <dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -271,7 +367,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ShowNotification displays a notification message to the user. </p>
-<p>The nTimeout parameter is the time in ms that the notification should be displayed. A value of 0 means to use the default timeout. notificationType: FormIt.NotificationType.Unspecified FormIt.NotificationType.Information FormIt.NotificationType.Warning FormIt.NotificationType.Error FormIt.NotificationType.Success Parameters: In: message, notificationType, nTimeout (OPTIONAL) Out: NotificationHandle </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The nTimeout parameter is the time in ms that the notification should be displayed. A value of 0 means to use the default timeout. notificationType: FormIt.NotificationType.Unspecified FormIt.NotificationType.Information FormIt.NotificationType.Warning FormIt.NotificationType.Error FormIt.NotificationType.Success <br />
+Parameters:</p><ul>
+<li>In: message, notificationType, nTimeout (OPTIONAL)</li>
+<li>Out: NotificationHandle <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">notificationType</td><td>FormIt.NotificationType </td></tr>
@@ -280,6 +379,39 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>notificationHandle </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ga22544e00a5c662bc0166852ae808f3a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json FormIt.UI.TranslationLookup </td>
+          <td>(</td>
+          <td class="paramtype">value&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate lookup a English string Looks up an English string through all of the components from the current loaded language string files. </p>
+<p>And returns the first matching string.</p>
+<p><br />
+Parameters:</p><ul>
+<li>In: English string</li>
+<li>Out: translated string <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>String </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>stringTrans </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
