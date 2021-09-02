@@ -10,9 +10,9 @@ var group__mod__jsapi__formit__sketchmaterials =
     [ "GetSketchMaterialFromWSMMaterial", "group__mod__jsapi__formit__sketchmaterials.html#ga72a686499692639028b82de83746a61d", null ],
     [ "GetWSMMaterialForHistory", "group__mod__jsapi__formit__sketchmaterials.html#ga05ca7c1363ae5c623cf69b7cdbef04fe", null ],
     [ "IsMaterialUsed", "group__mod__jsapi__formit__sketchmaterials.html#ga8fc6c61c5c90e229acdd6bd3dc508d38", null ],
-    [ "Parameters", "group__mod__jsapi__formit__sketchmaterials.html#ga4715154103ef36d0382607c772cab5b2", null ],
     [ "RearrangeMaterials", "group__mod__jsapi__formit__sketchmaterials.html#ga7bc67f8591d52209d091b64a219626bb", null ],
     [ "SetDefaultMaterialData", "group__mod__jsapi__formit__sketchmaterials.html#ga12d8cab61d7f9a8206ef3f3ebe6c5b70", null ],
     [ "SetMaterialDataAttribute", "group__mod__jsapi__formit__sketchmaterials.html#gab52aeeca7518631e6cf97390fc469bde", null ],
-    [ "SetMaterialDataMap", "group__mod__jsapi__formit__sketchmaterials.html#gadfe049050276fbe48d480f1cce65c801", null ]
+    [ "SetMaterialDataMap", "group__mod__jsapi__formit__sketchmaterials.html#gadfe049050276fbe48d480f1cce65c801", null ],
+    [ "UpdateMaterialFromParameters", "group__mod__jsapi__formit__sketchmaterials.html#ga5804f9349bff575fd7ffc1784fabcdaa", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basegroupingnumpunct',['baseGroupingNumpunct',['../classbase_grouping_numpunct.html',1,'']]]
+  ['basegroupingnumpunct_1072',['baseGroupingNumpunct',['../classbase_grouping_numpunct.html',1,'']]]
 ];

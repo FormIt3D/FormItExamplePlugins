@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['objectcanbehidden',['ObjectCanBeHidden',['../group__mod__jsapi__wsm__utils.html#gac8d05b7fe981e4348a6a6be320a6b991',1,'WSM.Utils']]],
-  ['objecthistoryid',['ObjectHistoryID',['../group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff',1,'WSM.ObjectHistoryID()'],['../group__mod__jsapi__wsm__utils.html#gabaf76d74626cf3717dc6c8a08f1c5885',1,'WSM.Utils.ObjectHistoryID()']]],
-  ['objecthistoryidareequal',['ObjectHistoryIDAreEqual',['../group__mod__jsapi__wsm.html#gaecef7eb2ef4363bc0fdf005644438431',1,'WSM']]],
-  ['objecthistoryidarray',['ObjectHistoryIDArray',['../group__mod__jsapi__wsm__utils.html#ga2cb7a97575dd70b33da35782fa2db618',1,'WSM.Utils']]],
-  ['objectidarray',['ObjectIDArray',['../group__mod__jsapi__wsm__utils.html#ga7214a412a58178835d6f6b0a6d657744',1,'WSM.Utils']]],
-  ['objectidsareequal',['ObjectIDsAreEqual',['../group__mod__jsapi__wsm__utils.html#ga10b8682be868a0cc55c3ac7566c47b91',1,'WSM.Utils']]],
-  ['objectreportsareabylevel',['ObjectReportsAreaByLevel',['../group__mod__jsapi__formit__model.html#gadd804bbc088cc550c7b69114749a5bfe',1,'FormIt.Model']]],
-  ['objecttypefilter',['ObjectTypeFilter',['../group__mod__jsapi__wsm__utils.html#gad4dcf86f993bbcb357569aa0ff94e605',1,'WSM.Utils']]],
-  ['offsetbody',['OffsetBody',['../group__mod__jsapi__formit__tools.html#ga1759591677a59f42edecbc5badec1602',1,'FormIt.Tools']]],
-  ['openfile',['OpenFile',['../group__mod__jsapi__formit.html#gaf52f8ba17cd66189390ee42f7499bad9',1,'FormIt']]],
-  ['optouttracking',['OptOutTracking',['../group__mod__jsapi__formit__statistics.html#gaf2e289e3c16481072e5b19f8bb725aa4',1,'FormIt.Statistics']]]
+  ['newfile_784',['NewFile',['../group__mod__jsapi__formit.html#ga292bd3cd6444368c0429fcd9c2af5326',1,'FormIt']]],
+  ['newguid_785',['NewGuid',['../group__mod__jsapi__formit__utils.html#gab0bde8e345429f741b996769604ea4be',1,'FormIt.Utils']]],
+  ['newmodel_786',['NewModel',['../group__mod__jsapi__wsm__apphelper.html#gabe55d7ef520c358f742e80c3639fc3d7',1,'WSM.AppHelper']]],
+  ['notestate_787',['NoteState',['../group__mod__jsapi__formit__undomanagement.html#gac4cfc6607e8f5654a1ed9eb1d21320a4',1,'FormIt.UndoManagement']]]
 ];
