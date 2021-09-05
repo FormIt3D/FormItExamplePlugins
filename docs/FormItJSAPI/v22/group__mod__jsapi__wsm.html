@@ -2564,14 +2564,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an extrusion on the given History. </p>
-<p><code>aPoints</code> must have more than 3 points and be on the same plane. Extrusion direction is along the normal direction determined by the anticlockwise polygon. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPoint3ds</td><td>The input list of points </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dist</td><td>The given distance for dragging the extrusion Out: objID.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p><code>aPoints</code> must have more than 3 points and be on the same plane. Extrusion direction is along the normal direction determined by the anticlockwise polygon. In: nHistoryID ID of the given History aPoint3ds The input list of points dist The given distance for dragging the extrusion Out: objID.</p>
 <p><br  />
  See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APICreateExtrusion">APICreateExtrusion</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -8852,21 +8845,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load a model from a string containing serialization of one of the supported types. </p>
-<p>For nFileTypeBinaryWSM, *pObjectIdOffset returns object ID offset required to load the new Objects into a non-empty History without ID conflicts. nOptions contains bit flags as specified in WSM.nLoadingOptions, that describe options used by the various file types (has no effect on loading the default type, nFileTypeBinaryWSM). For nFileTypeSTL, if WSM.nLoadingOptions.Merge is specified under options, merges out all merge-able Edges and Vertices. if WSM.nLoadingOptions.CreateMesh is specified, creates a Mesh instead of a Body. For nFileTypeOBJ, if WSM.nLoadingOptions.Merge is specified under options, merges out all merge-able Edges and Vertices. if WSM.nLoadingOptions.RemoveDuplicate is specified under options, removes duplicated vertices and edges within each body if WSM.nLoadingOptions.PlaceOnGround is specified under options, makes the smallest z axis coordinate of the whole model to be 0 if WSM.nLoadingOptions.CreateMesh is specified, creates a Mesh instead of a Body. If dMaxDistanceFromOrigin is greater than zero and the minimum corner of the bounding box around facetsData is further away than dMaxDistanceFromOrigin from the origin, then the created <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> geometry will be moved so the minimum corner of the bounding box is at the origin. Currently this only affects OBJ. Note that, unlike APILoadFromFile, nLoadingOptions.PlaceOnGround option is off by default. Set bBase64Encoded to true, if the string was base64 encoded when it was saved. The created Object is scaled by dScaleFactor for STL and OBJ. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sInputString</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eFileType</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nOptions</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dMaxDistanceFromOrigin</td><td></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bBase64Encoded</td><td></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dScaleFactor</td><td>Parameters: In: nHistoryID, saveString, eFileType, nOptions, dMaxDistanceFromOrigin, dScaleFactor Out: offset</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>For nFileTypeBinaryWSM, *pObjectIdOffset returns object ID offset required to load the new Objects into a non-empty History without ID conflicts. nOptions contains bit flags as specified in WSM.nLoadingOptions, that describe options used by the various file types (has no effect on loading the default type, nFileTypeBinaryWSM). For nFileTypeSTL, if WSM.nLoadingOptions.Merge is specified under options, merges out all merge-able Edges and Vertices. if WSM.nLoadingOptions.CreateMesh is specified, creates a Mesh instead of a Body. For nFileTypeOBJ, if WSM.nLoadingOptions.Merge is specified under options, merges out all merge-able Edges and Vertices. if WSM.nLoadingOptions.RemoveDuplicate is specified under options, removes duplicated vertices and edges within each body if WSM.nLoadingOptions.PlaceOnGround is specified under options, makes the smallest z axis coordinate of the whole model to be 0 if WSM.nLoadingOptions.CreateMesh is specified, creates a Mesh instead of a Body. If dMaxDistanceFromOrigin is greater than zero and the minimum corner of the bounding box around facetsData is further away than dMaxDistanceFromOrigin from the origin, then the created <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> geometry will be moved so the minimum corner of the bounding box is at the origin. Currently this only affects OBJ. Note that, unlike APILoadFromFile, nLoadingOptions.PlaceOnGround option is off by default. Set bBase64Encoded to true, if the string was base64 encoded when it was saved. The created Object is scaled by dScaleFactor for STL and OBJ. Parameters: In: nHistoryID, saveString, eFileType, nOptions, dMaxDistanceFromOrigin, dScaleFactor Out: offset</p>
 <p><br  />
  See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APILoadFromString">APILoadFromString</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -10450,14 +10429,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the changed, created, and deleted objects in the most recent delta and encodes this information in a solid-def JSON string so that solid-def stored in HFDM can be kept up to date. </p>
-<p>If bForUndo is true, get the changes caused by the most recent undo, meaning that objects created in the forward action are deleted by the undo, and vice versa. If no deltas are available past the current one and bForUndo is true, the API returns the WSM.nBadInput error result. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bForUndo</td><td><br  />
- Out: Changed and deleted guids for topology and geometry, json for created and changed</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If bForUndo is true, get the changes caused by the most recent undo, meaning that objects created in the forward action are deleted by the undo, and vice versa. If no deltas are available past the current one and bForUndo is true, the API returns the WSM.nBadInput error result. In: nHistoryID (ID of the given History) bForUndo <br  />
+ Out: Changed and deleted guids for topology and geometry, json for created and changed</p>
 <p><br  />
  See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APISaveDeltaToSolidDefReadOnly">APISaveDeltaToSolidDefReadOnly</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -10650,16 +10623,7 @@ Functions</h2></td></tr>
 
 <p>Saves Objects to an AXM file. </p>
 <p>If bWithChildren is true, all children of the given Objects are saved too. The AXM save version is fixed at version 30. Note the file only includes <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> data and the preview block. <br  />
- No other information is included in the file (e.g. no camera data, no material manager data, no shadow settings, etc). If a more complete AXM file is desired, save from <a class="el" href="namespace_form_it.html" title="FormIt namespace.">FormIt</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the History to save. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aObjectIDs</td><td>The given list of Object IDs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td>The AXM file to save to. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aPreviewImage</td><td>The preview image for the file. Can be empty if there is no thumbnail otherwise should be a PNG. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bWithChildren</td><td>True if children of Objects are also saved. Out: JSON_UNDEFINED;</td></tr>
-  </table>
-  </dd>
-</dl>
+ No other information is included in the file (e.g. no camera data, no material manager data, no shadow settings, etc). If a more complete AXM file is desired, save from <a class="el" href="namespace_form_it.html" title="FormIt namespace.">FormIt</a>. In: nHistoryID ID of the History to save. aObjectIDs The given list of Object IDs. sFilePath The AXM file to save to. aPreviewImage The preview image for the file. Can be empty if there is no thumbnail otherwise should be a PNG. bWithChildren True if children of Objects are also saved. Out: JSON_UNDEFINED;</p>
 <p><br  />
  See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APISaveToAXMFileReadOnly">APISaveToAXMFileReadOnly</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -10738,24 +10702,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Save Objects to a file of the specified type. </p>
-<p>If bWithChildren is true, save all children of the given Objects too. dExportScale sets the scaling transform for unit-less output formats (currently, STL and OBJ). The aExcludedObjecs vector contains objects that need to be excluded from the export. These may be instances or top level objects in referenced groups. The various exporters will check aExcludedObjects when looping through the children of the objects supplied in aObjectIDs. If aLayerDisplayedNegateVec is given, the displayed flag on Layers in the vector will be negated in the save file without creating a Delta. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aObjectIDs</td><td>The given list of Object IDs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eFileType</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bWithChildren</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dExportScale</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aExcludedObjects</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLayerDisplayedNegateVec</td><td>Out: JSON_UNDEFINED;</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If bWithChildren is true, save all children of the given Objects too. dExportScale sets the scaling transform for unit-less output formats (currently, STL and OBJ). The aExcludedObjecs vector contains objects that need to be excluded from the export. These may be instances or top level objects in referenced groups. The various exporters will check aExcludedObjects when looping through the children of the objects supplied in aObjectIDs. If aLayerDisplayedNegateVec is given, the displayed flag on Layers in the vector will be negated in the save file without creating a Delta. In: nHistoryID ID of the given History. aObjectIDs The given list of Object IDs. sFilePath <br  />
+ eFileType <br  />
+ bWithChildren <br  />
+ dExportScale <br  />
+ aExcludedObjects <br  />
+ aLayerDisplayedNegateVec Out: JSON_UNDEFINED;</p>
 <p><br  />
  See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APISaveToFileReadOnly">APISaveToFileReadOnly</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -10825,22 +10777,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Save Objects to a string. </p>
-<p>The string loses its contents, gets reset to the exact size of the output data, and gets populated by this data. If bWithChildren is true, all children of the given Objects are saved too. The aExcludedObjects vector contains objects that need to be excluded from the export. These may be instances or top level objects in referenced groups. The various exporters will check aExcludedObjects when looping through the children of the objects supplied in aObjectIDs. If the bBase64Encode parameter is true, the data is base 64 encoded, to make it readable. Otherwise, it's just arbitrary bytes. If aLayerDisplayedNegateVec is given, the displayed flag on Layers in the vector will be negated in the save string without creating a Delta. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aObjectIDs</td><td>The given list of Object IDs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eFileType</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bWithChildren</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aExcludedObjects</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bBase64Encode</td><td><br  />
- </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLayerDisplayedNegateVec</td><td>Parameters: In: nHistoryID, vector of Objects, save With Children flag, [aExcludedObjects], [aLayerDisplayedNegateVec], [eFileType] Out: The save string</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The string loses its contents, gets reset to the exact size of the output data, and gets populated by this data. If bWithChildren is true, all children of the given Objects are saved too. The aExcludedObjects vector contains objects that need to be excluded from the export. These may be instances or top level objects in referenced groups. The various exporters will check aExcludedObjects when looping through the children of the objects supplied in aObjectIDs. If the bBase64Encode parameter is true, the data is base 64 encoded, to make it readable. Otherwise, it's just arbitrary bytes. If aLayerDisplayedNegateVec is given, the displayed flag on Layers in the vector will be negated in the save string without creating a Delta. Parameters: In: nHistoryID, vector of Objects, save With Children flag, [aExcludedObjects], [aLayerDisplayedNegateVec], [eFileType] Out: The save string</p>
 <p><br  />
  See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APISaveToStringReadOnly">APISaveToStringReadOnly</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

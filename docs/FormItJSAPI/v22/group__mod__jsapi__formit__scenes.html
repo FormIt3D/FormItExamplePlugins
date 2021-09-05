@@ -277,13 +277,11 @@ Functions</h2></td></tr>
 <p>ActivateScene activates the Scene with the given name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#ActivateScene">ActivateScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#ActivateScene">ActivateScene</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -306,13 +304,11 @@ Functions</h2></td></tr>
 <p>AddNewScene adds a new scene with an automatically generated scene name optionally after a given scene name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">afterSceneName</td><td>String (OPTIONAL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">afterSceneName</td><td>String (OPTIONAL) newly generated scene name.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the newly generated scene name.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddNewScene">AddNewScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddNewScene">AddNewScene</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the </dd></dl>
 
 </div>
 </div>
@@ -335,13 +331,11 @@ Functions</h2></td></tr>
 <p>AddNewSceneToAnimation adds a new scene with an automatically generated scene name to a given animation. </p>
 <p>If animation is not given or "", it is added to the default animation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String (OPTIONAL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String (OPTIONAL) newly generated scene name.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the newly generated scene name.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddNewSceneToAnimation">AddNewSceneToAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddNewSceneToAnimation">AddNewSceneToAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the </dd></dl>
 
 </div>
 </div>
@@ -375,13 +369,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>Scene JSON object (see GetScene) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">afterSceneName</td><td>String (OPTIONAL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">afterSceneName</td><td>String (OPTIONAL)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddScene">AddScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddScene">AddScene</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -401,9 +393,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a new scene animation. </p>
-<p>Returns the new name of the animation </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the newly generated animation name.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddSceneAnimation">AddSceneAnimation</a> </p>
+<p>Returns the new name of the animation newly generated animation name.</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddSceneAnimation">AddSceneAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the </dd></dl>
 
 </div>
 </div>
@@ -451,13 +442,11 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneNames</td><td>vector of scene names </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneBeforeOrAfterName</td><td>name of an existing scene in the given animation before or after which to insert the given scenes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">insertAfter</td><td>true if inserting after sceneBeforeOrAfterName, false if inserting before </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">insertAfter</td><td>true if inserting after sceneBeforeOrAfterName, false if inserting before</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddScenesToAnimation">AddScenesToAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#AddScenesToAnimation">AddScenesToAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>success </dd></dl>
 
 </div>
 </div>
@@ -480,13 +469,11 @@ Functions</h2></td></tr>
 <p>DuplicateScene duplicates the scene with the given name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String newly generated scene name.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the newly generated scene name.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#DuplicateScene">DuplicateScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#DuplicateScene">DuplicateScene</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Name } Result key is a bool success flag and Name is the </dd></dl>
 
 </div>
 </div>
@@ -509,13 +496,11 @@ Functions</h2></td></tr>
 <p>Get the collpased status of an animation <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a> item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool true/false</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetAnimationCollapsed">GetAnimationCollapsed</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetAnimationCollapsed">GetAnimationCollapsed</a> </p><dl class="section return"><dt>Returns</dt><dd>bool true/false </dd></dl>
 
 </div>
 </div>
@@ -538,13 +523,11 @@ Functions</h2></td></tr>
 <p>Returns the parent animation for a scene. </p>
 <p>Returns "" if not found </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string animation name</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetAnimationForScene">GetAnimationForScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetAnimationForScene">GetAnimationForScene</a> </p><dl class="section return"><dt>Returns</dt><dd>string animation name </dd></dl>
 
 </div>
 </div>
@@ -567,13 +550,11 @@ Functions</h2></td></tr>
 <p>Get the loop option of an animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool true/false</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetAnimationLoop">GetAnimationLoop</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetAnimationLoop">GetAnimationLoop</a> </p><dl class="section return"><dt>Returns</dt><dd>bool true/false </dd></dl>
 
 </div>
 </div>
@@ -596,13 +577,11 @@ Functions</h2></td></tr>
 <p>GetCameraSpeed returns the speed (mph) at which the camera moves during the transition to the next scene. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the camera speed</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetCameraSpeed">GetCameraSpeed</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetCameraSpeed">GetCameraSpeed</a> </p><dl class="section return"><dt>Returns</dt><dd>Returns the camera speed </dd></dl>
 
 </div>
 </div>
@@ -622,9 +601,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetEditCameras enters the camera editing mode. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if in camera editing mode</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetEditCameras">GetEditCameras</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetEditCameras">GetEditCameras</a> </p><dl class="section return"><dt>Returns</dt><dd>Returns true if in camera editing mode </dd></dl>
 
 </div>
 </div>
@@ -647,13 +624,11 @@ Functions</h2></td></tr>
 <p>GetIncludeInAnimation returns whether the given scene is part of the animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Included in animation</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetIncludeInAnimation">GetIncludeInAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetIncludeInAnimation">GetIncludeInAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Included in animation </dd></dl>
 
 </div>
 </div>
@@ -673,9 +648,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetNumberOfScenes returns the number of <a class="el" href="namespace_form_it_1_1_scenes.html" title="FormIt.Scenes namespace.">Scenes</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>The number of <a class="el" href="namespace_form_it_1_1_scenes.html" title="FormIt.Scenes namespace.">Scenes</a></dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetNumberOfScenes">GetNumberOfScenes</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetNumberOfScenes">GetNumberOfScenes</a> </p><dl class="section return"><dt>Returns</dt><dd>The number of <a class="el" href="namespace_form_it_1_1_scenes.html" title="FormIt.Scenes namespace.">Scenes</a> </dd></dl>
 
 </div>
 </div>
@@ -716,13 +689,11 @@ Functions</h2></td></tr>
 <p>GetPauseTime returns the time that the given Scene is paused during presentation mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pause time</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetPauseTime">GetPauseTime</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetPauseTime">GetPauseTime</a> </p><dl class="section return"><dt>Returns</dt><dd>pause time </dd></dl>
 
 </div>
 </div>
@@ -745,13 +716,11 @@ Functions</h2></td></tr>
 <p>GetPropertiesToCapture returns the property flags used for determining what is captured. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String Result- Success Properties- List of properties with true/false flags.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result: bool, Properties: Properties Object } Result- Success Properties- List of properties with true/false flags.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetPropertiesToCapture">GetPropertiesToCapture</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetPropertiesToCapture">GetPropertiesToCapture</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result: bool, Properties: Properties Object } </dd></dl>
 
 </div>
 </div>
@@ -774,13 +743,11 @@ Functions</h2></td></tr>
 <p>GetScene gets the given Scene as JSON given a Scene name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String Scene JSON object.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Scene } Result key is a bool success flag and Scene is the Scene JSON object.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetScene">GetScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetScene">GetScene</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Scene } Result key is a bool success flag and Scene is the </dd></dl>
 
 </div>
 </div>
@@ -803,13 +770,11 @@ Functions</h2></td></tr>
 <p>Get the animation for the given name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String Animation JSON object.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Animation } Result key is a bool success flag and Animation is the Animation JSON object.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneAnimation">GetSceneAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneAnimation">GetSceneAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Animation } Result key is a bool success flag and Animation is the </dd></dl>
 
 </div>
 </div>
@@ -829,9 +794,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all scene animations. </p>
-<dl class="section return"><dt>Returns</dt><dd>Array of SceneAnimation JSON objects</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneAnimations">GetSceneAnimations</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneAnimations">GetSceneAnimations</a> </p><dl class="section return"><dt>Returns</dt><dd>Array of SceneAnimation JSON objects </dd></dl>
 
 </div>
 </div>
@@ -851,9 +814,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetSceneNames gets all the Scene names. </p>
-<dl class="section return"><dt>Returns</dt><dd>Array of Scene names</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneNames">GetSceneNames</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneNames">GetSceneNames</a> </p><dl class="section return"><dt>Returns</dt><dd>Array of Scene names </dd></dl>
 
 </div>
 </div>
@@ -876,13 +837,11 @@ Functions</h2></td></tr>
 <p>Get the scene names for the given animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>vector of scene names</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneNamesFromAnimation">GetSceneNamesFromAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetSceneNamesFromAnimation">GetSceneNamesFromAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>vector of scene names </dd></dl>
 
 </div>
 </div>
@@ -902,9 +861,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetScenes gets all the <a class="el" href="namespace_form_it_1_1_scenes.html" title="FormIt.Scenes namespace.">Scenes</a> as JSON objects. </p>
-<dl class="section return"><dt>Returns</dt><dd>Array of Scene JSON objects</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetScenes">GetScenes</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetScenes">GetScenes</a> </p><dl class="section return"><dt>Returns</dt><dd>Array of Scene JSON objects </dd></dl>
 
 </div>
 </div>
@@ -927,13 +884,11 @@ Functions</h2></td></tr>
 <p>GetTransitionTime returns the time that the given Scene takes to transition during presentation mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Transition time</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetTransitionTime">GetTransitionTime</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetTransitionTime">GetTransitionTime</a> </p><dl class="section return"><dt>Returns</dt><dd>Transition time </dd></dl>
 
 </div>
 </div>
@@ -956,13 +911,11 @@ Functions</h2></td></tr>
 <p>GetTransitionTimeUsed returns the transition time for the scene that is actually used. </p>
 <p>If the scene uses the "Use Camera Speed" option, the time is computed from the distance and the mph parameter. Otherwise the basic transition time is returned. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Transition time used</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetTransitionTimeUsed">GetTransitionTimeUsed</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetTransitionTimeUsed">GetTransitionTimeUsed</a> </p><dl class="section return"><dt>Returns</dt><dd>Transition time used </dd></dl>
 
 </div>
 </div>
@@ -985,13 +938,11 @@ Functions</h2></td></tr>
 <p>GetUseCameraSpeed returns whether the given scene is using the transition time or camera speed during animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Use camera speed</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetUseCameraSpeed">GetUseCameraSpeed</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#GetUseCameraSpeed">GetUseCameraSpeed</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Use camera speed </dd></dl>
 
 </div>
 </div>
@@ -1011,9 +962,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IsPresenting returns true if in presentation mode. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if presenting.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsPresenting">IsPresenting</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsPresenting">IsPresenting</a> </p><dl class="section return"><dt>Returns</dt><dd>Returns true if presenting. </dd></dl>
 
 </div>
 </div>
@@ -1047,13 +996,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oldName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>String false if not valid along with an Error message.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Error } Result is true if it's a valid animation name and false if not valid along with an Error message.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidAnimationName">IsValidAnimationName</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidAnimationName">IsValidAnimationName</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Error } Result is true if it's a valid animation name and </dd></dl>
 
 </div>
 </div>
@@ -1076,14 +1023,17 @@ Functions</h2></td></tr>
 <p>IsValidSceneCameraSpeed checks whether string contains a valid pause time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">transitionTimeString</td><td>Speed Time String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transitionTimeString</td><td>Speed Time String</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidSceneCameraSpeed">IsValidSceneCameraSpeed</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">speedString</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Value (double), Error (I18nString) }</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidSceneCameraSpeed">IsValidSceneCameraSpeed</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Value (double), Error (I18nString) } </dd></dl>
 
 </div>
 </div>
@@ -1117,13 +1067,11 @@ Functions</h2></td></tr>
 <p>Used to check if the oldSceneName can be renamed to newSceneName. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oldSceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newSceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newSceneName</td><td>String false if not valid along with an Error message.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result, Error } Result is true if it's a valid Scene name and false if not valid along with an Error message.</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidSceneName">IsValidSceneName</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidSceneName">IsValidSceneName</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result, Error } Result is true if it's a valid Scene name and </dd></dl>
 
 </div>
 </div>
@@ -1146,14 +1094,17 @@ Functions</h2></td></tr>
 <p>IsValidScenePauseTime checks whether string contains a valid pause time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauseTime</td><td>Pause Time String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pauseTime</td><td>Pause Time String</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidScenePauseTime">IsValidScenePauseTime</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pauseTimeString</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Value (double), Error (I18nString) }</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidScenePauseTime">IsValidScenePauseTime</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Value (double), Error (I18nString) } </dd></dl>
 
 </div>
 </div>
@@ -1176,13 +1127,11 @@ Functions</h2></td></tr>
 <p>IsValidSceneTransitionTime checks whether string contains a valid pause time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">transitionTimeString</td><td>Transition Time String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transitionTimeString</td><td>Transition Time String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Value (double), Error (I18nString) }</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidSceneTransitionTime">IsValidSceneTransitionTime</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#IsValidSceneTransitionTime">IsValidSceneTransitionTime</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Value (double), Error (I18nString) } </dd></dl>
 
 </div>
 </div>
@@ -1205,13 +1154,11 @@ Functions</h2></td></tr>
 <p>MoveSceneDown moves the given Scene down in the Scene list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#MoveSceneDown">MoveSceneDown</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#MoveSceneDown">MoveSceneDown</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1234,13 +1181,11 @@ Functions</h2></td></tr>
 <p>MoveSceneUp moves the given Scene up in the Scene list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#MoveSceneUp">MoveSceneUp</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#MoveSceneUp">MoveSceneUp</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1281,13 +1226,11 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">animationNames</td><td>vector of animation names </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">animationBeforeOrAfterName</td><td>name of an existing animation before or after which to insert the given animations </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">insertAfter</td><td>true if inserting after animationBeforeOrAfterName, false if inserting before </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">insertAfter</td><td>true if inserting after animationBeforeOrAfterName, false if inserting before</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RearrangeAnimations">RearrangeAnimations</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RearrangeAnimations">RearrangeAnimations</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -1321,13 +1264,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oldPos</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newPos</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newPos</td><td>int</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RearrangeScenes">RearrangeScenes</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RearrangeScenes">RearrangeScenes</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1350,13 +1291,11 @@ Functions</h2></td></tr>
 <p>Removes a scene animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RemoveAnimation">RemoveAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RemoveAnimation">RemoveAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -1379,13 +1318,11 @@ Functions</h2></td></tr>
 <p>RemoveScene removes the scene with the given name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RemoveScene">RemoveScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#RemoveScene">RemoveScene</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -1435,8 +1372,7 @@ Functions</h2></td></tr>
 
 <p>ScenesAreEqual returns true if Parameters: In: sceneName The name of an existing Scene. </p>
 <p>scene JSON Out: bool</p>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#ScenesAreEqual">ScenesAreEqual</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#ScenesAreEqual">ScenesAreEqual</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>FormIt.Scene </td></tr>
@@ -1477,14 +1413,17 @@ Functions</h2></td></tr>
 <p>Set the collpased status of an animation <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a> item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetAnimationCollapsed">SetAnimationCollapsed</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">collapsed</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetAnimationCollapsed">SetAnimationCollapsed</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -1517,14 +1456,17 @@ Functions</h2></td></tr>
 <p>Set the loop option of an animation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetAnimationLoop">SetAnimationLoop</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">loop</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetAnimationLoop">SetAnimationLoop</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -1558,13 +1500,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oldName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetAnimationName">SetAnimationName</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetAnimationName">SetAnimationName</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -1598,13 +1538,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cameraSpeed</td><td>double </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cameraSpeed</td><td>double</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetCameraSpeed">SetCameraSpeed</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetCameraSpeed">SetCameraSpeed</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1643,15 +1581,18 @@ Functions</h2></td></tr>
 <p>SetEditCameras enters the camera editing mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bEditCameras</td><td>bool </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEditCameras</td><td>bool</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetEditCameras">SetEditCameras</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetEditCameras">SetEditCameras</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -1685,13 +1626,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bIncludeInAnimation</td><td>bool </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bIncludeInAnimation</td><td>bool</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetIncludeInAnimation">SetIncludeInAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetIncludeInAnimation">SetIncludeInAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1725,13 +1664,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauseTime</td><td>double </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pauseTime</td><td>double</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetPauseTime">SetPauseTime</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetPauseTime">SetPauseTime</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1765,13 +1702,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>start/stop (true/false) presentation mode </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>The name of an existing Scene to start playing from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>The name of an existing Scene to start playing from</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetPresentationMode">SetPresentationMode</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetPresentationMode">SetPresentationMode</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -1804,14 +1739,17 @@ Functions</h2></td></tr>
 <p>SetPropertiesToCapture sets the Scene property flags used for determining what is captured. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetPropertiesToCapture">SetPropertiesToCapture</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>FormIt.SceneCaptureFlags </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetPropertiesToCapture">SetPropertiesToCapture</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1845,13 +1783,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oldSceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newSceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newSceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetSceneName">SetSceneName</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetSceneName">SetSceneName</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -1874,13 +1810,11 @@ Functions</h2></td></tr>
 <p>SetScenes sets all the <a class="el" href="namespace_form_it_1_1_scenes.html" title="FormIt.Scenes namespace.">Scenes</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">scenes</td><td>Array of Scene JSON objects (see GetScenes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scenes</td><td>Array of Scene JSON objects (see GetScenes)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetScenes">SetScenes</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetScenes">SetScenes</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -1914,13 +1848,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">transitionTime</td><td>double </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transitionTime</td><td>double</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetTransitionTime">SetTransitionTime</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetTransitionTime">SetTransitionTime</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -1954,13 +1886,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bUseCameraSpeed</td><td>bool </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bUseCameraSpeed</td><td>bool</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetUseCameraSpeed">SetUseCameraSpeed</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#SetUseCameraSpeed">SetUseCameraSpeed</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
@@ -2001,13 +1931,11 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>bool. True to start, false to stop the playback </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">animationName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fromScene</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromScene</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#StartStopAnimation">StartStopAnimation</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#StartStopAnimation">StartStopAnimation</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -2030,13 +1958,11 @@ Functions</h2></td></tr>
 <p>UpdateScene captures the Scene's properties that are enabled with the given name. </p>
 <p>See GetPropertiesToCapture. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sceneName</td><td>String</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Success</dd></dl>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#UpdateScene">UpdateScene</a> </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__scenes__api__ref#UpdateScene">UpdateScene</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
 
 </div>
 </div>
