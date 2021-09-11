@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: WSM.InferenceEngine API</title>
+<title>FormIt JS Plugin API: WSM.InferenceEngine API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -93,12 +93,12 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__wsm__inferenceengin
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga18176be3ec53e00aa83c205a4a427f4f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__inferenceengine.html#ga18176be3ec53e00aa83c205a4a427f4f">WSM.InferenceEngine.FindInputPoint</a> (pickRay, previousInputPoint)</td></tr>
-<tr class="memdesc:ga18176be3ec53e00aa83c205a4a427f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindInputPoint Parameters: In: pickRay, previousInputPoint Out: InputPoint.  <a href="group__mod__jsapi__wsm__inferenceengine.html#ga18176be3ec53e00aa83c205a4a427f4f">More...</a><br /></td></tr>
-<tr class="separator:ga18176be3ec53e00aa83c205a4a427f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a907ab0655f7f6e9a02edfc907a01fd"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__inferenceengine.html#ga5a907ab0655f7f6e9a02edfc907a01fd">WSM.InferenceEngine.Reset</a> ()</td></tr>
 <tr class="memdesc:ga5a907ab0655f7f6e9a02edfc907a01fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset Parameters: In: Out: JSON.  <a href="group__mod__jsapi__wsm__inferenceengine.html#ga5a907ab0655f7f6e9a02edfc907a01fd">More...</a><br /></td></tr>
 <tr class="separator:ga5a907ab0655f7f6e9a02edfc907a01fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18176be3ec53e00aa83c205a4a427f4f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__inferenceengine.html#ga18176be3ec53e00aa83c205a4a427f4f">WSM.InferenceEngine.FindInputPoint</a> (pickRay, previousInputPoint)</td></tr>
+<tr class="memdesc:ga18176be3ec53e00aa83c205a4a427f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindInputPoint Parameters: In: pickRay, previousInputPoint Out: InputPoint.  <a href="group__mod__jsapi__wsm__inferenceengine.html#ga18176be3ec53e00aa83c205a4a427f4f">More...</a><br /></td></tr>
+<tr class="separator:ga18176be3ec53e00aa83c205a4a427f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc80196353791f9e831cc56ea7e20b0d"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__inferenceengine.html#gafc80196353791f9e831cc56ea7e20b0d">WSM.InferenceEngine.InputPointsAreEqual</a> (inputPoint1, inputPoint2)</td></tr>
 <tr class="memdesc:gafc80196353791f9e831cc56ea7e20b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">InputPointsEqual Parameters: In: inputPoint1, inputPoint2 Out: bool.  <a href="group__mod__jsapi__wsm__inferenceengine.html#gafc80196353791f9e831cc56ea7e20b0d">More...</a><br /></td></tr>
 <tr class="separator:gafc80196353791f9e831cc56ea7e20b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -418,15 +418,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pickRay</td><td><a class="el" href="group__mod__jsapi__wsm__utils.html#ga4e2f25261e07bdd943fc00b996c316c6" title="PickRay constructs a PickRay.">WSM.Utils.PickRay</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">previousInputPoint</td><td>(OPTIONAL) WSM.IInputPointPtr </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>WSMAppHelper.App3DHelper.KeepAliveInputPoint(ip);</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pickRay</td><td><a class="el" href="group__mod__jsapi__wsm__utils.html#ga4e2f25261e07bdd943fc00b996c316c6" title="PickRay constructs a PickRay.">WSM.Utils.PickRay</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">previousInputPoint</td><td>(OPTIONAL) WSM.IInputPointPtr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">previousInputPoint</td><td>WSM.IInputPointPtr </td></tr>
   </table>
   </dd>
 </dl>

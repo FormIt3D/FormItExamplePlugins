@@ -18,7 +18,7 @@ var group__mod__jsapi__formit__levels =
     [ "GetNumLevels", "group__mod__jsapi__formit__levels.html#ga367c4945c20ebe51be0dc6e59b7a53e6", null ],
     [ "HasLevelsInProject", "group__mod__jsapi__formit__levels.html#ga3de9bb7c4d03b1026620306e2e7fc297", null ],
     [ "IsExistingLevel", "group__mod__jsapi__formit__levels.html#ga2a8d507fccbbc01633b92a4330084fb9", null ],
-    [ "IsExistingLevelByElevation", "group__mod__jsapi__formit__levels.html#gad43dafa5c1287111dcb9d41e1274afcc", null ],
+    [ "IsExistingLevelByElevation", "group__mod__jsapi__formit__levels.html#ga09153c9ea88509f61c27917079d875aa", null ],
     [ "IsValidLevelDeltaElevation", "group__mod__jsapi__formit__levels.html#gab9aae02de89b2e1628ea19e4ab9ae68f", null ],
     [ "IsValidLevelElevation", "group__mod__jsapi__formit__levels.html#ga3e1391d3dc1f9f9d3c688fb9de4063c0", null ],
     [ "IsValidLevelName", "group__mod__jsapi__formit__levels.html#gad5544f10fd3b0e70d20ee0ee9c7d4704", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: FormIt.Messaging API</title>
+<title>FormIt JS Plugin API: FormIt.Messaging API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__messaging.h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gac1986b170763c934d66a1aa8061997ba"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__messaging.html#gac1986b170763c934d66a1aa8061997ba">FormIt.Messaging.GetMessages</a> ()</td></tr>
+<tr class="memdesc:gac1986b170763c934d66a1aa8061997ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of available <a class="el" href="namespace_form_it.html" title="FormIt namespace.">FormIt</a> messages.  <a href="group__mod__jsapi__formit__messaging.html#gac1986b170763c934d66a1aa8061997ba">More...</a><br /></td></tr>
 <tr class="separator:gac1986b170763c934d66a1aa8061997ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -111,6 +112,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the list of available <a class="el" href="namespace_form_it.html" title="FormIt namespace.">FormIt</a> messages. </p>
+<p>These messages can be subscribed to. </p><div class="fragment"><div class="line">MessagesPluginListener = {};</div>
+<div class="line"><span class="comment">// The message handling function that will be called for the given message.</span></div>
+<div class="line">MessagesPluginListener.MsgHandler = <span class="keyword">function</span>(msg, payload) { console.log(<span class="stringliteral">&quot;(FormIt Side) msg: &quot;</span> + msg + <span class="stringliteral">&quot; payload: &quot;</span> + payload); };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a Message Listener that handles calling the subscribed message handlers.</span></div>
+<div class="line"><span class="keywordflow">if</span> (!(MessagesPluginListener.hasOwnProperty(<span class="stringliteral">&quot;listener&quot;</span>)))</div>
+<div class="line">{</div>
+<div class="line">    MessagesPluginListener.listener = <a class="code" href="namespace_form_it.html">FormIt</a>.<a class="code" href="namespace_form_it_1_1_messaging.html">Messaging</a>.NewMessageListener();</div>
+<div class="line">    console.log(<span class="stringliteral">&quot;Creating MessagesPluginListener.listener.&quot;</span>);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Assign the msg handler</span></div>
+<div class="line">MessagesPluginListener.listener[msg] = MessagesPluginListener.MsgHandler;</div>
+<div class="line">MessagesPluginListener.listener.SubscribeMessage(msg);</div>
+<div class="ttc" id="anamespace_form_it_1_1_messaging_html"><div class="ttname"><a href="namespace_form_it_1_1_messaging.html">FormIt.Messaging</a></div><div class="ttdoc">FormIt.Messaging namespace.</div><div class="ttdef"><b>Definition:</b> jsapi_include.dox:1815</div></div>
+<div class="ttc" id="anamespace_form_it_html"><div class="ttname"><a href="namespace_form_it.html">FormIt</a></div><div class="ttdoc">FormIt namespace.</div><div class="ttdef"><b>Definition:</b> jsapi_include.dox:1085</div></div>
+</div><!-- fragment --><p> Out: An array of strings. </p><dl class="section return"><dt>Returns</dt><dd>FormIt.MessageBroadcaster.GetScriptMessages() </dd></dl>
 
 </div>
 </div>

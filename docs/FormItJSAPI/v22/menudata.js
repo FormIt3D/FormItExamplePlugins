@@ -70,12 +70,5 @@ var menudata={children:[
 {text:"u",url:"namespacemembers_func_u.html#index_u"},
 {text:"v",url:"namespacemembers_func_v.html#index_v"},
 {text:"w",url:"namespacemembers_func_w.html#index_w"}]}]}]},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"hierarchy.html"},
-{text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html"},
-{text:"Functions",url:"functions_func.html"}]}]},
-{text:"FormIt Plugin API Help",url:"https://formit3d.github.io/FormItExamplePlugins/"},
+{text:"FormIt Plugin API Help",url:"https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html"},
 {text:"Autodesk FormIt Help",url:"http://help.autodesk.com/view/FORMIT/ENU/"}]}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: FormIt.Layers API</title>
+<title>FormIt JS Plugin API: FormIt.Layers API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__layers.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gafcb00791642c158f924e643e1b107d14"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gafcb00791642c158f924e643e1b107d14">FormIt.Layers.GetAllLayers</a> ()</td></tr>
+<tr class="memdesc:gafcb00791642c158f924e643e1b107d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetAllLayers gets a vector with all layer ids.  <a href="group__mod__jsapi__formit__layers.html#gafcb00791642c158f924e643e1b107d14">More...</a><br /></td></tr>
 <tr class="separator:gafcb00791642c158f924e643e1b107d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4cc449616997b99151645c2df9be5cf5"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga4cc449616997b99151645c2df9be5cf5">FormIt.Layers.GetLayerData</a> (layerID)</td></tr>
 <tr class="memdesc:ga4cc449616997b99151645c2df9be5cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerData gets the data for a single layer.  <a href="group__mod__jsapi__formit__layers.html#ga4cc449616997b99151645c2df9be5cf5">More...</a><br /></td></tr>
@@ -150,13 +151,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga90bac5f5187e75473747d7a7104d7e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetObjectsLayerList returns the set of layers the given Objects are on.  <a href="group__mod__jsapi__formit__layers.html#ga90bac5f5187e75473747d7a7104d7e1d">More...</a><br /></td></tr>
 <tr class="separator:ga90bac5f5187e75473747d7a7104d7e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#gac4cfbb5735adf6b3708cb4bcbdb40bd5">FormIt.Layers.GetLayerID</a> (layerName)</td></tr>
-<tr class="memdesc:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerID returns the formit layer id from a layer name or WSM.INVALID_ID if a layer with that name does not exist.  <a href="group__mod__jsapi__formit__layers.html#gac4cfbb5735adf6b3708cb4bcbdb40bd5">More...</a><br /></td></tr>
+<tr class="memdesc:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetLayerID returns the formit layer id from a layer name or WSM.INVALID_ID if a layer with that name does not exist Out: Layer id or WSM.INVALID_ID.  <a href="group__mod__jsapi__formit__layers.html#gac4cfbb5735adf6b3708cb4bcbdb40bd5">More...</a><br /></td></tr>
 <tr class="separator:gac4cfbb5735adf6b3708cb4bcbdb40bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga498b2b2c292f3f303197c041e96d417f"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f">FormIt.Layers.SetLayerPickable</a> (layerID, pickable)</td></tr>
-<tr class="memdesc:ga498b2b2c292f3f303197c041e96d417f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pickable status of a layer.  <a href="group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f">More...</a><br /></td></tr>
+<tr class="memdesc:ga498b2b2c292f3f303197c041e96d417f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pickable status of a layer In: layerID int Id of the layer In: pickable bool true to set the layer pickable, false to lock it Out: JSON_UNDEFINED.  <a href="group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f">More...</a><br /></td></tr>
 <tr class="separator:ga498b2b2c292f3f303197c041e96d417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga787011107de56766459a4b4c9ad607cf"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__layers.html#ga787011107de56766459a4b4c9ad607cf">FormIt.Layers.SetLoadInRevit</a> (layerID, load)</td></tr>
-<tr class="memdesc:ga787011107de56766459a4b4c9ad607cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the load in Revit status of a layer.  <a href="group__mod__jsapi__formit__layers.html#ga787011107de56766459a4b4c9ad607cf">More...</a><br /></td></tr>
+<tr class="memdesc:ga787011107de56766459a4b4c9ad607cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the load in Revit status of a layer In: layerID int Id of the layer In: load bool true to set the layer to load in Revit Out: JSON_UNDEFINED.  <a href="group__mod__jsapi__formit__layers.html#ga787011107de56766459a4b4c9ad607cf">More...</a><br /></td></tr>
 <tr class="separator:ga787011107de56766459a4b4c9ad607cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -193,15 +194,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AddLayer creates a new layer in the given history. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: historyID int In: layerName String In: visible bool Out: bool Success</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#AddLayer">AddLayer</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyID</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">visible</td><td>bool</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">visible</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#AddLayer">AddLayer</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -232,14 +234,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AssignLayerToObjects assigns a layer to a list of objects. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerID int In: aObjects Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>) Out: Success</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#AssignLayerToObjects">AssignLayerToObjects</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aObjects</td><td>Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aObjects</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#AssignLayerToObjects">AssignLayerToObjects</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -270,14 +273,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ChangeLayerOrder gives a layer a new position in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerID int In: newPosition int Out: Success</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#ChangeLayerOrder">ChangeLayerOrder</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newPosition</td><td>int</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newPosition</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#ChangeLayerOrder">ChangeLayerOrder</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -298,13 +302,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DeleteLayers deletes a list of layers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: aLayerIDs Array of layer ids Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#DeleteLayers">DeleteLayers</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLayerIDs</td><td>Array of layer ids</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLayerIDs</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#DeleteLayers">DeleteLayers</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -324,8 +329,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetAllLayerData gets the data for all layers. </p>
-<p>Returns array of LayerData</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetAllLayerData">GetAllLayerData</a> </p><dl class="section return"><dt>Returns</dt><dd>Returns layer data array. </dd></dl>
+<p>Out: Returns layer data array. Returns array of LayerData</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetAllLayerData">GetAllLayerData</a> </p><dl class="section return"><dt>Returns</dt><dd>aLayerData </dd></dl>
 
 </div>
 </div>
@@ -343,6 +348,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>GetAllLayers gets a vector with all layer ids. </p>
+<p>Out: Array of layer ids.</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetAllLayers">GetAllLayers</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -373,14 +382,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetAllObjectsOnLayers gets all objects that are on the given layers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerIDs Array of layer ids In: allHistories (optional) Include all Historys Out: Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>)</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetAllObjectsOnLayers">GetAllObjectsOnLayers</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerIDs</td><td>Array of layer ids </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">allHistories</td><td>(optional) Include all Historys</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerIDs</td><td>Array of int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allHistories</td><td>(OPTIONAL, default = false) bool </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetAllObjectsOnLayers">GetAllObjectsOnLayers</a> </p><dl class="section return"><dt>Returns</dt><dd>Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -401,13 +411,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetLayerData gets the data for a single layer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerID Out: Returns layer data : id, name, visibility. Returns false if layerID does not exist.</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetLayerData">GetLayerData</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>Returns false if layerID does not exist.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetLayerData">GetLayerData</a> </p><dl class="section return"><dt>Returns</dt><dd>Returns layer data : id, name, visibility. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false <br  />
+ </dd></dl>
 
 </div>
 </div>
@@ -427,14 +439,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetLayerID returns the formit layer id from a layer name or WSM.INVALID_ID if a layer with that name does not exist. </p>
+<p>GetLayerID returns the formit layer id from a layer name or WSM.INVALID_ID if a layer with that name does not exist Out: Layer id or WSM.INVALID_ID. </p>
 <p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetLayerID">GetLayerID</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Layer id or WSM.INVALID_ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -454,7 +466,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetLayerList gets a list of all layers as LayerData. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetLayerList">GetLayerList</a> </p><dl class="section return"><dt>Returns</dt><dd>Returns array of layer data : id, name, visibility </dd></dl>
+<p>Out: Returns array of layer data : id, name, visibility</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetLayerList">GetLayerList</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -485,14 +498,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetObjectLayerID returns the layer id for the object. </p>
-<p>Returns WSM.INVALID_ID if the object does not have a layer. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns WSM.INVALID_ID if the object does not have a layer. In: nHistoryID int In: nObjectID int Out: Layer id or WSM.INVALID_ID</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetObjectLayerID">GetObjectLayerID</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>int</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetObjectLayerID">GetObjectLayerID</a> </p><dl class="section return"><dt>Returns</dt><dd>Layer id or WSM.INVALID_ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -523,19 +537,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetObjectsLayerList returns the set of layers the given Objects are on. </p>
-<p>If bIncludeNoLayer is true, an uninitialized LayerData will be added to the set. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bIncludeNoLayer</td><td>bool (optional)</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If bIncludeNoLayer is true, an uninitialized LayerData will be added to the set. In: bIncludeNoLayer bool (optional) Out: Returns array of layer data : id, name, visibility</p>
 <p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#GetObjectsLayerList">GetObjectsLayerList</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">groupInstacePathArray</td><td>WSM.GroupInstancePathArray </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bIncludeNoLayer</td><td>(OPTIONAL, default = false) bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns array of layer data : id, name, visibility </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>aLayerList </dd></dl>
 
 </div>
 </div>
@@ -556,13 +566,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IsValid returns whether a layer id is valid. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerID int Out: bool Valid</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#IsValid">IsValid</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#IsValid">IsValid</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Valid </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -593,14 +604,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IsValidLayerName checks whether the name is valid for a layer. </p>
-<p>Returns success. Also returns an error string that can be posted in the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a>, if the name is not valid. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns success. Also returns an error string that can be posted in the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a>, if the name is not valid. In: layerID int In: newLayerName String Out: { Result (bool), Error (I18nString) }</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#IsValidLayerName">IsValidLayerName</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newLayerName</td><td>String</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newLayerName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#IsValidLayerName">IsValidLayerName</a> </p><dl class="section return"><dt>Returns</dt><dd>{ Result (bool), Error (I18nString) } </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(valid) },{ "Error" , to_json(errorMsg) } }; </dd></dl>
 
 </div>
 </div>
@@ -631,14 +643,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IsValidObjectForLayerAssignment returns whether the given object can be assigned a layer object must be top level (non owned) or a group instance. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: nHistoryID int In: nObjectID int Out: bool Valid</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#IsValidObjectForLayerAssignment">IsValidObjectForLayerAssignment</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>int</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nObjectID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#IsValidObjectForLayerAssignment">IsValidObjectForLayerAssignment</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Valid </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -659,13 +672,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>LayerExists returns true if a layer with the given name exists. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerName String Out: bool Exists</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#LayerExists">LayerExists</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>String</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#LayerExists">LayerExists</a> </p><dl class="section return"><dt>Returns</dt><dd>bool Exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -696,14 +710,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>RemoveLayersFromObjects removes all the layers in a vector from a vector of objects, regardless of whether any of the objects actually are assigned any of the layers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerIDs Array of layer ids In: aObjects Array of <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#RemoveLayersFromObjects">RemoveLayersFromObjects</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerIDs</td><td>Array of layer ids </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aObjects</td><td>Array of <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerIDs</td><td>Array of int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aObjects</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#RemoveLayersFromObjects">RemoveLayersFromObjects</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -734,14 +749,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetLayerName set a new name for the given layer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerID int In: newLayerName String Out: Success</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayerName">SetLayerName</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newLayerName</td><td>String</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newLayerName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayerName">SetLayerName</a> </p><dl class="section return"><dt>Returns</dt><dd>Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -771,15 +787,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the pickable status of a layer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Set the pickable status of a layer In: layerID int Id of the layer In: pickable bool true to set the layer pickable, false to lock it Out: JSON_UNDEFINED. </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayerPickable">SetLayerPickable</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int Id of the layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pickable</td><td>bool true to set the layer pickable, false to lock it</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pickable</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayerPickable">SetLayerPickable</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -800,13 +816,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetLayersVisibility sets the visibility of a vector of layers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: aLayersVisibility Array of layer data (see GetLayerData) Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayersVisibility">SetLayersVisibility</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aLayersVisibility</td><td>Array of layer data (see GetLayerData)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLayersVisibility</td><td>Array of FormIt.Layers.LayerData </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayersVisibility">SetLayersVisibility</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -837,14 +854,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SetLayerVisibility sets the visibility of layer with a given name and visibility toggle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: layerName is string containing the layer name In: visibility is a boolean specifying whether to turn layer on or off Out: boolean if the api is successful</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayerVisibility">SetLayerVisibility</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>is string containing the layer name </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">visibility</td><td>is a boolean specifying whether to turn layer on or off</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerName</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">visibility</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLayerVisibility">SetLayerVisibility</a> </p><dl class="section return"><dt>Returns</dt><dd>boolean if the api is successful </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -874,15 +892,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the load in Revit status of a layer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Set the load in Revit status of a layer In: layerID int Id of the layer In: load bool true to set the layer to load in Revit Out: JSON_UNDEFINED. </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLoadInRevit">SetLoadInRevit</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int Id of the layer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">load</td><td>bool true to set the layer to load in Revit</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">load</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__layers__api__ref#SetLoadInRevit">SetLoadInRevit</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>

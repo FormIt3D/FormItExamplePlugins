@@ -3,7 +3,7 @@ var namespace_form_it =
     [ "Analysis", "namespace_form_it_1_1_analysis.html", "namespace_form_it_1_1_analysis" ],
     [ "AutoSave", "namespace_form_it_1_1_auto_save.html", [
       [ "AddProtectedFile", "group__mod__jsapi__formit__autosave.html#ga26b2fa9829e802ae46f058e1887b5c02", null ],
-      [ "Cleanup", "group__mod__jsapi__formit__autosave.html#gaf0a8e75d328b2d0f31026534b16ec1d1", null ],
+      [ "Cleanup", "group__mod__jsapi__formit__autosave.html#gaebe2b58c3f29bd3212e6625f558278b7", null ],
       [ "ClearProtectedFiles", "group__mod__jsapi__formit__autosave.html#gaaf80b5957a03362d0593364a5d1d55fa", null ],
       [ "Disable", "group__mod__jsapi__formit__autosave.html#ga7803103e633eec3eacbd644786e900e9", null ],
       [ "Enable", "group__mod__jsapi__formit__autosave.html#ga74dd313b573d364e167f3779dbdafb97", null ],
@@ -88,7 +88,7 @@ var namespace_form_it =
       [ "HasFormItBakeToFormItNode", "group__mod__jsapi__formit__dynamo.html#ga7e1ca2f7ecf59f3ed69bd7b0841640a8", null ],
       [ "HasFormItSelectionNodes", "group__mod__jsapi__formit__dynamo.html#ga601c1ac77453fa184d1fa275bcfb532f", null ],
       [ "IsDynamoHistory", "group__mod__jsapi__formit__dynamo.html#ga6d1d95c58f3a21ef8bde45954dcda5ab", null ],
-      [ "SetDynamoFile", "group__mod__jsapi__formit__dynamo.html#ga9cbc240937752da67f2769a2a43f9c6f", null ],
+      [ "SetDynamoFile", "group__mod__jsapi__formit__dynamo.html#ga59c9f16f504f9932b79a6af89e67de67", null ],
       [ "UpdateRenderer", "group__mod__jsapi__formit__dynamo.html#ga79f54703669d0f758ad575c6fc4ac066", null ],
       [ "WriteDYNFile", "group__mod__jsapi__formit__dynamo.html#gae086eaa1f2120585cbb00f8fb3c6b361", null ]
     ] ],
@@ -170,7 +170,7 @@ var namespace_form_it =
       [ "GetNumLevels", "group__mod__jsapi__formit__levels.html#ga367c4945c20ebe51be0dc6e59b7a53e6", null ],
       [ "HasLevelsInProject", "group__mod__jsapi__formit__levels.html#ga3de9bb7c4d03b1026620306e2e7fc297", null ],
       [ "IsExistingLevel", "group__mod__jsapi__formit__levels.html#ga2a8d507fccbbc01633b92a4330084fb9", null ],
-      [ "IsExistingLevelByElevation", "group__mod__jsapi__formit__levels.html#gad43dafa5c1287111dcb9d41e1274afcc", null ],
+      [ "IsExistingLevelByElevation", "group__mod__jsapi__formit__levels.html#ga09153c9ea88509f61c27917079d875aa", null ],
       [ "IsValidLevelDeltaElevation", "group__mod__jsapi__formit__levels.html#gab9aae02de89b2e1628ea19e4ab9ae68f", null ],
       [ "IsValidLevelElevation", "group__mod__jsapi__formit__levels.html#ga3e1391d3dc1f9f9d3c688fb9de4063c0", null ],
       [ "IsValidLevelName", "group__mod__jsapi__formit__levels.html#gad5544f10fd3b0e70d20ee0ee9c7d4704", null ],
@@ -338,11 +338,11 @@ var namespace_form_it =
       [ "GetSketchMaterialFromWSMMaterial", "group__mod__jsapi__formit__sketchmaterials.html#ga72a686499692639028b82de83746a61d", null ],
       [ "GetWSMMaterialForHistory", "group__mod__jsapi__formit__sketchmaterials.html#ga05ca7c1363ae5c623cf69b7cdbef04fe", null ],
       [ "IsMaterialUsed", "group__mod__jsapi__formit__sketchmaterials.html#ga8fc6c61c5c90e229acdd6bd3dc508d38", null ],
+      [ "Parameters", "group__mod__jsapi__formit__sketchmaterials.html#ga7230a927809c0f55fc86579961f3b45e", null ],
       [ "RearrangeMaterials", "group__mod__jsapi__formit__sketchmaterials.html#ga7bc67f8591d52209d091b64a219626bb", null ],
       [ "SetDefaultMaterialData", "group__mod__jsapi__formit__sketchmaterials.html#ga12d8cab61d7f9a8206ef3f3ebe6c5b70", null ],
       [ "SetMaterialDataAttribute", "group__mod__jsapi__formit__sketchmaterials.html#gab52aeeca7518631e6cf97390fc469bde", null ],
-      [ "SetMaterialDataMap", "group__mod__jsapi__formit__sketchmaterials.html#gadfe049050276fbe48d480f1cce65c801", null ],
-      [ "UpdateMaterialFromParameters", "group__mod__jsapi__formit__sketchmaterials.html#ga5804f9349bff575fd7ffc1784fabcdaa", null ]
+      [ "SetMaterialDataMap", "group__mod__jsapi__formit__sketchmaterials.html#gadfe049050276fbe48d480f1cce65c801", null ]
     ] ],
     [ "Statistics", "namespace_form_it_1_1_statistics.html", [
       [ "Log", "group__mod__jsapi__formit__statistics.html#ga0627b6c099a8d1be30afd18c859ce167", null ],

@@ -1,9 +1,8 @@
 var group__mod__jsapi__wsm =
 [
-    [ "WSM.AppHelper API", "group__mod__jsapi__wsm__apphelper.html", "group__mod__jsapi__wsm__apphelper" ],
-    [ "WSM.InferenceEngine API", "group__mod__jsapi__wsm__inferenceengine.html", "group__mod__jsapi__wsm__inferenceengine" ],
     [ "WSM.Atf API", "group__mod__jsapi__wsm__atf.html", "group__mod__jsapi__wsm__atf" ],
     [ "WSM.Geom API", "group__mod__jsapi__wsm__geom.html", "group__mod__jsapi__wsm__geom" ],
+    [ "WSM.InferenceEngine API", "group__mod__jsapi__wsm__inferenceengine.html", "group__mod__jsapi__wsm__inferenceengine" ],
     [ "WSM.RenderHelper API", "group__mod__jsapi__wsm__renderhelper.html", "group__mod__jsapi__wsm__renderhelper" ],
     [ "WSM.Sat API", "group__mod__jsapi__wsm__sat.html", "group__mod__jsapi__wsm__sat" ],
     [ "WSM.GroupInstancePath API", "group__mod__jsapi__wsm__groupinstancepath.html", "group__mod__jsapi__wsm__groupinstancepath" ],

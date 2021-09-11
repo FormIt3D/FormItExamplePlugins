@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "FormIt Plugin API", "index.html", [
+  [ "FormIt JS Plugin API", "index.html", [
     [ "FormIt Plugin API Documentation", "index.html", [
       [ "FormIt Plugin API Documentation", "index.html#s_mainpage_overview_patch", [
         [ "Contents", "index.html#s_jsapi_doc_contents", null ],
@@ -42,37 +42,21 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ]
       ] ]
     ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
-      ] ]
-    ] ],
-    [ "File Members", "globals.html", [
-      [ "All", "globals.html", null ],
-      [ "Functions", "globals_func.html", null ],
-      [ "Variables", "globals_vars.html", null ],
-      [ "Macros", "globals_defs.html", null ]
-    ] ],
-    [ "FormIt Plugin API Help", "^https://formit3d.github.io/FormItExamplePlugins/", null ],
+    [ "FormIt Plugin API Help", "^https://formit3d.github.io/FormItExamplePlugins/docs/HowToBuild.html", null ],
     [ "Autodesk FormIt Help", "^http://help.autodesk.com/view/FORMIT/ENU/", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"group__mod__jsapi__formit__configuration.html#ga5f20e5775f245ea59da9a228d685fa78",
-"group__mod__jsapi__formit__model.html#ga22d94c2b801993419c1f0b1eb4da7d5e",
-"group__mod__jsapi__formit__sketchmaterials.html#ga4c5c5b0b159003de6ab9315862b52af4",
-"group__mod__jsapi__formit__visualstyles.html#gab2b17e40c0e206801bf1d00b89adc772",
-"group__mod__jsapi__wsm.html#ga717745ad75292aabb433223e70d475da",
-"group__mod__jsapi__wsm.html#gade1ae8024cae4bf56908e034c42ccb57",
-"group__mod__jsapi__wsm__tools.html#ga97fa845c51a42757cef7739a1d21124c",
-"namespacemembers_u.html"
+"group__mod__jsapi__formit.html",
+"group__mod__jsapi__formit__dynamo.html#ga128549907cdb6d5d137b78e41b9cfcfa",
+"group__mod__jsapi__formit__model.html#ga5e72995c378babe5d8da3a8810566a59",
+"group__mod__jsapi__formit__statistics.html#gaf2e289e3c16481072e5b19f8bb725aa4",
+"group__mod__jsapi__formit__visualstyles.html#gae509a6e3841bdccf95b6a69c8e8ac41f",
+"group__mod__jsapi__wsm.html#ga7dafbfc42f791ece6009215add157421",
+"group__mod__jsapi__wsm.html#gae56481c00cb8db8fcd23f0b756cbe70f",
+"group__mod__jsapi__wsm__utils.html#ga079ff4b3eb482d8450fe8c4c71c388ec"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

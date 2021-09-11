@@ -1,15 +1,9 @@
 var namespace_w_s_m =
 [
-    [ "AppHelper", "namespace_w_s_m_1_1_app_helper.html", [
-      [ "GetDisplayHistoryID", "group__mod__jsapi__wsm__apphelper.html#ga1fc501466170a3e3ddc05a0b555a40a6", null ],
-      [ "GetHistoryID", "group__mod__jsapi__wsm__apphelper.html#ga83414b93110d5ca59c957473761f3272", null ],
-      [ "Initialize", "group__mod__jsapi__wsm__apphelper.html#gae93a20142a46a32550888d88b81509a1", null ],
-      [ "NewModel", "group__mod__jsapi__wsm__apphelper.html#gabe55d7ef520c358f742e80c3639fc3d7", null ]
-    ] ],
     [ "Atf", "namespace_w_s_m_1_1_atf.html", [
       [ "APILoadWithATF", "group__mod__jsapi__wsm__atf.html#gaac0d14b5b67faf54e6849abcfee6e2e8", null ],
       [ "APITestAtfLoopBack", "group__mod__jsapi__wsm__atf.html#ga26a687d08e20893768466c0285d320ec", null ],
-      [ "APIWriteWithATF", "group__mod__jsapi__wsm__atf.html#gad77d4130a637a6b6e3065b82507ddd66", null ]
+      [ "APIWriteWithATF", "group__mod__jsapi__wsm__atf.html#ga0462f55e51a511ecf573f796ed42d229", null ]
     ] ],
     [ "Geom", "namespace_w_s_m_1_1_geom.html", [
       [ "Interval3d", "group__mod__jsapi__wsm__geom.html#ga2cef7b8a15cece688c99f1765073d359", null ],
@@ -160,7 +154,7 @@ var namespace_w_s_m =
       [ "IsObjectNotPickable", "group__mod__jsapi__wsm__utils.html#gaff07261b7e911e5eaa3d144c59083e55", null ],
       [ "IsObjectNotPickableByPath", "group__mod__jsapi__wsm__utils.html#ga1de03d671e2d922513e543dacdc53188", null ],
       [ "IsObjectType", "group__mod__jsapi__wsm__utils.html#ga5bbe659d41dc1fadbe0250e51b9b30e9", null ],
-      [ "IsOnCurveJunction", "group__mod__jsapi__wsm__utils.html#ga20abe862d9f2213b742c3646062d224b", null ],
+      [ "IsOnCurveJunction", "group__mod__jsapi__wsm__utils.html#gaf9c8e2b0ce916fa391aafb7d598f0545", null ],
       [ "IsOwnerOf", "group__mod__jsapi__wsm__utils.html#gad1b86638215a864b0ffe266617abde4e", null ],
       [ "IsSelectAllConnected", "group__mod__jsapi__wsm__utils.html#ga99ac89e69ed7b1c7473b530ac6e1c0c5", null ],
       [ "IsSilhouetteEdge", "group__mod__jsapi__wsm__utils.html#gabc0c58d06e109b77a0baf72bff152fca", null ],

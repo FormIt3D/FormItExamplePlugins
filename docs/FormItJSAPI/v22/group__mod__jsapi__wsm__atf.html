@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: WSM.Atf API</title>
+<title>FormIt JS Plugin API: WSM.Atf API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,12 +94,14 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__wsm__atf.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga26a687d08e20893768466c0285d320ec"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__atf.html#ga26a687d08e20893768466c0285d320ec">WSM.Atf.APITestAtfLoopBack</a> (nFromHistoryID, nToHistoryID, defaultColorVec, aNonOwnedObjectIDs, aExcludedObjects, bWantPolygonMeshFromBrep, aLayerDisplayedNegateVec)</td></tr>
+<tr class="memdesc:ga26a687d08e20893768466c0285d320ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__mod__jsapi__wsm__atf.html#ga26a687d08e20893768466c0285d320ec" title="APITestAtfLoopBack() function.">APITestAtfLoopBack()</a> function.  <a href="group__mod__jsapi__wsm__atf.html#ga26a687d08e20893768466c0285d320ec">More...</a><br /></td></tr>
 <tr class="separator:ga26a687d08e20893768466c0285d320ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac0d14b5b67faf54e6849abcfee6e2e8"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__atf.html#gaac0d14b5b67faf54e6849abcfee6e2e8">WSM.Atf.APILoadWithATF</a> (nHistoryID, sFilePath, eFileType, nOptions)</td></tr>
 <tr class="memdesc:gaac0d14b5b67faf54e6849abcfee6e2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__mod__jsapi__wsm__atf.html#gaac0d14b5b67faf54e6849abcfee6e2e8" title="APILoadWithATF() function.">APILoadWithATF()</a> function.  <a href="group__mod__jsapi__wsm__atf.html#gaac0d14b5b67faf54e6849abcfee6e2e8">More...</a><br /></td></tr>
 <tr class="separator:gaac0d14b5b67faf54e6849abcfee6e2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad77d4130a637a6b6e3065b82507ddd66"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__atf.html#gad77d4130a637a6b6e3065b82507ddd66">WSM.Atf.APIWriteWithATF</a> (nHistoryID, sFilePath, eFileType, aNonOwnedObjectIDs, aExcludedObjects, defaultColorVec, cameraVec)</td></tr>
-<tr class="separator:gad77d4130a637a6b6e3065b82507ddd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0462f55e51a511ecf573f796ed42d229"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__atf.html#ga0462f55e51a511ecf573f796ed42d229">WSM.Atf.APIWriteWithATF</a> (nHistoryID, sFilePath, eFileType, aNonOwnedObjectIDs, aExcludedObjects, defaultColorVec, cameraVec, aLayerDisplayedNegateVec)</td></tr>
+<tr class="memdesc:ga0462f55e51a511ecf573f796ed42d229"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__mod__jsapi__wsm__atf.html#ga0462f55e51a511ecf573f796ed42d229" title="APIWriteWithATF() function.">APIWriteWithATF()</a> function.  <a href="group__mod__jsapi__wsm__atf.html#ga0462f55e51a511ecf573f796ed42d229">More...</a><br /></td></tr>
+<tr class="separator:ga0462f55e51a511ecf573f796ed42d229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaac0d14b5b67faf54e6849abcfee6e2e8"></a>
@@ -210,10 +212,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="group__mod__jsapi__wsm__atf.html#ga26a687d08e20893768466c0285d320ec" title="APITestAtfLoopBack() function.">APITestAtfLoopBack()</a> function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nFromHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nToHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">defaultColorVec</td><td>(OPTIONAL) Array of <a class="el" href="group__mod__jsapi__wsm.html#gadccb21d5dcd090cfb27a61eb8a65bb27" title="Color constructs a Color.">WSM.Color</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aNonOwnedObjectIDs</td><td>(OPTIONAL) Array of int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aExcludedObjects</td><td>(OPTIONAL) Array of <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bWantPolygonMeshFromBrep</td><td>(OPTIONAL, default = false) bool </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLayerDisplayedNegateVec</td><td>(OPTIONAL) Array of <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+
 </div>
 </div>
-<a id="gad77d4130a637a6b6e3065b82507ddd66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad77d4130a637a6b6e3065b82507ddd66">&#9670;&nbsp;</a></span>APIWriteWithATF()</h2>
+<a id="ga0462f55e51a511ecf573f796ed42d229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0462f55e51a511ecf573f796ed42d229">&#9670;&nbsp;</a></span>APIWriteWithATF()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,6 +275,12 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">cameraVec&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">aLayerDisplayedNegateVec&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -267,6 +290,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="group__mod__jsapi__wsm__atf.html#ga0462f55e51a511ecf573f796ed42d229" title="APIWriteWithATF() function.">APIWriteWithATF()</a> function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eFileType</td><td>WSM.nFileType </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aNonOwnedObjectIDs</td><td>(OPTIONAL) Array of int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aExcludedObjects</td><td>(OPTIONAL) Array of <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">defaultColorVec</td><td>(OPTIONAL) Array of <a class="el" href="group__mod__jsapi__wsm.html#gadccb21d5dcd090cfb27a61eb8a65bb27" title="Color constructs a Color.">WSM.Color</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cameraVec</td><td>(OPTIONAL) Array of WSM.ATFCameraData </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aLayerDisplayedNegateVec</td><td>(OPTIONAL) Array of <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: WSM API</title>
+<title>FormIt JS Plugin API: WSM API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,13 +94,11 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__wsm.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__mod__jsapi__wsm__apphelper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__apphelper.html">WSM.AppHelper API</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__mod__jsapi__wsm__inferenceengine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__inferenceengine.html">WSM.InferenceEngine API</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__mod__jsapi__wsm__atf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__atf.html">WSM.Atf API</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__mod__jsapi__wsm__geom"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__geom.html">WSM.Geom API</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__mod__jsapi__wsm__inferenceengine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__inferenceengine.html">WSM.InferenceEngine API</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__mod__jsapi__wsm__renderhelper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__renderhelper.html">WSM.RenderHelper API</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +116,7 @@ Modules</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gadc15b47bc2efde5c6fc07053c1552b62"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm.html#gadc15b47bc2efde5c6fc07053c1552b62">WSM.APIGetActiveHistory</a> ()</td></tr>
-<tr class="memdesc:gadc15b47bc2efde5c6fc07053c1552b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Active history managed by ScriptInstance.  <a href="group__mod__jsapi__wsm.html#gadc15b47bc2efde5c6fc07053c1552b62">More...</a><br /></td></tr>
+<tr class="memdesc:gadc15b47bc2efde5c6fc07053c1552b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the top level owners are part of the set.  <a href="group__mod__jsapi__wsm.html#gadc15b47bc2efde5c6fc07053c1552b62">More...</a><br /></td></tr>
 <tr class="separator:gadc15b47bc2efde5c6fc07053c1552b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa45b9d933781781dd8517f5c2ea3ae9c"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm.html#gaa45b9d933781781dd8517f5c2ea3ae9c">WSM.APICreateHistory</a> (nHistoryID, bNonTemporary)</td></tr>
 <tr class="memdesc:gaa45b9d933781781dd8517f5c2ea3ae9c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
@@ -4933,9 +4931,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the Active history managed by ScriptInstance. </p>
-<p><br  />
- See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__wsm__api__ref.html#APIGetActiveHistory">APIGetActiveHistory</a> </p><dl class="section return"><dt>Returns</dt><dd>inst.GetActiveHistory() </dd></dl>
+<p>Check if the top level owners are part of the set. </p>
 
 </div>
 </div>
@@ -6440,11 +6436,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the ID of the target Delta, which is <code>nBeforeLast</code> before the last Delta (even for zero <code>nBeforeLast</code>, it may be different from the active Delta ID, if there are available Redo states). </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: nHistoryID ID of the given History </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">nLastDeltaID</td><td>The returned ID of the target Delta </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nBeforeLast</td><td>The offset between the target Delta and the last Delta Out: ID of the target Delta</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nLastDeltaID</td><td>The returned ID of the target Delta In: nBeforeLast The offset between the target Delta and the last Delta Out: ID of the target Delta</td></tr>
   </table>
   </dd>
 </dl>
@@ -9947,7 +9941,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "directHits" , to_json(aHits)}, { "objectsInGroupsVec" , to_json(objectsInGroupsVec)}, { "groupAggregateTransf3dVec" , to_json(groupAggregateTransf3dVec)}, { "sortedIndices" , to_json(sortedIndices)}, { "sortedParameters" , to_json(sortedParameters)} }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ { "directHits" , to_json(aHits)}, { "objectsInGroupsVec" , to_json(objectsInGroupsVec)}, { "groupAggregateTransf3dVec" , to_json(groupAggregateTransf3dVec)}, { "sortedIndices" , to_json(sortedIndices)}, { "sorted Parameters" , to_json(sorted Parameters)} }; </dd></dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: FormIt.Model API</title>
+<title>FormIt JS Plugin API: FormIt.Model API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__model.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga429407d750e202e0e178d5507471aab9"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__model.html#ga429407d750e202e0e178d5507471aab9">FormIt.Model.GetHistoryID</a> ()</td></tr>
-<tr class="memdesc:ga429407d750e202e0e178d5507471aab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request the id of the history being edited - app supplied.  <a href="group__mod__jsapi__formit__model.html#ga429407d750e202e0e178d5507471aab9">More...</a><br /></td></tr>
+<tr class="memdesc:ga429407d750e202e0e178d5507471aab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of the History of the main <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>.  <a href="group__mod__jsapi__formit__model.html#ga429407d750e202e0e178d5507471aab9">More...</a><br /></td></tr>
 <tr class="separator:ga429407d750e202e0e178d5507471aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga442eea913fe8058f94437531306c1a64"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__model.html#ga442eea913fe8058f94437531306c1a64">FormIt.Model.GetMemorySize</a> (bCollapsedHistoryWithLiveObjsOnly)</td></tr>
 <tr class="memdesc:ga442eea913fe8058f94437531306c1a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory size of the History of the main <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>.  <a href="group__mod__jsapi__formit__model.html#ga442eea913fe8058f94437531306c1a64">More...</a><br /></td></tr>
@@ -109,7 +109,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga22d94c2b801993419c1f0b1eb4da7d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the UnitType of the current <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>.  <a href="group__mod__jsapi__formit__model.html#ga22d94c2b801993419c1f0b1eb4da7d5e">More...</a><br /></td></tr>
 <tr class="separator:ga22d94c2b801993419c1f0b1eb4da7d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga74655131f6f68780b513332899641024"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__model.html#ga74655131f6f68780b513332899641024">FormIt.Model.ImperialLengthToCurrentUnitLength</a> (length)</td></tr>
-<tr class="memdesc:ga74655131f6f68780b513332899641024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes imperial value in feet and translates to the current unit system.  <a href="group__mod__jsapi__formit__model.html#ga74655131f6f68780b513332899641024">More...</a><br /></td></tr>
+<tr class="memdesc:ga74655131f6f68780b513332899641024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes imperial value in feet and translates to the current unit system In: length<br  />
+.  <a href="group__mod__jsapi__formit__model.html#ga74655131f6f68780b513332899641024">More...</a><br /></td></tr>
 <tr class="separator:ga74655131f6f68780b513332899641024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f7b0dbb693e2c1c8810c6961e53065d"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__model.html#ga8f7b0dbb693e2c1c8810c6961e53065d">FormIt.Model.SetUnitType</a> (unitType)</td></tr>
 <tr class="memdesc:ga8f7b0dbb693e2c1c8810c6961e53065d"><td class="mdescLeft">&#160;</td><td class="mdescRight">!!!!!!!!!!!!!!! Deprecated: Use GetUnitTypeCurrent !!!!!!!!!!!!!!! Set the UnitType of the current <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>.  <a href="group__mod__jsapi__formit__model.html#ga8f7b0dbb693e2c1c8810c6961e53065d">More...</a><br /></td></tr>
@@ -157,7 +158,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gadbc5744a98e27aea8f48f0aeb560c8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the surface accuracy.  <a href="group__mod__jsapi__formit__model.html#gadbc5744a98e27aea8f48f0aeb560c8ad">More...</a><br /></td></tr>
 <tr class="separator:gadbc5744a98e27aea8f48f0aeb560c8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2079c91822b5a4df6af987229c9552c1"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__model.html#ga2079c91822b5a4df6af987229c9552c1">FormIt.Model.GetProjectSiteArea</a> ()</td></tr>
-<tr class="memdesc:ga2079c91822b5a4df6af987229c9552c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the project site area of the model.  <a href="group__mod__jsapi__formit__model.html#ga2079c91822b5a4df6af987229c9552c1">More...</a><br /></td></tr>
+<tr class="memdesc:ga2079c91822b5a4df6af987229c9552c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the project site area of the model Out: site area (number)  <a href="group__mod__jsapi__formit__model.html#ga2079c91822b5a4df6af987229c9552c1">More...</a><br /></td></tr>
 <tr class="separator:ga2079c91822b5a4df6af987229c9552c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee3bc4c67821345c652afb02f2ccb0cc"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__model.html#gaee3bc4c67821345c652afb02f2ccb0cc">FormIt.Model.SetTotalAreaOfSite</a> (area)</td></tr>
 <tr class="memdesc:gaee3bc4c67821345c652afb02f2ccb0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetTotalAreaOfSite sets the total site area of the model.  <a href="group__mod__jsapi__formit__model.html#gaee3bc4c67821345c652afb02f2ccb0cc">More...</a><br /></td></tr>
@@ -186,7 +187,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the curve accuracy. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetCurveAccuracyOrCountCurrent">GetCurveAccuracyOrCountCurrent</a> </p><dl class="section return"><dt>Returns</dt><dd>Curve accuracy </dd></dl>
+<p>Out: Curve accuracy</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetCurveAccuracyOrCountCurrent">GetCurveAccuracyOrCountCurrent</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -207,14 +209,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the name for the given history. </p>
-<p>Uses either the revit info or dynamo info, depending of what kind of group the history is. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Uses either the revit info or dynamo info, depending of what kind of group the history is. In: nHistoryId Out: History name</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetGroupHistoryName">GetGroupHistoryName</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryId</td><td>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetGroupHistoryName">GetGroupHistoryName</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>History name </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -233,8 +235,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Request the id of the history being edited - app supplied. </p>
-<p>Out: History ID </p><dl class="section return"><dt>Returns</dt><dd>WSM.INVALID_ID </dd></dl>
+<p>Get the id of the History of the main <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>. </p>
+<p>Out: History id</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetHistoryID">GetHistoryID</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -255,19 +258,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the memory size of the History of the main <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bool</td><td>Collapse the History with live Objects only.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>In: bool Collapse the History with live Objects only. Out: memory size</p>
 <p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetMemorySize">GetMemorySize</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bCollapsedHistoryWithLiveObjsOnly</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>memory size </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -313,8 +311,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the project site area of the model. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetProjectSiteArea">GetProjectSiteArea</a> </p><dl class="section return"><dt>Returns</dt><dd>site area (number) </dd></dl>
+<p>Get the project site area of the model Out: site area (number) </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetProjectSiteArea">GetProjectSiteArea</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -334,7 +332,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetProjectTargetArea gets the site project target area of the model. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetProjectTargetArea">GetProjectTargetArea</a> </p><dl class="section return"><dt>Returns</dt><dd>area </dd></dl>
+<p>Out: area</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetProjectTargetArea">GetProjectTargetArea</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -365,20 +364,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the properties for the given history. </p>
-<p>Used when the history represents a group. If editingPath is supplied, look at owning Groups to determine the Revit category. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryId</td><td></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">editingPath</td><td><a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> (OPTIONAL)</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Used when the history represents a group. If editingPath is supplied, look at owning Groups to determine the Revit category. In: nHistoryId In: editingPath <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> (OPTIONAL) Out: properties</p>
 <p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetPropertiesForHistory">GetPropertiesForHistory</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">editingPath</td><td>(OPTIONAL) <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>properties </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ { "revitFamilyCategory" , to_json(props.revitFamilyCategory) }, { "revitFamilyReference" , to_json(props.revitFamilyReference) }, { "revitFamilyType" , to_json(props.revitFamilyType) }, { "revitFamilyExtraData" , to_json(props.revitFamilyExtraData) }, { "isGeneratedFromRFA" , to_json(props.isGeneratedFromRFA) }, { "isGeneratedFromBuiltinRFA" , to_json(props.isGeneratedFromBuiltinRFA) }, { "allowOtherCategories" , to_json(props.allowOtherCategories) } }; </dd></dl>
 
 </div>
 </div>
@@ -418,7 +412,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the surface accuracy. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetSurfaceAccuracyOrCountCurrent">GetSurfaceAccuracyOrCountCurrent</a> </p><dl class="section return"><dt>Returns</dt><dd>accuracy (number) </dd></dl>
+<p>Out: accuracy (number)</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetSurfaceAccuracyOrCountCurrent">GetSurfaceAccuracyOrCountCurrent</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -438,7 +433,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetTotalGrossArea gets the total area of all levels in the model. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetTotalGrossArea">GetTotalGrossArea</a> </p><dl class="section return"><dt>Returns</dt><dd>area </dd></dl>
+<p>Out: area</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetTotalGrossArea">GetTotalGrossArea</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -458,13 +454,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>!!!!!!!!!!!!!!! Deprecated: Use GetUnitTypeCurrent !!!!!!!!!!!!!!! Get the UnitType of the current <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>. </p>
-<p>FormIt.UnitType.kImperialFeetInches<br  />
+<p>Out: Unit Type-<br  />
+FormIt.UnitType.kImperialFeetInches<br  />
 FormIt.UnitType.kImperialInches<br  />
 FormIt.UnitType.kMetricMeter<br  />
 FormIt.UnitType.kMetricCentimeter<br  />
 FormIt.UnitType.kMetricMillimeter</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetUnitType">GetUnitType</a> </p><dl class="section return"><dt>Returns</dt><dd>Unit Type-<br  />
- </dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetUnitType">GetUnitType</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -484,13 +480,13 @@ FormIt.UnitType.kMetricMillimeter</p>
 </div><div class="memdoc">
 
 <p>Get the UnitType of the current <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>. </p>
-<p>FormIt.UnitType.kImperialFeetInches<br  />
+<p>Out: Unit Type-<br  />
+FormIt.UnitType.kImperialFeetInches<br  />
 FormIt.UnitType.kImperialInches<br  />
 FormIt.UnitType.kMetricMeter<br  />
 FormIt.UnitType.kMetricCentimeter<br  />
 FormIt.UnitType.kMetricMillimeter</p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetUnitTypeCurrent">GetUnitTypeCurrent</a> </p><dl class="section return"><dt>Returns</dt><dd>Unit Type-<br  />
- </dd></dl>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#GetUnitTypeCurrent">GetUnitTypeCurrent</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -510,13 +506,15 @@ FormIt.UnitType.kMetricMillimeter</p>
       </table>
 </div><div class="memdoc">
 
-<p>Takes imperial value in feet and translates to the current unit system. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Takes imperial value in feet and translates to the current unit system In: length<br  />
+. </p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#ImperialLengthToCurrentUnitLength">ImperialLengthToCurrentUnitLength</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>double </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -537,12 +535,15 @@ FormIt.UnitType.kMetricMillimeter</p>
 </div><div class="memdoc">
 
 <p>Return true if the current unit type in the model is imperial. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: FormIt.UnitType<br  />
+Out: true/false</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#IsImperialUnitType">IsImperialUnitType</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">FormIt.UnitType</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unitType</td><td>FormIt.UnitType </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -562,7 +563,8 @@ FormIt.UnitType.kMetricMillimeter</p>
 </div><div class="memdoc">
 
 <p>IsModified returns true if the <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a> has been modified. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#IsModified">IsModified</a> </p><dl class="section return"><dt>Returns</dt><dd>Modified bool </dd></dl>
+<p>Out: Modified bool</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#IsModified">IsModified</a> </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -610,7 +612,8 @@ FormIt.UnitType.kMetricMillimeter</p>
 </div><div class="memdoc">
 
 <p>ResetModified sets the <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a> to unmodified. </p>
-<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#ResetModified">ResetModified</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<p>Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#ResetModified">ResetModified</a> </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -631,18 +634,17 @@ FormIt.UnitType.kMetricMillimeter</p>
 </div><div class="memdoc">
 
 <p>Set the curve accuracy. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">accuracyORcount</td><td><ul>
+<p>In: accuracyORcount </p><ul>
 <li>MAX distance between base circle and segment as portion of R, if &lt; .75 </li>
-<li>number of divisions (double rounded to int) over 90 degree arc, if &gt;= .75</li>
+<li>number of divisions (double rounded to int) over 90 degree arc, if &gt;= .75 Out: JSON_UNDEFINED</li>
 </ul>
-See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetCurveAccuracyOrCountCurrent">SetCurveAccuracyOrCountCurrent</a> </td></tr>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetCurveAccuracyOrCountCurrent">SetCurveAccuracyOrCountCurrent</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">accuracyORcount</td><td>double </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -673,14 +675,15 @@ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/
 </div><div class="memdoc">
 
 <p>Set the name for the given history. </p>
-<p>Uses either the revit info or dynamo info, depending of what kind of group the history is </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Uses either the revit info or dynamo info, depending of what kind of group the history is In: nHistoryID In: sHistoryName Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetGroupHistoryName">SetGroupHistoryName</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td></td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sHistoryName</td><td>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetGroupHistoryName">SetGroupHistoryName</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sHistoryName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -739,14 +742,14 @@ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/
 </div><div class="memdoc">
 
 <p>Set the surface accuracy. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: accuracy Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetSurfaceAccuracyOrCountCurrent">SetSurfaceAccuracyOrCountCurrent</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetSurfaceAccuracyOrCountCurrent">SetSurfaceAccuracyOrCountCurrent</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>double </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -767,14 +770,14 @@ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/
 </div><div class="memdoc">
 
 <p>SetTotalAreaOfSite sets the total site area of the model. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: area Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetTotalAreaOfSite">SetTotalAreaOfSite</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">area</td><td>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetTotalAreaOfSite">SetTotalAreaOfSite</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">area</td><td>double </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -795,12 +798,19 @@ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/
 </div><div class="memdoc">
 
 <p>!!!!!!!!!!!!!!! Deprecated: Use GetUnitTypeCurrent !!!!!!!!!!!!!!! Set the UnitType of the current <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: FormIt.UnitType<br  />
+FormIt.UnitType.kImperialFeetInches<br  />
+FormIt.UnitType.kImperialInches<br  />
+FormIt.UnitType.kMetricMeter<br  />
+FormIt.UnitType.kMetricCentimeter<br  />
+FormIt.UnitType.kMetricMillimeter Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetUnitType">SetUnitType</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">FormIt.UnitType</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unitType</td><td>FormIt.UnitType </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -821,12 +831,19 @@ See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/
 </div><div class="memdoc">
 
 <p>Set the UnitType of the current <a class="el" href="namespace_form_it_1_1_model.html" title="FormIt.Model namespace.">Model</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: FormIt.UnitType<br  />
+FormIt.UnitType.kImperialFeetInches<br  />
+FormIt.UnitType.kImperialInches<br  />
+FormIt.UnitType.kMetricMeter<br  />
+FormIt.UnitType.kMetricCentimeter<br  />
+FormIt.UnitType.kMetricMillimeter Out: JSON_UNDEFINED</p>
+<p>See C++ Reference: <a href="https://t-ariac.github.io/FormItExamplePlugins/docs/FormItCPPAPI/v22/group__mod__formitcore__model__api__ref#SetUnitTypeCurrent">SetUnitTypeCurrent</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">FormIt.UnitType</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unitType</td><td>FormIt.UnitType </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>

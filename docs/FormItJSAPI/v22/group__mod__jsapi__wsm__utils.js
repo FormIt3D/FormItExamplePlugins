@@ -34,7 +34,7 @@ var group__mod__jsapi__wsm__utils =
     [ "IsObjectNotPickable", "group__mod__jsapi__wsm__utils.html#gaff07261b7e911e5eaa3d144c59083e55", null ],
     [ "IsObjectNotPickableByPath", "group__mod__jsapi__wsm__utils.html#ga1de03d671e2d922513e543dacdc53188", null ],
     [ "IsObjectType", "group__mod__jsapi__wsm__utils.html#ga5bbe659d41dc1fadbe0250e51b9b30e9", null ],
-    [ "IsOnCurveJunction", "group__mod__jsapi__wsm__utils.html#ga20abe862d9f2213b742c3646062d224b", null ],
+    [ "IsOnCurveJunction", "group__mod__jsapi__wsm__utils.html#gaf9c8e2b0ce916fa391aafb7d598f0545", null ],
     [ "IsOwnerOf", "group__mod__jsapi__wsm__utils.html#gad1b86638215a864b0ffe266617abde4e", null ],
     [ "IsSelectAllConnected", "group__mod__jsapi__wsm__utils.html#ga99ac89e69ed7b1c7473b530ac6e1c0c5", null ],
     [ "IsSilhouetteEdge", "group__mod__jsapi__wsm__utils.html#gabc0c58d06e109b77a0baf72bff152fca", null ],

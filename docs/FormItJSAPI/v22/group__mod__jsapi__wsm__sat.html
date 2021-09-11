@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: WSM.Sat API</title>
+<title>FormIt JS Plugin API: WSM.Sat API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__wsm__sat.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga703c8c074199a22a2bdfbc1958c8319e"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__wsm__sat.html#ga703c8c074199a22a2bdfbc1958c8319e">WSM.Sat.APILoadSatFile</a> (nHistoryID, sFilePath, nOptions)</td></tr>
+<tr class="memdesc:ga703c8c074199a22a2bdfbc1958c8319e"><td class="mdescLeft">&#160;</td><td class="mdescRight">APILoadSatFile is not a part of <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> but helper WSMSatAPI to load model from SAT file facets Parameters: In: nHistoryID, sFilePath Out:JSON_UNDEFINED.  <a href="group__mod__jsapi__wsm__sat.html#ga703c8c074199a22a2bdfbc1958c8319e">More...</a><br /></td></tr>
 <tr class="separator:ga703c8c074199a22a2bdfbc1958c8319e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -128,6 +129,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>APILoadSatFile is not a part of <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> but helper WSMSatAPI to load model from SAT file facets Parameters: In: nHistoryID, sFilePath Out:JSON_UNDEFINED. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>int </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nOptions</td><td>(OPTIONAL, default = to_ut(WSM.nLoadingOptions.RemoveDuplicate | WSM.nLoadingOptions.Merge)) int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>

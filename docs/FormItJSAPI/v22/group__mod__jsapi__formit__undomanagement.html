@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FormIt Plugin API: FormIt.UndoManagement API</title>
+<title>FormIt JS Plugin API: FormIt.UndoManagement API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FormIt Plugin API
+   <div id="projectname">FormIt JS Plugin API
    &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
    </div>
   </td>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__mod__jsapi__formit__undomanagem
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga2679809ddae5dfb55ad5987f68abbc05"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__undomanagement.html#ga2679809ddae5dfb55ad5987f68abbc05">FormIt.UndoManagement.BeginState</a> ()</td></tr>
+<tr class="memdesc:ga2679809ddae5dfb55ad5987f68abbc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a state change operation.  <a href="group__mod__jsapi__formit__undomanagement.html#ga2679809ddae5dfb55ad5987f68abbc05">More...</a><br /></td></tr>
 <tr class="separator:ga2679809ddae5dfb55ad5987f68abbc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga191d36e95382f8e632bf1106a11f7e20"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__undomanagement.html#ga191d36e95382f8e632bf1106a11f7e20">FormIt.UndoManagement.EndState</a> (name, userName)</td></tr>
 <tr class="memdesc:ga191d36e95382f8e632bf1106a11f7e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a state change operation.  <a href="group__mod__jsapi__formit__undomanagement.html#ga191d36e95382f8e632bf1106a11f7e20">More...</a><br /></td></tr>
@@ -167,6 +168,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Begins a state change operation. </p>
+<p>Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+
 </div>
 </div>
 <a id="ga498c568cad4a32beb6f6c88dc35b4dc8"></a>
@@ -185,7 +189,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Can redo one step in any history. </p>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<p>Out: bool </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -205,7 +209,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Can undo one step in any history. </p>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<p>Out: bool </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -292,14 +296,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Ends a state change operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: name A name describing the operation In: userName Username of the owner of the undo state Out: state ID </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>A name describing the operation </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userName</td><td>Username of the owner of the undo state </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>String </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userName</td><td>(OPTIONAL) String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>state ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -337,7 +341,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the IDs of all Historys being managed. </p>
-<dl class="section return"><dt>Returns</dt><dd>Array of History ids. </dd></dl>
+<p>Out: Array of History ids. </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -411,7 +415,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Redo to the oldest current state in any history. </p>
-<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
+<p>Out: bool Success </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -432,13 +436,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Undo the most recent current state in any history and optionally delete redo information when undoing. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: bAndDeleteRedo bool (OPTIONAL) Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bAndDeleteRedo</td><td>bool (OPTIONAL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bAndDeleteRedo</td><td>(OPTIONAL) bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -459,13 +463,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Merge the current state of multiple existing histories into a single state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: histories Array of History ids Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">histories</td><td>Array of History ids </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">histories</td><td>Array of FormIt.UndoManagement.HistoryID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -514,13 +518,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Merge multiple existing states into a single state. </p>
-<p>All but the last of the listed states will be destroyed (the StateID will become invalid). The range of states must be contiguous, in the order noted. No state being destroyed may be the current state for that history. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>All but the last of the listed states will be destroyed (the StateID will become invalid). The range of states must be contiguous, in the order noted. No state being destroyed may be the current state for that history. In: states Array of state ids Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">states</td><td>Array of state ids </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">states</td><td>Array of FormIt.UndoManagement.StateID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -551,14 +555,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Note a state that affects the given histories. </p>
-<p>If the histories vector is empty, it affects only the currently edited history. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the histories vector is empty, it affects only the currently edited history. In: name String In: aHistories Array of History ids (OPTIONAL) Out: State id </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aHistories</td><td>Array of History ids (OPTIONAL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aHistories</td><td>(OPTIONAL) Array of FormIt.UndoManagement.HistoryID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>State id </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
@@ -606,7 +610,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reject the current undo state operation. </p>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
+<p>Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
 
 </div>
 </div>
@@ -661,13 +665,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the name for the most recent state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>In: stateName String Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">stateName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
 
 </div>
 </div>
