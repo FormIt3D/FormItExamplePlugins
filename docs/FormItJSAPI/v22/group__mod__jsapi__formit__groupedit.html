@@ -112,7 +112,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaa4915de6e9d85bcd2efade42ad0b4934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit to the parent context.  <a href="group__mod__jsapi__formit__groupedit.html#gaa4915de6e9d85bcd2efade42ad0b4934">More...</a><br /></td></tr>
 <tr class="separator:gaa4915de6e9d85bcd2efade42ad0b4934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga28467a5af511cfe8dff1193ccdbf30b0"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__groupedit.html#ga28467a5af511cfe8dff1193ccdbf30b0">FormIt.GroupEdit.GetShowEditedGroupOnly</a> ()</td></tr>
-<tr class="memdesc:ga28467a5af511cfe8dff1193ccdbf30b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the status of the "Show Edited Group Only" option Out: Returns true if "Show Edited Group Only" is active.  <a href="group__mod__jsapi__formit__groupedit.html#ga28467a5af511cfe8dff1193ccdbf30b0">More...</a><br /></td></tr>
+<tr class="memdesc:ga28467a5af511cfe8dff1193ccdbf30b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the status of the "Show Edited Group Only" option.  <a href="group__mod__jsapi__formit__groupedit.html#ga28467a5af511cfe8dff1193ccdbf30b0">More...</a><br /></td></tr>
 <tr class="separator:ga28467a5af511cfe8dff1193ccdbf30b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga057be6edc3c724c725e070027f640427"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__groupedit.html#ga057be6edc3c724c725e070027f640427">FormIt.GroupEdit.SetShowEditedGroupOnly</a> (show)</td></tr>
 <tr class="memdesc:ga057be6edc3c724c725e070027f640427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the status of the "Show Edited Group Only" option.  <a href="group__mod__jsapi__formit__groupedit.html#ga057be6edc3c724c725e070027f640427">More...</a><br /></td></tr>
@@ -135,7 +135,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>End editing in context. </p>
-<p>Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exit to the parent context. </p>
-<p>If editing a nested group, this method will exit to the parent context as defined by the editing path. Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<p>If editing a nested group, this method will exit to the parent context as defined by the editing path. </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the id of the history that is currently edited, or the id of the main history, if no group is edited. </p>
-<p>Out: Returns the current editing History id. </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the current editing History id. </dd></dl>
 
 </div>
 </div>
@@ -195,7 +195,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the editing context path. </p>
-<p>The path is to the specific instance that is being edited. Out: Returns <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>. </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>The path is to the specific instance that is being edited. </p><dl class="section return"><dt>Returns</dt><dd>Returns <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>. </dd></dl>
 
 </div>
 </div>
@@ -214,8 +214,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the status of the "Show Edited Group Only" option Out: Returns true if "Show Edited Group Only" is active. </p>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<p>Returns the status of the "Show Edited Group Only" option. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if "Show Edited Group Only" is active. </dd></dl>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if edit in context is happening. </p>
-<p>Out: Returns true if currently editing in context. </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if currently editing in context. </dd></dl>
 
 </div>
 </div>
@@ -256,13 +256,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the editing context path. </p>
-<p>The path is to the specific instance that should be edited. In: path <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> Out: Returns success. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The path is to the specific instance that should be edited. In: path <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns success. </dd></dl>
 
 </div>
 </div>
@@ -283,13 +283,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the status of the "Show Edited Group Only" option. </p>
-<p>In: val <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: val <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">show</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>

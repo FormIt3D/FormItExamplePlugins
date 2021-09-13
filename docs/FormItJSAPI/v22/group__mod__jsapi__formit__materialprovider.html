@@ -158,14 +158,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns if a given material is modifiable (in some cases a material is marked as ReadOnly). </p>
-<p>In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int Out: bool Can be modified </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Can be modified </dd></dl>
 
 </div>
 </div>
@@ -199,14 +199,14 @@ Functions</h2></td></tr>
 <p>In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-In: materialData FormIt.Materials.MaterialData Out: The id of the material is succesfull or WSM.INVALID_ID if not </p><dl class="params"><dt>Parameters</dt><dd>
+In: materialData FormIt.Materials.MaterialData </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialData</td><td>FormIt.Materials.MaterialData </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The id of the material is succesfull or WSM.INVALID_ID if not </dd></dl>
 
 </div>
 </div>
@@ -240,14 +240,15 @@ In: materialData FormIt.Materials.MaterialData Out: The id of the material is su
 <p>In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-In: materialIds Array of material ids Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+In: materialIds Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialIds</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+ </dd></dl>
 
 </div>
 </div>
@@ -281,14 +282,14 @@ In: materialIds Array of material ids Out: bool Success </p><dl class="params"><
 <p>In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-In: materialId Out: { "Result", Success , "Data", FormIt.Materials.MaterialData } </p><dl class="params"><dt>Parameters</dt><dd>
+In: materialId </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(success) },{ "Data" , to_json(data) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result", Success , "Data", FormIt.Materials.MaterialData } </dd></dl>
 
 </div>
 </div>
@@ -322,14 +323,14 @@ In: materialId Out: { "Result", Success , "Data", FormIt.Materials.MaterialData 
 <p>In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-In: materialId Out: { "Result", success , "Name", name } </p><dl class="params"><dt>Parameters</dt><dd>
+In: materialId </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(success) },{ "Name" , to_json(name) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result", success , "Name", name } </dd></dl>
 
 </div>
 </div>
@@ -363,14 +364,14 @@ In: materialId Out: { "Result", success , "Name", name } </p><dl class="params">
 <p>The returned vector contains png formatted rgb pixel values. The preview image is square with a resolution of res. In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-In: materialId Out: { "Result", success , "Image", previewImage, "Resolution", res } </p><dl class="params"><dt>Parameters</dt><dd>
+In: materialId </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Result" , to_json(success) }, { "Image" , to_json(previewImage) }, { "Resolution" , to_json(res) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Result", success , "Image", previewImage, "Resolution", res } </dd></dl>
 
 </div>
 </div>
@@ -394,13 +395,14 @@ In: materialId Out: { "Result", success , "Image", previewImage, "Resolution", r
 <p>In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
+</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of material ids <br  />
+ </dd></dl>
 
 </div>
 </div>
@@ -431,14 +433,14 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 
 <p>Returns a material name that is guaranteed not to exist. </p>
-<p>Can be used to create a new material without having to check for materials with the same name. If the base name is passed in, it is used to create the unique new name. Otherwise some generic name is the base (such as "Material"). In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: baseName String Out: New material name </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Can be used to create a new material without having to check for materials with the same name. If the base name is passed in, it is used to create the unique new name. Otherwise some generic name is the base (such as "Material"). In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: baseName String </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">baseName</td><td>(OPTIONAL, default = "") String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New material name </dd></dl>
 
 </div>
 </div>
@@ -469,14 +471,14 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 
 <p>Check whether the material with the given id exists. </p>
-<p>In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int Out: bool Valid </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Valid </dd></dl>
 
 </div>
 </div>
@@ -519,7 +521,7 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 
 <p>Check if the given name is valid for a material. </p>
-<p>Returns success. Also returns an error string that can be posted in the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a>, if the name is not valid. If the id passed in is WSM.INVALID_ID, the new name is checked against all existing materials. If the id is of a valid material, the new name is checked against all materials except that one. In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int In: newName String Out: { "Valid", valid , "Error", errorMsg } </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns success. Also returns an error string that can be posted in the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a>, if the name is not valid. If the id passed in is WSM.INVALID_ID, the new name is checked against all existing materials. If the id is of a valid material, the new name is checked against all materials except that one. In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int In: newName String </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
@@ -528,7 +530,7 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{ { "Valid" , to_json(valid) },{ "Error" , to_json(errorMsg) } }; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{ "Valid", valid , "Error", errorMsg } </dd></dl>
 
 </div>
 </div>
@@ -601,7 +603,7 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 
 <p>Constructor for the MaterialData class. </p>
-<p>Out: An initialized FormIt.Materials.MaterialData </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>(OPTIONAL, default = <a class="el" href="group__mod__jsapi__wsm.html#gadccb21d5dcd090cfb27a61eb8a65bb27" title="Color constructs a Color.">WSM.Color</a>(1.0, 1.0, 1.0, 1.0)) <a class="el" href="group__mod__jsapi__wsm.html#gadccb21d5dcd090cfb27a61eb8a65bb27" title="Color constructs a Color.">WSM.Color</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">textureData</td><td>(OPTIONAL) Array of char </td></tr>
@@ -615,7 +617,7 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An initialized FormIt.Materials.MaterialData </dd></dl>
 
 </div>
 </div>
@@ -655,7 +657,7 @@ Out: Array of material ids </p><dl class="params"><dt>Parameters</dt><dd>
 <p>In: libraryType FormIt.LibraryType<br  />
 FormIt.LibraryType.SKETCH<br  />
 FormIt.LibraryType.APPLICATION<br  />
-In: materialId In: materialData FormIt.Materials.MaterialData Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+In: materialId In: materialData FormIt.Materials.MaterialData </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
@@ -663,7 +665,8 @@ In: materialId In: materialData FormIt.Materials.MaterialData Out: bool Success 
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success <br  />
+ </dd></dl>
 
 </div>
 </div>

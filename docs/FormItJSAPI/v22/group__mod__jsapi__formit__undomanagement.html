@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begins a state change operation. </p>
-<p>Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Can redo one step in any history. </p>
-<p>Out: bool </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Can undo one step in any history. </p>
-<p>Out: bool </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
 </div>
@@ -296,14 +296,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Ends a state change operation. </p>
-<p>In: name A name describing the operation In: userName Username of the owner of the undo state Out: state ID </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: name A name describing the operation In: userName Username of the owner of the undo state </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userName</td><td>(OPTIONAL) String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>state ID </dd></dl>
 
 </div>
 </div>
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the IDs of all Historys being managed. </p>
-<p>Out: Array of History ids. </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of History ids. </dd></dl>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Redo to the oldest current state in any history. </p>
-<p>Out: bool Success </p><dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -436,13 +436,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Undo the most recent current state in any history and optionally delete redo information when undoing. </p>
-<p>In: bAndDeleteRedo bool (OPTIONAL) Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: bAndDeleteRedo bool (OPTIONAL) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bAndDeleteRedo</td><td>(OPTIONAL) bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -463,13 +463,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Merge the current state of multiple existing histories into a single state. </p>
-<p>In: histories Array of History ids Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: histories Array of History ids </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">histories</td><td>Array of FormIt.UndoManagement.HistoryID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -518,13 +518,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Merge multiple existing states into a single state. </p>
-<p>All but the last of the listed states will be destroyed (the StateID will become invalid). The range of states must be contiguous, in the order noted. No state being destroyed may be the current state for that history. In: states Array of state ids Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+<p>All but the last of the listed states will be destroyed (the StateID will become invalid). The range of states must be contiguous, in the order noted. No state being destroyed may be the current state for that history. In: states Array of state ids </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">states</td><td>Array of FormIt.UndoManagement.StateID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -555,14 +555,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Note a state that affects the given histories. </p>
-<p>If the histories vector is empty, it affects only the currently edited history. In: name String In: aHistories Array of History ids (OPTIONAL) Out: State id </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the histories vector is empty, it affects only the currently edited history. In: name String In: aHistories Array of History ids (OPTIONAL) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>String </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aHistories</td><td>(OPTIONAL) Array of FormIt.UndoManagement.HistoryID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>State id </dd></dl>
 
 </div>
 </div>
@@ -610,7 +610,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reject the current undo state operation. </p>
-<p>Out: JSON_UNDEFINED </p><dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -665,13 +665,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the name for the most recent state. </p>
-<p>In: stateName String Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: stateName String </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">stateName</td><td>String </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>

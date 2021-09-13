@@ -172,7 +172,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Assigns the material to the list of objects and sets uvs when the given Transf3d is non-identity. </p>
-<p>If a <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material with that name does not exist in the history of an object, it is also created. In: materialId int In: aObjects array of <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> In: uvTransf3d is the optional transform applied to uvs. Out: bool Success </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If a <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material with that name does not exist in the history of an object, it is also created. In: materialId int In: aObjects array of <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> In: uvTransf3d is the optional transform applied to uvs. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aObjects</td><td>Array of int </td></tr>
@@ -180,7 +180,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Success </dd></dl>
 
 </div>
 </div>
@@ -211,14 +211,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Give the material a new position in the list. </p>
-<p>In: materialId int In: newPos int Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialId int In: newPos int </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">newPos</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -239,13 +239,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return all objects that are used by the given vector of materials. </p>
-<p>In: materialIds Array of material ids. Out: Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialIds Array of material ids. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialIds</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of objects (<a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a>) </dd></dl>
 
 </div>
 </div>
@@ -266,13 +266,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the material data of the default sketch material. </p>
-<p>In: bBack bool true for the back face material Out: material data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: bBack bool true for the back face material </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bBack</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>data </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>material data </dd></dl>
 
 </div>
 </div>
@@ -303,14 +303,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the attribute of a material data. </p>
-<p>In: materialData FormIt.Materials.MaterialData In: attributeType FormIt.Materials.AttributeType "FormIt.MaterialAttributeType.kGloss" "FormIt.MaterialAttributeType.kReflectionDirect" "FormIt.MaterialAttributeType.kReflectionOblique" Out: float attribute value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialData FormIt.Materials.MaterialData In: attributeType FormIt.Materials.AttributeType "FormIt.MaterialAttributeType.kGloss" "FormIt.MaterialAttributeType.kReflectionDirect" "FormIt.MaterialAttributeType.kReflectionOblique" </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialData</td><td>FormIt.Materials.MaterialData </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">attributeType</td><td>FormIt.Materials.AttributeType </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>materialData.GetAttribute(attributeType) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>float attribute value </dd></dl>
 
 </div>
 </div>
@@ -341,14 +341,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the map of a material data. </p>
-<p>In: materialData FormIt.Materials.MaterialData In: mapType FormIt.Materials.MapType "FormIt.MaterialMapType.kNormalMap" "FormIt.MaterialMapType.kOpacityMap" Out: Array of char, representing png or jpg texture. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialData FormIt.Materials.MaterialData In: mapType FormIt.Materials.MapType "FormIt.MaterialMapType.kNormalMap" "FormIt.MaterialMapType.kOpacityMap" </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialData</td><td>FormIt.Materials.MaterialData </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mapType</td><td>FormIt.Materials.MapType </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>materialData.GetMap(mapType) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of char, representing png or jpg texture. </dd></dl>
 
 </div>
 </div>
@@ -369,13 +369,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the materials used by the given vector of objects. </p>
-<p>In: aObjects array of <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> Out: Array of Sketch material ids </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: aObjects array of <a class="el" href="namespace_w_s_m_1_1_group_instance_path.html" title="WSM.GroupInstancePath namespace.">WSM.GroupInstancePath</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aObjects</td><td>Array of int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>aMaterials </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of Sketch material ids </dd></dl>
 
 </div>
 </div>
@@ -406,14 +406,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the sketch material id from the <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material. </p>
-<p>In: historyId int In: wsmMaterialId int Out: Sketch material id Return WSM.INVALID_ID if it does not exist </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: historyId int In: wsmMaterialId int </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyId</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">wsmMaterialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Sketch material id Return WSM.INVALID_ID if it does not exist </dd></dl>
 
 </div>
 </div>
@@ -444,14 +444,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material from the sketch material in the given history. </p>
-<p>If a <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material does not exist, create one. If WSM.INVALID_ID is passed for the historyId, the first <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material in the list is used. In: historyId int In: materialId int Out: int <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> of the material </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If a <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material does not exist, create one. If WSM.INVALID_ID is passed for the historyId, the first <a class="el" href="namespace_w_s_m.html" title="WSM namespace.">WSM</a> material in the list is used. In: historyId int In: materialId int </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">historyId</td><td>int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int <a class="el" href="group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff">WSM.ObjectHistoryID</a> of the material </dd></dl>
 
 </div>
 </div>
@@ -472,13 +472,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return true if a sketch material id is in use. </p>
-<p>In: materialId int Out: true, if used </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialId int </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{...} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if used </dd></dl>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Rearrange the materials to be put before or after the given other material. </p>
-<p>If the other material is WSM.INVALID_ID, the materials are placed at the end In: materialIds Array of material ids. In: materialBeforeOrAfterId Id of material before or after which to insert, or WSM.INVALID_ID. In: insertAfter true if inserting after materialBeforeOrAfterId. Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the other material is WSM.INVALID_ID, the materials are placed at the end In: materialIds Array of material ids. In: materialBeforeOrAfterId Id of material before or after which to insert, or WSM.INVALID_ID. In: insertAfter true if inserting after materialBeforeOrAfterId. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialIds</td><td>Array of int </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">materialBeforeOrAfterId</td><td>int </td></tr>
@@ -551,7 +551,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -582,14 +582,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the material data of the default sketch material. </p>
-<p>In: bBack bool true for the back face material In: materialData FormIt.Materials.MaterialData Out: JSON_UNDEFINED </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: bBack bool true for the back face material In: materialData FormIt.Materials.MaterialData </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialData</td><td>FormIt.Materials.MaterialData </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bBack</td><td>bool </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED, i.e. {} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON_UNDEFINED </dd></dl>
 
 </div>
 </div>
@@ -626,7 +626,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the attribute of a material data. </p>
-<p>In: materialData FormIt.Materials.MaterialData In: attributeType FormIt.Materials.AttributeType In: value float Out: new material data with the changed attribute </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialData FormIt.Materials.MaterialData In: attributeType FormIt.Materials.AttributeType In: value float </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialData</td><td>FormIt.Materials.MaterialData </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">attributeType</td><td>FormIt.Materials.AttributeType </td></tr>
@@ -634,7 +634,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>materialData </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>new material data with the changed attribute </dd></dl>
 
 </div>
 </div>
@@ -671,7 +671,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the map of a material data. </p>
-<p>In: materialData FormIt.Materials.MaterialData In: mapType FormIt.Materials.MapType In: map Array of char, representing png or jpg texture Out: New material data with the changed map </p><dl class="params"><dt>Parameters</dt><dd>
+<p>In: materialData FormIt.Materials.MaterialData In: mapType FormIt.Materials.MapType In: map Array of char, representing png or jpg texture </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">materialData</td><td>FormIt.Materials.MaterialData </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mapType</td><td>FormIt.Materials.MapType </td></tr>
@@ -679,7 +679,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>materialData </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New material data with the changed map </dd></dl>
 
 </div>
 </div>
