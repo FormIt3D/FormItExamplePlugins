@@ -20,5 +20,6 @@ var group__mod__jsapi__formit__layers =
     [ "SetLayerName", "group__mod__jsapi__formit__layers.html#ga1c31426b27644eed282338857c2754a9", null ],
     [ "SetLayerPickable", "group__mod__jsapi__formit__layers.html#ga498b2b2c292f3f303197c041e96d417f", null ],
     [ "SetLayersVisibility", "group__mod__jsapi__formit__layers.html#ga93a5e9ca9c67c49a2f96cbc833d8f6cc", null ],
-    [ "SetLayerVisibility", "group__mod__jsapi__formit__layers.html#ga2ee6dad36b3add41e2c79c0816358d51", null ]
+    [ "SetLayerVisibility", "group__mod__jsapi__formit__layers.html#ga2ee6dad36b3add41e2c79c0816358d51", null ],
+    [ "SetLoadInRevit", "group__mod__jsapi__formit__layers.html#ga787011107de56766459a4b4c9ad607cf", null ]
 ];

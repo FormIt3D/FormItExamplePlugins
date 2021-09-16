@@ -1,20 +1,14 @@
 var searchData=
 [
-  ['paintbrush',['Paintbrush',['../group__mod__jsapi__formit__tools.html#ga1359d9835c9d67ac1ed038be8cdb605f',1,'FormIt.Tools']]],
-  ['pickbody',['PickBody',['../group__mod__jsapi__wsm__utils.html#ga1429b40ef3f1a5bf3e2c867a4404c318',1,'WSM.Utils']]],
-  ['pickgeometry',['PickGeometry',['../group__mod__jsapi__wsm__utils.html#ga56f6b56f5f4c8d3b37f1f3658c0413ae',1,'WSM.Utils']]],
-  ['pickobjectswithfilter',['PickObjectsWithFilter',['../group__mod__jsapi__wsm__utils.html#ga7a19c0147775eb3972643b56038d8d89',1,'WSM.Utils']]],
-  ['pickobjectswithray',['PickObjectsWithRay',['../group__mod__jsapi__wsm__utils.html#ga6b9546679c43c44290d1fa9424d4a7b9',1,'WSM.Utils']]],
-  ['pickray',['PickRay',['../group__mod__jsapi__wsm__utils.html#ga4e2f25261e07bdd943fc00b996c316c6',1,'WSM.Utils']]],
-  ['pickrayfromline',['PickRayFromLine',['../group__mod__jsapi__wsm__utils.html#gaed910eafd0ee4472c60892e1a89f3308',1,'WSM.Utils']]],
-  ['pickrayfromnormalizedscreenpoint',['PickRayFromNormalizedScreenPoint',['../group__mod__jsapi__wsm__utils.html#gaf3674a94f6873b13197176600b1fc96f',1,'WSM.Utils']]],
-  ['plane',['Plane',['../group__mod__jsapi__wsm__geom.html#ga8927be8e8b4f869266f22b03f3d25324',1,'WSM.Geom']]],
-  ['planeareequal',['PlaneAreEqual',['../group__mod__jsapi__wsm__geom.html#gaa81a931e059b55d62acdc9998d1e75c7',1,'WSM.Geom']]],
-  ['point2d',['Point2d',['../group__mod__jsapi__wsm__geom.html#ga67c24eae073ccde173cc9c3f1ab7a26b',1,'WSM.Geom']]],
-  ['point2dareequal',['Point2dAreEqual',['../group__mod__jsapi__wsm__geom.html#ga2c31e7733ed13706b0dcb53423b2712f',1,'WSM.Geom']]],
-  ['point3d',['Point3d',['../group__mod__jsapi__wsm__geom.html#ga9257cba6d00dfc2245702a2fc701db4f',1,'WSM.Geom']]],
-  ['point3dareequal',['Point3dAreEqual',['../group__mod__jsapi__wsm__geom.html#ga1ff8a1386c53d3d3ea3c595e3106a196',1,'WSM.Geom']]],
-  ['pointinference',['PointInference',['../group__mod__jsapi__wsm__inferenceengine.html#ga99703a54e820911932fe4d195c5eb6b1',1,'WSM.InferenceEngine']]],
-  ['pushhoveredlineinference',['PushHoveredLineInference',['../group__mod__jsapi__wsm__inferenceengine.html#ga787aedba368a4d5069336cbb187adee8',1,'WSM.InferenceEngine']]],
-  ['pushhoveredpointinference',['PushHoveredPointInference',['../group__mod__jsapi__wsm__inferenceengine.html#ga783bd98255d89726d8c5c02dc4a84f11',1,'WSM.InferenceEngine']]]
+  ['objectcanbehidden_780',['ObjectCanBeHidden',['../group__mod__jsapi__wsm__utils.html#gac8d05b7fe981e4348a6a6be320a6b991',1,'WSM.Utils']]],
+  ['objecthistoryid_781',['ObjectHistoryID',['../group__mod__jsapi__wsm.html#ga450d8b6eca684e619d537b810e6443ff',1,'WSM.ObjectHistoryID()'],['../group__mod__jsapi__wsm__utils.html#gabaf76d74626cf3717dc6c8a08f1c5885',1,'WSM.Utils.ObjectHistoryID()']]],
+  ['objecthistoryidareequal_782',['ObjectHistoryIDAreEqual',['../group__mod__jsapi__wsm.html#gaecef7eb2ef4363bc0fdf005644438431',1,'WSM']]],
+  ['objecthistoryidarray_783',['ObjectHistoryIDArray',['../group__mod__jsapi__wsm__utils.html#ga2cb7a97575dd70b33da35782fa2db618',1,'WSM.Utils']]],
+  ['objectidarray_784',['ObjectIDArray',['../group__mod__jsapi__wsm__utils.html#ga7214a412a58178835d6f6b0a6d657744',1,'WSM.Utils']]],
+  ['objectidsareequal_785',['ObjectIDsAreEqual',['../group__mod__jsapi__wsm__utils.html#ga10b8682be868a0cc55c3ac7566c47b91',1,'WSM.Utils']]],
+  ['objectreportsareabylevel_786',['ObjectReportsAreaByLevel',['../group__mod__jsapi__formit__model.html#gadd804bbc088cc550c7b69114749a5bfe',1,'FormIt.Model']]],
+  ['objecttypefilter_787',['ObjectTypeFilter',['../group__mod__jsapi__wsm__utils.html#gad4dcf86f993bbcb357569aa0ff94e605',1,'WSM.Utils']]],
+  ['offsetbody_788',['OffsetBody',['../group__mod__jsapi__formit__tools.html#ga1759591677a59f42edecbc5badec1602',1,'FormIt.Tools']]],
+  ['openfile_789',['OpenFile',['../group__mod__jsapi__formit.html#gaf52f8ba17cd66189390ee42f7499bad9',1,'FormIt']]],
+  ['optouttracking_790',['OptOutTracking',['../group__mod__jsapi__formit__statistics.html#gaf2e289e3c16481072e5b19f8bb725aa4',1,'FormIt.Statistics']]]
 ];
