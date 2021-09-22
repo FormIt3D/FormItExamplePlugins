@@ -139,12 +139,12 @@ Functions</h2></td></tr>
 <tr class="memitem:NewFile"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#NewFile">FormIt::NewFile</a> (bool forced=false)</td></tr>
 <tr class="memdesc:NewFile"><td class="mdescLeft">&#160;</td><td class="mdescRight">App level.  <a href="group__mod__formitcore__api__ref.html#NewFile">More...</a><br /></td></tr>
 <tr class="separator:NewFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:GetVersion"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="struct_form_it_1_1_version.html">FormIt::GetVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#GetVersion">FormIt::GetGetVersion</a> ()</td></tr>
-<tr class="memdesc:GetVersion"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__mod__formitcore__api__ref.html#GetVersion" title="GetGetVersion() function.">GetGetVersion()</a> function.  <a href="group__mod__formitcore__api__ref.html#GetVersion">More...</a><br /></td></tr>
-<tr class="separator:GetVersion"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:FindLatestGetVersion"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#FindLatestGetVersion">FormIt::FindLatestGetVersion</a> (const json &amp;versionJson, <a class="el" href="struct_form_it_1_1_version.html">FormIt::GetVersion</a> const &amp;testGetVersion={})</td></tr>
-<tr class="memdesc:FindLatestGetVersion"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest version string from the given version.json.  <a href="group__mod__formitcore__api__ref.html#FindLatestGetVersion">More...</a><br /></td></tr>
-<tr class="separator:FindLatestGetVersion"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:Version"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#Version">FormIt::GetVersion</a> ()</td></tr>
+<tr class="memdesc:Version"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__mod__formitcore__api__ref.html#Version" title="GetVersion() function.">GetVersion()</a> function.  <a href="group__mod__formitcore__api__ref.html#Version">More...</a><br /></td></tr>
+<tr class="separator:Version"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:FindLatestVersion"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#FindLatestVersion">FormIt::FindLatestVersion</a> (const json &amp;versionJson, <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a> const &amp;testVersion={})</td></tr>
+<tr class="memdesc:FindLatestVersion"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest version string from the given version.json.  <a href="group__mod__formitcore__api__ref.html#FindLatestVersion">More...</a><br /></td></tr>
+<tr class="separator:FindLatestVersion"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:SuspendMessaging"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#SuspendMessaging">FormIt::SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=<a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a>)</td></tr>
 <tr class="memdesc:SuspendMessaging"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> until ResumeMessaging is called.  <a href="group__mod__formitcore__api__ref.html#SuspendMessaging">More...</a><br /></td></tr>
 <tr class="separator:SuspendMessaging"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,14 +421,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="FindLatestGetVersion"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#FindLatestGetVersion">&#9670;&nbsp;</a></span>FindLatestGetVersion()</h2>
+<a id="FindLatestVersion"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#FindLatestVersion">&#9670;&nbsp;</a></span>FindLatestVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json FormIt::FindLatestGetVersion </td>
+          <td class="memname"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json FormIt::FindLatestVersion </td>
           <td>(</td>
           <td class="paramtype">const json &amp;&#160;</td>
           <td class="paramname"><em>versionJson</em>, </td>
@@ -436,8 +436,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_form_it_1_1_version.html">FormIt::GetVersion</a> const &amp;&#160;</td>
-          <td class="paramname"><em>testGetVersion</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a> const &amp;&#160;</td>
+          <td class="paramname"><em>testVersion</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -456,7 +456,7 @@ Functions</h2></td></tr>
 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">versionJson</td><td><br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">testGetVersion</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">testVersion</td><td><br  />
  </td></tr>
   </table>
   </dd>
@@ -589,14 +589,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="GetVersion"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#GetVersion">&#9670;&nbsp;</a></span>GetGetVersion()</h2>
+<a id="Version"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#Version">&#9670;&nbsp;</a></span>GetVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="struct_form_it_1_1_version.html">FormIt::GetVersion</a> FormIt::GetGetVersion </td>
+          <td class="memname"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a> FormIt::GetVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -604,7 +604,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="group__mod__formitcore__api__ref.html#GetVersion" title="GetGetVersion() function.">GetGetVersion()</a> function. </p>
+<p><a class="el" href="group__mod__formitcore__api__ref.html#Version" title="GetVersion() function.">GetVersion()</a> function. </p>
 
 </div>
 </div>
