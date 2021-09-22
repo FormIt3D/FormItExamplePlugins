@@ -182,7 +182,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gace858488e4e5049a076a827c1d410714"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#gace858488e4e5049a076a827c1d410714">WSM::IsObjectHiddenFunctionType</a> = std::function&lt; bool(const <a class="el" href="class_w_s_m_1_1_group_instance_path.html">WSM::GroupInstancePath</a> &amp;, double)&gt;</td></tr>
-<tr class="memdesc:gace858488e4e5049a076a827c1d410714"><td class="mdescLeft">&#160;</td><td class="mdescRight">! Callback function type used by APIRayFireReadOnly and APIIntersectsNegativeSideOfPlanesReadOnly ! It receives a <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">WSM::GroupInstancePath</a> object and a depth parameter.  <a href="group__mod__wsm__api__ref.html#gace858488e4e5049a076a827c1d410714">More...</a><br /></td></tr>
+<tr class="memdesc:gace858488e4e5049a076a827c1d410714"><td class="mdescLeft">&#160;</td><td class="mdescRight">! Callback function type used by APIRayFireReadOnly, APIIntersectsNegativeSideOfPlanesReadOnly and APISlice ! It receives a <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">WSM::GroupInstancePath</a> object and a depth parameter.  <a href="group__mod__wsm__api__ref.html#gace858488e4e5049a076a827c1d410714">More...</a><br /></td></tr>
 <tr class="separator:gace858488e4e5049a076a827c1d410714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -361,9 +361,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga794ade15de67d925531084e501f70d80"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#ga794ade15de67d925531084e501f70d80">WSM::enable_bitmask_operators</a> (<a class="el" href="group__mod__wsm__api__ref.html#ga8836358feedefa4fb3e5f53b7e749bd8">nLoadingOptions</a>)</td></tr>
 <tr class="memdesc:ga794ade15de67d925531084e501f70d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable_bitmask_operators function.  <a href="group__mod__wsm__api__ref.html#ga794ade15de67d925531084e501f70d80">More...</a><br /></td></tr>
 <tr class="separator:ga794ade15de67d925531084e501f70d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:APIGetVersionReadOnly"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APIGetVersionReadOnly">WSM::APIGetVersionReadOnly</a> (size_t &amp;nMajorVer, size_t &amp;nMinorVer)</td></tr>
-<tr class="memdesc:APIGetVersionReadOnly"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Major and Minor software versions.  <a href="group__mod__wsm__api__ref.html#APIGetVersionReadOnly">More...</a><br /></td></tr>
+<tr class="memitem:APIGetVersionReadOnly"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APIGetVersionReadOnly">WSM::APIGetVersionReadOnly</a> (size_t &amp;nMajorVer, size_t &amp;nMinorVer, size_t &amp;nRevisionVer)</td></tr>
+<tr class="memdesc:APIGetVersionReadOnly"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Major, Minor, and Revision software versions used to identify the released version of <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a>.  <a href="group__mod__wsm__api__ref.html#APIGetVersionReadOnly">More...</a><br /></td></tr>
 <tr class="separator:APIGetVersionReadOnly"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:APIGetDatabaseVersionReadOnly"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APIGetDatabaseVersionReadOnly">WSM::APIGetDatabaseVersionReadOnly</a> (size_t &amp;nMajorVer, size_t &amp;nMinorVer)</td></tr>
+<tr class="memdesc:APIGetDatabaseVersionReadOnly"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Major and Minor software versions which is used when saving and loading files and strings.  <a href="group__mod__wsm__api__ref.html#APIGetDatabaseVersionReadOnly">More...</a><br /></td></tr>
+<tr class="separator:APIGetDatabaseVersionReadOnly"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:APICreateHistory"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APICreateHistory">WSM::APICreateHistory</a> (size_t &amp;nHistoryID, bool bNonTemporary=true)</td></tr>
 <tr class="memdesc:APICreateHistory"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a History and return the History ID.  <a href="group__mod__wsm__api__ref.html#APICreateHistory">More...</a><br /></td></tr>
 <tr class="separator:APICreateHistory"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -619,7 +622,7 @@ Functions</h2></td></tr>
 <tr class="memitem:APILoadHistoryFromBinaryString"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APILoadHistoryFromBinaryString">WSM::APILoadHistoryFromBinaryString</a> (const size_t nHistoryID, const std::string &amp;base64Str, bool base64encoded=true)</td></tr>
 <tr class="memdesc:APILoadHistoryFromBinaryString"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the whole history (with all undo states) from an, optionally base64 encoded, string and add to to an empty History.  <a href="group__mod__wsm__api__ref.html#APILoadHistoryFromBinaryString">More...</a><br /></td></tr>
 <tr class="separator:APILoadHistoryFromBinaryString"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:APISaveToFileReadOnly"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APISaveToFileReadOnly">WSM::APISaveToFileReadOnly</a> (const size_t nHistoryID, const std::vector&lt; size_t &gt; &amp;aObjectIDs, const char *const sFilePath, const <a class="el" href="group__mod__wsm__api__ref.html#ga1cf03f9a3f3931d88af1f06cd1cbef68">WSM::nFileType</a> eFileType=<a class="el" href="group__mod__wsm__api__ref.html#gga1cf03f9a3f3931d88af1f06cd1cbef68a38dace33cf6db4863a5a588e934659a8">WSM::nFileTypeBinaryWSM</a>, const bool bWithChildren=true, const double dExportScale=1.0, const std::vector&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a> &gt; &amp;aExcludedObjects={}, const std::vector&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a> &gt; &amp;aLayerDisplayedNegateVec={})</td></tr>
+<tr class="memitem:APISaveToFileReadOnly"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APISaveToFileReadOnly">WSM::APISaveToFileReadOnly</a> (const size_t nHistoryID, const std::vector&lt; size_t &gt; &amp;aObjectIDs, const std::string &amp;sFilePath, const <a class="el" href="group__mod__wsm__api__ref.html#ga1cf03f9a3f3931d88af1f06cd1cbef68">WSM::nFileType</a> eFileType=<a class="el" href="group__mod__wsm__api__ref.html#gga1cf03f9a3f3931d88af1f06cd1cbef68a38dace33cf6db4863a5a588e934659a8">WSM::nFileTypeBinaryWSM</a>, const bool bWithChildren=true, const double dExportScale=1.0, const std::vector&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a> &gt; &amp;aExcludedObjects={}, const std::vector&lt; <a class="el" href="class_w_s_m_1_1_object_history_i_d.html">WSM::ObjectHistoryID</a> &gt; &amp;aLayerDisplayedNegateVec={})</td></tr>
 <tr class="memdesc:APISaveToFileReadOnly"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save Objects to a file of the specified type.  <a href="group__mod__wsm__api__ref.html#APISaveToFileReadOnly">More...</a><br /></td></tr>
 <tr class="separator:APISaveToFileReadOnly"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:APISaveToAXMFileReadOnly"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APISaveToAXMFileReadOnly">WSM::APISaveToAXMFileReadOnly</a> (const size_t nHistoryID, const std::vector&lt; size_t &gt; &amp;aObjectIDs, const std::string &amp;sFilePath, std::vector&lt; char &gt; const &amp;aPreviewImage={}, bool bWithChildren=true)</td></tr>
@@ -646,7 +649,7 @@ Functions</h2></td></tr>
 <tr class="memitem:APILoadDeltaFromBinaryFile"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APILoadDeltaFromBinaryFile">WSM::APILoadDeltaFromBinaryFile</a> (const size_t nHistoryID, const char *sFilePath)</td></tr>
 <tr class="memdesc:APILoadDeltaFromBinaryFile"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load Delta from a binary file and add it to the History.  <a href="group__mod__wsm__api__ref.html#APILoadDeltaFromBinaryFile">More...</a><br /></td></tr>
 <tr class="separator:APILoadDeltaFromBinaryFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:APILoadFromFile"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APILoadFromFile">WSM::APILoadFromFile</a> (const size_t nHistoryID, const char *sFilePath, const <a class="el" href="group__mod__wsm__api__ref.html#ga1cf03f9a3f3931d88af1f06cd1cbef68">WSM::nFileType</a> eFileType=<a class="el" href="group__mod__wsm__api__ref.html#gga1cf03f9a3f3931d88af1f06cd1cbef68a38dace33cf6db4863a5a588e934659a8">WSM::nFileTypeBinaryWSM</a>, ptrdiff_t *pObjectIdOffset=nullptr, const size_t nOptions=to_ut(<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8af0dd1f9eac51df23a1efbcc9c02df91d">WSM::nLoadingOptions::RemoveDuplicate</a>|<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8a68be4837f6c739877233e527a996dd00">WSM::nLoadingOptions::Merge</a>|<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8abd5bb4339a3f75756788dc5f588fb56f">WSM::nLoadingOptions::CreateMesh</a>), double dMaxDistanceFromOrigin=0.0, double dScaleFactor=1.0)</td></tr>
+<tr class="memitem:APILoadFromFile"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APILoadFromFile">WSM::APILoadFromFile</a> (const size_t nHistoryID, const std::string &amp;sFilePath, const <a class="el" href="group__mod__wsm__api__ref.html#ga1cf03f9a3f3931d88af1f06cd1cbef68">WSM::nFileType</a> eFileType=<a class="el" href="group__mod__wsm__api__ref.html#gga1cf03f9a3f3931d88af1f06cd1cbef68a38dace33cf6db4863a5a588e934659a8">WSM::nFileTypeBinaryWSM</a>, ptrdiff_t *pObjectIdOffset=nullptr, const size_t nOptions=to_ut(<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8af0dd1f9eac51df23a1efbcc9c02df91d">WSM::nLoadingOptions::RemoveDuplicate</a>|<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8a68be4837f6c739877233e527a996dd00">WSM::nLoadingOptions::Merge</a>|<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8abd5bb4339a3f75756788dc5f588fb56f">WSM::nLoadingOptions::CreateMesh</a>), double dMaxDistanceFromOrigin=0.0, double dScaleFactor=1.0)</td></tr>
 <tr class="memdesc:APILoadFromFile"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a model from a file of one of the supported types.  <a href="group__mod__wsm__api__ref.html#APILoadFromFile">More...</a><br /></td></tr>
 <tr class="separator:APILoadFromFile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:APILoadFromFacets"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APILoadFromFacets">WSM::APILoadFromFacets</a> (const size_t nHistoryID, const std::vector&lt; <a class="el" href="struct_w_s_m_1_1_facets_body_data.html">FacetsBodyData</a> &gt; &amp;facetsData, std::vector&lt; size_t &gt; &amp;createdObjectIDs, const size_t nOptions=to_ut(<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8af0dd1f9eac51df23a1efbcc9c02df91d">WSM::nLoadingOptions::RemoveDuplicate</a>|<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8a68be4837f6c739877233e527a996dd00">WSM::nLoadingOptions::Merge</a>|<a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8abd5bb4339a3f75756788dc5f588fb56f">WSM::nLoadingOptions::CreateMesh</a>), double dMaxDistanceFromOrigin=0.0, double dRemoveDuplicateTol=<a class="el" href="_w_s_m___constants_8h.html#a3107071b88eecb8e296afa6c7e437273">WSM_MACHINE_TOL</a>)</td></tr>
@@ -682,7 +685,7 @@ Functions</h2></td></tr>
 <tr class="memitem:APIImprintWithPlane"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APIImprintWithPlane">WSM::APIImprintWithPlane</a> (size_t nHistoryID, size_t nObject, const <a class="el" href="class_w_s_m_1_1_plane.html">Plane</a> &amp;pla)</td></tr>
 <tr class="memdesc:APIImprintWithPlane"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprints the <a class="el" href="class_w_s_m_1_1_plane.html" title="The Plane class stores an oriented plane in 3D.">Plane</a> onto the Object.  <a href="group__mod__wsm__api__ref.html#APIImprintWithPlane">More...</a><br /></td></tr>
 <tr class="separator:APIImprintWithPlane"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:APISlice"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APISlice">WSM::APISlice</a> (size_t nHistoryID, size_t nDestinationHistoryID, size_t nObject, const <a class="el" href="class_w_s_m_1_1_plane.html">Plane</a> &amp;pla, std::vector&lt; size_t &gt; &amp;aNewNonOwnedIDs)</td></tr>
+<tr class="memitem:APISlice"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APISlice">WSM::APISlice</a> (size_t nHistoryID, size_t nDestinationHistoryID, size_t nObject, const <a class="el" href="class_w_s_m_1_1_plane.html">Plane</a> &amp;pla, std::vector&lt; size_t &gt; &amp;aNewNonOwnedIDs, <a class="el" href="group__mod__wsm__api__ref.html#gace858488e4e5049a076a827c1d410714">IsObjectHiddenFunctionType</a> isHiddenFunc=nullptr)</td></tr>
 <tr class="memdesc:APISlice"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slices the Object with the <a class="el" href="class_w_s_m_1_1_plane.html" title="The Plane class stores an oriented plane in 3D.">Plane</a> creating new Faces and Edges that are NOT connected to the Object.  <a href="group__mod__wsm__api__ref.html#APISlice">More...</a><br /></td></tr>
 <tr class="separator:APISlice"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:APIUnite"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__wsm__api__ref.html#APIUnite">WSM::APIUnite</a> (size_t nHistoryID, size_t nObject1, size_t nObject2, const std::vector&lt; size_t &gt; &amp;aExtraObjetsIDs=std::vector&lt; size_t &gt;())</td></tr>
@@ -1311,7 +1314,7 @@ Increase the file version to keep track of changes to the format, which remain f
       </table>
 </div><div class="memdoc">
 
-<p>! Callback function type used by APIRayFireReadOnly and APIIntersectsNegativeSideOfPlanesReadOnly ! It receives a <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">WSM::GroupInstancePath</a> object and a depth parameter. </p>
+<p>! Callback function type used by APIRayFireReadOnly, APIIntersectsNegativeSideOfPlanesReadOnly and APISlice ! It receives a <a class="el" href="class_w_s_m_1_1_group_instance_path.html" title="Private member m_aPaths in GroupInstancePath is not exported and causes a warning that can be safely ...">WSM::GroupInstancePath</a> object and a depth parameter. </p>
 <p>If the depth parameter ! is WSM_DISTANCE_BIG, the function is intended to test whether the object is hidden by layer ! visibility or other general visibility settings (such as Hide Group Context). If the ! depth parameter is less than WSM_DISTANCE_BIG, the callback is intended to check whether ! the object is hidden at the given depth. This is the case, for example, when section planes are ! defined and an object may be entirely or partially clipped </p>
 
 </div>
@@ -6796,6 +6799,43 @@ Increase the file version to keep track of changes to the format, which remain f
 
 </div>
 </div>
+<a id="APIGetDatabaseVersionReadOnly"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#APIGetDatabaseVersionReadOnly">&#9670;&nbsp;</a></span>APIGetDatabaseVersionReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_w_s_m___constants_8h.html#af5852ac4067bee013d6f42dfb9b2c1d0">WSM_EXPORT</a> <a class="el" href="class_w_s_m_1_1_result.html">Result</a> WSM::APIGetDatabaseVersionReadOnly </td>
+          <td>(</td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>nMajorVer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>nMinorVer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Major and Minor software versions which is used when saving and loading files and strings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">nMajorVer</td><td>The major software version </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nMinorVer</td><td>The minor software version </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gacf92f061c1067c8d8712c0be3b92055b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacf92f061c1067c8d8712c0be3b92055b">&#9670;&nbsp;</a></span>APIGetDeltaFlagsReadOnly()</h2>
 
@@ -9368,7 +9408,13 @@ Increase the file version to keep track of changes to the format, which remain f
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>nMinorVer</em>&#160;</td>
+          <td class="paramname"><em>nMinorVer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>nRevisionVer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -9378,11 +9424,12 @@ Increase the file version to keep track of changes to the format, which remain f
       </table>
 </div><div class="memdoc">
 
-<p>Returns the Major and Minor software versions. </p>
+<p>Returns the Major, Minor, and Revision software versions used to identify the released version of <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">nMajorVer</td><td>The major software version </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">nMinorVer</td><td>The minor software version </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nRevisionVer</td><td>The revision software version </td></tr>
   </table>
   </dd>
 </dl>
@@ -9656,7 +9703,8 @@ Increase the file version to keep track of changes to the format, which remain f
  </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bInstances</td><td><br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">isHiddenFunc</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isHiddenFunc</td><td>The optional isHiddenFunc callback function is used to test whether a given object is hidden (by layer visibility for example). This api will always set the second (depth) parameter of IsObjectHiddenFunctionType to WSM_DISTANCE_BIG which meens the depth must be ignored. <br  />
+ </td></tr>
   </table>
   </dd>
 </dl>
@@ -11098,7 +11146,7 @@ Increase the file version to keep track of changes to the format, which remain f
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>sFilePath</em>, </td>
         </tr>
         <tr>
@@ -11143,7 +11191,7 @@ Increase the file version to keep track of changes to the format, which remain f
 <p>For nFileTypeBinaryWSM, *pObjectIdOffset returns object ID offset required to load the new Objects into a non-empty History without ID conflicts. nOptions contains bit flags as specified in <a class="el" href="group__mod__wsm__api__ref.html#ga8836358feedefa4fb3e5f53b7e749bd8" title="Available options for the nOptions argument of APILoadFromFile()">WSM::nLoadingOptions</a>, that describe options used by the various file types For nFileTypeSTL, if <a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8a68be4837f6c739877233e527a996dd00" title="Merge all merge-able vertices and edges for OBJ and STL files.">WSM::nLoadingOptions::Merge</a> is specified under options, merges out all merge-able Edges and Vertices. if <a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8abd5bb4339a3f75756788dc5f588fb56f" title="Create a Mesh for OBJ and STL files.">WSM::nLoadingOptions::CreateMesh</a> is specified, creates a Mesh instead of a Body. For nFileTypeOBJ, if <a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8a68be4837f6c739877233e527a996dd00" title="Merge all merge-able vertices and edges for OBJ and STL files.">WSM::nLoadingOptions::Merge</a> is specified under options, merges out all merge-able Edges and Vertices. if <a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8af0dd1f9eac51df23a1efbcc9c02df91d" title="Remove duplicated vertices and edges from OBJ model.">WSM::nLoadingOptions::RemoveDuplicate</a> is specified under options, removes duplicated vertices and edges within each body if <a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8af6b913a305374f2d499a0ba62be0a890" title="Place OBJ file model on ground plane.">WSM::nLoadingOptions::PlaceOnGround</a> is specified under options, makes the smallest z axis coordinate of the whole model to be 0 if <a class="el" href="group__mod__wsm__api__ref.html#gga8836358feedefa4fb3e5f53b7e749bd8abd5bb4339a3f75756788dc5f588fb56f" title="Create a Mesh for OBJ and STL files.">WSM::nLoadingOptions::CreateMesh</a> is specified, creates a Mesh instead of a Body. If dMaxDistanceFromOrigin is greater than zero and the minimum corner of the bounding box around facetsData is further away than dMaxDistanceFromOrigin from the origin, then the created <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> geometry will be moved so the minimum corner of the bounding box is at the origin. Currently this only affects OBJ. The created Object is scaled by dScaleFactor for STL and OBJ. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td>The AXM file to save to. <br  />
  </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">eFileType</td><td><br  />
  </td></tr>
@@ -12313,7 +12361,7 @@ Increase the file version to keep track of changes to the format, which remain f
     <tr><td class="paramdir">[out]</td><td class="paramname">pGroupAggregateTransf3dVec</td><td></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pParamIndexVec</td><td><br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">isHiddenFunc</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">isHiddenFunc</td><td>The optional isHiddenFunc callback function is used to test whether a given object is hidden (by layer visibility for example). This api will always set the second (depth) parameter of IsObjectHiddenFunctionType to WSM_DISTANCE_BIG which meens the depth must be ignored. <br  />
  </td></tr>
   </table>
   </dd>
@@ -13123,7 +13171,7 @@ Increase the file version to keep track of changes to the format, which remain f
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>sFilePath</em>, </td>
         </tr>
         <tr>
@@ -13169,7 +13217,7 @@ Increase the file version to keep track of changes to the format, which remain f
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aObjectIDs</td><td>The given list of Object IDs </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td><br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">sFilePath</td><td>The AXM file to save to. <br  />
  </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">eFileType</td><td><br  />
  </td></tr>
@@ -14670,7 +14718,13 @@ Increase the file version to keep track of changes to the format, which remain f
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; size_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>aNewNonOwnedIDs</em>&#160;</td>
+          <td class="paramname"><em>aNewNonOwnedIDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__mod__wsm__api__ref.html#gace858488e4e5049a076a827c1d410714">IsObjectHiddenFunctionType</a>&#160;</td>
+          <td class="paramname"><em>isHiddenFunc</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -14689,6 +14743,7 @@ Increase the file version to keep track of changes to the format, which remain f
     <tr><td class="paramdir">[in]</td><td class="paramname">pla</td><td>The given <a class="el" href="class_w_s_m_1_1_plane.html" title="The Plane class stores an oriented plane in 3D.">Plane</a> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">aNewNonOwnedIDs</td><td><br  />
  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isHiddenFunc</td><td>The optional isHiddenFunc callback function is used to test whether a given object is hidden (by layer visibility for example). This api will always set the second (depth) parameter of IsObjectHiddenFunctionType to WSM_DISTANCE_BIG which meens the depth must be ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -14722,7 +14777,7 @@ Increase the file version to keep track of changes to the format, which remain f
 </div><div class="memdoc">
 
 <p>Changes the model so that every edge on more than two faces and every vertex with more than one edge group is modified so that these conditions no longer occur. </p>
-<p>Referenced Histories from Groups are always included in the correction so Deltas in multiple Histories may result from this API. If paChangedHistories is given, all Histories that have been changed will be returned. This API is used for Revit translation. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Referenced Histories from Groups are always included in the correction so Deltas in multiple Histories may result from this API. If paChangedHistories is given, all Histories that have been changed will be returned. This API is used for Revit translation. Note non-owned faces with their connected component of faces are put into bodies as a side effect of this operation because overlapping non-owned faces are not expected. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">nHistoryID</td><td>ID of the given History </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">paChangedHistories</td><td><br  />

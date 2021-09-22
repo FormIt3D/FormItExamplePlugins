@@ -12,6 +12,7 @@ var _form_it_core_messages_8h =
     [ "kCollaborationTextType", "struct_form_it_1_1k_collaboration_text_type.html", "struct_form_it_1_1k_collaboration_text_type" ],
     [ "kDefaultColorsChangedType", "struct_form_it_1_1k_default_colors_changed_type.html", "struct_form_it_1_1k_default_colors_changed_type" ],
     [ "kDisplayModeChangedType", "struct_form_it_1_1k_display_mode_changed_type.html", "struct_form_it_1_1k_display_mode_changed_type" ],
+    [ "kVisualStyleChangedType", "struct_form_it_1_1k_visual_style_changed_type.html", "struct_form_it_1_1k_visual_style_changed_type" ],
     [ "kFollowCameraType", "struct_form_it_1_1k_follow_camera_type.html", "struct_form_it_1_1k_follow_camera_type" ],
     [ "kCameraOperationStartedType", "struct_form_it_1_1k_camera_operation_started_type.html", "struct_form_it_1_1k_camera_operation_started_type" ],
     [ "kCameraOperationEndedType", "struct_form_it_1_1k_camera_operation_ended_type.html", "struct_form_it_1_1k_camera_operation_ended_type" ],
@@ -38,6 +39,7 @@ var _form_it_core_messages_8h =
     [ "kAxesVisibilityChangedType", "struct_form_it_1_1k_axes_visibility_changed_type.html", "struct_form_it_1_1k_axes_visibility_changed_type" ],
     [ "kLevelsVisibilityChangedType", "struct_form_it_1_1k_levels_visibility_changed_type.html", "struct_form_it_1_1k_levels_visibility_changed_type" ],
     [ "kLevelManagerChangedType", "struct_form_it_1_1k_level_manager_changed_type.html", "struct_form_it_1_1k_level_manager_changed_type" ],
+    [ "LoadCompleteData", "struct_form_it_1_1_load_complete_data.html", "struct_form_it_1_1_load_complete_data" ],
     [ "kLoadCompleteType", "struct_form_it_1_1k_load_complete_type.html", "struct_form_it_1_1k_load_complete_type" ],
     [ "kLockAndHidePointerType", "struct_form_it_1_1k_lock_and_hide_pointer_type.html", "struct_form_it_1_1k_lock_and_hide_pointer_type" ],
     [ "kMaterialAddedType", "struct_form_it_1_1k_material_added_type.html", "struct_form_it_1_1k_material_added_type" ],
@@ -280,5 +282,6 @@ var _form_it_core_messages_8h =
     [ "kUninstallPlugin", "_form_it_core_messages_8h.html#a8d8534f8514870ac96ce6c78d7891722", null ],
     [ "kUnitTypeChanged", "_form_it_core_messages_8h.html#a5dcae8d630c839b4015a8c31c3f7b522", null ],
     [ "kUpdateRenderHistory", "_form_it_core_messages_8h.html#a33c4355cf4ffcd08bc8b6f5acc4ea16e", null ],
-    [ "kUserEntitlementsChanged", "_form_it_core_messages_8h.html#a2f8a7e844788be725f4cc7e151cf787e", null ]
+    [ "kUserEntitlementsChanged", "_form_it_core_messages_8h.html#a2f8a7e844788be725f4cc7e151cf787e", null ],
+    [ "kVisualStyleChanged", "_form_it_core_messages_8h.html#adc51c23c749d4985245f37f7f29e7d16", null ]
 ];

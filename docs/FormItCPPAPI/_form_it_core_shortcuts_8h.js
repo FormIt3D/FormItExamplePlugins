@@ -5,6 +5,7 @@ var _form_it_core_shortcuts_8h =
     [ "kCameraOrthographic", "_form_it_core_shortcuts_8h.html#ga3f4940effa00cf41021df4d331c00d97", null ],
     [ "kCameraPan", "_form_it_core_shortcuts_8h.html#gaff1e8ac434ad4a664f4bd4f073a99bbf", null ],
     [ "kCameraPerspective", "_form_it_core_shortcuts_8h.html#ga55faa1522965d46cce5b6f0bd3da865b", null ],
+    [ "kCameraPerspective2Pt", "_form_it_core_shortcuts_8h.html#ga36a2f458eab8112536fd0fc7ba38b56b", null ],
     [ "kCameraSwivel", "_form_it_core_shortcuts_8h.html#ga706700ad38142c78fe633645c88a50e2", null ],
     [ "kCameraSyncWithRevit", "_form_it_core_shortcuts_8h.html#ga9c06980c1322078ea0050787fbc6cb1a", null ],
     [ "kCameraZoom", "_form_it_core_shortcuts_8h.html#ga94a97e4539e33e31bffb805bec659816", null ],

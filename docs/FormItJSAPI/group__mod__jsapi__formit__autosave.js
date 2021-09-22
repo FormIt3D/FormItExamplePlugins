@@ -1,7 +1,7 @@
 var group__mod__jsapi__formit__autosave =
 [
     [ "AddProtectedFile", "group__mod__jsapi__formit__autosave.html#ga26b2fa9829e802ae46f058e1887b5c02", null ],
-    [ "Cleanup", "group__mod__jsapi__formit__autosave.html#gaebe2b58c3f29bd3212e6625f558278b7", null ],
+    [ "Cleanup", "group__mod__jsapi__formit__autosave.html#gaf0a8e75d328b2d0f31026534b16ec1d1", null ],
     [ "ClearProtectedFiles", "group__mod__jsapi__formit__autosave.html#gaaf80b5957a03362d0593364a5d1d55fa", null ],
     [ "Disable", "group__mod__jsapi__formit__autosave.html#ga7803103e633eec3eacbd644786e900e9", null ],
     [ "Enable", "group__mod__jsapi__formit__autosave.html#ga74dd313b573d364e167f3779dbdafb97", null ],

@@ -5,6 +5,7 @@ var group__mod__formit__core__view__sc =
     [ "kCameraOrthographic", "group__mod__formit__core__view__sc.html#ga3f4940effa00cf41021df4d331c00d97", null ],
     [ "kCameraPan", "group__mod__formit__core__view__sc.html#gaff1e8ac434ad4a664f4bd4f073a99bbf", null ],
     [ "kCameraPerspective", "group__mod__formit__core__view__sc.html#ga55faa1522965d46cce5b6f0bd3da865b", null ],
+    [ "kCameraPerspective2Pt", "group__mod__formit__core__view__sc.html#ga36a2f458eab8112536fd0fc7ba38b56b", null ],
     [ "kCameraSwivel", "group__mod__formit__core__view__sc.html#ga706700ad38142c78fe633645c88a50e2", null ],
     [ "kCameraZoom", "group__mod__formit__core__view__sc.html#ga94a97e4539e33e31bffb805bec659816", null ],
     [ "kView3DHomeView", "group__mod__formit__core__view__sc.html#ga5240d8c55f3f2263dac7d1daae2b80df", null ],

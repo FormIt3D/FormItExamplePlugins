@@ -145,7 +145,7 @@ Functions</h2></td></tr>
 <tr class="memitem:FindLatestVersion"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#FindLatestVersion">FormIt::FindLatestVersion</a> (const json &amp;versionJson, <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a> const &amp;testVersion={})</td></tr>
 <tr class="memdesc:FindLatestVersion"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest version string from the given version.json.  <a href="group__mod__formitcore__api__ref.html#FindLatestVersion">More...</a><br /></td></tr>
 <tr class="separator:FindLatestVersion"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:SuspendMessaging"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#SuspendMessaging">FormIt::SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=<a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a>)</td></tr>
+<tr class="memitem:SuspendMessaging"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#SuspendMessaging">FormIt::SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=<a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a>, bool bFullUpdate=true)</td></tr>
 <tr class="memdesc:SuspendMessaging"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> until ResumeMessaging is called.  <a href="group__mod__formitcore__api__ref.html#SuspendMessaging">More...</a><br /></td></tr>
 <tr class="separator:SuspendMessaging"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ResumeMessaging"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ResumeMessaging">FormIt::ResumeMessaging</a> ()</td></tr>
@@ -246,7 +246,7 @@ Functions</h2></td></tr>
 <div class="line">};                                                          \</div>
 <div class="line">extern <a class="code" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> <span class="keyword">const</span> name##<a class="code" href="namespace_form_it_1_1_entitlement.html#aac4d6363bc4b0b343e90bbea51798015">Type</a> name;</div>
 <div class="ttc" id="a_form_it_core_export_8h_html_ae0897be528a0a61f41a5d06c3a4490ee"><div class="ttname"><a href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a></div><div class="ttdeci">#define FORMIT_CORE_EXPORT</div><div class="ttdef"><b>Definition:</b> FormItCoreExport.h:10</div></div>
-<div class="ttc" id="anamespace_form_it_1_1_entitlement_html_aac4d6363bc4b0b343e90bbea51798015"><div class="ttname"><a href="namespace_form_it_1_1_entitlement.html#aac4d6363bc4b0b343e90bbea51798015">FormIt::Entitlement::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> FormItCoreTypes.h:1114</div></div>
+<div class="ttc" id="anamespace_form_it_1_1_entitlement_html_aac4d6363bc4b0b343e90bbea51798015"><div class="ttname"><a href="namespace_form_it_1_1_entitlement.html#aac4d6363bc4b0b343e90bbea51798015">FormIt::Entitlement::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> FormItCoreTypes.h:1115</div></div>
 <div class="ttc" id="astruct_form_it_1_1_message_payload_struct_html"><div class="ttname"><a href="struct_form_it_1_1_message_payload_struct.html">FormIt::MessagePayloadStruct</a></div><div class="ttdoc">This structure hides the implementation of the payload so it can't be used improperly.</div><div class="ttdef"><b>Definition:</b> FormItMessaging.h:36</div></div>
 <div class="ttc" id="astruct_form_it_1_1_message_struct_html_addd82ff51a68824885e7fd8dbb833311"><div class="ttname"><a href="struct_form_it_1_1_message_struct.html#addd82ff51a68824885e7fd8dbb833311">FormIt::MessageStruct::message</a></div><div class="ttdeci">virtual ::string message() const =0</div><div class="ttdoc">message() function.</div></div>
 <div class="ttc" id="astruct_form_it_1_1_message_with_payload_struct_html"><div class="ttname"><a href="struct_form_it_1_1_message_with_payload_struct.html">FormIt::MessageWithPayloadStruct</a></div><div class="ttdoc">The base class for all structures that have a payload.</div><div class="ttdef"><b>Definition:</b> FormItMessaging.h:49</div></div>
@@ -1089,7 +1089,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nTopLevelHistory</em> = <code><a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a></code>&#160;</td>
+          <td class="paramname"><em>nTopLevelHistory</em> = <code><a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFullUpdate</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1100,11 +1106,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> until ResumeMessaging is called. </p>
-<p>The top level history ID provided is included in the kLoadComplete message sent upon resume. This tells the receiver of the message into which history the load was done. The bSuppress parameter can be set to false to indicate that the object should not take effect. This is used to allow run-time determination. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The top level history ID provided is included in the kLoadComplete message sent upon resume. This tells the receiver of the message into which history the load was done. The bSuppress parameter can be set to false to indicate that the object should not take effect. This is used to allow run-time determination. The bFullUpdate can be set to false so that only modified that will be updated. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bSuppress</td><td><br  />
  </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nTopLevelHistory</td><td><br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFullUpdate</td><td><br  />
  </td></tr>
   </table>
   </dd>

@@ -19,6 +19,7 @@ var _w_s_m___constants_8h =
     [ "FinishedCbk", "_w_s_m___constants_8h.html#ga4359e373cf404ac608e51f00da22603f", null ],
     [ "FinishedCbkFn", "_w_s_m___constants_8h.html#gac96f0efc1e00ff7f0878f4cd43d9b90c", null ],
     [ "FunctionType", "_w_s_m___constants_8h.html#ga1beab722d1293c127b994d25f44d2806", null ],
+    [ "IsObjectHiddenFunctionType", "_w_s_m___constants_8h.html#gace858488e4e5049a076a827c1d410714", null ],
     [ "ProgressCbk", "_w_s_m___constants_8h.html#ga56e23c2f831917e6b6623696564fbc9c", null ],
     [ "ProgressCbkFn", "_w_s_m___constants_8h.html#ga2ce2b20621cb6b5532dd8935a537101d", null ],
     [ "StartCbk", "_w_s_m___constants_8h.html#gae7f7a6f5b4e7e9045da4b29c36c05e46", null ],

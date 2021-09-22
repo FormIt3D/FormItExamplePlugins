@@ -119,7 +119,8 @@ var _form_it_core_types_8h =
     ] ],
     [ "CameraProjectionType", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9d", [
       [ "PERSPECTIVE", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da4f0c99ebcecf1054dd7cec9ad777fbcb", null ],
-      [ "ORTHOGRAPHIC", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a", null ]
+      [ "ORTHOGRAPHIC", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a", null ],
+      [ "PERSPECTIVE2PT", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da4e8ada40941e98992470fc18b8438bf4", null ]
     ] ],
     [ "ContentType", "_form_it_core_types_8h.html#ga92009419f2f498c13eeeebda1ce0b2ff", [
       [ "Type_Image", "_form_it_core_types_8h.html#gga92009419f2f498c13eeeebda1ce0b2ffa8eca1c56d2b3355593ca188f16ff633c", null ],
