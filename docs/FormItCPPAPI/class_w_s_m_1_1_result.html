@@ -303,6 +303,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89dcd0989ace53b6512a587785476b0f"><td class="memItemLeft" align="right" valign="top">::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s_m_1_1_result.html#a89dcd0989ace53b6512a587785476b0f">GetErrorString</a> () const</td></tr>
 <tr class="memdesc:a89dcd0989ace53b6512a587785476b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a human readable string for the <a class="el" href="class_w_s_m_1_1_result.html" title="Private member m_pRI in Result is not exported and causes a warning that can be safely ignored.">Result</a> error or warning.  <a href="class_w_s_m_1_1_result.html#a89dcd0989ace53b6512a587785476b0f">More...</a><br /></td></tr>
 <tr class="separator:a89dcd0989ace53b6512a587785476b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e59ffb89c89b90b0e360acf77032b4"><td class="memItemLeft" align="right" valign="top">::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s_m_1_1_result.html#a86e59ffb89c89b90b0e360acf77032b4">GetErrorStringFormat</a> () const</td></tr>
+<tr class="memdesc:a86e59ffb89c89b90b0e360acf77032b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the original format string for the <a class="el" href="class_w_s_m_1_1_result.html" title="Private member m_pRI in Result is not exported and causes a warning that can be safely ignored.">Result</a> error or warning.  <a href="class_w_s_m_1_1_result.html#a86e59ffb89c89b90b0e360acf77032b4">More...</a><br /></td></tr>
+<tr class="separator:a86e59ffb89c89b90b0e360acf77032b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc51aae88c3f63be170d7e2a4068fa3"><td class="memItemLeft" align="right" valign="top">::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s_m_1_1_result.html#a7bc51aae88c3f63be170d7e2a4068fa3">GetErrorStringUsingFormat</a> (const 1::string &amp;ErrorStringFormat) const</td></tr>
+<tr class="memdesc:a7bc51aae88c3f63be170d7e2a4068fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a human readable string for the <a class="el" href="class_w_s_m_1_1_result.html" title="Private member m_pRI in Result is not exported and causes a warning that can be safely ignored.">Result</a> error or warning using a format string.  <a href="class_w_s_m_1_1_result.html#a7bc51aae88c3f63be170d7e2a4068fa3">More...</a><br /></td></tr>
+<tr class="separator:a7bc51aae88c3f63be170d7e2a4068fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af133474eb07b0f78ac06f82d38cd3eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s_m_1_1_result.html#af133474eb07b0f78ac06f82d38cd3eba">SetErrorCode</a> (<a class="el" href="class_w_s_m_1_1_result.html#a29e91da65625444ebb8ff349c0fa864b">Result::nResultType</a> nRT, const 1::vector&lt; size_t &gt; &amp;aIDs={})</td></tr>
 <tr class="memdesc:af133474eb07b0f78ac06f82d38cd3eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the error code.  <a href="class_w_s_m_1_1_result.html#af133474eb07b0f78ac06f82d38cd3eba">More...</a><br /></td></tr>
 <tr class="separator:af133474eb07b0f78ac06f82d38cd3eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -538,6 +544,45 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a human readable string for the <a class="el" href="class_w_s_m_1_1_result.html" title="Private member m_pRI in Result is not exported and causes a warning that can be safely ignored.">Result</a> error or warning. </p>
+
+</div>
+</div>
+<a id="a86e59ffb89c89b90b0e360acf77032b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e59ffb89c89b90b0e360acf77032b4">&#9670;&nbsp;</a></span>GetErrorStringFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">::string WSM::Result::GetErrorStringFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the original format string for the <a class="el" href="class_w_s_m_1_1_result.html" title="Private member m_pRI in Result is not exported and causes a warning that can be safely ignored.">Result</a> error or warning. </p>
+
+</div>
+</div>
+<a id="a7bc51aae88c3f63be170d7e2a4068fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc51aae88c3f63be170d7e2a4068fa3">&#9670;&nbsp;</a></span>GetErrorStringUsingFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">::string WSM::Result::GetErrorStringUsingFormat </td>
+          <td>(</td>
+          <td class="paramtype">const 1::string &amp;&#160;</td>
+          <td class="paramname"><em>ErrorStringFormat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a human readable string for the <a class="el" href="class_w_s_m_1_1_result.html" title="Private member m_pRI in Result is not exported and causes a warning that can be safely ignored.">Result</a> error or warning using a format string. </p>
 
 </div>
 </div>

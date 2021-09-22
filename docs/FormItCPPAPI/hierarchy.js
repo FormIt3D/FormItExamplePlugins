@@ -40,6 +40,7 @@ var hierarchy =
     [ "WSM::LayerData", "struct_w_s_m_1_1_layer_data.html", null ],
     [ "FormIt::LevelData", "class_form_it_1_1_level_data.html", null ],
     [ "WSM::Line3d", "class_w_s_m_1_1_line3d.html", null ],
+    [ "FormIt::LoadCompleteData", "struct_form_it_1_1_load_complete_data.html", null ],
     [ "WSM::LoopData", "struct_w_s_m_1_1_loop_data.html", null ],
     [ "FormIt::Materials::MaterialData", "struct_form_it_1_1_materials_1_1_material_data.html", null ],
     [ "WSM::MaterialData", "struct_w_s_m_1_1_material_data.html", null ],
@@ -92,7 +93,8 @@ var hierarchy =
         [ "FormIt::kToolsLocationRequestType", "struct_form_it_1_1k_tools_location_request_type.html", null ],
         [ "FormIt::kUndoRedoMultipleHistoriesEndedType", "struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html", null ],
         [ "FormIt::kUnfollowCameraType", "struct_form_it_1_1k_unfollow_camera_type.html", null ],
-        [ "FormIt::kUnitTypeChangedType", "struct_form_it_1_1k_unit_type_changed_type.html", null ]
+        [ "FormIt::kUnitTypeChangedType", "struct_form_it_1_1k_unit_type_changed_type.html", null ],
+        [ "FormIt::kVisualStyleChangedType", "struct_form_it_1_1k_visual_style_changed_type.html", null ]
       ] ],
       [ "FormIt::MessageWithPayloadStruct", "struct_form_it_1_1_message_with_payload_struct.html", [
         [ "FormIt::kAnalyticsLogType", "struct_form_it_1_1k_analytics_log_type.html", null ],

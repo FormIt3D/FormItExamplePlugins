@@ -520,6 +520,7 @@ var namespace_form_it =
     [ "kCollaborationTextType", "struct_form_it_1_1k_collaboration_text_type.html", "struct_form_it_1_1k_collaboration_text_type" ],
     [ "kDefaultColorsChangedType", "struct_form_it_1_1k_default_colors_changed_type.html", "struct_form_it_1_1k_default_colors_changed_type" ],
     [ "kDisplayModeChangedType", "struct_form_it_1_1k_display_mode_changed_type.html", "struct_form_it_1_1k_display_mode_changed_type" ],
+    [ "kVisualStyleChangedType", "struct_form_it_1_1k_visual_style_changed_type.html", "struct_form_it_1_1k_visual_style_changed_type" ],
     [ "kFollowCameraType", "struct_form_it_1_1k_follow_camera_type.html", "struct_form_it_1_1k_follow_camera_type" ],
     [ "kCameraOperationStartedType", "struct_form_it_1_1k_camera_operation_started_type.html", "struct_form_it_1_1k_camera_operation_started_type" ],
     [ "kCameraOperationEndedType", "struct_form_it_1_1k_camera_operation_ended_type.html", "struct_form_it_1_1k_camera_operation_ended_type" ],
@@ -546,6 +547,7 @@ var namespace_form_it =
     [ "kAxesVisibilityChangedType", "struct_form_it_1_1k_axes_visibility_changed_type.html", "struct_form_it_1_1k_axes_visibility_changed_type" ],
     [ "kLevelsVisibilityChangedType", "struct_form_it_1_1k_levels_visibility_changed_type.html", "struct_form_it_1_1k_levels_visibility_changed_type" ],
     [ "kLevelManagerChangedType", "struct_form_it_1_1k_level_manager_changed_type.html", "struct_form_it_1_1k_level_manager_changed_type" ],
+    [ "LoadCompleteData", "struct_form_it_1_1_load_complete_data.html", "struct_form_it_1_1_load_complete_data" ],
     [ "kLoadCompleteType", "struct_form_it_1_1k_load_complete_type.html", "struct_form_it_1_1k_load_complete_type" ],
     [ "kLockAndHidePointerType", "struct_form_it_1_1k_lock_and_hide_pointer_type.html", "struct_form_it_1_1k_lock_and_hide_pointer_type" ],
     [ "kMaterialAddedType", "struct_form_it_1_1k_material_added_type.html", "struct_form_it_1_1k_material_added_type" ],
@@ -725,7 +727,8 @@ var namespace_form_it =
     ] ],
     [ "CameraProjectionType", "namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9d", [
       [ "PERSPECTIVE", "namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da4f0c99ebcecf1054dd7cec9ad777fbcb", null ],
-      [ "ORTHOGRAPHIC", "namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a", null ]
+      [ "ORTHOGRAPHIC", "namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a", null ],
+      [ "PERSPECTIVE2PT", "namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da4e8ada40941e98992470fc18b8438bf4", null ]
     ] ],
     [ "KeyboardModifier", "namespace_form_it.html#ad2215bcd7d7391a6d0342b47708ff73e", [
       [ "NoModifier", "namespace_form_it.html#ad2215bcd7d7391a6d0342b47708ff73ea03f9a356fcab7b6688a2fc698d71c41b", null ],
@@ -974,7 +977,7 @@ var namespace_form_it =
     [ "SetShowEditableDimensions", "group__mod__formitcore__api__ref.html#ga444c2f78eb0d4664f15778a60c59c3cf", null ],
     [ "SetSurfaceAccuracyOrCountDefault", "group__mod__formitcore__api__ref.html#gacee965932072b8bb228494be5c5e2c80", null ],
     [ "SetUnitTypeDefault", "group__mod__formitcore__api__ref.html#gad092f1a2476a2a4c59fbe87bf6c3d71c", null ],
-    [ "SuspendMessaging", "group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d", null ],
+    [ "SuspendMessaging", "group__mod__formitcore__api__ref.html#ga45e85aee7bf4f870cbc66706d59395a0", null ],
     [ "ToolTypeAsString", "namespace_form_it.html#a5ba94b277b838b8b239eaeec03afa8f8", null ],
     [ "kAlignCameraWithFace", "group__mod__formit__core__view__sc.html#gaf27b4b490e715989cf511c4496cfcd4a", null ],
     [ "kAnalyticsLog", "namespace_form_it.html#aef750917338b19c1fb42cd2fc257ce6d", null ],
@@ -992,6 +995,7 @@ var namespace_form_it =
     [ "kCameraOrthographic", "group__mod__formit__core__view__sc.html#ga3f4940effa00cf41021df4d331c00d97", null ],
     [ "kCameraPan", "group__mod__formit__core__view__sc.html#gaff1e8ac434ad4a664f4bd4f073a99bbf", null ],
     [ "kCameraPerspective", "group__mod__formit__core__view__sc.html#ga55faa1522965d46cce5b6f0bd3da865b", null ],
+    [ "kCameraPerspective2Pt", "group__mod__formit__core__view__sc.html#ga36a2f458eab8112536fd0fc7ba38b56b", null ],
     [ "kCameraProjectionTypeChanged", "namespace_form_it.html#ae6f06389d1923c4dc14248350c1f7ca0", null ],
     [ "kCameraSharingChange", "namespace_form_it.html#aea2954f5d23a9d08ed38a2e68a67dc07", null ],
     [ "kCameraSwivel", "group__mod__formit__core__view__sc.html#ga706700ad38142c78fe633645c88a50e2", null ],
@@ -1254,5 +1258,6 @@ var namespace_form_it =
     [ "kViewProjectionZPos", "group__mod__formit__core__view__sc.html#gaab0c13b18a5d96490480927d50c82c68", null ],
     [ "kViewZoomAll", "group__mod__formit__core__view__sc.html#gac951246d3f5fb822fe5ee44a28807668", null ],
     [ "kViewZoomAllImages", "group__mod__formit__core__view__sc.html#ga03d269923e77ff833adfcbbdea13c3f9", null ],
-    [ "kViewZoomSelection", "group__mod__formit__core__view__sc.html#ga5a6231e40073f4d143d9040707f2733d", null ]
+    [ "kViewZoomSelection", "group__mod__formit__core__view__sc.html#ga5a6231e40073f4d143d9040707f2733d", null ],
+    [ "kVisualStyleChanged", "namespace_form_it.html#adc51c23c749d4985245f37f7f29e7d16", null ]
 ];

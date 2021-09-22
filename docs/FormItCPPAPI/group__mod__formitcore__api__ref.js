@@ -66,5 +66,5 @@ var group__mod__formitcore__api__ref =
     [ "SetShowEditableDimensions", "group__mod__formitcore__api__ref.html#ga444c2f78eb0d4664f15778a60c59c3cf", null ],
     [ "SetSurfaceAccuracyOrCountDefault", "group__mod__formitcore__api__ref.html#gacee965932072b8bb228494be5c5e2c80", null ],
     [ "SetUnitTypeDefault", "group__mod__formitcore__api__ref.html#gad092f1a2476a2a4c59fbe87bf6c3d71c", null ],
-    [ "SuspendMessaging", "group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d", null ]
+    [ "SuspendMessaging", "group__mod__formitcore__api__ref.html#ga45e85aee7bf4f870cbc66706d59395a0", null ]
 ];
