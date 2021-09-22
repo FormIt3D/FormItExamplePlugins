@@ -1,5 +1,10 @@
 [
     {
+        "label": "FormIt",
+        "insertText": "FormIt",
+        "detail": "FormIt API"
+    },
+    {
         "label": "FormIt.CallJS",
         "kind": "Function",
         "detail": "Execute the given function with the given params Parameters function, params (json) Out: string.",
@@ -351,6 +356,11 @@
         }
     },
     {
+        "label": "FormIt.Analysis.Solar",
+        "insertText": "FormIt.Analysis.Solar",
+        "detail": "FormIt.Analysis.Solar API"
+    },
+    {
         "label": "FormIt.Analysis.Solar.Analyze",
         "kind": "Function",
         "insertText": "FormIt.Analysis.Solar.Analyze();",
@@ -546,6 +556,11 @@
         }
     },
     {
+        "label": "FormIt.AutoSave",
+        "insertText": "FormIt.AutoSave",
+        "detail": "FormIt.AutoSave API"
+    },
+    {
         "label": "FormIt.AutoSave.AddProtectedFile",
         "kind": "Function",
         "detail": "AddProtectedFile() function.",
@@ -679,6 +694,11 @@
         }
     },
     {
+        "label": "FormIt.Cameras",
+        "insertText": "FormIt.Cameras",
+        "detail": "FormIt.Cameras API"
+    },
+    {
         "label": "FormIt.Cameras.AlignWithFace",
         "kind": "Function",
         "detail": "Set the camera to look straight at the given face and zoom to fit it.",
@@ -759,6 +779,11 @@
         }
     },
     {
+        "label": "FormIt.Clipboard",
+        "insertText": "FormIt.Clipboard",
+        "detail": "FormIt.Clipboard API"
+    },
+    {
         "label": "FormIt.Clipboard.GetJSONStringForClipboard",
         "kind": "Function",
         "insertText": "FormIt.Clipboard.GetJSONStringForClipboard();",
@@ -774,6 +799,11 @@
         "documentation": {
             "value": "# [FormIt.Clipboard.SetJSONStringFromClipboard](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__clipboard.html#ga289116a38bd121a0db0b20986a61037e)\n\n## SetJSONStringFromClipboard sets the clipboard data and sets it in FormIt.Clipboard.\n\n## Parameters\n* str\n"
         }
+    },
+    {
+        "label": "FormIt.Collaboration",
+        "insertText": "FormIt.Collaboration",
+        "detail": "FormIt.Collaboration API"
     },
     {
         "label": "FormIt.Collaboration.Connect",
@@ -901,6 +931,11 @@
         }
     },
     {
+        "label": "FormIt.Commands",
+        "insertText": "FormIt.Commands",
+        "detail": "FormIt.Commands API"
+    },
+    {
         "label": "FormIt.Commands.DoCommand",
         "kind": "Function",
         "detail": "Execute given command.",
@@ -926,6 +961,11 @@
         "documentation": {
             "value": "# [FormIt.Commands.RegisterJSCommand](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__commands.html#ga818f5d665fd247709e6f8702188a5fbb)\n\n## Register the given command which will show up in the list of shortcuts.\n\n## Parameters\n* command\n"
         }
+    },
+    {
+        "label": "FormIt.Configuration",
+        "insertText": "FormIt.Configuration",
+        "detail": "FormIt.Configuration API"
     },
     {
         "label": "FormIt.Configuration.ConfigureFromJSON",
@@ -1069,6 +1109,11 @@
         "documentation": {
             "value": "# [FormIt.Configuration.IsShortcutCommandConfigured](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__configuration.html#gaffbd6f7431e25a0e264adbf68e758030)\n\n## Returns whether a shortcut command is configured Parameters: In: command name Out: true/false.\n\n## Parameters\n* commandName\n"
         }
+    },
+    {
+        "label": "FormIt.Dynamo",
+        "insertText": "FormIt.Dynamo",
+        "detail": "FormIt.Dynamo API"
     },
     {
         "label": "FormIt.Dynamo.DYNAnyBakeNodeSATFilesExist",
@@ -1215,6 +1260,11 @@
         }
     },
     {
+        "label": "FormIt.Files",
+        "insertText": "FormIt.Files",
+        "detail": "FormIt.Files API"
+    },
+    {
         "label": "FormIt.Files.GetSupportedFilesList",
         "kind": "Function",
         "insertText": "FormIt.Files.GetSupportedFilesList();",
@@ -1230,6 +1280,11 @@
         "documentation": {
             "value": "# [FormIt.Files.IsFileSupported](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__files.html#ga17e9e7ae41a7143f35d0bb32c463be73)\n\n## Check if a file extension is supported Parameters: In: extension File extension to check if is supported In: action File action (eg: Load or Save file) In: type File's content type (eg: 3D Model or Image) In: Dialog box which shows the supported file types(deafult local) Out: bool.\n\n## Parameters\n* extension\n* action\n* type\n* dialogType\n"
         }
+    },
+    {
+        "label": "FormIt.FileSystem",
+        "insertText": "FormIt.FileSystem",
+        "detail": "FormIt.FileSystem API"
     },
     {
         "label": "FormIt.FileSystem.FileExists",
@@ -1250,6 +1305,11 @@
         }
     },
     {
+        "label": "FormIt.Forge.UI",
+        "insertText": "FormIt.Forge.UI",
+        "detail": "FormIt.Forge.UI API"
+    },
+    {
         "label": "FormIt.Forge.UI.ErrorCodeToUIMessage",
         "kind": "Function",
         "detail": "Forge ErrorCode to UI Message.",
@@ -1257,6 +1317,11 @@
         "documentation": {
             "value": "# [FormIt.Forge.UI.ErrorCodeToUIMessage](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__forge__ui.html#gac5773efdede04c8afef8723bf85d5199)\n\n## Forge ErrorCode to UI Message.\n\n## Parameters\n* code\n"
         }
+    },
+    {
+        "label": "FormIt.GroupEdit",
+        "insertText": "FormIt.GroupEdit",
+        "detail": "FormIt.GroupEdit API"
     },
     {
         "label": "FormIt.GroupEdit.EndEditInContext",
@@ -1329,6 +1394,11 @@
         }
     },
     {
+        "label": "FormIt.HUDManager",
+        "insertText": "FormIt.HUDManager",
+        "detail": "FormIt.HUDManager API"
+    },
+    {
         "label": "FormIt.HUDManager.GetNumWidgets",
         "kind": "Function",
         "detail": "GetNumWidgets() function.",
@@ -1354,6 +1424,11 @@
         "documentation": {
             "value": "# [FormIt.HUDManager.WidgetTextInput](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__hudmanager.html#gaf078f913b73de208a0447e3baf7d5728)\n\n## WidgetTextInput() function.\n\n## Parameters\n* widgetID\n* text\n"
         }
+    },
+    {
+        "label": "FormIt.ImageManager",
+        "insertText": "FormIt.ImageManager",
+        "detail": "FormIt.ImageManager API"
     },
     {
         "label": "FormIt.ImageManager.GetAllImages",
@@ -1434,6 +1509,11 @@
         "documentation": {
             "value": "# [FormIt.ImageManager.SetImagePosition](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__imagemanager.html#ga55b695623dde9068092ce1ff656db950)\n\n## Set the Image Position.\n\n## Parameters\n* nHistoryID,imageID,nPosition\n* nHistoryID\n* imageID\n* nPosition\n"
         }
+    },
+    {
+        "label": "FormIt.Layers",
+        "insertText": "FormIt.Layers",
+        "detail": "FormIt.Layers API"
     },
     {
         "label": "FormIt.Layers.AddLayer",
@@ -1629,6 +1709,11 @@
         "documentation": {
             "value": "# [FormIt.Layers.SetLoadInRevit](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__layers.html#ga787011107de56766459a4b4c9ad607cf)\n\n## Set the load in Revit status of a layer.\n\n## Parameters\n* layerID\n* load\n"
         }
+    },
+    {
+        "label": "FormIt.Levels",
+        "insertText": "FormIt.Levels",
+        "detail": "FormIt.Levels API"
     },
     {
         "label": "FormIt.Levels.AddLevels",
@@ -1863,6 +1948,11 @@
         }
     },
     {
+        "label": "FormIt.MaterialProvider",
+        "insertText": "FormIt.MaterialProvider",
+        "detail": "FormIt.MaterialProvider API"
+    },
+    {
         "label": "FormIt.MaterialProvider.CanModify",
         "kind": "Function",
         "detail": "Returns if a given material is modifiable (in some cases a material is marked as ReadOnly).",
@@ -1969,12 +2059,22 @@
         }
     },
     {
+        "label": "FormIt.Messaging",
+        "insertText": "FormIt.Messaging",
+        "detail": "FormIt.Messaging API"
+    },
+    {
         "label": "FormIt.Messaging.GetMessages",
         "kind": "Function",
         "insertText": "FormIt.Messaging.GetMessages();",
         "documentation": {
             "value": "# [FormIt.Messaging.GetMessages](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__messaging.html#gac1986b170763c934d66a1aa8061997ba)\n\n## \n\n"
         }
+    },
+    {
+        "label": "FormIt.Model",
+        "insertText": "FormIt.Model",
+        "detail": "FormIt.Model API"
     },
     {
         "label": "FormIt.Model.GetCurveAccuracyOrCountCurrent",
@@ -2197,6 +2297,11 @@
         "documentation": {
             "value": "# [FormIt.Model.SetUnitTypeCurrent](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__model.html#ga22d94c2b801993419c1f0b1eb4da7d5e)\n\n## Set the UnitType of the current Model.\n\n## Parameters\n* FormIt.UnitType\n"
         }
+    },
+    {
+        "label": "FormIt.Scenes",
+        "insertText": "FormIt.Scenes",
+        "detail": "FormIt.Scenes API"
     },
     {
         "label": "FormIt.Scenes.ActivateScene",
@@ -2692,6 +2797,11 @@
         }
     },
     {
+        "label": "FormIt.SectionPlanes",
+        "insertText": "FormIt.SectionPlanes",
+        "detail": "FormIt.SectionPlanes API"
+    },
+    {
         "label": "FormIt.SectionPlanes.Clear",
         "kind": "Function",
         "insertText": "FormIt.SectionPlanes.Clear();",
@@ -2833,6 +2943,11 @@
         "documentation": {
             "value": "# [FormIt.SectionPlanes.SetSectionIndicatorsVisibility](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__sectionplanes.html#gab3a5429557d9d785dffe7910bba555bd)\n\n## Set the geometry representing section planes visible.\n\n## Parameters\n* visible\n"
         }
+    },
+    {
+        "label": "FormIt.Selection",
+        "insertText": "FormIt.Selection",
+        "detail": "FormIt.Selection API"
     },
     {
         "label": "FormIt.Selection.AddSelections",
@@ -3008,6 +3123,11 @@
         }
     },
     {
+        "label": "FormIt.Shortcuts",
+        "insertText": "FormIt.Shortcuts",
+        "detail": "FormIt.Shortcuts API"
+    },
+    {
         "label": "FormIt.Shortcuts.GetJSON",
         "kind": "Function",
         "detail": "Get the shortcuts as a JSON string.",
@@ -3042,6 +3162,11 @@
         "documentation": {
             "value": "# [FormIt.Shortcuts.RestoreFromJSON](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__shortcuts.html#gaefd46412939aa50f10135bf7e2f62cb6)\n\n## Restore the shortcuts in the given JSON string.\n\n## Parameters\n* jsonStr\n"
         }
+    },
+    {
+        "label": "FormIt.SketchMaterials",
+        "insertText": "FormIt.SketchMaterials",
+        "detail": "FormIt.SketchMaterials API"
     },
     {
         "label": "FormIt.SketchMaterials.AssignMaterialToObjects",
@@ -3175,6 +3300,11 @@
         }
     },
     {
+        "label": "FormIt.Statistics",
+        "insertText": "FormIt.Statistics",
+        "detail": "FormIt.Statistics API"
+    },
+    {
         "label": "FormIt.Statistics.Log",
         "kind": "Function",
         "detail": "Log analytics.",
@@ -3191,6 +3321,11 @@
         "documentation": {
             "value": "# [FormIt.Statistics.OptOutTracking](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__statistics.html#gaf2e289e3c16481072e5b19f8bb725aa4)\n\n## OptOutTracking() function.\n\n## Parameters\n* isOptingOut\n"
         }
+    },
+    {
+        "label": "FormIt.StringConversion",
+        "insertText": "FormIt.StringConversion",
+        "detail": "FormIt.StringConversion API"
     },
     {
         "label": "FormIt.StringConversion.AreaValueToString",
@@ -3244,6 +3379,11 @@
         "documentation": {
             "value": "# [FormIt.StringConversion.VolumeValueToString](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__stringconversion.html#ga2a296ee2da6baca444133e938db8dae7)\n\n## VolumeValueToString converts a volume value to a string Parameters: In: val In: forceFeetOrMeter Out: { unitValue }.\n\n## Parameters\n* val\n* forceFeetOrMeter\n"
         }
+    },
+    {
+        "label": "FormIt.SunAndLocation",
+        "insertText": "FormIt.SunAndLocation",
+        "detail": "FormIt.SunAndLocation API"
     },
     {
         "label": "FormIt.SunAndLocation.AddSatelliteImage",
@@ -3353,6 +3493,11 @@
         }
     },
     {
+        "label": "FormIt.Tools",
+        "insertText": "FormIt.Tools",
+        "detail": "FormIt.Tools API"
+    },
+    {
         "label": "FormIt.Tools.BlendFacesOrEdges",
         "kind": "Function",
         "detail": "BlendFacesOrEdges() function.",
@@ -3452,6 +3597,11 @@
         }
     },
     {
+        "label": "FormIt.UI",
+        "insertText": "FormIt.UI",
+        "detail": "FormIt.UI API"
+    },
+    {
         "label": "FormIt.UI.AddorReplaceTranslation",
         "kind": "Function",
         "detail": "Add or replace an English string to Translate lookup with its corresponding translation.",
@@ -3521,6 +3671,11 @@
         "documentation": {
             "value": "# [FormIt.UI.TranslationLookup](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__ui.html#ga22544e00a5c662bc0166852ae808f3a9)\n\n## Translate lookup a English string Looks up an English string through all of the components from the current loaded language string files.\n\n## Parameters\n* value\n"
         }
+    },
+    {
+        "label": "FormIt.UndoManagement",
+        "insertText": "FormIt.UndoManagement",
+        "detail": "FormIt.UndoManagement API"
     },
     {
         "label": "FormIt.UndoManagement.BeginState",
@@ -3718,6 +3873,11 @@
         }
     },
     {
+        "label": "FormIt.Utils",
+        "insertText": "FormIt.Utils",
+        "detail": "FormIt.Utils API"
+    },
+    {
         "label": "FormIt.Utils.DecodeBase64Bytes",
         "kind": "Function",
         "insertText": "FormIt.Utils.DecodeBase64Bytes();",
@@ -3751,6 +3911,11 @@
         "documentation": {
             "value": "# [FormIt.Utils.NewGuid](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__utils.html#gab0bde8e345429f741b996769604ea4be)\n\n## NewGuid() function.\n\n"
         }
+    },
+    {
+        "label": "FormIt.View",
+        "insertText": "FormIt.View",
+        "detail": "FormIt.View API"
     },
     {
         "label": "FormIt.View.FitToModel",
@@ -3805,6 +3970,11 @@
         "documentation": {
             "value": "# [FormIt.View.TopView](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__view.html#gae09cf187dcf0415b8ba1afb989db2bfb)\n\n## TopView() function.\n\n"
         }
+    },
+    {
+        "label": "FormIt.VisualStyles",
+        "insertText": "FormIt.VisualStyles",
+        "detail": "FormIt.VisualStyles API"
     },
     {
         "label": "FormIt.VisualStyles.GetAdvancedMaterialShaderType",
@@ -4316,6 +4486,11 @@
         "documentation": {
             "value": "# [FormIt.VisualStyles.ToggleNorthArrowDisplay](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__formit__visualstyles.html#gaee5cf11770b9359287cb9e7a397b28be)\n\n## toggles the North arrow display\n\n"
         }
+    },
+    {
+        "label": "WSM",
+        "insertText": "WSM",
+        "detail": "WSM API"
     },
     {
         "label": "WSM.APIAddFaceComponentToBody",
@@ -6593,6 +6768,11 @@
         }
     },
     {
+        "label": "WSM.AppHelper",
+        "insertText": "WSM.AppHelper",
+        "detail": "WSM.AppHelper API"
+    },
+    {
         "label": "WSM.AppHelper.GetDisplayHistoryID",
         "kind": "Function",
         "detail": "Request the id of the top level history being displayed - app supplied.",
@@ -6627,6 +6807,11 @@
         }
     },
     {
+        "label": "WSM.Atf",
+        "insertText": "WSM.Atf",
+        "detail": "WSM.Atf API"
+    },
+    {
         "label": "WSM.Atf.APILoadWithATF",
         "kind": "Function",
         "detail": "APILoadWithATF() function.",
@@ -6650,6 +6835,11 @@
         "documentation": {
             "value": "# [WSM.Atf.APIWriteWithATF](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__wsm__atf.html#gad77d4130a637a6b6e3065b82507ddd66)\n\n## \n\n"
         }
+    },
+    {
+        "label": "WSM.Geom",
+        "insertText": "WSM.Geom",
+        "detail": "WSM.Geom API"
     },
     {
         "label": "WSM.Geom.Interval3d",
@@ -6905,6 +7095,11 @@
         }
     },
     {
+        "label": "WSM.GroupInstancePath",
+        "insertText": "WSM.GroupInstancePath",
+        "detail": "WSM.GroupInstancePath API"
+    },
+    {
         "label": "WSM.GroupInstancePath.AppendObjectHistoryID",
         "kind": "Function",
         "detail": "AppendObjectHistoryID appends the given ObjectHistoryID to the end of the GroupInstancePath In: groupInstancePath, ObjectID Out: bool.",
@@ -6964,6 +7159,11 @@
         "documentation": {
             "value": "# [WSM.GroupInstancePath.IsValid](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__wsm__groupinstancepath.html#ga1a815a44376baacf657ccfa351e9d19d)\n\n## \n\n"
         }
+    },
+    {
+        "label": "WSM.InferenceEngine",
+        "insertText": "WSM.InferenceEngine",
+        "detail": "WSM.InferenceEngine API"
     },
     {
         "label": "WSM.InferenceEngine.AddLineInference",
@@ -7200,6 +7400,11 @@
         }
     },
     {
+        "label": "WSM.RenderHelper",
+        "insertText": "WSM.RenderHelper",
+        "detail": "WSM.RenderHelper API"
+    },
+    {
         "label": "WSM.RenderHelper.APIGetEdgesRenderDataReadOnly",
         "kind": "Function",
         "detail": "APIGetEdgesRenderDataReadOnly() function.",
@@ -7227,6 +7432,11 @@
         }
     },
     {
+        "label": "WSM.Sat",
+        "insertText": "WSM.Sat",
+        "detail": "WSM.Sat API"
+    },
+    {
         "label": "WSM.Sat.APILoadSatFile",
         "kind": "Function",
         "insertText": "WSM.Sat.APILoadSatFile();",
@@ -7235,12 +7445,22 @@
         }
     },
     {
+        "label": "WSM.Skup",
+        "insertText": "WSM.Skup",
+        "detail": "WSM.Skup API"
+    },
+    {
         "label": "WSM.Skup.APIReadSketchupFile",
         "kind": "Function",
         "insertText": "WSM.Skup.APIReadSketchupFile();",
         "documentation": {
             "value": "# [WSM.Skup.APIReadSketchupFile](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__wsm__skup.html#ga5dc03b69d9de67030f30ccdcd9341824)\n\n## \n\n"
         }
+    },
+    {
+        "label": "WSM.Tools",
+        "insertText": "WSM.Tools",
+        "detail": "WSM.Tools API"
     },
     {
         "label": "WSM.Tools.APICameraChanged",
@@ -7536,6 +7756,11 @@
         "documentation": {
             "value": "# [WSM.Tools.CompareOutputFiles](https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__jsapi__wsm__tools.html#ga4b938a6bed4a9b993cfff77285c71ad1)\n\n## CompareOutputFiles() function.\n\n## Parameters\n* sGoodFile\n* sResultFile\n"
         }
+    },
+    {
+        "label": "WSM.Utils",
+        "insertText": "WSM.Utils",
+        "detail": "WSM.Utils API"
     },
     {
         "label": "WSM.Utils.AngleFullCircleInRadians",
