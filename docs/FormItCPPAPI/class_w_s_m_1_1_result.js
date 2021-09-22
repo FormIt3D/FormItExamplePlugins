@@ -145,6 +145,8 @@ var class_w_s_m_1_1_result =
     [ "Result", "class_w_s_m_1_1_result.html#af3fd0fc8e883b703aab5ce6df10f0d7b", null ],
     [ "GetErrorCode", "class_w_s_m_1_1_result.html#af01a51131990ce3aac7c02de7543599b", null ],
     [ "GetErrorString", "class_w_s_m_1_1_result.html#a89dcd0989ace53b6512a587785476b0f", null ],
+    [ "GetErrorStringFormat", "class_w_s_m_1_1_result.html#a86e59ffb89c89b90b0e360acf77032b4", null ],
+    [ "GetErrorStringUsingFormat", "class_w_s_m_1_1_result.html#a7bc51aae88c3f63be170d7e2a4068fa3", null ],
     [ "GetHistoryObjectIDs", "class_w_s_m_1_1_result.html#ad1b80ad5852241a7ac57bf77ca241dda", null ],
     [ "GetImplementation", "class_w_s_m_1_1_result.html#a461978fb66917b9099f14519e72c6f67", null ],
     [ "GetWarningCode", "class_w_s_m_1_1_result.html#af869653833103c183530ab85759fb7ab", null ],

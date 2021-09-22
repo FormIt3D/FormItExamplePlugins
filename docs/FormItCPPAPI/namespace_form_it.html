@@ -212,6 +212,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_display_mode_changed_type.html">kDisplayModeChangedType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered on display mode changed.  <a href="struct_form_it_1_1k_display_mode_changed_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_visual_style_changed_type.html">kVisualStyleChangedType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered on a change to a visual style parameter not covered by kDisplayModeChanged or others in that area.  <a href="struct_form_it_1_1k_visual_style_changed_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_follow_camera_type.html">kFollowCameraType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_form_it_1_1k_follow_camera_type.html" title="FormIt::kFollowCameraType struct.">FormIt::kFollowCameraType</a> struct.  <a href="struct_form_it_1_1k_follow_camera_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +292,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_level_manager_changed_type.html">kLevelManagerChangedType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_form_it_1_1_levels.html">Levels</a> were added, changed, removed.  <a href="struct_form_it_1_1k_level_manager_changed_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1_load_complete_data.html">LoadCompleteData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoadComplete messages A load has completed or Begin/EndState happened Payload : <a class="el" href="struct_form_it_1_1_load_complete_data.html" title="LoadComplete messages A load has completed or Begin/EndState happened Payload : LoadCompleteData.">LoadCompleteData</a>.  <a href="struct_form_it_1_1_load_complete_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_load_complete_type.html">kLoadCompleteType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when:  <a href="struct_form_it_1_1k_load_complete_type.html#details">More...</a><br /></td></tr>
@@ -666,9 +672,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7d27f9a59681c5d553fbc47d28b5506e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga7d27f9a59681c5d553fbc47d28b5506e">FindLatestVersion</a> (const json &amp;versionJson, <a class="el" href="struct_form_it_1_1_version.html">FormIt::Version</a> const &amp;testVersion={})</td></tr>
 <tr class="memdesc:ga7d27f9a59681c5d553fbc47d28b5506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest version string from the given version.json.  <a href="group__mod__formitcore__api__ref.html#ga7d27f9a59681c5d553fbc47d28b5506e">More...</a><br /></td></tr>
 <tr class="separator:ga7d27f9a59681c5d553fbc47d28b5506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a6daca829f13ead3dea5dde985eae5d"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d">SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=<a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a>)</td></tr>
-<tr class="memdesc:ga8a6daca829f13ead3dea5dde985eae5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> until ResumeMessaging is called.  <a href="group__mod__formitcore__api__ref.html#ga8a6daca829f13ead3dea5dde985eae5d">More...</a><br /></td></tr>
-<tr class="separator:ga8a6daca829f13ead3dea5dde985eae5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45e85aee7bf4f870cbc66706d59395a0"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga45e85aee7bf4f870cbc66706d59395a0">SuspendMessaging</a> (bool bSuppress, size_t nTopLevelHistory=<a class="el" href="group__mod__wsm__api__ref.html#ga7ce82af07ede1e8bb890accb059f4163">WSM::INVALID_ID</a>, bool bFullUpdate=true)</td></tr>
+<tr class="memdesc:ga45e85aee7bf4f870cbc66706d59395a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuspendMessaging suspends all update messages from <a class="el" href="namespace_w_s_m.html" title="forward declaration">WSM</a> until ResumeMessaging is called.  <a href="group__mod__formitcore__api__ref.html#ga45e85aee7bf4f870cbc66706d59395a0">More...</a><br /></td></tr>
+<tr class="separator:ga45e85aee7bf4f870cbc66706d59395a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga594bf1f5fa1a78cfb382d496b5fc3ebf"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formitcore__api__ref.html#ga594bf1f5fa1a78cfb382d496b5fc3ebf">ResumeMessaging</a> ()</td></tr>
 <tr class="memdesc:ga594bf1f5fa1a78cfb382d496b5fc3ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume messaging.  <a href="group__mod__formitcore__api__ref.html#ga594bf1f5fa1a78cfb382d496b5fc3ebf">More...</a><br /></td></tr>
 <tr class="separator:ga594bf1f5fa1a78cfb382d496b5fc3ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -984,6 +990,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga55faa1522965d46cce5b6f0bd3da865b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f4940effa00cf41021df4d331c00d97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> ::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__view__sc.html#ga3f4940effa00cf41021df4d331c00d97">kCameraOrthographic</a></td></tr>
 <tr class="separator:ga3f4940effa00cf41021df4d331c00d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36a2f458eab8112536fd0fc7ba38b56b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> ::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__view__sc.html#ga36a2f458eab8112536fd0fc7ba38b56b">kCameraPerspective2Pt</a></td></tr>
+<tr class="separator:ga36a2f458eab8112536fd0fc7ba38b56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga223d43bb510991fecb212f830d07c0e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> ::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__object__filter__sc.html#ga223d43bb510991fecb212f830d07c0e5">kToggleObjectFilterVertices</a></td></tr>
 <tr class="separator:ga223d43bb510991fecb212f830d07c0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga597093841c0de7cbd402ed58ab34dcf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_form_it_core_export_8h.html#ae0897be528a0a61f41a5d06c3a4490ee">FORMIT_CORE_EXPORT</a> ::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__object__filter__sc.html#ga597093841c0de7cbd402ed58ab34dcf5">kToggleObjectFilterEdges</a></td></tr>
@@ -1031,6 +1039,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa280ed623eaa6e2d738302aa1d2706dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dcb0ccb143e9fc8a64a9e8c8a749cc4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_display_mode_changed_type.html">kDisplayModeChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a2dcb0ccb143e9fc8a64a9e8c8a749cc4">kDisplayModeChanged</a></td></tr>
 <tr class="separator:a2dcb0ccb143e9fc8a64a9e8c8a749cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc51c23c749d4985245f37f7f29e7d16"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_visual_style_changed_type.html">kVisualStyleChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#adc51c23c749d4985245f37f7f29e7d16">kVisualStyleChanged</a></td></tr>
+<tr class="separator:adc51c23c749d4985245f37f7f29e7d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac011f6a0ca040cd244b24f44e76bedd4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_follow_camera_type.html">kFollowCameraType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#ac011f6a0ca040cd244b24f44e76bedd4">kFollowCamera</a></td></tr>
 <tr class="separator:ac011f6a0ca040cd244b24f44e76bedd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f781238564bf635353919c6aad5f2ae"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_camera_operation_started_type.html">kCameraOperationStartedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a4f781238564bf635353919c6aad5f2ae">kCameraOperationStarted</a></td></tr>
@@ -1537,6 +1547,7 @@ Variables</h2></td></tr>
 <tr class="separator:adb9fe972fab93b08573f8e63753a5ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6287342a8bffa9a89d845895d62d5e9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9d">CameraProjectionType</a> { <a class="el" href="namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da4f0c99ebcecf1054dd7cec9ad777fbcb">PERSPECTIVE</a> = 0
 , <a class="el" href="namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a">ORTHOGRAPHIC</a>
+, <a class="el" href="namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9da4e8ada40941e98992470fc18b8438bf4">PERSPECTIVE2PT</a>
  }</td></tr>
 <tr class="memdesc:a6287342a8bffa9a89d845895d62d5e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera projection types.  <a href="namespace_form_it.html#a6287342a8bffa9a89d845895d62d5e9d">More...</a><br /></td></tr>
 <tr class="separator:a6287342a8bffa9a89d845895d62d5e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1882,6 +1893,7 @@ Variables</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6287342a8bffa9a89d845895d62d5e9da4f0c99ebcecf1054dd7cec9ad777fbcb"></a>PERSPECTIVE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a"></a>ORTHOGRAPHIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6287342a8bffa9a89d845895d62d5e9da4e8ada40941e98992470fc18b8438bf4"></a>PERSPECTIVE2PT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -5770,6 +5782,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="struct_form_it_1_1k_user_entitlements_changed_type.html">kUserEntitlementsChangedType</a> FormIt::kUserEntitlementsChanged</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc51c23c749d4985245f37f7f29e7d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc51c23c749d4985245f37f7f29e7d16">&#9670;&nbsp;</a></span>kVisualStyleChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_form_it_1_1k_visual_style_changed_type.html">kVisualStyleChangedType</a> FormIt::kVisualStyleChanged</td>
         </tr>
       </table>
   </td>

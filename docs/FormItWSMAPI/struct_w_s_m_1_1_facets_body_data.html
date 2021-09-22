@@ -91,7 +91,10 @@ $(document).ready(function(){initNavTree('struct_w_s_m_1_1_facets_body_data.html
 <div class="title">WSM::FacetsBodyData Struct Reference<div class="ingroups"><a class="el" href="group__mod__wsm__api__ref.html">WSM API Reference List</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<a name="details" id="details"></a><h2 class="groupheader">Description</h2>
+<div class="textblock"><p>Contains data for constructing a Body from facets. </p>
+<p>Used in <a class="el" href="group__mod__wsm__api__ref.html#gad7a1d9a4c532fe7dc53d58a4e2f0f0b9" title="Load a model from specified list of body facets.">APILoadFromFacets()</a>, which contains common functionality for loading data from several formats. </p>
+</div>
 <p><code>#include &lt;FacetsBodyData.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -400,7 +403,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The zero-based indices of points which form each facet of the body. </p>
-<p>Each index is a <a class="el" href="class_w_s_m_1_1_point3d.html">Point3d</a> object stored at appropriate place in the m_points vector. Facets are usually triangles, but here, polygons may be specified. That means one can pass vector of any length as an element of the m_polygonIndices list. If a non-planar polygon is passed, it will need further triangulation. m_polygonIndices should not contain indices greater than the largest allowed index for the m_points array. If m_polygonIndices is empty, then <a class="el" href="struct_w_s_m_1_1_facets_body_data.html">FacetsBodyData</a> stores a wire body created by joining consecutive points in m_points. </p>
+<p>Each index is a <a class="el" href="class_w_s_m_1_1_point3d.html" title="The Point3d class stores a point in 3D space.">Point3d</a> object stored at appropriate place in the m_points vector. Facets are usually triangles, but here, polygons may be specified. That means one can pass vector of any length as an element of the m_polygonIndices list. If a non-planar polygon is passed, it will need further triangulation. m_polygonIndices should not contain indices greater than the largest allowed index for the m_points array. If m_polygonIndices is empty, then <a class="el" href="struct_w_s_m_1_1_facets_body_data.html" title="Contains data for constructing a Body from facets.">FacetsBodyData</a> stores a wire body created by joining consecutive points in m_points. </p>
 
 </div>
 </div>
