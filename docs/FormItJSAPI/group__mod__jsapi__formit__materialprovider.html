@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt JS Plugin API
-   &#160;<span id="projectnumber">v22.0.0 (2022.1.0)</span>
+   &#160;<span id="projectnumber">v23.0.0 (2023.0.0)</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga718ba3b7fba1c133ed41f8683de083da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the preview image for the material.  <a href="group__mod__jsapi__formit__materialprovider.html#ga718ba3b7fba1c133ed41f8683de083da">More...</a><br /></td></tr>
 <tr class="separator:ga718ba3b7fba1c133ed41f8683de083da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2131d7c5d54c966c5d5006486091748c"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__materialprovider.html#ga2131d7c5d54c966c5d5006486091748c">FormIt.MaterialProvider.IsValidMaterialName</a> (libraryType, materialId, newName, errorMsg)</td></tr>
-<tr class="memdesc:ga2131d7c5d54c966c5d5006486091748c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given name is valid for a material.  <a href="group__mod__jsapi__formit__materialprovider.html#ga2131d7c5d54c966c5d5006486091748c">More...</a><br /></td></tr>
 <tr class="separator:ga2131d7c5d54c966c5d5006486091748c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46f57db5b9792f60d3395712f54832c8"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__jsapi__formit__materialprovider.html#ga46f57db5b9792f60d3395712f54832c8">FormIt.MaterialProvider.GetNewMaterialName</a> (libraryType, baseName)</td></tr>
 <tr class="memdesc:ga46f57db5b9792f60d3395712f54832c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a material name that is guaranteed not to exist.  <a href="group__mod__jsapi__formit__materialprovider.html#ga46f57db5b9792f60d3395712f54832c8">More...</a><br /></td></tr>
@@ -519,18 +518,6 @@ FormIt.LibraryType.APPLICATION<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Check if the given name is valid for a material. </p>
-<p>Returns success. Also returns an error string that can be posted in the <a class="el" href="namespace_form_it_1_1_u_i.html" title="FormIt.UI namespace.">UI</a>, if the name is not valid. If the id passed in is WSM.INVALID_ID, the new name is checked against all existing materials. If the id is of a valid material, the new name is checked against all materials except that one. In: libraryType FormIt.LibraryType FormIt.LibraryType.SKETCH FormIt.LibraryType.APPLICATION In: materialId int In: newName String </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">libraryType</td><td>FormIt.LibraryType </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">materialId</td><td>int </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">newName</td><td>String </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">errorMsg</td><td>String </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{ "Valid", valid , "Error", errorMsg } </dd></dl>
 
 </div>
 </div>
