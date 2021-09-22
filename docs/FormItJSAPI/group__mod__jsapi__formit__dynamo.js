@@ -8,13 +8,14 @@ var group__mod__jsapi__formit__dynamo =
     [ "GetDynamoGroupName", "group__mod__jsapi__formit__dynamo.html#gab605327878772e0f1dc31c713623e2c8", null ],
     [ "GetDynamoHistoryInCurrentContext", "group__mod__jsapi__formit__dynamo.html#gac3644619508b7cef47e527b35f656248", null ],
     [ "GetDynamoHistoryInPath", "group__mod__jsapi__formit__dynamo.html#ga82b187444160df5e9a93fdf3ed3486a4", null ],
+    [ "GetInputNode", "group__mod__jsapi__formit__dynamo.html#gae0c97739159dfaa819acd5fc26146811", null ],
     [ "GetInputNodes", "group__mod__jsapi__formit__dynamo.html#ga128549907cdb6d5d137b78e41b9cfcfa", null ],
     [ "GetSelectedDynamoHistory", "group__mod__jsapi__formit__dynamo.html#ga3025f0c4dc1f06eee90be06c47a28777", null ],
     [ "GetUuid", "group__mod__jsapi__formit__dynamo.html#ga161007f8b92664458bc21e2cf169cf46", null ],
     [ "HasFormItBakeToFormItNode", "group__mod__jsapi__formit__dynamo.html#ga7e1ca2f7ecf59f3ed69bd7b0841640a8", null ],
     [ "HasFormItSelectionNodes", "group__mod__jsapi__formit__dynamo.html#ga601c1ac77453fa184d1fa275bcfb532f", null ],
     [ "IsDynamoHistory", "group__mod__jsapi__formit__dynamo.html#ga6d1d95c58f3a21ef8bde45954dcda5ab", null ],
-    [ "SetDynamoFile", "group__mod__jsapi__formit__dynamo.html#ga9cbc240937752da67f2769a2a43f9c6f", null ],
+    [ "SetDynamoFile", "group__mod__jsapi__formit__dynamo.html#ga59c9f16f504f9932b79a6af89e67de67", null ],
     [ "UpdateRenderer", "group__mod__jsapi__formit__dynamo.html#ga79f54703669d0f758ad575c6fc4ac066", null ],
     [ "WriteDYNFile", "group__mod__jsapi__formit__dynamo.html#gae086eaa1f2120585cbb00f8fb3c6b361", null ]
 ];
