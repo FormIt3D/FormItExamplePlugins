@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 
 <p>Execute given command. </p>
 <p><a class="el" href="group__mod__jsapi__formit__commands.html#ga8319ea98295b1f5b1cc545c7b0a40b87" title="Get the list of commands in FormIt. ">FormIt.Commands.GetCommands</a> returns the list of available commands.</p>
-<p>See C++ Reference: <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__formitcore__shortcuts__api__ref#DoCommand">DoCommand</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>See C++ Reference: <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItCPPAPI/group__mod__formitcore__shortcuts__api__ref#DoCommand">DoCommand</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>String </td></tr>
   </table>
@@ -162,7 +162,7 @@ Functions</h2></td></tr>
 
 <p>Get the list of commands in <a class="el" href="namespace_form_it.html" title="FormIt namespace. ">FormIt</a>. </p>
 <p><a class="el" href="namespace_form_it_1_1_commands.html" title="FormIt.Commands namespace. ">Commands</a> are used to execute features in <a class="el" href="namespace_form_it.html" title="FormIt namespace. ">FormIt</a>.</p>
-<p>See C++ Reference: <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__formitcore__shortcuts__api__ref#GetCommands">GetCommands</a> </p><dl class="section return"><dt>Returns</dt><dd>An array of <a class="el" href="namespace_form_it.html" title="FormIt namespace. ">FormIt</a> <a class="el" href="namespace_form_it_1_1_commands.html" title="FormIt.Commands namespace. ">Commands</a>. </dd></dl>
+<p>See C++ Reference: <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItCPPAPI/group__mod__formitcore__shortcuts__api__ref#GetCommands">GetCommands</a> </p><dl class="section return"><dt>Returns</dt><dd>An array of <a class="el" href="namespace_form_it.html" title="FormIt namespace. ">FormIt</a> <a class="el" href="namespace_form_it_1_1_commands.html" title="FormIt.Commands namespace. ">Commands</a>. </dd></dl>
 
 </div>
 </div>
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register the given command which will show up in the list of shortcuts. </p>
-<p>RegisterJSCommand just takes a string that is the JS function to call. <a class="el" href="group__mod__jsapi__formit__commands.html#gaeaddcad88e44233a765a82d4572aeebe" title="Execute given command. ">FormIt.Commands.DoCommand</a> will call the given 'command' that is passed in. </p><div class="fragment"><div class="line">ToolbarPlugin = {};</div><div class="line">ToolbarPlugin.Button = <span class="keyword">function</span>()</div><div class="line">{</div><div class="line">    console.log(<span class="stringliteral">&quot;Toolbar Plugin button clicked!!&quot;</span>);</div><div class="line">}</div><div class="line"><a class="code" href="namespace_form_it.html">FormIt</a>.<a class="code" href="namespace_form_it_1_1_commands.html">Commands</a>.RegisterJSCommand(<span class="stringliteral">&quot;ToolbarPlugin.Button&quot;</span>);</div></div><!-- fragment --><p>See C++ Reference: <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItJSAPI/group__mod__formitcore__shortcuts__api__ref#RegisterJSCommand">RegisterJSCommand</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>RegisterJSCommand just takes a string that is the JS function to call. <a class="el" href="group__mod__jsapi__formit__commands.html#gaeaddcad88e44233a765a82d4572aeebe" title="Execute given command. ">FormIt.Commands.DoCommand</a> will call the given 'command' that is passed in. </p><div class="fragment"><div class="line">ToolbarPlugin = {};</div><div class="line">ToolbarPlugin.Button = <span class="keyword">function</span>()</div><div class="line">{</div><div class="line">    console.log(<span class="stringliteral">&quot;Toolbar Plugin button clicked!!&quot;</span>);</div><div class="line">}</div><div class="line"><a class="code" href="namespace_form_it.html">FormIt</a>.<a class="code" href="namespace_form_it_1_1_commands.html">Commands</a>.RegisterJSCommand(<span class="stringliteral">&quot;ToolbarPlugin.Button&quot;</span>);</div></div><!-- fragment --><p>See C++ Reference: <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItCPPAPI/group__mod__formitcore__shortcuts__api__ref#RegisterJSCommand">RegisterJSCommand</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>String </td></tr>
   </table>
