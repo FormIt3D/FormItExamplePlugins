@@ -1,0 +1,12 @@
+{
+    "PluginName": "Hello Async",
+    "PluginDescription": "Testing async JS API",
+    "PluginType": "Panel",
+    "Panel": "PLUGINLOCATION/index.html",
+    "PanelIcon": "PLUGINLOCATION/hello_block.png",
+    "CustomDescription": "customdescription.html",
+    "Scripts": [
+        "PLUGINLOCATION/blockFormItSide.js",
+        "https://formit3d.github.io/SharedPluginUtilities/PluginUtils18_0.js"
+    ]
+}

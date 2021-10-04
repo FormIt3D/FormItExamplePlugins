@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Hello Block!</title>
+    <META NAME="Title" CONTENT="Hello Block!">
+    <META NAME="Author" CONTENT="Autodesk FormIt">
+    <script type="text/javascript" src="https://formit3d.github.io/SharedPluginUtilities/FormItInterface.js"></script>
+    <!-- <script type="text/javascript" src="https://formit3d.github.io/SharedPluginUtilities/PluginUtils18_0.js"></script> -->
+    <script type="module" src="block.js"></script>
+    <script type="text/javascript">
+        FormItInterface.Initialize();
+    </script>    
+</head>
+    <body>
+        <h1>Hello Block Async v23_0!</h1>
+        <p>Create a cuboid of the given size at the origin.</p>
+
+        <div>
+            <input id="formitside" type="checkbox" value="true">Run on FormIt Side</input><br/>
+            <input id="width" type=number value="12.0">Width</input><br/>
+            <input id="height" type=number value="12.0">Length</input><br/>
+            <input id="length" type=number value="12.0">Height</input><br/>
+            <create-block-button id="block-button" formitside="#formitside" width="#width" height="#height" length="#length"></create-block-button>
+        </div>
+    </body>
+</html>

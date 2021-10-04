@@ -5,5 +5,12 @@
             "minor":0
         },
         "path":"v22_0"
+    },
+    {
+        "version":{
+            "major":23,
+            "minor":0
+        },
+        "path":"v23_0"
     }
 ]
