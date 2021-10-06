@@ -21,6 +21,7 @@
     <li><a href="#GeneralPluginSetup">General Plugin Setup</a></li>
     <li><a href="#CreatingToolbarPlugin">Creating a Toolbar Plugin</a></li>
     <li><a href="#CreatingHTMLPanelPlugin">Creating an HTML Panel Plugin</a></li>
+    <li><a href="#CreatingAddIn">Creating an Add-In</a></li>
     <li><a href="#SingleManifest">Creating Panel and Toolbar buttons in a single plugin</a></li>
     <li><a href="#VersioningPlugins">Versioning Plugins</a></li>
     <li><a href="#TestingPlugins">Testing Plugins</a></li>
@@ -370,6 +371,19 @@
             </ul>
             <p class="categoryDetailBody">Once your HTML, CSS, and JavScript files are set up, you can begin testing your HTML panel plugin by loading it or installing it.</p>
     </div>
+</div>
+
+<div class="categoryBlock" id="CreatingAddIn">
+    <h2 class="categoryTitle">Creating an Add-In</h2>
+    <div class="categoryDetailBlock">
+        <p class="categoryDetailBody">An Add-In is a plugin that also loads DLLs that expose new JavaScript APIs.  To build DLLs that support FormIt, the FormIt API is
+            needed.  The FormIt API can be downloaded from the <a href="https://www.autodesk.com/developer-network/overview" target="_blank">Autdesk Developers Network</a>.
+            A login is needed to access the download.  Once logged in, the FormIt API is available under SOFTWARE.
+        </p>
+        <img src="images/FormItAPIMenuItem.jpg" class="imgLarge">        
+        <img src="images/FormItAPIDownload.jpg" class="imgLarge">
+        <p class="categoryDetailBody"><a href="https://github.com/FormIt3D/HelloAddIn" target="_blank">HelloAddIn</a> is a working example that explains how to make an Add-In.</p>
+</div>
 </div>
 
 <div class="categoryBlock" id="SingleManifest">
