@@ -382,7 +382,58 @@
         </p>
         <img src="images/FormItAPIMenuItem.jpg" class="imgLarge">        
         <img src="images/FormItAPIDownload.jpg" class="imgLarge">
-        <p class="categoryDetailBody"><a href="https://github.com/FormIt3D/HelloAddIn" target="_blank">HelloAddIn</a> is a working example that explains how to make an Add-In.</p>
+        <p>An Add-In has access to the <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItCPPAPI/index.html" target="_blank">FormIt</a> and <a href="https://formit3d.github.io/FormItExamplePlugins/docs/FormItCPPAPI/group__mod__wsm__api__ref.html" target="_blank">FormIt Modeling Kernel</a> C++ APIs.</p>
+        <p>An add-in has the following structure-</p>
+        <pre>
+            // FormIt looks for REGISTERAPIMETHODS to load new JS APIs
+            REGISTERAPIMETHODS
+            {
+                // Declare new namespace for the new JS APIs
+                REGISTERNAMESPACE("HelloDLL")
+                // Create a JS API with no arguments
+                APIMETHOD(HelloDLL, API1, "") {}
+                // Create a JS API with 1 argument
+                APIMETHOD(HelloDLL, API2, "arg1") {}
+                // Create a JS API with 2 argument
+                APIMETHOD(HelloDLL, API3, "arg1, arg2") {}
+                ...
+                ...
+            }
+        </pre>
+        <p>To get the arguements into C++ variables use SCRIPTCONVERTER-</p>
+        <pre>
+            // Create a JS API with 2 argument
+            APIMETHOD(HelloDLL, API3, "arg1, arg2")
+            {
+                // NOTE: The arg names above ^^^^ have to match the args in the macros below.
+                // arg1 expects a bool
+                SCRIPTCONVERTER(bool, arg1);
+                // arg2 expects an int
+                SCRIPTCONVERTER(int, arg2);
+                return JSON_UNDEFINED;
+            }
+        </pre>
+        <p>Either JSON_UNDEFINED or any json object can be returned.  Use to_json to convert your C++ variable to json-</p>
+        <pre>
+            // Create a JS API with 2 argument
+            APIMETHOD(HelloDLL, API3, "arg1, arg2")
+            {
+                // NOTE: The arg names above ^^^^ have to match the args in the macros below.
+                // arg1 expects a bool
+                SCRIPTCONVERTER(bool, arg1);
+                // arg2 expects an int
+                SCRIPTCONVERTER(int, arg2);
+
+                std::string myValue = "Test";
+                return to_json(myValue);
+            }
+        </pre>
+        <p>Once the DLL is defining all the needed JS APIs, the plugin must tell FormIt what DLLs need loaded.  This is done in the <a href="https://github.com/FormIt3D/HelloAddIn/blob/main/v22_0/manifest.json#L8" target="_blank">manifest</a>.</p>
+        <pre>
+        "DLLs" : ["PLUGINLOCATION/MyClass.dll", "PLUGINLOCATION/HelloDLL.dll"]
+        </pre>
+
+                <p class="categoryDetailBody"><a href="https://github.com/FormIt3D/HelloAddIn" target="_blank">HelloAddIn</a> is a working example that explains how to make an Add-In.</p>
 </div>
 </div>
 
