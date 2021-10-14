@@ -31,14 +31,11 @@ export class CreateBlockButton extends HTMLElement
         const FormItSide = document.querySelector(this.getAttribute("formitside"));
         if (FormItSide.checked)
         {
-            var args =
-                {
-                    "w": parseFloat(await this.width()),
-                    "l": parseFloat(await this.length()),
-                    "h": parseFloat(await this.height())
-                };
-            
-            var result = await FormIt.CallJS("CreateBlock", args);
+            let l = parseFloat(await this.length());
+            let w = parseFloat(await this.width() );
+            let h = parseFloat(await this.height());
+
+            var result = await HelloBlockAsync.CreateBlock(l, w, h);
             console.log(JSON.stringify(result));
         }
         else

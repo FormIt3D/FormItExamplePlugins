@@ -1,6 +1,9 @@
+var HelloBlockAsync = HelloBlockAsync || {};
+
+FormIt.RegisterAsyncAPI("HelloBlockAsync", "CreateBlock", "l, w, h");
 
 // CreateBlock runs from Pyramid.
-function CreateBlock(args)
+HelloBlockAsync.CreateBlock = function(args)
 {
     var histID = FormIt.GroupEdit.GetEditingHistoryID();
     var pt1 = WSM.Geom.Point3d(0.0, 0.0, 0.0);
