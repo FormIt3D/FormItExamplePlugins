@@ -7,6 +7,6 @@
     "CustomDescription": "customdescription.html",
     "Scripts": [
         "PLUGINLOCATION/blockFormItSide.js",
-        "https://formit3d.github.io/SharedPluginUtilities/PluginUtils18_0.js"
+        "https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/PluginUtils18_0.js"
     ]
 }
