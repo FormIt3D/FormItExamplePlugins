@@ -1,6 +1,8 @@
 var _form_it_core_shortcuts_8h =
 [
     [ "kAlignCameraWithFace", "_form_it_core_shortcuts_8h.html#gaf27b4b490e715989cf511c4496cfcd4a", null ],
+    [ "kCameraAxonometric", "_form_it_core_shortcuts_8h.html#gaedf21d19df755341e6467165e8d7d88f", null ],
+    [ "kCameraOblique", "_form_it_core_shortcuts_8h.html#ga6e09fc41dc404e92116a64c77e450c63", null ],
     [ "kCameraOrbit", "_form_it_core_shortcuts_8h.html#gaac4f99678b1313fcc07a5db0f477b709", null ],
     [ "kCameraOrthographic", "_form_it_core_shortcuts_8h.html#ga3f4940effa00cf41021df4d331c00d97", null ],
     [ "kCameraPan", "_form_it_core_shortcuts_8h.html#gaff1e8ac434ad4a664f4bd4f073a99bbf", null ],
@@ -25,6 +27,7 @@ var _form_it_core_shortcuts_8h =
     [ "kDrawPolyline", "_form_it_core_shortcuts_8h.html#ga7baa118a8ee9b789c0b545dd2ef037d7", null ],
     [ "kDrawRectangle", "_form_it_core_shortcuts_8h.html#ga6cc91af8d39c483d85b731fdfaa8153b", null ],
     [ "kDrawSpline", "_form_it_core_shortcuts_8h.html#gafee90c0ff5de6ab4c7da4a322fbef32a", null ],
+    [ "kDrawVertex", "_form_it_core_shortcuts_8h.html#gabc7bfe617aab4a085441dfde18fb94ad", null ],
     [ "kEditCircle", "_form_it_core_shortcuts_8h.html#ga5c3840d2a1103f5c8c7524abfbfd44f3", null ],
     [ "kEditCopy", "_form_it_core_shortcuts_8h.html#ga7a748de227d84ac81c7556075544a850", null ],
     [ "kEditCut", "_form_it_core_shortcuts_8h.html#ga374fc7a8ba43e05422fd09cc68fb2faa", null ],
@@ -83,6 +86,7 @@ var _form_it_core_shortcuts_8h =
     [ "kToggleDisplayWatertight", "_form_it_core_shortcuts_8h.html#ga83a196af8f1c8a08098a8b8bb90ab4cc", null ],
     [ "kToggleEditableDimensions", "_form_it_core_shortcuts_8h.html#ga6bf9a0a716c455af71bf021bb830fec1", null ],
     [ "kToggleLevelsVisible", "_form_it_core_shortcuts_8h.html#ga9ced3902c61735f39db1f4fa6bf1322b", null ],
+    [ "kToggleNoInferencingSmooth", "_form_it_core_shortcuts_8h.html#gac13df63293cb73ed03e03f1183718dad", null ],
     [ "kToggleObjectFilterBodies", "_form_it_core_shortcuts_8h.html#ga074cdb318cd3132d38eb564c27e23cd4", null ],
     [ "kToggleObjectFilterEdges", "_form_it_core_shortcuts_8h.html#ga597093841c0de7cbd402ed58ab34dcf5", null ],
     [ "kToggleObjectFilterFaces", "_form_it_core_shortcuts_8h.html#gae49f78e099d05de322ae718fa2cbb4ea", null ],

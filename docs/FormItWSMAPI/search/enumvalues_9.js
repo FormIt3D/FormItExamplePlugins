@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['undo_1745',['Undo',['../struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087ea1cdc076b28f70afac5fcedadf99fa119',1,'WSM::ModelChangeData']]]
+  ['lcs',['LCS',['../namespace_w_s_m_1_1_utils.html#a227d73790093460cb28d102528f72e0ca7a32a929619887112c381d012d6194eb',1,'WSM::Utils']]],
+  ['line',['Line',['../namespace_w_s_m_1_1_utils.html#a997182459f4f1aa21bff722a61cdbed6a4803e6b9e63dabf04de980788d6a13c4',1,'WSM::Utils']]]
 ];

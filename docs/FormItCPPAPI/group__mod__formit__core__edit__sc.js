@@ -19,6 +19,7 @@ var group__mod__formit__core__edit__sc =
     [ "kSetUnitTypeMetricMeter", "group__mod__formit__core__edit__sc.html#gad03aaf948de8e8a3a30b6319644278a0", null ],
     [ "kSetUnitTypeMetricMillimeter", "group__mod__formit__core__edit__sc.html#ga7436ffe8754a8966d2e36f16ce6a8293", null ],
     [ "kToggleEditableDimensions", "group__mod__formit__core__edit__sc.html#ga6bf9a0a716c455af71bf021bb830fec1", null ],
+    [ "kToggleNoInferencingSmooth", "group__mod__formit__core__edit__sc.html#gac13df63293cb73ed03e03f1183718dad", null ],
     [ "kToggleShowEditedGroupOnly", "group__mod__formit__core__edit__sc.html#ga03ace492765517f84e3cdc4cf25d1756", null ],
     [ "kToggleSnapToGrid", "group__mod__formit__core__edit__sc.html#ga3b2ad433a26bacbb57d80a6b2167890e", null ],
     [ "kToggleUseLevels", "group__mod__formit__core__edit__sc.html#gac43ec6d190431573da2a514ddaa7e2a6", null ],

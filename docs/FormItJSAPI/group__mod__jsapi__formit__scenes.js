@@ -23,6 +23,7 @@ var group__mod__jsapi__formit__scenes =
     [ "GetSceneNames", "group__mod__jsapi__formit__scenes.html#gabd030900bbdba7d0657a0847a9df0360", null ],
     [ "GetSceneNamesFromAnimation", "group__mod__jsapi__formit__scenes.html#ga6e60641cb07536f20733b9b9f5143152", null ],
     [ "GetScenes", "group__mod__jsapi__formit__scenes.html#ga6017addd4dbd6b21f742c68fbbb0a4ea", null ],
+    [ "GetScenesSortedByAnimations", "group__mod__jsapi__formit__scenes.html#gac100c69ca851219b4d21205022e2fb82", null ],
     [ "GetTransitionTime", "group__mod__jsapi__formit__scenes.html#ga96d38047eeb352ae87270430548faaaf", null ],
     [ "GetTransitionTimeUsed", "group__mod__jsapi__formit__scenes.html#ga0102ffc2258767d223952e0bc6b8065c", null ],
     [ "GetUseCameraSpeed", "group__mod__jsapi__formit__scenes.html#gaafdd9f595be6e8da950b7908958b49cd", null ],

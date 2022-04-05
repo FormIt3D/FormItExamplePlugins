@@ -3,6 +3,7 @@ var group__mod__jsapi__formit__model =
     [ "GetCurveAccuracyOrCountCurrent", "group__mod__jsapi__formit__model.html#ga3bc773a87130b31ea3ddf65f14a1273d", null ],
     [ "GetGroupHistoryName", "group__mod__jsapi__formit__model.html#ga14261a85caf651af34d36e2550474911", null ],
     [ "GetHistoryID", "group__mod__jsapi__formit__model.html#ga429407d750e202e0e178d5507471aab9", null ],
+    [ "GetLinearDefault", "group__mod__jsapi__formit__model.html#ga361f25392adfcf417eba425182962e0f", null ],
     [ "GetMemorySize", "group__mod__jsapi__formit__model.html#ga442eea913fe8058f94437531306c1a64", null ],
     [ "GetObjectName", "group__mod__jsapi__formit__model.html#ga7ca2ab5b798dd582a3567345cc6e23f4", null ],
     [ "GetProjectSiteArea", "group__mod__jsapi__formit__model.html#ga2079c91822b5a4df6af987229c9552c1", null ],

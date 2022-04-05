@@ -25,6 +25,7 @@ var group__mod__formitcore__scenes__api__ref =
     [ "GetSceneNames", "group__mod__formitcore__scenes__api__ref.html#ga09e18f64a7f18b4070019a67a0ce786f", null ],
     [ "GetSceneNamesFromAnimation", "group__mod__formitcore__scenes__api__ref.html#ga1122ea70905fd8bf43341b0c2cb02b55", null ],
     [ "GetScenes", "group__mod__formitcore__scenes__api__ref.html#gace09f5895a892c4809bd8ba65057e6f9", null ],
+    [ "GetScenesSortedByAnimations", "group__mod__formitcore__scenes__api__ref.html#ga7be42658895f065c10ff9db80cfd849b", null ],
     [ "GetTransitionTime", "group__mod__formitcore__scenes__api__ref.html#ga9ad72883df3d78373bb87967267e7b02", null ],
     [ "GetTransitionTimeUsed", "group__mod__formitcore__scenes__api__ref.html#gaae65495a5e40879be85464f04253f235", null ],
     [ "GetUseCameraSpeed", "group__mod__formitcore__scenes__api__ref.html#ga6344f3a23aa748a1b564b82db6d681a5", null ],

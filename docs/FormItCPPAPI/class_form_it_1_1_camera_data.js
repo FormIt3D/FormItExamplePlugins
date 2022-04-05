@@ -2,9 +2,10 @@ var class_form_it_1_1_camera_data =
 [
     [ "CameraData", "class_form_it_1_1_camera_data.html#abd7691bc9ae1b5e012ae336b8c9ba6fd", null ],
     [ "CameraData", "class_form_it_1_1_camera_data.html#ad624d7ea17f963f0bbde2a14cdc23e1e", null ],
-    [ "CameraData", "class_form_it_1_1_camera_data.html#af1ddbe28942f87c72c744a807d0d3a4f", null ],
-    [ "operator!=", "class_form_it_1_1_camera_data.html#aa8ffd87f83c0f2c1275f6dd56e6e4395", null ],
-    [ "operator==", "class_form_it_1_1_camera_data.html#a71114932f5752588bdd8f9ac9d170235", null ],
+    [ "CameraData", "class_form_it_1_1_camera_data.html#af929b33c94c5705e373357cf1e85c460", null ],
+    [ "ComputeHorizontalFOV", "class_form_it_1_1_camera_data.html#a801bb925cf157d78fec2ea54c3ac88de", null ],
+    [ "operator!=", "class_form_it_1_1_camera_data.html#aacba70f795d460d158403f382c590e82", null ],
+    [ "operator==", "class_form_it_1_1_camera_data.html#a51a11a680e6bd42a41d09e431b1eca9e", null ],
     [ "mDistanceToTarget", "class_form_it_1_1_camera_data.html#a426644e4c707b879343c2de25cdef177", null ],
     [ "mFOV", "class_form_it_1_1_camera_data.html#a6c14be494185b90285d51778b2aaf830", null ],
     [ "mOrthoHeight", "class_form_it_1_1_camera_data.html#a65caca7d955ecdd8f0cb2a888d6e6b96", null ],

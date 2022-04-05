@@ -41,7 +41,7 @@ var _form_it_core_types_8h =
     [ "AdditionalMaterialAttibute", "_form_it_core_types_8h.html#a1e8196944deabdd9f032631788ea1935", null ],
     [ "AdditionalMaterialTexture", "_form_it_core_types_8h.html#a489d4e95b55e8093f0a89c0dfb98f897", null ],
     [ "AdditionalMaterialTextureId", "_form_it_core_types_8h.html#a66b6925758525b5052cad633503e4686", null ],
-    [ "AllImageData", "_form_it_core_types_8h.html#a095a3a3d6c8bef4af71b6ab72dac6c54", null ],
+    [ "AllImageData", "_form_it_core_types_8h.html#af58c2cd96e497499a182af3cef1acaf7", null ],
     [ "ExtensionInfoPtr", "_form_it_core_types_8h.html#a867d82e5f2010e705b1cbcbd818269c0", null ],
     [ "Guid", "_form_it_core_types_8h.html#a0e118316d2e3f665785cc08d49025179", null ],
     [ "KeyboardModifier_ut", "_form_it_core_types_8h.html#a73f970bf96d292843014f65bdae363c3", null ],
@@ -120,7 +120,9 @@ var _form_it_core_types_8h =
     [ "CameraProjectionType", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9d", [
       [ "PERSPECTIVE", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da4f0c99ebcecf1054dd7cec9ad777fbcb", null ],
       [ "ORTHOGRAPHIC", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da937c9e5cc3ecbb41924dde217b06a27a", null ],
-      [ "PERSPECTIVE2PT", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da4e8ada40941e98992470fc18b8438bf4", null ]
+      [ "PERSPECTIVE2PT", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da4e8ada40941e98992470fc18b8438bf4", null ],
+      [ "AXONOMETRIC", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9daa21140abc2f61818a2cc195c16490187", null ],
+      [ "OBLIQUE", "_form_it_core_types_8h.html#a6287342a8bffa9a89d845895d62d5e9da845677fabc7c0f0a8639c5ff36fa681d", null ]
     ] ],
     [ "ContentType", "_form_it_core_types_8h.html#ga92009419f2f498c13eeeebda1ce0b2ff", [
       [ "Type_Image", "_form_it_core_types_8h.html#gga92009419f2f498c13eeeebda1ce0b2ffa8eca1c56d2b3355593ca188f16ff633c", null ],
@@ -406,6 +408,7 @@ var _form_it_core_types_8h =
       [ "POLYGON", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5aecdc92bf56d960b73b02ee40125758bc", null ],
       [ "OFFSET_LINE", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a330a7f62913084de5bf592f9adae28a5", null ],
       [ "CONFIRM_ACTION", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a63ccf71e63479d588724aec627d764fb", null ],
+      [ "VERTEX", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a0c3e47aef93a7f244f41ab309a33634b", null ],
       [ "NUM_TOOLS", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a53121bbe006c5ad57ed1e96e5a9d4b5c", null ]
     ] ],
     [ "Type", "_form_it_core_types_8h.html#aac4d6363bc4b0b343e90bbea51798015", [
@@ -571,10 +574,10 @@ var _form_it_core_types_8h =
       [ "UNRECOGNIZED_VERSION", "_form_it_core_types_8h.html#aa9c590ca218abae77afc6303a8bb492fabaea9bfd364ba78840d9316fee1b03cb", null ],
       [ "NONE", "_form_it_core_types_8h.html#aa9c590ca218abae77afc6303a8bb492fab50339a10e1de285ac99d4c3990b8693", null ]
     ] ],
+    [ "enable_bitmask_operators", "_form_it_core_types_8h.html#a325c64a125ec4f28e4a38840a1e4c60e", null ],
     [ "enable_bitmask_operators", "_form_it_core_types_8h.html#a810ea3ca3cfd74e81a9f5bd7f717b40a", null ],
     [ "enable_bitmask_operators", "_form_it_core_types_8h.html#a15301caadb57cdef0ac2b5ad3a9aefaf", null ],
     [ "enable_bitmask_operators", "_form_it_core_types_8h.html#ab26d50c4dc10aebd590c7438125823e3", null ],
-    [ "enable_bitmask_operators", "_form_it_core_types_8h.html#a325c64a125ec4f28e4a38840a1e4c60e", null ],
     [ "operator&", "_form_it_core_types_8h.html#ad7b98342beae5ad49c96a7f053b2b334", null ],
     [ "operator&=", "_form_it_core_types_8h.html#aada9ea4c446720951c34a68e87d7f8be", null ],
     [ "operator^", "_form_it_core_types_8h.html#a3dfd1260c106f1f298df885f288c60e0", null ],

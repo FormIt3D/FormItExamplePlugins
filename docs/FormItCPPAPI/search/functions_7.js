@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['handlehudtextinput_3567',['HandleHUDTextInput',['../group__mod__formitcore__api__ref.html#gabfe871d68a0d15902186b73ef6b69552',1,'FormIt']]],
-  ['hasformitbaketoformitnode_3568',['HasFormItBakeToFormItNode',['../group__mod__formitcore__dynamo__api__ref.html#ga9faa15e17c1e60a2358dd22bb9dd35f3',1,'FormIt::Dynamo']]],
-  ['hasformitselectionnodes_3569',['HasFormItSelectionNodes',['../group__mod__formitcore__dynamo__api__ref.html#gaca0529fa2e51240a36604fce7eff5266',1,'FormIt::Dynamo']]],
-  ['hash_5fcombine_3570',['hash_combine',['../_object_history_i_d_8h.html#a5dc21b60f50d5f85cb0e29017d3b4891',1,'ObjectHistoryID.h']]],
-  ['hashistoryobjectids_3571',['HasHistoryObjectIDs',['../class_w_s_m_1_1_result.html#a9271a7e6962888411667cdd7996c8c9f',1,'WSM::Result']]],
-  ['hashvalueformaterialdata_3572',['HashValueForMaterialData',['../group__mod__formitcore__sketchmaterials__api__ref.html#gaa56ecf7b50a91c01d9e7071e2d78199a',1,'FormIt::SketchMaterials']]],
-  ['haslevelsinproject_3573',['HasLevelsInProject',['../group__mod__formitcore__levels__api__ref.html#gaadb0ade949b69af4ca59cac1bf40303e',1,'FormIt::Levels']]],
-  ['haspreselections_3574',['HasPreSelections',['../group__mod__formitcore__selection__api__ref.html#ga5925bfe7e7641a3ae199b1217c4b34ed',1,'FormIt::Selection']]],
-  ['hasselections_3575',['HasSelections',['../group__mod__formitcore__selection__api__ref.html#gabf2111239de381218b7399ca43caed8b',1,'FormIt::Selection']]],
-  ['haswarning_3576',['HasWarning',['../class_w_s_m_1_1_result.html#a1efa571d5505b21cbcec38258a2807fb',1,'WSM::Result']]],
-  ['historyid_3577',['HistoryID',['../struct_form_it_1_1_undo_management_1_1_history_i_d.html#a905003e9e59fe228bc2b49a005cdc06d',1,'FormIt::UndoManagement::HistoryID::HistoryID()=default'],['../struct_form_it_1_1_undo_management_1_1_history_i_d.html#ada5422567abf2b93a4b0fd01fa72656e',1,'FormIt::UndoManagement::HistoryID::HistoryID(size_t id)']]],
-  ['homeview3d_3578',['HomeView3d',['../namespace_form_it_1_1_view.html#aa335fbf0e7b6725342e06170a0312636',1,'FormIt::View']]]
+  ['handlehudtextinput',['HandleHUDTextInput',['../group__mod__formitcore__api__ref.html#gabfe871d68a0d15902186b73ef6b69552',1,'FormIt']]],
+  ['hasformitbaketoformitnode',['HasFormItBakeToFormItNode',['../group__mod__formitcore__dynamo__api__ref.html#ga9faa15e17c1e60a2358dd22bb9dd35f3',1,'FormIt::Dynamo']]],
+  ['hasformitselectionnodes',['HasFormItSelectionNodes',['../group__mod__formitcore__dynamo__api__ref.html#ga788cc06eb36c1270b9e1df1ad875987e',1,'FormIt::Dynamo']]],
+  ['hash_5fcombine',['hash_combine',['../_object_history_i_d_8h.html#a5dc21b60f50d5f85cb0e29017d3b4891',1,'ObjectHistoryID.h']]],
+  ['hashistory',['HasHistory',['../class_w_s_m_1_1_utils_1_1_history_objects.html#ac362be9390057a96d5e2022dee74702d',1,'WSM::Utils::HistoryObjects']]],
+  ['hashistoryobjectids',['HasHistoryObjectIDs',['../class_w_s_m_1_1_result.html#a4dc4ecc43fa8e98c22015e79eac8218e',1,'WSM::Result']]],
+  ['hashvalueformaterialdata',['HashValueForMaterialData',['../group__mod__formitcore__sketchmaterials__api__ref.html#gaa56ecf7b50a91c01d9e7071e2d78199a',1,'FormIt::SketchMaterials']]],
+  ['haslevelsinproject',['HasLevelsInProject',['../group__mod__formitcore__levels__api__ref.html#gaadb0ade949b69af4ca59cac1bf40303e',1,'FormIt::Levels']]],
+  ['haspreselections',['HasPreSelections',['../group__mod__formitcore__selection__api__ref.html#ga5925bfe7e7641a3ae199b1217c4b34ed',1,'FormIt::Selection']]],
+  ['hasselections',['HasSelections',['../group__mod__formitcore__selection__api__ref.html#gabf2111239de381218b7399ca43caed8b',1,'FormIt::Selection']]],
+  ['hassmoothedge',['HasSmoothEdge',['../namespace_w_s_m_1_1_utils.html#aa7c0d30776c5ef84718a746948e0518e',1,'WSM::Utils']]],
+  ['haswarning',['HasWarning',['../class_w_s_m_1_1_result.html#a8db6a3286a63534703101b85e0215219',1,'WSM::Result']]],
+  ['historyboundshelper',['HistoryBoundsHelper',['../class_w_s_m_1_1_utils_1_1_history_bounds_helper.html#acc91d88c6f2993be4e324849380f82f1',1,'WSM::Utils::HistoryBoundsHelper::HistoryBoundsHelper(size_t nHistoryID, ObjectTypes types=WSM::Utils::ObjectTypes::NONE)'],['../class_w_s_m_1_1_utils_1_1_history_bounds_helper.html#a24aba7af620f84e6137b34e14f72e5cf',1,'WSM::Utils::HistoryBoundsHelper::HistoryBoundsHelper(const 1::vector&lt; WSM::GroupInstancePath &gt; &amp;aPaths, ObjectTypes types=WSM::Utils::ObjectTypes::NONE, bool inHCS=false)']]],
+  ['historyid',['HistoryID',['../struct_form_it_1_1_undo_management_1_1_history_i_d.html#a905003e9e59fe228bc2b49a005cdc06d',1,'FormIt::UndoManagement::HistoryID::HistoryID()=default'],['../struct_form_it_1_1_undo_management_1_1_history_i_d.html#ada5422567abf2b93a4b0fd01fa72656e',1,'FormIt::UndoManagement::HistoryID::HistoryID(size_t id)']]],
+  ['historyobjects',['HistoryObjects',['../class_w_s_m_1_1_utils_1_1_history_objects.html#a38e2be36b00059e423446cd62b51e9a8',1,'WSM::Utils::HistoryObjects::HistoryObjects()'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#aa833cd30d4b78834d72f064984801cfd',1,'WSM::Utils::HistoryObjects::HistoryObjects(GroupInstancePath const &amp;obj)'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#a9c9784231bd92875b2eeb29796b62e57',1,'WSM::Utils::HistoryObjects::HistoryObjects(GroupInstancePathArray const &amp;objs)'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#aa1be19e524274bcc370d6e633d110fea',1,'WSM::Utils::HistoryObjects::HistoryObjects(ObjectHistoryIDArray const &amp;objs)'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#a4abed15ebdbb31796971169df88b8174',1,'WSM::Utils::HistoryObjects::HistoryObjects(ObjectHistoryID const &amp;obj)'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#a138e69d8c4e67bf6bf0d1d8cbeb2e933',1,'WSM::Utils::HistoryObjects::HistoryObjects(ObjectIDArray const &amp;objectIDs)'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#ac883e3f1f861d2c301bc4324574aa92c',1,'WSM::Utils::HistoryObjects::HistoryObjects(size_t objectID)'],['../class_w_s_m_1_1_utils_1_1_history_objects.html#a7fd2d05c92112d815531922c0773cc7f',1,'WSM::Utils::HistoryObjects::HistoryObjects(json &amp;jin, 1::string const &amp;objectsKey, 1::string history=&quot;NOTSPECIFIED&quot;, 1::string groupInstancePathKey=&quot;NOTSPECIFIED&quot;)']]],
+  ['homeview3d',['HomeView3d',['../namespace_form_it_1_1_view.html#aa335fbf0e7b6725342e06170a0312636',1,'FormIt::View']]]
 ];

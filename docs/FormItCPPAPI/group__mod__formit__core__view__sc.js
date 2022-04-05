@@ -1,6 +1,8 @@
 var group__mod__formit__core__view__sc =
 [
     [ "kAlignCameraWithFace", "group__mod__formit__core__view__sc.html#gaf27b4b490e715989cf511c4496cfcd4a", null ],
+    [ "kCameraAxonometric", "group__mod__formit__core__view__sc.html#gaedf21d19df755341e6467165e8d7d88f", null ],
+    [ "kCameraOblique", "group__mod__formit__core__view__sc.html#ga6e09fc41dc404e92116a64c77e450c63", null ],
     [ "kCameraOrbit", "group__mod__formit__core__view__sc.html#gaac4f99678b1313fcc07a5db0f477b709", null ],
     [ "kCameraOrthographic", "group__mod__formit__core__view__sc.html#ga3f4940effa00cf41021df4d331c00d97", null ],
     [ "kCameraPan", "group__mod__formit__core__view__sc.html#gaff1e8ac434ad4a664f4bd4f073a99bbf", null ],

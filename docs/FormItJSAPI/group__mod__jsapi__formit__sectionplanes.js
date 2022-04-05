@@ -6,6 +6,7 @@ var group__mod__jsapi__formit__sectionplanes =
     [ "GetLastSectionRefHistory", "group__mod__jsapi__formit__sectionplanes.html#ga0346912b62ecca4798a9e4898c6d22f9", null ],
     [ "GetOutlineColor", "group__mod__jsapi__formit__sectionplanes.html#ga3060a32d9043a96ab0a66de5feba20e5", null ],
     [ "GetOutlineSize", "group__mod__jsapi__formit__sectionplanes.html#gaac408b7e626ff19fa8364d144348e1ec", null ],
+    [ "GetPlaneLayers", "group__mod__jsapi__formit__sectionplanes.html#ga724889fe8b957df1e015fc1d32bc0550", null ],
     [ "GetPlanes", "group__mod__jsapi__formit__sectionplanes.html#ga4b1d4253a5538035e2051cfb568a26b1", null ],
     [ "GetPocheColor", "group__mod__jsapi__formit__sectionplanes.html#gab2d2768bf8630f85c9e140c14df5ec47", null ],
     [ "IsPocheColorEnabled", "group__mod__jsapi__formit__sectionplanes.html#gaa86d6356758c36930b4b02213a8d9c51", null ],

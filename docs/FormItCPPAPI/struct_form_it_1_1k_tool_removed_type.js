@@ -1,6 +1,6 @@
 var struct_form_it_1_1k_tool_removed_type =
 [
     [ "Payload", "struct_form_it_1_1k_tool_removed_type.html#ad4792fcce166944abf71da2f3152b331", null ],
-    [ "extract", "struct_form_it_1_1k_tool_removed_type.html#a4fd7df5fff06b4cccbc7727a0231cc4b", null ],
-    [ "message", "struct_form_it_1_1k_tool_removed_type.html#a254bb55fc9b134e8521d1e2638961f67", null ]
+    [ "extract", "struct_form_it_1_1k_tool_removed_type.html#aa9e53eb5ac00e9d0ac8b87f9e9ef8e76", null ],
+    [ "message", "struct_form_it_1_1k_tool_removed_type.html#acedc6c995b9da4c5d64224b250d3171d", null ]
 ];

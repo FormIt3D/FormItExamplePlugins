@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['projectiontype_1515',['ProjectionType',['../class_w_s_m_1_1_transf3d.html#a39d353f6a498c9e5138ae46e0d8a3478',1,'WSM::Transf3d']]]
+  ['inferenceeventid',['InferenceEventId',['../class_w_s_m_1_1_utils_1_1_i_app_helper.html#a721a5ae8cc03ffc20480160bb6db743a',1,'WSM::Utils::IAppHelper']]]
 ];

@@ -1,5 +1,6 @@
 var _w_s_m___constants_8h =
 [
+    [ "ENUM", "_w_s_m___constants_8h.html#a378181c29a641d58f55d647b5a9599f2", null ],
     [ "WSM_2PI", "_w_s_m___constants_8h.html#ad3b9326bef71232be69c4657f70afaf7", null ],
     [ "WSM_ANGLE_TOL", "_w_s_m___constants_8h.html#ab4f04c496c4172bb149cb678fb136772", null ],
     [ "WSM_ANGLE_TOL2", "_w_s_m___constants_8h.html#a730ec804a07d258a459d0b525967768f", null ],

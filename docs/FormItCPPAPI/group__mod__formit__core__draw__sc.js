@@ -9,5 +9,6 @@ var group__mod__formit__core__draw__sc =
     [ "kDrawPolygon", "group__mod__formit__core__draw__sc.html#gaa290109d46f7b2bee9b09754e8385914", null ],
     [ "kDrawPolyline", "group__mod__formit__core__draw__sc.html#ga7baa118a8ee9b789c0b545dd2ef037d7", null ],
     [ "kDrawRectangle", "group__mod__formit__core__draw__sc.html#ga6cc91af8d39c483d85b731fdfaa8153b", null ],
-    [ "kDrawSpline", "group__mod__formit__core__draw__sc.html#gafee90c0ff5de6ab4c7da4a322fbef32a", null ]
+    [ "kDrawSpline", "group__mod__formit__core__draw__sc.html#gafee90c0ff5de6ab4c7da4a322fbef32a", null ],
+    [ "kDrawVertex", "group__mod__formit__core__draw__sc.html#gabc7bfe617aab4a085441dfde18fb94ad", null ]
 ];

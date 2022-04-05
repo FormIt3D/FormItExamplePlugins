@@ -3,6 +3,7 @@ var group__mod__formitcore__model__api__ref =
     [ "GetCurveAccuracyOrCountCurrent", "group__mod__formitcore__model__api__ref.html#gae82abfb0362be71a464e49f035055785", null ],
     [ "GetGroupHistoryName", "group__mod__formitcore__model__api__ref.html#gaba6b79316abf4ef15f6b0391843cc559", null ],
     [ "GetHistoryID", "group__mod__formitcore__model__api__ref.html#gae3694e869c6a25561870107870ac0363", null ],
+    [ "GetLinearDefault", "group__mod__formitcore__model__api__ref.html#gab1f04e24c916e25de0bbcd0cd9ef2d24", null ],
     [ "GetMemorySize", "group__mod__formitcore__model__api__ref.html#ga482e36f3600ae1b77423da11c0c12d9d", null ],
     [ "GetObjectName", "group__mod__formitcore__model__api__ref.html#ga49a163904bc52dd19cfbb4e4db977ca5", null ],
     [ "GetProjectSiteArea", "group__mod__formitcore__model__api__ref.html#ga81daf46dbf63795d8a9b6f8c2ebf029b", null ],

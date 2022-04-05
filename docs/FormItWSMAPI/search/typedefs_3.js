@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['progresscbk_1503',['ProgressCbk',['../group__mod__wsm__apiprogress__api__ref.html#ga56e23c2f831917e6b6623696564fbc9c',1,'WSM::ApiProgress']]],
-  ['progresscbkfn_1504',['ProgressCbkFn',['../group__mod__wsm__apiprogress__api__ref.html#gaa8d5d4e48fbd70bbb1c3a6f22a0e6b17',1,'WSM::ApiProgress']]]
+  ['isobjecthiddenfunctiontype',['IsObjectHiddenFunctionType',['../group__mod__wsm__api__ref.html#ga38fa496a3e6ef02e94e1ca80028a4053',1,'WSM']]]
 ];

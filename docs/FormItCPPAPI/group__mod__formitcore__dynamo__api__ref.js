@@ -12,7 +12,7 @@ var group__mod__formitcore__dynamo__api__ref =
     [ "GetSelectedDynamoHistory", "group__mod__formitcore__dynamo__api__ref.html#gaeec163ae8464d49ab789600cb0497215", null ],
     [ "GetUuid", "group__mod__formitcore__dynamo__api__ref.html#ga11e66dbfc8e8810cbe118cb6583dc296", null ],
     [ "HasFormItBakeToFormItNode", "group__mod__formitcore__dynamo__api__ref.html#ga9faa15e17c1e60a2358dd22bb9dd35f3", null ],
-    [ "HasFormItSelectionNodes", "group__mod__formitcore__dynamo__api__ref.html#gaca0529fa2e51240a36604fce7eff5266", null ],
+    [ "HasFormItSelectionNodes", "group__mod__formitcore__dynamo__api__ref.html#ga788cc06eb36c1270b9e1df1ad875987e", null ],
     [ "IsDynamoHistory", "group__mod__formitcore__dynamo__api__ref.html#ga10320702e041a971b1d93e5f9ed36145", null ],
     [ "RemoveDynamoAttributeAfterUngroup", "group__mod__formitcore__dynamo__api__ref.html#ga6ac432146d722d6bd27bfc97fe2a4947", null ],
     [ "SetDynamoFile", "group__mod__formitcore__dynamo__api__ref.html#gac4cd2d37d250c40104761a11ec2d8288", null ],

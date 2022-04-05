@@ -24,7 +24,7 @@ var group__mod__jsapi__wsm__tools =
     [ "APIReset", "group__mod__jsapi__wsm__tools.html#gac069eb13e9ecc6552ea47b3c702772c3", null ],
     [ "APIResetCurrentPoint", "group__mod__jsapi__wsm__tools.html#ga65f8e51933a66534829a5d797e6b07bb", null ],
     [ "APIResetTool", "group__mod__jsapi__wsm__tools.html#ga1ca6bdb88806da1671b368642cf50c33", null ],
-    [ "APIResetToolModelChange", "group__mod__jsapi__wsm__tools.html#ga5a7d17f6a59c49f517ed527fefec988e", null ],
+    [ "APIResetToolModelChange", "group__mod__jsapi__wsm__tools.html#ga03a139a4d9e80a1c2311235ff75556f4", null ],
     [ "APISetDefaultPoints", "group__mod__jsapi__wsm__tools.html#gae59b7fd336969a39b533a4c673ae7e17", null ],
     [ "APISetEditingMode", "group__mod__jsapi__wsm__tools.html#gaf86aff679fe111b3db0d0f1ae3895f02", null ],
     [ "APISetOperationMode", "group__mod__jsapi__wsm__tools.html#ga1f6cab26643d6486a7306d5473a35780", null ],

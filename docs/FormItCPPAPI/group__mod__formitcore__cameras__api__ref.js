@@ -8,5 +8,8 @@ var group__mod__formitcore__cameras__api__ref =
     [ "GetProjectionType", "group__mod__formitcore__cameras__api__ref.html#gaf6a4015b038729a1e6bd4dcdf3de821f", null ],
     [ "GetViewportSize", "group__mod__formitcore__cameras__api__ref.html#ga137550b9c0b49bb50772a23100692106", null ],
     [ "SetCameraData", "group__mod__formitcore__cameras__api__ref.html#gaf0c53b0138f09a69c6039efdd2afd8cc", null ],
-    [ "SetProjectionType", "group__mod__formitcore__cameras__api__ref.html#gab7610e83b832bbe660f87f092fb7466a", null ]
+    [ "SetFieldOfView", "group__mod__formitcore__cameras__api__ref.html#ga2922603c56b4de9b7e4d88143e10def8", null ],
+    [ "SetPositionAndOrientation", "group__mod__formitcore__cameras__api__ref.html#gabbd38d54e1c0c70818f7c74c5844a13a", null ],
+    [ "SetProjectionType", "group__mod__formitcore__cameras__api__ref.html#gab7610e83b832bbe660f87f092fb7466a", null ],
+    [ "SetWorldForward", "group__mod__formitcore__cameras__api__ref.html#ga6c40aeff752a84226402112fae5650ea", null ]
 ];

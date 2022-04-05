@@ -1,7 +1,7 @@
 var group__mod__jsapi__wsm__inferenceengine =
 [
     [ "AddLineInference", "group__mod__jsapi__wsm__inferenceengine.html#gabed7f76d1fb505066de3bd98eb1cfc7a", null ],
-    [ "AddLineInferencesForObject", "group__mod__jsapi__wsm__inferenceengine.html#ga23e5aa1effdd6e4e06b92297c64041a0", null ],
+    [ "AddLineInferencesForObject", "group__mod__jsapi__wsm__inferenceengine.html#gaa2cc48726c301b204f1a0a78808cc524", null ],
     [ "AddPlaneInference", "group__mod__jsapi__wsm__inferenceengine.html#gad56c23f03642539c55439b09ddd086d6", null ],
     [ "AddPointInference", "group__mod__jsapi__wsm__inferenceengine.html#ga817d50d0eee79d3fe11cdf01ae730cd1", null ],
     [ "ClearCustomLineInferences", "group__mod__jsapi__wsm__inferenceengine.html#gad2455fffaf455c404ad78f4b1eb3dd82", null ],
@@ -11,7 +11,7 @@ var group__mod__jsapi__wsm__inferenceengine =
     [ "DisableHoveredInferences", "group__mod__jsapi__wsm__inferenceengine.html#ga9c77ef995107f5243a0b1a1025eff45c", null ],
     [ "FindInputPoint", "group__mod__jsapi__wsm__inferenceengine.html#ga18176be3ec53e00aa83c205a4a427f4f", null ],
     [ "HaveLockedInference", "group__mod__jsapi__wsm__inferenceengine.html#ga27f592fe54833f20f5f36a3706d96a75", null ],
-    [ "IgnoreObject", "group__mod__jsapi__wsm__inferenceengine.html#ga78e79a285cd4c99bd54a769d39d62459", null ],
+    [ "IgnoreObject", "group__mod__jsapi__wsm__inferenceengine.html#ga0a77ba9bfbb28fb78234a6965c462c3e", null ],
     [ "InputPoint", "group__mod__jsapi__wsm__inferenceengine.html#gaa6b58228a962170853abafacfc4e8e25", null ],
     [ "InputPointsAreEqual", "group__mod__jsapi__wsm__inferenceengine.html#gafc80196353791f9e831cc56ea7e20b0d", null ],
     [ "LineInference", "group__mod__jsapi__wsm__inferenceengine.html#gae9701f2e94c1bc6d21bdb7f6cd955154", null ],

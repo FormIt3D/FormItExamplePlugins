@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['deletedhistory_1520',['DeletedHistory',['../struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087eae40d6f2a797a5a2311b7cb215e95c6f9',1,'WSM::ModelChangeData']]],
-  ['deletingallhistory_1521',['DeletingAllHistory',['../struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087ea259e2c8fab751eb05f4786f9034e579a',1,'WSM::ModelChangeData']]],
-  ['deltaclosed_1522',['DeltaClosed',['../struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087ea837fe304a2bb1feb228ea76127c723f5',1,'WSM::ModelChangeData']]],
-  ['deltasmerged_1523',['DeltasMerged',['../struct_w_s_m_1_1_model_change_data.html#a6f2e0e1bb62ae6798d5a20a34d84087ea026e40dc7e17e2182f0b5901c5062b35',1,'WSM::ModelChangeData']]]
+  ['blend',['Blend',['../namespace_w_s_m_1_1_utils.html#ad67a76426366086cc5d19598a0a9befca09ac609fcdb514c9adca34e7f97b4ac4',1,'WSM::Utils']]],
+  ['breakatjunction',['BreakAtJunction',['../namespace_w_s_m_1_1_utils.html#ad70c76837410cc3aa94257aff5860a3ba2463ba6b75fcc9425b789cbafdd5b933',1,'WSM::Utils']]],
+  ['breakatjunctionnonsmooth',['BreakAtJunctionNonSmooth',['../namespace_w_s_m_1_1_utils.html#ad70c76837410cc3aa94257aff5860a3ba38def6e94ddaa9b5b79bdb7f03a18a1d',1,'WSM::Utils']]]
 ];

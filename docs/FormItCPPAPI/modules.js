@@ -15,7 +15,7 @@ var modules =
     [ "FormIt::VisualStyles API", "group__mod__formitcore__visualstyles__api__ref.html", "group__mod__formitcore__visualstyles__api__ref" ],
     [ "FormIt::Selection API", "group__mod__formitcore__selection__api__ref.html", "group__mod__formitcore__selection__api__ref" ],
     [ "FormIt::Clipboard API", "group__mod__formitcore__clipboard__api__ref.html", "group__mod__formitcore__clipboard__api__ref" ],
-    [ "FormIt::Analysis API", "group__mod__formitcore__analysis__api__ref.html", null ],
+    [ "FormIt::Analysis API", "group__mod__formitcore__analysis__api__ref.html", "group__mod__formitcore__analysis__api__ref" ],
     [ "FormIt::Analysis::Solar API", "group__mod__formitcore__analysis__solar__api__ref.html", "group__mod__formitcore__analysis__solar__api__ref" ],
     [ "FormIt::Scenes API", "group__mod__formitcore__scenes__api__ref.html", "group__mod__formitcore__scenes__api__ref" ],
     [ "FormIt::Layers API", "group__mod__formitcore__layers__api__ref.html", "group__mod__formitcore__layers__api__ref" ],

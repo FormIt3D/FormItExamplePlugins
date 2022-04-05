@@ -1,5 +1,6 @@
 var group__mod__formitcore__forge__api__ref =
 [
+    [ "UI", "namespace_form_it_1_1_forge_1_1_u_i.html", null ],
     [ "CheckEntitlements", "group__mod__formitcore__forge__api__ref.html#ga2eaa4b34d1415d0a67b1e7acc3ca7fdd", null ],
     [ "CreateRemoteFile", "group__mod__formitcore__forge__api__ref.html#gad9248d1b4c49e5201e4ebcc92edd7008", null ],
     [ "CreateThumbNailDerivative", "group__mod__formitcore__forge__api__ref.html#ga504434f372b9c9fede6ec0880c74edf8", null ],
