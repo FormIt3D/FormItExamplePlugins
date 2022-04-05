@@ -13,6 +13,7 @@ var group__mod__formitcore__undomanagement__api__ref =
     [ "GetStateHistories", "group__mod__formitcore__undomanagement__api__ref.html#ga33d1540dd48120599353985ebbbcbdb8", null ],
     [ "GlobalRedo", "group__mod__formitcore__undomanagement__api__ref.html#ga115ed3422b10da11782ebcbd5aa3052c", null ],
     [ "GlobalUndo", "group__mod__formitcore__undomanagement__api__ref.html#ga43f6cdf8c51c5ec1fc0f73ea09d983ab", null ],
+    [ "IsInRollingMultipleHistories", "group__mod__formitcore__undomanagement__api__ref.html#ga0af5d453902af54f172350c6362cbf9c", null ],
     [ "MergeCurrentStates", "group__mod__formitcore__undomanagement__api__ref.html#gacb0006fd17e742a50af4d00a20eb7295", null ],
     [ "MergeStateRange", "group__mod__formitcore__undomanagement__api__ref.html#gab91ffec36902d3077c96c710db4942e3", null ],
     [ "MergeStates", "group__mod__formitcore__undomanagement__api__ref.html#gaf58da2ad025d44c77b2d1ff740cf9b76", null ],

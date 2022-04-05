@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Autodesk_logo_web.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FormIt C++ API
-   &#160;<span id="projectnumber">v24.0.0 (2023.1.0)</span>
+   &#160;<span id="projectnumber">v23.0.0 (2023.0.0)</span>
    </div>
   </td>
  </tr>
@@ -613,6 +613,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_undo_redo_executed_type.html">kUndoRedoExecutedType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo or Redo was executed, payload is new state ID.  <a href="struct_form_it_1_1k_undo_redo_executed_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html">kUndoRedoMultipleHistoriesEndedType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when undo or redo on multiple Histories is finished so that operations that were paused (for example rendering) can be updated.  <a href="struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_form_it_1_1k_undo_redo_per_history_type.html">kUndoRedoPerHistoryType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo or Redo was executed in the given History, payload is the History ID.  <a href="struct_form_it_1_1k_undo_redo_per_history_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -833,8 +836,6 @@ Variables</h2></td></tr>
 <tr class="separator:ga6d8a5b2902b4798861efe6cbf82dae40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a9e17ead5d42914e0d77d039232ba27"><td class="memItemLeft" align="right" valign="top">FORMIT_CORE_EXPORT::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__draw__sc.html#ga1a9e17ead5d42914e0d77d039232ba27">kDrawCircle</a></td></tr>
 <tr class="separator:ga1a9e17ead5d42914e0d77d039232ba27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc7bfe617aab4a085441dfde18fb94ad"><td class="memItemLeft" align="right" valign="top">FORMIT_CORE_EXPORT::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__draw__sc.html#gabc7bfe617aab4a085441dfde18fb94ad">kDrawVertex</a></td></tr>
-<tr class="separator:gabc7bfe617aab4a085441dfde18fb94ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7baa118a8ee9b789c0b545dd2ef037d7"><td class="memItemLeft" align="right" valign="top">FORMIT_CORE_EXPORT::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__draw__sc.html#ga7baa118a8ee9b789c0b545dd2ef037d7">kDrawPolyline</a></td></tr>
 <tr class="separator:ga7baa118a8ee9b789c0b545dd2ef037d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6cc91af8d39c483d85b731fdfaa8153b"><td class="memItemLeft" align="right" valign="top">FORMIT_CORE_EXPORT::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mod__formit__core__draw__sc.html#ga6cc91af8d39c483d85b731fdfaa8153b">kDrawRectangle</a></td></tr>
@@ -1358,6 +1359,8 @@ Variables</h2></td></tr>
 <tr class="separator:a3f60cccf18d02d0a4246a172aad1cc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef750917338b19c1fb42cd2fc257ce6d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_analytics_log_type.html">kAnalyticsLogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#aef750917338b19c1fb42cd2fc257ce6d">kAnalyticsLog</a></td></tr>
 <tr class="separator:aef750917338b19c1fb42cd2fc257ce6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf0b572d78715f46dd3e685922373b6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html">kUndoRedoMultipleHistoriesEndedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#abbf0b572d78715f46dd3e685922373b6">kUndoRedoMultipleHistoriesEnded</a></td></tr>
+<tr class="separator:abbf0b572d78715f46dd3e685922373b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecba6d06e69742776c5e135b6dcfe021"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_send_to_revit_preview_changed_type.html">kSendToRevitPreviewChangedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#aecba6d06e69742776c5e135b6dcfe021">kSendToRevitPreviewChanged</a></td></tr>
 <tr class="separator:aecba6d06e69742776c5e135b6dcfe021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f6de8d0704090d705917c367cf15bf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_form_it_1_1k_panoram_in_progress_type.html">kPanoramInProgressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_form_it.html#a88f6de8d0704090d705917c367cf15bf">kPanoramInProgress</a></td></tr>
@@ -1575,7 +1578,6 @@ Variables</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespace_form_it.html#aa9da6f100181b885662ea3656f6c97d5a330a7f62913084de5bf592f9adae28a5">ToolType::OFFSET_LINE</a> = 88, 
 <a class="el" href="namespace_form_it.html#aa9da6f100181b885662ea3656f6c97d5a63ccf71e63479d588724aec627d764fb">ToolType::CONFIRM_ACTION</a> = 89, 
-<a class="el" href="namespace_form_it.html#aa9da6f100181b885662ea3656f6c97d5a0c3e47aef93a7f244f41ab309a33634b">ToolType::VERTEX</a> = 90, 
 <a class="el" href="namespace_form_it.html#aa9da6f100181b885662ea3656f6c97d5a53121bbe006c5ad57ed1e96e5a9d4b5c">ToolType::NUM_TOOLS</a>
 <br />
  }</td></tr>
@@ -2699,9 +2701,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aa9da6f100181b885662ea3656f6c97d5a330a7f62913084de5bf592f9adae28a5"></a>OFFSET_LINE&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aa9da6f100181b885662ea3656f6c97d5a63ccf71e63479d588724aec627d764fb"></a>CONFIRM_ACTION&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa9da6f100181b885662ea3656f6c97d5a0c3e47aef93a7f244f41ab309a33634b"></a>VERTEX&#160;</td><td class="fielddoc">
-<p>Shortcut created, search for kDrawVertex to see where. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aa9da6f100181b885662ea3656f6c97d5a53121bbe006c5ad57ed1e96e5a9d4b5c"></a>NUM_TOOLS&#160;</td><td class="fielddoc">
 <p>Always keep at end! </p>
@@ -4541,6 +4540,18 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="struct_form_it_1_1k_undo_redo_executed_type.html">kUndoRedoExecutedType</a> FormIt::kUndoRedoExecuted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbf0b572d78715f46dd3e685922373b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html">kUndoRedoMultipleHistoriesEndedType</a> FormIt::kUndoRedoMultipleHistoriesEnded</td>
         </tr>
       </table>
 </div><div class="memdoc">

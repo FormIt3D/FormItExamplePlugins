@@ -408,7 +408,6 @@ var _form_it_core_types_8h =
       [ "POLYGON", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5aecdc92bf56d960b73b02ee40125758bc", null ],
       [ "OFFSET_LINE", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a330a7f62913084de5bf592f9adae28a5", null ],
       [ "CONFIRM_ACTION", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a63ccf71e63479d588724aec627d764fb", null ],
-      [ "VERTEX", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a0c3e47aef93a7f244f41ab309a33634b", null ],
       [ "NUM_TOOLS", "_form_it_core_types_8h.html#aa9da6f100181b885662ea3656f6c97d5a53121bbe006c5ad57ed1e96e5a9d4b5c", null ]
     ] ],
     [ "Type", "_form_it_core_types_8h.html#aac4d6363bc4b0b343e90bbea51798015", [

@@ -150,6 +150,7 @@ var namespace_form_it =
     [ "kUndoManagerUpdateType", "struct_form_it_1_1k_undo_manager_update_type.html", "struct_form_it_1_1k_undo_manager_update_type" ],
     [ "kUndoRedoAvailabilityChangedType", "struct_form_it_1_1k_undo_redo_availability_changed_type.html", "struct_form_it_1_1k_undo_redo_availability_changed_type" ],
     [ "kUndoRedoExecutedType", "struct_form_it_1_1k_undo_redo_executed_type.html", "struct_form_it_1_1k_undo_redo_executed_type" ],
+    [ "kUndoRedoMultipleHistoriesEndedType", "struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html", "struct_form_it_1_1k_undo_redo_multiple_histories_ended_type" ],
     [ "kUndoRedoPerHistoryType", "struct_form_it_1_1k_undo_redo_per_history_type.html", "struct_form_it_1_1k_undo_redo_per_history_type" ],
     [ "kUnfollowCameraType", "struct_form_it_1_1k_unfollow_camera_type.html", "struct_form_it_1_1k_unfollow_camera_type" ],
     [ "kUninstallPluginType", "struct_form_it_1_1k_uninstall_plugin_type.html", "struct_form_it_1_1k_uninstall_plugin_type" ],

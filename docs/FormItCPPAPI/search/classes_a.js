@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['materialdata',['MaterialData',['../struct_w_s_m_1_1_material_data.html',1,'WSM']]],
   ['materialdata',['MaterialData',['../struct_form_it_1_1_materials_1_1_material_data.html',1,'FormIt::Materials']]],
   ['materialdata',['MaterialData',['../class_w_s_m_1_1_utils_1_1_material_data.html',1,'WSM::Utils']]],
+  ['materialdata',['MaterialData',['../struct_w_s_m_1_1_material_data.html',1,'WSM']]],
   ['materialmanagerchangeddata',['MaterialManagerChangedData',['../struct_form_it_1_1_material_manager_changed_data.html',1,'FormIt']]],
   ['meshdata',['MeshData',['../class_w_s_m_1_1_utils_1_1_mesh_data.html',1,'WSM::Utils']]],
   ['meshesandtransformsdata',['MeshesAndTransformsData',['../class_w_s_m_1_1_utils_1_1_meshes_and_transforms_data.html',1,'WSM::Utils']]],

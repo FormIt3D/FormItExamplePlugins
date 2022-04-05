@@ -27,7 +27,6 @@ var _form_it_core_shortcuts_8h =
     [ "kDrawPolyline", "_form_it_core_shortcuts_8h.html#ga7baa118a8ee9b789c0b545dd2ef037d7", null ],
     [ "kDrawRectangle", "_form_it_core_shortcuts_8h.html#ga6cc91af8d39c483d85b731fdfaa8153b", null ],
     [ "kDrawSpline", "_form_it_core_shortcuts_8h.html#gafee90c0ff5de6ab4c7da4a322fbef32a", null ],
-    [ "kDrawVertex", "_form_it_core_shortcuts_8h.html#gabc7bfe617aab4a085441dfde18fb94ad", null ],
     [ "kEditCircle", "_form_it_core_shortcuts_8h.html#ga5c3840d2a1103f5c8c7524abfbfd44f3", null ],
     [ "kEditCopy", "_form_it_core_shortcuts_8h.html#ga7a748de227d84ac81c7556075544a850", null ],
     [ "kEditCut", "_form_it_core_shortcuts_8h.html#ga374fc7a8ba43e05422fd09cc68fb2faa", null ],

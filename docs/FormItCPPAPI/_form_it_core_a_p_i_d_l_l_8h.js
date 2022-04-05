@@ -280,6 +280,7 @@ var _form_it_core_a_p_i_d_l_l_8h =
     [ "IsInContinuousAction", "_form_it_core_a_p_i_d_l_l_8h.html#gafcde8faf3624585863e45b0f237f8653", null ],
     [ "IsInEditingHistory", "_form_it_core_a_p_i_d_l_l_8h.html#ga6612de28936979702b9bcfa5109b0d1b", null ],
     [ "IsInLayerDelete", "_form_it_core_a_p_i_d_l_l_8h.html#ga702b72c5f9f97160a29d9c30cafa9bdd", null ],
+    [ "IsInRollingMultipleHistories", "_form_it_core_a_p_i_d_l_l_8h.html#ga0af5d453902af54f172350c6362cbf9c", null ],
     [ "IsInSolarAnalysisMode", "_form_it_core_a_p_i_d_l_l_8h.html#ga0d258921c840f29553c4d6d71f50dd51", null ],
     [ "IsMaterialServerNode", "_form_it_core_a_p_i_d_l_l_8h.html#gae7f26a0e8fdad85d118f62db9d233bf5", null ],
     [ "IsMaterialUsed", "_form_it_core_a_p_i_d_l_l_8h.html#ga3def991c69b7a485c29e8ca15afa1e02", null ],

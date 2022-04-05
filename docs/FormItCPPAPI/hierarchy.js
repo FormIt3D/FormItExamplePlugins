@@ -52,9 +52,9 @@ var hierarchy =
     [ "WSM::Line3d", "class_w_s_m_1_1_line3d.html", null ],
     [ "FormIt::LoadCompleteData", "struct_form_it_1_1_load_complete_data.html", null ],
     [ "WSM::LoopData", "struct_w_s_m_1_1_loop_data.html", null ],
-    [ "WSM::MaterialData", "struct_w_s_m_1_1_material_data.html", null ],
     [ "FormIt::Materials::MaterialData", "struct_form_it_1_1_materials_1_1_material_data.html", null ],
     [ "WSM::Utils::MaterialData", "class_w_s_m_1_1_utils_1_1_material_data.html", null ],
+    [ "WSM::MaterialData", "struct_w_s_m_1_1_material_data.html", null ],
     [ "FormIt::MaterialManagerChangedData", "struct_form_it_1_1_material_manager_changed_data.html", null ],
     [ "WSM::Utils::MeshData", "class_w_s_m_1_1_utils_1_1_mesh_data.html", null ],
     [ "WSM::Utils::MeshesAndTransformsData", "class_w_s_m_1_1_utils_1_1_meshes_and_transforms_data.html", null ],
@@ -104,6 +104,7 @@ var hierarchy =
         [ "FormIt::kSunDirectionChangesEndedType", "struct_form_it_1_1k_sun_direction_changes_ended_type.html", null ],
         [ "FormIt::kToolModeChangedType", "struct_form_it_1_1k_tool_mode_changed_type.html", null ],
         [ "FormIt::kToolsLocationRequestType", "struct_form_it_1_1k_tools_location_request_type.html", null ],
+        [ "FormIt::kUndoRedoMultipleHistoriesEndedType", "struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html", null ],
         [ "FormIt::kUnfollowCameraType", "struct_form_it_1_1k_unfollow_camera_type.html", null ],
         [ "FormIt::kUnitTypeChangedType", "struct_form_it_1_1k_unit_type_changed_type.html", null ],
         [ "FormIt::kVisualStyleChangedType", "struct_form_it_1_1k_visual_style_changed_type.html", null ]

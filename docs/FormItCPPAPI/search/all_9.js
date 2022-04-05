@@ -94,6 +94,7 @@ var searchData=
   ['isincontinuousaction',['IsInContinuousAction',['../group__mod__formitcore__tools__api__ref.html#gafcde8faf3624585863e45b0f237f8653',1,'FormIt::Tools']]],
   ['isineditinghistory',['IsInEditingHistory',['../class_w_s_m_1_1_utils_1_1_i_app_helper.html#a4c84567888b135ffe5ac0f8d67d0f5eb',1,'WSM::Utils::IAppHelper::IsInEditingHistory()'],['../group__mod__formitcore__groupedit__api__ref.html#ga6612de28936979702b9bcfa5109b0d1b',1,'FormIt::GroupEdit::IsInEditingHistory()']]],
   ['isinlayerdelete',['IsInLayerDelete',['../group__mod__formitcore__tools__api__ref.html#ga702b72c5f9f97160a29d9c30cafa9bdd',1,'FormIt::Tools']]],
+  ['isinrollingmultiplehistories',['IsInRollingMultipleHistories',['../group__mod__formitcore__undomanagement__api__ref.html#ga0af5d453902af54f172350c6362cbf9c',1,'FormIt::UndoManagement']]],
   ['isinsolaranalysismode',['IsInSolarAnalysisMode',['../group__mod__formitcore__analysis__solar__api__ref.html#ga0d258921c840f29553c4d6d71f50dd51',1,'FormIt::Analysis::Solar']]],
   ['islayerhidden',['IsLayerHidden',['../namespace_w_s_m_1_1_utils.html#a22e1d970e23782b7c76e3834ab627813',1,'WSM::Utils']]],
   ['islayernotpickable',['IsLayerNotPickable',['../namespace_w_s_m_1_1_utils.html#a212e77dd789c58eb7c3f7ec8f8bde604',1,'WSM::Utils']]],

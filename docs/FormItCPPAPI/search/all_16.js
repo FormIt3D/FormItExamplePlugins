@@ -11,7 +11,6 @@ var searchData=
   ['vector3d_2eh',['Vector3d.h',['../_vector3d_8h.html',1,'']]],
   ['version',['version',['../struct_form_it_1_1_forge_1_1_file_info.html#ad3311b992d2300255865db46026e6e7f',1,'FormIt::Forge::FileInfo']]],
   ['version',['Version',['../struct_form_it_1_1_version.html',1,'FormIt']]],
-  ['vertex',['VERTEX',['../namespace_form_it.html#aa9da6f100181b885662ea3656f6c97d5a0c3e47aef93a7f244f41ab309a33634b',1,'FormIt']]],
   ['vertices',['vertices',['../struct_w_s_m_1_1_utils_1_1_object_type_filter.html#a96990f48ee8e3d55081736fc310d86f5',1,'WSM::Utils::ObjectTypeFilter']]],
   ['view',['view',['../struct_form_it_1_1_forge_1_1_permissions_info.html#a79684684d0e2d17f23686a5dfcdbf467',1,'FormIt::Forge::PermissionsInfo']]],
   ['viewdownloadonly',['ViewDownloadOnly',['../struct_form_it_1_1_forge_1_1_permissions_info.html#a5afb4b579b99743b3ea8f89c787f760b',1,'FormIt::Forge::PermissionsInfo']]],

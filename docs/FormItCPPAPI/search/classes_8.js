@@ -135,6 +135,7 @@ var searchData=
   ['kundomanagerupdatetype',['kUndoManagerUpdateType',['../struct_form_it_1_1k_undo_manager_update_type.html',1,'FormIt']]],
   ['kundoredoavailabilitychangedtype',['kUndoRedoAvailabilityChangedType',['../struct_form_it_1_1k_undo_redo_availability_changed_type.html',1,'FormIt']]],
   ['kundoredoexecutedtype',['kUndoRedoExecutedType',['../struct_form_it_1_1k_undo_redo_executed_type.html',1,'FormIt']]],
+  ['kundoredomultiplehistoriesendedtype',['kUndoRedoMultipleHistoriesEndedType',['../struct_form_it_1_1k_undo_redo_multiple_histories_ended_type.html',1,'FormIt']]],
   ['kundoredoperhistorytype',['kUndoRedoPerHistoryType',['../struct_form_it_1_1k_undo_redo_per_history_type.html',1,'FormIt']]],
   ['kunfollowcameratype',['kUnfollowCameraType',['../struct_form_it_1_1k_unfollow_camera_type.html',1,'FormIt']]],
   ['kuninstallplugintype',['kUninstallPluginType',['../struct_form_it_1_1k_uninstall_plugin_type.html',1,'FormIt']]],

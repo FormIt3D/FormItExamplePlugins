@@ -5,7 +5,6 @@ var NAVTREEINDEX11 =
 "group__mod__formit__core__draw__sc.html#ga7baa118a8ee9b789c0b545dd2ef037d7":[3,30,2,7],
 "group__mod__formit__core__draw__sc.html#ga859989ff8d225f4a973cbfddcd333350":[3,30,2,1],
 "group__mod__formit__core__draw__sc.html#gaa290109d46f7b2bee9b09754e8385914":[3,30,2,6],
-"group__mod__formit__core__draw__sc.html#gabc7bfe617aab4a085441dfde18fb94ad":[3,30,2,10],
 "group__mod__formit__core__draw__sc.html#gada8999c92507b5c4f425097c4a7698ba":[3,30,2,5],
 "group__mod__formit__core__draw__sc.html#gafee90c0ff5de6ab4c7da4a322fbef32a":[3,30,2,9],
 "group__mod__formit__core__edit__sc.html":[3,30,3],
@@ -156,8 +155,8 @@ var NAVTREEINDEX11 =
 "group__mod__formitcore__analysis__solar__api__ref.html#gga183e0569d3b31cb6dca8426ec7222802a38fa0e793734680b90c66733cc6c42da":[3,16,0,0],
 "group__mod__formitcore__analysis__solar__api__ref.html#gga183e0569d3b31cb6dca8426ec7222802a91f8de704b51902228b4bd606fa06541":[3,16,0,1],
 "group__mod__formitcore__analysis__solar__api__ref.html#gga183e0569d3b31cb6dca8426ec7222802aeb154e995571681601b3b3d269b51699":[3,16,0,3],
-"group__mod__formitcore__api__ref.html":[3,0],
 "group__mod__formitcore__api__ref.html":[2],
+"group__mod__formitcore__api__ref.html":[3,0],
 "group__mod__formitcore__api__ref.html#ga2fd952606b11a7bea94c6918fb6d584b":[3,0,43],
 "group__mod__formitcore__api__ref.html#ga3d9e0059266fffb0eb02d79c320e7041":[3,0,54],
 "group__mod__formitcore__api__ref.html#ga40fe1e061860a2d475442a4a5afc7a94":[3,0,48],
@@ -171,8 +170,8 @@ var NAVTREEINDEX11 =
 "group__mod__formitcore__api__ref.html#ga7d27f9a59681c5d553fbc47d28b5506e":[3,0,40],
 "group__mod__formitcore__api__ref.html#ga88f38998667975e027b62a4b334e4cf9":[6,0,0,6,4],
 "group__mod__formitcore__api__ref.html#ga88f38998667975e027b62a4b334e4cf9":[3,0,37],
-"group__mod__formitcore__api__ref.html#ga894a0cd612ef8a151c9cb1e4240060c2":[3,0,35],
 "group__mod__formitcore__api__ref.html#ga894a0cd612ef8a151c9cb1e4240060c2":[6,0,0,6,2],
+"group__mod__formitcore__api__ref.html#ga894a0cd612ef8a151c9cb1e4240060c2":[3,0,35],
 "group__mod__formitcore__api__ref.html#ga910cffdbd365a6c13bec66cb0b8e2985":[3,0,62],
 "group__mod__formitcore__api__ref.html#ga92a96e0af680f4f99e0123bd7edacba8":[3,0,58],
 "group__mod__formitcore__api__ref.html#ga94361c30a2df65ada4fb5a3d12ee5f9b":[3,0,53],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "group__mod__formitcore__files__api__ref.html#ga92009419f2f498c13eeeebda1ce0b2ff":[3,24,3],
 "group__mod__formitcore__files__api__ref.html#ga968bb7e6cb36be57b7004f372c3ae416":[3,24,17],
 "group__mod__formitcore__files__api__ref.html#gaa63b75961f87a32a94dc8ce98f6b13c6":[3,24,9],
-"group__mod__formitcore__files__api__ref.html#gadc8e1e177c60ebb9d2336390c21ae748":[3,24,14]
+"group__mod__formitcore__files__api__ref.html#gadc8e1e177c60ebb9d2336390c21ae748":[3,24,14],
+"group__mod__formitcore__files__api__ref.html#gae17c87374fd392e21ca1e0e27a278f72":[3,24,15]
 };

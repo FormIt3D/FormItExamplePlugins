@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"group__mod__formitcore__files__api__ref.html#gae17c87374fd392e21ca1e0e27a278f72":[3,24,15],
 "group__mod__formitcore__files__api__ref.html#gae817fcd979c74f8da6853991e2afac09":[3,24,8],
 "group__mod__formitcore__files__api__ref.html#gafd7129d2a594f3279d09ba838f05d5d0":[3,24,10],
 "group__mod__formitcore__files__api__ref.html#gga16592b71f962b33f6054b4b9e789a616a0095a9fa74d1713e43e370a7d7846224":[3,24,2,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "group__mod__formitcore__sectionplanes__api__ref.html#ga4c6a2d7cb6dc732f1d6f9b1371744815":[3,7,9],
 "group__mod__formitcore__sectionplanes__api__ref.html#ga5853a6579f56d78d81417dcc88204736":[3,7,2],
 "group__mod__formitcore__sectionplanes__api__ref.html#ga6657b192b7a5ace0bd02290f75f23784":[3,7,16],
-"group__mod__formitcore__sectionplanes__api__ref.html#ga66df06a70bc51c80cfcdfad82587de3e":[3,7,11]
+"group__mod__formitcore__sectionplanes__api__ref.html#ga66df06a70bc51c80cfcdfad82587de3e":[3,7,11],
+"group__mod__formitcore__sectionplanes__api__ref.html#ga7639efd48c33fcfbfada0e5208e1dcbd":[3,7,5]
 };
